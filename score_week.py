@@ -522,6 +522,29 @@ def fetch_current_starters(season):
     return result
 
 
+def load_situational_overrides(path='situational_overrides.csv'):
+    """One-off situational adjustments that don't fit any systematic,
+    backtested category - new stadium openers, unusual one-time
+    circumstances, anything genuinely idiosyncratic. Unlike team_hfa.csv
+    (season-long, per-team), these are scoped to a specific team+week so
+    they only apply to the one game they're meant for.
+    Format: team,week,adjustment,note"""
+    try:
+        df = pd.read_csv(path)
+        overrides = {}
+        for _, row in df.iterrows():
+            key = (row['team'], int(row['week']))
+            overrides[key] = {'adjustment': float(row['adjustment']), 'note': row.get('note', '')}
+        return overrides
+    except FileNotFoundError:
+        return {}
+
+
+def get_situational_adjustment(team, week, overrides):
+    entry = overrides.get((team, week))
+    return entry['adjustment'] if entry else 0.0
+
+
 def load_qb_overrides(path='qb_overrides.csv'):
     """Optional manual override file: team,backup_starting,rookie_starting,
     normal_starter_override (all optional except team). The last field
@@ -632,6 +655,7 @@ def main(season, week):
     starters = fetch_current_starters(season)
     elite_qbs = fetch_elite_qb_list(season - 1)
     qb_overrides = load_qb_overrides()
+    situational_overrides = load_situational_overrides()
     print(f'  {len(starters)} teams with current QB1 identified, {len(elite_qbs)} elite QBs from {season-1}, '
           f'{len(qb_overrides)} manual overrides loaded\n')
 
@@ -754,8 +778,17 @@ def main(season, week):
             'coaching_coefficient_home': coaching_coef, 'stakes_coefficient_home': stakes_coef,
         })
         X = np.array([[feature_vec[c] for c in components]])
-        win_prob_home = float(model.predict_proba(X)[0][1])
-        raw_strength_score = float(model.decision_function(X)[0])
+        model_win_prob = float(model.predict_proba(X)[0][1])
+        model_raw_strength = float(model.decision_function(X)[0])
+
+        # One-off situational adjustment (new stadium openers, etc.) - applied
+        # as a transparent layer ON TOP of the trained model's prediction,
+        # not folded into any learned-weight category (which would misrepresent
+        # what that category's backtested weight actually means).
+        situational_adj = get_situational_adjustment(home, week, situational_overrides) - \
+                           get_situational_adjustment(away, week, situational_overrides)
+        raw_strength_score = model_raw_strength + situational_adj
+        win_prob_home = 1 / (1 + np.exp(-raw_strength_score)) if situational_adj != 0 else model_win_prob
 
         power_spread = implied_power_spread(home, away, power_ratings, team_hfa,
                                              game_month=pd.to_datetime(game.get('gameday')).month if pd.notna(game.get('gameday')) else None)
@@ -780,6 +813,7 @@ def main(season, week):
             'qb_candidates': qb_candidates,
             'home_injuries': get_injury_candidates(home, injury_report),
             'away_injuries': get_injury_candidates(away, injury_report),
+            'situational_note': situational_overrides.get((home, week), situational_overrides.get((away, week), {})).get('note', ''),
             'spread_current': line_movement['spread']['current'],
             'spread_history': line_movement['spread']['history'],
             'total_current': line_movement['total']['current'],
