@@ -1,0 +1,18 @@
+{
+  "weeks": [
+    {
+      "season": 2026,
+      "week": 1,
+      "file": "2026_1.json"
+    },
+    {
+      "season": 2026,
+      "week": 2,
+      "file": "2026_2.json"
+    }
+  ],
+  "latest": {
+    "season": 2026,
+    "week": 2
+  }
+}

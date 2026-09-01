@@ -1,0 +1,39 @@
+name: Line Movement Snapshot
+
+on:
+  schedule:
+    # Every 4 hours - now pulls both spreads AND totals (roughly 2 credits/
+    # call), so frequency halved from every-2-hours to stay within the free
+    # 500/month tier: 6 runs/day x 30 days x ~2 credits = ~360 credits/month
+    - cron: '0 */4 * * *'
+  workflow_dispatch: {}
+
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install pandas requests
+
+      - name: Run line snapshot
+        working-directory: live_pipeline
+        env:
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+        run: python3 snapshot_lines.py
+
+      - name: Commit updated line history
+        working-directory: live_pipeline
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add line_history.csv
+          git diff --staged --quiet || git commit -m "Line snapshot: $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git push
