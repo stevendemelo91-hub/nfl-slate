@@ -42,7 +42,8 @@ LOG_COLUMNS = ['game_id', 'home_team', 'away_team', 'commence_time', 'snapshot_t
 # Preferred bookmaker order - use the first one available in the response,
 # for consistency over time (avoids spurious "movement" from which books
 # happen to respond on a given poll)
-PREFERRED_BOOKS = ['fanduel', 'draftkings', 'betmgm', 'caesars']
+PRIMARY_BOOK = 'fanduel'  # FanDuel only - no fallback to other books, so it's
+                          # never ambiguous which book a given number came from
 
 
 def fetch_current_odds(api_key):
@@ -63,18 +64,10 @@ def extract_game_row(game, snapshot_time):
     if not home_abbr or not away_abbr:
         return None
 
-    chosen_book = None
-    for pref in PREFERRED_BOOKS:
-        for bm in game.get('bookmakers', []):
-            if bm['key'] == pref:
-                chosen_book = bm
-                break
-        if chosen_book:
-            break
-    if not chosen_book and game.get('bookmakers'):
-        chosen_book = game['bookmakers'][0]
+    chosen_book = next((bm for bm in game.get('bookmakers', []) if bm['key'] == PRIMARY_BOOK), None)
     if not chosen_book:
-        return None
+        return None  # FanDuel-only by design - no fallback to a different book,
+                      # so it's never ambiguous which book a number came from
 
     row = {
         'game_id': f"{game['commence_time'][:10].replace('-','')}_{away_abbr}_{home_abbr}",

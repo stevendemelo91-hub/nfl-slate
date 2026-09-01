@@ -265,8 +265,9 @@ def load_line_history(path='line_history.csv'):
 
 def short_date(iso_or_timestamp):
     try:
-        dt = pd.to_datetime(iso_or_timestamp)
-        return f"{dt.month}/{dt.day}"
+        dt = pd.to_datetime(iso_or_timestamp, utc=True)
+        dt_et = dt.tz_convert('America/New_York')
+        return f"{dt_et.month}/{dt_et.day}"
     except Exception:
         return '?'
 
