@@ -1,0 +1,45 @@
+name: Injury Report Snapshot
+
+on:
+  schedule:
+    # Daily at 6pm ET (22:00 UTC) - every day of the week, not just Mon/Tue.
+    # Injury/practice status matters Tue-Fri (roster moves, Wed/Thu/Fri
+    # practice reports), independent of the main scoring model's cadence.
+    - cron: '0 22 * * *'
+  workflow_dispatch: {}
+
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install pandas
+
+      - name: Determine current season
+        id: season
+        run: |
+          python3 -c "
+          from datetime import date
+          today = date.today()
+          season = today.year if today.month >= 8 else today.year - 1
+          print(f'season={season}')
+          " >> $GITHUB_OUTPUT
+
+      - name: Run injury snapshot
+        run: python3 snapshot_injuries.py --season ${{ steps.season.outputs.season }}
+
+      - name: Commit updated injury history
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add injury_history.csv
+          git diff --staged --quiet || git commit -m "Injury snapshot: $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git push
