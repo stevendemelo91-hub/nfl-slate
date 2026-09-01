@@ -481,18 +481,32 @@ def fetch_injury_report(season, week):
     return inj
 
 
-def get_injury_candidates(team, injury_df):
+def get_injury_candidates(team, injury_df, injury_history):
     """Surfacing only - no coefficient/scoring impact, since there's no
     validated weight for non-QB injuries. Just gives the user fast context
     to factor into their own guess/handicapper cross-referencing, matching
-    the hybrid design's 'surface candidates, human judges impact' pattern."""
+    the hybrid design's 'surface candidates, human judges impact' pattern.
+    Includes the day-by-day trend (from injury_history.csv) when available,
+    e.g. Wed: DNP -> Thu: Limited -> Fri: Full, not just the final status."""
     if injury_df.empty:
         return []
     team_injuries = injury_df[injury_df['team'] == team]
-    return [
-        {'name': row['full_name'], 'position': row['position'], 'status': row['report_status']}
-        for _, row in team_injuries.iterrows()
-    ]
+    candidates = []
+    for _, row in team_injuries.iterrows():
+        trend = []
+        if not injury_history.empty and pd.notna(row.get('gsis_id')):
+            player_log = injury_history[
+                (injury_history['gsis_id'] == row['gsis_id']) & (injury_history['week'] == row['week'])
+            ].sort_values('snapshot_date')
+            trend = [
+                {'date': r['snapshot_date'], 'report_status': r.get('report_status'), 'practice_status': r.get('practice_status')}
+                for _, r in player_log.iterrows()
+            ]
+        candidates.append({
+            'name': row['full_name'], 'position': row['position'], 'status': row['report_status'],
+            'trend': trend,
+        })
+    return candidates
 
 
 def fetch_current_starters(season):
@@ -663,6 +677,11 @@ def main(season, week):
     print(f'Injury report: {len(injury_report)} Out/Doubtful non-QB players found for week {week}'
           if not injury_report.empty else 'No injury report available yet for this week\n')
 
+    try:
+        injury_history = pd.read_csv('injury_history.csv')
+    except FileNotFoundError:
+        injury_history = pd.DataFrame()
+
     with open('production_model.pkl', 'rb') as f:
         saved = pickle.load(f)
     model, components = saved['model'], saved['components']
@@ -811,8 +830,8 @@ def main(season, week):
             'power_rating_implied_spread': power_spread,
             'neutral_site': is_neutral,
             'qb_candidates': qb_candidates,
-            'home_injuries': get_injury_candidates(home, injury_report),
-            'away_injuries': get_injury_candidates(away, injury_report),
+            'home_injuries': get_injury_candidates(home, injury_report, injury_history),
+            'away_injuries': get_injury_candidates(away, injury_report, injury_history),
             'situational_note': situational_overrides.get((home, week), situational_overrides.get((away, week), {})).get('note', ''),
             'spread_current': line_movement['spread']['current'],
             'spread_history': line_movement['spread']['history'],
