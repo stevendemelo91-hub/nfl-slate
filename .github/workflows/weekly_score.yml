@@ -1,0 +1,41 @@
+name: Weekly NFL Scoring
+
+on:
+  schedule:
+    # Monday 8am ET (13:00 UTC) - captures data through Sunday, MNF teams excluded
+    - cron: '0 13 * * 1'
+    # Tuesday 8am ET (13:00 UTC) - re-run with completed MNF result included
+    - cron: '0 13 * * 2'
+  workflow_dispatch:
+    inputs:
+      season:
+        description: 'Season year (e.g. 2026)'
+        required: true
+      week:
+        description: 'Week number'
+        required: true
+
+jobs:
+  score:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install pandas numpy scikit-learn
+
+      - name: Determine current NFL week
+        id: week
+        run: |
+          if [ -n "${{ github.event.inputs.week }}" ]; then
+            echo "season=${{ github.event.inputs.season }}" >> $GITHUB_OUTPUT
+            echo "week=${{ github.event.inputs.week }}" >> $GITHUB_OUTPUT
+          else
+            # Simple heuristic: NFL season starts early September; adjust the
+            # reference date each year, or replace with
