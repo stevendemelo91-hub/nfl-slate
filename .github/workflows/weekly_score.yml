@@ -9,11 +9,11 @@ on:
   workflow_dispatch:
     inputs:
       season:
-        description: 'Season year (e.g. 2026)'
-        required: true
+        description: 'Season year (e.g. 2026) - leave blank to auto-detect'
+        required: false
       week:
-        description: 'Week number'
-        required: true
+        description: 'Week number - leave blank to auto-detect'
+        required: false
 
 jobs:
   score:
