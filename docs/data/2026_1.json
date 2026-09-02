@@ -214,10 +214,16 @@
       "home_injuries": [],
       "away_injuries": [],
       "situational_note": "",
-      "spread_current": "-3.5 -110 (8/31)",
-      "spread_history": [],
-      "total_current": "O/U 51.5 (-104) (8/31)",
-      "total_history": [],
+      "spread_current": "-3.5 -115 (9/1)",
+      "spread_history": [
+        "-3.5 -112 (9/1)",
+        "-3.5 -110 (8/31)"
+      ],
+      "total_current": "O/U 50.5 (-112) (9/1)",
+      "total_history": [
+        "O/U 50.5 (-110) (9/1)",
+        "O/U 51.5 (-104) (8/31)"
+      ],
       "home_score": null,
       "away_score": null,
       "is_final": false
@@ -491,8 +497,10 @@
       "situational_note": "",
       "spread_current": "-3.0 -115 (8/31)",
       "spread_history": [],
-      "total_current": "O/U 42.5 (-108) (8/31)",
-      "total_history": [],
+      "total_current": "O/U 42.5 (-106) (9/1)",
+      "total_history": [
+        "O/U 42.5 (-108) (8/31)"
+      ],
       "home_score": null,
       "away_score": null,
       "is_final": false
@@ -651,10 +659,14 @@
       "home_injuries": [],
       "away_injuries": [],
       "situational_note": "",
-      "spread_current": "-3.5 -110 (8/31)",
-      "spread_history": [],
-      "total_current": "O/U 39.5 (-120) (8/31)",
-      "total_history": [],
+      "spread_current": "-3.5 -102 (9/1)",
+      "spread_history": [
+        "-3.5 -110 (8/31)"
+      ],
+      "total_current": "O/U 40.5 (-110) (9/1)",
+      "total_history": [
+        "O/U 39.5 (-120) (8/31)"
+      ],
       "home_score": null,
       "away_score": null,
       "is_final": false
