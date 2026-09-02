@@ -42,17 +42,24 @@ jobs:
           else
             # Simple heuristic: NFL season starts early September; adjust the
             # reference date each year, or replace with a proper schedule
-            # lookup if this drifts.
-            python3 -c "
-            from datetime import date
-            today = date.today()
-            season = today.year if today.month >= 8 else today.year - 1
-            season_start = date(season, 9, 4)  # approximate - update yearly
-            days_in = (today - season_start).days
-            week = max(1, min(18, days_in // 7 + 1))
-            print(f'season={season}')
-            print(f'week={week}')
-            " >> $GITHUB_OUTPUT
+            # lookup if this drifts. Uses plain bash/date arithmetic (not
+            # embedded Python) to avoid indentation-sensitivity issues when
+            # this block is embedded inside YAML.
+            today_epoch=$(date -u +%s)
+            year=$(date -u +%Y)
+            month=$(date -u +%-m)
+            if [ "$month" -lt 8 ]; then
+              season=$((year - 1))
+            else
+              season=$year
+            fi
+            season_start_epoch=$(date -u -d "${season}-09-04" +%s)
+            days_in=$(( (today_epoch - season_start_epoch) / 86400 ))
+            week=$(( days_in / 7 + 1 ))
+            if [ "$week" -lt 1 ]; then week=1; fi
+            if [ "$week" -gt 18 ]; then week=18; fi
+            echo "season=$season" >> $GITHUB_OUTPUT
+            echo "week=$week" >> $GITHUB_OUTPUT
           fi
 
       - name: Run scorer (current week)
