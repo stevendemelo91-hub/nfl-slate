@@ -109,6 +109,17 @@ def load_existing_log():
         return pd.DataFrame(columns=LOG_COLUMNS)
 
 
+def ensure_log_file_exists():
+    """Guarantees LOG_PATH exists on disk (even as just a header row) so
+    the workflow's `git add` step always has something valid to target -
+    otherwise zero games/zero changes on a cold start leaves no file at
+    all, and git fails with 'pathspec did not match any files'."""
+    import os
+    if not os.path.exists(LOG_PATH):
+        pd.DataFrame(columns=LOG_COLUMNS).to_csv(LOG_PATH, index=False)
+        print(f'Created empty {LOG_PATH} (header only) so git has something to track')
+
+
 def main():
     api_key = os.environ.get('ODDS_API_KEY')
     if not api_key:
@@ -154,6 +165,7 @@ def main():
             print(f"  {r['away_team']} @ {r['home_team']}: spread {r['home_team']} {spread_str} | total {total_str}")
     else:
         print('No line movement detected - nothing new to log')
+        ensure_log_file_exists()
 
 
 if __name__ == '__main__':

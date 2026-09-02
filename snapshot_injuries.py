@@ -38,6 +38,18 @@ def load_existing_log():
         return pd.DataFrame(columns=LOG_COLUMNS)
 
 
+def ensure_log_file_exists():
+    """Guarantees LOG_PATH exists on disk (even as just a header row) so
+    the workflow's `git add` step always has something valid to target -
+    otherwise a cold start with nothing to log yet (e.g. before real
+    injury reports are published) leaves no file at all, and git fails
+    with 'pathspec did not match any files'."""
+    import os
+    if not os.path.exists(LOG_PATH):
+        pd.DataFrame(columns=LOG_COLUMNS).to_csv(LOG_PATH, index=False)
+        print(f'Created empty {LOG_PATH} (header only) so git has something to track')
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--season', type=int, required=True)
@@ -47,6 +59,7 @@ def main():
     current = fetch_current_injuries(args.season)
     if current.empty:
         print('No injury data available - nothing to snapshot')
+        ensure_log_file_exists()
         return
 
     existing = load_existing_log()
@@ -88,6 +101,7 @@ def main():
             print(f'  ... and {len(new_rows) - 20} more')
     else:
         print('No injury/practice status changes detected since last snapshot')
+        ensure_log_file_exists()
 
 
 if __name__ == '__main__':
