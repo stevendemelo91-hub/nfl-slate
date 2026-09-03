@@ -2,10 +2,12 @@ name: Weekly NFL Scoring
 
 on:
   schedule:
-    # Monday 8am ET (13:00 UTC) - captures data through Sunday, MNF teams excluded
-    - cron: '0 13 * * 1'
-    # Tuesday 8am ET (13:00 UTC) - re-run with completed MNF result included
-    - cron: '0 13 * * 2'
+    # Daily at 7pm ET (23:00 UTC) - matches the injury snapshot cadence
+    # (which runs daily at 6pm ET), timed an hour later so this run reliably
+    # picks up that same day's fresh injury data rather than racing it.
+    # Replaces the old Mon/Tue-only schedule - daily already covers those
+    # two days, so no need for separate entries.
+    - cron: '0 23 * * *'
   workflow_dispatch:
     inputs:
       season:
