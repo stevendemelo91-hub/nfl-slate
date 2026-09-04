@@ -162,8 +162,10 @@
       "home_injuries": [],
       "away_injuries": [],
       "situational_note": "",
-      "spread_current": "+2.5 +102 (8/31)",
-      "spread_history": [],
+      "spread_current": "+2.5 +100 (9/3)",
+      "spread_history": [
+        "+2.5 +102 (8/31)"
+      ],
       "total_current": "O/U 47.5 (-105) (9/2)",
       "total_history": [
         "O/U 47.5 (-110) (8/31)"
