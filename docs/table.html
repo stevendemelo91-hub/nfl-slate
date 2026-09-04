@@ -43,7 +43,7 @@ body {
 }
 .mono { font-family: 'Space Grotesk', monospace; font-variant-numeric: tabular-nums; }
 .wrap { max-width: 1500px; margin: 0 auto; }
-.table-scroll { overflow-x: auto; overflow-y: auto; max-height: 70vh; border-radius: 12px; }
+.table-scroll { overflow-x: auto; overflow-y: auto; max-height: 56vh; border-radius: 12px; }
 
 header {
   display: flex; justify-content: space-between; align-items: baseline;
@@ -161,6 +161,20 @@ tr.consensus-row { outline: 2px solid var(--gold); outline-offset: -2px; }
 }
 
 footer { text-align: center; color: var(--text-faint); font-family: 'Space Grotesk', monospace; font-size: 11px; margin-top: 24px; }
+
+.pool-section { margin-top: 28px; }
+.pool-header { margin-bottom: 12px; }
+.pool-title { font-family: 'Manrope', sans-serif; font-weight: 800; font-size: 18px; letter-spacing: -0.2px; }
+.pool-subnote { font-family: 'Space Grotesk', monospace; font-size: 11px; color: var(--text-faint); margin-top: 4px; }
+th.pool-instance-col, th.pool-final-col { min-width: 110px; }
+.pool-pick-select { font-family: 'Space Grotesk', monospace; font-size: 11px; background: var(--panel-2); border: 1px solid var(--line); border-radius: 6px; padding: 4px 6px; color: var(--text); width: 100%; }
+.pool-final-cell { display: flex; flex-direction: column; gap: 4px; }
+.pool-box-row { display: flex; gap: 4px; align-items: center; }
+.pool-box-row select { font-family: 'Space Grotesk', monospace; font-size: 10px; background: var(--panel-2); border: 1px solid var(--line); border-radius: 6px; padding: 2px 4px; color: var(--text-dim); }
+.pool-dollar { font-size: 10px; color: var(--text-faint); white-space: nowrap; }
+.pool-tally { margin-top: 12px; padding: 12px 14px; background: var(--panel); border: 1px solid var(--line); border-radius: 10px; font-family: 'Space Grotesk', monospace; font-size: 12px; backdrop-filter: blur(var(--blur)); }
+.pool-tally .tally-label { color: var(--text-faint); font-size: 10px; letter-spacing: 0.5px; text-transform: uppercase; margin-bottom: 4px; }
+.pool-tally .tally-value { font-size: 16px; font-weight: 700; }
 footer a { color: var(--text-dim); }
 
 ::-webkit-scrollbar { width: 10px; height: 10px; }
@@ -246,6 +260,30 @@ footer a { color: var(--text-dim); }
     </thead>
     <tbody id="slate-body"></tbody>
   </table>
+  </div>
+
+  <div class="pool-section">
+    <div class="pool-header">
+      <div class="pool-title">Pool Picks</div>
+      <div class="pool-subnote">Sun/Mon games only &middot; matches OLG POOLS ordering (time slot, then alphabetical by home team)</div>
+    </div>
+    <div class="table-scroll" style="max-height: 56vh;">
+      <table id="pool-table">
+        <thead>
+          <tr>
+            <th>Kickoff</th>
+            <th>Matchup</th>
+            <th class="pool-instance-col">Instance #1</th>
+            <th class="pool-instance-col">Instance #2</th>
+            <th class="pool-instance-col">Instance #3</th>
+            <th class="pool-instance-col">Instance #4</th>
+            <th class="pool-final-col">Final</th>
+          </tr>
+        </thead>
+        <tbody id="pool-body"></tbody>
+      </table>
+    </div>
+    <div class="pool-tally" id="pool-tally"></div>
   </div>
 
   <footer>Win-confidence model &middot; nfl_model_spec.md &middot; not betting advice</footer>
@@ -358,9 +396,10 @@ const TRACKER_KEY = 'nfl_pick_tracker_v1';
 function loadTracker() {
   try {
     const raw = localStorage.getItem(TRACKER_KEY);
-    return raw ? JSON.parse(raw) : { handicapperPicks: {}, my5Picks: {} };
+    const parsed = raw ? JSON.parse(raw) : {};
+    return { handicapperPicks: {}, my5Picks: {}, poolPicks: {}, ...parsed };
   } catch (e) {
-    return { handicapperPicks: {}, my5Picks: {} };
+    return { handicapperPicks: {}, my5Picks: {}, poolPicks: {} };
   }
 }
 
@@ -503,7 +542,20 @@ async function computeAllRecords() {
 }
 
 function exportBackup() {
-  const blob = new Blob([JSON.stringify(TRACKER, null, 2)], { type: 'application/json' });
+  // Guess lines live under separate per-season/week localStorage keys
+  // (not part of TRACKER), so they must be collected separately to make
+  // this a genuinely complete backup.
+  const allGuesses = {};
+  for (let i = 0; i < localStorage.length; i++) {
+    const key = localStorage.key(i);
+    if (key && key.startsWith(GUESS_STORAGE_PREFIX + '::')) {
+      try {
+        allGuesses[key] = JSON.parse(localStorage.getItem(key));
+      } catch (e) { /* skip unreadable entry */ }
+    }
+  }
+  const backup = { ...TRACKER, lineGuesses: allGuesses };
+  const blob = new Blob([JSON.stringify(backup, null, 2)], { type: 'application/json' });
   const url = URL.createObjectURL(blob);
   const a = document.createElement('a');
   a.href = url;
@@ -523,10 +575,27 @@ function importBackup(fileInput) {
         alert('This file does not look like a valid pick-tracker backup.');
         return;
       }
-      TRACKER = imported;
+      const { lineGuesses: importedGuesses, ...trackerFields } = imported;
+      TRACKER = { handicapperPicks: {}, my5Picks: {}, poolPicks: {}, ...trackerFields };
       saveTracker(TRACKER);
+
+      // Restore guess lines too, if this backup has them (older backups,
+      // from before guesses were included, simply won't have this field).
+      let restoredGuessWeeks = 0;
+      if (importedGuesses) {
+        for (const [key, value] of Object.entries(importedGuesses)) {
+          try {
+            localStorage.setItem(key, JSON.stringify(value));
+            restoredGuessWeeks++;
+          } catch (e) { /* storage unavailable - skip this entry */ }
+        }
+      }
+
+      if (CURRENT_DATA) loadGuessesFromStorage(CURRENT_DATA.season, CURRENT_DATA.week);
       render(CURRENT_DATA);
-      alert('Backup restored successfully.');
+      alert(importedGuesses
+        ? `Backup restored successfully (including guess lines for ${restoredGuessWeeks} week(s)).`
+        : 'Backup restored successfully. Note: this backup predates guess-line saving, so guesses were not included - only picks were restored.');
     } catch (err) {
       alert('Could not read that file - is it a valid backup export?');
     }
@@ -568,7 +637,7 @@ function updateGuess(gameId, value, season, week) {
 }
 
 const SORT_KEYS = {
-  kickoff: g => parseKickoff(g).getTime(),
+  kickoff: g => poolSortKey(g),
   matchup: g => displayName(g.home_team),
   winprob: g => g.home_win_probability,
   power: g => g.power_rating_implied_spread === null || g.power_rating_implied_spread === undefined ? -Infinity : g.power_rating_implied_spread,
@@ -739,6 +808,156 @@ function render(data) {
     `;
     tbody.appendChild(tr);
   });
+
+  renderPoolTable(data);
+}
+
+const TEAM_ABBR_TO_FULL = {
+  ARI: 'Arizona Cardinals', ATL: 'Atlanta Falcons', BAL: 'Baltimore Ravens',
+  BUF: 'Buffalo Bills', CAR: 'Carolina Panthers', CHI: 'Chicago Bears',
+  CIN: 'Cincinnati Bengals', CLE: 'Cleveland Browns', DAL: 'Dallas Cowboys',
+  DEN: 'Denver Broncos', DET: 'Detroit Lions', GB: 'Green Bay Packers',
+  HOU: 'Houston Texans', IND: 'Indianapolis Colts', JAX: 'Jacksonville Jaguars',
+  KC: 'Kansas City Chiefs', LV: 'Las Vegas Raiders', LAC: 'Los Angeles Chargers',
+  LA: 'Los Angeles Rams', MIA: 'Miami Dolphins', MIN: 'Minnesota Vikings',
+  NE: 'New England Patriots', NO: 'New Orleans Saints', NYG: 'New York Giants',
+  NYJ: 'New York Jets', PHI: 'Philadelphia Eagles', PIT: 'Pittsburgh Steelers',
+  SF: 'San Francisco 49ers', SEA: 'Seattle Seahawks', TB: 'Tampa Bay Buccaneers',
+  TEN: 'Tennessee Titans', WAS: 'Washington Commanders',
+};
+
+const BOX_DOLLAR_LOOKUP = { 4: 80, 5: 160, 6: 320, 7: 640, 8: 1280 };
+
+function isPoolEligible(gameday) {
+  // Wed/Thu/Fri/Sat games don't count toward the pool by default. Parse at
+  // noon (not midnight) to avoid timezone day-shifting at the date boundary.
+  const d = new Date(gameday + 'T12:00:00');
+  const day = d.getDay(); // 0 = Sunday, 1 = Monday, ... 6 = Saturday
+  return day === 0 || day === 1;
+}
+
+function poolSortKey(g) {
+  const homeFullName = TEAM_ABBR_TO_FULL[g.home_team] || g.home_team;
+  return `${g.gameday}_${g.gametime}_${homeFullName}`;
+}
+
+function poolGameLabel(abbr) {
+  return TEAM_ABBR_TO_FULL[abbr] || abbr;
+}
+
+function renderPoolTable(data) {
+  const poolGames = data.games
+    .filter(g => isPoolEligible(g.gameday))
+    .sort((a, b) => poolSortKey(a) < poolSortKey(b) ? -1 : 1);
+
+  const tbody = document.getElementById('pool-body');
+  tbody.innerHTML = '';
+
+  poolGames.forEach(g => {
+    const gameId = g.game_id;
+    const pick = TRACKER.poolPicks[gameId] || { instance1: '', instance2: '', instance3: '', instance4: '', final: '', boxed: false, boxSize: '' };
+    const homeLabel = poolGameLabel(g.home_team);
+    const awayLabel = poolGameLabel(g.away_team);
+
+    const instanceSelect = (field, value) => `
+      <select class="pool-pick-select" onchange="updatePoolPick('${gameId}', '${field}', this.value)">
+        <option value="" ${value === '' ? 'selected' : ''}>—</option>
+        <option value="${g.away_team}" ${value === g.away_team ? 'selected' : ''}>${awayLabel}</option>
+        <option value="${g.home_team}" ${value === g.home_team ? 'selected' : ''}>${homeLabel}</option>
+      </select>`;
+
+    const boxOptions = [4, 5, 6, 7, 8].map(n =>
+      `<option value="${n}" ${String(pick.boxSize) === String(n) ? 'selected' : ''}>${n}</option>`).join('');
+    const dollarDisplay = pick.boxed && pick.boxSize ? `$${BOX_DOLLAR_LOOKUP[pick.boxSize]}` : '';
+
+    const tr = document.createElement('tr');
+    tr.innerHTML = `
+      <td data-label="Kickoff"><div class="kickoff">${short_date_js(g.gameday)}<br>${g.gametime}</div></td>
+      <td data-label="Matchup">${awayLabel} @ ${homeLabel}</td>
+      <td data-label="Instance #1">${instanceSelect('instance1', pick.instance1)}</td>
+      <td data-label="Instance #2">${instanceSelect('instance2', pick.instance2)}</td>
+      <td data-label="Instance #3">${instanceSelect('instance3', pick.instance3)}</td>
+      <td data-label="Instance #4">${instanceSelect('instance4', pick.instance4)}</td>
+      <td data-label="Final">
+        <div class="pool-final-cell">
+          ${instanceSelect('final', pick.final)}
+          <div class="pool-box-row">
+            <label style="font-size:10px; color:var(--text-faint);"><input type="checkbox" ${pick.boxed ? 'checked' : ''} onchange="updatePoolBoxed('${gameId}', this.checked)"> Box</label>
+            <select onchange="updatePoolBoxSize('${gameId}', this.value)">
+              <option value="">size</option>
+              ${boxOptions}
+            </select>
+            <span class="pool-dollar">${dollarDisplay}</span>
+          </div>
+        </div>
+      </td>
+    `;
+    tbody.appendChild(tr);
+  });
+
+  renderPoolTally(poolGames);
+}
+
+function short_date_js(gameday) {
+  const d = new Date(gameday + 'T12:00:00');
+  return `${d.getMonth() + 1}/${d.getDate()}`;
+}
+
+function updatePoolPick(gameId, field, value) {
+  const pick = TRACKER.poolPicks[gameId] || { instance1: '', instance2: '', instance3: '', instance4: '', final: '', boxed: false, boxSize: '' };
+  pick[field] = value;
+  TRACKER.poolPicks[gameId] = pick;
+  saveTracker(TRACKER);
+  renderPoolTable(CURRENT_DATA);
+}
+
+function updatePoolBoxed(gameId, checked) {
+  const pick = TRACKER.poolPicks[gameId] || { instance1: '', instance2: '', instance3: '', instance4: '', final: '', boxed: false, boxSize: '' };
+  pick.boxed = checked;
+  TRACKER.poolPicks[gameId] = pick;
+  saveTracker(TRACKER);
+  renderPoolTable(CURRENT_DATA);
+}
+
+function updatePoolBoxSize(gameId, value) {
+  const pick = TRACKER.poolPicks[gameId] || { instance1: '', instance2: '', instance3: '', instance4: '', final: '', boxed: false, boxSize: '' };
+  pick.boxSize = value;
+  TRACKER.poolPicks[gameId] = pick;
+  saveTracker(TRACKER);
+  renderPoolTable(CURRENT_DATA);
+}
+
+function renderPoolTally(poolGames) {
+  const el = document.getElementById('pool-tally');
+  const boxedPicks = poolGames
+    .map(g => ({ game: g, pick: TRACKER.poolPicks[g.game_id] }))
+    .filter(({ pick }) => pick && pick.boxed && pick.final);
+
+  if (boxedPicks.length === 0) {
+    el.innerHTML = `<div class="tally-label">Underdog point tally</div><div class="tally-value dim">No boxed final picks yet</div>`;
+    return;
+  }
+
+  let totalMaxPts = 0, realizedPts = 0, confirmedCount = 0;
+  boxedPicks.forEach(({ game, pick }) => {
+    const impliedSpread = game.power_rating_implied_spread || 0;
+    // Positive spread = home is the underdog getting points; negative = home favored (away is dog)
+    const pickIsHome = pick.final === game.home_team;
+    const dogPts = pickIsHome ? Math.max(0, impliedSpread) : Math.max(0, -impliedSpread);
+    totalMaxPts += dogPts;
+    if (game.is_final) {
+      confirmedCount++;
+      const pickWon = pickIsHome
+        ? (game.home_score !== null && game.away_score !== null && game.home_score > game.away_score)
+        : (game.home_score !== null && game.away_score !== null && game.away_score > game.home_score);
+      if (pickWon) realizedPts += dogPts;
+    }
+  });
+
+  el.innerHTML = `
+    <div class="tally-label">Underdog point tally (boxed final picks)</div>
+    <div class="tally-value">${realizedPts.toFixed(1)} / ${totalMaxPts.toFixed(1)} pts &middot; ${confirmedCount}/${boxedPicks.length} games decided</div>
+  `;
 }
 
 document.querySelectorAll('th.sortable').forEach(th => {
