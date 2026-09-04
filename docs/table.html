@@ -168,13 +168,10 @@ footer { text-align: center; color: var(--text-faint); font-family: 'Space Grote
 .pool-subnote { font-family: 'Space Grotesk', monospace; font-size: 11px; color: var(--text-faint); margin-top: 4px; }
 th.pool-instance-col, th.pool-final-col { min-width: 110px; }
 .pool-pick-select { font-family: 'Space Grotesk', monospace; font-size: 11px; background: var(--panel-2); border: 1px solid var(--line); border-radius: 6px; padding: 4px 6px; color: var(--text); width: 100%; }
-.pool-final-cell { display: flex; flex-direction: column; gap: 4px; }
-.pool-box-row { display: flex; gap: 4px; align-items: center; }
-.pool-box-row select { font-family: 'Space Grotesk', monospace; font-size: 10px; background: var(--panel-2); border: 1px solid var(--line); border-radius: 6px; padding: 2px 4px; color: var(--text-dim); }
-.pool-dollar { font-size: 10px; color: var(--text-faint); white-space: nowrap; }
-.pool-tally { margin-top: 12px; padding: 12px 14px; background: var(--panel); border: 1px solid var(--line); border-radius: 10px; font-family: 'Space Grotesk', monospace; font-size: 12px; backdrop-filter: blur(var(--blur)); }
-.pool-tally .tally-label { color: var(--text-faint); font-size: 10px; letter-spacing: 0.5px; text-transform: uppercase; margin-bottom: 4px; }
-.pool-tally .tally-value { font-size: 16px; font-weight: 700; }
+.pool-tally-row td { border-top: 2px solid var(--line); background: var(--panel-2); padding: 10px 8px; font-family: 'Space Grotesk', monospace; }
+.pool-tally-row .tally-label { color: var(--text-faint); font-size: 10px; letter-spacing: 0.5px; text-transform: uppercase; white-space: nowrap; }
+.pool-tally-row .tally-value { font-size: 12px; font-weight: 700; color: var(--text); }
+.pool-tally-row .tally-sub { font-size: 10px; font-weight: 400; color: var(--text-faint); margin-top: 2px; }
 footer a { color: var(--text-dim); }
 
 ::-webkit-scrollbar { width: 10px; height: 10px; }
@@ -281,9 +278,9 @@ footer a { color: var(--text-dim); }
           </tr>
         </thead>
         <tbody id="pool-body"></tbody>
+        <tfoot id="pool-tfoot"></tfoot>
       </table>
     </div>
-    <div class="pool-tally" id="pool-tally"></div>
   </div>
 
   <footer>Win-confidence model &middot; nfl_model_spec.md &middot; not betting advice</footer>
@@ -855,42 +852,27 @@ function renderPoolTable(data) {
 
   poolGames.forEach(g => {
     const gameId = g.game_id;
-    const pick = TRACKER.poolPicks[gameId] || { instance1: '', instance2: '', instance3: '', instance4: '', final: '', boxed: false, boxSize: '' };
+    const pick = TRACKER.poolPicks[gameId] || { instance1: '', instance2: '', instance3: '', instance4: '', final: '', finalTouched: false };
     const homeLabel = poolGameLabel(g.home_team);
     const awayLabel = poolGameLabel(g.away_team);
 
     const instanceSelect = (field, value) => `
       <select class="pool-pick-select" onchange="updatePoolPick('${gameId}', '${field}', this.value)">
-        <option value="" ${value === '' ? 'selected' : ''}>—</option>
+        <option value="" ${value === '' ? 'selected' : ''}>— (box)</option>
         <option value="${g.away_team}" ${value === g.away_team ? 'selected' : ''}>${awayLabel}</option>
         <option value="${g.home_team}" ${value === g.home_team ? 'selected' : ''}>${homeLabel}</option>
       </select>`;
 
-    const boxOptions = [4, 5, 6, 7, 8].map(n =>
-      `<option value="${n}" ${String(pick.boxSize) === String(n) ? 'selected' : ''}>${n}</option>`).join('');
-    const dollarDisplay = pick.boxed && pick.boxSize ? `$${BOX_DOLLAR_LOOKUP[pick.boxSize]}` : '';
-
     const tr = document.createElement('tr');
+    const neutralTag = g.neutral_site ? '<span class="neutral-tag">NEUTRAL</span>' : '';
     tr.innerHTML = `
-      <td data-label="Kickoff"><div class="kickoff">${short_date_js(g.gameday)}<br>${g.gametime}</div></td>
-      <td data-label="Matchup">${awayLabel} @ ${homeLabel}</td>
+      <td class="kickoff" data-label="Kickoff">${formatKickoff(g)}</td>
+      <td data-label="Matchup"><span class="matchup"><span class="away-team">${displayName(g.away_team)}</span><img class="matchup-logo" src="${TEAM_LOGOS[g.away_team] || ''}" alt="" onerror="this.style.display='none'"><span class="at">@</span><img class="matchup-logo" src="${TEAM_LOGOS[g.home_team] || ''}" alt="" onerror="this.style.display='none'"><span class="home-team">${displayName(g.home_team)}</span></span>${neutralTag}</td>
       <td data-label="Instance #1">${instanceSelect('instance1', pick.instance1)}</td>
       <td data-label="Instance #2">${instanceSelect('instance2', pick.instance2)}</td>
       <td data-label="Instance #3">${instanceSelect('instance3', pick.instance3)}</td>
       <td data-label="Instance #4">${instanceSelect('instance4', pick.instance4)}</td>
-      <td data-label="Final">
-        <div class="pool-final-cell">
-          ${instanceSelect('final', pick.final)}
-          <div class="pool-box-row">
-            <label style="font-size:10px; color:var(--text-faint);"><input type="checkbox" ${pick.boxed ? 'checked' : ''} onchange="updatePoolBoxed('${gameId}', this.checked)"> Box</label>
-            <select onchange="updatePoolBoxSize('${gameId}', this.value)">
-              <option value="">size</option>
-              ${boxOptions}
-            </select>
-            <span class="pool-dollar">${dollarDisplay}</span>
-          </div>
-        </div>
-      </td>
+      <td data-label="Final">${instanceSelect('final', pick.final)}</td>
     `;
     tbody.appendChild(tr);
   });
@@ -898,65 +880,90 @@ function renderPoolTable(data) {
   renderPoolTally(poolGames);
 }
 
-function short_date_js(gameday) {
-  const d = new Date(gameday + 'T12:00:00');
-  return `${d.getMonth() + 1}/${d.getDate()}`;
-}
-
 function updatePoolPick(gameId, field, value) {
-  const pick = TRACKER.poolPicks[gameId] || { instance1: '', instance2: '', instance3: '', instance4: '', final: '', boxed: false, boxSize: '' };
+  const pick = TRACKER.poolPicks[gameId] || { instance1: '', instance2: '', instance3: '', instance4: '', final: '', finalTouched: false };
   pick[field] = value;
-  TRACKER.poolPicks[gameId] = pick;
-  saveTracker(TRACKER);
-  renderPoolTable(CURRENT_DATA);
-}
-
-function updatePoolBoxed(gameId, checked) {
-  const pick = TRACKER.poolPicks[gameId] || { instance1: '', instance2: '', instance3: '', instance4: '', final: '', boxed: false, boxSize: '' };
-  pick.boxed = checked;
-  TRACKER.poolPicks[gameId] = pick;
-  saveTracker(TRACKER);
-  renderPoolTable(CURRENT_DATA);
-}
-
-function updatePoolBoxSize(gameId, value) {
-  const pick = TRACKER.poolPicks[gameId] || { instance1: '', instance2: '', instance3: '', instance4: '', final: '', boxed: false, boxSize: '' };
-  pick.boxSize = value;
+  if (field === 'final') pick.finalTouched = true; // only Final itself marks this row as counted for the Final tally - touching Instance fields alone must not
   TRACKER.poolPicks[gameId] = pick;
   saveTracker(TRACKER);
   renderPoolTable(CURRENT_DATA);
 }
 
 function renderPoolTally(poolGames) {
-  const el = document.getElementById('pool-tally');
-  const boxedPicks = poolGames
-    .map(g => ({ game: g, pick: TRACKER.poolPicks[g.game_id] }))
-    .filter(({ pick }) => pick && pick.boxed && pick.final);
+  // Instance 1-4: static sum of underdog points for whatever's picked in
+  // that column - no live/results tracking, since these are earlier
+  // thinking-stage picks, not a real commitment. Boxing ("— (box)") isn't
+  // a concept that applies to Instance columns, so an empty pick there
+  // just contributes nothing.
+  const staticInstanceTally = (field) => {
+    let total = 0;
+    poolGames.forEach(g => {
+      const pick = TRACKER.poolPicks[g.game_id];
+      if (!pick || !pick[field]) return; // untouched or left on "—" - no pick made
+      const impliedSpread = g.power_rating_implied_spread || 0;
+      const pickIsHome = pick[field] === g.home_team;
+      const dogPts = pickIsHome ? Math.max(0, impliedSpread) : Math.max(0, -impliedSpread);
+      total += dogPts;
+    });
+    return total;
+  };
 
-  if (boxedPicks.length === 0) {
-    el.innerHTML = `<div class="tally-label">Underdog point tally</div><div class="tally-value dim">No boxed final picks yet</div>`;
-    return;
-  }
+  // Final: live/real tally, since this is the actual commitment. A game
+  // counts as "boxed" when Final is left on "— (box)" (empty string) - no
+  // separate per-row control needed, since boxing a game IS the reason
+  // there's no single pick for it. Boxed games always contribute their own
+  // underdog's points (boxing covers both sides); straight picks only
+  // contribute if the picked team is itself the underdog. Games never
+  // touched at all stay out entirely.
+  const touchedGames = poolGames.filter(g => TRACKER.poolPicks[g.game_id] && TRACKER.poolPicks[g.game_id].finalTouched);
+  const boxedGames = touchedGames.filter(g => TRACKER.poolPicks[g.game_id].final === '');
+  const straightPicks = touchedGames.filter(g => TRACKER.poolPicks[g.game_id].final !== '');
 
-  let totalMaxPts = 0, realizedPts = 0, confirmedCount = 0;
-  boxedPicks.forEach(({ game, pick }) => {
+  const boxCount = boxedGames.length;
+  const boxCost = BOX_DOLLAR_LOOKUP[boxCount];
+  const boxCostDisplay = boxCost !== undefined ? `$${boxCost}` : (boxCount > 0 ? 'outside 4-8 range' : '—');
+
+  let totalMaxPts = 0, realizedPts = 0, confirmedCount = 0, trackedCount = 0;
+  const addFinalGame = (game, pickedTeam, isBoxed) => {
     const impliedSpread = game.power_rating_implied_spread || 0;
-    // Positive spread = home is the underdog getting points; negative = home favored (away is dog)
-    const pickIsHome = pick.final === game.home_team;
-    const dogPts = pickIsHome ? Math.max(0, impliedSpread) : Math.max(0, -impliedSpread);
-    totalMaxPts += dogPts;
-    if (game.is_final) {
-      confirmedCount++;
-      const pickWon = pickIsHome
-        ? (game.home_score !== null && game.away_score !== null && game.home_score > game.away_score)
-        : (game.home_score !== null && game.away_score !== null && game.away_score > game.home_score);
-      if (pickWon) realizedPts += dogPts;
+    let dogPts, dogIsHome;
+    if (isBoxed) {
+      dogIsHome = impliedSpread > 0;
+      dogPts = Math.abs(impliedSpread);
+    } else {
+      const pickIsHome = pickedTeam === game.home_team;
+      dogPts = pickIsHome ? Math.max(0, impliedSpread) : Math.max(0, -impliedSpread);
+      if (dogPts === 0) return; // picked the favorite - not an underdog pick, skip
+      dogIsHome = pickIsHome;
     }
-  });
+    trackedCount++;
+    totalMaxPts += dogPts;
+    if (game.is_final && game.home_score !== null && game.away_score !== null) {
+      confirmedCount++;
+      const dogWon = dogIsHome ? game.home_score > game.away_score : game.away_score > game.home_score;
+      if (dogWon) realizedPts += dogPts;
+    }
+  };
+  boxedGames.forEach(g => addFinalGame(g, null, true));
+  straightPicks.forEach(g => addFinalGame(g, TRACKER.poolPicks[g.game_id].final, false));
 
-  el.innerHTML = `
-    <div class="tally-label">Underdog point tally (boxed final picks)</div>
-    <div class="tally-value">${realizedPts.toFixed(1)} / ${totalMaxPts.toFixed(1)} pts &middot; ${confirmedCount}/${boxedPicks.length} games decided</div>
+  const finalTallyText = trackedCount === 0
+    ? 'no picks yet'
+    : `${realizedPts.toFixed(1)} / ${totalMaxPts.toFixed(1)} pts (${confirmedCount}/${trackedCount} decided)`;
+
+  const tfoot = document.getElementById('pool-tfoot');
+  tfoot.innerHTML = `
+    <tr class="pool-tally-row">
+      <td colspan="2" class="tally-label">Underdog pts</td>
+      <td class="tally-value">${staticInstanceTally('instance1').toFixed(1)}</td>
+      <td class="tally-value">${staticInstanceTally('instance2').toFixed(1)}</td>
+      <td class="tally-value">${staticInstanceTally('instance3').toFixed(1)}</td>
+      <td class="tally-value">${staticInstanceTally('instance4').toFixed(1)}</td>
+      <td class="tally-value">
+        <div>${finalTallyText}</div>
+        <div class="tally-sub">${boxCount} boxed &middot; ${boxCostDisplay}</div>
+      </td>
+    </tr>
   `;
 }
 
