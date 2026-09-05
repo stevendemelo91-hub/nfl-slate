@@ -279,7 +279,7 @@ def get_line_movement(home_team, away_team, line_log):
     is independently deduplicated against ITS OWN consecutive values - a
     snapshot where only the total changed doesn't create a spurious
     "spread movement" entry, and vice versa."""
-    empty = {'current': None, 'history': []}
+    empty = {'current': None, 'history': [], 'current_raw': None}
     if line_log.empty:
         return {'spread': dict(empty), 'total': dict(empty)}
     matches = line_log[(line_log['home_team'] == home_team) & (line_log['away_team'] == away_team)].copy()
@@ -301,7 +301,12 @@ def get_line_movement(home_team, away_team, line_log):
             return dict(empty)
         current_str = fmt_fn(distinct[-1])
         history_strs = [fmt_fn(r) for r in reversed(distinct[:-1])]
-        return {'current': current_str, 'history': history_strs}
+        # current_raw: clean numeric value (not the display string) for
+        # client-side computation that needs a real number, e.g. the signal
+        # view comparing guess vs current line - avoids fragile string
+        # parsing of "current_str" (which includes price/date formatting).
+        current_raw = float(distinct[-1][value_cols[0]])
+        return {'current': current_str, 'history': history_strs, 'current_raw': current_raw}
 
     def fmt_spread(row):
         spread = row['home_spread']
@@ -835,6 +840,7 @@ def main(season, week):
             'away_injuries': get_injury_candidates(away, injury_report, injury_history),
             'situational_note': situational_overrides.get((home, week), situational_overrides.get((away, week), {})).get('note', ''),
             'spread_current': line_movement['spread']['current'],
+            'spread_current_raw': line_movement['spread']['current_raw'],
             'spread_history': line_movement['spread']['history'],
             'total_current': line_movement['total']['current'],
             'total_history': line_movement['total']['history'],
