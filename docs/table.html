@@ -166,8 +166,10 @@ footer { text-align: center; color: var(--text-faint); font-family: 'Space Grote
 
 .signal-section { margin-top: 28px; }
 .signal-card { background: var(--panel); border: 1px solid var(--ice-border); border-radius: 10px; padding: 12px 14px; margin-bottom: 8px; backdrop-filter: blur(var(--blur)); }
-.signal-card .signal-matchup { font-family: 'Manrope', sans-serif; font-weight: 700; font-size: 13px; margin-bottom: 6px; }
-.signal-card .signal-team { color: var(--ice); }
+.signal-card .signal-matchup { font-family: 'Manrope', sans-serif; font-weight: 700; font-size: 13px; margin-bottom: 8px; }
+.signal-lean { background: var(--ice-bg); border: 1px solid var(--ice-border); border-radius: 8px; padding: 6px 10px; margin-bottom: 8px; display: inline-flex; align-items: center; }
+.signal-lean-label { font-family: 'Space Grotesk', monospace; font-size: 10px; letter-spacing: 0.5px; text-transform: uppercase; color: var(--text-faint); margin-right: 6px; }
+.signal-card .signal-team { color: var(--ice); font-weight: 700; font-family: 'Manrope', sans-serif; }
 .signal-team-logo { width: 18px; height: 18px; object-fit: contain; vertical-align: middle; margin-right: 4px; }
 .signal-card .signal-detail { font-family: 'Space Grotesk', monospace; font-size: 11px; color: var(--text-dim); line-height: 1.7; }
 .signal-card .signal-hc-support { color: var(--win); }
@@ -908,7 +910,9 @@ function renderSignalView(data) {
       <div class="signal-card">
         <div class="signal-matchup">
           <span class="matchup"><span class="away-team">${displayName(g.away_team)}</span><img class="matchup-logo" src="${TEAM_LOGOS[g.away_team] || ''}" alt="" onerror="this.style.display='none'"><span class="at">@</span><img class="matchup-logo" src="${TEAM_LOGOS[g.home_team] || ''}" alt="" onerror="this.style.display='none'"><span class="home-team">${displayName(g.home_team)}</span></span>
-          &mdash; <img class="signal-team-logo" src="${TEAM_LOGOS[s.signalTeam] || ''}" alt="" onerror="this.style.display='none'"><span class="signal-team">${displayName(s.signalTeam)}</span>
+        </div>
+        <div class="signal-lean">
+          <span class="signal-lean-label">Signal:</span> <img class="signal-team-logo" src="${TEAM_LOGOS[s.signalTeam] || ''}" alt="" onerror="this.style.display='none'"><span class="signal-team">${displayName(s.signalTeam)}</span>
         </div>
         <div class="signal-detail">
           <div>Line vs guess: +${s.guessMagnitude.toFixed(1)} pts &middot; Power rating: +${s.powerMagnitude.toFixed(1)} pts &middot; Model strength: ${s.signedStrength.toFixed(2)}</div>
