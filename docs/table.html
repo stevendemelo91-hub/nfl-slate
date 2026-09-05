@@ -856,7 +856,12 @@ function computeSignals(data) {
     const guessMagnitude = Math.abs(diffGuess);
 
     // Criterion 2: power rating vs current line, same threshold, same team.
-    const diffPower = current - power;
+    // power_rating_implied_spread uses the OPPOSITE sign convention from
+    // spread_current_raw (positive = home favored, vs. standard betting
+    // convention where negative = home favored) - must flip it to compare
+    // on the same scale as current/guess.
+    const powerNormalized = -power;
+    const diffPower = current - powerNormalized;
     if (Math.abs(diffPower) < SIGNAL_THRESHOLD) return;
     const powerSignalTeam = diffPower > 0 ? g.home_team : g.away_team;
     if (powerSignalTeam !== signalTeam) return;
