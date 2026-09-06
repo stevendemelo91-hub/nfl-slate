@@ -170,11 +170,17 @@ footer { text-align: center; color: var(--text-faint); font-family: 'Space Grote
 .signal-lean { background: var(--ice-bg); border: 1px solid var(--ice-border); border-radius: 8px; padding: 6px 10px; margin-bottom: 8px; display: inline-flex; align-items: center; }
 .signal-lean-label { font-family: 'Space Grotesk', monospace; font-size: 10px; letter-spacing: 0.5px; text-transform: uppercase; color: var(--text-faint); margin-right: 6px; }
 .signal-card .signal-team { color: var(--ice); font-weight: 700; font-family: 'Manrope', sans-serif; }
+.agreement-count { font-family: 'Space Grotesk', monospace; font-size: 10px; color: var(--text-faint); margin-left: 10px; }
 .signal-team-logo { width: 18px; height: 18px; object-fit: contain; vertical-align: middle; margin-right: 4px; }
 .signal-card .signal-detail { font-family: 'Space Grotesk', monospace; font-size: 11px; color: var(--text-dim); line-height: 1.7; }
 .signal-card .signal-hc-support { color: var(--win); }
 .signal-card .signal-hc-oppose { color: var(--loss); }
 .signal-empty { font-family: 'Space Grotesk', monospace; font-size: 12px; color: var(--text-faint); padding: 12px 0; }
+.signal-card.optimizer-highlight { border-color: var(--gold-border); background: var(--gold-bg); }
+.optimizer-badge { font-family: 'Space Grotesk', monospace; font-size: 10px; letter-spacing: 0.5px; text-transform: uppercase; color: var(--gold); background: rgba(0,0,0,0.15); border: 1px solid var(--gold-border); border-radius: 999px; padding: 2px 8px; margin-left: 8px; }
+.olg-pct-row { margin-top: 6px; padding-top: 6px; border-top: 1px dashed var(--line); display: flex; align-items: center; gap: 6px; }
+.olg-pct-input { width: 56px; font-family: 'Space Grotesk', monospace; font-size: 11px; background: var(--panel-2); border: 1px solid var(--line); border-radius: 6px; padding: 3px 6px; color: var(--text); }
+.olg-pct-note { font-size: 10px; color: var(--gold); }
 .pool-header { margin-bottom: 12px; }
 .pool-title { font-family: 'Manrope', sans-serif; font-weight: 800; font-size: 18px; letter-spacing: -0.2px; }
 .pool-subnote { font-family: 'Space Grotesk', monospace; font-size: 11px; color: var(--text-faint); margin-top: 4px; }
@@ -298,7 +304,7 @@ footer a { color: var(--text-dim); }
   <div class="signal-section">
     <div class="pool-header">
       <div class="pool-title">Signal View</div>
-      <div class="pool-subnote">Games where current line, power rating, and model strength all agree - vs. your guess</div>
+      <div class="pool-subnote">Every pool-eligible game, ranked by how many signals confirm the model's lean - not just the strongest matches</div>
     </div>
     <div id="signal-list"></div>
   </div>
@@ -414,9 +420,9 @@ function loadTracker() {
   try {
     const raw = localStorage.getItem(TRACKER_KEY);
     const parsed = raw ? JSON.parse(raw) : {};
-    return { handicapperPicks: {}, my5Picks: {}, poolPicks: {}, ...parsed };
+    return { handicapperPicks: {}, my5Picks: {}, poolPicks: {}, olgPickPct: {}, ...parsed };
   } catch (e) {
-    return { handicapperPicks: {}, my5Picks: {}, poolPicks: {} };
+    return { handicapperPicks: {}, my5Picks: {}, poolPicks: {}, olgPickPct: {} };
   }
 }
 
@@ -593,7 +599,7 @@ function importBackup(fileInput) {
         return;
       }
       const { lineGuesses: importedGuesses, ...trackerFields } = imported;
-      TRACKER = { handicapperPicks: {}, my5Picks: {}, poolPicks: {}, ...trackerFields };
+      TRACKER = { handicapperPicks: {}, my5Picks: {}, poolPicks: {}, olgPickPct: {}, ...trackerFields };
       saveTracker(TRACKER);
 
       // Restore guess lines too, if this backup has them (older backups,
@@ -835,58 +841,70 @@ const SIGNAL_THRESHOLD = 0.5;
 function computeSignals(data) {
   const signals = [];
   data.games.forEach(g => {
-    const guessRaw = lineGuesses[g.game_id];
-    if (guessRaw === undefined || guessRaw === null || String(guessRaw).trim() === '') return;
-    const guess = parseFloat(guessRaw);
-    if (isNaN(guess)) return;
-
-    const current = g.spread_current_raw;
-    if (current === null || current === undefined) return;
-
-    const power = g.power_rating_implied_spread;
-    if (power === null || power === undefined) return;
+    if (!isPoolEligible(g.gameday)) return; // every decision the pool actually forces, nothing more
 
     const strength = g.raw_strength_score;
-    if (strength === null || strength === undefined) return;
+    if (strength === null || strength === undefined) return; // this is the one anchor signal always required
 
-    // Criterion 1: current line vs guess diverges >= 0.5, favoring one team.
-    // diff > 0 means home got LESS favored than guessed (home spread moved
-    // toward positive) - that's value in home's favor. diff < 0 means home
-    // got MORE favored than guessed - value in away's favor.
-    const diffGuess = current - guess;
-    if (Math.abs(diffGuess) < SIGNAL_THRESHOLD) return;
-    const signalTeam = diffGuess > 0 ? g.home_team : g.away_team;
-    const guessMagnitude = Math.abs(diffGuess);
+    // The model's own lean is the anchor - always available, doesn't
+    // depend on a guess being filled in. Guess and power are then checked
+    // for AGREEMENT with this lean, not as independent pass/fail gates.
+    const leanTeam = strength > 0 ? g.home_team : g.away_team;
 
-    // Criterion 2: power rating vs current line, same threshold, same team.
-    // power_rating_implied_spread uses the OPPOSITE sign convention from
-    // spread_current_raw (positive = home favored, vs. standard betting
-    // convention where negative = home favored) - must flip it to compare
-    // on the same scale as current/guess.
-    const powerNormalized = -power;
-    const diffPower = current - powerNormalized;
-    if (Math.abs(diffPower) < SIGNAL_THRESHOLD) return;
-    const powerSignalTeam = diffPower > 0 ? g.home_team : g.away_team;
-    if (powerSignalTeam !== signalTeam) return;
-    const powerMagnitude = Math.abs(diffPower);
+    const current = g.spread_current_raw;
+    const power = g.power_rating_implied_spread;
 
-    // Criterion 3: model strength itself, signed for whichever team the
-    // signal favors, must be positive (the model independently likes this
-    // team too, not just market movement).
-    const signedStrength = signalTeam === g.home_team ? strength : -strength;
-    if (signedStrength <= 0) return;
+    let guessAgrees = null, guessMagnitude = null;
+    const guessRaw = lineGuesses[g.game_id];
+    if (guessRaw !== undefined && guessRaw !== null && String(guessRaw).trim() !== '' && current !== null && current !== undefined) {
+      const guess = parseFloat(guessRaw);
+      if (!isNaN(guess)) {
+        const diffGuess = current - guess;
+        const diffTeam = diffGuess > 0 ? g.home_team : g.away_team;
+        guessMagnitude = Math.abs(diffGuess);
+        guessAgrees = (diffTeam === leanTeam) && guessMagnitude >= SIGNAL_THRESHOLD;
+      }
+    }
 
-    // Handicapper support/opposition (informational, not a filter criterion)
+    let powerAgrees = null, powerMagnitude = null;
+    if (current !== null && current !== undefined && power !== null && power !== undefined) {
+      // power_rating_implied_spread uses the OPPOSITE sign convention from
+      // spread_current_raw (positive = home favored, vs. standard betting
+      // convention where negative = home favored) - must flip to compare.
+      const diffPower = current - (-power);
+      const diffTeam = diffPower > 0 ? g.home_team : g.away_team;
+      powerMagnitude = Math.abs(diffPower);
+      powerAgrees = (diffTeam === leanTeam) && powerMagnitude >= SIGNAL_THRESHOLD;
+    }
+
+    const agreementCount = (guessAgrees === true ? 1 : 0) + (powerAgrees === true ? 1 : 0);
+    const signedStrength = leanTeam === g.home_team ? strength : -strength;
+
     const picks = TRACKER.handicapperPicks[g.game_id] || [];
     const spreadPicks = picks.filter(p => p.type === 'spread');
-    const supporting = spreadPicks.filter(p => p.side === signalTeam).map(p => p.handicapper);
-    const opposingTeam = signalTeam === g.home_team ? g.away_team : g.home_team;
+    const supporting = spreadPicks.filter(p => p.side === leanTeam).map(p => p.handicapper);
+    const opposingTeam = leanTeam === g.home_team ? g.away_team : g.home_team;
     const opposing = spreadPicks.filter(p => p.side === opposingTeam).map(p => p.handicapper);
 
     signals.push({
-      game: g, signalTeam, guessMagnitude, powerMagnitude, signedStrength,
-      supporting, opposing,
+      game: g, signalTeam: leanTeam, guessAgrees, guessMagnitude, powerAgrees, powerMagnitude,
+      agreementCount, signedStrength, supporting, opposing,
     });
+  });
+
+  // Rank: most agreeing signals first, then lower OLG% (more contrarian
+  // value) ahead of higher, missing OLG% treated as neutral (neither
+  // boosted nor penalized), then by model conviction magnitude.
+  signals.sort((a, b) => {
+    if (b.agreementCount !== a.agreementCount) return b.agreementCount - a.agreementCount;
+    const pctA = TRACKER.olgPickPct[a.game.game_id];
+    const pctB = TRACKER.olgPickPct[b.game.game_id];
+    const hasA = pctA !== undefined && pctA !== null && pctA !== '';
+    const hasB = pctB !== undefined && pctB !== null && pctB !== '';
+    if (hasA && hasB && pctA !== pctB) return pctA - pctB;
+    if (hasA && !hasB) return -1;
+    if (hasB && !hasA) return 1;
+    return Math.abs(b.signedStrength) - Math.abs(a.signedStrength);
   });
   return signals;
 }
@@ -896,31 +914,61 @@ function renderSignalView(data) {
   const signals = computeSignals(data);
 
   if (signals.length === 0) {
-    el.innerHTML = `<div class="signal-empty">No games currently meet all three criteria (fill in more guesses to check more games).</div>`;
+    el.innerHTML = `<div class="signal-empty">No pool-eligible games yet this week.</div>`;
     return;
   }
 
   el.innerHTML = signals.map(s => {
     const g = s.game;
-    const opposingTeam = s.signalTeam === g.home_team ? g.away_team : g.home_team;
+    const pct = TRACKER.olgPickPct[g.game_id];
+    const hasPct = pct !== undefined && pct !== null && pct !== '';
+    const isOptimizerPick = hasPct && parseFloat(pct) < 50;
+
     const hcLine = (s.supporting.length || s.opposing.length)
       ? `<div>${s.supporting.length ? `<span class="signal-hc-support">Support: ${s.supporting.join(', ')}</span>` : ''}${s.supporting.length && s.opposing.length ? ' &middot; ' : ''}${s.opposing.length ? `<span class="signal-hc-oppose">Oppose: ${s.opposing.join(', ')}</span>` : ''}</div>`
       : `<div>No handicapper spread picks on this game</div>`;
+    const pctValue = hasPct ? pct : '';
+    const optimizerBadge = isOptimizerPick ? `<span class="optimizer-badge">Optimizer Pick</span>` : '';
+
+    const guessText = s.guessAgrees === null ? 'no guess yet'
+      : s.guessAgrees ? `agrees (+${s.guessMagnitude.toFixed(1)} pts)` : `disagrees`;
+    const powerText = s.powerAgrees === null ? 'no line yet'
+      : s.powerAgrees ? `agrees (+${s.powerMagnitude.toFixed(1)} pts)` : `disagrees`;
+    const agreementLabel = `${s.agreementCount}/2 signals confirm`;
+
     return `
-      <div class="signal-card">
+      <div class="signal-card ${isOptimizerPick ? 'optimizer-highlight' : ''}">
         <div class="signal-matchup">
           <span class="matchup"><span class="away-team">${displayName(g.away_team)}</span><img class="matchup-logo" src="${TEAM_LOGOS[g.away_team] || ''}" alt="" onerror="this.style.display='none'"><span class="at">@</span><img class="matchup-logo" src="${TEAM_LOGOS[g.home_team] || ''}" alt="" onerror="this.style.display='none'"><span class="home-team">${displayName(g.home_team)}</span></span>
+          ${optimizerBadge}
         </div>
         <div class="signal-lean">
-          <span class="signal-lean-label">Signal:</span> <img class="signal-team-logo" src="${TEAM_LOGOS[s.signalTeam] || ''}" alt="" onerror="this.style.display='none'"><span class="signal-team">${displayName(s.signalTeam)}</span>
+          <span class="signal-lean-label">Lean:</span> <img class="signal-team-logo" src="${TEAM_LOGOS[s.signalTeam] || ''}" alt="" onerror="this.style.display='none'"><span class="signal-team">${displayName(s.signalTeam)}</span>
+          <span class="agreement-count">${agreementLabel}</span>
         </div>
         <div class="signal-detail">
-          <div>Line vs guess: +${s.guessMagnitude.toFixed(1)} pts &middot; Power rating: +${s.powerMagnitude.toFixed(1)} pts &middot; Model strength: ${s.signedStrength.toFixed(2)}</div>
+          <div>Line vs guess: ${guessText} &middot; Power rating: ${powerText} &middot; Model strength: ${s.signedStrength.toFixed(2)}</div>
           ${hcLine}
+          <div class="olg-pct-row">
+            <span class="signal-lean-label">OLG % on ${displayName(s.signalTeam)}:</span>
+            <input type="number" min="0" max="100" step="1" class="olg-pct-input" value="${pctValue}"
+              placeholder="e.g. 41" onchange="updateOlgPct('${g.game_id}', this.value)">
+            <span class="olg-pct-note">${isOptimizerPick ? '(under 50% - underdog by picks)' : ''}</span>
+          </div>
         </div>
       </div>
     `;
   }).join('');
+}
+
+function updateOlgPct(gameId, value) {
+  if (value === '') {
+    delete TRACKER.olgPickPct[gameId];
+  } else {
+    TRACKER.olgPickPct[gameId] = parseFloat(value);
+  }
+  saveTracker(TRACKER);
+  renderSignalView(CURRENT_DATA);
 }
 
 const TEAM_ABBR_TO_FULL = {
