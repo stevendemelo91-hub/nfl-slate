@@ -475,14 +475,22 @@ def fetch_injury_report(season, week):
     """Current-season injury report for the target week. Returns empty
     DataFrame gracefully if not published yet (early season, or the file
     doesn't exist for this season) - matches the graceful-fallback pattern
-    used elsewhere (depth charts, elite QB list, etc)."""
+    used elsewhere (depth charts, elite QB list, etc).
+
+    Surfaces both the final report designation (Out/Doubtful) AND, before
+    that's assigned - report_status stays NaN until later in the week, even
+    Thu/Fri for a Friday game - a meaningful early practice-status signal
+    (Did Not Participate). Without this, nothing shows up for days even
+    when real, useful early-week data already exists."""
     try:
         inj = pd.read_csv(f'https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_{season}.csv',
                            low_memory=False)
     except Exception:
         return pd.DataFrame()
     inj = inj[inj['week'] == week]
-    inj = inj[inj['report_status'].isin(['Out', 'Doubtful'])]
+    final_designation = inj['report_status'].isin(['Out', 'Doubtful'])
+    early_dnp_signal = inj['report_status'].isna() & (inj['practice_status'] == 'Did Not Participate In Practice')
+    inj = inj[final_designation | early_dnp_signal]
     inj = inj[inj['position'] != 'QB']  # QB handled separately by compute_qb_coefficient
     return inj
 
@@ -508,8 +516,11 @@ def get_injury_candidates(team, injury_df, injury_history):
                 {'date': r['snapshot_date'], 'report_status': r.get('report_status'), 'practice_status': r.get('practice_status')}
                 for _, r in player_log.iterrows()
             ]
+        injury_note = row.get('practice_primary_injury')
+        status_display = row['report_status'] if pd.notna(row['report_status']) else \
+            f"DNP (practice){f' - {injury_note}' if pd.notna(injury_note) else ''}"
         candidates.append({
-            'name': row['full_name'], 'position': row['position'], 'status': row['report_status'],
+            'name': row['full_name'], 'position': row['position'], 'status': status_display,
             'trend': trend,
         })
     return candidates
