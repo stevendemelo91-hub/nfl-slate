@@ -181,6 +181,10 @@ footer { text-align: center; color: var(--text-faint); font-family: 'Space Grote
 .olg-pct-row { margin-top: 6px; padding-top: 6px; border-top: 1px dashed var(--line); display: flex; align-items: center; gap: 6px; }
 .olg-pct-input { width: 56px; font-family: 'Space Grotesk', monospace; font-size: 11px; background: var(--panel-2); border: 1px solid var(--line); border-radius: 6px; padding: 3px 6px; color: var(--text); }
 .olg-pct-note { font-size: 10px; color: var(--gold); }
+.optimizer-section { margin-top: 28px; }
+.optimizer-row.optimizer-highlight td { background: var(--gold-bg); }
+.optimizer-factors { font-family: 'Space Grotesk', monospace; font-weight: 700; }
+.optimizer-detail { font-family: 'Space Grotesk', monospace; font-size: 11px; color: var(--text-dim); line-height: 1.6; }
 .pool-header { margin-bottom: 12px; }
 .pool-title { font-family: 'Manrope', sans-serif; font-weight: 800; font-size: 18px; letter-spacing: -0.2px; }
 .pool-subnote { font-family: 'Space Grotesk', monospace; font-size: 11px; color: var(--text-faint); margin-top: 4px; }
@@ -304,9 +308,30 @@ footer a { color: var(--text-dim); }
   <div class="signal-section">
     <div class="pool-header">
       <div class="pool-title">Signal View</div>
-      <div class="pool-subnote">Every pool-eligible game, ranked by how many signals confirm the model's lean - not just the strongest matches</div>
+      <div class="pool-subnote">Games where current line, power rating, and model strength all agree - vs. your guess</div>
     </div>
     <div id="signal-list"></div>
+  </div>
+
+  <div class="optimizer-section">
+    <div class="pool-header">
+      <div class="pool-title">Pool Optimizer</div>
+      <div class="pool-subnote">Every pool-eligible game, double-filtered: combined factor strength first, then lowest OLG pick % as you go down the board</div>
+    </div>
+    <div class="table-scroll" style="max-height: 56vh;">
+      <table id="optimizer-table">
+        <thead>
+          <tr>
+            <th>Matchup</th>
+            <th>Lean</th>
+            <th class="numeric">Factors</th>
+            <th>Detail</th>
+            <th class="numeric">OLG %</th>
+          </tr>
+        </thead>
+        <tbody id="optimizer-body"></tbody>
+      </table>
+    </div>
   </div>
 
   <footer>Win-confidence model &middot; nfl_model_spec.md &middot; not betting advice</footer>
@@ -834,11 +859,62 @@ function render(data) {
 
   renderPoolTable(data);
   renderSignalView(data);
+  renderOptimizerTable(data);
 }
 
 const SIGNAL_THRESHOLD = 0.5;
 
 function computeSignals(data) {
+  // Signal View: strict filter - only games meeting ALL THREE criteria
+  // (line vs guess, power vs current, model strength) in the same
+  // direction show up here. Separate from the Pool Optimizer below, which
+  // covers every game and ranks rather than filters.
+  const signals = [];
+  data.games.forEach(g => {
+    const guessRaw = lineGuesses[g.game_id];
+    if (guessRaw === undefined || guessRaw === null || String(guessRaw).trim() === '') return;
+    const guess = parseFloat(guessRaw);
+    if (isNaN(guess)) return;
+
+    const current = g.spread_current_raw;
+    if (current === null || current === undefined) return;
+
+    const power = g.power_rating_implied_spread;
+    if (power === null || power === undefined) return;
+
+    const strength = g.raw_strength_score;
+    if (strength === null || strength === undefined) return;
+
+    const diffGuess = current - guess;
+    if (Math.abs(diffGuess) < SIGNAL_THRESHOLD) return;
+    const signalTeam = diffGuess > 0 ? g.home_team : g.away_team;
+    const guessMagnitude = Math.abs(diffGuess);
+
+    const powerNormalized = -power;
+    const diffPower = current - powerNormalized;
+    if (Math.abs(diffPower) < SIGNAL_THRESHOLD) return;
+    const powerSignalTeam = diffPower > 0 ? g.home_team : g.away_team;
+    if (powerSignalTeam !== signalTeam) return;
+    const powerMagnitude = Math.abs(diffPower);
+
+    const signedStrength = signalTeam === g.home_team ? strength : -strength;
+    if (signedStrength <= 0) return;
+
+    const picks = TRACKER.handicapperPicks[g.game_id] || [];
+    const spreadPicks = picks.filter(p => p.type === 'spread');
+    const supporting = spreadPicks.filter(p => p.side === signalTeam).map(p => p.handicapper);
+    const opposingTeam = signalTeam === g.home_team ? g.away_team : g.home_team;
+    const opposing = spreadPicks.filter(p => p.side === opposingTeam).map(p => p.handicapper);
+
+    signals.push({
+      game: g, signalTeam, guessMagnitude, powerMagnitude, signedStrength,
+      supporting, opposing,
+    });
+  });
+  return signals;
+}
+
+function computeOptimizerHierarchy(data) {
   const signals = [];
   data.games.forEach(g => {
     if (!isPoolEligible(g.gameday)) return; // every decision the pool actually forces, nothing more
@@ -892,9 +968,9 @@ function computeSignals(data) {
     });
   });
 
-  // Rank: most agreeing signals first, then lower OLG% (more contrarian
-  // value) ahead of higher, missing OLG% treated as neutral (neither
-  // boosted nor penalized), then by model conviction magnitude.
+  // Double filter, exactly as specified: (1) combined factor strength first,
+  // (2) lowest OLG% second, as the tiebreaker within the same strength tier.
+  // Missing OLG% sorts after any entered value (nothing to prioritize on).
   signals.sort((a, b) => {
     if (b.agreementCount !== a.agreementCount) return b.agreementCount - a.agreementCount;
     const pctA = TRACKER.olgPickPct[a.game.game_id];
@@ -914,47 +990,26 @@ function renderSignalView(data) {
   const signals = computeSignals(data);
 
   if (signals.length === 0) {
-    el.innerHTML = `<div class="signal-empty">No pool-eligible games yet this week.</div>`;
+    el.innerHTML = `<div class="signal-empty">No games currently meet all three criteria (fill in more guesses to check more games).</div>`;
     return;
   }
 
   el.innerHTML = signals.map(s => {
     const g = s.game;
-    const pct = TRACKER.olgPickPct[g.game_id];
-    const hasPct = pct !== undefined && pct !== null && pct !== '';
-    const isOptimizerPick = hasPct && parseFloat(pct) < 50;
-
     const hcLine = (s.supporting.length || s.opposing.length)
       ? `<div>${s.supporting.length ? `<span class="signal-hc-support">Support: ${s.supporting.join(', ')}</span>` : ''}${s.supporting.length && s.opposing.length ? ' &middot; ' : ''}${s.opposing.length ? `<span class="signal-hc-oppose">Oppose: ${s.opposing.join(', ')}</span>` : ''}</div>`
       : `<div>No handicapper spread picks on this game</div>`;
-    const pctValue = hasPct ? pct : '';
-    const optimizerBadge = isOptimizerPick ? `<span class="optimizer-badge">Optimizer Pick</span>` : '';
-
-    const guessText = s.guessAgrees === null ? 'no guess yet'
-      : s.guessAgrees ? `agrees (+${s.guessMagnitude.toFixed(1)} pts)` : `disagrees`;
-    const powerText = s.powerAgrees === null ? 'no line yet'
-      : s.powerAgrees ? `agrees (+${s.powerMagnitude.toFixed(1)} pts)` : `disagrees`;
-    const agreementLabel = `${s.agreementCount}/2 signals confirm`;
-
     return `
-      <div class="signal-card ${isOptimizerPick ? 'optimizer-highlight' : ''}">
+      <div class="signal-card">
         <div class="signal-matchup">
           <span class="matchup"><span class="away-team">${displayName(g.away_team)}</span><img class="matchup-logo" src="${TEAM_LOGOS[g.away_team] || ''}" alt="" onerror="this.style.display='none'"><span class="at">@</span><img class="matchup-logo" src="${TEAM_LOGOS[g.home_team] || ''}" alt="" onerror="this.style.display='none'"><span class="home-team">${displayName(g.home_team)}</span></span>
-          ${optimizerBadge}
         </div>
         <div class="signal-lean">
-          <span class="signal-lean-label">Lean:</span> <img class="signal-team-logo" src="${TEAM_LOGOS[s.signalTeam] || ''}" alt="" onerror="this.style.display='none'"><span class="signal-team">${displayName(s.signalTeam)}</span>
-          <span class="agreement-count">${agreementLabel}</span>
+          <span class="signal-lean-label">Signal:</span> <img class="signal-team-logo" src="${TEAM_LOGOS[s.signalTeam] || ''}" alt="" onerror="this.style.display='none'"><span class="signal-team">${displayName(s.signalTeam)}</span>
         </div>
         <div class="signal-detail">
-          <div>Line vs guess: ${guessText} &middot; Power rating: ${powerText} &middot; Model strength: ${s.signedStrength.toFixed(2)}</div>
+          <div>Line vs guess: +${s.guessMagnitude.toFixed(1)} pts &middot; Power rating: +${s.powerMagnitude.toFixed(1)} pts &middot; Model strength: ${s.signedStrength.toFixed(2)}</div>
           ${hcLine}
-          <div class="olg-pct-row">
-            <span class="signal-lean-label">OLG % on ${displayName(s.signalTeam)}:</span>
-            <input type="number" min="0" max="100" step="1" class="olg-pct-input" value="${pctValue}"
-              placeholder="e.g. 41" onchange="updateOlgPct('${g.game_id}', this.value)">
-            <span class="olg-pct-note">${isOptimizerPick ? '(under 50% - underdog by picks)' : ''}</span>
-          </div>
         </div>
       </div>
     `;
@@ -968,7 +1023,49 @@ function updateOlgPct(gameId, value) {
     TRACKER.olgPickPct[gameId] = parseFloat(value);
   }
   saveTracker(TRACKER);
-  renderSignalView(CURRENT_DATA);
+  renderOptimizerTable(CURRENT_DATA);
+}
+
+function renderOptimizerTable(data) {
+  const tbody = document.getElementById('optimizer-body');
+  const rows = computeOptimizerHierarchy(data);
+
+  if (rows.length === 0) {
+    tbody.innerHTML = `<tr><td colspan="5" class="signal-empty">No pool-eligible games yet this week.</td></tr>`;
+    return;
+  }
+
+  tbody.innerHTML = rows.map(s => {
+    const g = s.game;
+    const pct = TRACKER.olgPickPct[g.game_id];
+    const hasPct = pct !== undefined && pct !== null && pct !== '';
+    const isOptimizerPick = hasPct && parseFloat(pct) < 50;
+    const pctValue = hasPct ? pct : '';
+
+    const guessText = s.guessAgrees === null ? 'no guess yet'
+      : s.guessAgrees ? `line agrees (+${s.guessMagnitude.toFixed(1)})` : `line disagrees`;
+    const powerText = s.powerAgrees === null ? 'no line yet'
+      : s.powerAgrees ? `power agrees (+${s.powerMagnitude.toFixed(1)})` : `power disagrees`;
+    const hcLine = (s.supporting.length || s.opposing.length)
+      ? `${s.supporting.length ? `<span class="signal-hc-support">Support: ${s.supporting.join(', ')}</span>` : ''}${s.supporting.length && s.opposing.length ? ' &middot; ' : ''}${s.opposing.length ? `<span class="signal-hc-oppose">Oppose: ${s.opposing.join(', ')}</span>` : ''}`
+      : '';
+
+    return `
+      <tr class="optimizer-row ${isOptimizerPick ? 'optimizer-highlight' : ''}">
+        <td data-label="Matchup"><span class="matchup"><span class="away-team">${displayName(g.away_team)}</span><img class="matchup-logo" src="${TEAM_LOGOS[g.away_team] || ''}" alt="" onerror="this.style.display='none'"><span class="at">@</span><img class="matchup-logo" src="${TEAM_LOGOS[g.home_team] || ''}" alt="" onerror="this.style.display='none'"><span class="home-team">${displayName(g.home_team)}</span></span></td>
+        <td data-label="Lean"><img class="signal-team-logo" src="${TEAM_LOGOS[s.signalTeam] || ''}" alt="" onerror="this.style.display='none'"><span class="signal-team">${displayName(s.signalTeam)}</span></td>
+        <td class="numeric optimizer-factors" data-label="Factors">${s.agreementCount}/2</td>
+        <td data-label="Detail" class="optimizer-detail">
+          <div>${guessText} &middot; ${powerText} &middot; strength ${s.signedStrength.toFixed(2)}</div>
+          ${hcLine ? `<div>${hcLine}</div>` : ''}
+        </td>
+        <td class="numeric" data-label="OLG %">
+          <input type="number" min="0" max="100" step="1" class="olg-pct-input" value="${pctValue}"
+            placeholder="e.g. 41" onchange="updateOlgPct('${g.game_id}', this.value)">
+        </td>
+      </tr>
+    `;
+  }).join('');
 }
 
 const TEAM_ABBR_TO_FULL = {
