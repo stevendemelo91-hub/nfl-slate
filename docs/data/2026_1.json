@@ -48,12 +48,63 @@
           "notes": []
         }
       ],
-      "home_injuries": [],
-      "away_injuries": [],
+      "home_injuries": [
+        {
+          "name": "Ty Okada",
+          "position": "S",
+          "status": "DNP (practice) - Hamstring",
+          "trend": [
+            {
+              "date": "2026-09-07",
+              "report_status": NaN,
+              "practice_status": "Did Not Participate In Practice"
+            }
+          ]
+        }
+      ],
+      "away_injuries": [
+        {
+          "name": "Christian Barmore",
+          "position": "DT",
+          "status": "DNP (practice) - Knee",
+          "trend": [
+            {
+              "date": "2026-09-07",
+              "report_status": NaN,
+              "practice_status": "Did Not Participate In Practice"
+            }
+          ]
+        },
+        {
+          "name": "Ben Brown",
+          "position": "C",
+          "status": "DNP (practice) - Knee",
+          "trend": [
+            {
+              "date": "2026-09-07",
+              "report_status": NaN,
+              "practice_status": "Did Not Participate In Practice"
+            }
+          ]
+        },
+        {
+          "name": "TreVeyon Henderson",
+          "position": "RB",
+          "status": "DNP (practice) - Ankle",
+          "trend": [
+            {
+              "date": "2026-09-07",
+              "report_status": NaN,
+              "practice_status": "Did Not Participate In Practice"
+            }
+          ]
+        }
+      ],
       "situational_note": "",
-      "spread_current": "-3.5 -108 (9/7)",
+      "spread_current": "-3.5 -105 (9/8)",
       "spread_current_raw": -3.5,
       "spread_history": [
+        "-3.5 -108 (9/7)",
         "-3.5 -106 (9/5)",
         "-3.5 -112 (8/31)"
       ],
@@ -170,9 +221,11 @@
       "home_injuries": [],
       "away_injuries": [],
       "situational_note": "",
-      "spread_current": "+2.5 +100 (9/7)",
-      "spread_current_raw": 2.5,
+      "spread_current": "+3.0 -118 (9/8)",
+      "spread_current_raw": 3.0,
       "spread_history": [
+        "+2.5 +102 (9/8)",
+        "+2.5 +100 (9/7)",
         "+2.5 -102 (9/5)",
         "+2.5 +100 (9/3)",
         "+2.5 +102 (8/31)"
@@ -351,14 +404,16 @@
       "home_injuries": [],
       "away_injuries": [],
       "situational_note": "",
-      "spread_current": "+1.5 -120 (9/7)",
+      "spread_current": "+1.5 -114 (9/7)",
       "spread_current_raw": 1.5,
       "spread_history": [
+        "+1.5 -120 (9/7)",
         "+1.5 -122 (9/2)",
         "+1.5 -118 (8/31)"
       ],
-      "total_current": "O/U 44.5 (-110) (9/4)",
+      "total_current": "O/U 44.5 (-106) (9/7)",
       "total_history": [
+        "O/U 44.5 (-110) (9/4)",
         "O/U 44.5 (-112) (8/31)"
       ],
       "home_score": null,
@@ -472,9 +527,10 @@
       "home_injuries": [],
       "away_injuries": [],
       "situational_note": "",
-      "spread_current": "-8.5 -105 (9/7)",
+      "spread_current": "-8.5 -108 (9/8)",
       "spread_current_raw": -8.5,
       "spread_history": [
+        "-8.5 -105 (9/7)",
         "-7.5 -115 (8/31)"
       ],
       "total_current": "O/U 40.5 (-108) (9/7)",
