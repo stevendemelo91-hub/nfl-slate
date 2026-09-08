@@ -513,7 +513,9 @@ def get_injury_candidates(team, injury_df, injury_history):
                 (injury_history['gsis_id'] == row['gsis_id']) & (injury_history['week'] == row['week'])
             ].sort_values('snapshot_date')
             trend = [
-                {'date': r['snapshot_date'], 'report_status': r.get('report_status'), 'practice_status': r.get('practice_status')}
+                {'date': r['snapshot_date'],
+                 'report_status': r.get('report_status') if pd.notna(r.get('report_status')) else None,
+                 'practice_status': r.get('practice_status') if pd.notna(r.get('practice_status')) else None}
                 for _, r in player_log.iterrows()
             ]
         injury_note = row.get('practice_primary_injury')
@@ -881,7 +883,12 @@ def main(season, week):
     os.makedirs('docs/data', exist_ok=True)
     out_path = f'docs/data/{season}_{week}.json'
     with open(out_path, 'w') as f:
-        json.dump(output, f, indent=2, default=str)
+        # allow_nan=False: fail loudly here (visible in the Actions log) if
+        # a NaN ever leaks into the output anywhere in this pipeline, rather
+        # than silently producing invalid JSON that browsers' strict
+        # JSON.parse() rejects - which breaks the entire live page with no
+        # error trace at all. Better to catch it at generation time.
+        json.dump(output, f, indent=2, default=str, allow_nan=False)
     print(f'\nSaved {out_path}')
 
     update_manifest(season, week)
