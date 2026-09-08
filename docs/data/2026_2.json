@@ -108,11 +108,15 @@
       "home_injuries": [],
       "away_injuries": [],
       "situational_note": "",
-      "spread_current": "-1.5 -110 (8/31)",
+      "spread_current": "-1.5 -106 (9/8)",
       "spread_current_raw": -1.5,
-      "spread_history": [],
-      "total_current": "O/U 43.5 (-118) (8/31)",
-      "total_history": [],
+      "spread_history": [
+        "-1.5 -110 (8/31)"
+      ],
+      "total_current": "O/U 43.5 (-110) (9/8)",
+      "total_history": [
+        "O/U 43.5 (-118) (8/31)"
+      ],
       "home_score": null,
       "away_score": null,
       "is_final": false
@@ -163,11 +167,15 @@
       "home_injuries": [],
       "away_injuries": [],
       "situational_note": "",
-      "spread_current": "-7.5 -110 (8/31)",
-      "spread_current_raw": -7.5,
-      "spread_history": [],
-      "total_current": "O/U 46.5 (-110) (8/31)",
-      "total_history": [],
+      "spread_current": "-8.5 -104 (9/8)",
+      "spread_current_raw": -8.5,
+      "spread_history": [
+        "-7.5 -110 (8/31)"
+      ],
+      "total_current": "O/U 46.5 (-118) (9/8)",
+      "total_history": [
+        "O/U 46.5 (-110) (8/31)"
+      ],
       "home_score": null,
       "away_score": null,
       "is_final": false
@@ -219,11 +227,15 @@
       "home_injuries": [],
       "away_injuries": [],
       "situational_note": "",
-      "spread_current": "-3.5 -110 (8/31)",
-      "spread_current_raw": -3.5,
-      "spread_history": [],
-      "total_current": "O/U 45.5 (-110) (8/31)",
-      "total_history": [],
+      "spread_current": "-3.0 -110 (9/8)",
+      "spread_current_raw": -3.0,
+      "spread_history": [
+        "-3.5 -110 (8/31)"
+      ],
+      "total_current": "O/U 46.5 (-110) (9/8)",
+      "total_history": [
+        "O/U 45.5 (-110) (8/31)"
+      ],
       "home_score": null,
       "away_score": null,
       "is_final": false
@@ -331,11 +343,15 @@
       "home_injuries": [],
       "away_injuries": [],
       "situational_note": "",
-      "spread_current": "-4.5 -110 (8/31)",
-      "spread_current_raw": -4.5,
-      "spread_history": [],
-      "total_current": "O/U 43.5 (-110) (8/31)",
-      "total_history": [],
+      "spread_current": "-5.5 -110 (9/8)",
+      "spread_current_raw": -5.5,
+      "spread_history": [
+        "-4.5 -110 (8/31)"
+      ],
+      "total_current": "O/U 43.5 (-105) (9/8)",
+      "total_history": [
+        "O/U 43.5 (-110) (8/31)"
+      ],
       "home_score": null,
       "away_score": null,
       "is_final": false
@@ -389,8 +405,10 @@
       "spread_current": "+5.5 -110 (8/31)",
       "spread_current_raw": 5.5,
       "spread_history": [],
-      "total_current": "O/U 42.5 (-110) (8/31)",
-      "total_history": [],
+      "total_current": "O/U 42.5 (-118) (9/8)",
+      "total_history": [
+        "O/U 42.5 (-110) (8/31)"
+      ],
       "home_score": null,
       "away_score": null,
       "is_final": false
@@ -443,11 +461,15 @@
       "home_injuries": [],
       "away_injuries": [],
       "situational_note": "",
-      "spread_current": "-5.5 -110 (8/31)",
-      "spread_current_raw": -5.5,
-      "spread_history": [],
-      "total_current": "O/U 42.5 (-110) (8/31)",
-      "total_history": [],
+      "spread_current": "-6.5 -115 (9/8)",
+      "spread_current_raw": -6.5,
+      "spread_history": [
+        "-5.5 -110 (8/31)"
+      ],
+      "total_current": "O/U 40.5 (-105) (9/8)",
+      "total_history": [
+        "O/U 42.5 (-110) (8/31)"
+      ],
       "home_score": null,
       "away_score": null,
       "is_final": false
@@ -498,11 +520,15 @@
       "home_injuries": [],
       "away_injuries": [],
       "situational_note": "",
-      "spread_current": "+4.5 -110 (8/31)",
-      "spread_current_raw": 4.5,
-      "spread_history": [],
-      "total_current": "O/U 42.5 (-110) (8/31)",
-      "total_history": [],
+      "spread_current": "+5.5 -110 (9/8)",
+      "spread_current_raw": 5.5,
+      "spread_history": [
+        "+4.5 -110 (8/31)"
+      ],
+      "total_current": "O/U 41.5 (-115) (9/8)",
+      "total_history": [
+        "O/U 42.5 (-110) (8/31)"
+      ],
       "home_score": null,
       "away_score": null,
       "is_final": false
@@ -555,11 +581,15 @@
       "home_injuries": [],
       "away_injuries": [],
       "situational_note": "",
-      "spread_current": "-2.5 -115 (8/31)",
+      "spread_current": "-2.5 -114 (9/8)",
       "spread_current_raw": -2.5,
-      "spread_history": [],
-      "total_current": "O/U 43.5 (-110) (8/31)",
-      "total_history": [],
+      "spread_history": [
+        "-2.5 -115 (8/31)"
+      ],
+      "total_current": "O/U 44.5 (-118) (9/8)",
+      "total_history": [
+        "O/U 43.5 (-110) (8/31)"
+      ],
       "home_score": null,
       "away_score": null,
       "is_final": false
@@ -610,11 +640,15 @@
       "home_injuries": [],
       "away_injuries": [],
       "situational_note": "",
-      "spread_current": "-8.5 -110 (8/31)",
+      "spread_current": "-8.5 -105 (9/8)",
       "spread_current_raw": -8.5,
-      "spread_history": [],
-      "total_current": "O/U 42.5 (-110) (8/31)",
-      "total_history": [],
+      "spread_history": [
+        "-8.5 -110 (8/31)"
+      ],
+      "total_current": "O/U 42.5 (-118) (9/8)",
+      "total_history": [
+        "O/U 42.5 (-110) (8/31)"
+      ],
       "home_score": null,
       "away_score": null,
       "is_final": false
@@ -666,11 +700,15 @@
       "home_injuries": [],
       "away_injuries": [],
       "situational_note": "",
-      "spread_current": "+10.0 -110 (8/31)",
-      "spread_current_raw": 10.0,
-      "spread_history": [],
-      "total_current": "O/U 44.5 (-110) (8/31)",
-      "total_history": [],
+      "spread_current": "+9.5 -115 (9/8)",
+      "spread_current_raw": 9.5,
+      "spread_history": [
+        "+10.0 -110 (8/31)"
+      ],
+      "total_current": "O/U 44.5 (-102) (9/8)",
+      "total_history": [
+        "O/U 44.5 (-110) (8/31)"
+      ],
       "home_score": null,
       "away_score": null,
       "is_final": false
@@ -777,11 +815,15 @@
       "home_injuries": [],
       "away_injuries": [],
       "situational_note": "",
-      "spread_current": "-10.5 -110 (8/31)",
-      "spread_current_raw": -10.5,
-      "spread_history": [],
-      "total_current": "O/U 46.5 (-110) (8/31)",
-      "total_history": [],
+      "spread_current": "-12.5 -110 (9/8)",
+      "spread_current_raw": -12.5,
+      "spread_history": [
+        "-10.5 -110 (8/31)"
+      ],
+      "total_current": "O/U 45.5 (-118) (9/8)",
+      "total_history": [
+        "O/U 46.5 (-110) (8/31)"
+      ],
       "home_score": null,
       "away_score": null,
       "is_final": false
@@ -832,11 +874,15 @@
       "home_injuries": [],
       "away_injuries": [],
       "situational_note": "",
-      "spread_current": "-6.5 -110 (8/31)",
-      "spread_current_raw": -6.5,
-      "spread_history": [],
-      "total_current": "O/U 47.5 (-110) (8/31)",
-      "total_history": [],
+      "spread_current": "-5.5 -110 (9/8)",
+      "spread_current_raw": -5.5,
+      "spread_history": [
+        "-6.5 -110 (8/31)"
+      ],
+      "total_current": "O/U 46.5 (-110) (9/8)",
+      "total_history": [
+        "O/U 47.5 (-110) (8/31)"
+      ],
       "home_score": null,
       "away_score": null,
       "is_final": false
@@ -887,11 +933,15 @@
       "home_injuries": [],
       "away_injuries": [],
       "situational_note": "",
-      "spread_current": "-8.5 -110 (8/31)",
-      "spread_current_raw": -8.5,
-      "spread_history": [],
-      "total_current": "O/U 48.5 (-110) (8/31)",
-      "total_history": [],
+      "spread_current": "-9.5 -118 (9/8)",
+      "spread_current_raw": -9.5,
+      "spread_history": [
+        "-8.5 -110 (8/31)"
+      ],
+      "total_current": "O/U 47.5 (-110) (9/8)",
+      "total_history": [
+        "O/U 48.5 (-110) (8/31)"
+      ],
       "home_score": null,
       "away_score": null,
       "is_final": false
