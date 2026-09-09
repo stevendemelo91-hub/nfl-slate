@@ -578,6 +578,51 @@ def get_situational_adjustment(team, week, overrides):
     return entry['adjustment'] if entry else 0.0
 
 
+def load_pool_results_history(path='pool_results_history.csv'):
+    """OLG PROLINE pool settlement history - logged week by week, from two
+    sources: (1) imported historical archive (season, week, correct
+    threshold, upsets, winners, total pot - no pool_id/closed_date since
+    the source spreadsheet didn't track those), and (2) ongoing weeks
+    pulled from OLG's Results tab on request (has pool_id/closed_date, but
+    not upsets/total_pot directly - those aren't shown there). Every field
+    beyond season/week is optional so both sources coexist in one file.
+    Used to give the dashboard a season-over-season comparison: how this
+    week's card's difficulty stacks up against prior weeks. Returns an
+    empty list gracefully if the file doesn't exist yet.
+    Format: season,week,pool_id,pool_label,closed_date,no_of_winners,
+            winning_selections_required,winning_selections_total,
+            share_prize,upsets,total_pot"""
+    try:
+        df = pd.read_csv(path)
+    except FileNotFoundError:
+        return []
+
+    def opt_int(v):
+        return int(v) if pd.notna(v) else None
+
+    def opt_float(v):
+        return float(v) if pd.notna(v) else None
+
+    def opt_str(v):
+        return str(v) if pd.notna(v) else None
+
+    records = []
+    for _, row in df.iterrows():
+        records.append({
+            'season': int(row['season']), 'week': int(row['week']),
+            'pool_id': opt_str(row.get('pool_id')), 'pool_label': opt_str(row.get('pool_label')),
+            'closed_date': opt_str(row.get('closed_date')),
+            'no_of_winners': opt_int(row.get('no_of_winners')),
+            'winning_selections_required': opt_int(row.get('winning_selections_required')),
+            'winning_selections_total': opt_int(row.get('winning_selections_total')),
+            'share_prize': opt_float(row.get('share_prize')),
+            'upsets': opt_float(row.get('upsets')),
+            'total_pot': opt_float(row.get('total_pot')),
+        })
+    records.sort(key=lambda r: (r['season'], r['week']))
+    return records
+
+
 def load_qb_overrides(path='qb_overrides.csv'):
     """Optional manual override file: team,backup_starting,rookie_starting,
     normal_starter_override (all optional except team). The last field
@@ -689,6 +734,8 @@ def main(season, week):
     elite_qbs = fetch_elite_qb_list(season - 1)
     qb_overrides = load_qb_overrides()
     situational_overrides = load_situational_overrides()
+    pool_results_history = load_pool_results_history()
+    print(f'Pool results history: {len(pool_results_history)} settled week(s) logged\n')
     print(f'  {len(starters)} teams with current QB1 identified, {len(elite_qbs)} elite QBs from {season-1}, '
           f'{len(qb_overrides)} manual overrides loaded\n')
 
@@ -878,6 +925,7 @@ def main(season, week):
             'Full spec in nfl_model_spec.md.',
         ],
         'games': results,
+        'pool_results_history': pool_results_history,
     }
 
     os.makedirs('docs/data', exist_ok=True)
