@@ -1039,7 +1039,7 @@ function renderOptimizerTable(data) {
     const g = s.game;
     const pct = TRACKER.olgPickPct[g.game_id];
     const hasPct = pct !== undefined && pct !== null && pct !== '';
-    const isOptimizerPick = hasPct && parseFloat(pct) < 50;
+    const isOptimizerPick = hasPct && parseFloat(pct) < 50 && s.agreementCount >= 1;
     const pctValue = hasPct ? pct : '';
 
     const guessText = s.guessAgrees === null ? 'no guess yet'
