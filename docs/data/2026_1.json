@@ -52,11 +52,16 @@
         {
           "name": "Ty Okada",
           "position": "S",
-          "status": "DNP (practice) - Hamstring",
+          "status": "Out",
           "trend": [
             {
               "date": "2026-09-07",
               "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-09-09",
+              "report_status": "Out",
               "practice_status": "Did Not Participate In Practice"
             }
           ]
@@ -66,11 +71,16 @@
         {
           "name": "Ben Brown",
           "position": "C",
-          "status": "DNP (practice) - Knee",
+          "status": "Out",
           "trend": [
             {
               "date": "2026-09-07",
               "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-09-09",
+              "report_status": "Out",
               "practice_status": "Did Not Participate In Practice"
             }
           ]
@@ -78,27 +88,36 @@
         {
           "name": "TreVeyon Henderson",
           "position": "RB",
-          "status": "DNP (practice) - Ankle",
+          "status": "Out",
           "trend": [
             {
               "date": "2026-09-07",
               "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-09-09",
+              "report_status": "Out",
               "practice_status": "Did Not Participate In Practice"
             }
           ]
         }
       ],
       "situational_note": "",
-      "spread_current": "-3.5 -104 (9/8)",
+      "spread_current": "-3.5 -102 (9/9)",
       "spread_current_raw": -3.5,
       "spread_history": [
+        "-3.5 -104 (9/8)",
         "-3.5 -105 (9/8)",
         "-3.5 -108 (9/7)",
         "-3.5 -106 (9/5)",
         "-3.5 -112 (8/31)"
       ],
-      "total_current": "O/U 44.5 (-110) (8/31)",
-      "total_history": [],
+      "total_current": "O/U 44.5 (-108) (9/9)",
+      "total_history": [
+        "O/U 44.5 (-112) (9/9)",
+        "O/U 44.5 (-110) (8/31)"
+      ],
       "home_score": null,
       "away_score": null,
       "is_final": false
@@ -147,8 +166,82 @@
           "notes": []
         }
       ],
-      "home_injuries": [],
-      "away_injuries": [],
+      "home_injuries": [
+        {
+          "name": "Tyler Higbee",
+          "position": "TE",
+          "status": "DNP (practice) - Not injury related - resting player",
+          "trend": [
+            {
+              "date": "2026-09-09",
+              "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            }
+          ]
+        },
+        {
+          "name": "Myles Garrett",
+          "position": "LB",
+          "status": "DNP (practice) - Knee",
+          "trend": [
+            {
+              "date": "2026-09-09",
+              "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            }
+          ]
+        },
+        {
+          "name": "Alaric Jackson",
+          "position": "T",
+          "status": "DNP (practice) - Not injury related - resting player",
+          "trend": [
+            {
+              "date": "2026-09-09",
+              "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            }
+          ]
+        },
+        {
+          "name": "Jaylen Watson",
+          "position": "CB",
+          "status": "DNP (practice) - Toe",
+          "trend": [
+            {
+              "date": "2026-09-09",
+              "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            }
+          ]
+        },
+        {
+          "name": "Byron Young",
+          "position": "LB",
+          "status": "DNP (practice) - Not injury related - resting player",
+          "trend": [
+            {
+              "date": "2026-09-09",
+              "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            }
+          ]
+        }
+      ],
+      "away_injuries": [
+        {
+          "name": "James Thompson Jr.",
+          "position": "DT",
+          "status": "DNP (practice) - Hamstring",
+          "trend": [
+            {
+              "date": "2026-09-09",
+              "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            }
+          ]
+        }
+      ],
       "situational_note": "",
       "spread_current": "-3.5 -120 (9/8)",
       "spread_current_raw": -3.5,
@@ -653,8 +746,9 @@
         "-2.5 -102 (9/4)",
         "-2.5 -105 (8/31)"
       ],
-      "total_current": "O/U 39.5 (-110) (9/3)",
+      "total_current": "O/U 38.5 (-110) (9/9)",
       "total_history": [
+        "O/U 39.5 (-110) (9/3)",
         "O/U 39.5 (-115) (9/2)",
         "O/U 39.5 (-106) (8/31)"
       ],
@@ -769,16 +863,18 @@
       "home_injuries": [],
       "away_injuries": [],
       "situational_note": "",
-      "spread_current": "-3.5 -106 (9/8)",
-      "spread_current_raw": -3.5,
+      "spread_current": "-3.0 -105 (9/9)",
+      "spread_current_raw": -3.0,
       "spread_history": [
+        "-3.5 -106 (9/8)",
         "-3.5 -105 (9/7)",
         "-3.5 -104 (9/2)",
         "-3.5 -102 (9/1)",
         "-3.5 -110 (8/31)"
       ],
-      "total_current": "O/U 40.5 (-114) (9/8)",
+      "total_current": "O/U 39.5 (-112) (9/9)",
       "total_history": [
+        "O/U 40.5 (-114) (9/8)",
         "O/U 40.5 (-118) (9/8)",
         "O/U 40.5 (-105) (9/7)",
         "O/U 39.5 (-120) (9/2)",
@@ -835,9 +931,11 @@
       "home_injuries": [],
       "away_injuries": [],
       "situational_note": "",
-      "spread_current": "-1.5 -105 (8/31)",
+      "spread_current": "-1.5 -110 (9/9)",
       "spread_current_raw": -1.5,
-      "spread_history": [],
+      "spread_history": [
+        "-1.5 -105 (8/31)"
+      ],
       "total_current": "O/U 46.5 (-110) (9/2)",
       "total_history": [
         "O/U 45.5 (-115) (8/31)"
