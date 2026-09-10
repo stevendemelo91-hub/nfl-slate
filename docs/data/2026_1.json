@@ -104,9 +104,10 @@
         }
       ],
       "situational_note": "",
-      "spread_current": "-3.5 -102 (9/9)",
+      "spread_current": "-3.5 +100 (9/9)",
       "spread_current_raw": -3.5,
       "spread_history": [
+        "-3.5 -102 (9/9)",
         "-3.5 -104 (9/8)",
         "-3.5 -105 (9/8)",
         "-3.5 -108 (9/7)",
@@ -118,9 +119,9 @@
         "O/U 44.5 (-112) (9/9)",
         "O/U 44.5 (-110) (8/31)"
       ],
-      "home_score": null,
-      "away_score": null,
-      "is_final": false
+      "home_score": 13.0,
+      "away_score": 10.0,
+      "is_final": true
     },
     {
       "game_id": "2026_01_SF_LA",
@@ -168,61 +169,18 @@
       ],
       "home_injuries": [
         {
-          "name": "Tyler Higbee",
-          "position": "TE",
-          "status": "DNP (practice) - Not injury related - resting player",
+          "name": "Aaron Donald",
+          "position": "DE",
+          "status": "Out",
           "trend": [
             {
               "date": "2026-09-09",
               "report_status": null,
-              "practice_status": "Did Not Participate In Practice"
-            }
-          ]
-        },
-        {
-          "name": "Myles Garrett",
-          "position": "LB",
-          "status": "DNP (practice) - Knee",
-          "trend": [
+              "practice_status": "Limited Participation in Practice"
+            },
             {
-              "date": "2026-09-09",
-              "report_status": null,
-              "practice_status": "Did Not Participate In Practice"
-            }
-          ]
-        },
-        {
-          "name": "Alaric Jackson",
-          "position": "T",
-          "status": "DNP (practice) - Not injury related - resting player",
-          "trend": [
-            {
-              "date": "2026-09-09",
-              "report_status": null,
-              "practice_status": "Did Not Participate In Practice"
-            }
-          ]
-        },
-        {
-          "name": "Jaylen Watson",
-          "position": "CB",
-          "status": "DNP (practice) - Toe",
-          "trend": [
-            {
-              "date": "2026-09-09",
-              "report_status": null,
-              "practice_status": "Did Not Participate In Practice"
-            }
-          ]
-        },
-        {
-          "name": "Byron Young",
-          "position": "LB",
-          "status": "DNP (practice) - Not injury related - resting player",
-          "trend": [
-            {
-              "date": "2026-09-09",
-              "report_status": null,
+              "date": "2026-09-10",
+              "report_status": "Out",
               "practice_status": "Did Not Participate In Practice"
             }
           ]
@@ -230,22 +188,28 @@
       ],
       "away_injuries": [
         {
-          "name": "James Thompson Jr.",
+          "name": "Alfred Collins",
           "position": "DT",
-          "status": "DNP (practice) - Hamstring",
+          "status": "Out",
           "trend": [
             {
               "date": "2026-09-09",
               "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            },
+            {
+              "date": "2026-09-10",
+              "report_status": "Out",
               "practice_status": "Did Not Participate In Practice"
             }
           ]
         }
       ],
       "situational_note": "",
-      "spread_current": "-3.5 -120 (9/8)",
+      "spread_current": "-3.5 -112 (9/10)",
       "spread_current_raw": -3.5,
       "spread_history": [
+        "-3.5 -120 (9/8)",
         "-3.5 -114 (9/7)",
         "-3.5 -112 (9/7)",
         "-3.5 -115 (8/31)"
@@ -301,7 +265,20 @@
           "notes": []
         }
       ],
-      "home_injuries": [],
+      "home_injuries": [
+        {
+          "name": "Patrick Jones II",
+          "position": "LB",
+          "status": "DNP (practice) - Back",
+          "trend": [
+            {
+              "date": "2026-09-10",
+              "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            }
+          ]
+        }
+      ],
       "away_injuries": [],
       "situational_note": "",
       "spread_current": "+3.0 -114 (9/8)",
@@ -367,7 +344,20 @@
         }
       ],
       "home_injuries": [],
-      "away_injuries": [],
+      "away_injuries": [
+        {
+          "name": "Sean Tucker",
+          "position": "RB",
+          "status": "DNP (practice) - Hamstring",
+          "trend": [
+            {
+              "date": "2026-09-10",
+              "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            }
+          ]
+        }
+      ],
       "situational_note": "",
       "spread_current": "-3.5 -115 (9/1)",
       "spread_current_raw": -3.5,
@@ -429,7 +419,44 @@
         }
       ],
       "home_injuries": [],
-      "away_injuries": [],
+      "away_injuries": [
+        {
+          "name": "Cameron Jordan",
+          "position": "LB",
+          "status": "DNP (practice) - Hamstring",
+          "trend": [
+            {
+              "date": "2026-09-10",
+              "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            }
+          ]
+        },
+        {
+          "name": "Audric Estim\u00e9",
+          "position": "RB",
+          "status": "DNP (practice) - Thigh",
+          "trend": [
+            {
+              "date": "2026-09-10",
+              "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            }
+          ]
+        },
+        {
+          "name": "Oscar Delp",
+          "position": "TE",
+          "status": "DNP (practice) - Hamstring",
+          "trend": [
+            {
+              "date": "2026-09-10",
+              "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            }
+          ]
+        }
+      ],
       "situational_note": "",
       "spread_current": "-6.5 -122 (8/31)",
       "spread_current_raw": -6.5,
@@ -486,7 +513,32 @@
         }
       ],
       "home_injuries": [],
-      "away_injuries": [],
+      "away_injuries": [
+        {
+          "name": "Ty Johnson",
+          "position": "RB",
+          "status": "DNP (practice) - Hamstring",
+          "trend": [
+            {
+              "date": "2026-09-10",
+              "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            }
+          ]
+        },
+        {
+          "name": "Jordan Hancock",
+          "position": "CB",
+          "status": "DNP (practice) - Quadricep",
+          "trend": [
+            {
+              "date": "2026-09-10",
+              "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            }
+          ]
+        }
+      ],
       "situational_note": "",
       "spread_current": "+1.5 -114 (9/7)",
       "spread_current_raw": 1.5,
@@ -612,7 +664,20 @@
           "notes": []
         }
       ],
-      "home_injuries": [],
+      "home_injuries": [
+        {
+          "name": "LeQuint Allen Jr.",
+          "position": "RB",
+          "status": "DNP (practice) - Hip",
+          "trend": [
+            {
+              "date": "2026-09-10",
+              "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            }
+          ]
+        }
+      ],
       "away_injuries": [],
       "situational_note": "",
       "spread_current": "-8.5 -108 (9/8)",
@@ -621,8 +686,9 @@
         "-8.5 -105 (9/7)",
         "-7.5 -115 (8/31)"
       ],
-      "total_current": "O/U 40.5 (-108) (9/7)",
+      "total_current": "O/U 40.5 (-105) (9/10)",
       "total_history": [
+        "O/U 40.5 (-108) (9/7)",
         "O/U 40.5 (-110) (8/31)"
       ],
       "home_score": null,
@@ -676,14 +742,16 @@
       "home_injuries": [],
       "away_injuries": [],
       "situational_note": "",
-      "spread_current": "-3.5 -104 (9/5)",
-      "spread_current_raw": -3.5,
+      "spread_current": "-4.5 -115 (9/10)",
+      "spread_current_raw": -4.5,
       "spread_history": [
+        "-3.5 -104 (9/5)",
         "-3.0 -120 (9/2)",
         "-3.0 -115 (8/31)"
       ],
-      "total_current": "O/U 41.5 (-115) (9/4)",
+      "total_current": "O/U 41.5 (-105) (9/10)",
       "total_history": [
+        "O/U 41.5 (-115) (9/4)",
         "O/U 42.5 (-104) (9/2)",
         "O/U 42.5 (-106) (9/1)",
         "O/U 42.5 (-108) (8/31)"
@@ -736,8 +804,46 @@
           "notes": []
         }
       ],
-      "home_injuries": [],
-      "away_injuries": [],
+      "home_injuries": [
+        {
+          "name": "Cedric Gray",
+          "position": "LB",
+          "status": "DNP (practice) - Concussion",
+          "trend": [
+            {
+              "date": "2026-09-10",
+              "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            }
+          ]
+        }
+      ],
+      "away_injuries": [
+        {
+          "name": "Tim Patrick",
+          "position": "WR",
+          "status": "DNP (practice) - Groin",
+          "trend": [
+            {
+              "date": "2026-09-10",
+              "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            }
+          ]
+        },
+        {
+          "name": "Joseph Ossai",
+          "position": "DE",
+          "status": "DNP (practice) - Foot",
+          "trend": [
+            {
+              "date": "2026-09-10",
+              "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            }
+          ]
+        }
+      ],
       "situational_note": "",
       "spread_current": "-1.5 -110 (9/7)",
       "spread_current_raw": -1.5,
@@ -799,12 +905,63 @@
           "notes": []
         }
       ],
-      "home_injuries": [],
-      "away_injuries": [],
+      "home_injuries": [
+        {
+          "name": "Khalil Mack",
+          "position": "DE",
+          "status": "DNP (practice) - Not injury related - resting player",
+          "trend": [
+            {
+              "date": "2026-09-10",
+              "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            }
+          ]
+        },
+        {
+          "name": "Deane Leonard",
+          "position": "CB",
+          "status": "DNP (practice) - Abdomen",
+          "trend": [
+            {
+              "date": "2026-09-10",
+              "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            }
+          ]
+        }
+      ],
+      "away_injuries": [
+        {
+          "name": "Josh Sweat",
+          "position": "LB",
+          "status": "DNP (practice) - Not injury related - resting player",
+          "trend": [
+            {
+              "date": "2026-09-10",
+              "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            }
+          ]
+        },
+        {
+          "name": "Isaiah Adams",
+          "position": "G",
+          "status": "DNP (practice) - Knee",
+          "trend": [
+            {
+              "date": "2026-09-10",
+              "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            }
+          ]
+        }
+      ],
       "situational_note": "",
-      "spread_current": "-9.5 -114 (9/8)",
+      "spread_current": "-9.5 -105 (9/10)",
       "spread_current_raw": -9.5,
       "spread_history": [
+        "-9.5 -114 (9/8)",
         "-9.5 -115 (9/6)",
         "-9.5 -118 (9/2)",
         "-10.5 -102 (8/31)"
@@ -860,12 +1017,26 @@
           "notes": []
         }
       ],
-      "home_injuries": [],
+      "home_injuries": [
+        {
+          "name": "Brock Bowers",
+          "position": "TE",
+          "status": "DNP (practice) - Knee",
+          "trend": [
+            {
+              "date": "2026-09-10",
+              "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            }
+          ]
+        }
+      ],
       "away_injuries": [],
       "situational_note": "",
-      "spread_current": "-3.0 -105 (9/9)",
+      "spread_current": "-3.0 -120 (9/9)",
       "spread_current_raw": -3.0,
       "spread_history": [
+        "-3.0 -105 (9/9)",
         "-3.5 -106 (9/8)",
         "-3.5 -105 (9/7)",
         "-3.5 -104 (9/2)",
@@ -928,8 +1099,46 @@
           "notes": []
         }
       ],
-      "home_injuries": [],
-      "away_injuries": [],
+      "home_injuries": [
+        {
+          "name": "Jakobe Thomas",
+          "position": "S",
+          "status": "DNP (practice) - Illness",
+          "trend": [
+            {
+              "date": "2026-09-10",
+              "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            }
+          ]
+        }
+      ],
+      "away_injuries": [
+        {
+          "name": "Ty'Ron Hopper",
+          "position": "LB",
+          "status": "DNP (practice) - Achilles",
+          "trend": [
+            {
+              "date": "2026-09-10",
+              "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            }
+          ]
+        },
+        {
+          "name": "Warren Brinson",
+          "position": "DT",
+          "status": "DNP (practice) - Calf",
+          "trend": [
+            {
+              "date": "2026-09-10",
+              "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            }
+          ]
+        }
+      ],
       "situational_note": "",
       "spread_current": "-1.5 -110 (9/9)",
       "spread_current_raw": -1.5,
@@ -989,11 +1198,14 @@
       "home_injuries": [],
       "away_injuries": [],
       "situational_note": "",
-      "spread_current": "-5.5 -105 (8/31)",
+      "spread_current": "-5.5 -110 (9/10)",
       "spread_current_raw": -5.5,
-      "spread_history": [],
-      "total_current": "O/U 44.5 (-112) (9/4)",
+      "spread_history": [
+        "-5.5 -105 (8/31)"
+      ],
+      "total_current": "O/U 44.5 (-110) (9/10)",
       "total_history": [
+        "O/U 44.5 (-112) (9/4)",
         "O/U 45.5 (-105) (9/2)",
         "O/U 45.5 (-108) (8/31)"
       ],
