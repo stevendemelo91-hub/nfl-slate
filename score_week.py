@@ -477,20 +477,24 @@ def fetch_injury_report(season, week):
     doesn't exist for this season) - matches the graceful-fallback pattern
     used elsewhere (depth charts, elite QB list, etc).
 
-    Surfaces both the final report designation (Out/Doubtful) AND, before
-    that's assigned - report_status stays NaN until later in the week, even
-    Thu/Fri for a Friday game - a meaningful early practice-status signal
-    (Did Not Participate). Without this, nothing shows up for days even
-    when real, useful early-week data already exists."""
+    Surfaces any player with a real designation - Out, Doubtful, or
+    Questionable (all three are meaningful; Questionable frequently means
+    a genuine starter is banged up) - OR, before a designation is even
+    assigned (report_status stays NaN for days, even into Thu/Fri for a
+    Friday game), a real practice-participation signal: Did Not
+    Participate or Limited Participation. Only players who are NaN/NaN
+    (no designation, full practice) are excluded - those aren't
+    meaningfully injured for game-planning purposes right now."""
     try:
         inj = pd.read_csv(f'https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_{season}.csv',
                            low_memory=False)
     except Exception:
         return pd.DataFrame()
     inj = inj[inj['week'] == week]
-    final_designation = inj['report_status'].isin(['Out', 'Doubtful'])
-    early_dnp_signal = inj['report_status'].isna() & (inj['practice_status'] == 'Did Not Participate In Practice')
-    inj = inj[final_designation | early_dnp_signal]
+    final_designation = inj['report_status'].isin(['Out', 'Doubtful', 'Questionable'])
+    early_practice_signal = inj['report_status'].isna() & inj['practice_status'].isin(
+        ['Did Not Participate In Practice', 'Limited Participation in Practice'])
+    inj = inj[final_designation | early_practice_signal]
     inj = inj[inj['position'] != 'QB']  # QB handled separately by compute_qb_coefficient
     return inj
 
@@ -519,8 +523,12 @@ def get_injury_candidates(team, injury_df, injury_history):
                 for _, r in player_log.iterrows()
             ]
         injury_note = row.get('practice_primary_injury')
+        practice_short = {
+            'Did Not Participate In Practice': 'DNP',
+            'Limited Participation in Practice': 'Limited',
+        }.get(row.get('practice_status'), row.get('practice_status'))
         status_display = row['report_status'] if pd.notna(row['report_status']) else \
-            f"DNP (practice){f' - {injury_note}' if pd.notna(injury_note) else ''}"
+            f"{practice_short} (practice){f' - {injury_note}' if pd.notna(injury_note) else ''}"
         candidates.append({
             'name': row['full_name'], 'position': row['position'], 'status': status_display,
             'trend': trend,
