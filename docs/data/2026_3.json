@@ -888,6 +888,496 @@
   ],
   "pool_results_history": [
     {
+      "season": 2020,
+      "week": 1,
+      "pool_id": null,
+      "pool_label": "NFL - WEEK 1",
+      "closed_date": null,
+      "no_of_winners": 2,
+      "winning_selections_required": 15,
+      "winning_selections_total": 15,
+      "share_prize": 250138.5,
+      "upsets": 7.0,
+      "total_pot": 500277.0,
+      "underdog_pts_realized": 25.0
+    },
+    {
+      "season": 2020,
+      "week": 2,
+      "pool_id": null,
+      "pool_label": "NFL - WEEK 2",
+      "closed_date": null,
+      "no_of_winners": null,
+      "winning_selections_required": 15,
+      "winning_selections_total": 15,
+      "share_prize": null,
+      "upsets": 2.0,
+      "total_pot": 587064.0,
+      "underdog_pts_realized": 6.0
+    },
+    {
+      "season": 2020,
+      "week": 3,
+      "pool_id": null,
+      "pool_label": "NFL - WEEK 3",
+      "closed_date": null,
+      "no_of_winners": 8,
+      "winning_selections_required": 15,
+      "winning_selections_total": 15,
+      "share_prize": 79814.6,
+      "upsets": 6.0,
+      "total_pot": 638516.8,
+      "underdog_pts_realized": 26.0
+    },
+    {
+      "season": 2020,
+      "week": 4,
+      "pool_id": null,
+      "pool_label": "NFL - WEEK 4",
+      "closed_date": null,
+      "no_of_winners": 114,
+      "winning_selections_required": 12,
+      "winning_selections_total": 12,
+      "share_prize": 5219.1,
+      "upsets": 2.0,
+      "total_pot": 594977.4,
+      "underdog_pts_realized": 12.0
+    },
+    {
+      "season": 2020,
+      "week": 5,
+      "pool_id": null,
+      "pool_label": "NFL - WEEK 5",
+      "closed_date": null,
+      "no_of_winners": 118,
+      "winning_selections_required": 12,
+      "winning_selections_total": 12,
+      "share_prize": 4769.8,
+      "upsets": 3.0,
+      "total_pot": 562836.4,
+      "underdog_pts_realized": 22.0
+    },
+    {
+      "season": 2020,
+      "week": 6,
+      "pool_id": null,
+      "pool_label": "NFL - WEEK 6",
+      "closed_date": null,
+      "no_of_winners": 8,
+      "winning_selections_required": 14,
+      "winning_selections_total": 14,
+      "share_prize": 75904.9,
+      "upsets": 6.0,
+      "total_pot": 607239.2,
+      "underdog_pts_realized": 18.5
+    },
+    {
+      "season": 2020,
+      "week": 7,
+      "pool_id": null,
+      "pool_label": "NFL - WEEK 7",
+      "closed_date": null,
+      "no_of_winners": 322,
+      "winning_selections_required": 13,
+      "winning_selections_total": 13,
+      "share_prize": 1926.3,
+      "upsets": 5.0,
+      "total_pot": 620268.6,
+      "underdog_pts_realized": 9.5
+    },
+    {
+      "season": 2020,
+      "week": 8,
+      "pool_id": null,
+      "pool_label": "NFL - WEEK 8",
+      "closed_date": null,
+      "no_of_winners": 14,
+      "winning_selections_required": 13,
+      "winning_selections_total": 13,
+      "share_prize": 47773.7,
+      "upsets": 6.0,
+      "total_pot": 668831.7999999999,
+      "underdog_pts_realized": 24.0
+    },
+    {
+      "season": 2020,
+      "week": 9,
+      "pool_id": null,
+      "pool_label": "NFL - WEEK 9",
+      "closed_date": null,
+      "no_of_winners": 103,
+      "winning_selections_required": 13,
+      "winning_selections_total": 13,
+      "share_prize": 5907.0,
+      "upsets": 5.0,
+      "total_pot": 608421.0,
+      "underdog_pts_realized": 15.5
+    },
+    {
+      "season": 2020,
+      "week": 10,
+      "pool_id": null,
+      "pool_label": "NFL - WEEK 10",
+      "closed_date": null,
+      "no_of_winners": 110,
+      "winning_selections_required": 13,
+      "winning_selections_total": 13,
+      "share_prize": 5907.3,
+      "upsets": 2.0,
+      "total_pot": 649803.0,
+      "underdog_pts_realized": 12.0
+    },
+    {
+      "season": 2020,
+      "week": 11,
+      "pool_id": null,
+      "pool_label": "NFL - WEEK 11",
+      "closed_date": null,
+      "no_of_winners": 6,
+      "winning_selections_required": 13,
+      "winning_selections_total": 13,
+      "share_prize": 111541.5,
+      "upsets": 6.0,
+      "total_pot": 669249.0,
+      "underdog_pts_realized": 26.5
+    },
+    {
+      "season": 2020,
+      "week": 12,
+      "pool_id": null,
+      "pool_label": "NFL - WEEK 12",
+      "closed_date": null,
+      "no_of_winners": 149,
+      "winning_selections_required": 13,
+      "winning_selections_total": 13,
+      "share_prize": 4341.8,
+      "upsets": 4.0,
+      "total_pot": 646928.2000000001,
+      "underdog_pts_realized": 13.0
+    },
+    {
+      "season": 2020,
+      "week": 13,
+      "pool_id": null,
+      "pool_label": "NFL - WEEK 13",
+      "closed_date": null,
+      "no_of_winners": 12,
+      "winning_selections_required": 15,
+      "winning_selections_total": 15,
+      "share_prize": 58691.5,
+      "upsets": 6.0,
+      "total_pot": 704298.0,
+      "underdog_pts_realized": 26.0
+    },
+    {
+      "season": 2020,
+      "week": 14,
+      "pool_id": null,
+      "pool_label": "NFL - WEEK 14",
+      "closed_date": null,
+      "no_of_winners": 23,
+      "winning_selections_required": 15,
+      "winning_selections_total": 15,
+      "share_prize": 27015.5,
+      "upsets": 4.0,
+      "total_pot": 621356.5,
+      "underdog_pts_realized": 15.5
+    },
+    {
+      "season": 2020,
+      "week": 15,
+      "pool_id": null,
+      "pool_label": "NFL - WEEK 15",
+      "closed_date": null,
+      "no_of_winners": 11,
+      "winning_selections_required": 13,
+      "winning_selections_total": 13,
+      "share_prize": 56472.0,
+      "upsets": 5.0,
+      "total_pot": 621192.0,
+      "underdog_pts_realized": 39.0
+    },
+    {
+      "season": 2020,
+      "week": 16,
+      "pool_id": null,
+      "pool_label": "NFL - WEEK 16",
+      "closed_date": null,
+      "no_of_winners": 86,
+      "winning_selections_required": 12,
+      "winning_selections_total": 12,
+      "share_prize": 6610.9,
+      "upsets": 3.5,
+      "total_pot": 568537.4,
+      "underdog_pts_realized": 18.0
+    },
+    {
+      "season": 2020,
+      "week": 17,
+      "pool_id": null,
+      "pool_label": "NFL - WEEK 17",
+      "closed_date": null,
+      "no_of_winners": 357,
+      "winning_selections_required": 16,
+      "winning_selections_total": 16,
+      "share_prize": 1755.2,
+      "upsets": 2.0,
+      "total_pot": 626606.4,
+      "underdog_pts_realized": 4.5
+    },
+    {
+      "season": 2021,
+      "week": 1,
+      "pool_id": null,
+      "pool_label": "NFL - WEEK 1",
+      "closed_date": null,
+      "no_of_winners": 2,
+      "winning_selections_required": 15,
+      "winning_selections_total": 15,
+      "share_prize": 264765.0,
+      "upsets": 9.0,
+      "total_pot": 529530.0,
+      "underdog_pts_realized": 30.0
+    },
+    {
+      "season": 2021,
+      "week": 2,
+      "pool_id": null,
+      "pool_label": "NFL - WEEK 2",
+      "closed_date": null,
+      "no_of_winners": 32,
+      "winning_selections_required": 15,
+      "winning_selections_total": 15,
+      "share_prize": 16870.2,
+      "upsets": 5.0,
+      "total_pot": 539846.4,
+      "underdog_pts_realized": 21.5
+    },
+    {
+      "season": 2021,
+      "week": 3,
+      "pool_id": null,
+      "pool_label": "NFL - WEEK 3",
+      "closed_date": null,
+      "no_of_winners": 77,
+      "winning_selections_required": 15,
+      "winning_selections_total": 15,
+      "share_prize": 7621.9,
+      "upsets": 6.0,
+      "total_pot": 586886.2999999999,
+      "underdog_pts_realized": 21.5
+    },
+    {
+      "season": 2021,
+      "week": 4,
+      "pool_id": null,
+      "pool_label": "NFL - WEEK 4",
+      "closed_date": null,
+      "no_of_winners": 7,
+      "winning_selections_required": 15,
+      "winning_selections_total": 15,
+      "share_prize": 79511.6,
+      "upsets": 6.0,
+      "total_pot": 556581.2000000001,
+      "underdog_pts_realized": 22.0
+    },
+    {
+      "season": 2021,
+      "week": 5,
+      "pool_id": null,
+      "pool_label": "NFL - WEEK 5",
+      "closed_date": null,
+      "no_of_winners": 129,
+      "winning_selections_required": 14,
+      "winning_selections_total": 14,
+      "share_prize": 4425.7,
+      "upsets": 4.0,
+      "total_pot": 570915.2999999999,
+      "underdog_pts_realized": 12.5
+    },
+    {
+      "season": 2021,
+      "week": 6,
+      "pool_id": null,
+      "pool_label": "NFL - WEEK 6",
+      "closed_date": null,
+      "no_of_winners": 347,
+      "winning_selections_required": 12,
+      "winning_selections_total": 12,
+      "share_prize": 1587.4,
+      "upsets": 3.0,
+      "total_pot": 550827.8,
+      "underdog_pts_realized": 14.0
+    },
+    {
+      "season": 2021,
+      "week": 7,
+      "pool_id": null,
+      "pool_label": "NFL - WEEK 7",
+      "closed_date": null,
+      "no_of_winners": 282,
+      "winning_selections_required": 12,
+      "winning_selections_total": 12,
+      "share_prize": 1997.4,
+      "upsets": 4.0,
+      "total_pot": 563266.8,
+      "underdog_pts_realized": 16.5
+    },
+    {
+      "season": 2021,
+      "week": 8,
+      "pool_id": null,
+      "pool_label": "NFL - WEEK 8",
+      "closed_date": null,
+      "no_of_winners": 4,
+      "winning_selections_required": 14,
+      "winning_selections_total": 14,
+      "share_prize": 143496.8,
+      "upsets": 7.0,
+      "total_pot": 573987.2,
+      "underdog_pts_realized": 33.5
+    },
+    {
+      "season": 2021,
+      "week": 9,
+      "pool_id": null,
+      "pool_label": "NFL - WEEK 9",
+      "closed_date": null,
+      "no_of_winners": 2,
+      "winning_selections_required": 13,
+      "winning_selections_total": 13,
+      "share_prize": 290404.5,
+      "upsets": 7.0,
+      "total_pot": 580809.0,
+      "underdog_pts_realized": 48.5
+    },
+    {
+      "season": 2021,
+      "week": 10,
+      "pool_id": null,
+      "pool_label": "NFL - WEEK 10",
+      "closed_date": null,
+      "no_of_winners": 6,
+      "winning_selections_required": 13,
+      "winning_selections_total": 13,
+      "share_prize": 90445.0,
+      "upsets": 6.0,
+      "total_pot": 542670.0,
+      "underdog_pts_realized": 31.0
+    },
+    {
+      "season": 2021,
+      "week": 11,
+      "pool_id": null,
+      "pool_label": "NFL - WEEK 11",
+      "closed_date": null,
+      "no_of_winners": 6,
+      "winning_selections_required": 14,
+      "winning_selections_total": 14,
+      "share_prize": 88585.0,
+      "upsets": 5.0,
+      "total_pot": 531510.0,
+      "underdog_pts_realized": 26.5
+    },
+    {
+      "season": 2021,
+      "week": 12,
+      "pool_id": null,
+      "pool_label": "NFL - WEEK 12",
+      "closed_date": null,
+      "no_of_winners": 29,
+      "winning_selections_required": 12,
+      "winning_selections_total": 12,
+      "share_prize": 15160.8,
+      "upsets": 6.0,
+      "total_pot": 439663.2,
+      "underdog_pts_realized": 15.0
+    },
+    {
+      "season": 2021,
+      "week": 13,
+      "pool_id": null,
+      "pool_label": "NFL - WEEK 13",
+      "closed_date": null,
+      "no_of_winners": 109,
+      "winning_selections_required": 13,
+      "winning_selections_total": 13,
+      "share_prize": 4927.2,
+      "upsets": 6.0,
+      "total_pot": 537064.7999999999,
+      "underdog_pts_realized": 21.5
+    },
+    {
+      "season": 2021,
+      "week": 14,
+      "pool_id": null,
+      "pool_label": "NFL - WEEK 14",
+      "closed_date": null,
+      "no_of_winners": null,
+      "winning_selections_required": 13,
+      "winning_selections_total": 13,
+      "share_prize": null,
+      "upsets": 2.0,
+      "total_pot": 513826.8000000001,
+      "underdog_pts_realized": 5.5
+    },
+    {
+      "season": 2021,
+      "week": 15,
+      "pool_id": null,
+      "pool_label": "NFL - WEEK 15",
+      "closed_date": null,
+      "no_of_winners": 50,
+      "winning_selections_required": 11,
+      "winning_selections_total": 11,
+      "share_prize": 7723.1,
+      "upsets": 4.0,
+      "total_pot": 386155.0,
+      "underdog_pts_realized": 34.0
+    },
+    {
+      "season": 2021,
+      "week": 16,
+      "pool_id": null,
+      "pool_label": "NFL - WEEK 16",
+      "closed_date": null,
+      "no_of_winners": 41,
+      "winning_selections_required": 13,
+      "winning_selections_total": 13,
+      "share_prize": 10760.6,
+      "upsets": 3.5,
+      "total_pot": 441184.6,
+      "underdog_pts_realized": 22.0
+    },
+    {
+      "season": 2021,
+      "week": 17,
+      "pool_id": null,
+      "pool_label": "NFL - WEEK 17",
+      "closed_date": null,
+      "no_of_winners": 139,
+      "winning_selections_required": 16,
+      "winning_selections_total": 16,
+      "share_prize": 3534.0,
+      "upsets": 4.0,
+      "total_pot": 491226.0,
+      "underdog_pts_realized": 19.5
+    },
+    {
+      "season": 2021,
+      "week": 18,
+      "pool_id": null,
+      "pool_label": "NFL - WEEK 18",
+      "closed_date": null,
+      "no_of_winners": 10,
+      "winning_selections_required": 14,
+      "winning_selections_total": 14,
+      "share_prize": 45658.8,
+      "upsets": 7.0,
+      "total_pot": 456588.0,
+      "underdog_pts_realized": 39.0
+    },
+    {
       "season": 2022,
       "week": 1,
       "pool_id": null,
@@ -898,7 +1388,8 @@
       "winning_selections_total": 15,
       "share_prize": 122846.25,
       "upsets": 5.0,
-      "total_pot": 491385.0
+      "total_pot": 491385.0,
+      "underdog_pts_realized": 26.5
     },
     {
       "season": 2022,
@@ -911,7 +1402,8 @@
       "winning_selections_total": 15,
       "share_prize": 12297.71,
       "upsets": 6.5,
-      "total_pot": 467312.98
+      "total_pot": 467312.98,
+      "underdog_pts_realized": 26.5
     },
     {
       "season": 2022,
@@ -924,7 +1416,8 @@
       "winning_selections_total": 15,
       "share_prize": 157659.0,
       "upsets": 9.0,
-      "total_pot": 472977.0
+      "total_pot": 472977.0,
+      "underdog_pts_realized": null
     },
     {
       "season": 2022,
@@ -937,7 +1430,8 @@
       "winning_selections_total": null,
       "share_prize": 26408.29,
       "upsets": null,
-      "total_pot": 448940.93
+      "total_pot": 448940.93,
+      "underdog_pts_realized": null
     },
     {
       "season": 2022,
@@ -950,7 +1444,8 @@
       "winning_selections_total": null,
       "share_prize": 9817.47,
       "upsets": null,
-      "total_pot": 481056.03
+      "total_pot": 481056.03,
+      "underdog_pts_realized": null
     },
     {
       "season": 2022,
@@ -963,7 +1458,8 @@
       "winning_selections_total": null,
       "share_prize": 124594.5,
       "upsets": null,
-      "total_pot": 498378.0
+      "total_pot": 498378.0,
+      "underdog_pts_realized": null
     },
     {
       "season": 2022,
@@ -976,7 +1472,8 @@
       "winning_selections_total": null,
       "share_prize": 159104.0,
       "upsets": null,
-      "total_pot": 477312.0
+      "total_pot": 477312.0,
+      "underdog_pts_realized": null
     },
     {
       "season": 2022,
@@ -989,7 +1486,8 @@
       "winning_selections_total": 13,
       "share_prize": 3675.0,
       "upsets": 4.0,
-      "total_pot": 470400.0
+      "total_pot": 470400.0,
+      "underdog_pts_realized": 8.0
     },
     {
       "season": 2022,
@@ -1002,7 +1500,8 @@
       "winning_selections_total": 12,
       "share_prize": 8148.26,
       "upsets": 4.0,
-      "total_pot": 464450.82
+      "total_pot": 464450.82,
+      "underdog_pts_realized": 19.0
     },
     {
       "season": 2022,
@@ -1015,7 +1514,8 @@
       "winning_selections_total": 12,
       "share_prize": 18027.2,
       "upsets": 4.0,
-      "total_pot": 450680.0
+      "total_pot": 450680.0,
+      "underdog_pts_realized": 31.5
     },
     {
       "season": 2022,
@@ -1028,7 +1528,8 @@
       "winning_selections_total": 13,
       "share_prize": 2728.97,
       "upsets": 2.0,
-      "total_pot": 461195.93
+      "total_pot": 461195.93,
+      "underdog_pts_realized": 5.5
     },
     {
       "season": 2022,
@@ -1041,7 +1542,8 @@
       "winning_selections_total": 13,
       "share_prize": 11547.95,
       "upsets": 4.0,
-      "total_pot": 438822.1
+      "total_pot": 438822.1,
+      "underdog_pts_realized": 13.5
     },
     {
       "season": 2022,
@@ -1054,7 +1556,8 @@
       "winning_selections_total": 14,
       "share_prize": 516.34,
       "upsets": 1.5,
-      "total_pot": 470385.7400000001
+      "total_pot": 470385.7400000001,
+      "underdog_pts_realized": 6.0
     },
     {
       "season": 2022,
@@ -1067,7 +1570,8 @@
       "winning_selections_total": 12,
       "share_prize": 5849.88,
       "upsets": 5.0,
-      "total_pot": 432891.12
+      "total_pot": 432891.12,
+      "underdog_pts_realized": 14.0
     },
     {
       "season": 2022,
@@ -1080,7 +1584,8 @@
       "winning_selections_total": 12,
       "share_prize": 3585.98,
       "upsets": 4.0,
-      "total_pot": 372941.92
+      "total_pot": 372941.92,
+      "underdog_pts_realized": 12.0
     },
     {
       "season": 2022,
@@ -1093,7 +1598,8 @@
       "winning_selections_total": 15,
       "share_prize": 23903.82,
       "upsets": 5.0,
-      "total_pot": 406364.94
+      "total_pot": 406364.94,
+      "underdog_pts_realized": 15.5
     },
     {
       "season": 2022,
@@ -1106,7 +1612,8 @@
       "winning_selections_total": 14,
       "share_prize": 5236.59,
       "upsets": 5.0,
-      "total_pot": 434636.97
+      "total_pot": 434636.97,
+      "underdog_pts_realized": 7.5
     },
     {
       "season": 2022,
@@ -1119,7 +1626,8 @@
       "winning_selections_total": 13,
       "share_prize": 9957.23,
       "upsets": 4.0,
-      "total_pot": 388331.97
+      "total_pot": 388331.97,
+      "underdog_pts_realized": 19.5
     },
     {
       "season": 2023,
@@ -1132,7 +1640,8 @@
       "winning_selections_total": 15,
       "share_prize": 70566.43,
       "upsets": 7.0,
-      "total_pot": 493965.01
+      "total_pot": 493965.01,
+      "underdog_pts_realized": 18.5
     },
     {
       "season": 2023,
@@ -1145,7 +1654,8 @@
       "winning_selections_total": 15,
       "share_prize": 88967.4,
       "upsets": 5.0,
-      "total_pot": 444837.0
+      "total_pot": 444837.0,
+      "underdog_pts_realized": 19.0
     },
     {
       "season": 2023,
@@ -1158,7 +1668,8 @@
       "winning_selections_total": 15,
       "share_prize": 254074.5,
       "upsets": 6.0,
-      "total_pot": 508149.0
+      "total_pot": 508149.0,
+      "underdog_pts_realized": 31.5
     },
     {
       "season": 2023,
@@ -1171,7 +1682,8 @@
       "winning_selections_total": 14,
       "share_prize": 4339.51,
       "upsets": 3.0,
-      "total_pot": 455648.5500000001
+      "total_pot": 455648.5500000001,
+      "underdog_pts_realized": 10.0
     },
     {
       "season": 2023,
@@ -1184,7 +1696,8 @@
       "winning_selections_total": 12,
       "share_prize": 4405.77,
       "upsets": 4.0,
-      "total_pot": 440577.00000000006
+      "total_pot": 440577.00000000006,
+      "underdog_pts_realized": 10.5
     },
     {
       "season": 2023,
@@ -1197,7 +1710,8 @@
       "winning_selections_total": 13,
       "share_prize": 18456.12,
       "upsets": 4.0,
-      "total_pot": 461403.0
+      "total_pot": 461403.0,
+      "underdog_pts_realized": 19.5
     },
     {
       "season": 2023,
@@ -1210,7 +1724,8 @@
       "winning_selections_total": 12,
       "share_prize": 28399.0,
       "upsets": 6.0,
-      "total_pot": 425985.0
+      "total_pot": 425985.0,
+      "underdog_pts_realized": 25.5
     },
     {
       "season": 2023,
@@ -1223,7 +1738,8 @@
       "winning_selections_total": 15,
       "share_prize": 15165.6,
       "upsets": 6.0,
-      "total_pot": 454968.0
+      "total_pot": 454968.0,
+      "underdog_pts_realized": 17.5
     },
     {
       "season": 2023,
@@ -1236,7 +1752,8 @@
       "winning_selections_total": 12,
       "share_prize": 1770.93,
       "upsets": 2.0,
-      "total_pot": 371895.3
+      "total_pot": 371895.3,
+      "underdog_pts_realized": 6.5
     },
     {
       "season": 2023,
@@ -1249,7 +1766,8 @@
       "winning_selections_total": 12,
       "share_prize": 25706.6,
       "upsets": 6.0,
-      "total_pot": 385599.0
+      "total_pot": 385599.0,
+      "underdog_pts_realized": 24.5
     },
     {
       "season": 2023,
@@ -1262,7 +1780,8 @@
       "winning_selections_total": 13,
       "share_prize": 4474.32,
       "upsets": 3.0,
-      "total_pot": 447432.0
+      "total_pot": 447432.0,
+      "underdog_pts_realized": 13.0
     },
     {
       "season": 2023,
@@ -1275,7 +1794,8 @@
       "winning_selections_total": 12,
       "share_prize": 3274.23,
       "upsets": 3.0,
-      "total_pot": 343794.15
+      "total_pot": 343794.15,
+      "underdog_pts_realized": 9.5
     },
     {
       "season": 2023,
@@ -1288,7 +1808,8 @@
       "winning_selections_total": 12,
       "share_prize": 27403.0,
       "upsets": 3.0,
-      "total_pot": 383642.0
+      "total_pot": 383642.0,
+      "underdog_pts_realized": 21.5
     },
     {
       "season": 2023,
@@ -1301,7 +1822,8 @@
       "winning_selections_total": 14,
       "share_prize": 82711.0,
       "upsets": 7.0,
-      "total_pot": 413555.0
+      "total_pot": 413555.0,
+      "underdog_pts_realized": 31.0
     },
     {
       "season": 2023,
@@ -1314,7 +1836,8 @@
       "winning_selections_total": 12,
       "share_prize": 5795.0,
       "upsets": 4.0,
-      "total_pot": 370880.0
+      "total_pot": 370880.0,
+      "underdog_pts_realized": 14.5
     },
     {
       "season": 2023,
@@ -1327,7 +1850,8 @@
       "winning_selections_total": 13,
       "share_prize": 41916.0,
       "upsets": 4.0,
-      "total_pot": 377244.0
+      "total_pot": 377244.0,
+      "underdog_pts_realized": 26.5
     },
     {
       "season": 2023,
@@ -1340,7 +1864,8 @@
       "winning_selections_total": 14,
       "share_prize": 33036.0,
       "upsets": 4.0,
-      "total_pot": 396432.0
+      "total_pot": 396432.0,
+      "underdog_pts_realized": 19.5
     },
     {
       "season": 2023,
@@ -1353,7 +1878,8 @@
       "winning_selections_total": 14,
       "share_prize": 15424.0,
       "upsets": 5.0,
-      "total_pot": 370176.0
+      "total_pot": 370176.0,
+      "underdog_pts_realized": 17.5
     },
     {
       "season": 2024,
@@ -1366,7 +1892,8 @@
       "winning_selections_total": 14,
       "share_prize": 6433.0,
       "upsets": 3.0,
-      "total_pot": 418145.0
+      "total_pot": 418145.0,
+      "underdog_pts_realized": 15.5
     },
     {
       "season": 2024,
@@ -1379,7 +1906,8 @@
       "winning_selections_total": 15,
       "share_prize": 407613.0,
       "upsets": 8.0,
-      "total_pot": 407613.0
+      "total_pot": 407613.0,
+      "underdog_pts_realized": 38.25
     },
     {
       "season": 2024,
@@ -1392,7 +1920,8 @@
       "winning_selections_total": 15,
       "share_prize": 367977.0,
       "upsets": 8.0,
-      "total_pot": 367977.0
+      "total_pot": 367977.0,
+      "underdog_pts_realized": 41.0
     },
     {
       "season": 2024,
@@ -1405,7 +1934,8 @@
       "winning_selections_total": 15,
       "share_prize": 122619.0,
       "upsets": 7.0,
-      "total_pot": 367857.0
+      "total_pot": 367857.0,
+      "underdog_pts_realized": 21.75
     },
     {
       "season": 2024,
@@ -1418,7 +1948,8 @@
       "winning_selections_total": 12,
       "share_prize": 16932.0,
       "upsets": 3.0,
-      "total_pot": 338640.0
+      "total_pot": 338640.0,
+      "underdog_pts_realized": 16.75
     },
     {
       "season": 2024,
@@ -1431,7 +1962,8 @@
       "winning_selections_total": 12,
       "share_prize": null,
       "upsets": null,
-      "total_pot": 351117.0
+      "total_pot": 351117.0,
+      "underdog_pts_realized": null
     },
     {
       "season": 2024,
@@ -1444,7 +1976,8 @@
       "winning_selections_total": null,
       "share_prize": null,
       "upsets": null,
-      "total_pot": 370806.0
+      "total_pot": 370806.0,
+      "underdog_pts_realized": null
     },
     {
       "season": 2024,
@@ -1457,7 +1990,8 @@
       "winning_selections_total": null,
       "share_prize": 30348.0,
       "upsets": null,
-      "total_pot": 394524.0
+      "total_pot": 394524.0,
+      "underdog_pts_realized": null
     },
     {
       "season": 2024,
@@ -1470,7 +2004,8 @@
       "winning_selections_total": null,
       "share_prize": 1295.0,
       "upsets": null,
-      "total_pot": 382025.0
+      "total_pot": 382025.0,
+      "underdog_pts_realized": null
     },
     {
       "season": 2024,
@@ -1483,7 +2018,8 @@
       "winning_selections_total": null,
       "share_prize": 3651.0,
       "upsets": null,
-      "total_pot": 343194.0
+      "total_pot": 343194.0,
+      "underdog_pts_realized": null
     },
     {
       "season": 2024,
@@ -1496,7 +2032,8 @@
       "winning_selections_total": null,
       "share_prize": 4885.0,
       "upsets": null,
-      "total_pot": 346835.0
+      "total_pot": 346835.0,
+      "underdog_pts_realized": null
     },
     {
       "season": 2024,
@@ -1509,7 +2046,8 @@
       "winning_selections_total": null,
       "share_prize": 9800.0,
       "upsets": null,
-      "total_pot": 343000.0
+      "total_pot": 343000.0,
+      "underdog_pts_realized": null
     },
     {
       "season": 2024,
@@ -1522,7 +2060,8 @@
       "winning_selections_total": null,
       "share_prize": 161.0,
       "upsets": null,
-      "total_pot": 300265.0
+      "total_pot": 300265.0,
+      "underdog_pts_realized": null
     },
     {
       "season": 2024,
@@ -1535,7 +2074,8 @@
       "winning_selections_total": null,
       "share_prize": 2155.0,
       "upsets": null,
-      "total_pot": 321095.0
+      "total_pot": 321095.0,
+      "underdog_pts_realized": null
     },
     {
       "season": 2024,
@@ -1548,7 +2088,8 @@
       "winning_selections_total": null,
       "share_prize": 655.0,
       "upsets": null,
-      "total_pot": 374005.0
+      "total_pot": 374005.0,
+      "underdog_pts_realized": null
     },
     {
       "season": 2024,
@@ -1561,7 +2102,8 @@
       "winning_selections_total": null,
       "share_prize": 4518.0,
       "upsets": null,
-      "total_pot": 311742.0
+      "total_pot": 311742.0,
+      "underdog_pts_realized": null
     },
     {
       "season": 2024,
@@ -1574,7 +2116,8 @@
       "winning_selections_total": null,
       "share_prize": null,
       "upsets": null,
-      "total_pot": 251271.0
+      "total_pot": 251271.0,
+      "underdog_pts_realized": null
     },
     {
       "season": 2024,
@@ -1587,7 +2130,8 @@
       "winning_selections_total": null,
       "share_prize": null,
       "upsets": null,
-      "total_pot": 285243.0
+      "total_pot": 285243.0,
+      "underdog_pts_realized": null
     },
     {
       "season": 2025,
@@ -1600,7 +2144,8 @@
       "winning_selections_total": 14,
       "share_prize": 2393.0,
       "upsets": 3.0,
-      "total_pot": 327841.0
+      "total_pot": 327841.0,
+      "underdog_pts_realized": 4.75
     },
     {
       "season": 2025,
@@ -1613,7 +2158,8 @@
       "winning_selections_total": 15,
       "share_prize": 6874.0,
       "upsets": 3.0,
-      "total_pot": 350574.0
+      "total_pot": 350574.0,
+      "underdog_pts_realized": 11.75
     },
     {
       "season": 2025,
@@ -1626,7 +2172,8 @@
       "winning_selections_total": 15,
       "share_prize": 56943.0,
       "upsets": 4.0,
-      "total_pot": 341658.0
+      "total_pot": 341658.0,
+      "underdog_pts_realized": 17.25
     },
     {
       "season": 2025,
@@ -1639,7 +2186,8 @@
       "winning_selections_total": 14,
       "share_prize": 6902.0,
       "upsets": 4.0,
-      "total_pot": 317492.0
+      "total_pot": 317492.0,
+      "underdog_pts_realized": 12.75
     },
     {
       "season": 2025,
@@ -1652,7 +2200,8 @@
       "winning_selections_total": 12,
       "share_prize": 56812.0,
       "upsets": 7.0,
-      "total_pot": 284060.0
+      "total_pot": 284060.0,
+      "underdog_pts_realized": 29.5
     },
     {
       "season": 2025,
@@ -1665,7 +2214,8 @@
       "winning_selections_total": 13,
       "share_prize": 8122.0,
       "upsets": 3.0,
-      "total_pot": 292392.0
+      "total_pot": 292392.0,
+      "underdog_pts_realized": 11.5
     },
     {
       "season": 2025,
@@ -1678,7 +2228,8 @@
       "winning_selections_total": 13,
       "share_prize": 273.0,
       "upsets": 2.0,
-      "total_pot": 281190.0
+      "total_pot": 281190.0,
+      "underdog_pts_realized": 3.75
     },
     {
       "season": 2025,
@@ -1691,7 +2242,8 @@
       "winning_selections_total": 12,
       "share_prize": 3863.0,
       "upsets": 2.0,
-      "total_pot": 289725.0
+      "total_pot": 289725.0,
+      "underdog_pts_realized": 13.0
     },
     {
       "season": 2025,
@@ -1704,7 +2256,8 @@
       "winning_selections_total": 13,
       "share_prize": 273120.0,
       "upsets": 6.0,
-      "total_pot": 273120.0
+      "total_pot": 273120.0,
+      "underdog_pts_realized": 32.25
     },
     {
       "season": 2025,
@@ -1717,7 +2270,8 @@
       "winning_selections_total": 12,
       "share_prize": null,
       "upsets": 5.0,
-      "total_pot": 268110.0
+      "total_pot": 268110.0,
+      "underdog_pts_realized": 18.5
     },
     {
       "season": 2025,
@@ -1730,7 +2284,8 @@
       "winning_selections_total": null,
       "share_prize": null,
       "upsets": null,
-      "total_pot": 269080.0
+      "total_pot": 269080.0,
+      "underdog_pts_realized": null
     },
     {
       "season": 2025,
@@ -1743,7 +2298,8 @@
       "winning_selections_total": null,
       "share_prize": null,
       "upsets": null,
-      "total_pot": 274635.0
+      "total_pot": 274635.0,
+      "underdog_pts_realized": null
     },
     {
       "season": 2025,
@@ -1756,7 +2312,8 @@
       "winning_selections_total": null,
       "share_prize": null,
       "upsets": null,
-      "total_pot": 263364.0
+      "total_pot": 263364.0,
+      "underdog_pts_realized": null
     },
     {
       "season": 2025,
@@ -1769,7 +2326,8 @@
       "winning_selections_total": null,
       "share_prize": null,
       "upsets": null,
-      "total_pot": 260367.0
+      "total_pot": 260367.0,
+      "underdog_pts_realized": null
     },
     {
       "season": 2025,
@@ -1782,7 +2340,8 @@
       "winning_selections_total": null,
       "share_prize": null,
       "upsets": null,
-      "total_pot": 291426.0
+      "total_pot": 291426.0,
+      "underdog_pts_realized": null
     },
     {
       "season": 2025,
@@ -1795,7 +2354,8 @@
       "winning_selections_total": null,
       "share_prize": null,
       "upsets": null,
-      "total_pot": 246954.0
+      "total_pot": 246954.0,
+      "underdog_pts_realized": null
     },
     {
       "season": 2025,
@@ -1808,7 +2368,8 @@
       "winning_selections_total": null,
       "share_prize": null,
       "upsets": null,
-      "total_pot": 212655.0
+      "total_pot": 212655.0,
+      "underdog_pts_realized": null
     },
     {
       "season": 2025,
@@ -1821,7 +2382,8 @@
       "winning_selections_total": null,
       "share_prize": null,
       "upsets": null,
-      "total_pot": 240861.0
+      "total_pot": 240861.0,
+      "underdog_pts_realized": null
     }
   ]
 }
