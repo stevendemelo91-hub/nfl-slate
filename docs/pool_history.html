@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pool History</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root, [data-theme="light"]{
+  --bg: #EDEFF3; --panel: rgba(255,255,255,0.62); --panel-2: rgba(20,20,30,0.045); --line: rgba(20,20,30,0.10);
+  --ice: #6C5CE0; --ice2: #0FA6B8; --win: #16A34A; --loss: #DC2626; --gold: #B45309;
+  --text: #14151A; --text-dim: #5C6270; --text-faint: #9CA3AF;
+  --win-bg: rgba(22,163,74,0.12); --win-border: rgba(22,163,74,0.28);
+  --loss-bg: rgba(220,38,38,0.10); --loss-border: rgba(220,38,38,0.25);
+  --gold-bg: rgba(180,83,9,0.12); --gold-border: rgba(180,83,9,0.28);
+  --ice-bg: rgba(108,92,224,0.10); --ice-border: rgba(108,92,224,0.25);
+  --shadow: 0 1px 3px rgba(20,20,30,0.07), 0 1px 2px rgba(20,20,30,0.05);
+  --blur: 14px;
+  --bg-image: radial-gradient(900px 500px at 10% -10%, rgba(108,92,224,0.14), transparent 60%), radial-gradient(900px 500px at 90% 0%, rgba(15,166,184,0.11), transparent 55%);
+  --header-bg: rgba(237,239,243,0.78);
+  --scrollbar: rgba(20,20,30,0.18);
+}
+[data-theme="dark"]{
+  --bg: #0B0C10; --panel: rgba(255,255,255,0.045); --panel-2: rgba(255,255,255,0.03); --line: rgba(255,255,255,0.10);
+  --ice: #8B7CF0; --ice2: #2FD3E3; --win: #34D399; --loss: #F87171; --gold: #F5B759;
+  --text: #EDEEF3; --text-dim: #A1A8B8; --text-faint: #6B7280;
+  --win-bg: rgba(52,211,153,0.14); --win-border: rgba(52,211,153,0.30);
+  --loss-bg: rgba(248,113,113,0.13); --loss-border: rgba(248,113,113,0.30);
+  --gold-bg: rgba(245,183,89,0.14); --gold-border: rgba(245,183,89,0.30);
+  --ice-bg: rgba(139,124,240,0.14); --ice-border: rgba(139,124,240,0.30);
+  --shadow: 0 1px 3px rgba(0,0,0,0.35), 0 4px 14px rgba(0,0,0,0.25);
+  --blur: 16px;
+  --bg-image: radial-gradient(900px 500px at 10% -10%, rgba(139,124,240,0.16), transparent 60%), radial-gradient(900px 500px at 90% 0%, rgba(47,211,227,0.12), transparent 55%);
+  --header-bg: rgba(11,12,16,0.82);
+  --scrollbar: rgba(255,255,255,0.18);
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  background: var(--bg-image), var(--bg);
+  color: var(--text); font-family: 'Manrope', sans-serif;
+  min-height: 100vh; padding: 32px 16px 80px;
+}
+.wrap { max-width: 1300px; margin: 0 auto; }
+.table-scroll { overflow-x: auto; overflow-y: auto; max-height: 70vh; border-radius: 12px; }
+
+header {
+  display: flex; justify-content: space-between; align-items: baseline;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 16px; margin-bottom: 20px;
+  position: sticky; top: 0; z-index: 50;
+  background: var(--header-bg); backdrop-filter: blur(var(--blur));
+}
+.title { font-family: 'Manrope', sans-serif; font-weight: 800; font-size: 22px; letter-spacing: -0.2px; }
+.title .accent { background: linear-gradient(90deg, var(--ice), var(--ice2)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.subnote { font-size: 12px; color: var(--text-faint); margin-bottom: 16px; }
+.subnote a { color: var(--ice); text-decoration: none; }
+
+table { width: 100%; border-collapse: separate; border-spacing: 0; background: var(--panel); border: 1px solid var(--line); border-radius: 12px; backdrop-filter: blur(var(--blur)); box-shadow: var(--shadow); }
+thead th {
+  font-family: 'Manrope', sans-serif; font-weight: 700; font-size: 10.5px; letter-spacing: 0.4px;
+  text-transform: uppercase; color: var(--text-faint); text-align: left;
+  padding: 10px 8px; border-bottom: 1px solid var(--line); user-select: none; white-space: nowrap;
+  position: sticky; top: 0; background: var(--header-bg); backdrop-filter: blur(var(--blur)); z-index: 10;
+}
+thead tr th:first-child { border-top-left-radius: 12px; }
+thead tr th:last-child { border-top-right-radius: 12px; }
+th.sortable { cursor: pointer; transition: color 0.15s ease; }
+th.sortable:hover { color: var(--ice); }
+th.sortable.active { color: var(--ice); }
+.sort-arrow { font-size: 9px; display: inline-block; width: 8px; }
+th.numeric, td.numeric { text-align: right; }
+tbody tr { transition: background 0.15s ease; }
+tbody tr:hover td { background: var(--panel-2); }
+td { padding: 10px 8px; font-size: 13px; vertical-align: middle; border-top: 1px solid var(--line); font-family: 'Space Grotesk', monospace; }
+.dim { color: var(--text-faint); font-style: normal; }
+
+.pool-history-current { color: var(--ice); font-weight: 700; }
+.pool-history-current-row td { background: var(--ice-bg); }
+
+.pool-header { margin-bottom: 12px; }
+.pool-title { font-family: 'Manrope', sans-serif; font-weight: 800; font-size: 18px; letter-spacing: -0.2px; }
+.pool-subnote { font-family: 'Space Grotesk', monospace; font-size: 11px; color: var(--text-faint); margin-top: 4px; }
+.pool-section { margin-bottom: 32px; }
+
+.signal-empty { font-family: 'Space Grotesk', monospace; font-size: 12px; color: var(--text-faint); padding: 12px 0; }
+
+.tally-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 10px; }
+.tally-box {
+  background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 14px 10px;
+  text-align: center; backdrop-filter: blur(var(--blur));
+}
+.tally-box .tally-label { font-family: 'Space Grotesk', monospace; font-size: 10px; letter-spacing: 0.5px; text-transform: uppercase; color: var(--text-faint); }
+.tally-box .tally-value { font-family: 'Manrope', sans-serif; font-weight: 800; font-size: 26px; margin-top: 6px; color: var(--text); }
+.tally-box.perfect { border-color: var(--win-border); background: var(--win-bg); }
+.tally-box.perfect .tally-value { color: var(--win); }
+.tally-total { font-family: 'Space Grotesk', monospace; font-size: 11px; color: var(--text-faint); margin-top: 10px; text-align: right; }
+
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-thumb { background: var(--scrollbar); border-radius: 6px; }
+
+@media (max-width: 640px) {
+  .tally-grid { grid-template-columns: repeat(3, 1fr); }
+  table, thead, tbody, th, td, tr { display: block; }
+  thead { display: none; }
+  tbody tr { border: 1px solid var(--line); border-radius: 12px; margin-bottom: 10px; padding: 8px 0; }
+  td { display: flex; justify-content: space-between; padding: 6px 14px; }
+  td::before { content: attr(data-label); font-family: 'Space Grotesk', monospace; font-size: 10px; color: var(--text-faint); text-transform: uppercase; }
+}
+</style>
+<script>(function(){
+  try{
+    var t = localStorage.getItem('theme_pref');
+    document.documentElement.setAttribute('data-theme', t === 'dark' ? 'dark' : 'light');
+  }catch(e){ document.documentElement.setAttribute('data-theme','light'); }
+})();</script>
+</head>
+<body>
+<div id="themeToggle" style="position:fixed; top:14px; right:14px; z-index:1000; display:flex; border:1px solid var(--line); border-radius:999px; overflow:hidden; background:var(--panel); backdrop-filter:blur(var(--blur)); box-shadow:var(--shadow);">
+  <button type="button" data-theme-choice="light" style="border:none; background:none; padding:6px 13px; font-family:'Manrope',sans-serif; font-size:11.5px; font-weight:600; cursor:pointer; color:var(--text-dim);">Light</button>
+  <button type="button" data-theme-choice="dark" style="border:none; background:none; padding:6px 13px; font-family:'Manrope',sans-serif; font-size:11.5px; font-weight:600; cursor:pointer; color:var(--text-dim);">Dark</button>
+</div>
+<script>
+(function(){
+  function applyActive(){
+    var cur = document.documentElement.getAttribute('data-theme') || 'light';
+    document.querySelectorAll('#themeToggle button').forEach(function(b){
+      var active = b.dataset.themeChoice === cur;
+      b.style.background = active ? 'var(--ice)' : 'none';
+      b.style.color = active ? '#fff' : 'var(--text-dim)';
+    });
+  }
+  document.querySelectorAll('#themeToggle button').forEach(function(b){
+    b.onclick = function(){
+      var choice = b.dataset.themeChoice;
+      document.documentElement.setAttribute('data-theme', choice);
+      try{ localStorage.setItem('theme_pref', choice); }catch(e){}
+      applyActive();
+    };
+  });
+  applyActive();
+})();
+</script>
+<div class="wrap">
+  <header>
+    <div class="title">Pool <span class="accent">History</span></div>
+  </header>
+  <div class="subnote"><a href="table.html">&larr; back to weekly slate</a></div>
+
+  <div class="pool-section">
+    <div class="pool-header">
+      <div class="pool-title">Season History</div>
+      <div class="pool-subnote">OLG PROLINE weekly settlement, all logged seasons - click any column to sort</div>
+    </div>
+    <div class="table-scroll">
+      <table id="history-table">
+        <thead>
+          <tr>
+            <th class="sortable" data-sort="season">Year <span class="sort-arrow"></span></th>
+            <th class="sortable" data-sort="week">Week <span class="sort-arrow"></span></th>
+            <th class="numeric sortable" data-sort="selections">Selections Required <span class="sort-arrow"></span></th>
+            <th class="numeric sortable" data-sort="upsets">Upsets <span class="sort-arrow"></span></th>
+            <th class="numeric sortable" data-sort="winners">Winners <span class="sort-arrow"></span></th>
+            <th class="numeric sortable" data-sort="share_prize">Share Prize <span class="sort-arrow"></span></th>
+            <th class="numeric sortable" data-sort="total_pot">Total Pot <span class="sort-arrow"></span></th>
+            <th class="numeric sortable" data-sort="underdog_pts_realized">Underdog Pts Realized <span class="sort-arrow"></span></th>
+          </tr>
+        </thead>
+        <tbody id="history-body"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="pool-section">
+    <div class="pool-header">
+      <div class="pool-title">This Season's Card Performance</div>
+      <div class="pool-subnote" id="tally-subnote">How many wrong picks per settled week, this season - straight picks only (boxed games excluded)</div>
+    </div>
+    <div id="tally-container"></div>
+  </div>
+
+</div>
+
+<script>
+const TRACKER_KEY = 'nfl_pick_tracker_v1';
+
+function loadTracker() {
+  try {
+    const raw = localStorage.getItem(TRACKER_KEY);
+    const parsed = raw ? JSON.parse(raw) : {};
+    return { handicapperPicks: {}, my5Picks: {}, poolPicks: {}, olgPickPct: {}, ...parsed };
+  } catch (e) {
+    return { handicapperPicks: {}, my5Picks: {}, poolPicks: {}, olgPickPct: {} };
+  }
+}
+const TRACKER = loadTracker();
+
+function isPoolEligible(gameday) {
+  const d = new Date(gameday + 'T12:00:00');
+  const day = d.getDay();
+  return day === 0 || day === 1;
+}
+
+let historyData = [];
+let sortColumn = 'season';
+let sortAscending = false;
+
+const HISTORY_SORT_KEYS = {
+  season: h => h.season, week: h => h.week,
+  selections: h => h.winning_selections_required === null ? -Infinity : h.winning_selections_required,
+  upsets: h => h.upsets === null ? -Infinity : h.upsets,
+  winners: h => h.no_of_winners === null ? -Infinity : h.no_of_winners,
+  share_prize: h => h.share_prize === null ? -Infinity : h.share_prize,
+  total_pot: h => h.total_pot === null ? -Infinity : h.total_pot,
+  underdog_pts_realized: h => h.underdog_pts_realized === null ? -Infinity : h.underdog_pts_realized,
+};
+
+function setSort(column) {
+  if (sortColumn === column) {
+    sortAscending = !sortAscending;
+  } else {
+    sortColumn = column;
+    sortAscending = column === 'week'; // week reads naturally ascending; every other column (year, and all numeric metrics) is more useful showing its highest/newest values first
+  }
+  renderHistoryTable();
+}
+
+function updateSortHeaders() {
+  document.querySelectorAll('#history-table th.sortable').forEach(th => {
+    const col = th.dataset.sort;
+    const arrow = th.querySelector('.sort-arrow');
+    if (col === sortColumn) {
+      th.classList.add('active');
+      arrow.textContent = sortAscending ? '▲' : '▼';
+    } else {
+      th.classList.remove('active');
+      arrow.textContent = '';
+    }
+  });
+}
+
+function renderHistoryTable() {
+  const tbody = document.getElementById('history-body');
+  if (historyData.length === 0) {
+    tbody.innerHTML = `<tr><td colspan="8" class="signal-empty">No pool results logged yet.</td></tr>`;
+    return;
+  }
+  updateSortHeaders();
+  const keyFn = HISTORY_SORT_KEYS[sortColumn];
+  const sorted = [...historyData].sort((a, b) => {
+    const ka = keyFn(a), kb = keyFn(b);
+    const cmp = ka < kb ? -1 : (ka > kb ? 1 : 0);
+    return sortAscending ? cmp : -cmp;
+  });
+
+  const fmtNum = v => (v === null || v === undefined) ? '<span class="dim">—</span>' : v;
+  const fmtMoney = v => (v === null || v === undefined) ? '<span class="dim">—</span>' : `$${v.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})}`;
+  const fmtSelections = h => (h.winning_selections_required === null || h.winning_selections_total === null)
+    ? '<span class="dim">—</span>' : `${h.winning_selections_required}/${h.winning_selections_total}`;
+
+  tbody.innerHTML = sorted.map(h => `
+    <tr>
+      <td data-label="Year">${h.season}</td>
+      <td data-label="Week">${h.week}</td>
+      <td class="numeric" data-label="Selections Required">${fmtSelections(h)}</td>
+      <td class="numeric" data-label="Upsets">${fmtNum(h.upsets)}</td>
+      <td class="numeric" data-label="Winners">${fmtNum(h.no_of_winners)}</td>
+      <td class="numeric" data-label="Share Prize">${fmtMoney(h.share_prize)}</td>
+      <td class="numeric" data-label="Total Pot">${fmtMoney(h.total_pot)}</td>
+      <td class="numeric" data-label="Underdog Pts Realized">${fmtNum(h.underdog_pts_realized)}</td>
+    </tr>
+  `).join('');
+}
+
+document.querySelectorAll('#history-table th.sortable').forEach(th => {
+  th.addEventListener('click', () => setSort(th.dataset.sort));
+});
+
+// --- Current-season card performance tally ---
+// For each settled week this season, count how many of THIS season's
+// straight Final picks (not boxed) were wrong. Boxed games ("— (box)")
+// are excluded, since a boxed game covers multiple outcomes and doesn't
+// have a single right/wrong pick the same way a straight pick does.
+async function renderCurrentSeasonTally(currentSeason) {
+  const container = document.getElementById('tally-container');
+  let manifest;
+  try {
+    const res = await fetch('./data/manifest.json');
+    manifest = await res.json();
+  } catch (e) {
+    container.innerHTML = `<div class="signal-empty">Could not load season data.</div>`;
+    return;
+  }
+
+  const seasonWeeks = manifest.weeks.filter(w => w.season === currentSeason);
+  const wrongCountsByWeek = [];
+
+  for (const entry of seasonWeeks) {
+    let weekData;
+    try {
+      const res = await fetch(`./data/${entry.file}`);
+      weekData = await res.json();
+    } catch (e) { continue; }
+
+    const poolGames = weekData.games.filter(g => isPoolEligible(g.gameday));
+    if (poolGames.length === 0) continue;
+    // Only tally a week once every pool-eligible game in it has finished
+    const allFinal = poolGames.every(g => g.is_final);
+    if (!allFinal) continue;
+
+    let wrongCount = 0;
+    poolGames.forEach(g => {
+      const pick = TRACKER.poolPicks[g.game_id];
+      if (!pick || !pick.finalTouched || pick.final === '') return; // untouched or boxed - excluded
+      const pickedHome = pick.final === g.home_team;
+      const pickWon = pickedHome ? g.home_score > g.away_score : g.away_score > g.home_score;
+      if (!pickWon) wrongCount++;
+    });
+    wrongCountsByWeek.push(wrongCount);
+  }
+
+  if (wrongCountsByWeek.length === 0) {
+    container.innerHTML = `<div class="signal-empty">No fully-settled weeks yet this season - check back once games finish.</div>`;
+    return;
+  }
+
+  const buckets = { perfect: 0, one: 0, two: 0, three: 0, four: 0, fivePlus: 0 };
+  wrongCountsByWeek.forEach(w => {
+    if (w === 0) buckets.perfect++;
+    else if (w === 1) buckets.one++;
+    else if (w === 2) buckets.two++;
+    else if (w === 3) buckets.three++;
+    else if (w === 4) buckets.four++;
+    else buckets.fivePlus++;
+  });
+
+  container.innerHTML = `
+    <div class="tally-grid">
+      <div class="tally-box perfect"><div class="tally-label">Perfect</div><div class="tally-value">${buckets.perfect}</div></div>
+      <div class="tally-box"><div class="tally-label">1 Wrong</div><div class="tally-value">${buckets.one}</div></div>
+      <div class="tally-box"><div class="tally-label">2 Wrong</div><div class="tally-value">${buckets.two}</div></div>
+      <div class="tally-box"><div class="tally-label">3 Wrong</div><div class="tally-value">${buckets.three}</div></div>
+      <div class="tally-box"><div class="tally-label">4 Wrong</div><div class="tally-value">${buckets.four}</div></div>
+      <div class="tally-box"><div class="tally-label">5+ Wrong</div><div class="tally-value">${buckets.fivePlus}</div></div>
+    </div>
+    <div class="tally-total">${wrongCountsByWeek.length} settled week${wrongCountsByWeek.length === 1 ? '' : 's'} tracked this season</div>
+  `;
+}
+
+async function init() {
+  try {
+    const manifestRes = await fetch('./data/manifest.json');
+    const manifest = await manifestRes.json();
+    const currentSeason = manifest.latest.season;
+
+    const histRes = await fetch(`./data/${manifest.weeks.find(w => w.season === currentSeason && w.week === manifest.latest.week).file}`);
+    const histData = await histRes.json();
+    historyData = histData.pool_results_history || [];
+    renderHistoryTable();
+
+    await renderCurrentSeasonTally(currentSeason);
+  } catch (e) {
+    document.getElementById('history-body').innerHTML = `<tr><td colspan="8" class="signal-empty">Could not load data. Run the weekly scorer first.</td></tr>`;
+  }
+}
+
+init();
+</script>
+</body>
+</html>

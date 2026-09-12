@@ -182,9 +182,7 @@ footer { text-align: center; color: var(--text-faint); font-family: 'Space Grote
 .olg-pct-input { width: 56px; font-family: 'Space Grotesk', monospace; font-size: 11px; background: var(--panel-2); border: 1px solid var(--line); border-radius: 6px; padding: 3px 6px; color: var(--text); }
 .olg-pct-note { font-size: 10px; color: var(--gold); }
 .optimizer-section { margin-top: 28px; }
-.pool-history-section { margin-top: 28px; }
-.pool-history-current { color: var(--ice); font-weight: 700; }
-.pool-history-current-row td { background: var(--ice-bg); }
+
 .optimizer-row.optimizer-highlight td { background: var(--gold-bg); }
 .optimizer-factors { font-family: 'Space Grotesk', monospace; font-weight: 700; }
 .optimizer-detail { font-family: 'Space Grotesk', monospace; font-size: 11px; color: var(--text-dim); line-height: 1.6; }
@@ -249,7 +247,7 @@ footer a { color: var(--text-dim); }
     <div class="meta" id="meta-info">Loading...</div>
   </header>
   <div id="week-nav-list" class="week-nav"></div>
-  <div class="subnote">All figures relative to the HOME team &middot; sorted by kickoff, soonest first &middot; <a href="index.html" style="color:var(--text-dim);">switch to card view →</a></div>
+  <div class="subnote">All figures relative to the HOME team &middot; sorted by kickoff, soonest first &middot; <a href="index.html" style="color:var(--text-dim);">switch to card view →</a> &middot; <a href="pool_history.html" style="color:var(--text-dim);">pool history →</a></div>
 
   <div class="backup-controls">
     <button class="pick-add" onclick="exportBackup()">⬇ Export Backup</button>
@@ -333,29 +331,6 @@ footer a { color: var(--text-dim); }
           </tr>
         </thead>
         <tbody id="optimizer-body"></tbody>
-      </table>
-    </div>
-  </div>
-
-  <div class="pool-history-section">
-    <div class="pool-header">
-      <div class="pool-title">Pool Strength History</div>
-      <div class="pool-subnote">OLG PROLINE weekly settlement, logged week by week - compare this week's card difficulty against past weeks</div>
-    </div>
-    <div class="table-scroll" style="max-height: 40vh;">
-      <table id="pool-history-table">
-        <thead>
-          <tr>
-            <th>Week</th>
-            <th class="numeric">Winners</th>
-            <th class="numeric">Selections Required</th>
-            <th class="numeric">Upsets</th>
-            <th class="numeric">Share Prize</th>
-            <th class="numeric">Total Pot</th>
-            <th>Closed</th>
-          </tr>
-        </thead>
-        <tbody id="pool-history-body"></tbody>
       </table>
     </div>
   </div>
@@ -886,37 +861,6 @@ function render(data) {
   renderPoolTable(data);
   renderSignalView(data);
   renderOptimizerTable(data);
-  renderPoolHistory(data);
-}
-
-function renderPoolHistory(data) {
-  const tbody = document.getElementById('pool-history-body');
-  const history = data.pool_results_history || [];
-
-  if (history.length === 0) {
-    tbody.innerHTML = `<tr><td colspan="7" class="signal-empty">No pool results logged yet - ask to have this week's card added once it settles.</td></tr>`;
-    return;
-  }
-
-  const fmtNum = v => (v === null || v === undefined) ? '<span class="dim">—</span>' : v;
-  const fmtMoney = v => (v === null || v === undefined) ? '<span class="dim">—</span>' : `$${v.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})}`;
-  const fmtSelections = h => (h.winning_selections_required === null || h.winning_selections_total === null)
-    ? '<span class="dim">—</span>' : `${h.winning_selections_required}/${h.winning_selections_total}`;
-
-  tbody.innerHTML = history.map(h => {
-    const isCurrent = h.season === data.season && h.week === data.week;
-    return `
-      <tr class="${isCurrent ? 'pool-history-current-row' : ''}">
-        <td data-label="Week" class="${isCurrent ? 'pool-history-current' : ''}">${h.season} WK${h.week}${isCurrent ? ' (this week)' : ''}</td>
-        <td class="numeric" data-label="Winners">${fmtNum(h.no_of_winners)}</td>
-        <td class="numeric" data-label="Selections Required">${fmtSelections(h)}</td>
-        <td class="numeric" data-label="Upsets">${fmtNum(h.upsets)}</td>
-        <td class="numeric" data-label="Share Prize">${fmtMoney(h.share_prize)}</td>
-        <td class="numeric" data-label="Total Pot">${fmtMoney(h.total_pot)}</td>
-        <td data-label="Closed">${h.closed_date || '<span class="dim">—</span>'}</td>
-      </tr>
-    `;
-  }).join('');
 }
 
 const SIGNAL_THRESHOLD = 0.5;
