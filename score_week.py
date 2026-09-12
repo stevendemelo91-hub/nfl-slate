@@ -591,7 +591,7 @@ def load_pool_results_history(path='pool_results_history.csv'):
     empty list gracefully if the file doesn't exist yet.
     Format: season,week,pool_id,pool_label,closed_date,no_of_winners,
             winning_selections_required,winning_selections_total,
-            share_prize,upsets,total_pot"""
+            share_prize,upsets,total_pot,underdog_pts_realized"""
     try:
         df = pd.read_csv(path)
     except FileNotFoundError:
@@ -618,6 +618,7 @@ def load_pool_results_history(path='pool_results_history.csv'):
             'share_prize': opt_float(row.get('share_prize')),
             'upsets': opt_float(row.get('upsets')),
             'total_pot': opt_float(row.get('total_pot')),
+            'underdog_pts_realized': opt_float(row.get('underdog_pts_realized')),
         })
     records.sort(key=lambda r: (r['season'], r['week']))
     return records
