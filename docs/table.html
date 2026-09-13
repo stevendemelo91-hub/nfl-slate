@@ -1134,35 +1134,30 @@ function renderPoolTable(data) {
     const homeLabel = poolGameLabel(g.home_team);
     const awayLabel = poolGameLabel(g.away_team);
 
-    const instanceSelect = (field, value) => `
+    // Every pick column - Instance #1-4 and Final - uses this same
+    // structure: a genuine "not yet decided" placeholder, distinct from
+    // an explicit "— (box)" choice, so a column nobody has touched never
+    // looks identical to a deliberate box (the exact ambiguity that made
+    // real boxed games silently vanish from the Final tally before).
+    const pickSelect = (field, value) => `
       <select class="pool-pick-select" onchange="updatePoolPick('${gameId}', '${field}', this.value)">
-        <option value="" ${value === '' ? 'selected' : ''}>— (box)</option>
-        <option value="${g.away_team}" ${value === g.away_team ? 'selected' : ''}>${awayLabel}</option>
-        <option value="${g.home_team}" ${value === g.home_team ? 'selected' : ''}>${homeLabel}</option>
-      </select>`;
-
-    // Final needs a genuine "not yet decided" default DISTINCT from "— (box)"
-    // - otherwise a row nobody has touched looks identical to a deliberate
-    // box choice (both show as blank), and the box count/cost silently
-    // misses real boxes the user believes are already locked in.
-    const finalSelect = (value) => `
-      <select class="pool-pick-select" onchange="updatePoolPick('${gameId}', 'final', this.value)">
         <option value="" ${value === '' ? 'selected' : ''} disabled>— select —</option>
         <option value="BOX" ${value === 'BOX' ? 'selected' : ''}>— (box)</option>
         <option value="${g.away_team}" ${value === g.away_team ? 'selected' : ''}>${awayLabel}</option>
         <option value="${g.home_team}" ${value === g.home_team ? 'selected' : ''}>${homeLabel}</option>
       </select>`;
 
+
     const tr = document.createElement('tr');
     const neutralTag = g.neutral_site ? '<span class="neutral-tag">NEUTRAL</span>' : '';
     tr.innerHTML = `
       <td class="kickoff" data-label="Kickoff">${formatKickoff(g)}</td>
       <td data-label="Matchup"><span class="matchup"><span class="away-team">${displayName(g.away_team)}</span><img class="matchup-logo" src="${TEAM_LOGOS[g.away_team] || ''}" alt="" onerror="this.style.display='none'"><span class="at">@</span><img class="matchup-logo" src="${TEAM_LOGOS[g.home_team] || ''}" alt="" onerror="this.style.display='none'"><span class="home-team">${displayName(g.home_team)}</span></span>${neutralTag}</td>
-      <td data-label="Instance #1">${instanceSelect('instance1', pick.instance1)}</td>
-      <td data-label="Instance #2">${instanceSelect('instance2', pick.instance2)}</td>
-      <td data-label="Instance #3">${instanceSelect('instance3', pick.instance3)}</td>
-      <td data-label="Instance #4">${instanceSelect('instance4', pick.instance4)}</td>
-      <td data-label="Final">${finalSelect(pick.final)}</td>
+      <td data-label="Instance #1">${pickSelect('instance1', pick.instance1)}</td>
+      <td data-label="Instance #2">${pickSelect('instance2', pick.instance2)}</td>
+      <td data-label="Instance #3">${pickSelect('instance3', pick.instance3)}</td>
+      <td data-label="Instance #4">${pickSelect('instance4', pick.instance4)}</td>
+      <td data-label="Final">${pickSelect('final', pick.final)}</td>
     `;
     tbody.appendChild(tr);
   });
@@ -1189,8 +1184,13 @@ function renderPoolTally(poolGames) {
     let total = 0;
     poolGames.forEach(g => {
       const pick = TRACKER.poolPicks[g.game_id];
-      if (!pick || !pick[field]) return; // untouched or left on "—" - no pick made
+      if (!pick || !pick[field]) return; // untouched (empty) - no pick made
       const impliedSpread = g.power_rating_implied_spread || 0;
+      if (pick[field] === 'BOX') {
+        // Boxed: always the game's own underdog, same as Final's box logic
+        total += Math.abs(impliedSpread);
+        return;
+      }
       const pickIsHome = pick[field] === g.home_team;
       // power_rating_implied_spread: positive = home favored (per its own
       // docstring), so a team is the underdog when its OWN sign is
