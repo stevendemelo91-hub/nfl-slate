@@ -72,10 +72,10 @@
       "gameday": "2026-09-20",
       "gametime": "13:00",
       "weekday": "Sunday",
-      "home_win_probability": 0.691,
-      "away_win_probability": 0.309,
+      "home_win_probability": 0.609,
+      "away_win_probability": 0.391,
       "favored": "ATL",
-      "raw_strength_score": 0.81,
+      "raw_strength_score": 0.44,
       "feature_breakdown": {
         "rank_coefficient_home": 1.0,
         "third_down_coefficient_home": -1.0,
@@ -83,6 +83,7 @@
         "ypp_def_coefficient_home": 1.0,
         "turnover_coefficient_home": 1.0,
         "road_trip_coefficient_home": -0.5,
+        "qb_coefficient_home": -1.0,
         "schedule_milestones_coefficient_home": 0.5
       },
       "power_rating_implied_spread": 2.42,
@@ -93,10 +94,12 @@
           "depth_chart_starter": "Tua Tagovailoa",
           "normal_starter_used_for_elite_check": "Tua Tagovailoa",
           "is_elite_starter": false,
-          "backup_starting": false,
+          "backup_starting": true,
           "rookie_starting": false,
-          "qb_value": 0.0,
-          "notes": [],
+          "qb_value": -1.0,
+          "notes": [
+            "Backup QB starting"
+          ],
           "depth_chart_conflict": null
         },
         {

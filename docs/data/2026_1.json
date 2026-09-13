@@ -423,6 +423,24 @@
           "usage_note": "73% def. snaps"
         },
         {
+          "name": "Tyson Bagent",
+          "position": "QB",
+          "status": "Questionable",
+          "trend": [
+            {
+              "date": "2026-09-10",
+              "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-09-12",
+              "report_status": "Questionable",
+              "practice_status": "Did Not Participate In Practice"
+            }
+          ],
+          "usage_note": "7% off. snaps"
+        },
+        {
           "name": "Rome Odunze",
           "position": "WR",
           "status": "Questionable",
@@ -1104,6 +1122,11 @@
               "date": "2026-09-12",
               "report_status": "Questionable",
               "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-09-13",
+              "report_status": "Out",
+              "practice_status": "Did Not Participate In Practice"
             }
           ],
           "usage_note": "14% def. snaps"
@@ -1388,16 +1411,17 @@
       "gameday": "2026-09-13",
       "gametime": "13:00",
       "weekday": "Sunday",
-      "home_win_probability": 0.533,
-      "away_win_probability": 0.467,
+      "home_win_probability": 0.621,
+      "away_win_probability": 0.379,
       "favored": "PIT",
-      "raw_strength_score": 0.13,
+      "raw_strength_score": 0.49,
       "feature_breakdown": {
         "rank_coefficient_home": -1.0,
         "third_down_coefficient_home": 1.0,
         "ypp_off_coefficient_home": -1.0,
         "ypp_def_coefficient_home": -1.0,
         "road_trip_coefficient_home": 0.5,
+        "qb_coefficient_home": 1.0,
         "coaching_coefficient_home": 1.0,
         "schedule_milestones_coefficient_home": 0.5
       },
@@ -1420,11 +1444,13 @@
           "depth_chart_starter": "Tua Tagovailoa",
           "normal_starter_used_for_elite_check": "Tua Tagovailoa",
           "is_elite_starter": false,
-          "backup_starting": false,
+          "backup_starting": true,
           "rookie_starting": false,
-          "qb_value": 0.0,
-          "notes": [],
-          "depth_chart_conflict": "Depth chart lists Tua Tagovailoa as starter, but injury report shows them Out - check qb_overrides.csv"
+          "qb_value": -1.0,
+          "notes": [
+            "Backup QB starting"
+          ],
+          "depth_chart_conflict": null
         }
       ],
       "home_injuries": [
@@ -1483,6 +1509,42 @@
             }
           ],
           "usage_note": "38% def. snaps"
+        },
+        {
+          "name": "Tua Tagovailoa",
+          "position": "QB",
+          "status": "Out",
+          "trend": [
+            {
+              "date": "2026-09-11",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            },
+            {
+              "date": "2026-09-12",
+              "report_status": "Out",
+              "practice_status": "Did Not Participate In Practice"
+            }
+          ],
+          "usage_note": "95% off. snaps"
+        },
+        {
+          "name": "Michael Penix Jr.",
+          "position": "QB",
+          "status": "Out",
+          "trend": [
+            {
+              "date": "2026-09-10",
+              "report_status": null,
+              "practice_status": "Full Participation in Practice"
+            },
+            {
+              "date": "2026-09-12",
+              "report_status": "Out",
+              "practice_status": "Full Participation in Practice"
+            }
+          ],
+          "usage_note": "93% off. snaps"
         },
         {
           "name": "Billy Bowman Jr.",
@@ -2247,6 +2309,11 @@
               "date": "2026-09-12",
               "report_status": "Questionable",
               "practice_status": "Limited Participation in Practice"
+            },
+            {
+              "date": "2026-09-13",
+              "report_status": "Out",
+              "practice_status": "Limited Participation in Practice"
             }
           ],
           "usage_note": null
@@ -2490,6 +2557,11 @@
               "date": "2026-09-12",
               "report_status": null,
               "practice_status": "Limited Participation in Practice"
+            },
+            {
+              "date": "2026-09-13",
+              "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
             }
           ],
           "usage_note": "73% def. snaps"
@@ -2503,6 +2575,11 @@
               "date": "2026-09-11",
               "report_status": null,
               "practice_status": "Full Participation in Practice"
+            },
+            {
+              "date": "2026-09-13",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
             }
           ],
           "usage_note": "80% def. snaps"
@@ -2516,6 +2593,11 @@
               "date": "2026-09-11",
               "report_status": null,
               "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-09-13",
+              "report_status": "Out",
+              "practice_status": "Did Not Participate In Practice"
             }
           ],
           "usage_note": "98% def. snaps"
@@ -2528,6 +2610,11 @@
             {
               "date": "2026-09-11",
               "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-09-13",
+              "report_status": "Out",
               "practice_status": "Did Not Participate In Practice"
             }
           ],
