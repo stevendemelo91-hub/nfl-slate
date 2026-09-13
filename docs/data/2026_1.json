@@ -1946,9 +1946,9 @@
         "O/U 47.5 (-102.0) (9/2)",
         "O/U 47.5 (-106.0) (8/31)"
       ],
-      "home_score": null,
-      "away_score": null,
-      "is_final": false
+      "home_score": 14.0,
+      "away_score": 26.0,
+      "is_final": true
     },
     {
       "game_id": "2026_01_MIA_LV",
@@ -2039,9 +2039,9 @@
         "O/U 40.5 (-110.0) (9/1)",
         "O/U 39.5 (-120.0) (8/31)"
       ],
-      "home_score": null,
-      "away_score": null,
-      "is_final": false
+      "home_score": 27.0,
+      "away_score": 13.0,
+      "is_final": true
     },
     {
       "game_id": "2026_01_GB_MIN",
@@ -2243,9 +2243,9 @@
         "O/U 46.5 (-110.0) (9/2)",
         "O/U 45.5 (-115.0) (8/31)"
       ],
-      "home_score": null,
-      "away_score": null,
-      "is_final": false
+      "home_score": 39.0,
+      "away_score": 22.0,
+      "is_final": true
     },
     {
       "game_id": "2026_01_WAS_PHI",
@@ -2404,9 +2404,9 @@
         "O/U 45.5 (-105.0) (9/2)",
         "O/U 45.5 (-108.0) (8/31)"
       ],
-      "home_score": null,
-      "away_score": null,
-      "is_final": false
+      "home_score": 24.0,
+      "away_score": 22.0,
+      "is_final": true
     },
     {
       "game_id": "2026_01_DAL_NYG",
