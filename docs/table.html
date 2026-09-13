@@ -446,9 +446,26 @@ function loadTracker() {
   try {
     const raw = localStorage.getItem(TRACKER_KEY);
     const parsed = raw ? JSON.parse(raw) : {};
-    return { handicapperPicks: {}, my5Picks: {}, poolPicks: {}, olgPickPct: {}, ...parsed };
+    const tracker = { handicapperPicks: {}, my5Picks: {}, poolPicks: {}, olgPickPct: {}, ...parsed };
+    migratePoolPicksBoxValue(tracker);
+    return tracker;
   } catch (e) {
     return { handicapperPicks: {}, my5Picks: {}, poolPicks: {}, olgPickPct: {} };
+  }
+}
+
+// One-time migration: "— (box)" used to be stored as an empty final value
+// (final: ''), identical to a row nobody had touched at all - the exact
+// ambiguity that caused genuinely-boxed games to silently not count.
+// Existing saves already distinguish these two cases via finalTouched, so
+// convert any real prior box choice (finalTouched + empty final) to the
+// new explicit 'BOX' value; a genuinely untouched row (finalTouched false
+// or absent) is correctly left as '' (undecided).
+function migratePoolPicksBoxValue(tracker) {
+  for (const pick of Object.values(tracker.poolPicks || {})) {
+    if (pick && pick.finalTouched && pick.final === '') {
+      pick.final = 'BOX';
+    }
   }
 }
 
@@ -626,6 +643,7 @@ function importBackup(fileInput) {
       }
       const { lineGuesses: importedGuesses, ...trackerFields } = imported;
       TRACKER = { handicapperPicks: {}, my5Picks: {}, poolPicks: {}, olgPickPct: {}, ...trackerFields };
+      migratePoolPicksBoxValue(TRACKER);
       saveTracker(TRACKER);
 
       // Restore guess lines too, if this backup has them (older backups,
@@ -1123,6 +1141,18 @@ function renderPoolTable(data) {
         <option value="${g.home_team}" ${value === g.home_team ? 'selected' : ''}>${homeLabel}</option>
       </select>`;
 
+    // Final needs a genuine "not yet decided" default DISTINCT from "— (box)"
+    // - otherwise a row nobody has touched looks identical to a deliberate
+    // box choice (both show as blank), and the box count/cost silently
+    // misses real boxes the user believes are already locked in.
+    const finalSelect = (value) => `
+      <select class="pool-pick-select" onchange="updatePoolPick('${gameId}', 'final', this.value)">
+        <option value="" ${value === '' ? 'selected' : ''} disabled>— select —</option>
+        <option value="BOX" ${value === 'BOX' ? 'selected' : ''}>— (box)</option>
+        <option value="${g.away_team}" ${value === g.away_team ? 'selected' : ''}>${awayLabel}</option>
+        <option value="${g.home_team}" ${value === g.home_team ? 'selected' : ''}>${homeLabel}</option>
+      </select>`;
+
     const tr = document.createElement('tr');
     const neutralTag = g.neutral_site ? '<span class="neutral-tag">NEUTRAL</span>' : '';
     tr.innerHTML = `
@@ -1132,7 +1162,7 @@ function renderPoolTable(data) {
       <td data-label="Instance #2">${instanceSelect('instance2', pick.instance2)}</td>
       <td data-label="Instance #3">${instanceSelect('instance3', pick.instance3)}</td>
       <td data-label="Instance #4">${instanceSelect('instance4', pick.instance4)}</td>
-      <td data-label="Final">${instanceSelect('final', pick.final)}</td>
+      <td data-label="Final">${finalSelect(pick.final)}</td>
     `;
     tbody.appendChild(tr);
   });
@@ -1178,9 +1208,16 @@ function renderPoolTally(poolGames) {
   // underdog's points (boxing covers both sides); straight picks only
   // contribute if the picked team is itself the underdog. Games never
   // touched at all stay out entirely.
-  const touchedGames = poolGames.filter(g => TRACKER.poolPicks[g.game_id] && TRACKER.poolPicks[g.game_id].finalTouched);
-  const boxedGames = touchedGames.filter(g => TRACKER.poolPicks[g.game_id].final === '');
-  const straightPicks = touchedGames.filter(g => TRACKER.poolPicks[g.game_id].final !== '');
+  // A game only counts once Final has an explicit value: 'BOX' (deliberately
+  // boxed) or a team code (straight pick). Empty string is genuinely
+  // undecided - not touched, not boxed, not picked - and stays out of the
+  // tally entirely, exactly like a row nobody has looked at yet.
+  const touchedGames = poolGames.filter(g => {
+    const pick = TRACKER.poolPicks[g.game_id];
+    return pick && pick.final !== '' && pick.final !== undefined;
+  });
+  const boxedGames = touchedGames.filter(g => TRACKER.poolPicks[g.game_id].final === 'BOX');
+  const straightPicks = touchedGames.filter(g => TRACKER.poolPicks[g.game_id].final !== 'BOX');
 
   const boxCount = boxedGames.length;
   const boxCost = BOX_DOLLAR_LOOKUP[boxCount];
