@@ -368,12 +368,20 @@ function render(data) {
     let qbCheckHtml = 'QB data unavailable';
     if (g.qb_candidates && g.qb_candidates.length) {
       qbCheckHtml = g.qb_candidates.map(c => {
+        // backup_starting means the DEPTH-CHART name below is who's OUT,
+        // not who's playing - a bare "[BACKUP]" tag next to that name
+        // reads backwards (looks like the named player IS the backup).
+        // We don't know the actual replacement's name (qb_overrides.csv
+        // deliberately doesn't capture it, to avoid guessing) - only that
+        // someone else is starting instead - so say exactly that.
         const flags = [];
-        if (c.backup_starting) flags.push('BACKUP');
-        if (c.rookie_starting) flags.push('ROOKIE');
-        if (c.is_elite_starter) flags.push('elite-tier');
+        if (c.rookie_starting) flags.push('ROOKIE STARTING');
+        if (c.backup_starting && c.is_elite_starter) flags.push('elite starter out');
         const flagStr = flags.length ? ` <span style="color: var(--gold);">[${flags.join(', ')}]</span>` : '';
-        return `<div>${c.team}: <strong>${c.depth_chart_starter || 'unknown'}</strong>${flagStr}</div>`;
+        const nameLine = c.backup_starting
+          ? `<strong>${c.depth_chart_starter || 'unknown'}</strong> <span style="color: var(--loss);">— OUT, backup starting instead</span>`
+          : `<strong>${c.depth_chart_starter || 'unknown'}</strong>`;
+        return `<div>${c.team}: ${nameLine}${flagStr}</div>`;
       }).join('');
       qbCheckHtml += `<div style="margin-top:6px; font-size:10px; color:var(--text-faint);">Depth-chart based — edit qb_overrides.csv to correct if you know something different (injury, benching)</div>`;
     }
