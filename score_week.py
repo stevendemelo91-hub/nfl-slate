@@ -471,6 +471,104 @@ def fetch_elite_qb_list(prior_season):
     return set(elite['passer_player_name'])
 
 
+def build_player_usage_stats(season):
+    """Prior-season player usage, surfaced next to injured players so the
+    user can judge real impact themselves - NOT fed into the model, since
+    there's no validated per-player value methodology yet (unlike QBs,
+    where EPA/play cleanly attributes to one player - a skill player's or
+    lineman's value doesn't isolate the same way from play-level PBP data).
+
+    Two sources, combined by gsis_id:
+    - Target share for skill positions, computed PER GAME PLAYED (not
+      season-cumulative) - a season-total share would understate a
+      player who missed time to injury, exactly the case this needs to
+      handle correctly (e.g. a WR1 hurt in week 5 still shows their real
+      per-game share, not a full-season-diluted one).
+    - Snap % (offense/defense) for every position, from snap_counts -
+      joined via the players.csv id crosswalk, since snap_counts only
+      carries PFR ids natively, not gsis_id.
+    Returns {} gracefully on any fetch failure - this is a surfacing
+    nice-to-have, not something that should ever break the pipeline."""
+    usage = {}
+    try:
+        pbp = pd.read_csv(f'https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_{season}.csv.gz',
+                           compression='gzip', low_memory=False,
+                           usecols=['week', 'posteam', 'play_type', 'receiver_player_id'])
+        pass_plays = pbp[pbp['play_type'] == 'pass']
+        team_week_totals = pass_plays.groupby(['posteam', 'week']).size()
+        targets_by_week = pass_plays.dropna(subset=['receiver_player_id']).groupby(
+            ['receiver_player_id', 'posteam', 'week']).size().reset_index(name='targets')
+
+        per_game_shares = {}
+        for _, row in targets_by_week.iterrows():
+            team_week_total = team_week_totals.get((row['posteam'], row['week']), 0)
+            if team_week_total > 0:
+                per_game_shares.setdefault(row['receiver_player_id'], []).append(row['targets'] / team_week_total)
+
+        for pid, shares in per_game_shares.items():
+            usage[pid] = {'target_share': round(sum(shares) / len(shares), 3), 'games_with_target': len(shares)}
+    except Exception:
+        pass
+
+    try:
+        snaps = pd.read_csv(f'https://github.com/nflverse/nflverse-data/releases/download/snap_counts/snap_counts_{season}.csv',
+                             low_memory=False, usecols=['pfr_player_id', 'offense_pct', 'defense_pct'])
+        players_xwalk = pd.read_csv('https://github.com/nflverse/nflverse-data/releases/download/players/players.csv',
+                                     low_memory=False, usecols=['gsis_id', 'pfr_id'])
+        snaps = snaps.merge(players_xwalk, left_on='pfr_player_id', right_on='pfr_id', how='inner')
+        snap_avg = snaps.groupby('gsis_id')[['offense_pct', 'defense_pct']].mean().round(3)
+        for gsis_id, row in snap_avg.iterrows():
+            usage.setdefault(gsis_id, {})
+            if row['offense_pct'] > 0:
+                usage[gsis_id]['offense_snap_pct'] = row['offense_pct']
+            if row['defense_pct'] > 0:
+                usage[gsis_id]['defense_snap_pct'] = row['defense_pct']
+    except Exception:
+        pass
+
+    return usage
+
+
+def format_usage_note(usage_entry):
+    """Turns a raw usage-stats dict into a short, human-readable string
+    for display next to an injured player, e.g. '23% target share (4
+    games) - 71% snaps'. Returns None if no usage data exists (rookie,
+    or genuinely minimal role last season)."""
+    if not usage_entry:
+        return None
+    parts = []
+    if 'target_share' in usage_entry:
+        parts.append(f"{round(usage_entry['target_share']*100)}% target share ({usage_entry['games_with_target']} gm)")
+    if 'offense_snap_pct' in usage_entry:
+        parts.append(f"{round(usage_entry['offense_snap_pct']*100)}% off. snaps")
+    if 'defense_snap_pct' in usage_entry:
+        parts.append(f"{round(usage_entry['defense_snap_pct']*100)}% def. snaps")
+    return ' &middot; '.join(parts) if parts else None
+
+
+def fetch_injured_qb_names(season, week):
+    """QBs specifically marked Out/Doubtful this week - separate from the
+    main injury report (which excludes QBs entirely, since QB status is
+    handled through the depth-chart + qb_overrides.csv mechanism instead).
+    Used only to flag a real discrepancy: the depth chart hasn't updated
+    to reflect a new starter, but the injury report already shows the
+    current starter clearly won't play. A team can have more than one QB
+    marked Out/Doubtful at once (backup also banged up, etc.), so this
+    returns a LIST per team, not a single entry - collapsing to one would
+    silently drop whichever QB isn't listed last. Returns {} gracefully
+    if the injury file isn't available yet."""
+    try:
+        inj = pd.read_csv(f'https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_{season}.csv',
+                           low_memory=False)
+    except Exception:
+        return {}
+    inj = inj[(inj['week'] == week) & (inj['position'] == 'QB') & (inj['report_status'].isin(['Out', 'Doubtful']))]
+    result = {}
+    for _, row in inj.iterrows():
+        result.setdefault(row['team'], []).append({'name': row['full_name'], 'status': row['report_status']})
+    return result
+
+
 def fetch_injury_report(season, week):
     """Current-season injury report for the target week. Returns empty
     DataFrame gracefully if not published yet (early season, or the file
@@ -499,15 +597,19 @@ def fetch_injury_report(season, week):
     return inj
 
 
-def get_injury_candidates(team, injury_df, injury_history):
+def get_injury_candidates(team, injury_df, injury_history, usage_stats=None):
     """Surfacing only - no coefficient/scoring impact, since there's no
     validated weight for non-QB injuries. Just gives the user fast context
     to factor into their own guess/handicapper cross-referencing, matching
     the hybrid design's 'surface candidates, human judges impact' pattern.
     Includes the day-by-day trend (from injury_history.csv) when available,
-    e.g. Wed: DNP -> Thu: Limited -> Fri: Full, not just the final status."""
+    e.g. Wed: DNP -> Thu: Limited -> Fri: Full, not just the final status.
+    Also includes prior-season usage (target share, snap %) when
+    usage_stats is provided - lets the user judge how much this specific
+    player actually matters, rather than just seeing a name and status."""
     if injury_df.empty:
         return []
+    usage_stats = usage_stats or {}
     team_injuries = injury_df[injury_df['team'] == team]
     candidates = []
     for _, row in team_injuries.iterrows():
@@ -529,9 +631,10 @@ def get_injury_candidates(team, injury_df, injury_history):
         }.get(row.get('practice_status'), row.get('practice_status'))
         status_display = row['report_status'] if pd.notna(row['report_status']) else \
             f"{practice_short} (practice){f' - {injury_note}' if pd.notna(injury_note) else ''}"
+        usage_note = format_usage_note(usage_stats.get(row.get('gsis_id')))
         candidates.append({
             'name': row['full_name'], 'position': row['position'], 'status': status_display,
-            'trend': trend,
+            'trend': trend, 'usage_note': usage_note,
         })
     return candidates
 
@@ -659,12 +762,22 @@ def load_qb_overrides(path='qb_overrides.csv'):
 LAMAR_HALF_WEIGHT_NAME = 'Lamar Jackson'
 
 
-def compute_qb_coefficient(home_team, away_team, starters, elite_qbs, overrides):
+def compute_qb_coefficient(home_team, away_team, starters, elite_qbs, overrides, injured_qbs=None):
     """Mirrors the validated historical logic exactly: backup starting = -1,
     rookie starting = -1 (stacks with backup), elite-starter-out = an
     ADDITIONAL -1 (-0.5 specifically for Lamar Jackson, per the user's
     original hand-tiering exception) on top of backup/rookie, only when the
-    team's normal starter (now out) was elite-tier."""
+    team's normal starter (now out) was elite-tier.
+
+    Also flags (does NOT auto-correct) a real discrepancy: the depth
+    chart's listed starter is separately reported Out/Doubtful on the
+    injury report, but no manual override has been set yet to reflect
+    who's actually starting instead. This never changes qb_value itself -
+    guessing the backup would be exactly the kind of unvalidated auto-
+    correction this pipeline avoids elsewhere; it just makes the
+    discrepancy visible so the user can fill in qb_overrides.csv."""
+    injured_qbs = injured_qbs or {}
+
     def team_qb_value(team):
         info = starters.get(team, {})
         depth_chart_name = info.get('starter_name')
@@ -694,12 +807,21 @@ def compute_qb_coefficient(home_team, away_team, starters, elite_qbs, overrides)
                     value += -1.0
                     notes.append(f'Elite starter ({normal_starter_name}) out')
 
+        depth_chart_conflict = None
+        injured_entries = injured_qbs.get(team, [])
+        if not backup_starting:
+            match = next((e for e in injured_entries if e['name'] == depth_chart_name), None)
+            if match:
+                depth_chart_conflict = (f"Depth chart lists {depth_chart_name} as starter, but injury report shows "
+                                         f"them {match['status']} - check qb_overrides.csv")
+
         candidate = {
             'team': team, 'depth_chart_starter': depth_chart_name,
             'normal_starter_used_for_elite_check': normal_starter_name,
             'is_elite_starter': to_pbp_format(normal_starter_name) in elite_qbs if normal_starter_name else False,
             'backup_starting': backup_starting, 'rookie_starting': rookie_starting,
             'qb_value': round(value, 2), 'notes': notes,
+            'depth_chart_conflict': depth_chart_conflict,
         }
         return value, candidate
 
@@ -708,7 +830,32 @@ def compute_qb_coefficient(home_team, away_team, starters, elite_qbs, overrides)
     return home_val - away_val, [home_candidate, away_candidate]
 
 
-def main(season, week):
+def detect_current_week(games_all, season):
+    """Schedule-aware replacement for the old calendar-date heuristic
+    (which computed the week from days-since-Sept-4, and drifted: it was
+    already returning week 2 on the actual day of week 1's Sunday games,
+    since a flat 7-day division doesn't line up with how an NFL week
+    actually runs Wed/Thu through the following Mon/Tue). Uses the same
+    games_all dataframe main() already fetches: the current week is the
+    FIRST one that still has any game not yet finished (home_score is
+    null), so week 1 stays "current" for the whole day its games are
+    being played, not just until some calendar cutoff. Falls back to
+    week 1 if the season's schedule isn't published yet, or to the last
+    scheduled week if the whole season is already complete."""
+    reg = games_all[(games_all['season'] == season) & (games_all['game_type'] == 'REG')]
+    if reg.empty:
+        return 1
+    incomplete_weeks = reg[reg['home_score'].isna()]['week']
+    if incomplete_weeks.empty:
+        return int(reg['week'].max())
+    return int(incomplete_weeks.min())
+
+
+def main(season, week=None):
+    if week is None:
+        games_all_for_detect = fetch_games([season - 1, season])
+        week = detect_current_week(games_all_for_detect, season)
+        print(f'Auto-detected current week: {week} (schedule-aware - first week with an incomplete game)\n')
     print(f'=== Scoring {season} Week {week} ===\n')
     games_all = fetch_games([season - 1, season])
     target_games = games_all[(games_all['season'] == season) & (games_all['week'] == week)].copy()
@@ -742,6 +889,7 @@ def main(season, week):
     starters = fetch_current_starters(season)
     elite_qbs = fetch_elite_qb_list(season - 1)
     qb_overrides = load_qb_overrides()
+    injured_qbs = fetch_injured_qb_names(season, week)
     situational_overrides = load_situational_overrides()
     pool_results_history = load_pool_results_history()
     print(f'Pool results history: {len(pool_results_history)} settled week(s) logged\n')
@@ -751,6 +899,8 @@ def main(season, week):
     injury_report = fetch_injury_report(season, week)
     print(f'Injury report: {len(injury_report)} Out/Doubtful non-QB players found for week {week}'
           if not injury_report.empty else 'No injury report available yet for this week\n')
+    player_usage_stats = build_player_usage_stats(season - 1)
+    print(f'Player usage stats loaded for {len(player_usage_stats)} players (prior season)\n')
 
     try:
         injury_history = pd.read_csv('injury_history.csv')
@@ -798,7 +948,7 @@ def main(season, week):
         rank_coef = rank_comparison(h['rank_pass_off'], a['rank_pass_off']) + \
                     rank_comparison(h['rank_rush_off'], a['rank_rush_off'])
 
-        qb_coef, qb_candidates = compute_qb_coefficient(home, away, starters, elite_qbs, qb_overrides)
+        qb_coef, qb_candidates = compute_qb_coefficient(home, away, starters, elite_qbs, qb_overrides, injured_qbs)
 
         # --- Road trip, coaching, stakes, schedule milestones (home vs away) ---
         home_sched = compute_schedule_situational(home, week, True, games_all[games_all['season'] == season])
@@ -905,8 +1055,8 @@ def main(season, week):
             'power_rating_implied_spread': power_spread,
             'neutral_site': is_neutral,
             'qb_candidates': qb_candidates,
-            'home_injuries': get_injury_candidates(home, injury_report, injury_history),
-            'away_injuries': get_injury_candidates(away, injury_report, injury_history),
+            'home_injuries': get_injury_candidates(home, injury_report, injury_history, player_usage_stats),
+            'away_injuries': get_injury_candidates(away, injury_report, injury_history, player_usage_stats),
             'situational_note': situational_overrides.get((home, week), situational_overrides.get((away, week), {})).get('note', ''),
             'spread_current': line_movement['spread']['current'],
             'spread_current_raw': line_movement['spread']['current_raw'],
@@ -975,6 +1125,7 @@ def update_manifest(season, week, manifest_path='docs/data/manifest.json'):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--season', type=int, required=True)
-    parser.add_argument('--week', type=int, required=True)
+    parser.add_argument('--week', type=int, required=False, default=None,
+                         help='Omit to auto-detect the current week from the schedule (first week with an incomplete game).')
     args = parser.parse_args()
     main(args.season, args.week)
