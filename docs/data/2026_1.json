@@ -35,7 +35,8 @@
           "backup_starting": false,
           "rookie_starting": false,
           "qb_value": 0.0,
-          "notes": []
+          "notes": [],
+          "depth_chart_conflict": null
         },
         {
           "team": "NE",
@@ -45,10 +46,24 @@
           "backup_starting": false,
           "rookie_starting": false,
           "qb_value": 0.0,
-          "notes": []
+          "notes": [],
+          "depth_chart_conflict": null
         }
       ],
       "home_injuries": [
+        {
+          "name": "Josh Jones",
+          "position": "T",
+          "status": "Limited (practice) - Knee",
+          "trend": [
+            {
+              "date": "2026-09-07",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            }
+          ],
+          "usage_note": "25% off. snaps"
+        },
         {
           "name": "Ty Okada",
           "position": "S",
@@ -64,7 +79,44 @@
               "report_status": "Out",
               "practice_status": "Did Not Participate In Practice"
             }
-          ]
+          ],
+          "usage_note": "59% def. snaps"
+        },
+        {
+          "name": "Tory Horton",
+          "position": "WR",
+          "status": "Questionable",
+          "trend": [
+            {
+              "date": "2026-09-07",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            },
+            {
+              "date": "2026-09-09",
+              "report_status": "Questionable",
+              "practice_status": "Limited Participation in Practice"
+            }
+          ],
+          "usage_note": "11% target share (7 gm) &middot; 48% off. snaps"
+        },
+        {
+          "name": "Nick Emmanwori",
+          "position": "S",
+          "status": "Questionable",
+          "trend": [
+            {
+              "date": "2026-09-07",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            },
+            {
+              "date": "2026-09-09",
+              "report_status": "Questionable",
+              "practice_status": "Limited Participation in Practice"
+            }
+          ],
+          "usage_note": "86% def. snaps"
         }
       ],
       "away_injuries": [
@@ -83,7 +135,8 @@
               "report_status": "Out",
               "practice_status": "Did Not Participate In Practice"
             }
-          ]
+          ],
+          "usage_note": "25% off. snaps"
         },
         {
           "name": "TreVeyon Henderson",
@@ -100,7 +153,8 @@
               "report_status": "Out",
               "practice_status": "Did Not Participate In Practice"
             }
-          ]
+          ],
+          "usage_note": "9% target share (16 gm) &middot; 43% off. snaps"
         }
       ],
       "situational_note": "",
@@ -154,7 +208,8 @@
           "backup_starting": false,
           "rookie_starting": false,
           "qb_value": 0.0,
-          "notes": []
+          "notes": [],
+          "depth_chart_conflict": null
         },
         {
           "team": "SF",
@@ -164,7 +219,8 @@
           "backup_starting": false,
           "rookie_starting": false,
           "qb_value": 0.0,
-          "notes": []
+          "notes": [],
+          "depth_chart_conflict": null
         }
       ],
       "home_injuries": [
@@ -183,10 +239,50 @@
               "report_status": "Out",
               "practice_status": "Did Not Participate In Practice"
             }
-          ]
+          ],
+          "usage_note": null
         }
       ],
       "away_injuries": [
+        {
+          "name": "Kyle Juszczyk",
+          "position": "FB",
+          "status": "Limited (practice) - Finger",
+          "trend": [
+            {
+              "date": "2026-09-09",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            }
+          ],
+          "usage_note": "6% target share (17 gm) &middot; 46% off. snaps"
+        },
+        {
+          "name": "George Kittle",
+          "position": "TE",
+          "status": "Limited (practice) - Achilles",
+          "trend": [
+            {
+              "date": "2026-09-09",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            }
+          ],
+          "usage_note": "18% target share (12 gm) &middot; 76% off. snaps"
+        },
+        {
+          "name": "Nick Bosa",
+          "position": "DE",
+          "status": "Limited (practice) - Knee",
+          "trend": [
+            {
+              "date": "2026-09-09",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            }
+          ],
+          "usage_note": "64% def. snaps"
+        },
         {
           "name": "Alfred Collins",
           "position": "DT",
@@ -202,7 +298,26 @@
               "report_status": "Out",
               "practice_status": "Did Not Participate In Practice"
             }
-          ]
+          ],
+          "usage_note": "48% def. snaps"
+        },
+        {
+          "name": "James Thompson Jr.",
+          "position": "DT",
+          "status": "Questionable",
+          "trend": [
+            {
+              "date": "2026-09-09",
+              "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-09-10",
+              "report_status": "Questionable",
+              "practice_status": "Limited Participation in Practice"
+            }
+          ],
+          "usage_note": null
         }
       ],
       "situational_note": "",
@@ -214,13 +329,14 @@
         "-3.5 -112 (9/7)",
         "-3.5 -115 (8/31)"
       ],
-      "total_current": "O/U 48.5 (-105) (9/2)",
+      "total_current": "O/U 47.5 (-115) (9/10)",
       "total_history": [
+        "O/U 48.5 (-105) (9/2)",
         "O/U 48.5 (-110) (8/31)"
       ],
-      "home_score": null,
-      "away_score": null,
-      "is_final": false
+      "home_score": 7.0,
+      "away_score": 27.0,
+      "is_final": true
     },
     {
       "game_id": "2026_01_CHI_CAR",
@@ -252,7 +368,8 @@
           "backup_starting": false,
           "rookie_starting": false,
           "qb_value": 0.0,
-          "notes": []
+          "notes": [],
+          "depth_chart_conflict": null
         },
         {
           "team": "CHI",
@@ -262,28 +379,91 @@
           "backup_starting": false,
           "rookie_starting": false,
           "qb_value": 0.0,
-          "notes": []
+          "notes": [],
+          "depth_chart_conflict": null
         }
       ],
       "home_injuries": [
         {
           "name": "Patrick Jones II",
           "position": "LB",
-          "status": "DNP (practice) - Back",
+          "status": "Out",
           "trend": [
             {
               "date": "2026-09-10",
               "report_status": null,
               "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-09-12",
+              "report_status": "Out",
+              "practice_status": "Did Not Participate In Practice"
             }
-          ]
+          ],
+          "usage_note": "70% def. snaps"
         }
       ],
-      "away_injuries": [],
+      "away_injuries": [
+        {
+          "name": "Xavier Woods",
+          "position": "S",
+          "status": "Questionable",
+          "trend": [
+            {
+              "date": "2026-09-11",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            },
+            {
+              "date": "2026-09-12",
+              "report_status": "Questionable",
+              "practice_status": "Limited Participation in Practice"
+            }
+          ],
+          "usage_note": "73% def. snaps"
+        },
+        {
+          "name": "Rome Odunze",
+          "position": "WR",
+          "status": "Questionable",
+          "trend": [
+            {
+              "date": "2026-09-10",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            },
+            {
+              "date": "2026-09-12",
+              "report_status": "Questionable",
+              "practice_status": "Limited Participation in Practice"
+            }
+          ],
+          "usage_note": "20% target share (14 gm) &middot; 86% off. snaps"
+        },
+        {
+          "name": "Ozzy Trapilo",
+          "position": "T",
+          "status": "Questionable",
+          "trend": [
+            {
+              "date": "2026-09-10",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            },
+            {
+              "date": "2026-09-12",
+              "report_status": "Questionable",
+              "practice_status": "Limited Participation in Practice"
+            }
+          ],
+          "usage_note": "53% off. snaps"
+        }
+      ],
       "situational_note": "",
-      "spread_current": "+3.0 -114 (9/8)",
+      "spread_current": "+3.0 -105 (9/11)",
       "spread_current_raw": 3.0,
       "spread_history": [
+        "+3.0 -114 (9/8)",
         "+3.0 -118 (9/8)",
         "+2.5 +102 (9/8)",
         "+2.5 +100 (9/7)",
@@ -291,8 +471,9 @@
         "+2.5 +100 (9/3)",
         "+2.5 +102 (8/31)"
       ],
-      "total_current": "O/U 47.5 (-102) (9/6)",
+      "total_current": "O/U 46.5 (-120) (9/13)",
       "total_history": [
+        "O/U 47.5 (-102) (9/6)",
         "O/U 47.5 (-105) (9/2)",
         "O/U 47.5 (-110) (8/31)"
       ],
@@ -330,7 +511,8 @@
           "backup_starting": false,
           "rookie_starting": false,
           "qb_value": 0.0,
-          "notes": []
+          "notes": [],
+          "depth_chart_conflict": null
         },
         {
           "team": "TB",
@@ -340,33 +522,169 @@
           "backup_starting": false,
           "rookie_starting": false,
           "qb_value": 0.0,
-          "notes": []
+          "notes": [],
+          "depth_chart_conflict": null
         }
       ],
-      "home_injuries": [],
+      "home_injuries": [
+        {
+          "name": "Dexter Lawrence",
+          "position": "DT",
+          "status": "DNP (practice) - Not injury related - resting player",
+          "trend": [
+            {
+              "date": "2026-09-12",
+              "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            }
+          ],
+          "usage_note": "68% def. snaps"
+        },
+        {
+          "name": "Ja'Marr Chase",
+          "position": "WR",
+          "status": "DNP (practice) - Knee",
+          "trend": [
+            {
+              "date": "2026-09-10",
+              "report_status": null,
+              "practice_status": "Full Participation in Practice"
+            },
+            {
+              "date": "2026-09-12",
+              "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            }
+          ],
+          "usage_note": "29% target share (16 gm) &middot; 94% off. snaps"
+        },
+        {
+          "name": "DJ Turner II",
+          "position": "CB",
+          "status": "Limited (practice) - Hamstring",
+          "trend": [
+            {
+              "date": "2026-09-11",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            }
+          ],
+          "usage_note": "89% def. snaps"
+        },
+        {
+          "name": "Shemar Stewart",
+          "position": "DE",
+          "status": "Doubtful",
+          "trend": [
+            {
+              "date": "2026-09-10",
+              "report_status": null,
+              "practice_status": "Full Participation in Practice"
+            },
+            {
+              "date": "2026-09-11",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            },
+            {
+              "date": "2026-09-12",
+              "report_status": "Doubtful",
+              "practice_status": "Did Not Participate In Practice"
+            }
+          ],
+          "usage_note": "54% def. snaps"
+        }
+      ],
       "away_injuries": [
+        {
+          "name": "Justin Skule",
+          "position": "T",
+          "status": "Doubtful",
+          "trend": [
+            {
+              "date": "2026-09-10",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            },
+            {
+              "date": "2026-09-12",
+              "report_status": "Doubtful",
+              "practice_status": "Limited Participation in Practice"
+            }
+          ],
+          "usage_note": "62% off. snaps"
+        },
+        {
+          "name": "Christian Rozeboom",
+          "position": "LB",
+          "status": "Questionable",
+          "trend": [
+            {
+              "date": "2026-09-10",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            },
+            {
+              "date": "2026-09-12",
+              "report_status": "Questionable",
+              "practice_status": "Limited Participation in Practice"
+            }
+          ],
+          "usage_note": "89% def. snaps"
+        },
         {
           "name": "Sean Tucker",
           "position": "RB",
-          "status": "DNP (practice) - Hamstring",
+          "status": "Doubtful",
           "trend": [
             {
               "date": "2026-09-10",
               "report_status": null,
               "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-09-11",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            },
+            {
+              "date": "2026-09-12",
+              "report_status": "Doubtful",
+              "practice_status": "Limited Participation in Practice"
             }
-          ]
+          ],
+          "usage_note": "5% target share (6 gm) &middot; 16% off. snaps"
+        },
+        {
+          "name": "Jalen McMillan",
+          "position": "WR",
+          "status": "Doubtful",
+          "trend": [
+            {
+              "date": "2026-09-10",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            },
+            {
+              "date": "2026-09-12",
+              "report_status": "Doubtful",
+              "practice_status": "Limited Participation in Practice"
+            }
+          ],
+          "usage_note": "10% target share (4 gm) &middot; 52% off. snaps"
         }
       ],
       "situational_note": "",
-      "spread_current": "-3.5 -115 (9/1)",
+      "spread_current": "-3.5 -118 (9/12)",
       "spread_current_raw": -3.5,
       "spread_history": [
+        "-3.5 -115 (9/1)",
         "-3.5 -112 (9/1)",
         "-3.5 -110 (8/31)"
       ],
-      "total_current": "O/U 50.5 (-112) (9/1)",
+      "total_current": "O/U 50.5 (-110) (9/13)",
       "total_history": [
+        "O/U 50.5 (-112) (9/1)",
         "O/U 50.5 (-110) (9/1)",
         "O/U 51.5 (-104) (8/31)"
       ],
@@ -405,7 +723,8 @@
           "backup_starting": false,
           "rookie_starting": false,
           "qb_value": 0.0,
-          "notes": []
+          "notes": [],
+          "depth_chart_conflict": null
         },
         {
           "team": "NO",
@@ -415,46 +734,102 @@
           "backup_starting": false,
           "rookie_starting": false,
           "qb_value": 0.0,
-          "notes": []
+          "notes": [],
+          "depth_chart_conflict": null
         }
       ],
-      "home_injuries": [],
+      "home_injuries": [
+        {
+          "name": "Christian Izien",
+          "position": "S",
+          "status": "Questionable",
+          "trend": [
+            {
+              "date": "2026-09-10",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            },
+            {
+              "date": "2026-09-12",
+              "report_status": "Questionable",
+              "practice_status": "Limited Participation in Practice"
+            }
+          ],
+          "usage_note": "20% def. snaps"
+        }
+      ],
       "away_injuries": [
         {
           "name": "Cameron Jordan",
           "position": "LB",
-          "status": "DNP (practice) - Hamstring",
+          "status": "Out",
           "trend": [
             {
               "date": "2026-09-10",
               "report_status": null,
               "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-09-12",
+              "report_status": "Out",
+              "practice_status": "Limited Participation in Practice"
             }
-          ]
+          ],
+          "usage_note": "53% def. snaps"
+        },
+        {
+          "name": "Alvin Kamara",
+          "position": "RB",
+          "status": "Questionable",
+          "trend": [
+            {
+              "date": "2026-09-10",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            },
+            {
+              "date": "2026-09-12",
+              "report_status": "Questionable",
+              "practice_status": "Full Participation in Practice"
+            }
+          ],
+          "usage_note": "10% target share (11 gm) &middot; 64% off. snaps"
         },
         {
           "name": "Audric Estim\u00e9",
           "position": "RB",
-          "status": "DNP (practice) - Thigh",
+          "status": "Out",
           "trend": [
             {
               "date": "2026-09-10",
               "report_status": null,
               "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-09-12",
+              "report_status": "Out",
+              "practice_status": "Did Not Participate In Practice"
             }
-          ]
+          ],
+          "usage_note": "8% target share (4 gm) &middot; 39% off. snaps"
         },
         {
           "name": "Oscar Delp",
           "position": "TE",
-          "status": "DNP (practice) - Hamstring",
+          "status": "Out",
           "trend": [
             {
               "date": "2026-09-10",
               "report_status": null,
               "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-09-12",
+              "report_status": "Out",
+              "practice_status": "Did Not Participate In Practice"
             }
-          ]
+          ],
+          "usage_note": null
         }
       ],
       "situational_note": "",
@@ -499,7 +874,8 @@
           "backup_starting": false,
           "rookie_starting": false,
           "qb_value": 0.0,
-          "notes": []
+          "notes": [],
+          "depth_chart_conflict": null
         },
         {
           "team": "BUF",
@@ -509,46 +885,121 @@
           "backup_starting": false,
           "rookie_starting": false,
           "qb_value": 0.0,
-          "notes": []
+          "notes": [],
+          "depth_chart_conflict": null
         }
       ],
-      "home_injuries": [],
+      "home_injuries": [
+        {
+          "name": "Will Anderson Jr.",
+          "position": "DE",
+          "status": "DNP (practice) - Not injury related - resting player",
+          "trend": [
+            {
+              "date": "2026-09-11",
+              "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            }
+          ],
+          "usage_note": "67% def. snaps"
+        },
+        {
+          "name": "Kayden McDonald",
+          "position": "DT",
+          "status": "DNP (practice) - Ankle",
+          "trend": [
+            {
+              "date": "2026-09-10",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            },
+            {
+              "date": "2026-09-11",
+              "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            }
+          ],
+          "usage_note": null
+        }
+      ],
       "away_injuries": [
         {
           "name": "Ty Johnson",
           "position": "RB",
-          "status": "DNP (practice) - Hamstring",
+          "status": "Questionable",
           "trend": [
             {
               "date": "2026-09-10",
               "report_status": null,
               "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-09-12",
+              "report_status": "Questionable",
+              "practice_status": "Limited Participation in Practice"
             }
-          ]
+          ],
+          "usage_note": "8% target share (13 gm) &middot; 30% off. snaps"
         },
         {
           "name": "Jordan Hancock",
           "position": "CB",
-          "status": "DNP (practice) - Quadricep",
+          "status": "Questionable",
           "trend": [
             {
               "date": "2026-09-10",
               "report_status": null,
               "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-09-11",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            },
+            {
+              "date": "2026-09-12",
+              "report_status": "Questionable",
+              "practice_status": "Full Participation in Practice"
             }
-          ]
+          ],
+          "usage_note": "22% def. snaps"
+        },
+        {
+          "name": "T.J. Sanders",
+          "position": "DE",
+          "status": "Questionable",
+          "trend": [
+            {
+              "date": "2026-09-10",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            },
+            {
+              "date": "2026-09-11",
+              "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-09-12",
+              "report_status": "Questionable",
+              "practice_status": "Limited Participation in Practice"
+            }
+          ],
+          "usage_note": "42% def. snaps"
         }
       ],
       "situational_note": "",
-      "spread_current": "+1.5 -114 (9/7)",
+      "spread_current": "+1.5 -115 (9/12)",
       "spread_current_raw": 1.5,
       "spread_history": [
+        "+1.5 -114 (9/7)",
         "+1.5 -120 (9/7)",
         "+1.5 -122 (9/2)",
         "+1.5 -118 (8/31)"
       ],
-      "total_current": "O/U 44.5 (-118) (9/8)",
+      "total_current": "O/U 44.5 (-110) (9/12)",
       "total_history": [
+        "O/U 44.5 (-118) (9/8)",
         "O/U 44.5 (-112) (9/8)",
         "O/U 44.5 (-106) (9/7)",
         "O/U 44.5 (-110) (9/4)",
@@ -589,7 +1040,8 @@
           "backup_starting": false,
           "rookie_starting": false,
           "qb_value": 0.0,
-          "notes": []
+          "notes": [],
+          "depth_chart_conflict": null
         },
         {
           "team": "BAL",
@@ -599,20 +1051,144 @@
           "backup_starting": false,
           "rookie_starting": false,
           "qb_value": 0.0,
-          "notes": []
+          "notes": [],
+          "depth_chart_conflict": null
         }
       ],
-      "home_injuries": [],
-      "away_injuries": [],
+      "home_injuries": [
+        {
+          "name": "DeForest Buckner",
+          "position": "DT",
+          "status": "DNP (practice) - Not injury related - resting player",
+          "trend": [
+            {
+              "date": "2026-09-12",
+              "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            }
+          ],
+          "usage_note": "70% def. snaps"
+        },
+        {
+          "name": "Charvarius Ward",
+          "position": "CB",
+          "status": "Limited (practice) - Not injury related - resting player",
+          "trend": [
+            {
+              "date": "2026-09-12",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            }
+          ],
+          "usage_note": "92% def. snaps"
+        },
+        {
+          "name": "Alec Pierce",
+          "position": "WR",
+          "status": "Limited (practice) - Heel",
+          "trend": [
+            {
+              "date": "2026-09-10",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            }
+          ],
+          "usage_note": "16% target share (15 gm) &middot; 86% off. snaps &middot; 0% def. snaps"
+        },
+        {
+          "name": "Austin Ajiake",
+          "position": "LB",
+          "status": "Out",
+          "trend": [
+            {
+              "date": "2026-09-12",
+              "report_status": "Questionable",
+              "practice_status": "Did Not Participate In Practice"
+            }
+          ],
+          "usage_note": "14% def. snaps"
+        }
+      ],
+      "away_injuries": [
+        {
+          "name": "Calais Campbell",
+          "position": "DE",
+          "status": "DNP (practice) - Not injury related - resting player",
+          "trend": [
+            {
+              "date": "2026-09-12",
+              "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            }
+          ],
+          "usage_note": "46% def. snaps"
+        },
+        {
+          "name": "Nnamdi Madubuike",
+          "position": "DT",
+          "status": "Out",
+          "trend": [
+            {
+              "date": "2026-09-10",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            },
+            {
+              "date": "2026-09-12",
+              "report_status": "Out",
+              "practice_status": "Limited Participation in Practice"
+            }
+          ],
+          "usage_note": "64% def. snaps"
+        },
+        {
+          "name": "Devontez Walker",
+          "position": "WR",
+          "status": "Questionable",
+          "trend": [
+            {
+              "date": "2026-09-10",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            },
+            {
+              "date": "2026-09-12",
+              "report_status": "Questionable",
+              "practice_status": "Limited Participation in Practice"
+            }
+          ],
+          "usage_note": "6% target share (5 gm) &middot; 25% off. snaps"
+        },
+        {
+          "name": "Teddye Buchanan",
+          "position": "LB",
+          "status": "Out",
+          "trend": [
+            {
+              "date": "2026-09-10",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            },
+            {
+              "date": "2026-09-12",
+              "report_status": "Out",
+              "practice_status": "Limited Participation in Practice"
+            }
+          ],
+          "usage_note": "71% def. snaps"
+        }
+      ],
       "situational_note": "",
-      "spread_current": "+3.5 -118 (9/7)",
+      "spread_current": "+3.5 -120 (9/11)",
       "spread_current_raw": 3.5,
       "spread_history": [
+        "+3.5 -118 (9/7)",
         "+3.5 -115 (9/2)",
         "+3.5 -112 (8/31)"
       ],
-      "total_current": "O/U 47.5 (-115) (9/8)",
+      "total_current": "O/U 47.5 (-114) (9/12)",
       "total_history": [
+        "O/U 47.5 (-115) (9/8)",
         "O/U 47.5 (-112) (8/31)"
       ],
       "home_score": null,
@@ -651,7 +1227,8 @@
           "backup_starting": false,
           "rookie_starting": false,
           "qb_value": 0.0,
-          "notes": []
+          "notes": [],
+          "depth_chart_conflict": null
         },
         {
           "team": "CLE",
@@ -661,33 +1238,142 @@
           "backup_starting": false,
           "rookie_starting": false,
           "qb_value": 0.0,
-          "notes": []
+          "notes": [],
+          "depth_chart_conflict": null
         }
       ],
       "home_injuries": [
         {
+          "name": "Jakobi Meyers",
+          "position": "WR",
+          "status": "Limited (practice) - Thumb",
+          "trend": [
+            {
+              "date": "2026-09-10",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            }
+          ],
+          "usage_note": "20% target share (17 gm) &middot; 86% off. snaps"
+        },
+        {
+          "name": "Cole Van Lanen",
+          "position": "T",
+          "status": "Limited (practice) - Knee",
+          "trend": [
+            {
+              "date": "2026-09-10",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            }
+          ],
+          "usage_note": "60% off. snaps"
+        },
+        {
+          "name": "Anton Harrison",
+          "position": "T",
+          "status": "DNP (practice) - Foot",
+          "trend": [
+            {
+              "date": "2026-09-12",
+              "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            }
+          ],
+          "usage_note": "96% off. snaps"
+        },
+        {
           "name": "LeQuint Allen Jr.",
           "position": "RB",
-          "status": "DNP (practice) - Hip",
+          "status": "Questionable",
           "trend": [
             {
               "date": "2026-09-10",
               "report_status": null,
               "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-09-11",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            },
+            {
+              "date": "2026-09-12",
+              "report_status": "Questionable",
+              "practice_status": "Limited Participation in Practice"
             }
-          ]
+          ],
+          "usage_note": "3% target share (10 gm) &middot; 22% off. snaps"
         }
       ],
-      "away_injuries": [],
+      "away_injuries": [
+        {
+          "name": "Maliek Collins",
+          "position": "DT",
+          "status": "Limited (practice) - Quadricep",
+          "trend": [
+            {
+              "date": "2026-09-10",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            }
+          ],
+          "usage_note": "64% def. snaps"
+        },
+        {
+          "name": "Teven Jenkins",
+          "position": "G",
+          "status": "Out",
+          "trend": [
+            {
+              "date": "2026-09-10",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            },
+            {
+              "date": "2026-09-11",
+              "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-09-12",
+              "report_status": "Out",
+              "practice_status": "Did Not Participate In Practice"
+            }
+          ],
+          "usage_note": "32% off. snaps"
+        },
+        {
+          "name": "Parker Brailsford",
+          "position": "C",
+          "status": "Questionable",
+          "trend": [
+            {
+              "date": "2026-09-10",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            },
+            {
+              "date": "2026-09-12",
+              "report_status": "Questionable",
+              "practice_status": "Limited Participation in Practice"
+            }
+          ],
+          "usage_note": null
+        }
+      ],
       "situational_note": "",
-      "spread_current": "-8.5 -108 (9/8)",
+      "spread_current": "-8.5 -112 (9/11)",
       "spread_current_raw": -8.5,
       "spread_history": [
+        "-8.5 -108 (9/8)",
         "-8.5 -105 (9/7)",
         "-7.5 -115 (8/31)"
       ],
-      "total_current": "O/U 40.5 (-105) (9/10)",
+      "total_current": "O/U 40.5 (-102) (9/12)",
       "total_history": [
+        "O/U 40.5 (-104) (9/11)",
+        "O/U 40.5 (-105) (9/10)",
         "O/U 40.5 (-108) (9/7)",
         "O/U 40.5 (-110) (8/31)"
       ],
@@ -726,7 +1412,8 @@
           "backup_starting": false,
           "rookie_starting": false,
           "qb_value": 0.0,
-          "notes": []
+          "notes": [],
+          "depth_chart_conflict": null
         },
         {
           "team": "ATL",
@@ -736,21 +1423,114 @@
           "backup_starting": false,
           "rookie_starting": false,
           "qb_value": 0.0,
-          "notes": []
+          "notes": [],
+          "depth_chart_conflict": "Depth chart lists Tua Tagovailoa as starter, but injury report shows them Out - check qb_overrides.csv"
         }
       ],
-      "home_injuries": [],
-      "away_injuries": [],
+      "home_injuries": [
+        {
+          "name": "Joey Porter Jr.",
+          "position": "CB",
+          "status": "Questionable",
+          "trend": [
+            {
+              "date": "2026-09-10",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            },
+            {
+              "date": "2026-09-12",
+              "report_status": "Questionable",
+              "practice_status": "Limited Participation in Practice"
+            }
+          ],
+          "usage_note": "95% def. snaps"
+        }
+      ],
+      "away_injuries": [
+        {
+          "name": "Jake Matthews",
+          "position": "T",
+          "status": "DNP (practice) - Not injury related - resting player",
+          "trend": [
+            {
+              "date": "2026-09-12",
+              "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            }
+          ],
+          "usage_note": "3% target share (1 gm) &middot; 97% off. snaps"
+        },
+        {
+          "name": "Za'Darius Smith",
+          "position": "DE",
+          "status": "Questionable",
+          "trend": [
+            {
+              "date": "2026-09-10",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            },
+            {
+              "date": "2026-09-11",
+              "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-09-12",
+              "report_status": "Questionable",
+              "practice_status": "Full Participation in Practice"
+            }
+          ],
+          "usage_note": "38% def. snaps"
+        },
+        {
+          "name": "Billy Bowman Jr.",
+          "position": "CB",
+          "status": "Out",
+          "trend": [
+            {
+              "date": "2026-09-10",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            },
+            {
+              "date": "2026-09-12",
+              "report_status": "Out",
+              "practice_status": "Limited Participation in Practice"
+            }
+          ],
+          "usage_note": "80% def. snaps"
+        },
+        {
+          "name": "Cameron Williams",
+          "position": "T",
+          "status": "Out",
+          "trend": [
+            {
+              "date": "2026-09-12",
+              "report_status": "Out",
+              "practice_status": "Did Not Participate In Practice"
+            }
+          ],
+          "usage_note": "80% off. snaps"
+        }
+      ],
       "situational_note": "",
-      "spread_current": "-4.5 -115 (9/10)",
-      "spread_current_raw": -4.5,
+      "spread_current": "-6.5 -105 (9/13)",
+      "spread_current_raw": -6.5,
       "spread_history": [
+        "-5.5 -118 (9/12)",
+        "-5.5 -115 (9/11)",
+        "-4.5 -115 (9/10)",
         "-3.5 -104 (9/5)",
         "-3.0 -120 (9/2)",
         "-3.0 -115 (8/31)"
       ],
-      "total_current": "O/U 41.5 (-105) (9/10)",
+      "total_current": "O/U 40.5 (-118) (9/12)",
       "total_history": [
+        "O/U 40.5 (-115) (9/11)",
+        "O/U 41.5 (-105) (9/10)",
         "O/U 41.5 (-115) (9/4)",
         "O/U 42.5 (-104) (9/2)",
         "O/U 42.5 (-106) (9/1)",
@@ -791,7 +1571,8 @@
           "backup_starting": false,
           "rookie_starting": false,
           "qb_value": 0.0,
-          "notes": []
+          "notes": [],
+          "depth_chart_conflict": null
         },
         {
           "team": "NYJ",
@@ -801,59 +1582,112 @@
           "backup_starting": false,
           "rookie_starting": false,
           "qb_value": 0.0,
-          "notes": []
+          "notes": [],
+          "depth_chart_conflict": null
         }
       ],
       "home_injuries": [
         {
           "name": "Cedric Gray",
           "position": "LB",
-          "status": "DNP (practice) - Concussion",
+          "status": "Out",
           "trend": [
             {
               "date": "2026-09-10",
               "report_status": null,
               "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-09-12",
+              "report_status": "Out",
+              "practice_status": "Did Not Participate In Practice"
             }
-          ]
+          ],
+          "usage_note": "91% def. snaps"
         }
       ],
       "away_injuries": [
         {
           "name": "Tim Patrick",
           "position": "WR",
-          "status": "DNP (practice) - Groin",
+          "status": "Out",
           "trend": [
             {
               "date": "2026-09-10",
               "report_status": null,
               "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-09-12",
+              "report_status": "Out",
+              "practice_status": "Did Not Participate In Practice"
             }
-          ]
+          ],
+          "usage_note": "6% target share (14 gm) &middot; 32% off. snaps"
+        },
+        {
+          "name": "Kene Nwangwu",
+          "position": "RB",
+          "status": "Doubtful",
+          "trend": [
+            {
+              "date": "2026-09-12",
+              "report_status": "Doubtful",
+              "practice_status": "Did Not Participate In Practice"
+            }
+          ],
+          "usage_note": "4% target share (1 gm) &middot; 4% off. snaps"
         },
         {
           "name": "Joseph Ossai",
           "position": "DE",
-          "status": "DNP (practice) - Foot",
+          "status": "Out",
           "trend": [
             {
               "date": "2026-09-10",
               "report_status": null,
               "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-09-12",
+              "report_status": "Out",
+              "practice_status": "Did Not Participate In Practice"
             }
-          ]
+          ],
+          "usage_note": "67% def. snaps"
+        },
+        {
+          "name": "D'Angelo Ponds",
+          "position": "CB",
+          "status": "Doubtful",
+          "trend": [
+            {
+              "date": "2026-09-10",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            },
+            {
+              "date": "2026-09-12",
+              "report_status": "Doubtful",
+              "practice_status": "Limited Participation in Practice"
+            }
+          ],
+          "usage_note": null
         }
       ],
       "situational_note": "",
-      "spread_current": "-1.5 -110 (9/7)",
+      "spread_current": "-1.5 -105 (9/13)",
       "spread_current_raw": -1.5,
       "spread_history": [
+        "-1.5 -108 (9/11)",
+        "-1.5 -110 (9/7)",
         "-1.5 -112 (9/7)",
         "-2.5 -102 (9/4)",
         "-2.5 -105 (8/31)"
       ],
-      "total_current": "O/U 38.5 (-110) (9/9)",
+      "total_current": "O/U 38.5 (-115) (9/13)",
       "total_history": [
+        "O/U 38.5 (-110) (9/9)",
         "O/U 39.5 (-110) (9/3)",
         "O/U 39.5 (-115) (9/2)",
         "O/U 39.5 (-106) (8/31)"
@@ -892,7 +1726,8 @@
           "backup_starting": false,
           "rookie_starting": false,
           "qb_value": 0.0,
-          "notes": []
+          "notes": [],
+          "depth_chart_conflict": null
         },
         {
           "team": "ARI",
@@ -902,65 +1737,132 @@
           "backup_starting": false,
           "rookie_starting": false,
           "qb_value": 0.0,
-          "notes": []
+          "notes": [],
+          "depth_chart_conflict": null
         }
       ],
       "home_injuries": [
         {
-          "name": "Khalil Mack",
-          "position": "DE",
-          "status": "DNP (practice) - Not injury related - resting player",
-          "trend": [
-            {
-              "date": "2026-09-10",
-              "report_status": null,
-              "practice_status": "Did Not Participate In Practice"
-            }
-          ]
-        },
-        {
           "name": "Deane Leonard",
           "position": "CB",
-          "status": "DNP (practice) - Abdomen",
+          "status": "Out",
           "trend": [
             {
               "date": "2026-09-10",
               "report_status": null,
               "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-09-12",
+              "report_status": "Out",
+              "practice_status": "Did Not Participate In Practice"
             }
-          ]
+          ],
+          "usage_note": "7% def. snaps"
+        },
+        {
+          "name": "Tuli Tuipulotu",
+          "position": "DE",
+          "status": "Questionable",
+          "trend": [
+            {
+              "date": "2026-09-10",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            },
+            {
+              "date": "2026-09-12",
+              "report_status": "Questionable",
+              "practice_status": "Limited Participation in Practice"
+            }
+          ],
+          "usage_note": "77% def. snaps"
         }
       ],
       "away_injuries": [
         {
-          "name": "Josh Sweat",
-          "position": "LB",
-          "status": "DNP (practice) - Not injury related - resting player",
+          "name": "Garrett Williams",
+          "position": "CB",
+          "status": "Out",
           "trend": [
             {
               "date": "2026-09-10",
               "report_status": null,
-              "practice_status": "Did Not Participate In Practice"
+              "practice_status": "Limited Participation in Practice"
+            },
+            {
+              "date": "2026-09-12",
+              "report_status": "Out",
+              "practice_status": "Limited Participation in Practice"
             }
-          ]
+          ],
+          "usage_note": "82% def. snaps"
         },
         {
           "name": "Isaiah Adams",
           "position": "G",
-          "status": "DNP (practice) - Knee",
+          "status": "Out",
           "trend": [
             {
               "date": "2026-09-10",
               "report_status": null,
               "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-09-12",
+              "report_status": "Out",
+              "practice_status": "Did Not Participate In Practice"
             }
-          ]
+          ],
+          "usage_note": "71% off. snaps"
+        },
+        {
+          "name": "Dadrion Taylor-Demerson",
+          "position": "S",
+          "status": "Out",
+          "trend": [
+            {
+              "date": "2026-09-10",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            },
+            {
+              "date": "2026-09-11",
+              "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-09-12",
+              "report_status": "Out",
+              "practice_status": "Did Not Participate In Practice"
+            }
+          ],
+          "usage_note": "53% def. snaps"
+        },
+        {
+          "name": "Jeremiyah Love",
+          "position": "RB",
+          "status": "Questionable",
+          "trend": [
+            {
+              "date": "2026-09-10",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            },
+            {
+              "date": "2026-09-12",
+              "report_status": "Questionable",
+              "practice_status": "Limited Participation in Practice"
+            }
+          ],
+          "usage_note": null
         }
       ],
       "situational_note": "",
-      "spread_current": "-9.5 -105 (9/10)",
-      "spread_current_raw": -9.5,
+      "spread_current": "-8.5 -115 (9/13)",
+      "spread_current_raw": -8.5,
       "spread_history": [
+        "-9.5 -105 (9/10)",
         "-9.5 -114 (9/8)",
         "-9.5 -115 (9/6)",
         "-9.5 -118 (9/2)",
@@ -1004,7 +1906,8 @@
           "backup_starting": false,
           "rookie_starting": false,
           "qb_value": 0.0,
-          "notes": []
+          "notes": [],
+          "depth_chart_conflict": null
         },
         {
           "team": "MIA",
@@ -1014,28 +1917,36 @@
           "backup_starting": false,
           "rookie_starting": false,
           "qb_value": 0.0,
-          "notes": []
+          "notes": [],
+          "depth_chart_conflict": null
         }
       ],
       "home_injuries": [
         {
           "name": "Brock Bowers",
           "position": "TE",
-          "status": "DNP (practice) - Knee",
+          "status": "Out",
           "trend": [
             {
               "date": "2026-09-10",
               "report_status": null,
               "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-09-12",
+              "report_status": "Out",
+              "practice_status": "Did Not Participate In Practice"
             }
-          ]
+          ],
+          "usage_note": "20% target share (12 gm) &middot; 86% off. snaps"
         }
       ],
       "away_injuries": [],
       "situational_note": "",
-      "spread_current": "-3.0 -120 (9/9)",
+      "spread_current": "-3.0 -112 (9/12)",
       "spread_current_raw": -3.0,
       "spread_history": [
+        "-3.0 -120 (9/9)",
         "-3.0 -105 (9/9)",
         "-3.5 -106 (9/8)",
         "-3.5 -105 (9/7)",
@@ -1043,8 +1954,10 @@
         "-3.5 -102 (9/1)",
         "-3.5 -110 (8/31)"
       ],
-      "total_current": "O/U 39.5 (-112) (9/9)",
+      "total_current": "O/U 39.5 (-118) (9/12)",
       "total_history": [
+        "O/U 39.5 (-115) (9/11)",
+        "O/U 39.5 (-112) (9/9)",
         "O/U 40.5 (-114) (9/8)",
         "O/U 40.5 (-118) (9/8)",
         "O/U 40.5 (-105) (9/7)",
@@ -1086,7 +1999,8 @@
           "backup_starting": false,
           "rookie_starting": false,
           "qb_value": 0.0,
-          "notes": []
+          "notes": [],
+          "depth_chart_conflict": null
         },
         {
           "team": "GB",
@@ -1096,47 +2010,149 @@
           "backup_starting": false,
           "rookie_starting": false,
           "qb_value": 0.0,
-          "notes": []
+          "notes": [],
+          "depth_chart_conflict": null
         }
       ],
       "home_injuries": [
         {
-          "name": "Jakobe Thomas",
+          "name": "Harrison Smith",
           "position": "S",
-          "status": "DNP (practice) - Illness",
+          "status": "Limited (practice) - Not injury related - resting player",
           "trend": [
             {
-              "date": "2026-09-10",
+              "date": "2026-09-12",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            }
+          ],
+          "usage_note": "84% def. snaps"
+        },
+        {
+          "name": "Christian Darrisaw",
+          "position": "T",
+          "status": "DNP (practice) - Not injury related - resting player",
+          "trend": [
+            {
+              "date": "2026-09-12",
               "report_status": null,
               "practice_status": "Did Not Participate In Practice"
             }
-          ]
+          ],
+          "usage_note": "81% off. snaps"
         }
       ],
       "away_injuries": [
         {
+          "name": "Javon Hargrave",
+          "position": "DT",
+          "status": "Limited (practice) - Knee",
+          "trend": [
+            {
+              "date": "2026-09-10",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            }
+          ],
+          "usage_note": "53% def. snaps"
+        },
+        {
+          "name": "Aaron Banks",
+          "position": "G",
+          "status": "Questionable",
+          "trend": [
+            {
+              "date": "2026-09-10",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            },
+            {
+              "date": "2026-09-12",
+              "report_status": "Questionable",
+              "practice_status": "Limited Participation in Practice"
+            }
+          ],
+          "usage_note": "84% off. snaps"
+        },
+        {
+          "name": "Devonte Wyatt",
+          "position": "DT",
+          "status": "Limited (practice) - Ankle",
+          "trend": [
+            {
+              "date": "2026-09-10",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            }
+          ],
+          "usage_note": "61% def. snaps"
+        },
+        {
+          "name": "Zach Bako-Bewele",
+          "position": "T",
+          "status": "Questionable",
+          "trend": [
+            {
+              "date": "2026-09-10",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            },
+            {
+              "date": "2026-09-12",
+              "report_status": "Questionable",
+              "practice_status": "Limited Participation in Practice"
+            }
+          ],
+          "usage_note": "83% off. snaps"
+        },
+        {
           "name": "Ty'Ron Hopper",
           "position": "LB",
-          "status": "DNP (practice) - Achilles",
+          "status": "Questionable",
           "trend": [
             {
               "date": "2026-09-10",
               "report_status": null,
               "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-09-12",
+              "report_status": "Questionable",
+              "practice_status": "Limited Participation in Practice"
             }
-          ]
+          ],
+          "usage_note": "12% def. snaps"
+        },
+        {
+          "name": "Barryn Sorrell",
+          "position": "LB",
+          "status": "Limited (practice) - Foot",
+          "trend": [
+            {
+              "date": "2026-09-10",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            }
+          ],
+          "usage_note": "20% def. snaps"
         },
         {
           "name": "Warren Brinson",
           "position": "DT",
-          "status": "DNP (practice) - Calf",
+          "status": "Out",
           "trend": [
             {
               "date": "2026-09-10",
               "report_status": null,
               "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-09-12",
+              "report_status": "Out",
+              "practice_status": "Did Not Participate In Practice"
             }
-          ]
+          ],
+          "usage_note": "37% def. snaps"
         }
       ],
       "situational_note": "",
@@ -1145,8 +2161,9 @@
       "spread_history": [
         "-1.5 -105 (8/31)"
       ],
-      "total_current": "O/U 46.5 (-110) (9/2)",
+      "total_current": "O/U 46.5 (-108) (9/12)",
       "total_history": [
+        "O/U 46.5 (-110) (9/2)",
         "O/U 45.5 (-115) (8/31)"
       ],
       "home_score": null,
@@ -1182,7 +2199,8 @@
           "backup_starting": false,
           "rookie_starting": false,
           "qb_value": 0.0,
-          "notes": []
+          "notes": [],
+          "depth_chart_conflict": null
         },
         {
           "team": "WAS",
@@ -1192,19 +2210,112 @@
           "backup_starting": false,
           "rookie_starting": false,
           "qb_value": 0.0,
-          "notes": []
+          "notes": [],
+          "depth_chart_conflict": null
         }
       ],
-      "home_injuries": [],
-      "away_injuries": [],
+      "home_injuries": [
+        {
+          "name": "Jonathan Greenard",
+          "position": "LB",
+          "status": "Out",
+          "trend": [
+            {
+              "date": "2026-09-10",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            },
+            {
+              "date": "2026-09-12",
+              "report_status": "Out",
+              "practice_status": "Limited Participation in Practice"
+            }
+          ],
+          "usage_note": "74% def. snaps"
+        },
+        {
+          "name": "Eli Stowers",
+          "position": "TE",
+          "status": "Out",
+          "trend": [
+            {
+              "date": "2026-09-10",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            },
+            {
+              "date": "2026-09-12",
+              "report_status": "Questionable",
+              "practice_status": "Limited Participation in Practice"
+            }
+          ],
+          "usage_note": null
+        }
+      ],
+      "away_injuries": [
+        {
+          "name": "Daron Payne",
+          "position": "DT",
+          "status": "Limited (practice) - Knee",
+          "trend": [
+            {
+              "date": "2026-09-11",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            }
+          ],
+          "usage_note": "62% def. snaps"
+        },
+        {
+          "name": "K'Lavon Chaisson",
+          "position": "LB",
+          "status": "Limited (practice) - Knee",
+          "trend": [
+            {
+              "date": "2026-09-10",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            }
+          ],
+          "usage_note": "69% def. snaps"
+        },
+        {
+          "name": "Odafe Oweh",
+          "position": "LB",
+          "status": "Limited (practice) - Calf",
+          "trend": [
+            {
+              "date": "2026-09-10",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            }
+          ],
+          "usage_note": "47% def. snaps"
+        },
+        {
+          "name": "Jacory Croskey-Merritt",
+          "position": "RB",
+          "status": "Limited (practice) - Groin",
+          "trend": [
+            {
+              "date": "2026-09-10",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            }
+          ],
+          "usage_note": "4% target share (10 gm) &middot; 40% off. snaps"
+        }
+      ],
       "situational_note": "",
-      "spread_current": "-5.5 -110 (9/10)",
+      "spread_current": "-5.5 -112 (9/13)",
       "spread_current_raw": -5.5,
       "spread_history": [
+        "-5.5 -110 (9/10)",
         "-5.5 -105 (8/31)"
       ],
-      "total_current": "O/U 44.5 (-110) (9/10)",
+      "total_current": "O/U 44.5 (-105) (9/11)",
       "total_history": [
+        "O/U 44.5 (-110) (9/10)",
         "O/U 44.5 (-112) (9/4)",
         "O/U 45.5 (-105) (9/2)",
         "O/U 45.5 (-108) (8/31)"
@@ -1244,7 +2355,8 @@
           "backup_starting": false,
           "rookie_starting": false,
           "qb_value": 0.0,
-          "notes": []
+          "notes": [],
+          "depth_chart_conflict": null
         },
         {
           "team": "DAL",
@@ -1254,15 +2366,64 @@
           "backup_starting": false,
           "rookie_starting": false,
           "qb_value": 0.0,
-          "notes": []
+          "notes": [],
+          "depth_chart_conflict": null
         }
       ],
-      "home_injuries": [],
-      "away_injuries": [],
+      "home_injuries": [
+        {
+          "name": "Malik Nabers",
+          "position": "WR",
+          "status": "Questionable",
+          "trend": [
+            {
+              "date": "2026-09-10",
+              "report_status": null,
+              "practice_status": "Full Participation in Practice"
+            },
+            {
+              "date": "2026-09-12",
+              "report_status": "Questionable",
+              "practice_status": "Full Participation in Practice"
+            }
+          ],
+          "usage_note": "23% target share (4 gm) &middot; 80% off. snaps"
+        }
+      ],
+      "away_injuries": [
+        {
+          "name": "Malik Davis",
+          "position": "RB",
+          "status": "Out",
+          "trend": [
+            {
+              "date": "2026-09-12",
+              "report_status": "Out",
+              "practice_status": "Limited Participation in Practice"
+            }
+          ],
+          "usage_note": "6% target share (2 gm) &middot; 21% off. snaps"
+        },
+        {
+          "name": "Luke Schoonmaker",
+          "position": "TE",
+          "status": "DNP (practice) - Not injury related - personal matter",
+          "trend": [
+            {
+              "date": "2026-09-11",
+              "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            }
+          ],
+          "usage_note": "4% target share (14 gm) &middot; 33% off. snaps"
+        }
+      ],
       "situational_note": "",
-      "spread_current": "+2.5 -105 (9/7)",
-      "spread_current_raw": 2.5,
+      "spread_current": "+3.0 -112 (9/12)",
+      "spread_current_raw": 3.0,
       "spread_history": [
+        "+2.5 +102 (9/11)",
+        "+2.5 -105 (9/7)",
         "+2.5 -102 (8/31)"
       ],
       "total_current": "O/U 48.5 (-105) (9/7)",
@@ -1304,7 +2465,8 @@
           "backup_starting": false,
           "rookie_starting": false,
           "qb_value": 0.0,
-          "notes": []
+          "notes": [],
+          "depth_chart_conflict": null
         },
         {
           "team": "DEN",
@@ -1314,17 +2476,75 @@
           "backup_starting": false,
           "rookie_starting": false,
           "qb_value": 0.0,
-          "notes": []
+          "notes": [],
+          "depth_chart_conflict": null
         }
       ],
-      "home_injuries": [],
+      "home_injuries": [
+        {
+          "name": "Chris Jones",
+          "position": "DT",
+          "status": "DNP (practice) - Calf",
+          "trend": [
+            {
+              "date": "2026-09-12",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            }
+          ],
+          "usage_note": "73% def. snaps"
+        },
+        {
+          "name": "L'Jarius Sneed",
+          "position": "CB",
+          "status": "Limited (practice) - Knee",
+          "trend": [
+            {
+              "date": "2026-09-11",
+              "report_status": null,
+              "practice_status": "Full Participation in Practice"
+            }
+          ],
+          "usage_note": "80% def. snaps"
+        },
+        {
+          "name": "Chamarri Conner",
+          "position": "S",
+          "status": "Out",
+          "trend": [
+            {
+              "date": "2026-09-11",
+              "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            }
+          ],
+          "usage_note": "98% def. snaps"
+        },
+        {
+          "name": "Josh Simmons",
+          "position": "T",
+          "status": "Out",
+          "trend": [
+            {
+              "date": "2026-09-11",
+              "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            }
+          ],
+          "usage_note": "93% off. snaps"
+        }
+      ],
       "away_injuries": [],
       "situational_note": "",
-      "spread_current": "-2.5 -115 (8/31)",
+      "spread_current": "-2.5 -110 (9/12)",
       "spread_current_raw": -2.5,
-      "spread_history": [],
-      "total_current": "O/U 43.5 (-108) (9/8)",
+      "spread_history": [
+        "-2.5 -112 (9/11)",
+        "-2.5 -115 (8/31)"
+      ],
+      "total_current": "O/U 43.5 (-112) (9/11)",
       "total_history": [
+        "O/U 43.5 (-108) (9/8)",
         "O/U 43.5 (-110) (9/7)",
         "O/U 43.5 (-104) (8/31)"
       ],
@@ -1334,6 +2554,496 @@
     }
   ],
   "pool_results_history": [
+    {
+      "season": 2020,
+      "week": 1,
+      "pool_id": null,
+      "pool_label": "NFL - WEEK 1",
+      "closed_date": null,
+      "no_of_winners": 2,
+      "winning_selections_required": 15,
+      "winning_selections_total": 15,
+      "share_prize": 250138.5,
+      "upsets": 7.0,
+      "total_pot": 500277.0,
+      "underdog_pts_realized": 25.0
+    },
+    {
+      "season": 2020,
+      "week": 2,
+      "pool_id": null,
+      "pool_label": "NFL - WEEK 2",
+      "closed_date": null,
+      "no_of_winners": null,
+      "winning_selections_required": 15,
+      "winning_selections_total": 15,
+      "share_prize": null,
+      "upsets": 2.0,
+      "total_pot": 587064.0,
+      "underdog_pts_realized": 6.0
+    },
+    {
+      "season": 2020,
+      "week": 3,
+      "pool_id": null,
+      "pool_label": "NFL - WEEK 3",
+      "closed_date": null,
+      "no_of_winners": 8,
+      "winning_selections_required": 15,
+      "winning_selections_total": 15,
+      "share_prize": 79814.6,
+      "upsets": 6.0,
+      "total_pot": 638516.8,
+      "underdog_pts_realized": 26.0
+    },
+    {
+      "season": 2020,
+      "week": 4,
+      "pool_id": null,
+      "pool_label": "NFL - WEEK 4",
+      "closed_date": null,
+      "no_of_winners": 114,
+      "winning_selections_required": 12,
+      "winning_selections_total": 12,
+      "share_prize": 5219.1,
+      "upsets": 2.0,
+      "total_pot": 594977.4,
+      "underdog_pts_realized": 12.0
+    },
+    {
+      "season": 2020,
+      "week": 5,
+      "pool_id": null,
+      "pool_label": "NFL - WEEK 5",
+      "closed_date": null,
+      "no_of_winners": 118,
+      "winning_selections_required": 12,
+      "winning_selections_total": 12,
+      "share_prize": 4769.8,
+      "upsets": 3.0,
+      "total_pot": 562836.4,
+      "underdog_pts_realized": 22.0
+    },
+    {
+      "season": 2020,
+      "week": 6,
+      "pool_id": null,
+      "pool_label": "NFL - WEEK 6",
+      "closed_date": null,
+      "no_of_winners": 8,
+      "winning_selections_required": 14,
+      "winning_selections_total": 14,
+      "share_prize": 75904.9,
+      "upsets": 6.0,
+      "total_pot": 607239.2,
+      "underdog_pts_realized": 18.5
+    },
+    {
+      "season": 2020,
+      "week": 7,
+      "pool_id": null,
+      "pool_label": "NFL - WEEK 7",
+      "closed_date": null,
+      "no_of_winners": 322,
+      "winning_selections_required": 13,
+      "winning_selections_total": 13,
+      "share_prize": 1926.3,
+      "upsets": 5.0,
+      "total_pot": 620268.6,
+      "underdog_pts_realized": 9.5
+    },
+    {
+      "season": 2020,
+      "week": 8,
+      "pool_id": null,
+      "pool_label": "NFL - WEEK 8",
+      "closed_date": null,
+      "no_of_winners": 14,
+      "winning_selections_required": 13,
+      "winning_selections_total": 13,
+      "share_prize": 47773.7,
+      "upsets": 6.0,
+      "total_pot": 668831.7999999999,
+      "underdog_pts_realized": 24.0
+    },
+    {
+      "season": 2020,
+      "week": 9,
+      "pool_id": null,
+      "pool_label": "NFL - WEEK 9",
+      "closed_date": null,
+      "no_of_winners": 103,
+      "winning_selections_required": 13,
+      "winning_selections_total": 13,
+      "share_prize": 5907.0,
+      "upsets": 5.0,
+      "total_pot": 608421.0,
+      "underdog_pts_realized": 15.5
+    },
+    {
+      "season": 2020,
+      "week": 10,
+      "pool_id": null,
+      "pool_label": "NFL - WEEK 10",
+      "closed_date": null,
+      "no_of_winners": 110,
+      "winning_selections_required": 13,
+      "winning_selections_total": 13,
+      "share_prize": 5907.3,
+      "upsets": 2.0,
+      "total_pot": 649803.0,
+      "underdog_pts_realized": 12.0
+    },
+    {
+      "season": 2020,
+      "week": 11,
+      "pool_id": null,
+      "pool_label": "NFL - WEEK 11",
+      "closed_date": null,
+      "no_of_winners": 6,
+      "winning_selections_required": 13,
+      "winning_selections_total": 13,
+      "share_prize": 111541.5,
+      "upsets": 6.0,
+      "total_pot": 669249.0,
+      "underdog_pts_realized": 26.5
+    },
+    {
+      "season": 2020,
+      "week": 12,
+      "pool_id": null,
+      "pool_label": "NFL - WEEK 12",
+      "closed_date": null,
+      "no_of_winners": 149,
+      "winning_selections_required": 13,
+      "winning_selections_total": 13,
+      "share_prize": 4341.8,
+      "upsets": 4.0,
+      "total_pot": 646928.2000000001,
+      "underdog_pts_realized": 13.0
+    },
+    {
+      "season": 2020,
+      "week": 13,
+      "pool_id": null,
+      "pool_label": "NFL - WEEK 13",
+      "closed_date": null,
+      "no_of_winners": 12,
+      "winning_selections_required": 15,
+      "winning_selections_total": 15,
+      "share_prize": 58691.5,
+      "upsets": 6.0,
+      "total_pot": 704298.0,
+      "underdog_pts_realized": 26.0
+    },
+    {
+      "season": 2020,
+      "week": 14,
+      "pool_id": null,
+      "pool_label": "NFL - WEEK 14",
+      "closed_date": null,
+      "no_of_winners": 23,
+      "winning_selections_required": 15,
+      "winning_selections_total": 15,
+      "share_prize": 27015.5,
+      "upsets": 4.0,
+      "total_pot": 621356.5,
+      "underdog_pts_realized": 15.5
+    },
+    {
+      "season": 2020,
+      "week": 15,
+      "pool_id": null,
+      "pool_label": "NFL - WEEK 15",
+      "closed_date": null,
+      "no_of_winners": 11,
+      "winning_selections_required": 13,
+      "winning_selections_total": 13,
+      "share_prize": 56472.0,
+      "upsets": 5.0,
+      "total_pot": 621192.0,
+      "underdog_pts_realized": 39.0
+    },
+    {
+      "season": 2020,
+      "week": 16,
+      "pool_id": null,
+      "pool_label": "NFL - WEEK 16",
+      "closed_date": null,
+      "no_of_winners": 86,
+      "winning_selections_required": 12,
+      "winning_selections_total": 12,
+      "share_prize": 6610.9,
+      "upsets": 3.5,
+      "total_pot": 568537.4,
+      "underdog_pts_realized": 18.0
+    },
+    {
+      "season": 2020,
+      "week": 17,
+      "pool_id": null,
+      "pool_label": "NFL - WEEK 17",
+      "closed_date": null,
+      "no_of_winners": 357,
+      "winning_selections_required": 16,
+      "winning_selections_total": 16,
+      "share_prize": 1755.2,
+      "upsets": 2.0,
+      "total_pot": 626606.4,
+      "underdog_pts_realized": 4.5
+    },
+    {
+      "season": 2021,
+      "week": 1,
+      "pool_id": null,
+      "pool_label": "NFL - WEEK 1",
+      "closed_date": null,
+      "no_of_winners": 2,
+      "winning_selections_required": 15,
+      "winning_selections_total": 15,
+      "share_prize": 264765.0,
+      "upsets": 9.0,
+      "total_pot": 529530.0,
+      "underdog_pts_realized": 30.0
+    },
+    {
+      "season": 2021,
+      "week": 2,
+      "pool_id": null,
+      "pool_label": "NFL - WEEK 2",
+      "closed_date": null,
+      "no_of_winners": 32,
+      "winning_selections_required": 15,
+      "winning_selections_total": 15,
+      "share_prize": 16870.2,
+      "upsets": 5.0,
+      "total_pot": 539846.4,
+      "underdog_pts_realized": 21.5
+    },
+    {
+      "season": 2021,
+      "week": 3,
+      "pool_id": null,
+      "pool_label": "NFL - WEEK 3",
+      "closed_date": null,
+      "no_of_winners": 77,
+      "winning_selections_required": 15,
+      "winning_selections_total": 15,
+      "share_prize": 7621.9,
+      "upsets": 6.0,
+      "total_pot": 586886.2999999999,
+      "underdog_pts_realized": 21.5
+    },
+    {
+      "season": 2021,
+      "week": 4,
+      "pool_id": null,
+      "pool_label": "NFL - WEEK 4",
+      "closed_date": null,
+      "no_of_winners": 7,
+      "winning_selections_required": 15,
+      "winning_selections_total": 15,
+      "share_prize": 79511.6,
+      "upsets": 6.0,
+      "total_pot": 556581.2000000001,
+      "underdog_pts_realized": 22.0
+    },
+    {
+      "season": 2021,
+      "week": 5,
+      "pool_id": null,
+      "pool_label": "NFL - WEEK 5",
+      "closed_date": null,
+      "no_of_winners": 129,
+      "winning_selections_required": 14,
+      "winning_selections_total": 14,
+      "share_prize": 4425.7,
+      "upsets": 4.0,
+      "total_pot": 570915.2999999999,
+      "underdog_pts_realized": 12.5
+    },
+    {
+      "season": 2021,
+      "week": 6,
+      "pool_id": null,
+      "pool_label": "NFL - WEEK 6",
+      "closed_date": null,
+      "no_of_winners": 347,
+      "winning_selections_required": 12,
+      "winning_selections_total": 12,
+      "share_prize": 1587.4,
+      "upsets": 3.0,
+      "total_pot": 550827.8,
+      "underdog_pts_realized": 14.0
+    },
+    {
+      "season": 2021,
+      "week": 7,
+      "pool_id": null,
+      "pool_label": "NFL - WEEK 7",
+      "closed_date": null,
+      "no_of_winners": 282,
+      "winning_selections_required": 12,
+      "winning_selections_total": 12,
+      "share_prize": 1997.4,
+      "upsets": 4.0,
+      "total_pot": 563266.8,
+      "underdog_pts_realized": 16.5
+    },
+    {
+      "season": 2021,
+      "week": 8,
+      "pool_id": null,
+      "pool_label": "NFL - WEEK 8",
+      "closed_date": null,
+      "no_of_winners": 4,
+      "winning_selections_required": 14,
+      "winning_selections_total": 14,
+      "share_prize": 143496.8,
+      "upsets": 7.0,
+      "total_pot": 573987.2,
+      "underdog_pts_realized": 33.5
+    },
+    {
+      "season": 2021,
+      "week": 9,
+      "pool_id": null,
+      "pool_label": "NFL - WEEK 9",
+      "closed_date": null,
+      "no_of_winners": 2,
+      "winning_selections_required": 13,
+      "winning_selections_total": 13,
+      "share_prize": 290404.5,
+      "upsets": 7.0,
+      "total_pot": 580809.0,
+      "underdog_pts_realized": 48.5
+    },
+    {
+      "season": 2021,
+      "week": 10,
+      "pool_id": null,
+      "pool_label": "NFL - WEEK 10",
+      "closed_date": null,
+      "no_of_winners": 6,
+      "winning_selections_required": 13,
+      "winning_selections_total": 13,
+      "share_prize": 90445.0,
+      "upsets": 6.0,
+      "total_pot": 542670.0,
+      "underdog_pts_realized": 31.0
+    },
+    {
+      "season": 2021,
+      "week": 11,
+      "pool_id": null,
+      "pool_label": "NFL - WEEK 11",
+      "closed_date": null,
+      "no_of_winners": 6,
+      "winning_selections_required": 14,
+      "winning_selections_total": 14,
+      "share_prize": 88585.0,
+      "upsets": 5.0,
+      "total_pot": 531510.0,
+      "underdog_pts_realized": 26.5
+    },
+    {
+      "season": 2021,
+      "week": 12,
+      "pool_id": null,
+      "pool_label": "NFL - WEEK 12",
+      "closed_date": null,
+      "no_of_winners": 29,
+      "winning_selections_required": 12,
+      "winning_selections_total": 12,
+      "share_prize": 15160.8,
+      "upsets": 6.0,
+      "total_pot": 439663.2,
+      "underdog_pts_realized": 15.0
+    },
+    {
+      "season": 2021,
+      "week": 13,
+      "pool_id": null,
+      "pool_label": "NFL - WEEK 13",
+      "closed_date": null,
+      "no_of_winners": 109,
+      "winning_selections_required": 13,
+      "winning_selections_total": 13,
+      "share_prize": 4927.2,
+      "upsets": 6.0,
+      "total_pot": 537064.7999999999,
+      "underdog_pts_realized": 21.5
+    },
+    {
+      "season": 2021,
+      "week": 14,
+      "pool_id": null,
+      "pool_label": "NFL - WEEK 14",
+      "closed_date": null,
+      "no_of_winners": null,
+      "winning_selections_required": 13,
+      "winning_selections_total": 13,
+      "share_prize": null,
+      "upsets": 2.0,
+      "total_pot": 513826.8000000001,
+      "underdog_pts_realized": 5.5
+    },
+    {
+      "season": 2021,
+      "week": 15,
+      "pool_id": null,
+      "pool_label": "NFL - WEEK 15",
+      "closed_date": null,
+      "no_of_winners": 50,
+      "winning_selections_required": 11,
+      "winning_selections_total": 11,
+      "share_prize": 7723.1,
+      "upsets": 4.0,
+      "total_pot": 386155.0,
+      "underdog_pts_realized": 34.0
+    },
+    {
+      "season": 2021,
+      "week": 16,
+      "pool_id": null,
+      "pool_label": "NFL - WEEK 16",
+      "closed_date": null,
+      "no_of_winners": 41,
+      "winning_selections_required": 13,
+      "winning_selections_total": 13,
+      "share_prize": 10760.6,
+      "upsets": 3.5,
+      "total_pot": 441184.6,
+      "underdog_pts_realized": 22.0
+    },
+    {
+      "season": 2021,
+      "week": 17,
+      "pool_id": null,
+      "pool_label": "NFL - WEEK 17",
+      "closed_date": null,
+      "no_of_winners": 139,
+      "winning_selections_required": 16,
+      "winning_selections_total": 16,
+      "share_prize": 3534.0,
+      "upsets": 4.0,
+      "total_pot": 491226.0,
+      "underdog_pts_realized": 19.5
+    },
+    {
+      "season": 2021,
+      "week": 18,
+      "pool_id": null,
+      "pool_label": "NFL - WEEK 18",
+      "closed_date": null,
+      "no_of_winners": 10,
+      "winning_selections_required": 14,
+      "winning_selections_total": 14,
+      "share_prize": 45658.8,
+      "upsets": 7.0,
+      "total_pot": 456588.0,
+      "underdog_pts_realized": 39.0
+    },
     {
       "season": 2022,
       "week": 1,
@@ -1345,7 +3055,8 @@
       "winning_selections_total": 15,
       "share_prize": 122846.25,
       "upsets": 5.0,
-      "total_pot": 491385.0
+      "total_pot": 491385.0,
+      "underdog_pts_realized": 26.5
     },
     {
       "season": 2022,
@@ -1358,7 +3069,8 @@
       "winning_selections_total": 15,
       "share_prize": 12297.71,
       "upsets": 6.5,
-      "total_pot": 467312.98
+      "total_pot": 467312.98,
+      "underdog_pts_realized": 26.5
     },
     {
       "season": 2022,
@@ -1371,7 +3083,8 @@
       "winning_selections_total": 15,
       "share_prize": 157659.0,
       "upsets": 9.0,
-      "total_pot": 472977.0
+      "total_pot": 472977.0,
+      "underdog_pts_realized": null
     },
     {
       "season": 2022,
@@ -1384,7 +3097,8 @@
       "winning_selections_total": null,
       "share_prize": 26408.29,
       "upsets": null,
-      "total_pot": 448940.93
+      "total_pot": 448940.93,
+      "underdog_pts_realized": null
     },
     {
       "season": 2022,
@@ -1397,7 +3111,8 @@
       "winning_selections_total": null,
       "share_prize": 9817.47,
       "upsets": null,
-      "total_pot": 481056.03
+      "total_pot": 481056.03,
+      "underdog_pts_realized": null
     },
     {
       "season": 2022,
@@ -1410,7 +3125,8 @@
       "winning_selections_total": null,
       "share_prize": 124594.5,
       "upsets": null,
-      "total_pot": 498378.0
+      "total_pot": 498378.0,
+      "underdog_pts_realized": null
     },
     {
       "season": 2022,
@@ -1423,7 +3139,8 @@
       "winning_selections_total": null,
       "share_prize": 159104.0,
       "upsets": null,
-      "total_pot": 477312.0
+      "total_pot": 477312.0,
+      "underdog_pts_realized": null
     },
     {
       "season": 2022,
@@ -1436,7 +3153,8 @@
       "winning_selections_total": 13,
       "share_prize": 3675.0,
       "upsets": 4.0,
-      "total_pot": 470400.0
+      "total_pot": 470400.0,
+      "underdog_pts_realized": 8.0
     },
     {
       "season": 2022,
@@ -1449,7 +3167,8 @@
       "winning_selections_total": 12,
       "share_prize": 8148.26,
       "upsets": 4.0,
-      "total_pot": 464450.82
+      "total_pot": 464450.82,
+      "underdog_pts_realized": 19.0
     },
     {
       "season": 2022,
@@ -1462,7 +3181,8 @@
       "winning_selections_total": 12,
       "share_prize": 18027.2,
       "upsets": 4.0,
-      "total_pot": 450680.0
+      "total_pot": 450680.0,
+      "underdog_pts_realized": 31.5
     },
     {
       "season": 2022,
@@ -1475,7 +3195,8 @@
       "winning_selections_total": 13,
       "share_prize": 2728.97,
       "upsets": 2.0,
-      "total_pot": 461195.93
+      "total_pot": 461195.93,
+      "underdog_pts_realized": 5.5
     },
     {
       "season": 2022,
@@ -1488,7 +3209,8 @@
       "winning_selections_total": 13,
       "share_prize": 11547.95,
       "upsets": 4.0,
-      "total_pot": 438822.1
+      "total_pot": 438822.1,
+      "underdog_pts_realized": 13.5
     },
     {
       "season": 2022,
@@ -1501,7 +3223,8 @@
       "winning_selections_total": 14,
       "share_prize": 516.34,
       "upsets": 1.5,
-      "total_pot": 470385.7400000001
+      "total_pot": 470385.7400000001,
+      "underdog_pts_realized": 6.0
     },
     {
       "season": 2022,
@@ -1514,7 +3237,8 @@
       "winning_selections_total": 12,
       "share_prize": 5849.88,
       "upsets": 5.0,
-      "total_pot": 432891.12
+      "total_pot": 432891.12,
+      "underdog_pts_realized": 14.0
     },
     {
       "season": 2022,
@@ -1527,7 +3251,8 @@
       "winning_selections_total": 12,
       "share_prize": 3585.98,
       "upsets": 4.0,
-      "total_pot": 372941.92
+      "total_pot": 372941.92,
+      "underdog_pts_realized": 12.0
     },
     {
       "season": 2022,
@@ -1540,7 +3265,8 @@
       "winning_selections_total": 15,
       "share_prize": 23903.82,
       "upsets": 5.0,
-      "total_pot": 406364.94
+      "total_pot": 406364.94,
+      "underdog_pts_realized": 15.5
     },
     {
       "season": 2022,
@@ -1553,7 +3279,8 @@
       "winning_selections_total": 14,
       "share_prize": 5236.59,
       "upsets": 5.0,
-      "total_pot": 434636.97
+      "total_pot": 434636.97,
+      "underdog_pts_realized": 7.5
     },
     {
       "season": 2022,
@@ -1566,7 +3293,8 @@
       "winning_selections_total": 13,
       "share_prize": 9957.23,
       "upsets": 4.0,
-      "total_pot": 388331.97
+      "total_pot": 388331.97,
+      "underdog_pts_realized": 19.5
     },
     {
       "season": 2023,
@@ -1579,7 +3307,8 @@
       "winning_selections_total": 15,
       "share_prize": 70566.43,
       "upsets": 7.0,
-      "total_pot": 493965.01
+      "total_pot": 493965.01,
+      "underdog_pts_realized": 18.5
     },
     {
       "season": 2023,
@@ -1592,7 +3321,8 @@
       "winning_selections_total": 15,
       "share_prize": 88967.4,
       "upsets": 5.0,
-      "total_pot": 444837.0
+      "total_pot": 444837.0,
+      "underdog_pts_realized": 19.0
     },
     {
       "season": 2023,
@@ -1605,7 +3335,8 @@
       "winning_selections_total": 15,
       "share_prize": 254074.5,
       "upsets": 6.0,
-      "total_pot": 508149.0
+      "total_pot": 508149.0,
+      "underdog_pts_realized": 31.5
     },
     {
       "season": 2023,
@@ -1618,7 +3349,8 @@
       "winning_selections_total": 14,
       "share_prize": 4339.51,
       "upsets": 3.0,
-      "total_pot": 455648.5500000001
+      "total_pot": 455648.5500000001,
+      "underdog_pts_realized": 10.0
     },
     {
       "season": 2023,
@@ -1631,7 +3363,8 @@
       "winning_selections_total": 12,
       "share_prize": 4405.77,
       "upsets": 4.0,
-      "total_pot": 440577.00000000006
+      "total_pot": 440577.00000000006,
+      "underdog_pts_realized": 10.5
     },
     {
       "season": 2023,
@@ -1644,7 +3377,8 @@
       "winning_selections_total": 13,
       "share_prize": 18456.12,
       "upsets": 4.0,
-      "total_pot": 461403.0
+      "total_pot": 461403.0,
+      "underdog_pts_realized": 19.5
     },
     {
       "season": 2023,
@@ -1657,7 +3391,8 @@
       "winning_selections_total": 12,
       "share_prize": 28399.0,
       "upsets": 6.0,
-      "total_pot": 425985.0
+      "total_pot": 425985.0,
+      "underdog_pts_realized": 25.5
     },
     {
       "season": 2023,
@@ -1670,7 +3405,8 @@
       "winning_selections_total": 15,
       "share_prize": 15165.6,
       "upsets": 6.0,
-      "total_pot": 454968.0
+      "total_pot": 454968.0,
+      "underdog_pts_realized": 17.5
     },
     {
       "season": 2023,
@@ -1683,7 +3419,8 @@
       "winning_selections_total": 12,
       "share_prize": 1770.93,
       "upsets": 2.0,
-      "total_pot": 371895.3
+      "total_pot": 371895.3,
+      "underdog_pts_realized": 6.5
     },
     {
       "season": 2023,
@@ -1696,7 +3433,8 @@
       "winning_selections_total": 12,
       "share_prize": 25706.6,
       "upsets": 6.0,
-      "total_pot": 385599.0
+      "total_pot": 385599.0,
+      "underdog_pts_realized": 24.5
     },
     {
       "season": 2023,
@@ -1709,7 +3447,8 @@
       "winning_selections_total": 13,
       "share_prize": 4474.32,
       "upsets": 3.0,
-      "total_pot": 447432.0
+      "total_pot": 447432.0,
+      "underdog_pts_realized": 13.0
     },
     {
       "season": 2023,
@@ -1722,7 +3461,8 @@
       "winning_selections_total": 12,
       "share_prize": 3274.23,
       "upsets": 3.0,
-      "total_pot": 343794.15
+      "total_pot": 343794.15,
+      "underdog_pts_realized": 9.5
     },
     {
       "season": 2023,
@@ -1735,7 +3475,8 @@
       "winning_selections_total": 12,
       "share_prize": 27403.0,
       "upsets": 3.0,
-      "total_pot": 383642.0
+      "total_pot": 383642.0,
+      "underdog_pts_realized": 21.5
     },
     {
       "season": 2023,
@@ -1748,7 +3489,8 @@
       "winning_selections_total": 14,
       "share_prize": 82711.0,
       "upsets": 7.0,
-      "total_pot": 413555.0
+      "total_pot": 413555.0,
+      "underdog_pts_realized": 31.0
     },
     {
       "season": 2023,
@@ -1761,7 +3503,8 @@
       "winning_selections_total": 12,
       "share_prize": 5795.0,
       "upsets": 4.0,
-      "total_pot": 370880.0
+      "total_pot": 370880.0,
+      "underdog_pts_realized": 14.5
     },
     {
       "season": 2023,
@@ -1774,7 +3517,8 @@
       "winning_selections_total": 13,
       "share_prize": 41916.0,
       "upsets": 4.0,
-      "total_pot": 377244.0
+      "total_pot": 377244.0,
+      "underdog_pts_realized": 26.5
     },
     {
       "season": 2023,
@@ -1787,7 +3531,8 @@
       "winning_selections_total": 14,
       "share_prize": 33036.0,
       "upsets": 4.0,
-      "total_pot": 396432.0
+      "total_pot": 396432.0,
+      "underdog_pts_realized": 19.5
     },
     {
       "season": 2023,
@@ -1800,7 +3545,8 @@
       "winning_selections_total": 14,
       "share_prize": 15424.0,
       "upsets": 5.0,
-      "total_pot": 370176.0
+      "total_pot": 370176.0,
+      "underdog_pts_realized": 17.5
     },
     {
       "season": 2024,
@@ -1813,7 +3559,8 @@
       "winning_selections_total": 14,
       "share_prize": 6433.0,
       "upsets": 3.0,
-      "total_pot": 418145.0
+      "total_pot": 418145.0,
+      "underdog_pts_realized": 15.5
     },
     {
       "season": 2024,
@@ -1826,7 +3573,8 @@
       "winning_selections_total": 15,
       "share_prize": 407613.0,
       "upsets": 8.0,
-      "total_pot": 407613.0
+      "total_pot": 407613.0,
+      "underdog_pts_realized": 38.25
     },
     {
       "season": 2024,
@@ -1839,7 +3587,8 @@
       "winning_selections_total": 15,
       "share_prize": 367977.0,
       "upsets": 8.0,
-      "total_pot": 367977.0
+      "total_pot": 367977.0,
+      "underdog_pts_realized": 41.0
     },
     {
       "season": 2024,
@@ -1852,7 +3601,8 @@
       "winning_selections_total": 15,
       "share_prize": 122619.0,
       "upsets": 7.0,
-      "total_pot": 367857.0
+      "total_pot": 367857.0,
+      "underdog_pts_realized": 21.75
     },
     {
       "season": 2024,
@@ -1865,7 +3615,8 @@
       "winning_selections_total": 12,
       "share_prize": 16932.0,
       "upsets": 3.0,
-      "total_pot": 338640.0
+      "total_pot": 338640.0,
+      "underdog_pts_realized": 16.75
     },
     {
       "season": 2024,
@@ -1878,7 +3629,8 @@
       "winning_selections_total": 12,
       "share_prize": null,
       "upsets": null,
-      "total_pot": 351117.0
+      "total_pot": 351117.0,
+      "underdog_pts_realized": null
     },
     {
       "season": 2024,
@@ -1891,7 +3643,8 @@
       "winning_selections_total": null,
       "share_prize": null,
       "upsets": null,
-      "total_pot": 370806.0
+      "total_pot": 370806.0,
+      "underdog_pts_realized": null
     },
     {
       "season": 2024,
@@ -1904,7 +3657,8 @@
       "winning_selections_total": null,
       "share_prize": 30348.0,
       "upsets": null,
-      "total_pot": 394524.0
+      "total_pot": 394524.0,
+      "underdog_pts_realized": null
     },
     {
       "season": 2024,
@@ -1917,7 +3671,8 @@
       "winning_selections_total": null,
       "share_prize": 1295.0,
       "upsets": null,
-      "total_pot": 382025.0
+      "total_pot": 382025.0,
+      "underdog_pts_realized": null
     },
     {
       "season": 2024,
@@ -1930,7 +3685,8 @@
       "winning_selections_total": null,
       "share_prize": 3651.0,
       "upsets": null,
-      "total_pot": 343194.0
+      "total_pot": 343194.0,
+      "underdog_pts_realized": null
     },
     {
       "season": 2024,
@@ -1943,7 +3699,8 @@
       "winning_selections_total": null,
       "share_prize": 4885.0,
       "upsets": null,
-      "total_pot": 346835.0
+      "total_pot": 346835.0,
+      "underdog_pts_realized": null
     },
     {
       "season": 2024,
@@ -1956,7 +3713,8 @@
       "winning_selections_total": null,
       "share_prize": 9800.0,
       "upsets": null,
-      "total_pot": 343000.0
+      "total_pot": 343000.0,
+      "underdog_pts_realized": null
     },
     {
       "season": 2024,
@@ -1969,7 +3727,8 @@
       "winning_selections_total": null,
       "share_prize": 161.0,
       "upsets": null,
-      "total_pot": 300265.0
+      "total_pot": 300265.0,
+      "underdog_pts_realized": null
     },
     {
       "season": 2024,
@@ -1982,7 +3741,8 @@
       "winning_selections_total": null,
       "share_prize": 2155.0,
       "upsets": null,
-      "total_pot": 321095.0
+      "total_pot": 321095.0,
+      "underdog_pts_realized": null
     },
     {
       "season": 2024,
@@ -1995,7 +3755,8 @@
       "winning_selections_total": null,
       "share_prize": 655.0,
       "upsets": null,
-      "total_pot": 374005.0
+      "total_pot": 374005.0,
+      "underdog_pts_realized": null
     },
     {
       "season": 2024,
@@ -2008,7 +3769,8 @@
       "winning_selections_total": null,
       "share_prize": 4518.0,
       "upsets": null,
-      "total_pot": 311742.0
+      "total_pot": 311742.0,
+      "underdog_pts_realized": null
     },
     {
       "season": 2024,
@@ -2021,7 +3783,8 @@
       "winning_selections_total": null,
       "share_prize": null,
       "upsets": null,
-      "total_pot": 251271.0
+      "total_pot": 251271.0,
+      "underdog_pts_realized": null
     },
     {
       "season": 2024,
@@ -2034,7 +3797,8 @@
       "winning_selections_total": null,
       "share_prize": null,
       "upsets": null,
-      "total_pot": 285243.0
+      "total_pot": 285243.0,
+      "underdog_pts_realized": null
     },
     {
       "season": 2025,
@@ -2047,7 +3811,8 @@
       "winning_selections_total": 14,
       "share_prize": 2393.0,
       "upsets": 3.0,
-      "total_pot": 327841.0
+      "total_pot": 327841.0,
+      "underdog_pts_realized": 4.75
     },
     {
       "season": 2025,
@@ -2060,7 +3825,8 @@
       "winning_selections_total": 15,
       "share_prize": 6874.0,
       "upsets": 3.0,
-      "total_pot": 350574.0
+      "total_pot": 350574.0,
+      "underdog_pts_realized": 11.75
     },
     {
       "season": 2025,
@@ -2073,7 +3839,8 @@
       "winning_selections_total": 15,
       "share_prize": 56943.0,
       "upsets": 4.0,
-      "total_pot": 341658.0
+      "total_pot": 341658.0,
+      "underdog_pts_realized": 17.25
     },
     {
       "season": 2025,
@@ -2086,7 +3853,8 @@
       "winning_selections_total": 14,
       "share_prize": 6902.0,
       "upsets": 4.0,
-      "total_pot": 317492.0
+      "total_pot": 317492.0,
+      "underdog_pts_realized": 12.75
     },
     {
       "season": 2025,
@@ -2099,7 +3867,8 @@
       "winning_selections_total": 12,
       "share_prize": 56812.0,
       "upsets": 7.0,
-      "total_pot": 284060.0
+      "total_pot": 284060.0,
+      "underdog_pts_realized": 29.5
     },
     {
       "season": 2025,
@@ -2112,7 +3881,8 @@
       "winning_selections_total": 13,
       "share_prize": 8122.0,
       "upsets": 3.0,
-      "total_pot": 292392.0
+      "total_pot": 292392.0,
+      "underdog_pts_realized": 11.5
     },
     {
       "season": 2025,
@@ -2125,7 +3895,8 @@
       "winning_selections_total": 13,
       "share_prize": 273.0,
       "upsets": 2.0,
-      "total_pot": 281190.0
+      "total_pot": 281190.0,
+      "underdog_pts_realized": 3.75
     },
     {
       "season": 2025,
@@ -2138,7 +3909,8 @@
       "winning_selections_total": 12,
       "share_prize": 3863.0,
       "upsets": 2.0,
-      "total_pot": 289725.0
+      "total_pot": 289725.0,
+      "underdog_pts_realized": 13.0
     },
     {
       "season": 2025,
@@ -2151,7 +3923,8 @@
       "winning_selections_total": 13,
       "share_prize": 273120.0,
       "upsets": 6.0,
-      "total_pot": 273120.0
+      "total_pot": 273120.0,
+      "underdog_pts_realized": 32.25
     },
     {
       "season": 2025,
@@ -2164,7 +3937,8 @@
       "winning_selections_total": 12,
       "share_prize": null,
       "upsets": 5.0,
-      "total_pot": 268110.0
+      "total_pot": 268110.0,
+      "underdog_pts_realized": 18.5
     },
     {
       "season": 2025,
@@ -2177,7 +3951,8 @@
       "winning_selections_total": null,
       "share_prize": null,
       "upsets": null,
-      "total_pot": 269080.0
+      "total_pot": 269080.0,
+      "underdog_pts_realized": null
     },
     {
       "season": 2025,
@@ -2190,7 +3965,8 @@
       "winning_selections_total": null,
       "share_prize": null,
       "upsets": null,
-      "total_pot": 274635.0
+      "total_pot": 274635.0,
+      "underdog_pts_realized": null
     },
     {
       "season": 2025,
@@ -2203,7 +3979,8 @@
       "winning_selections_total": null,
       "share_prize": null,
       "upsets": null,
-      "total_pot": 263364.0
+      "total_pot": 263364.0,
+      "underdog_pts_realized": null
     },
     {
       "season": 2025,
@@ -2216,7 +3993,8 @@
       "winning_selections_total": null,
       "share_prize": null,
       "upsets": null,
-      "total_pot": 260367.0
+      "total_pot": 260367.0,
+      "underdog_pts_realized": null
     },
     {
       "season": 2025,
@@ -2229,7 +4007,8 @@
       "winning_selections_total": null,
       "share_prize": null,
       "upsets": null,
-      "total_pot": 291426.0
+      "total_pot": 291426.0,
+      "underdog_pts_realized": null
     },
     {
       "season": 2025,
@@ -2242,7 +4021,8 @@
       "winning_selections_total": null,
       "share_prize": null,
       "upsets": null,
-      "total_pot": 246954.0
+      "total_pot": 246954.0,
+      "underdog_pts_realized": null
     },
     {
       "season": 2025,
@@ -2255,7 +4035,8 @@
       "winning_selections_total": null,
       "share_prize": null,
       "upsets": null,
-      "total_pot": 212655.0
+      "total_pot": 212655.0,
+      "underdog_pts_realized": null
     },
     {
       "season": 2025,
@@ -2268,7 +4049,8 @@
       "winning_selections_total": null,
       "share_prize": null,
       "upsets": null,
-      "total_pot": 240861.0
+      "total_pot": 240861.0,
+      "underdog_pts_realized": null
     }
   ]
 }

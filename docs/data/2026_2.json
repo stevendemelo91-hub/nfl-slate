@@ -36,7 +36,8 @@
           "backup_starting": false,
           "rookie_starting": false,
           "qb_value": 0.0,
-          "notes": []
+          "notes": [],
+          "depth_chart_conflict": null
         },
         {
           "team": "DET",
@@ -46,7 +47,8 @@
           "backup_starting": false,
           "rookie_starting": false,
           "qb_value": 0.0,
-          "notes": []
+          "notes": [],
+          "depth_chart_conflict": null
         }
       ],
       "home_injuries": [],
@@ -94,7 +96,8 @@
           "backup_starting": false,
           "rookie_starting": false,
           "qb_value": 0.0,
-          "notes": []
+          "notes": [],
+          "depth_chart_conflict": null
         },
         {
           "team": "CAR",
@@ -104,7 +107,8 @@
           "backup_starting": false,
           "rookie_starting": false,
           "qb_value": 0.0,
-          "notes": []
+          "notes": [],
+          "depth_chart_conflict": null
         }
       ],
       "home_injuries": [],
@@ -155,7 +159,8 @@
           "backup_starting": false,
           "rookie_starting": false,
           "qb_value": 0.0,
-          "notes": []
+          "notes": [],
+          "depth_chart_conflict": null
         },
         {
           "team": "NO",
@@ -165,7 +170,8 @@
           "backup_starting": false,
           "rookie_starting": false,
           "qb_value": 0.0,
-          "notes": []
+          "notes": [],
+          "depth_chart_conflict": null
         }
       ],
       "home_injuries": [],
@@ -215,7 +221,8 @@
           "backup_starting": false,
           "rookie_starting": false,
           "qb_value": 0.0,
-          "notes": []
+          "notes": [],
+          "depth_chart_conflict": null
         },
         {
           "team": "MIN",
@@ -225,7 +232,8 @@
           "backup_starting": false,
           "rookie_starting": false,
           "qb_value": 0.0,
-          "notes": []
+          "notes": [],
+          "depth_chart_conflict": null
         }
       ],
       "home_injuries": [],
@@ -275,7 +283,8 @@
           "backup_starting": false,
           "rookie_starting": false,
           "qb_value": 0.0,
-          "notes": []
+          "notes": [],
+          "depth_chart_conflict": null
         },
         {
           "team": "CIN",
@@ -285,7 +294,8 @@
           "backup_starting": false,
           "rookie_starting": false,
           "qb_value": 0.0,
-          "notes": []
+          "notes": [],
+          "depth_chart_conflict": null
         }
       ],
       "home_injuries": [],
@@ -332,7 +342,8 @@
           "backup_starting": false,
           "rookie_starting": false,
           "qb_value": 0.0,
-          "notes": []
+          "notes": [],
+          "depth_chart_conflict": null
         },
         {
           "team": "PIT",
@@ -342,7 +353,8 @@
           "backup_starting": false,
           "rookie_starting": false,
           "qb_value": 0.0,
-          "notes": []
+          "notes": [],
+          "depth_chart_conflict": null
         }
       ],
       "home_injuries": [],
@@ -391,7 +403,8 @@
           "backup_starting": false,
           "rookie_starting": false,
           "qb_value": 0.0,
-          "notes": []
+          "notes": [],
+          "depth_chart_conflict": null
         },
         {
           "team": "GB",
@@ -401,7 +414,8 @@
           "backup_starting": false,
           "rookie_starting": false,
           "qb_value": 0.0,
-          "notes": []
+          "notes": [],
+          "depth_chart_conflict": null
         }
       ],
       "home_injuries": [],
@@ -450,7 +464,8 @@
           "backup_starting": false,
           "rookie_starting": false,
           "qb_value": 0.0,
-          "notes": []
+          "notes": [],
+          "depth_chart_conflict": null
         },
         {
           "team": "CLE",
@@ -460,7 +475,8 @@
           "backup_starting": false,
           "rookie_starting": false,
           "qb_value": 0.0,
-          "notes": []
+          "notes": [],
+          "depth_chart_conflict": null
         }
       ],
       "home_injuries": [],
@@ -510,7 +526,8 @@
           "backup_starting": false,
           "rookie_starting": false,
           "qb_value": 0.0,
-          "notes": []
+          "notes": [],
+          "depth_chart_conflict": null
         },
         {
           "team": "PHI",
@@ -520,7 +537,8 @@
           "backup_starting": false,
           "rookie_starting": false,
           "qb_value": 0.0,
-          "notes": []
+          "notes": [],
+          "depth_chart_conflict": null
         }
       ],
       "home_injuries": [],
@@ -571,7 +589,8 @@
           "backup_starting": false,
           "rookie_starting": false,
           "qb_value": 0.0,
-          "notes": []
+          "notes": [],
+          "depth_chart_conflict": null
         },
         {
           "team": "JAX",
@@ -581,7 +600,8 @@
           "backup_starting": false,
           "rookie_starting": false,
           "qb_value": 0.0,
-          "notes": []
+          "notes": [],
+          "depth_chart_conflict": null
         }
       ],
       "home_injuries": [],
@@ -631,7 +651,8 @@
           "backup_starting": false,
           "rookie_starting": false,
           "qb_value": 0.0,
-          "notes": []
+          "notes": [],
+          "depth_chart_conflict": null
         },
         {
           "team": "LV",
@@ -641,7 +662,8 @@
           "backup_starting": false,
           "rookie_starting": false,
           "qb_value": 0.0,
-          "notes": []
+          "notes": [],
+          "depth_chart_conflict": null
         }
       ],
       "home_injuries": [],
@@ -694,7 +716,8 @@
           "backup_starting": false,
           "rookie_starting": false,
           "qb_value": 0.0,
-          "notes": []
+          "notes": [],
+          "depth_chart_conflict": null
         },
         {
           "team": "SEA",
@@ -704,7 +727,8 @@
           "backup_starting": false,
           "rookie_starting": false,
           "qb_value": 0.0,
-          "notes": []
+          "notes": [],
+          "depth_chart_conflict": null
         }
       ],
       "home_injuries": [],
@@ -753,7 +777,8 @@
           "backup_starting": false,
           "rookie_starting": false,
           "qb_value": 0.0,
-          "notes": []
+          "notes": [],
+          "depth_chart_conflict": null
         },
         {
           "team": "WAS",
@@ -763,7 +788,8 @@
           "backup_starting": false,
           "rookie_starting": false,
           "qb_value": 0.0,
-          "notes": []
+          "notes": [],
+          "depth_chart_conflict": null
         }
       ],
       "home_injuries": [],
@@ -813,7 +839,8 @@
           "backup_starting": false,
           "rookie_starting": false,
           "qb_value": 0.0,
-          "notes": []
+          "notes": [],
+          "depth_chart_conflict": null
         },
         {
           "team": "MIA",
@@ -823,7 +850,8 @@
           "backup_starting": false,
           "rookie_starting": false,
           "qb_value": 0.0,
-          "notes": []
+          "notes": [],
+          "depth_chart_conflict": null
         }
       ],
       "home_injuries": [],
@@ -873,7 +901,8 @@
           "backup_starting": false,
           "rookie_starting": false,
           "qb_value": 0.0,
-          "notes": []
+          "notes": [],
+          "depth_chart_conflict": null
         },
         {
           "team": "IND",
@@ -883,7 +912,8 @@
           "backup_starting": false,
           "rookie_starting": false,
           "qb_value": 0.0,
-          "notes": []
+          "notes": [],
+          "depth_chart_conflict": null
         }
       ],
       "home_injuries": [],
@@ -932,7 +962,8 @@
           "backup_starting": false,
           "rookie_starting": false,
           "qb_value": 0.0,
-          "notes": []
+          "notes": [],
+          "depth_chart_conflict": null
         },
         {
           "team": "NYG",
@@ -942,7 +973,8 @@
           "backup_starting": false,
           "rookie_starting": false,
           "qb_value": 0.0,
-          "notes": []
+          "notes": [],
+          "depth_chart_conflict": null
         }
       ],
       "home_injuries": [],
