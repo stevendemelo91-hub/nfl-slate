@@ -593,7 +593,10 @@ def fetch_injury_report(season, week):
     early_practice_signal = inj['report_status'].isna() & inj['practice_status'].isin(
         ['Did Not Participate In Practice', 'Limited Participation in Practice'])
     inj = inj[final_designation | early_practice_signal]
-    inj = inj[inj['position'] != 'QB']  # QB handled separately by compute_qb_coefficient
+    # QBs are NOT excluded here - a starting QB's injury is exactly the
+    # kind of thing that belongs in the visible injury list. QB coefficient
+    # scoring uses its own separate fetch_injured_qb_names(), so this
+    # doesn't create any double-handling.
     return inj
 
 
