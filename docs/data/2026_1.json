@@ -2503,9 +2503,10 @@
         }
       ],
       "situational_note": "",
-      "spread_current": "+3.0 -108 (9/13)",
+      "spread_current": "+3.0 -105 (9/13)",
       "spread_current_raw": 3.0,
       "spread_history": [
+        "+3.0 -108 (9/13)",
         "+3.0 -112 (9/12)",
         "+2.5 +102 (9/11)",
         "+2.5 -105 (9/7)",
