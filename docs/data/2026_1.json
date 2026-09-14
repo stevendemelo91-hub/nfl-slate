@@ -1449,7 +1449,7 @@
         },
         {
           "team": "ATL",
-          "depth_chart_starter": "Tua Tagovailoa",
+          "depth_chart_starter": "Michael Penix Jr.",
           "normal_starter_used_for_elite_check": "Tua Tagovailoa",
           "is_elite_starter": false,
           "backup_starting": true,
@@ -2518,9 +2518,9 @@
         "O/U 48.5 (-112.0) (9/5)",
         "O/U 48.5 (-110.0) (8/31)"
       ],
-      "home_score": null,
-      "away_score": null,
-      "is_final": false
+      "home_score": 28.0,
+      "away_score": 20.0,
+      "is_final": true
     },
     {
       "game_id": "2026_01_DEN_KC",
@@ -2643,15 +2643,19 @@
       ],
       "away_injuries": [],
       "situational_note": "",
-      "spread_current": "-2.5 -105 (9/13)",
+      "spread_current": "-2.5 -105 (9/14)",
       "spread_current_raw": -2.5,
       "spread_history": [
+        "-2.5 -102 (9/14)",
+        "-2.5 -105 (9/13)",
         "-2.5 -110 (9/12)",
         "-2.5 -112 (9/11)",
         "-2.5 -115 (8/31)"
       ],
-      "total_current": "O/U 43.5 (-112.0) (9/11)",
+      "total_current": "O/U 43.5 (-102.0) (9/14)",
       "total_history": [
+        "O/U 43.5 (-108.0) (9/14)",
+        "O/U 43.5 (-112.0) (9/11)",
         "O/U 43.5 (-108.0) (9/8)",
         "O/U 43.5 (-110.0) (9/7)",
         "O/U 43.5 (-104.0) (8/31)"
