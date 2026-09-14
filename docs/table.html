@@ -1175,96 +1175,69 @@ function updatePoolPick(gameId, field, value) {
 }
 
 function renderPoolTally(poolGames) {
-  // Instance 1-4: static sum of underdog points for whatever's picked in
-  // that column - no live/results tracking, since these are earlier
-  // thinking-stage picks, not a real commitment. Boxing ("— (box)") isn't
-  // a concept that applies to Instance columns, so an empty pick there
-  // just contributes nothing.
-  const staticInstanceTally = (field) => {
-    let total = 0;
-    poolGames.forEach(g => {
+  // Same realized/max/decided-count tally for EVERY column - Instance
+  // #1-4 and Final - so the user can directly compare how each earlier
+  // thinking stage would have scored against real results, not just the
+  // final commitment. Box $ cost stays Final-only, since only Final
+  // represents the real ticket that actually costs money.
+  const computeColumnTally = (field) => {
+    const touchedGames = poolGames.filter(g => {
       const pick = TRACKER.poolPicks[g.game_id];
-      if (!pick || !pick[field]) return; // untouched (empty) - no pick made
-      const impliedSpread = g.power_rating_implied_spread || 0;
-      if (pick[field] === 'BOX') {
-        // Boxed: always the game's own underdog, same as Final's box logic
-        total += Math.abs(impliedSpread);
-        return;
-      }
-      const pickIsHome = pick[field] === g.home_team;
-      // power_rating_implied_spread: positive = home favored (per its own
-      // docstring), so a team is the underdog when its OWN sign is
-      // negative for home, positive for away - this was backwards before.
-      const dogPts = pickIsHome ? Math.max(0, -impliedSpread) : Math.max(0, impliedSpread);
-      total += dogPts;
+      return pick && pick[field] !== '' && pick[field] !== undefined;
     });
-    return total;
+    const boxedGames = touchedGames.filter(g => TRACKER.poolPicks[g.game_id][field] === 'BOX');
+    const straightPicks = touchedGames.filter(g => TRACKER.poolPicks[g.game_id][field] !== 'BOX');
+
+    let totalMaxPts = 0, realizedPts = 0, confirmedCount = 0, trackedCount = 0;
+    const addGame = (game, pickedTeam, isBoxed) => {
+      const impliedSpread = game.power_rating_implied_spread || 0;
+      // power_rating_implied_spread: positive = home favored (per its own
+      // docstring), so a team is the underdog only when its own sign
+      // works out negative for home, positive for away.
+      let dogPts, dogIsHome;
+      if (isBoxed) {
+        dogIsHome = impliedSpread < 0;
+        dogPts = Math.abs(impliedSpread);
+      } else {
+        const pickIsHome = pickedTeam === game.home_team;
+        dogPts = pickIsHome ? Math.max(0, -impliedSpread) : Math.max(0, impliedSpread);
+        if (dogPts === 0) return; // picked the favorite - not an underdog pick, skip
+        dogIsHome = pickIsHome;
+      }
+      trackedCount++;
+      totalMaxPts += dogPts;
+      if (game.is_final && game.home_score !== null && game.away_score !== null) {
+        confirmedCount++;
+        const dogWon = dogIsHome ? game.home_score > game.away_score : game.away_score > game.home_score;
+        if (dogWon) realizedPts += dogPts;
+      }
+    };
+    boxedGames.forEach(g => addGame(g, null, true));
+    straightPicks.forEach(g => addGame(g, TRACKER.poolPicks[g.game_id][field], false));
+
+    return { totalMaxPts, realizedPts, confirmedCount, trackedCount, boxCount: boxedGames.length };
   };
 
-  // Final: live/real tally, since this is the actual commitment. A game
-  // counts as "boxed" when Final is left on "— (box)" (empty string) - no
-  // separate per-row control needed, since boxing a game IS the reason
-  // there's no single pick for it. Boxed games always contribute their own
-  // underdog's points (boxing covers both sides); straight picks only
-  // contribute if the picked team is itself the underdog. Games never
-  // touched at all stay out entirely.
-  // A game only counts once Final has an explicit value: 'BOX' (deliberately
-  // boxed) or a team code (straight pick). Empty string is genuinely
-  // undecided - not touched, not boxed, not picked - and stays out of the
-  // tally entirely, exactly like a row nobody has looked at yet.
-  const touchedGames = poolGames.filter(g => {
-    const pick = TRACKER.poolPicks[g.game_id];
-    return pick && pick.final !== '' && pick.final !== undefined;
-  });
-  const boxedGames = touchedGames.filter(g => TRACKER.poolPicks[g.game_id].final === 'BOX');
-  const straightPicks = touchedGames.filter(g => TRACKER.poolPicks[g.game_id].final !== 'BOX');
-
-  const boxCount = boxedGames.length;
-  const boxCost = BOX_DOLLAR_LOOKUP[boxCount];
-  const boxCostDisplay = boxCost !== undefined ? `$${boxCost}` : (boxCount > 0 ? 'outside 4-8 range' : '—');
-
-  let totalMaxPts = 0, realizedPts = 0, confirmedCount = 0, trackedCount = 0;
-  const addFinalGame = (game, pickedTeam, isBoxed) => {
-    const impliedSpread = game.power_rating_implied_spread || 0;
-    // Same sign fix as above: positive impliedSpread = home favored, so
-    // home is the underdog only when this is negative.
-    let dogPts, dogIsHome;
-    if (isBoxed) {
-      dogIsHome = impliedSpread < 0;
-      dogPts = Math.abs(impliedSpread);
-    } else {
-      const pickIsHome = pickedTeam === game.home_team;
-      dogPts = pickIsHome ? Math.max(0, -impliedSpread) : Math.max(0, impliedSpread);
-      if (dogPts === 0) return; // picked the favorite - not an underdog pick, skip
-      dogIsHome = pickIsHome;
-    }
-    trackedCount++;
-    totalMaxPts += dogPts;
-    if (game.is_final && game.home_score !== null && game.away_score !== null) {
-      confirmedCount++;
-      const dogWon = dogIsHome ? game.home_score > game.away_score : game.away_score > game.home_score;
-      if (dogWon) realizedPts += dogPts;
-    }
+  const renderCell = (field, showBoxCost) => {
+    const t = computeColumnTally(field);
+    const text = t.trackedCount === 0
+      ? 'no picks yet'
+      : `${t.realizedPts.toFixed(1)} / ${t.totalMaxPts.toFixed(1)} pts (${t.confirmedCount}/${t.trackedCount} decided)`;
+    if (!showBoxCost) return `<div>${text}</div>`;
+    const boxCost = BOX_DOLLAR_LOOKUP[t.boxCount];
+    const boxCostDisplay = boxCost !== undefined ? `$${boxCost}` : (t.boxCount > 0 ? 'outside 4-8 range' : '—');
+    return `<div>${text}</div><div class="tally-sub">${t.boxCount} boxed &middot; ${boxCostDisplay}</div>`;
   };
-  boxedGames.forEach(g => addFinalGame(g, null, true));
-  straightPicks.forEach(g => addFinalGame(g, TRACKER.poolPicks[g.game_id].final, false));
-
-  const finalTallyText = trackedCount === 0
-    ? 'no picks yet'
-    : `${realizedPts.toFixed(1)} / ${totalMaxPts.toFixed(1)} pts (${confirmedCount}/${trackedCount} decided)`;
 
   const tfoot = document.getElementById('pool-tfoot');
   tfoot.innerHTML = `
     <tr class="pool-tally-row">
       <td colspan="2" class="tally-label">Underdog pts</td>
-      <td class="tally-value">${staticInstanceTally('instance1').toFixed(1)}</td>
-      <td class="tally-value">${staticInstanceTally('instance2').toFixed(1)}</td>
-      <td class="tally-value">${staticInstanceTally('instance3').toFixed(1)}</td>
-      <td class="tally-value">${staticInstanceTally('instance4').toFixed(1)}</td>
-      <td class="tally-value">
-        <div>${finalTallyText}</div>
-        <div class="tally-sub">${boxCount} boxed &middot; ${boxCostDisplay}</div>
-      </td>
+      <td class="tally-value">${renderCell('instance1', false)}</td>
+      <td class="tally-value">${renderCell('instance2', false)}</td>
+      <td class="tally-value">${renderCell('instance3', false)}</td>
+      <td class="tally-value">${renderCell('instance4', false)}</td>
+      <td class="tally-value">${renderCell('final', true)}</td>
     </tr>
   `;
 }
