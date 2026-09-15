@@ -348,6 +348,21 @@ function render(data) {
       const cls = flipped > 0 ? 'pos' : (flipped < 0 ? 'neg' : '');
       chips += `<span class="chip ${cls}">${label} ${flipped > 0 ? '+' : ''}${flipped}</span>`;
     }
+    // Player-impact overrides - each entry gets its own chip (not folded
+    // into one opaque summed number), so it's visible exactly like every
+    // other factor. A HOME entry's adjustment applies directly (home-
+    // relative); an AWAY entry's flips sign first (a penalty on the away
+    // team helps the home team's home-relative score) - then both go
+    // through the same viewing-lens sign flip as every other chip.
+    const impactEntries = [
+      ...(g.player_impact_entries?.home || []).map(e => ({ ...e, homeRelative: e.adjustment })),
+      ...(g.player_impact_entries?.away || []).map(e => ({ ...e, homeRelative: -e.adjustment })),
+    ];
+    for (const entry of impactEntries) {
+      const flipped = entry.homeRelative * sign;
+      const cls = flipped > 0 ? 'pos' : (flipped < 0 ? 'neg' : '');
+      chips += `<span class="chip ${cls}">${entry.note} ${flipped > 0 ? '+' : ''}${flipped}</span>`;
+    }
     if (!chips) chips = '<span class="chip">no active factors</span>';
 
     let powerLine = '';
