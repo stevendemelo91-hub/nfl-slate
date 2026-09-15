@@ -704,9 +704,9 @@ def load_player_impact_overrides(path='player_impact_overrides.csv'):
     Unlike situational_overrides (one row per team+week, last one wins),
     multiple rows for the SAME team+week are expected here and SUM
     together - a team can lose more than one meaningful player in a
-    week, and each row is one person's worth of impact, not a whole-team
-    summary. Notes are collected as a list so nothing gets silently
-    dropped when a team has several entries.
+    week. Each entry keeps its own adjustment and note (not just a
+    combined total) so the dashboard can show each one as its own
+    line/chip, not one opaque summed number.
     Format: team,week,adjustment,note"""
     try:
         df = pd.read_csv(path)
@@ -715,17 +715,18 @@ def load_player_impact_overrides(path='player_impact_overrides.csv'):
     overrides = {}
     for _, row in df.iterrows():
         key = (row['team'], int(row['week']))
-        entry = overrides.setdefault(key, {'adjustment': 0.0, 'notes': []})
-        entry['adjustment'] += float(row['adjustment'])
         note = row.get('note', '')
-        if pd.notna(note) and note:
-            entry['notes'].append(note)
+        overrides.setdefault(key, []).append({
+            'adjustment': float(row['adjustment']),
+            'note': note if pd.notna(note) else '',
+        })
     return overrides
 
 
 def get_player_impact_adjustment(team, week, overrides):
-    entry = overrides.get((team, week))
-    return (entry['adjustment'], entry['notes']) if entry else (0.0, [])
+    entries = overrides.get((team, week), [])
+    total = sum(e['adjustment'] for e in entries)
+    return total, entries
 
 
 def load_pool_results_history(path='pool_results_history.csv'):
@@ -1075,8 +1076,8 @@ def main(season, week=None):
         # actually means).
         situational_adj = get_situational_adjustment(home, week, situational_overrides) - \
                            get_situational_adjustment(away, week, situational_overrides)
-        home_impact_adj, home_impact_notes = get_player_impact_adjustment(home, week, player_impact_overrides)
-        away_impact_adj, away_impact_notes = get_player_impact_adjustment(away, week, player_impact_overrides)
+        home_impact_adj, home_impact_entries = get_player_impact_adjustment(home, week, player_impact_overrides)
+        away_impact_adj, away_impact_entries = get_player_impact_adjustment(away, week, player_impact_overrides)
         player_impact_adj = home_impact_adj - away_impact_adj
         total_adj = situational_adj + player_impact_adj
         raw_strength_score = model_raw_strength + total_adj
@@ -1106,7 +1107,7 @@ def main(season, week=None):
             'home_injuries': get_injury_candidates(home, injury_report, injury_history, player_usage_stats),
             'away_injuries': get_injury_candidates(away, injury_report, injury_history, player_usage_stats),
             'situational_note': situational_overrides.get((home, week), situational_overrides.get((away, week), {})).get('note', ''),
-            'player_impact_notes': {'home': home_impact_notes, 'away': away_impact_notes},
+            'player_impact_entries': {'home': home_impact_entries, 'away': away_impact_entries},
             'spread_current': line_movement['spread']['current'],
             'spread_current_raw': line_movement['spread']['current_raw'],
             'spread_history': line_movement['spread']['history'],
