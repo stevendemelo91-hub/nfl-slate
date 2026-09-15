@@ -158,6 +158,10 @@
         }
       ],
       "situational_note": "",
+      "player_impact_entries": {
+        "home": [],
+        "away": []
+      },
       "spread_current": "-3.5 +100 (9/9)",
       "spread_current_raw": -3.5,
       "spread_history": [
@@ -321,6 +325,10 @@
         }
       ],
       "situational_note": "",
+      "player_impact_entries": {
+        "home": [],
+        "away": []
+      },
       "spread_current": "-3.5 -112 (9/10)",
       "spread_current_raw": -3.5,
       "spread_history": [
@@ -345,10 +353,10 @@
       "gameday": "2026-09-13",
       "gametime": "13:00",
       "weekday": "Sunday",
-      "home_win_probability": 0.408,
-      "away_win_probability": 0.592,
-      "favored": "CHI",
-      "raw_strength_score": -0.37,
+      "home_win_probability": 0.652,
+      "away_win_probability": 0.348,
+      "favored": "CAR",
+      "raw_strength_score": 0.63,
       "feature_breakdown": {
         "rank_coefficient_home": -1.0,
         "third_down_coefficient_home": -1.0,
@@ -478,6 +486,15 @@
         }
       ],
       "situational_note": "",
+      "player_impact_entries": {
+        "home": [],
+        "away": [
+          {
+            "adjustment": -1.0,
+            "note": "Coby Bryant IR"
+          }
+        ]
+      },
       "spread_current": "+20.5 -108 (9/13)",
       "spread_current_raw": 20.5,
       "spread_history": [
@@ -509,10 +526,10 @@
       "gameday": "2026-09-13",
       "gametime": "13:00",
       "weekday": "Sunday",
-      "home_win_probability": 0.587,
-      "away_win_probability": 0.413,
+      "home_win_probability": 0.795,
+      "away_win_probability": 0.205,
       "favored": "CIN",
-      "raw_strength_score": 0.35,
+      "raw_strength_score": 1.35,
       "feature_breakdown": {
         "rank_coefficient_home": -0.5,
         "third_down_coefficient_home": 1.0,
@@ -696,6 +713,15 @@
         }
       ],
       "situational_note": "",
+      "player_impact_entries": {
+        "home": [],
+        "away": [
+          {
+            "adjustment": -1.0,
+            "note": "Jalen McMillan out"
+          }
+        ]
+      },
       "spread_current": "-6.5 +220 (9/13)",
       "spread_current_raw": -6.5,
       "spread_history": [
@@ -722,10 +748,10 @@
       "gameday": "2026-09-13",
       "gametime": "13:00",
       "weekday": "Sunday",
-      "home_win_probability": 0.672,
-      "away_win_probability": 0.328,
+      "home_win_probability": 0.848,
+      "away_win_probability": 0.152,
       "favored": "DET",
-      "raw_strength_score": 0.72,
+      "raw_strength_score": 1.72,
       "feature_breakdown": {
         "rank_coefficient_home": 1.0,
         "third_down_coefficient_home": -1.0,
@@ -856,6 +882,24 @@
         }
       ],
       "situational_note": "",
+      "player_impact_entries": {
+        "home": [
+          {
+            "adjustment": -1.0,
+            "note": "Kerby Joseph and Brian Branch both out - starting safety duo"
+          }
+        ],
+        "away": [
+          {
+            "adjustment": -1.0,
+            "note": "Alvin Kamara out"
+          },
+          {
+            "adjustment": -1.0,
+            "note": "Cameron Jordan out"
+          }
+        ]
+      },
       "spread_current": "-6.5 -122 (8/31)",
       "spread_current_raw": -6.5,
       "spread_history": [],
@@ -874,10 +918,10 @@
       "gameday": "2026-09-13",
       "gametime": "13:00",
       "weekday": "Sunday",
-      "home_win_probability": 0.452,
-      "away_win_probability": 0.548,
+      "home_win_probability": 0.233,
+      "away_win_probability": 0.767,
       "favored": "BUF",
-      "raw_strength_score": -0.19,
+      "raw_strength_score": -1.19,
       "feature_breakdown": {
         "rank_coefficient_home": -1.0,
         "third_down_coefficient_home": -1.0,
@@ -1012,6 +1056,15 @@
         }
       ],
       "situational_note": "",
+      "player_impact_entries": {
+        "home": [
+          {
+            "adjustment": -1.0,
+            "note": "Tank Dell and Jayden Higgins both IR"
+          }
+        ],
+        "away": []
+      },
       "spread_current": "+1.5 -115 (9/12)",
       "spread_current_raw": 1.5,
       "spread_history": [
@@ -1039,10 +1092,10 @@
       "gameday": "2026-09-13",
       "gametime": "13:00",
       "weekday": "Sunday",
-      "home_win_probability": 0.63,
-      "away_win_probability": 0.37,
+      "home_win_probability": 0.822,
+      "away_win_probability": 0.178,
       "favored": "IND",
-      "raw_strength_score": 0.53,
+      "raw_strength_score": 1.53,
       "feature_breakdown": {
         "third_down_coefficient_home": 1.0,
         "ypp_off_coefficient_home": -1.0,
@@ -1207,6 +1260,15 @@
         }
       ],
       "situational_note": "",
+      "player_impact_entries": {
+        "home": [],
+        "away": [
+          {
+            "adjustment": -1.0,
+            "note": "Nnamdi Madubuike out"
+          }
+        ]
+      },
       "spread_current": "+18.5 -4500 (9/13)",
       "spread_current_raw": 18.5,
       "spread_history": [
@@ -1394,6 +1456,10 @@
         }
       ],
       "situational_note": "",
+      "player_impact_entries": {
+        "home": [],
+        "away": []
+      },
       "spread_current": "-8.5 -112 (9/11)",
       "spread_current_raw": -8.5,
       "spread_history": [
@@ -1419,10 +1485,10 @@
       "gameday": "2026-09-13",
       "gametime": "13:00",
       "weekday": "Sunday",
-      "home_win_probability": 0.621,
-      "away_win_probability": 0.379,
+      "home_win_probability": 0.817,
+      "away_win_probability": 0.183,
       "favored": "PIT",
-      "raw_strength_score": 0.49,
+      "raw_strength_score": 1.49,
       "feature_breakdown": {
         "rank_coefficient_home": -1.0,
         "third_down_coefficient_home": 1.0,
@@ -1587,6 +1653,24 @@
         }
       ],
       "situational_note": "",
+      "player_impact_entries": {
+        "home": [
+          {
+            "adjustment": -1.0,
+            "note": "Joey Porter Jr. out"
+          }
+        ],
+        "away": [
+          {
+            "adjustment": -1.0,
+            "note": "Tua Tagovailoa and Michael Penix Jr. both out - QB room decimated"
+          },
+          {
+            "adjustment": -1.0,
+            "note": "Jalon Walker IR"
+          }
+        ]
+      },
       "spread_current": "-7.5 +1200 (9/13)",
       "spread_current_raw": -7.5,
       "spread_history": [
@@ -1749,6 +1833,10 @@
         }
       ],
       "situational_note": "",
+      "player_impact_entries": {
+        "home": [],
+        "away": []
+      },
       "spread_current": "-1.5 -105 (9/13)",
       "spread_current_raw": -1.5,
       "spread_history": [
@@ -1776,10 +1864,10 @@
       "gameday": "2026-09-13",
       "gametime": "16:25",
       "weekday": "Sunday",
-      "home_win_probability": 0.71,
-      "away_win_probability": 0.29,
-      "favored": "LAC",
-      "raw_strength_score": 0.9,
+      "home_win_probability": 0.474,
+      "away_win_probability": 0.526,
+      "favored": "ARI",
+      "raw_strength_score": -0.1,
       "feature_breakdown": {
         "third_down_coefficient_home": 1.0,
         "ypp_off_coefficient_home": 1.0,
@@ -1932,6 +2020,15 @@
         }
       ],
       "situational_note": "",
+      "player_impact_entries": {
+        "home": [
+          {
+            "adjustment": -1.0,
+            "note": "Tyler Biadasz IR"
+          }
+        ],
+        "away": []
+      },
       "spread_current": "-8.5 -115 (9/13)",
       "spread_current_raw": -8.5,
       "spread_history": [
@@ -2016,6 +2113,10 @@
       ],
       "away_injuries": [],
       "situational_note": "",
+      "player_impact_entries": {
+        "home": [],
+        "away": []
+      },
       "spread_current": "-3.0 -112 (9/12)",
       "spread_current_raw": -3.0,
       "spread_history": [
@@ -2050,10 +2151,10 @@
       "gameday": "2026-09-13",
       "gametime": "16:25",
       "weekday": "Sunday",
-      "home_win_probability": 0.408,
-      "away_win_probability": 0.592,
-      "favored": "GB",
-      "raw_strength_score": -0.37,
+      "home_win_probability": 0.933,
+      "away_win_probability": 0.067,
+      "favored": "MIN",
+      "raw_strength_score": 2.63,
       "feature_breakdown": {
         "rank_coefficient_home": -1.0,
         "third_down_coefficient_home": -1.0,
@@ -2230,6 +2331,23 @@
         }
       ],
       "situational_note": "",
+      "player_impact_entries": {
+        "home": [],
+        "away": [
+          {
+            "adjustment": -1.0,
+            "note": "Josh Jacobs out"
+          },
+          {
+            "adjustment": -1.0,
+            "note": "Micah Parsons out"
+          },
+          {
+            "adjustment": -1.0,
+            "note": "Aaron Banks out"
+          }
+        ]
+      },
       "spread_current": "-1.5 -118 (9/13)",
       "spread_current_raw": -1.5,
       "spread_history": [
@@ -2389,6 +2507,20 @@
         }
       ],
       "situational_note": "",
+      "player_impact_entries": {
+        "home": [
+          {
+            "adjustment": -1.0,
+            "note": "Jonathan Greenard out"
+          }
+        ],
+        "away": [
+          {
+            "adjustment": -1.0,
+            "note": "Laremy Tunsil IR"
+          }
+        ]
+      },
       "spread_current": "-5.5 -114 (9/13)",
       "spread_current_raw": -5.5,
       "spread_history": [
@@ -2503,6 +2635,10 @@
         }
       ],
       "situational_note": "",
+      "player_impact_entries": {
+        "home": [],
+        "away": []
+      },
       "spread_current": "+3.0 -105 (9/13)",
       "spread_current_raw": 3.0,
       "spread_history": [
@@ -2643,26 +2779,32 @@
       ],
       "away_injuries": [],
       "situational_note": "",
-      "spread_current": "-2.5 -105 (9/14)",
+      "player_impact_entries": {
+        "home": [],
+        "away": []
+      },
+      "spread_current": "-2.5 -122 (9/14)",
       "spread_current_raw": -2.5,
       "spread_history": [
+        "-2.5 -105 (9/14)",
         "-2.5 -102 (9/14)",
         "-2.5 -105 (9/13)",
         "-2.5 -110 (9/12)",
         "-2.5 -112 (9/11)",
         "-2.5 -115 (8/31)"
       ],
-      "total_current": "O/U 43.5 (-102.0) (9/14)",
+      "total_current": "O/U 42.5 (-102.0) (9/14)",
       "total_history": [
+        "O/U 43.5 (-102.0) (9/14)",
         "O/U 43.5 (-108.0) (9/14)",
         "O/U 43.5 (-112.0) (9/11)",
         "O/U 43.5 (-108.0) (9/8)",
         "O/U 43.5 (-110.0) (9/7)",
         "O/U 43.5 (-104.0) (8/31)"
       ],
-      "home_score": null,
-      "away_score": null,
-      "is_final": false
+      "home_score": 31.0,
+      "away_score": 10.0,
+      "is_final": true
     }
   ],
   "pool_results_history": [
