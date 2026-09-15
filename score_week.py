@@ -692,6 +692,42 @@ def get_situational_adjustment(team, week, overrides):
     return entry['adjustment'] if entry else 0.0
 
 
+def load_player_impact_overrides(path='player_impact_overrides.csv'):
+    """Manual, human-judgment player-out adjustments - deliberately NOT an
+    algorithmic value-tiering system (target share, snap %, etc. can only
+    ever measure what they're told to measure, and will miss context a
+    human catches instantly - a scheme-specific role, a locker-room
+    factor, anything not captured by a stat). Same pattern as
+    situational_overrides.csv and qb_overrides.csv: the user decides the
+    number, this just applies it transparently on top of the model.
+
+    Unlike situational_overrides (one row per team+week, last one wins),
+    multiple rows for the SAME team+week are expected here and SUM
+    together - a team can lose more than one meaningful player in a
+    week, and each row is one person's worth of impact, not a whole-team
+    summary. Notes are collected as a list so nothing gets silently
+    dropped when a team has several entries.
+    Format: team,week,adjustment,note"""
+    try:
+        df = pd.read_csv(path)
+    except FileNotFoundError:
+        return {}
+    overrides = {}
+    for _, row in df.iterrows():
+        key = (row['team'], int(row['week']))
+        entry = overrides.setdefault(key, {'adjustment': 0.0, 'notes': []})
+        entry['adjustment'] += float(row['adjustment'])
+        note = row.get('note', '')
+        if pd.notna(note) and note:
+            entry['notes'].append(note)
+    return overrides
+
+
+def get_player_impact_adjustment(team, week, overrides):
+    entry = overrides.get((team, week))
+    return (entry['adjustment'], entry['notes']) if entry else (0.0, [])
+
+
 def load_pool_results_history(path='pool_results_history.csv'):
     """OLG PROLINE pool settlement history - logged week by week, from two
     sources: (1) imported historical archive (season, week, correct
@@ -894,6 +930,8 @@ def main(season, week=None):
     qb_overrides = load_qb_overrides()
     injured_qbs = fetch_injured_qb_names(season, week)
     situational_overrides = load_situational_overrides()
+    player_impact_overrides = load_player_impact_overrides()
+    print(f'Player impact overrides: {len(player_impact_overrides)} team-week entries loaded\n')
     pool_results_history = load_pool_results_history()
     print(f'Pool results history: {len(pool_results_history)} settled week(s) logged\n')
     print(f'  {len(starters)} teams with current QB1 identified, {len(elite_qbs)} elite QBs from {season-1}, '
@@ -1028,14 +1066,21 @@ def main(season, week=None):
         model_win_prob = float(model.predict_proba(X)[0][1])
         model_raw_strength = float(model.decision_function(X)[0])
 
-        # One-off situational adjustment (new stadium openers, etc.) - applied
-        # as a transparent layer ON TOP of the trained model's prediction,
-        # not folded into any learned-weight category (which would misrepresent
-        # what that category's backtested weight actually means).
+        # One-off situational adjustment (new stadium openers, etc.) and
+        # manual player-impact adjustments (confirmed-Out starters worth
+        # docking, per the user's own judgment - not an algorithmic value
+        # tier) - both applied as a transparent layer ON TOP of the trained
+        # model's prediction, not folded into any learned-weight category
+        # (which would misrepresent what that category's backtested weight
+        # actually means).
         situational_adj = get_situational_adjustment(home, week, situational_overrides) - \
                            get_situational_adjustment(away, week, situational_overrides)
-        raw_strength_score = model_raw_strength + situational_adj
-        win_prob_home = 1 / (1 + np.exp(-raw_strength_score)) if situational_adj != 0 else model_win_prob
+        home_impact_adj, home_impact_notes = get_player_impact_adjustment(home, week, player_impact_overrides)
+        away_impact_adj, away_impact_notes = get_player_impact_adjustment(away, week, player_impact_overrides)
+        player_impact_adj = home_impact_adj - away_impact_adj
+        total_adj = situational_adj + player_impact_adj
+        raw_strength_score = model_raw_strength + total_adj
+        win_prob_home = 1 / (1 + np.exp(-raw_strength_score)) if total_adj != 0 else model_win_prob
 
         power_spread = implied_power_spread(home, away, power_ratings, team_hfa,
                                              game_month=pd.to_datetime(game.get('gameday')).month if pd.notna(game.get('gameday')) else None)
@@ -1061,6 +1106,7 @@ def main(season, week=None):
             'home_injuries': get_injury_candidates(home, injury_report, injury_history, player_usage_stats),
             'away_injuries': get_injury_candidates(away, injury_report, injury_history, player_usage_stats),
             'situational_note': situational_overrides.get((home, week), situational_overrides.get((away, week), {})).get('note', ''),
+            'player_impact_notes': {'home': home_impact_notes, 'away': away_impact_notes},
             'spread_current': line_movement['spread']['current'],
             'spread_current_raw': line_movement['spread']['current_raw'],
             'spread_history': line_movement['spread']['history'],

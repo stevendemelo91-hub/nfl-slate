@@ -1,0 +1,81 @@
+name: Weekly NFL Scoring
+
+on:
+  schedule:
+    # Daily at 7pm ET (23:00 UTC) - matches the injury snapshot cadence
+    # (which runs daily at 6pm ET), timed an hour later so this run reliably
+    # picks up that same day's fresh injury data rather than racing it.
+    - cron: '0 23 * * *'
+  workflow_dispatch:
+    inputs:
+      season:
+        description: 'Season year (e.g. 2026) - leave blank to auto-detect'
+        required: false
+      week:
+        description: 'Week number - leave blank to auto-detect from the schedule (recommended)'
+        required: false
+
+jobs:
+  score:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install pandas numpy scikit-learn
+
+      - name: DEBUG list files
+        run: ls -la
+
+      - name: Determine season
+        id: season
+        run: |
+          if [ -n "${{ github.event.inputs.season }}" ]; then
+            echo "season=${{ github.event.inputs.season }}" >> $GITHUB_OUTPUT
+          else
+            year=$(date -u +%Y)
+            month=$(date -u +%-m)
+            if [ "$month" -lt 8 ]; then
+              season=$((year - 1))
+            else
+              season=$year
+            fi
+            echo "season=$season" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Run scorer (current week - auto-detected from schedule unless a week input was given)
+        run: |
+          if [ -n "${{ github.event.inputs.week }}" ]; then
+            python3 score_week.py --season ${{ steps.season.outputs.season }} --week ${{ github.event.inputs.week }}
+          else
+            python3 score_week.py --season ${{ steps.season.outputs.season }}
+          fi
+
+      - name: Determine the week just scored (so we can also do next week)
+        id: scored_week
+        run: |
+          week=$(python3 -c "
+          import json
+          with open('docs/data/manifest.json') as f:
+              m = json.load(f)
+          print(m['latest']['week'])
+          ")
+          echo "week=$week" >> $GITHUB_OUTPUT
+
+      - name: Run scorer (next week, kept populated in advance)
+        run: python3 score_week.py --season ${{ steps.season.outputs.season }} --week $(( ${{ steps.scored_week.outputs.week }} + 1 ))
+        continue-on-error: true  # next week's schedule may not exist yet late in a season
+
+      - name: Commit updated data
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add docs/data/
+          git diff --staged --quiet || git commit -m "Weekly update: Season ${{ steps.season.outputs.season }} Week ${{ steps.scored_week.outputs.week }} (+ next week)"
+          git push
