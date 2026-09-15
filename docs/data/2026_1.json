@@ -13,10 +13,10 @@
       "gameday": "2026-09-09",
       "gametime": "20:20",
       "weekday": "Wednesday",
-      "home_win_probability": 0.464,
-      "away_win_probability": 0.536,
+      "home_win_probability": 0.241,
+      "away_win_probability": 0.759,
       "favored": "NE",
-      "raw_strength_score": -0.14,
+      "raw_strength_score": -1.14,
       "feature_breakdown": {
         "third_down_coefficient_home": -1.0,
         "ypp_off_coefficient_home": -1.0,
@@ -159,7 +159,12 @@
       ],
       "situational_note": "",
       "player_impact_entries": {
-        "home": [],
+        "home": [
+          {
+            "adjustment": -1.0,
+            "note": "Nick Emmanwori out"
+          }
+        ],
         "away": []
       },
       "spread_current": "-3.5 +100 (9/9)",
@@ -188,10 +193,10 @@
       "gameday": "2026-09-10",
       "gametime": "20:35",
       "weekday": "Thursday",
-      "home_win_probability": 0.685,
-      "away_win_probability": 0.315,
-      "favored": "LA",
-      "raw_strength_score": 0.78,
+      "home_win_probability": 0.445,
+      "away_win_probability": 0.555,
+      "favored": "SF",
+      "raw_strength_score": -0.22,
       "feature_breakdown": {
         "rank_coefficient_home": 1.0,
         "third_down_coefficient_home": -1.0,
@@ -326,7 +331,12 @@
       ],
       "situational_note": "",
       "player_impact_entries": {
-        "home": [],
+        "home": [
+          {
+            "adjustment": -1.0,
+            "note": "Aaron Donald out"
+          }
+        ],
         "away": []
       },
       "spread_current": "-3.5 -112 (9/10)",
