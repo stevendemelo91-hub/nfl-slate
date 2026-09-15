@@ -55,9 +55,14 @@
       "home_injuries": [],
       "away_injuries": [],
       "situational_note": "New stadium opener (2026) - home crowd/atmosphere factor not covered by any systematic category",
-      "spread_current": "-4.5 -105 (9/14)",
+      "player_impact_notes": {
+        "home": [],
+        "away": []
+      },
+      "spread_current": "-4.5 -106 (9/15)",
       "spread_current_raw": -4.5,
       "spread_history": [
+        "-4.5 -105 (9/14)",
         "-3.5 -110 (9/8)",
         "-3.0 -110 (8/31)"
       ],
@@ -121,9 +126,14 @@
       "home_injuries": [],
       "away_injuries": [],
       "situational_note": "",
-      "spread_current": "+1.5 -112 (9/14)",
+      "player_impact_notes": {
+        "home": [],
+        "away": []
+      },
+      "spread_current": "+1.5 -118 (9/15)",
       "spread_current_raw": 1.5,
       "spread_history": [
+        "+1.5 -112 (9/14)",
         "-1.5 +100 (9/14)",
         "-1.5 -105 (9/13)",
         "-1.5 +100 (9/11)",
@@ -189,6 +199,10 @@
       "home_injuries": [],
       "away_injuries": [],
       "situational_note": "",
+      "player_impact_notes": {
+        "home": [],
+        "away": []
+      },
       "spread_current": "-8.5 -105 (9/13)",
       "spread_current_raw": -8.5,
       "spread_history": [
@@ -254,6 +268,10 @@
       "home_injuries": [],
       "away_injuries": [],
       "situational_note": "",
+      "player_impact_notes": {
+        "home": [],
+        "away": []
+      },
       "spread_current": "-5.5 -108 (9/14)",
       "spread_current_raw": -5.5,
       "spread_history": [
@@ -320,6 +338,10 @@
       "home_injuries": [],
       "away_injuries": [],
       "situational_note": "",
+      "player_impact_notes": {
+        "home": [],
+        "away": []
+      },
       "spread_current": "-3.0 -102 (9/14)",
       "spread_current_raw": -3.0,
       "spread_history": [
@@ -388,6 +410,10 @@
       "home_injuries": [],
       "away_injuries": [],
       "situational_note": "",
+      "player_impact_notes": {
+        "home": [],
+        "away": []
+      },
       "spread_current": "-4.5 -118 (9/13)",
       "spread_current_raw": -4.5,
       "spread_history": [
@@ -453,9 +479,14 @@
       "home_injuries": [],
       "away_injuries": [],
       "situational_note": "",
-      "spread_current": "+4.5 -120 (9/14)",
-      "spread_current_raw": 4.5,
+      "player_impact_notes": {
+        "home": [],
+        "away": []
+      },
+      "spread_current": "+3.5 -105 (9/14)",
+      "spread_current_raw": 3.5,
       "spread_history": [
+        "+4.5 -120 (9/14)",
         "+4.5 -114 (9/14)",
         "+4.5 -105 (9/14)",
         "+4.5 -104 (9/13)",
@@ -522,6 +553,10 @@
       "home_injuries": [],
       "away_injuries": [],
       "situational_note": "",
+      "player_impact_notes": {
+        "home": [],
+        "away": []
+      },
       "spread_current": "-8.5 -104 (9/14)",
       "spread_current_raw": -8.5,
       "spread_history": [
@@ -589,6 +624,10 @@
       "home_injuries": [],
       "away_injuries": [],
       "situational_note": "",
+      "player_impact_notes": {
+        "home": [],
+        "away": []
+      },
       "spread_current": "+7.0 -110 (9/13)",
       "spread_current_raw": 7.0,
       "spread_history": [
@@ -612,12 +651,12 @@
       "gameday": "2026-09-20",
       "gametime": "16:05",
       "weekday": "Sunday",
-      "home_win_probability": 0.479,
-      "away_win_probability": 0.521,
+      "home_win_probability": 0.423,
+      "away_win_probability": 0.577,
       "favored": "JAX",
-      "raw_strength_score": -0.09,
+      "raw_strength_score": -0.31,
       "feature_breakdown": {
-        "rank_coefficient_home": 0.5,
+        "rank_coefficient_home": -0.5,
         "third_down_coefficient_home": -1.0,
         "ypp_off_coefficient_home": -1.0,
         "ypp_def_coefficient_home": 1.0,
@@ -655,9 +694,14 @@
       "home_injuries": [],
       "away_injuries": [],
       "situational_note": "",
-      "spread_current": "-2.5 -115 (9/13)",
+      "player_impact_notes": {
+        "home": [],
+        "away": []
+      },
+      "spread_current": "-2.5 -108 (9/15)",
       "spread_current_raw": -2.5,
       "spread_history": [
+        "-2.5 -115 (9/13)",
         "-3.0 -110 (9/12)",
         "-2.5 -114 (9/8)",
         "-2.5 -115 (8/31)"
@@ -719,6 +763,10 @@
       "home_injuries": [],
       "away_injuries": [],
       "situational_note": "",
+      "player_impact_notes": {
+        "home": [],
+        "away": []
+      },
       "spread_current": "-7.0 -112 (9/14)",
       "spread_current_raw": -7.0,
       "spread_history": [
@@ -790,6 +838,10 @@
       "home_injuries": [],
       "away_injuries": [],
       "situational_note": "",
+      "player_impact_notes": {
+        "home": [],
+        "away": []
+      },
       "spread_current": "+4.5 -105 (9/14)",
       "spread_current_raw": 4.5,
       "spread_history": [
@@ -856,6 +908,10 @@
       "home_injuries": [],
       "away_injuries": [],
       "situational_note": "",
+      "player_impact_notes": {
+        "home": [],
+        "away": []
+      },
       "spread_current": "-3.5 -115 (9/14)",
       "spread_current_raw": -3.5,
       "spread_history": [
@@ -922,6 +978,10 @@
       "home_injuries": [],
       "away_injuries": [],
       "situational_note": "",
+      "player_impact_notes": {
+        "home": [],
+        "away": []
+      },
       "spread_current": "-13.5 -104 (9/13)",
       "spread_current_raw": -13.5,
       "spread_history": [
@@ -985,14 +1045,20 @@
       "home_injuries": [],
       "away_injuries": [],
       "situational_note": "",
-      "spread_current": "-6.5 -104 (9/13)",
+      "player_impact_notes": {
+        "home": [],
+        "away": []
+      },
+      "spread_current": "-6.5 -115 (9/15)",
       "spread_current_raw": -6.5,
       "spread_history": [
+        "-6.5 -104 (9/13)",
         "-5.5 -110 (9/8)",
         "-6.5 -110 (8/31)"
       ],
-      "total_current": "O/U 47.5 (-118.0) (9/13)",
+      "total_current": "O/U 48.5 (-105.0) (9/15)",
       "total_history": [
+        "O/U 47.5 (-118.0) (9/13)",
         "O/U 46.5 (-110.0) (9/8)",
         "O/U 47.5 (-110.0) (8/31)"
       ],
@@ -1048,6 +1114,10 @@
       "home_injuries": [],
       "away_injuries": [],
       "situational_note": "",
+      "player_impact_notes": {
+        "home": [],
+        "away": []
+      },
       "spread_current": "-7.5 -102 (9/14)",
       "spread_current_raw": -7.5,
       "spread_history": [

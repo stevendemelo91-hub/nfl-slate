@@ -13,10 +13,10 @@
       "gameday": "2026-09-24",
       "gametime": "20:15",
       "weekday": "Thursday",
-      "home_win_probability": 0.644,
-      "away_win_probability": 0.356,
+      "home_win_probability": 0.722,
+      "away_win_probability": 0.278,
       "favored": "GB",
-      "raw_strength_score": 0.59,
+      "raw_strength_score": 0.95,
       "feature_breakdown": {
         "third_down_coefficient_home": 1.0,
         "ypp_off_coefficient_home": 1.0,
@@ -24,6 +24,7 @@
         "turnover_coefficient_home": -1.0,
         "rest_coefficient_home": 1.0,
         "road_trip_coefficient_home": 0.5,
+        "qb_coefficient_home": 1.0,
         "schedule_milestones_coefficient_home": 0.5
       },
       "power_rating_implied_spread": 7.75,
@@ -37,26 +38,34 @@
           "backup_starting": false,
           "rookie_starting": false,
           "qb_value": 0.0,
-          "notes": []
+          "notes": [],
+          "depth_chart_conflict": null
         },
         {
           "team": "ATL",
-          "depth_chart_starter": "Tua Tagovailoa",
+          "depth_chart_starter": "Michael Penix Jr.",
           "normal_starter_used_for_elite_check": "Tua Tagovailoa",
           "is_elite_starter": false,
-          "backup_starting": false,
+          "backup_starting": true,
           "rookie_starting": false,
-          "qb_value": 0.0,
-          "notes": []
+          "qb_value": -1.0,
+          "notes": [
+            "Backup QB starting"
+          ],
+          "depth_chart_conflict": null
         }
       ],
       "home_injuries": [],
       "away_injuries": [],
       "situational_note": "",
+      "player_impact_notes": {
+        "home": [],
+        "away": []
+      },
       "spread_current": "-7.5 -110 (8/31)",
       "spread_current_raw": -7.5,
       "spread_history": [],
-      "total_current": "O/U 46.5 (-110) (8/31)",
+      "total_current": "O/U 46.5 (-110.0) (8/31)",
       "total_history": [],
       "home_score": null,
       "away_score": null,
@@ -69,13 +78,13 @@
       "gameday": "2026-09-27",
       "gametime": "13:00",
       "weekday": "Sunday",
-      "home_win_probability": 0.594,
-      "away_win_probability": 0.406,
+      "home_win_probability": 0.698,
+      "away_win_probability": 0.302,
       "favored": "BUF",
-      "raw_strength_score": 0.38,
+      "raw_strength_score": 0.84,
       "feature_breakdown": {
-        "rank_coefficient_home": 0.5,
-        "third_down_coefficient_home": -1.0,
+        "rank_coefficient_home": 1.0,
+        "third_down_coefficient_home": 1.0,
         "ypp_off_coefficient_home": 1.0,
         "ypp_def_coefficient_home": -1.0,
         "rest_coefficient_home": 0.5,
@@ -92,7 +101,8 @@
           "backup_starting": false,
           "rookie_starting": false,
           "qb_value": 0.0,
-          "notes": []
+          "notes": [],
+          "depth_chart_conflict": null
         },
         {
           "team": "LAC",
@@ -102,16 +112,21 @@
           "backup_starting": false,
           "rookie_starting": false,
           "qb_value": 0.0,
-          "notes": []
+          "notes": [],
+          "depth_chart_conflict": null
         }
       ],
       "home_injuries": [],
       "away_injuries": [],
       "situational_note": "",
+      "player_impact_notes": {
+        "home": [],
+        "away": []
+      },
       "spread_current": "-3.0 -110 (8/31)",
       "spread_current_raw": -3.0,
       "spread_history": [],
-      "total_current": "O/U 48.5 (-110) (8/31)",
+      "total_current": "O/U 48.5 (-110.0) (8/31)",
       "total_history": [],
       "home_score": null,
       "away_score": null,
@@ -148,7 +163,8 @@
           "backup_starting": false,
           "rookie_starting": false,
           "qb_value": 0.0,
-          "notes": []
+          "notes": [],
+          "depth_chart_conflict": null
         },
         {
           "team": "CAR",
@@ -158,16 +174,21 @@
           "backup_starting": false,
           "rookie_starting": false,
           "qb_value": 0.0,
-          "notes": []
+          "notes": [],
+          "depth_chart_conflict": null
         }
       ],
       "home_injuries": [],
       "away_injuries": [],
       "situational_note": "",
+      "player_impact_notes": {
+        "home": [],
+        "away": []
+      },
       "spread_current": "+1.5 -110 (8/31)",
       "spread_current_raw": 1.5,
       "spread_history": [],
-      "total_current": "O/U 39.5 (-110) (8/31)",
+      "total_current": "O/U 39.5 (-110.0) (8/31)",
       "total_history": [],
       "home_score": null,
       "away_score": null,
@@ -180,15 +201,15 @@
       "gameday": "2026-09-27",
       "gametime": "13:00",
       "weekday": "Sunday",
-      "home_win_probability": 0.754,
-      "away_win_probability": 0.246,
+      "home_win_probability": 0.742,
+      "away_win_probability": 0.258,
       "favored": "DET",
-      "raw_strength_score": 1.12,
+      "raw_strength_score": 1.06,
       "feature_breakdown": {
         "rank_coefficient_home": 1.0,
         "third_down_coefficient_home": 1.0,
         "ypp_off_coefficient_home": 1.0,
-        "ypp_def_coefficient_home": 1.0,
+        "ypp_def_coefficient_home": -1.0,
         "turnover_coefficient_home": 1.0,
         "rest_coefficient_home": 0.5,
         "road_trip_coefficient_home": -0.5
@@ -204,7 +225,8 @@
           "backup_starting": false,
           "rookie_starting": false,
           "qb_value": 0.0,
-          "notes": []
+          "notes": [],
+          "depth_chart_conflict": null
         },
         {
           "team": "NYJ",
@@ -214,16 +236,21 @@
           "backup_starting": false,
           "rookie_starting": false,
           "qb_value": 0.0,
-          "notes": []
+          "notes": [],
+          "depth_chart_conflict": null
         }
       ],
       "home_injuries": [],
       "away_injuries": [],
       "situational_note": "",
+      "player_impact_notes": {
+        "home": [],
+        "away": []
+      },
       "spread_current": "-9.5 -110 (8/31)",
       "spread_current_raw": -9.5,
       "spread_history": [],
-      "total_current": "O/U 45.5 (-110) (8/31)",
+      "total_current": "O/U 45.5 (-110.0) (8/31)",
       "total_history": [],
       "home_score": null,
       "away_score": null,
@@ -236,12 +263,11 @@
       "gameday": "2026-09-27",
       "gametime": "13:00",
       "weekday": "Sunday",
-      "home_win_probability": 0.627,
-      "away_win_probability": 0.373,
+      "home_win_probability": 0.601,
+      "away_win_probability": 0.399,
       "favored": "IND",
-      "raw_strength_score": 0.52,
+      "raw_strength_score": 0.41,
       "feature_breakdown": {
-        "rank_coefficient_home": 0.5,
         "third_down_coefficient_home": 1.0,
         "ypp_off_coefficient_home": 1.0,
         "ypp_def_coefficient_home": -1.0,
@@ -259,7 +285,8 @@
           "backup_starting": false,
           "rookie_starting": false,
           "qb_value": 0.0,
-          "notes": []
+          "notes": [],
+          "depth_chart_conflict": null
         },
         {
           "team": "HOU",
@@ -269,16 +296,21 @@
           "backup_starting": false,
           "rookie_starting": false,
           "qb_value": 0.0,
-          "notes": []
+          "notes": [],
+          "depth_chart_conflict": null
         }
       ],
       "home_injuries": [],
       "away_injuries": [],
       "situational_note": "",
+      "player_impact_notes": {
+        "home": [],
+        "away": []
+      },
       "spread_current": "+1.5 -110 (8/31)",
       "spread_current_raw": 1.5,
       "spread_history": [],
-      "total_current": "O/U 45.5 (-110) (8/31)",
+      "total_current": "O/U 45.5 (-110.0) (8/31)",
       "total_history": [],
       "home_score": null,
       "away_score": null,
@@ -291,13 +323,13 @@
       "gameday": "2026-09-27",
       "gametime": "13:00",
       "weekday": "Sunday",
-      "home_win_probability": 0.466,
-      "away_win_probability": 0.534,
-      "favored": "NE",
-      "raw_strength_score": -0.14,
+      "home_win_probability": 0.552,
+      "away_win_probability": 0.448,
+      "favored": "JAX",
+      "raw_strength_score": 0.21,
       "feature_breakdown": {
         "rank_coefficient_home": -0.5,
-        "third_down_coefficient_home": -1.0,
+        "third_down_coefficient_home": 1.0,
         "ypp_off_coefficient_home": -1.0,
         "ypp_def_coefficient_home": 1.0
       },
@@ -312,7 +344,8 @@
           "backup_starting": false,
           "rookie_starting": false,
           "qb_value": 0.0,
-          "notes": []
+          "notes": [],
+          "depth_chart_conflict": null
         },
         {
           "team": "NE",
@@ -322,16 +355,21 @@
           "backup_starting": false,
           "rookie_starting": false,
           "qb_value": 0.0,
-          "notes": []
+          "notes": [],
+          "depth_chart_conflict": null
         }
       ],
       "home_injuries": [],
       "away_injuries": [],
       "situational_note": "",
+      "player_impact_notes": {
+        "home": [],
+        "away": []
+      },
       "spread_current": "-1.5 -105 (8/31)",
       "spread_current_raw": -1.5,
       "spread_history": [],
-      "total_current": "O/U 45.5 (-110) (8/31)",
+      "total_current": "O/U 45.5 (-110.0) (8/31)",
       "total_history": [],
       "home_score": null,
       "away_score": null,
@@ -344,13 +382,14 @@
       "gameday": "2026-09-27",
       "gametime": "13:00",
       "weekday": "Sunday",
-      "home_win_probability": 0.584,
-      "away_win_probability": 0.416,
-      "favored": "MIA",
-      "raw_strength_score": 0.34,
+      "home_win_probability": 0.475,
+      "away_win_probability": 0.525,
+      "favored": "KC",
+      "raw_strength_score": -0.1,
       "feature_breakdown": {
+        "rank_coefficient_home": -0.5,
         "third_down_coefficient_home": -1.0,
-        "ypp_off_coefficient_home": 1.0,
+        "ypp_off_coefficient_home": -1.0,
         "ypp_def_coefficient_home": -1.0,
         "road_trip_coefficient_home": 0.5,
         "coaching_coefficient_home": 1.0,
@@ -367,7 +406,8 @@
           "backup_starting": false,
           "rookie_starting": false,
           "qb_value": 0.0,
-          "notes": []
+          "notes": [],
+          "depth_chart_conflict": null
         },
         {
           "team": "KC",
@@ -377,16 +417,21 @@
           "backup_starting": false,
           "rookie_starting": false,
           "qb_value": 0.0,
-          "notes": []
+          "notes": [],
+          "depth_chart_conflict": null
         }
       ],
       "home_injuries": [],
       "away_injuries": [],
       "situational_note": "",
+      "player_impact_notes": {
+        "home": [],
+        "away": []
+      },
       "spread_current": "+7.5 -110 (8/31)",
       "spread_current_raw": 7.5,
       "spread_history": [],
-      "total_current": "O/U 44.5 (-110) (8/31)",
+      "total_current": "O/U 44.5 (-110.0) (8/31)",
       "total_history": [],
       "home_score": null,
       "away_score": null,
@@ -399,15 +444,15 @@
       "gameday": "2026-09-27",
       "gametime": "13:00",
       "weekday": "Sunday",
-      "home_win_probability": 0.681,
-      "away_win_probability": 0.319,
+      "home_win_probability": 0.694,
+      "away_win_probability": 0.306,
       "favored": "NYG",
-      "raw_strength_score": 0.76,
+      "raw_strength_score": 0.82,
       "feature_breakdown": {
         "rank_coefficient_home": 1.0,
         "third_down_coefficient_home": 1.0,
         "ypp_off_coefficient_home": 1.0,
-        "ypp_def_coefficient_home": -1.0,
+        "ypp_def_coefficient_home": 1.0,
         "rest_coefficient_home": -0.5,
         "road_trip_coefficient_home": 0.5
       },
@@ -422,7 +467,8 @@
           "backup_starting": false,
           "rookie_starting": false,
           "qb_value": 0.0,
-          "notes": []
+          "notes": [],
+          "depth_chart_conflict": null
         },
         {
           "team": "TEN",
@@ -432,16 +478,21 @@
           "backup_starting": false,
           "rookie_starting": false,
           "qb_value": 0.0,
-          "notes": []
+          "notes": [],
+          "depth_chart_conflict": null
         }
       ],
       "home_injuries": [],
       "away_injuries": [],
       "situational_note": "",
+      "player_impact_notes": {
+        "home": [],
+        "away": []
+      },
       "spread_current": "-3.0 -115 (8/31)",
       "spread_current_raw": -3.0,
       "spread_history": [],
-      "total_current": "O/U 44.5 (-110) (8/31)",
+      "total_current": "O/U 44.5 (-110.0) (8/31)",
       "total_history": [],
       "home_score": null,
       "away_score": null,
@@ -454,11 +505,12 @@
       "gameday": "2026-09-27",
       "gametime": "13:00",
       "weekday": "Sunday",
-      "home_win_probability": 0.548,
-      "away_win_probability": 0.452,
+      "home_win_probability": 0.52,
+      "away_win_probability": 0.48,
       "favored": "PIT",
-      "raw_strength_score": 0.19,
+      "raw_strength_score": 0.08,
       "feature_breakdown": {
+        "rank_coefficient_home": -0.5,
         "third_down_coefficient_home": -1.0,
         "ypp_off_coefficient_home": -1.0,
         "ypp_def_coefficient_home": 1.0,
@@ -477,7 +529,8 @@
           "backup_starting": false,
           "rookie_starting": false,
           "qb_value": 0.0,
-          "notes": []
+          "notes": [],
+          "depth_chart_conflict": null
         },
         {
           "team": "CIN",
@@ -487,16 +540,21 @@
           "backup_starting": false,
           "rookie_starting": false,
           "qb_value": 0.0,
-          "notes": []
+          "notes": [],
+          "depth_chart_conflict": null
         }
       ],
       "home_injuries": [],
       "away_injuries": [],
       "situational_note": "",
+      "player_impact_notes": {
+        "home": [],
+        "away": []
+      },
       "spread_current": "+1.5 -110 (8/31)",
       "spread_current_raw": 1.5,
       "spread_history": [],
-      "total_current": "O/U 46.5 (-118) (8/31)",
+      "total_current": "O/U 46.5 (-118.0) (8/31)",
       "total_history": [],
       "home_score": null,
       "away_score": null,
@@ -533,7 +591,8 @@
           "backup_starting": false,
           "rookie_starting": false,
           "qb_value": 0.0,
-          "notes": []
+          "notes": [],
+          "depth_chart_conflict": null
         },
         {
           "team": "SEA",
@@ -543,16 +602,21 @@
           "backup_starting": false,
           "rookie_starting": false,
           "qb_value": 0.0,
-          "notes": []
+          "notes": [],
+          "depth_chart_conflict": null
         }
       ],
       "home_injuries": [],
       "away_injuries": [],
       "situational_note": "",
+      "player_impact_notes": {
+        "home": [],
+        "away": []
+      },
       "spread_current": "+3.5 -110 (8/31)",
       "spread_current_raw": 3.5,
       "spread_history": [],
-      "total_current": "O/U 46.5 (-110) (8/31)",
+      "total_current": "O/U 46.5 (-110.0) (8/31)",
       "total_history": [],
       "home_score": null,
       "away_score": null,
@@ -565,12 +629,11 @@
       "gameday": "2026-09-27",
       "gametime": "16:05",
       "weekday": "Sunday",
-      "home_win_probability": 0.678,
-      "away_win_probability": 0.322,
+      "home_win_probability": 0.653,
+      "away_win_probability": 0.347,
       "favored": "SF",
-      "raw_strength_score": 0.75,
+      "raw_strength_score": 0.63,
       "feature_breakdown": {
-        "rank_coefficient_home": 0.5,
         "third_down_coefficient_home": 1.0,
         "ypp_off_coefficient_home": 1.0,
         "ypp_def_coefficient_home": 1.0,
@@ -587,7 +650,8 @@
           "backup_starting": false,
           "rookie_starting": false,
           "qb_value": 0.0,
-          "notes": []
+          "notes": [],
+          "depth_chart_conflict": null
         },
         {
           "team": "ARI",
@@ -597,16 +661,21 @@
           "backup_starting": false,
           "rookie_starting": false,
           "qb_value": 0.0,
-          "notes": []
+          "notes": [],
+          "depth_chart_conflict": null
         }
       ],
       "home_injuries": [],
       "away_injuries": [],
       "situational_note": "",
+      "player_impact_notes": {
+        "home": [],
+        "away": []
+      },
       "spread_current": "-11.5 -110 (8/31)",
       "spread_current_raw": -11.5,
       "spread_history": [],
-      "total_current": "O/U 46.5 (-110) (8/31)",
+      "total_current": "O/U 46.5 (-110.0) (8/31)",
       "total_history": [],
       "home_score": null,
       "away_score": null,
@@ -641,7 +710,8 @@
           "backup_starting": false,
           "rookie_starting": false,
           "qb_value": 0.0,
-          "notes": []
+          "notes": [],
+          "depth_chart_conflict": null
         },
         {
           "team": "MIN",
@@ -651,16 +721,21 @@
           "backup_starting": false,
           "rookie_starting": false,
           "qb_value": 0.0,
-          "notes": []
+          "notes": [],
+          "depth_chart_conflict": null
         }
       ],
       "home_injuries": [],
       "away_injuries": [],
       "situational_note": "",
+      "player_impact_notes": {
+        "home": [],
+        "away": []
+      },
       "spread_current": "-1.5 -110 (8/31)",
       "spread_current_raw": -1.5,
       "spread_history": [],
-      "total_current": "O/U 44.5 (-110) (8/31)",
+      "total_current": "O/U 44.5 (-110.0) (8/31)",
       "total_history": [],
       "home_score": null,
       "away_score": null,
@@ -673,13 +748,13 @@
       "gameday": "2026-09-27",
       "gametime": "16:25",
       "weekday": "Sunday",
-      "home_win_probability": 0.63,
-      "away_win_probability": 0.37,
+      "home_win_probability": 0.552,
+      "away_win_probability": 0.448,
       "favored": "DAL",
-      "raw_strength_score": 0.53,
+      "raw_strength_score": 0.21,
       "feature_breakdown": {
         "third_down_coefficient_home": 1.0,
-        "ypp_off_coefficient_home": 1.0,
+        "ypp_off_coefficient_home": -1.0,
         "ypp_def_coefficient_home": -1.0,
         "road_trip_coefficient_home": 0.5,
         "coaching_coefficient_home": -1.0
@@ -695,7 +770,8 @@
           "backup_starting": false,
           "rookie_starting": false,
           "qb_value": 0.0,
-          "notes": []
+          "notes": [],
+          "depth_chart_conflict": null
         },
         {
           "team": "BAL",
@@ -705,16 +781,21 @@
           "backup_starting": false,
           "rookie_starting": false,
           "qb_value": 0.0,
-          "notes": []
+          "notes": [],
+          "depth_chart_conflict": null
         }
       ],
       "home_injuries": [],
       "away_injuries": [],
       "situational_note": "",
+      "player_impact_notes": {
+        "home": [],
+        "away": []
+      },
       "spread_current": "+2.5 -110 (8/31)",
       "spread_current_raw": 2.5,
       "spread_history": [],
-      "total_current": "O/U 51.5 (-110) (8/31)",
+      "total_current": "O/U 51.5 (-110.0) (8/31)",
       "total_history": [],
       "home_score": null,
       "away_score": null,
@@ -727,12 +808,12 @@
       "gameday": "2026-09-27",
       "gametime": "16:25",
       "weekday": "Sunday",
-      "home_win_probability": 0.704,
-      "away_win_probability": 0.296,
+      "home_win_probability": 0.68,
+      "away_win_probability": 0.32,
       "favored": "NO",
-      "raw_strength_score": 0.86,
+      "raw_strength_score": 0.75,
       "feature_breakdown": {
-        "rank_coefficient_home": 1.0,
+        "rank_coefficient_home": 0.5,
         "third_down_coefficient_home": 1.0,
         "ypp_off_coefficient_home": 1.0,
         "ypp_def_coefficient_home": 1.0,
@@ -751,7 +832,8 @@
           "backup_starting": false,
           "rookie_starting": false,
           "qb_value": 0.0,
-          "notes": []
+          "notes": [],
+          "depth_chart_conflict": null
         },
         {
           "team": "LV",
@@ -761,16 +843,21 @@
           "backup_starting": false,
           "rookie_starting": false,
           "qb_value": 0.0,
-          "notes": []
+          "notes": [],
+          "depth_chart_conflict": null
         }
       ],
       "home_injuries": [],
       "away_injuries": [],
       "situational_note": "",
+      "player_impact_notes": {
+        "home": [],
+        "away": []
+      },
       "spread_current": "-3.5 -110 (8/31)",
       "spread_current_raw": -3.5,
       "spread_history": [],
-      "total_current": "O/U 42.5 (-110) (8/31)",
+      "total_current": "O/U 42.5 (-110.0) (8/31)",
       "total_history": [],
       "home_score": null,
       "away_score": null,
@@ -783,13 +870,13 @@
       "gameday": "2026-09-27",
       "gametime": "20:20",
       "weekday": "Sunday",
-      "home_win_probability": 0.486,
-      "away_win_probability": 0.514,
+      "home_win_probability": 0.401,
+      "away_win_probability": 0.599,
       "favored": "LA",
-      "raw_strength_score": -0.06,
+      "raw_strength_score": -0.4,
       "feature_breakdown": {
         "rank_coefficient_home": -1.0,
-        "third_down_coefficient_home": 1.0,
+        "third_down_coefficient_home": -1.0,
         "ypp_off_coefficient_home": -1.0,
         "ypp_def_coefficient_home": 1.0,
         "turnover_coefficient_home": -1.0,
@@ -806,7 +893,8 @@
           "backup_starting": false,
           "rookie_starting": false,
           "qb_value": 0.0,
-          "notes": []
+          "notes": [],
+          "depth_chart_conflict": null
         },
         {
           "team": "LA",
@@ -816,16 +904,21 @@
           "backup_starting": false,
           "rookie_starting": false,
           "qb_value": 0.0,
-          "notes": []
+          "notes": [],
+          "depth_chart_conflict": null
         }
       ],
       "home_injuries": [],
       "away_injuries": [],
       "situational_note": "",
+      "player_impact_notes": {
+        "home": [],
+        "away": []
+      },
       "spread_current": "+3.0 -110 (8/31)",
       "spread_current_raw": 3.0,
       "spread_history": [],
-      "total_current": "O/U 45.5 (-110) (8/31)",
+      "total_current": "O/U 45.5 (-110.0) (8/31)",
       "total_history": [],
       "home_score": null,
       "away_score": null,
@@ -860,7 +953,8 @@
           "backup_starting": false,
           "rookie_starting": false,
           "qb_value": 0.0,
-          "notes": []
+          "notes": [],
+          "depth_chart_conflict": null
         },
         {
           "team": "PHI",
@@ -870,16 +964,21 @@
           "backup_starting": false,
           "rookie_starting": false,
           "qb_value": 0.0,
-          "notes": []
+          "notes": [],
+          "depth_chart_conflict": null
         }
       ],
       "home_injuries": [],
       "away_injuries": [],
       "situational_note": "",
+      "player_impact_notes": {
+        "home": [],
+        "away": []
+      },
       "spread_current": "-1.5 -105 (8/31)",
       "spread_current_raw": -1.5,
       "spread_history": [],
-      "total_current": "O/U 46.5 (-110) (8/31)",
+      "total_current": "O/U 46.5 (-110.0) (8/31)",
       "total_history": [],
       "home_score": null,
       "away_score": null,
