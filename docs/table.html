@@ -112,10 +112,20 @@ td[data-label="Matchup"] { font-family: 'Manrope', sans-serif; }
 }
 .line-history-group:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
 .dim { color: var(--text-faint); font-style: normal; }
-.injury-bullets { list-style: none; padding: 0; margin: 0; font-size: 11px; line-height: 1.6; }
-.injury-bullets li { white-space: nowrap; }
+.injury-bullets { list-style: none; padding: 0; margin: 6px 0 0; font-size: 11px; line-height: 1.6; }
+.injury-bullets li { white-space: normal; }
 .injury-bullets li::before { content: "• "; color: var(--text-faint); }
 .injury-bullets strong { font-weight: 700; color: var(--text-dim); }
+.injury-summary-btn {
+  font-family: 'Space Grotesk', monospace; font-size: 11px; border: 1px solid var(--line);
+  background: var(--panel-2); border-radius: 999px; padding: 3px 10px; cursor: pointer;
+  color: var(--text-dim); white-space: nowrap; display: inline-flex; align-items: center; gap: 5px;
+}
+.injury-summary-btn:hover { border-color: var(--ice-border); color: var(--ice); }
+.injury-summary-btn .dot { width: 6px; height: 6px; border-radius: 50%; display: inline-block; }
+.injury-summary-btn .dot.out { background: var(--loss); }
+.injury-summary-btn .dot.q { background: var(--gold); }
+td[data-label="Key Injuries"] { max-width: 220px; }
 .bar-cell { position: relative; }
 .bar-track { position: absolute; left: 8px; right: 8px; top: 50%; height: 14px; transform: translateY(-50%); pointer-events: none; z-index: 0; }
 .bar-fill { height: 100%; border-radius: 3px; opacity: 0.22; }
@@ -437,6 +447,16 @@ function formatKickoff(g) {
 }
 
 let CURRENT_DATA = null;
+// Per-row expand/collapse state for the Key Injuries column (in-memory
+// only, resets on reload) - keeps the default view compact so the wide
+// injury text doesn't push every handicapper column off-screen, while
+// still making full detail one click away.
+const injuryExpandedRows = new Set();
+function toggleInjuryDetail(gameId) {
+  if (injuryExpandedRows.has(gameId)) injuryExpandedRows.delete(gameId);
+  else injuryExpandedRows.add(gameId);
+  render(CURRENT_DATA);
+}
 let sortColumn = 'kickoff';
 let sortAscending = true;
 const HANDICAPPERS = ['OG', 'Pizzola', 'Hitman', 'ClevTA', 'Chernoff', 'Walter Football'];
@@ -805,13 +825,29 @@ function render(data) {
     `;
 
     // --- Key Injuries cell (same Out/Doubtful, non-QB threshold as card view) ---
+    // Collapsed by default to a compact summary badge - the full bullet
+    // list (with long status text like "DNP - not injury related -
+    // resting player") was forcing this column extremely wide, pushing
+    // every handicapper column off-screen. Click the badge to expand.
     const allInjuries = [
       ...(g.away_injuries || []).map(i => ({ ...i, team: g.away_team })),
       ...(g.home_injuries || []).map(i => ({ ...i, team: g.home_team })),
     ];
-    const injuriesCellContent = allInjuries.length
-      ? `<ul class="injury-bullets">${allInjuries.map(i => `<li><strong>${i.team} ${i.name}</strong> (${i.position}) <span class="${i.status === 'Out' ? 'num neg' : 'num'}" style="${i.status !== 'Out' ? 'color:var(--gold);' : ''}">${i.status}</span></li>`).join('')}</ul>`
-      : '<span class="dim">—</span>';
+    let injuriesCellContent;
+    if (!allInjuries.length) {
+      injuriesCellContent = '<span class="dim">—</span>';
+    } else {
+      const outCount = allInjuries.filter(i => i.status === 'Out').length;
+      const otherCount = allInjuries.length - outCount;
+      const dots = (outCount ? '<span class="dot out"></span>' : '') + (otherCount ? '<span class="dot q"></span>' : '');
+      const summaryLabel = `${allInjuries.length} injur${allInjuries.length === 1 ? 'y' : 'ies'}`;
+      const isExpanded = injuryExpandedRows.has(g.game_id);
+      const badge = `<button class="injury-summary-btn" onclick="toggleInjuryDetail('${g.game_id}')">${dots}${summaryLabel} ${isExpanded ? '▲' : '▼'}</button>`;
+      const list = isExpanded
+        ? `<ul class="injury-bullets">${allInjuries.map(i => `<li><strong>${i.team} ${i.name}</strong> (${i.position}) <span class="${i.status === 'Out' ? 'num neg' : 'num'}" style="${i.status !== 'Out' ? 'color:var(--gold);' : ''}">${i.status}</span></li>`).join('')}</ul>`
+        : '';
+      injuriesCellContent = badge + list;
+    }
 
     // --- Per-handicapper cells (one column each) ---
     const hcPicks = TRACKER.handicapperPicks[g.game_id] || [];
