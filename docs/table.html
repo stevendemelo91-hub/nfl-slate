@@ -131,7 +131,9 @@ td[data-label="Key Injuries"] { max-width: 220px; }
 .bar-fill { height: 100%; border-radius: 3px; opacity: 0.22; }
 td.bar-td-content { position: relative; z-index: 1; }
 
-tr.consensus-row { outline: 2px solid var(--gold); outline-offset: -2px; }
+tr.consensus-row td.hc-col { border-top: 2px solid var(--gold); border-bottom: 2px solid var(--gold); }
+tr.consensus-row td.hc-col-first { border-left: 2px solid var(--gold); border-radius: 6px 0 0 6px; }
+tr.consensus-row td.hc-col-last { border-right: 2px solid var(--gold); border-radius: 0 6px 6px 0; }
 
 .pick-tags { display: flex; flex-direction: column; gap: 3px; margin-bottom: 6px; }
 .pick-tag {
@@ -926,12 +928,12 @@ function render(data) {
       <td class="numeric" data-label="Current Line">${currentLineContent}</td>
       <td data-label="Line History">${lineHistoryContent}</td>
       <td data-label="Key Injuries">${injuriesCellContent}</td>
-      <td class="hc-col" data-label="OG">${hcCellsByName['OG']}</td>
+      <td class="hc-col hc-col-first" data-label="OG">${hcCellsByName['OG']}</td>
       <td class="hc-col" data-label="Pizzola">${hcCellsByName['Pizzola']}</td>
       <td class="hc-col" data-label="Hitman">${hcCellsByName['Hitman']}</td>
       <td class="hc-col" data-label="ClevTA">${hcCellsByName['ClevTA']}</td>
       <td class="hc-col" data-label="Chernoff">${hcCellsByName['Chernoff']}</td>
-      <td class="hc-col" data-label="Sharp Trio">${hcCellsByName['Sharp Trio']}</td>
+      <td class="hc-col hc-col-last" data-label="Sharp Trio">${hcCellsByName['Sharp Trio']}</td>
       <td data-label="My 5">${my5Content}</td>
       <td class="numeric bar-cell" data-label="Power Rating" style="position:relative;">${powerBarHtml}<span class="bar-td-content">${powerCellContent}</span></td>
       <td class="numeric" data-label="Model Strength">${strengthHtml}</td>
