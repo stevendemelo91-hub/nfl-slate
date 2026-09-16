@@ -139,6 +139,10 @@ tr.consensus-row { outline: 2px solid var(--gold); outline-offset: -2px; }
   border: 1px solid var(--line); border-radius: 999px; padding: 2px 9px; color: var(--text-dim); white-space: nowrap;
 }
 .pick-tag.official { border-color: var(--gold-border); background: var(--gold-bg); color: var(--gold); }
+.pick-tag.grade-win { border-color: var(--win-border); background: var(--win-bg); color: var(--win); }
+.pick-tag.grade-loss { border-color: var(--loss-border); background: var(--loss-bg); color: var(--loss); text-decoration: line-through; text-decoration-color: var(--loss-border); }
+.pick-tag.grade-push { border-color: var(--line); color: var(--text-faint); }
+.grade-mark { font-weight: 700; margin-right: 3px; }
 .remove-x { cursor: pointer; color: var(--text-faint); margin-left: 4px; }
 .remove-x:hover { color: var(--loss); }
 .pick-entry { display: flex; gap: 3px; align-items: center; flex-wrap: wrap; }
@@ -289,6 +293,7 @@ footer a { color: var(--text-dim); }
       </tr>
     </thead>
     <tbody id="slate-body"></tbody>
+    <tfoot id="slate-tfoot"></tfoot>
   </table>
   </div>
 
@@ -341,6 +346,23 @@ footer a { color: var(--text-dim); }
           </tr>
         </thead>
         <tbody id="optimizer-body"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="optimizer-section">
+    <div class="pool-header">
+      <div class="pool-title">Season Records</div>
+      <div class="pool-subnote">Every week this season, per handicapper &middot; My 5 &middot; my own Final picks (boxed counts as correct) - W-L-P and win %</div>
+    </div>
+    <div id="season-records-status" class="signal-empty">Loading season records&hellip;</div>
+    <div class="table-scroll" style="max-height: 56vh; display:none;" id="season-records-scroll">
+      <table id="season-records-table">
+        <thead>
+          <tr id="season-records-head"></tr>
+        </thead>
+        <tbody id="season-records-body"></tbody>
+        <tfoot id="season-records-tfoot"></tfoot>
       </table>
     </div>
   </div>
@@ -856,7 +878,10 @@ function render(data) {
       const picksForThis = hcPicks.map((p, i) => ({ ...p, idx: i })).filter(p => p.handicapper === h);
       const tags = picksForThis.map(p => {
         const label = p.type === 'total' ? `${p.side} ${p.line}` : `${p.side} ${p.line > 0 ? '+' : ''}${p.line}`;
-        return `<span class="pick-tag">${label} <span class="remove-x" onclick="removeHandicapperPick('${g.game_id}', ${p.idx})">✕</span></span>`;
+        const grade = gradePick(p, g);
+        const gradeClass = grade ? ` grade-${grade}` : '';
+        const gradeMark = grade === 'win' ? '<span class="grade-mark">✓</span>' : grade === 'loss' ? '<span class="grade-mark">✗</span>' : '';
+        return `<span class="pick-tag${gradeClass}">${gradeMark}${label} <span class="remove-x" onclick="removeHandicapperPick('${g.game_id}', ${p.idx})">✕</span></span>`;
       }).join('');
       const addBtn = picksForThis.length < 2
         ? `<button class="pick-add-mini" onclick="promptHandicapperPick('${g.game_id}', '${h}', '${displayName(g.home_team)}')">+</button>` : '';
@@ -879,9 +904,12 @@ function render(data) {
     let my5Content;
     if (my5Pick) {
       const label = `${my5Pick.side} ${my5Pick.line > 0 ? '+' : ''}${my5Pick.line}`;
+      const grade = gradePick(my5Pick, g);
+      const gradeClass = grade ? ` grade-${grade}` : '';
+      const gradeMark = grade === 'win' ? '<span class="grade-mark">✓</span>' : grade === 'loss' ? '<span class="grade-mark">✗</span>' : '';
       my5Content = `
         <div class="pick-tags">
-          <span class="pick-tag ${my5Pick.isOfficial ? 'official' : ''}">${label}
+          <span class="pick-tag ${my5Pick.isOfficial ? 'official' : ''}${gradeClass}">${gradeMark}${label}
             <span class="remove-x" onclick="removeMy5Pick('${g.game_id}')">✕</span>
           </span>
         </div>
@@ -915,6 +943,48 @@ function render(data) {
   renderPoolTable(data);
   renderSignalView(data);
   renderOptimizerTable(data);
+  renderSlateRecords(data);
+}
+
+// Weekly W-L-P record per handicapper and for My5's official picks -
+// per-pick checkmarks/X's show individual results, this answers the
+// aggregate "how did OG do this week" question. Only counts picks on
+// games that are actually final (pushes and not-yet-final picks are
+// tracked separately, not silently dropped from the denominator).
+function renderSlateRecords(data) {
+  const gamesById = Object.fromEntries(data.games.map(g => [g.game_id, g]));
+  const records = {};
+  HANDICAPPERS.forEach(h => records[h] = { w: 0, l: 0, p: 0 });
+  const my5Record = { w: 0, l: 0, p: 0 };
+
+  Object.entries(TRACKER.handicapperPicks).forEach(([gameId, picks]) => {
+    const game = gamesById[gameId];
+    if (!game) return;
+    picks.forEach(pick => {
+      const grade = gradePick(pick, game);
+      if (!grade || !records[pick.handicapper]) return;
+      records[pick.handicapper][grade === 'win' ? 'w' : grade === 'loss' ? 'l' : 'p']++;
+    });
+  });
+  Object.entries(TRACKER.my5Picks).forEach(([gameId, pick]) => {
+    if (!pick.isOfficial) return;
+    const game = gamesById[gameId];
+    if (!game) return;
+    const grade = gradePick(pick, game);
+    if (!grade) return;
+    my5Record[grade === 'win' ? 'w' : grade === 'loss' ? 'l' : 'p']++;
+  });
+
+  const fmt = r => (r.w + r.l + r.p === 0) ? '<span class="dim">—</span>' : `${r.w}-${r.l}${r.p ? `-${r.p}` : ''}`;
+  const tfoot = document.getElementById('slate-tfoot');
+  tfoot.innerHTML = `
+    <tr class="pool-tally-row">
+      <td colspan="6" class="tally-label">Week record</td>
+      ${HANDICAPPERS.map(h => `<td class="tally-value">${fmt(records[h])}</td>`).join('')}
+      <td class="tally-value">${fmt(my5Record)}</td>
+      <td colspan="3"></td>
+    </tr>
+  `;
 }
 
 const SIGNAL_THRESHOLD = 0.5;
@@ -1147,6 +1217,28 @@ function isPoolEligible(gameday) {
   return day === 0 || day === 1;
 }
 
+// Grades a handicapper or My5 pick against the actual final score. Returns
+// 'win' | 'loss' | 'push' | null (null = game not final yet, not graded).
+// Spread picks: side is a team code, line is that team's spread (e.g. NE
+// +4.5 covers if NE loses by <4.5 or wins outright). Total picks: side is
+// 'over'/'under', line is the total threshold.
+function gradePick(pick, game) {
+  if (!game.is_final || game.home_score === null || game.away_score === null) return null;
+  if (pick.type === 'total') {
+    const actualTotal = game.home_score + game.away_score;
+    if (actualTotal === pick.line) return 'push';
+    const wentOver = actualTotal > pick.line;
+    return (pick.side.toLowerCase() === 'over') === wentOver ? 'win' : 'loss';
+  }
+  const isHome = pick.side === game.home_team;
+  const teamScore = isHome ? game.home_score : game.away_score;
+  const oppScore = isHome ? game.away_score : game.home_score;
+  const coverMargin = (teamScore - oppScore) + pick.line;
+  if (coverMargin > 0) return 'win';
+  if (coverMargin < 0) return 'loss';
+  return 'push';
+}
+
 function poolSortKey(g) {
   const homeFullName = TEAM_ABBR_TO_FULL[g.home_team] || g.home_team;
   return `${g.gameday}_${g.gametime}_${homeFullName}`;
@@ -1282,7 +1374,127 @@ document.querySelectorAll('th.sortable').forEach(th => {
   th.addEventListener('click', () => setSort(th.dataset.sort));
 });
 
+// Full-season W-L-P records for every handicapper, My 5, and the user's
+// own Final picks (boxed = automatically correct, since a box covers the
+// outcome either way) - a week-by-week table across the whole 1-18
+// season, separate from the per-week "Week record" row on the main
+// slate (which only ever shows whichever single week is currently
+// selected). Fetches every week's JSON once, independent of the
+// currently-viewed week.
+async function renderSeasonRecords() {
+  const statusEl = document.getElementById('season-records-status');
+  const scrollEl = document.getElementById('season-records-scroll');
+  let manifest;
+  try {
+    const res = await fetch('./data/manifest.json');
+    manifest = await res.json();
+  } catch (e) {
+    statusEl.textContent = 'Could not load season data.';
+    return;
+  }
+  const season = manifest.latest.season;
+  const fileByWeek = {};
+  manifest.weeks.filter(w => w.season === season).forEach(w => fileByWeek[w.week] = w.file);
+
+  const columns = [...HANDICAPPERS, 'My 5', 'My Final'];
+  const seasonTotals = {};
+  columns.forEach(c => seasonTotals[c] = { w: 0, l: 0, p: 0 });
+
+  const headRow = document.getElementById('season-records-head');
+  headRow.innerHTML = `<th>Week</th>${columns.map(c => `<th class="numeric">${c}</th>`).join('')}`;
+
+  const bodyRows = [];
+  for (let week = 1; week <= 18; week++) {
+    const file = fileByWeek[week];
+    const rowRecords = {};
+    columns.forEach(c => rowRecords[c] = { w: 0, l: 0, p: 0 });
+    let hasAnyData = false;
+
+    if (file) {
+      let weekData;
+      try {
+        const res = await fetch(`./data/${file}`);
+        weekData = await res.json();
+      } catch (e) { weekData = null; }
+
+      if (weekData) {
+        const gamesById = Object.fromEntries(weekData.games.map(g => [g.game_id, g]));
+
+        Object.entries(TRACKER.handicapperPicks || {}).forEach(([gameId, picks]) => {
+          const game = gamesById[gameId];
+          if (!game) return;
+          picks.forEach(pick => {
+            const grade = gradePick(pick, game);
+            if (!grade || !rowRecords[pick.handicapper]) return;
+            hasAnyData = true;
+            rowRecords[pick.handicapper][grade === 'win' ? 'w' : grade === 'loss' ? 'l' : 'p']++;
+          });
+        });
+
+        Object.entries(TRACKER.my5Picks || {}).forEach(([gameId, pick]) => {
+          if (!pick.isOfficial) return;
+          const game = gamesById[gameId];
+          if (!game) return;
+          const grade = gradePick(pick, game);
+          if (!grade) return;
+          hasAnyData = true;
+          rowRecords['My 5'][grade === 'win' ? 'w' : grade === 'loss' ? 'l' : 'p']++;
+        });
+
+        weekData.games.filter(g => isPoolEligible(g.gameday)).forEach(g => {
+          const pick = (TRACKER.poolPicks || {})[g.game_id];
+          if (!pick || pick.final === '' || pick.final === undefined) return;
+          if (!g.is_final || g.home_score === null || g.away_score === null) return;
+          hasAnyData = true;
+          if (pick.final === 'BOX') {
+            rowRecords['My Final'].w++;
+          } else {
+            const pickedHome = pick.final === g.home_team;
+            const won = pickedHome ? g.home_score > g.away_score : g.away_score > g.home_score;
+            rowRecords['My Final'][won ? 'w' : 'l']++;
+          }
+        });
+      }
+    }
+
+    if (hasAnyData) {
+      columns.forEach(c => {
+        seasonTotals[c].w += rowRecords[c].w;
+        seasonTotals[c].l += rowRecords[c].l;
+        seasonTotals[c].p += rowRecords[c].p;
+      });
+    }
+    bodyRows.push({ week, hasAnyData, rowRecords });
+  }
+
+  const fmt = r => {
+    const total = r.w + r.l + r.p;
+    if (total === 0) return '<span class="dim">—</span>';
+    if (r.w + r.l === 0) return `${r.w}-${r.l}-${r.p} <span class="dim">(all push)</span>`;
+    const pct = Math.round((r.w / (r.w + r.l)) * 100);
+    return `${r.w}-${r.l}${r.p ? `-${r.p}` : ''} <span class="dim">(${pct}%)</span>`;
+  };
+
+  document.getElementById('season-records-body').innerHTML = bodyRows.map(({ week, hasAnyData, rowRecords }) => `
+    <tr>
+      <td data-label="Week">Week ${week}</td>
+      ${columns.map(c => `<td class="numeric" data-label="${c}">${hasAnyData ? fmt(rowRecords[c]) : '<span class="dim">—</span>'}</td>`).join('')}
+    </tr>
+  `).join('');
+
+  document.getElementById('season-records-tfoot').innerHTML = `
+    <tr class="pool-tally-row">
+      <td class="tally-label">Season total</td>
+      ${columns.map(c => `<td class="tally-value">${fmt(seasonTotals[c])}</td>`).join('')}
+    </tr>
+  `;
+
+  statusEl.style.display = 'none';
+  scrollEl.style.display = '';
+}
+
 loadData();
+renderSeasonRecords();
 </script>
 </body>
 </html>
