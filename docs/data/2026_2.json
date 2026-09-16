@@ -103,7 +103,7 @@
         {
           "team": "ATL",
           "depth_chart_starter": "Michael Penix Jr.",
-          "normal_starter_used_for_elite_check": "Tua Tagovailoa",
+          "normal_starter_used_for_elite_check": "Michael Penix Jr.",
           "is_elite_starter": false,
           "backup_starting": true,
           "rookie_starting": false,
@@ -234,10 +234,10 @@
       "gameday": "2026-09-20",
       "gametime": "13:00",
       "weekday": "Sunday",
-      "home_win_probability": 0.743,
-      "away_win_probability": 0.257,
+      "home_win_probability": 0.806,
+      "away_win_probability": 0.194,
       "favored": "CHI",
-      "raw_strength_score": 1.06,
+      "raw_strength_score": 1.42,
       "feature_breakdown": {
         "rank_coefficient_home": 1.0,
         "third_down_coefficient_home": 1.0,
@@ -245,6 +245,7 @@
         "ypp_def_coefficient_home": -1.0,
         "turnover_coefficient_home": 1.0,
         "road_trip_coefficient_home": 0.5,
+        "qb_coefficient_home": 1.0,
         "schedule_milestones_coefficient_home": 0.5
       },
       "power_rating_implied_spread": 2.17,
@@ -266,10 +267,12 @@
           "depth_chart_starter": "Kyler Murray",
           "normal_starter_used_for_elite_check": "Kyler Murray",
           "is_elite_starter": false,
-          "backup_starting": false,
+          "backup_starting": true,
           "rookie_starting": false,
-          "qb_value": 0.0,
-          "notes": [],
+          "qb_value": -1.0,
+          "notes": [
+            "Backup QB starting"
+          ],
           "depth_chart_conflict": null
         }
       ],
@@ -818,10 +821,10 @@
       "gameday": "2026-09-20",
       "gametime": "16:25",
       "weekday": "Sunday",
-      "home_win_probability": 0.528,
-      "away_win_probability": 0.472,
+      "home_win_probability": 0.698,
+      "away_win_probability": 0.302,
       "favored": "ARI",
-      "raw_strength_score": 0.11,
+      "raw_strength_score": 0.84,
       "feature_breakdown": {
         "third_down_coefficient_home": 1.0,
         "ypp_off_coefficient_home": -1.0,
@@ -829,6 +832,7 @@
         "turnover_coefficient_home": -1.0,
         "rest_coefficient_home": -0.5,
         "road_trip_coefficient_home": -0.5,
+        "qb_coefficient_home": 2.0,
         "schedule_milestones_coefficient_home": 0.5
       },
       "power_rating_implied_spread": -5.83,
@@ -850,10 +854,13 @@
           "depth_chart_starter": "Sam Darnold",
           "normal_starter_used_for_elite_check": "Sam Darnold",
           "is_elite_starter": true,
-          "backup_starting": false,
+          "backup_starting": true,
           "rookie_starting": false,
-          "qb_value": 0.0,
-          "notes": [],
+          "qb_value": -2.0,
+          "notes": [
+            "Backup QB starting",
+            "Elite starter (Sam Darnold) out"
+          ],
           "depth_chart_conflict": null
         }
       ],
