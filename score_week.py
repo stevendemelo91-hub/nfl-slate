@@ -757,11 +757,19 @@ def load_pool_results_history(path='pool_results_history.csv'):
     def opt_str(v):
         return str(v) if pd.notna(v) else None
 
+    def opt_id_str(v):
+        # pool_id reads as a float column when most rows are blank (pandas
+        # infers float64 for a mostly-empty numeric column), so a real
+        # value like 18 becomes "18.0" unless explicitly cleaned up here.
+        if pd.isna(v):
+            return None
+        return str(int(v)) if float(v).is_integer() else str(v)
+
     records = []
     for _, row in df.iterrows():
         records.append({
             'season': int(row['season']), 'week': int(row['week']),
-            'pool_id': opt_str(row.get('pool_id')), 'pool_label': opt_str(row.get('pool_label')),
+            'pool_id': opt_id_str(row.get('pool_id')), 'pool_label': opt_str(row.get('pool_label')),
             'closed_date': opt_str(row.get('closed_date')),
             'no_of_winners': opt_int(row.get('no_of_winners')),
             'winning_selections_required': opt_int(row.get('winning_selections_required')),
