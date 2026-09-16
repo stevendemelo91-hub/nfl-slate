@@ -2541,6 +2541,20 @@
       "upsets": null,
       "total_pot": 240861.0,
       "underdog_pts_realized": null
+    },
+    {
+      "season": 2026,
+      "week": 1,
+      "pool_id": "18",
+      "pool_label": "NFL - WEEK 1",
+      "closed_date": "2026-09-13",
+      "no_of_winners": 6,
+      "winning_selections_required": 14,
+      "winning_selections_total": 14,
+      "share_prize": 83333.3,
+      "upsets": 3.0,
+      "total_pot": 499999.8,
+      "underdog_pts_realized": 15.67
     }
   ]
 }
