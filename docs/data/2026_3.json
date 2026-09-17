@@ -127,9 +127,10 @@
         "home": [],
         "away": []
       },
-      "spread_current": "-3.5 -120 (9/15)",
-      "spread_current_raw": -3.5,
+      "spread_current": "-4.5 -105 (9/17)",
+      "spread_current_raw": -4.5,
       "spread_history": [
+        "-3.5 -120 (9/15)",
         "-3.0 -110 (8/31)"
       ],
       "total_current": "O/U 50.5 (-115.0) (9/15)",
@@ -846,11 +847,15 @@
         "home": [],
         "away": []
       },
-      "spread_current": "+2.5 -110 (8/31)",
-      "spread_current_raw": 2.5,
-      "spread_history": [],
-      "total_current": "O/U 51.5 (-110.0) (8/31)",
-      "total_history": [],
+      "spread_current": "+3.5 -118 (9/16)",
+      "spread_current_raw": 3.5,
+      "spread_history": [
+        "+2.5 -110 (8/31)"
+      ],
+      "total_current": "O/U 52.5 (-105.0) (9/16)",
+      "total_history": [
+        "O/U 51.5 (-110.0) (8/31)"
+      ],
       "home_score": null,
       "away_score": null,
       "is_final": false
