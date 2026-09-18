@@ -82,17 +82,18 @@
       "gameday": "2026-09-27",
       "gametime": "13:00",
       "weekday": "Sunday",
-      "home_win_probability": 0.698,
-      "away_win_probability": 0.302,
+      "home_win_probability": 0.727,
+      "away_win_probability": 0.273,
       "favored": "BUF",
-      "raw_strength_score": 0.84,
+      "raw_strength_score": 0.98,
       "feature_breakdown": {
         "rank_coefficient_home": 1.0,
         "third_down_coefficient_home": 1.0,
         "ypp_off_coefficient_home": 1.0,
         "ypp_def_coefficient_home": -1.0,
         "rest_coefficient_home": 0.5,
-        "road_trip_coefficient_home": 0.5
+        "road_trip_coefficient_home": 0.5,
+        "streak_coefficient_home": -0.5
       },
       "power_rating_implied_spread": 2.92,
       "neutral_site": false,
