@@ -302,7 +302,7 @@ footer a { color: var(--text-dim); }
   <div class="pool-section">
     <div class="pool-header">
       <div class="pool-title">Pool Picks</div>
-      <div class="pool-subnote">Sun/Mon games only &middot; matches OLG POOLS ordering (time slot, then alphabetical by home team)</div>
+      <div class="pool-subnote">Sun/Mon games only &middot; matches OLG POOLS ordering (time slot, then alphabetical by away team)</div>
     </div>
     <div class="table-scroll" style="max-height: 56vh;">
       <table id="pool-table">
@@ -601,7 +601,13 @@ function toggleMy5Official(gameId) {
   const pick = TRACKER.my5Picks[gameId];
   if (!pick) return;
   if (!pick.isOfficial) {
-    const officialCount = Object.values(TRACKER.my5Picks).filter(p => p.isOfficial).length;
+    // Scoped to the CURRENTLY VIEWED week's games only - My 5 is a
+    // per-week concept (5 official picks for THIS week), so counting
+    // across every week ever stored would mean a past week's official
+    // picks permanently block every future week from ever reaching 5.
+    const currentWeekGameIds = new Set(CURRENT_DATA.games.map(g => g.game_id));
+    const officialCount = Object.entries(TRACKER.my5Picks)
+      .filter(([gid, p]) => p.isOfficial && currentWeekGameIds.has(gid)).length;
     if (officialCount >= 5) {
       alert('You already have 5 official picks marked for this week. Unmark one first.');
       return;
@@ -923,7 +929,11 @@ function render(data) {
 
     // --- My 5 cell ---
     const my5Pick = TRACKER.my5Picks[g.game_id];
-    const officialCount = Object.values(TRACKER.my5Picks).filter(p => p.isOfficial).length;
+    // Same per-week scoping as toggleMy5Official - only count official
+    // picks among THIS week's games, not every week ever stored.
+    const currentWeekGameIds = new Set(data.games.map(cg => cg.game_id));
+    const officialCount = Object.entries(TRACKER.my5Picks)
+      .filter(([gid, p]) => p.isOfficial && currentWeekGameIds.has(gid)).length;
     let my5Content;
     if (my5Pick) {
       const label = `${my5Pick.side} ${my5Pick.line > 0 ? '+' : ''}${my5Pick.line}`;
@@ -1263,8 +1273,13 @@ function gradePick(pick, game) {
 }
 
 function poolSortKey(g) {
-  const homeFullName = TEAM_ABBR_TO_FULL[g.home_team] || g.home_team;
-  return `${g.gameday}_${g.gametime}_${homeFullName}`;
+  // OLG changed their own ordering at some point this season - it used
+  // to be time slot then alphabetical by HOME team, confirmed directly
+  // against a real live pool card that it's now alphabetical by AWAY
+  // team instead (e.g. CAR@ATL, CIN@HOU, CLE@TB... sorted by Carolina,
+  // Cincinnati, Cleveland - the away side).
+  const awayFullName = TEAM_ABBR_TO_FULL[g.away_team] || g.away_team;
+  return `${g.gameday}_${g.gametime}_${awayFullName}`;
 }
 
 function poolGameLabel(abbr) {
