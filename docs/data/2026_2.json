@@ -1761,10 +1761,10 @@
       "gameday": "2026-09-20",
       "gametime": "13:00",
       "weekday": "Sunday",
-      "home_win_probability": 0.733,
-      "away_win_probability": 0.267,
+      "home_win_probability": 0.704,
+      "away_win_probability": 0.296,
       "favored": "TB",
-      "raw_strength_score": 1.01,
+      "raw_strength_score": 0.87,
       "feature_breakdown": {
         "rank_coefficient_home": 1.0,
         "third_down_coefficient_home": 1.0,
@@ -1772,6 +1772,7 @@
         "ypp_def_coefficient_home": -1.0,
         "turnover_coefficient_home": 1.0,
         "road_trip_coefficient_home": 1.0,
+        "streak_coefficient_home": 0.5,
         "coaching_coefficient_home": -1.0,
         "schedule_milestones_coefficient_home": 0.5
       },
@@ -2307,16 +2308,17 @@
       "gameday": "2026-09-20",
       "gametime": "16:05",
       "weekday": "Sunday",
-      "home_win_probability": 0.724,
-      "away_win_probability": 0.276,
+      "home_win_probability": 0.664,
+      "away_win_probability": 0.336,
       "favored": "LAC",
-      "raw_strength_score": 0.97,
+      "raw_strength_score": 0.68,
       "feature_breakdown": {
         "rank_coefficient_home": 1.0,
         "third_down_coefficient_home": 1.0,
         "ypp_off_coefficient_home": 1.0,
         "ypp_def_coefficient_home": -1.0,
         "turnover_coefficient_home": 1.0,
+        "streak_coefficient_home": 1.0,
         "coaching_coefficient_home": -1.0
       },
       "power_rating_implied_spread": 9.42,
@@ -2501,9 +2503,9 @@
         "O/U 42.5 (-118.0) (9/8)",
         "O/U 42.5 (-110.0) (8/31)"
       ],
-      "home_score": null,
-      "away_score": null,
-      "is_final": false
+      "home_score": 14.0,
+      "away_score": 26.0,
+      "is_final": true
     },
     {
       "game_id": "2026_02_SEA_ARI",
@@ -2512,10 +2514,10 @@
       "gameday": "2026-09-20",
       "gametime": "16:25",
       "weekday": "Sunday",
-      "home_win_probability": 0.698,
-      "away_win_probability": 0.302,
+      "home_win_probability": 0.667,
+      "away_win_probability": 0.333,
       "favored": "ARI",
-      "raw_strength_score": 0.84,
+      "raw_strength_score": 0.69,
       "feature_breakdown": {
         "third_down_coefficient_home": 1.0,
         "ypp_off_coefficient_home": -1.0,
@@ -2523,6 +2525,7 @@
         "turnover_coefficient_home": -1.0,
         "rest_coefficient_home": -0.5,
         "road_trip_coefficient_home": -0.5,
+        "streak_coefficient_home": 0.5,
         "qb_coefficient_home": 2.0,
         "schedule_milestones_coefficient_home": 0.5
       },
@@ -2796,9 +2799,9 @@
         "O/U 44.5 (-102.0) (9/8)",
         "O/U 44.5 (-110.0) (8/31)"
       ],
-      "home_score": null,
-      "away_score": null,
-      "is_final": false
+      "home_score": 7.0,
+      "away_score": 31.0,
+      "is_final": true
     },
     {
       "game_id": "2026_02_WAS_DAL",
@@ -2807,16 +2810,17 @@
       "gameday": "2026-09-20",
       "gametime": "16:25",
       "weekday": "Sunday",
-      "home_win_probability": 0.702,
-      "away_win_probability": 0.298,
+      "home_win_probability": 0.731,
+      "away_win_probability": 0.269,
       "favored": "DAL",
-      "raw_strength_score": 0.86,
+      "raw_strength_score": 1.0,
       "feature_breakdown": {
         "rank_coefficient_home": 1.0,
         "third_down_coefficient_home": 1.0,
         "ypp_off_coefficient_home": 1.0,
         "ypp_def_coefficient_home": -1.0,
         "road_trip_coefficient_home": 1.0,
+        "streak_coefficient_home": -0.5,
         "schedule_milestones_coefficient_home": 0.5
       },
       "power_rating_implied_spread": 6.17,
@@ -3028,9 +3032,9 @@
         "O/U 51.5 (-115.0) (9/8)",
         "O/U 51.5 (-110.0) (8/31)"
       ],
-      "home_score": null,
-      "away_score": null,
-      "is_final": false
+      "home_score": 37.0,
+      "away_score": 20.0,
+      "is_final": true
     },
     {
       "game_id": "2026_02_MIA_SF",
@@ -3039,16 +3043,17 @@
       "gameday": "2026-09-20",
       "gametime": "16:25",
       "weekday": "Sunday",
-      "home_win_probability": 0.667,
-      "away_win_probability": 0.333,
+      "home_win_probability": 0.726,
+      "away_win_probability": 0.274,
       "favored": "SF",
-      "raw_strength_score": 0.69,
+      "raw_strength_score": 0.98,
       "feature_breakdown": {
         "third_down_coefficient_home": 1.0,
         "ypp_off_coefficient_home": 1.0,
         "ypp_def_coefficient_home": 1.0,
         "rest_coefficient_home": 0.5,
         "road_trip_coefficient_home": 1.0,
+        "streak_coefficient_home": -1.0,
         "coaching_coefficient_home": -1.0,
         "schedule_milestones_coefficient_home": 0.5
       },
@@ -3230,9 +3235,9 @@
         "O/U 45.5 (-118.0) (9/8)",
         "O/U 46.5 (-110.0) (8/31)"
       ],
-      "home_score": null,
-      "away_score": null,
-      "is_final": false
+      "home_score": 35.0,
+      "away_score": 13.0,
+      "is_final": true
     },
     {
       "game_id": "2026_02_IND_KC",
@@ -3241,16 +3246,17 @@
       "gameday": "2026-09-20",
       "gametime": "20:20",
       "weekday": "Sunday",
-      "home_win_probability": 0.456,
-      "away_win_probability": 0.544,
-      "favored": "IND",
-      "raw_strength_score": -0.18,
+      "home_win_probability": 0.526,
+      "away_win_probability": 0.474,
+      "favored": "KC",
+      "raw_strength_score": 0.11,
       "feature_breakdown": {
         "rank_coefficient_home": -0.5,
         "third_down_coefficient_home": -1.0,
         "ypp_off_coefficient_home": -1.0,
         "ypp_def_coefficient_home": 1.0,
-        "rest_coefficient_home": -0.5
+        "rest_coefficient_home": -0.5,
+        "streak_coefficient_home": -1.0
       },
       "power_rating_implied_spread": 8.0,
       "neutral_site": false,
@@ -3426,9 +3432,10 @@
         "home": [],
         "away": []
       },
-      "spread_current": "-6.5 -102 (9/20)",
+      "spread_current": "-6.5 +100 (9/20)",
       "spread_current_raw": -6.5,
       "spread_history": [
+        "-6.5 -102 (9/20)",
         "-6.5 -105 (9/19)",
         "-6.5 -112 (9/18)",
         "-6.5 -115 (9/15)",
@@ -3445,9 +3452,9 @@
         "O/U 46.5 (-110.0) (9/8)",
         "O/U 47.5 (-110.0) (8/31)"
       ],
-      "home_score": null,
-      "away_score": null,
-      "is_final": false
+      "home_score": 33.0,
+      "away_score": 30.0,
+      "is_final": true
     },
     {
       "game_id": "2026_02_NYG_LA",
