@@ -1,41 +1,970 @@
 {
   "season": 2026,
-  "week": 3,
-  "blend_weight_prior_year": 0.8,
+  "week": 4,
+  "blend_weight_prior_year": 0.7,
   "limitations": [
     "Player trades, sandwich-home-game/last-before-trip/first-after-trip (the \"negligible, half-weight\" road-trip sub-components), and the fully-conditional \"last game of season\" asymmetric-stakes logic are still not live (low-frequency/low-weight, deferred - see spec). Everything else (rank/YPP/3rddown/turnover/rest/streak/QB/road trip position/coaching/stakes/schedule milestones) is now live. Full spec in nfl_model_spec.md."
   ],
   "games": [
     {
-      "game_id": "2026_03_ATL_GB",
-      "home_team": "GB",
-      "away_team": "ATL",
-      "gameday": "2026-09-24",
+      "game_id": "2026_04_PIT_CLE",
+      "home_team": "CLE",
+      "away_team": "PIT",
+      "gameday": "2026-10-01",
       "gametime": "20:15",
       "weekday": "Thursday",
-      "home_win_probability": 0.749,
-      "away_win_probability": 0.251,
-      "favored": "GB",
-      "raw_strength_score": 1.1,
+      "home_win_probability": 0.435,
+      "away_win_probability": 0.565,
+      "favored": "PIT",
+      "raw_strength_score": -0.26,
       "feature_breakdown": {
-        "third_down_coefficient_home": 1.0,
-        "ypp_off_coefficient_home": 1.0,
+        "rank_coefficient_home": -0.5,
+        "third_down_coefficient_home": -1.0,
+        "ypp_off_coefficient_home": -1.0,
         "ypp_def_coefficient_home": 1.0,
         "turnover_coefficient_home": -1.0,
         "rest_coefficient_home": 1.0,
-        "road_trip_coefficient_home": 0.5,
-        "streak_coefficient_home": -0.5,
-        "qb_coefficient_home": 1.0,
-        "schedule_milestones_coefficient_home": 0.5
+        "road_trip_coefficient_home": 0.5
       },
-      "power_rating_implied_spread": 7.75,
+      "power_rating_implied_spread": -4.33,
       "neutral_site": false,
       "qb_candidates": [
+        {
+          "team": "CLE",
+          "depth_chart_starter": "Deshaun Watson",
+          "normal_starter_used_for_elite_check": "Deshaun Watson",
+          "is_elite_starter": false,
+          "backup_starting": false,
+          "rookie_starting": false,
+          "qb_value": 0.0,
+          "notes": [],
+          "depth_chart_conflict": null
+        },
+        {
+          "team": "PIT",
+          "depth_chart_starter": "Aaron Rodgers",
+          "normal_starter_used_for_elite_check": "Aaron Rodgers",
+          "is_elite_starter": false,
+          "backup_starting": false,
+          "rookie_starting": false,
+          "qb_value": 0.0,
+          "notes": [],
+          "depth_chart_conflict": null
+        }
+      ],
+      "home_injuries": [],
+      "away_injuries": [],
+      "situational_note": "",
+      "player_impact_entries": {
+        "home": [],
+        "away": []
+      },
+      "spread_current": "+2.5 -110 (8/31)",
+      "spread_current_raw": 2.5,
+      "spread_history": [],
+      "total_current": "O/U 40.5 (-110.0) (8/31)",
+      "total_history": [],
+      "home_score": null,
+      "away_score": null,
+      "is_final": false
+    },
+    {
+      "game_id": "2026_04_IND_WAS",
+      "home_team": "WAS",
+      "away_team": "IND",
+      "gameday": "2026-10-04",
+      "gametime": "09:30",
+      "weekday": "Sunday",
+      "home_win_probability": 0.448,
+      "away_win_probability": 0.552,
+      "favored": "IND",
+      "raw_strength_score": -0.21,
+      "feature_breakdown": {
+        "rank_coefficient_home": -0.5,
+        "third_down_coefficient_home": -1.0,
+        "ypp_off_coefficient_home": -1.0,
+        "ypp_def_coefficient_home": -1.0,
+        "road_trip_coefficient_home": 0.5
+      },
+      "power_rating_implied_spread": -0.25,
+      "neutral_site": true,
+      "qb_candidates": [
+        {
+          "team": "WAS",
+          "depth_chart_starter": "Jayden Daniels",
+          "normal_starter_used_for_elite_check": "Jayden Daniels",
+          "is_elite_starter": false,
+          "backup_starting": false,
+          "rookie_starting": false,
+          "qb_value": 0.0,
+          "notes": [],
+          "depth_chart_conflict": null
+        },
+        {
+          "team": "IND",
+          "depth_chart_starter": "Daniel Jones",
+          "normal_starter_used_for_elite_check": "Daniel Jones",
+          "is_elite_starter": true,
+          "backup_starting": false,
+          "rookie_starting": false,
+          "qb_value": 0.0,
+          "notes": [],
+          "depth_chart_conflict": null
+        }
+      ],
+      "home_injuries": [],
+      "away_injuries": [],
+      "situational_note": "",
+      "player_impact_entries": {
+        "home": [],
+        "away": []
+      },
+      "spread_current": "+1.5 -115 (9/1)",
+      "spread_current_raw": 1.5,
+      "spread_history": [
+        "+1.5 -110 (8/31)"
+      ],
+      "total_current": "O/U 49.5 (-110.0) (8/31)",
+      "total_history": [],
+      "home_score": null,
+      "away_score": null,
+      "is_final": false
+    },
+    {
+      "game_id": "2026_04_TEN_BAL",
+      "home_team": "BAL",
+      "away_team": "TEN",
+      "gameday": "2026-10-04",
+      "gametime": "13:00",
+      "weekday": "Sunday",
+      "home_win_probability": 0.734,
+      "away_win_probability": 0.266,
+      "favored": "BAL",
+      "raw_strength_score": 1.01,
+      "feature_breakdown": {
+        "rank_coefficient_home": 1.0,
+        "third_down_coefficient_home": 1.0,
+        "ypp_off_coefficient_home": 1.0,
+        "ypp_def_coefficient_home": 1.0,
+        "streak_coefficient_home": -0.5
+      },
+      "power_rating_implied_spread": 10.55,
+      "neutral_site": false,
+      "qb_candidates": [
+        {
+          "team": "BAL",
+          "depth_chart_starter": "Lamar Jackson",
+          "normal_starter_used_for_elite_check": "Lamar Jackson",
+          "is_elite_starter": false,
+          "backup_starting": false,
+          "rookie_starting": false,
+          "qb_value": 0.0,
+          "notes": [],
+          "depth_chart_conflict": null
+        },
+        {
+          "team": "TEN",
+          "depth_chart_starter": "Cam Ward",
+          "normal_starter_used_for_elite_check": "Cam Ward",
+          "is_elite_starter": false,
+          "backup_starting": false,
+          "rookie_starting": false,
+          "qb_value": 0.0,
+          "notes": [],
+          "depth_chart_conflict": null
+        }
+      ],
+      "home_injuries": [],
+      "away_injuries": [],
+      "situational_note": "",
+      "player_impact_entries": {
+        "home": [],
+        "away": []
+      },
+      "spread_current": "-8.5 -110 (8/31)",
+      "spread_current_raw": -8.5,
+      "spread_history": [],
+      "total_current": "O/U 47.5 (-110.0) (8/31)",
+      "total_history": [],
+      "home_score": null,
+      "away_score": null,
+      "is_final": false
+    },
+    {
+      "game_id": "2026_04_NE_BUF",
+      "home_team": "BUF",
+      "away_team": "NE",
+      "gameday": "2026-10-04",
+      "gametime": "13:00",
+      "weekday": "Sunday",
+      "home_win_probability": 0.719,
+      "away_win_probability": 0.281,
+      "favored": "BUF",
+      "raw_strength_score": 0.94,
+      "feature_breakdown": {
+        "rank_coefficient_home": 1.0,
+        "third_down_coefficient_home": 1.0,
+        "ypp_off_coefficient_home": 1.0,
+        "ypp_def_coefficient_home": -1.0,
+        "road_trip_coefficient_home": 0.5,
+        "streak_coefficient_home": -0.5
+      },
+      "power_rating_implied_spread": 3.42,
+      "neutral_site": false,
+      "qb_candidates": [
+        {
+          "team": "BUF",
+          "depth_chart_starter": "Josh Allen",
+          "normal_starter_used_for_elite_check": "Josh Allen",
+          "is_elite_starter": true,
+          "backup_starting": false,
+          "rookie_starting": false,
+          "qb_value": 0.0,
+          "notes": [],
+          "depth_chart_conflict": null
+        },
+        {
+          "team": "NE",
+          "depth_chart_starter": "Drake Maye",
+          "normal_starter_used_for_elite_check": "Drake Maye",
+          "is_elite_starter": true,
+          "backup_starting": false,
+          "rookie_starting": false,
+          "qb_value": 0.0,
+          "notes": [],
+          "depth_chart_conflict": null
+        }
+      ],
+      "home_injuries": [],
+      "away_injuries": [],
+      "situational_note": "",
+      "player_impact_entries": {
+        "home": [],
+        "away": []
+      },
+      "spread_current": "-3.0 -110 (8/31)",
+      "spread_current_raw": -3.0,
+      "spread_history": [],
+      "total_current": "O/U 49.5 (-110.0) (8/31)",
+      "total_history": [],
+      "home_score": null,
+      "away_score": null,
+      "is_final": false
+    },
+    {
+      "game_id": "2026_04_NYJ_CHI",
+      "home_team": "CHI",
+      "away_team": "NYJ",
+      "gameday": "2026-10-04",
+      "gametime": "13:00",
+      "weekday": "Sunday",
+      "home_win_probability": 0.721,
+      "away_win_probability": 0.279,
+      "favored": "CHI",
+      "raw_strength_score": 0.95,
+      "feature_breakdown": {
+        "rank_coefficient_home": 1.0,
+        "third_down_coefficient_home": 1.0,
+        "ypp_off_coefficient_home": 1.0,
+        "ypp_def_coefficient_home": -1.0,
+        "turnover_coefficient_home": 1.0,
+        "rest_coefficient_home": -0.5,
+        "road_trip_coefficient_home": 0.5
+      },
+      "power_rating_implied_spread": 7.92,
+      "neutral_site": false,
+      "qb_candidates": [
+        {
+          "team": "CHI",
+          "depth_chart_starter": "Caleb Williams",
+          "normal_starter_used_for_elite_check": "Caleb Williams",
+          "is_elite_starter": false,
+          "backup_starting": false,
+          "rookie_starting": false,
+          "qb_value": 0.0,
+          "notes": [],
+          "depth_chart_conflict": null
+        },
+        {
+          "team": "NYJ",
+          "depth_chart_starter": "Geno Smith",
+          "normal_starter_used_for_elite_check": "Geno Smith",
+          "is_elite_starter": false,
+          "backup_starting": false,
+          "rookie_starting": false,
+          "qb_value": 0.0,
+          "notes": [],
+          "depth_chart_conflict": null
+        }
+      ],
+      "home_injuries": [],
+      "away_injuries": [],
+      "situational_note": "",
+      "player_impact_entries": {
+        "home": [],
+        "away": []
+      },
+      "spread_current": "-8.5 -110 (8/31)",
+      "spread_current_raw": -8.5,
+      "spread_history": [],
+      "total_current": "O/U 45.5 (-110.0) (8/31)",
+      "total_history": [],
+      "home_score": null,
+      "away_score": null,
+      "is_final": false
+    },
+    {
+      "game_id": "2026_04_JAX_CIN",
+      "home_team": "CIN",
+      "away_team": "JAX",
+      "gameday": "2026-10-04",
+      "gametime": "13:00",
+      "weekday": "Sunday",
+      "home_win_probability": 0.524,
+      "away_win_probability": 0.476,
+      "favored": "CIN",
+      "raw_strength_score": 0.1,
+      "feature_breakdown": {
+        "rank_coefficient_home": -0.5,
+        "third_down_coefficient_home": 1.0,
+        "ypp_off_coefficient_home": -1.0,
+        "ypp_def_coefficient_home": -1.0,
+        "turnover_coefficient_home": -1.0,
+        "streak_coefficient_home": -0.5
+      },
+      "power_rating_implied_spread": 2.17,
+      "neutral_site": false,
+      "qb_candidates": [
+        {
+          "team": "CIN",
+          "depth_chart_starter": "Joe Burrow",
+          "normal_starter_used_for_elite_check": "Joe Burrow",
+          "is_elite_starter": true,
+          "backup_starting": false,
+          "rookie_starting": false,
+          "qb_value": 0.0,
+          "notes": [],
+          "depth_chart_conflict": null
+        },
+        {
+          "team": "JAX",
+          "depth_chart_starter": "Trevor Lawrence",
+          "normal_starter_used_for_elite_check": "Trevor Lawrence",
+          "is_elite_starter": false,
+          "backup_starting": false,
+          "rookie_starting": false,
+          "qb_value": 0.0,
+          "notes": [],
+          "depth_chart_conflict": null
+        }
+      ],
+      "home_injuries": [],
+      "away_injuries": [],
+      "situational_note": "",
+      "player_impact_entries": {
+        "home": [],
+        "away": []
+      },
+      "spread_current": "-2.5 -110 (8/31)",
+      "spread_current_raw": -2.5,
+      "spread_history": [],
+      "total_current": "O/U 51.5 (-110.0) (8/31)",
+      "total_history": [],
+      "home_score": null,
+      "away_score": null,
+      "is_final": false
+    },
+    {
+      "game_id": "2026_04_DAL_HOU",
+      "home_team": "HOU",
+      "away_team": "DAL",
+      "gameday": "2026-10-04",
+      "gametime": "13:00",
+      "weekday": "Sunday",
+      "home_win_probability": 0.454,
+      "away_win_probability": 0.546,
+      "favored": "DAL",
+      "raw_strength_score": -0.18,
+      "feature_breakdown": {
+        "rank_coefficient_home": -1.0,
+        "third_down_coefficient_home": -1.0,
+        "ypp_off_coefficient_home": -1.0,
+        "ypp_def_coefficient_home": 1.0,
+        "turnover_coefficient_home": 1.0,
+        "road_trip_coefficient_home": -0.5,
+        "streak_coefficient_home": 0.5
+      },
+      "power_rating_implied_spread": 2.17,
+      "neutral_site": false,
+      "qb_candidates": [
+        {
+          "team": "HOU",
+          "depth_chart_starter": "C.J. Stroud",
+          "normal_starter_used_for_elite_check": "C.J. Stroud",
+          "is_elite_starter": false,
+          "backup_starting": false,
+          "rookie_starting": false,
+          "qb_value": 0.0,
+          "notes": [],
+          "depth_chart_conflict": null
+        },
+        {
+          "team": "DAL",
+          "depth_chart_starter": "Dak Prescott",
+          "normal_starter_used_for_elite_check": "Dak Prescott",
+          "is_elite_starter": true,
+          "backup_starting": false,
+          "rookie_starting": false,
+          "qb_value": 0.0,
+          "notes": [],
+          "depth_chart_conflict": null
+        }
+      ],
+      "home_injuries": [],
+      "away_injuries": [],
+      "situational_note": "",
+      "player_impact_entries": {
+        "home": [],
+        "away": []
+      },
+      "spread_current": "-2.5 -110 (8/31)",
+      "spread_current_raw": -2.5,
+      "spread_history": [],
+      "total_current": "O/U 47.5 (-110.0) (8/31)",
+      "total_history": [],
+      "home_score": null,
+      "away_score": null,
+      "is_final": false
+    },
+    {
+      "game_id": "2026_04_ARI_NYG",
+      "home_team": "NYG",
+      "away_team": "ARI",
+      "gameday": "2026-10-04",
+      "gametime": "13:00",
+      "weekday": "Sunday",
+      "home_win_probability": 0.684,
+      "away_win_probability": 0.316,
+      "favored": "NYG",
+      "raw_strength_score": 0.77,
+      "feature_breakdown": {
+        "rank_coefficient_home": 0.5,
+        "third_down_coefficient_home": 1.0,
+        "ypp_off_coefficient_home": 1.0,
+        "ypp_def_coefficient_home": 1.0,
+        "road_trip_coefficient_home": 1.0,
+        "coaching_coefficient_home": 1.0
+      },
+      "power_rating_implied_spread": 4.42,
+      "neutral_site": false,
+      "qb_candidates": [
+        {
+          "team": "NYG",
+          "depth_chart_starter": "Jaxson Dart",
+          "normal_starter_used_for_elite_check": "Jaxson Dart",
+          "is_elite_starter": false,
+          "backup_starting": false,
+          "rookie_starting": false,
+          "qb_value": 0.0,
+          "notes": [],
+          "depth_chart_conflict": null
+        },
+        {
+          "team": "ARI",
+          "depth_chart_starter": "Jacoby Brissett",
+          "normal_starter_used_for_elite_check": "Jacoby Brissett",
+          "is_elite_starter": false,
+          "backup_starting": false,
+          "rookie_starting": false,
+          "qb_value": 0.0,
+          "notes": [],
+          "depth_chart_conflict": null
+        }
+      ],
+      "home_injuries": [],
+      "away_injuries": [],
+      "situational_note": "",
+      "player_impact_entries": {
+        "home": [],
+        "away": []
+      },
+      "spread_current": "-7.0 -110 (8/31)",
+      "spread_current_raw": -7.0,
+      "spread_history": [],
+      "total_current": "O/U 45.5 (-110.0) (8/31)",
+      "total_history": [],
+      "home_score": null,
+      "away_score": null,
+      "is_final": false
+    },
+    {
+      "game_id": "2026_04_LA_PHI",
+      "home_team": "PHI",
+      "away_team": "LA",
+      "gameday": "2026-10-04",
+      "gametime": "13:00",
+      "weekday": "Sunday",
+      "home_win_probability": 0.542,
+      "away_win_probability": 0.458,
+      "favored": "PHI",
+      "raw_strength_score": 0.17,
+      "feature_breakdown": {
+        "rank_coefficient_home": -1.0,
+        "third_down_coefficient_home": 1.0,
+        "ypp_off_coefficient_home": -1.0,
+        "ypp_def_coefficient_home": 1.0,
+        "rest_coefficient_home": -0.5,
+        "road_trip_coefficient_home": 1.0,
+        "streak_coefficient_home": -0.5
+      },
+      "power_rating_implied_spread": -2.08,
+      "neutral_site": false,
+      "qb_candidates": [
+        {
+          "team": "PHI",
+          "depth_chart_starter": "Jalen Hurts",
+          "normal_starter_used_for_elite_check": "Jalen Hurts",
+          "is_elite_starter": false,
+          "backup_starting": false,
+          "rookie_starting": false,
+          "qb_value": 0.0,
+          "notes": [],
+          "depth_chart_conflict": null
+        },
+        {
+          "team": "LA",
+          "depth_chart_starter": "Matthew Stafford",
+          "normal_starter_used_for_elite_check": "Matthew Stafford",
+          "is_elite_starter": true,
+          "backup_starting": false,
+          "rookie_starting": false,
+          "qb_value": 0.0,
+          "notes": [],
+          "depth_chart_conflict": null
+        }
+      ],
+      "home_injuries": [],
+      "away_injuries": [],
+      "situational_note": "",
+      "player_impact_entries": {
+        "home": [],
+        "away": []
+      },
+      "spread_current": "+1.5 -110 (8/31)",
+      "spread_current_raw": 1.5,
+      "spread_history": [],
+      "total_current": "O/U 47.5 (-110.0) (8/31)",
+      "total_history": [],
+      "home_score": null,
+      "away_score": null,
+      "is_final": false
+    },
+    {
+      "game_id": "2026_04_GB_TB",
+      "home_team": "TB",
+      "away_team": "GB",
+      "gameday": "2026-10-04",
+      "gametime": "13:00",
+      "weekday": "Sunday",
+      "home_win_probability": 0.508,
+      "away_win_probability": 0.492,
+      "favored": "TB",
+      "raw_strength_score": 0.03,
+      "feature_breakdown": {
+        "rank_coefficient_home": -1.0,
+        "third_down_coefficient_home": 1.0,
+        "ypp_off_coefficient_home": -1.0,
+        "ypp_def_coefficient_home": -1.0,
+        "turnover_coefficient_home": 1.0,
+        "rest_coefficient_home": -0.5,
+        "road_trip_coefficient_home": 0.5,
+        "streak_coefficient_home": 0.5
+      },
+      "power_rating_implied_spread": -1.08,
+      "neutral_site": false,
+      "qb_candidates": [
+        {
+          "team": "TB",
+          "depth_chart_starter": "Baker Mayfield",
+          "normal_starter_used_for_elite_check": "Baker Mayfield",
+          "is_elite_starter": false,
+          "backup_starting": false,
+          "rookie_starting": false,
+          "qb_value": 0.0,
+          "notes": [],
+          "depth_chart_conflict": null
+        },
         {
           "team": "GB",
           "depth_chart_starter": "Jordan Love",
           "normal_starter_used_for_elite_check": "Jordan Love",
           "is_elite_starter": true,
+          "backup_starting": false,
+          "rookie_starting": false,
+          "qb_value": 0.0,
+          "notes": [],
+          "depth_chart_conflict": null
+        }
+      ],
+      "home_injuries": [],
+      "away_injuries": [],
+      "situational_note": "",
+      "player_impact_entries": {
+        "home": [],
+        "away": []
+      },
+      "spread_current": "+1.5 -110 (8/31)",
+      "spread_current_raw": 1.5,
+      "spread_history": [],
+      "total_current": "O/U 47.5 (-110.0) (8/31)",
+      "total_history": [],
+      "home_score": null,
+      "away_score": null,
+      "is_final": false
+    },
+    {
+      "game_id": "2026_04_MIA_MIN",
+      "home_team": "MIN",
+      "away_team": "MIA",
+      "gameday": "2026-10-04",
+      "gametime": "16:05",
+      "weekday": "Sunday",
+      "home_win_probability": 0.433,
+      "away_win_probability": 0.567,
+      "favored": "MIA",
+      "raw_strength_score": -0.27,
+      "feature_breakdown": {
+        "rank_coefficient_home": -0.5,
+        "third_down_coefficient_home": -1.0,
+        "ypp_off_coefficient_home": -1.0,
+        "ypp_def_coefficient_home": 1.0,
+        "road_trip_coefficient_home": 0.5,
+        "streak_coefficient_home": -1.0,
+        "qb_coefficient_home": -1.0,
+        "coaching_coefficient_home": -1.0
+      },
+      "power_rating_implied_spread": 8.92,
+      "neutral_site": false,
+      "qb_candidates": [
+        {
+          "team": "MIN",
+          "depth_chart_starter": "Kyler Murray",
+          "normal_starter_used_for_elite_check": "Kyler Murray",
+          "is_elite_starter": false,
+          "backup_starting": true,
+          "rookie_starting": false,
+          "qb_value": -1.0,
+          "notes": [
+            "Backup QB starting"
+          ],
+          "depth_chart_conflict": null
+        },
+        {
+          "team": "MIA",
+          "depth_chart_starter": "Malik Willis",
+          "normal_starter_used_for_elite_check": "Malik Willis",
+          "is_elite_starter": false,
+          "backup_starting": false,
+          "rookie_starting": false,
+          "qb_value": 0.0,
+          "notes": [],
+          "depth_chart_conflict": null
+        }
+      ],
+      "home_injuries": [],
+      "away_injuries": [],
+      "situational_note": "",
+      "player_impact_entries": {
+        "home": [],
+        "away": []
+      },
+      "spread_current": "-7.5 -110 (8/31)",
+      "spread_current_raw": -7.5,
+      "spread_history": [],
+      "total_current": "O/U 43.5 (-110.0) (8/31)",
+      "total_history": [],
+      "home_score": null,
+      "away_score": null,
+      "is_final": false
+    },
+    {
+      "game_id": "2026_04_KC_LV",
+      "home_team": "LV",
+      "away_team": "KC",
+      "gameday": "2026-10-04",
+      "gametime": "16:25",
+      "weekday": "Sunday",
+      "home_win_probability": 0.391,
+      "away_win_probability": 0.609,
+      "favored": "KC",
+      "raw_strength_score": -0.44,
+      "feature_breakdown": {
+        "rank_coefficient_home": -1.0,
+        "third_down_coefficient_home": -1.0,
+        "ypp_off_coefficient_home": -1.0,
+        "ypp_def_coefficient_home": -1.0,
+        "road_trip_coefficient_home": 1.0,
+        "coaching_coefficient_home": 1.0,
+        "schedule_milestones_coefficient_home": -1.0
+      },
+      "power_rating_implied_spread": -6.08,
+      "neutral_site": false,
+      "qb_candidates": [
+        {
+          "team": "LV",
+          "depth_chart_starter": "Kirk Cousins",
+          "normal_starter_used_for_elite_check": "Kirk Cousins",
+          "is_elite_starter": false,
+          "backup_starting": false,
+          "rookie_starting": false,
+          "qb_value": 0.0,
+          "notes": [],
+          "depth_chart_conflict": null
+        },
+        {
+          "team": "KC",
+          "depth_chart_starter": "Patrick Mahomes",
+          "normal_starter_used_for_elite_check": "Patrick Mahomes",
+          "is_elite_starter": true,
+          "backup_starting": false,
+          "rookie_starting": false,
+          "qb_value": 0.0,
+          "notes": [],
+          "depth_chart_conflict": null
+        }
+      ],
+      "home_injuries": [],
+      "away_injuries": [],
+      "situational_note": "",
+      "player_impact_entries": {
+        "home": [],
+        "away": []
+      },
+      "spread_current": "+5.5 -110 (8/31)",
+      "spread_current_raw": 5.5,
+      "spread_history": [],
+      "total_current": "O/U 43.5 (-110.0) (8/31)",
+      "total_history": [],
+      "home_score": null,
+      "away_score": null,
+      "is_final": false
+    },
+    {
+      "game_id": "2026_04_LAC_SEA",
+      "home_team": "SEA",
+      "away_team": "LAC",
+      "gameday": "2026-10-04",
+      "gametime": "16:25",
+      "weekday": "Sunday",
+      "home_win_probability": 0.484,
+      "away_win_probability": 0.516,
+      "favored": "LAC",
+      "raw_strength_score": -0.07,
+      "feature_breakdown": {
+        "rank_coefficient_home": 0.5,
+        "third_down_coefficient_home": -1.0,
+        "ypp_off_coefficient_home": 1.0,
+        "ypp_def_coefficient_home": 1.0,
+        "road_trip_coefficient_home": 1.5,
+        "streak_coefficient_home": -1.0,
+        "qb_coefficient_home": -2.0
+      },
+      "power_rating_implied_spread": 2.5,
+      "neutral_site": false,
+      "qb_candidates": [
+        {
+          "team": "SEA",
+          "depth_chart_starter": "Sam Darnold",
+          "normal_starter_used_for_elite_check": "Sam Darnold",
+          "is_elite_starter": true,
+          "backup_starting": true,
+          "rookie_starting": false,
+          "qb_value": -2.0,
+          "notes": [
+            "Backup QB starting",
+            "Elite starter (Sam Darnold) out"
+          ],
+          "depth_chart_conflict": null
+        },
+        {
+          "team": "LAC",
+          "depth_chart_starter": "Justin Herbert",
+          "normal_starter_used_for_elite_check": "Justin Herbert",
+          "is_elite_starter": false,
+          "backup_starting": false,
+          "rookie_starting": false,
+          "qb_value": 0.0,
+          "notes": [],
+          "depth_chart_conflict": null
+        }
+      ],
+      "home_injuries": [],
+      "away_injuries": [],
+      "situational_note": "",
+      "player_impact_entries": {
+        "home": [],
+        "away": []
+      },
+      "spread_current": "-3.0 -115 (8/31)",
+      "spread_current_raw": -3.0,
+      "spread_history": [],
+      "total_current": "O/U 45.5 (-110.0) (8/31)",
+      "total_history": [],
+      "home_score": null,
+      "away_score": null,
+      "is_final": false
+    },
+    {
+      "game_id": "2026_04_DEN_SF",
+      "home_team": "SF",
+      "away_team": "DEN",
+      "gameday": "2026-10-04",
+      "gametime": "16:25",
+      "weekday": "Sunday",
+      "home_win_probability": 0.719,
+      "away_win_probability": 0.281,
+      "favored": "SF",
+      "raw_strength_score": 0.94,
+      "feature_breakdown": {
+        "rank_coefficient_home": 1.0,
+        "third_down_coefficient_home": 1.0,
+        "ypp_off_coefficient_home": 1.0,
+        "ypp_def_coefficient_home": -1.0,
+        "road_trip_coefficient_home": 0.5,
+        "streak_coefficient_home": -0.5
+      },
+      "power_rating_implied_spread": 4.42,
+      "neutral_site": false,
+      "qb_candidates": [
+        {
+          "team": "SF",
+          "depth_chart_starter": "Brock Purdy",
+          "normal_starter_used_for_elite_check": "Brock Purdy",
+          "is_elite_starter": true,
+          "backup_starting": false,
+          "rookie_starting": false,
+          "qb_value": 0.0,
+          "notes": [],
+          "depth_chart_conflict": null
+        },
+        {
+          "team": "DEN",
+          "depth_chart_starter": "Bo Nix",
+          "normal_starter_used_for_elite_check": "Bo Nix",
+          "is_elite_starter": false,
+          "backup_starting": false,
+          "rookie_starting": false,
+          "qb_value": 0.0,
+          "notes": [],
+          "depth_chart_conflict": null
+        }
+      ],
+      "home_injuries": [],
+      "away_injuries": [],
+      "situational_note": "",
+      "player_impact_entries": {
+        "home": [],
+        "away": []
+      },
+      "spread_current": "-2.5 -110 (8/31)",
+      "spread_current_raw": -2.5,
+      "spread_history": [],
+      "total_current": "O/U 46.5 (-110.0) (8/31)",
+      "total_history": [],
+      "home_score": null,
+      "away_score": null,
+      "is_final": false
+    },
+    {
+      "game_id": "2026_04_DET_CAR",
+      "home_team": "CAR",
+      "away_team": "DET",
+      "gameday": "2026-10-04",
+      "gametime": "20:20",
+      "weekday": "Sunday",
+      "home_win_probability": 0.493,
+      "away_win_probability": 0.507,
+      "favored": "DET",
+      "raw_strength_score": -0.03,
+      "feature_breakdown": {
+        "rank_coefficient_home": -1.0,
+        "third_down_coefficient_home": 1.0,
+        "ypp_off_coefficient_home": -1.0,
+        "ypp_def_coefficient_home": -1.0,
+        "turnover_coefficient_home": -1.0,
+        "road_trip_coefficient_home": 0.5,
+        "schedule_milestones_coefficient_home": 1.0
+      },
+      "power_rating_implied_spread": -3.33,
+      "neutral_site": false,
+      "qb_candidates": [
+        {
+          "team": "CAR",
+          "depth_chart_starter": "Bryce Young",
+          "normal_starter_used_for_elite_check": "Bryce Young",
+          "is_elite_starter": false,
+          "backup_starting": false,
+          "rookie_starting": false,
+          "qb_value": 0.0,
+          "notes": [],
+          "depth_chart_conflict": null
+        },
+        {
+          "team": "DET",
+          "depth_chart_starter": "Jared Goff",
+          "normal_starter_used_for_elite_check": "Jared Goff",
+          "is_elite_starter": true,
+          "backup_starting": false,
+          "rookie_starting": false,
+          "qb_value": 0.0,
+          "notes": [],
+          "depth_chart_conflict": null
+        }
+      ],
+      "home_injuries": [],
+      "away_injuries": [],
+      "situational_note": "",
+      "player_impact_entries": {
+        "home": [],
+        "away": []
+      },
+      "spread_current": "+3.0 -110 (8/31)",
+      "spread_current_raw": 3.0,
+      "spread_history": [],
+      "total_current": "O/U 47.5 (-110.0) (8/31)",
+      "total_history": [],
+      "home_score": null,
+      "away_score": null,
+      "is_final": false
+    },
+    {
+      "game_id": "2026_04_ATL_NO",
+      "home_team": "NO",
+      "away_team": "ATL",
+      "gameday": "2026-10-05",
+      "gametime": "20:15",
+      "weekday": "Monday",
+      "home_win_probability": 0.647,
+      "away_win_probability": 0.353,
+      "favored": "NO",
+      "raw_strength_score": 0.6,
+      "feature_breakdown": {
+        "third_down_coefficient_home": 1.0,
+        "ypp_off_coefficient_home": -1.0,
+        "ypp_def_coefficient_home": 1.0,
+        "turnover_coefficient_home": -1.0,
+        "road_trip_coefficient_home": 1.0,
+        "streak_coefficient_home": -0.5,
+        "qb_coefficient_home": 1.0
+      },
+      "power_rating_implied_spread": 1.67,
+      "neutral_site": false,
+      "qb_candidates": [
+        {
+          "team": "NO",
+          "depth_chart_starter": "Tyler Shough",
+          "normal_starter_used_for_elite_check": "Tyler Shough",
+          "is_elite_starter": false,
           "backup_starting": false,
           "rookie_starting": false,
           "qb_value": 0.0,
@@ -63,1067 +992,11 @@
         "home": [],
         "away": []
       },
-      "spread_current": "-6.5 -122 (9/21)",
-      "spread_current_raw": -6.5,
-      "spread_history": [
-        "-6.5 -115 (9/20)",
-        "-5.5 -120 (9/15)",
-        "-7.5 -110 (8/31)"
-      ],
-      "total_current": "O/U 44.5 (-105.0) (9/21)",
-      "total_history": [
-        "O/U 44.5 (-110.0) (9/21)",
-        "O/U 44.5 (-114.0) (9/20)",
-        "O/U 45.5 (-115.0) (9/15)",
-        "O/U 46.5 (-110.0) (8/31)"
-      ],
-      "home_score": null,
-      "away_score": null,
-      "is_final": false
-    },
-    {
-      "game_id": "2026_03_LAC_BUF",
-      "home_team": "BUF",
-      "away_team": "LAC",
-      "gameday": "2026-09-27",
-      "gametime": "13:00",
-      "weekday": "Sunday",
-      "home_win_probability": 0.754,
-      "away_win_probability": 0.246,
-      "favored": "BUF",
-      "raw_strength_score": 1.12,
-      "feature_breakdown": {
-        "rank_coefficient_home": 1.0,
-        "third_down_coefficient_home": 1.0,
-        "ypp_off_coefficient_home": 1.0,
-        "ypp_def_coefficient_home": -1.0,
-        "rest_coefficient_home": 0.5,
-        "road_trip_coefficient_home": 0.5,
-        "streak_coefficient_home": -1.0
-      },
-      "power_rating_implied_spread": 2.92,
-      "neutral_site": false,
-      "qb_candidates": [
-        {
-          "team": "BUF",
-          "depth_chart_starter": "Josh Allen",
-          "normal_starter_used_for_elite_check": "Josh Allen",
-          "is_elite_starter": true,
-          "backup_starting": false,
-          "rookie_starting": false,
-          "qb_value": 0.0,
-          "notes": [],
-          "depth_chart_conflict": null
-        },
-        {
-          "team": "LAC",
-          "depth_chart_starter": "Justin Herbert",
-          "normal_starter_used_for_elite_check": "Justin Herbert",
-          "is_elite_starter": false,
-          "backup_starting": false,
-          "rookie_starting": false,
-          "qb_value": 0.0,
-          "notes": [],
-          "depth_chart_conflict": null
-        }
-      ],
-      "home_injuries": [],
-      "away_injuries": [],
-      "situational_note": "",
-      "player_impact_entries": {
-        "home": [],
-        "away": []
-      },
-      "spread_current": "-7.0 -112 (9/21)",
-      "spread_current_raw": -7.0,
-      "spread_history": [
-        "-7.0 -115 (9/20)",
-        "-4.5 -105 (9/17)",
-        "-3.5 -120 (9/15)",
-        "-3.0 -110 (8/31)"
-      ],
-      "total_current": "O/U 50.5 (-105.0) (9/20)",
-      "total_history": [
-        "O/U 50.5 (-115.0) (9/15)",
-        "O/U 48.5 (-110.0) (8/31)"
-      ],
-      "home_score": null,
-      "away_score": null,
-      "is_final": false
-    },
-    {
-      "game_id": "2026_03_CAR_CLE",
-      "home_team": "CLE",
-      "away_team": "CAR",
-      "gameday": "2026-09-27",
-      "gametime": "13:00",
-      "weekday": "Sunday",
-      "home_win_probability": 0.469,
-      "away_win_probability": 0.531,
-      "favored": "CAR",
-      "raw_strength_score": -0.13,
-      "feature_breakdown": {
-        "rank_coefficient_home": -1.0,
-        "third_down_coefficient_home": -1.0,
-        "ypp_off_coefficient_home": -1.0,
-        "ypp_def_coefficient_home": 1.0,
-        "road_trip_coefficient_home": -0.5,
-        "coaching_coefficient_home": 1.0,
-        "schedule_milestones_coefficient_home": 0.5
-      },
-      "power_rating_implied_spread": -0.58,
-      "neutral_site": false,
-      "qb_candidates": [
-        {
-          "team": "CLE",
-          "depth_chart_starter": "Deshaun Watson",
-          "normal_starter_used_for_elite_check": "Deshaun Watson",
-          "is_elite_starter": false,
-          "backup_starting": false,
-          "rookie_starting": false,
-          "qb_value": 0.0,
-          "notes": [],
-          "depth_chart_conflict": null
-        },
-        {
-          "team": "CAR",
-          "depth_chart_starter": "Bryce Young",
-          "normal_starter_used_for_elite_check": "Bryce Young",
-          "is_elite_starter": false,
-          "backup_starting": false,
-          "rookie_starting": false,
-          "qb_value": 0.0,
-          "notes": [],
-          "depth_chart_conflict": null
-        }
-      ],
-      "home_injuries": [],
-      "away_injuries": [],
-      "situational_note": "",
-      "player_impact_entries": {
-        "home": [],
-        "away": []
-      },
-      "spread_current": "+2.5 -105 (9/20)",
-      "spread_current_raw": 2.5,
-      "spread_history": [
-        "+3.0 -112 (9/15)",
-        "+1.5 -110 (8/31)"
-      ],
-      "total_current": "O/U 41.5 (-115.0) (9/21)",
-      "total_history": [
-        "O/U 40.5 (-118.0) (9/21)",
-        "O/U 40.5 (-114.0) (9/21)",
-        "O/U 40.5 (-110.0) (9/20)",
-        "O/U 39.5 (-105.0) (9/15)",
-        "O/U 39.5 (-110.0) (8/31)"
-      ],
-      "home_score": null,
-      "away_score": null,
-      "is_final": false
-    },
-    {
-      "game_id": "2026_03_NYJ_DET",
-      "home_team": "DET",
-      "away_team": "NYJ",
-      "gameday": "2026-09-27",
-      "gametime": "13:00",
-      "weekday": "Sunday",
-      "home_win_probability": 0.742,
-      "away_win_probability": 0.258,
-      "favored": "DET",
-      "raw_strength_score": 1.06,
-      "feature_breakdown": {
-        "rank_coefficient_home": 1.0,
-        "third_down_coefficient_home": 1.0,
-        "ypp_off_coefficient_home": 1.0,
-        "ypp_def_coefficient_home": -1.0,
-        "turnover_coefficient_home": 1.0,
-        "rest_coefficient_home": 0.5,
-        "road_trip_coefficient_home": -0.5
-      },
-      "power_rating_implied_spread": 9.17,
-      "neutral_site": false,
-      "qb_candidates": [
-        {
-          "team": "DET",
-          "depth_chart_starter": "Jared Goff",
-          "normal_starter_used_for_elite_check": "Jared Goff",
-          "is_elite_starter": true,
-          "backup_starting": false,
-          "rookie_starting": false,
-          "qb_value": 0.0,
-          "notes": [],
-          "depth_chart_conflict": null
-        },
-        {
-          "team": "NYJ",
-          "depth_chart_starter": "Geno Smith",
-          "normal_starter_used_for_elite_check": "Geno Smith",
-          "is_elite_starter": false,
-          "backup_starting": false,
-          "rookie_starting": false,
-          "qb_value": 0.0,
-          "notes": [],
-          "depth_chart_conflict": null
-        }
-      ],
-      "home_injuries": [],
-      "away_injuries": [],
-      "situational_note": "",
-      "player_impact_entries": {
-        "home": [],
-        "away": []
-      },
-      "spread_current": "-6.5 -120 (9/20)",
-      "spread_current_raw": -6.5,
-      "spread_history": [
-        "-7.5 -102 (9/16)",
-        "-7.5 -110 (9/15)",
-        "-9.5 -110 (8/31)"
-      ],
-      "total_current": "O/U 47.5 (-115.0) (9/20)",
-      "total_history": [
-        "O/U 47.5 (-105.0) (9/15)",
-        "O/U 45.5 (-110.0) (8/31)"
-      ],
-      "home_score": null,
-      "away_score": null,
-      "is_final": false
-    },
-    {
-      "game_id": "2026_03_HOU_IND",
-      "home_team": "IND",
-      "away_team": "HOU",
-      "gameday": "2026-09-27",
-      "gametime": "13:00",
-      "weekday": "Sunday",
-      "home_win_probability": 0.601,
-      "away_win_probability": 0.399,
-      "favored": "IND",
-      "raw_strength_score": 0.41,
-      "feature_breakdown": {
-        "third_down_coefficient_home": 1.0,
-        "ypp_off_coefficient_home": 1.0,
-        "ypp_def_coefficient_home": -1.0,
-        "turnover_coefficient_home": -1.0,
-        "road_trip_coefficient_home": -0.5
-      },
-      "power_rating_implied_spread": -2.33,
-      "neutral_site": false,
-      "qb_candidates": [
-        {
-          "team": "IND",
-          "depth_chart_starter": "Daniel Jones",
-          "normal_starter_used_for_elite_check": "Daniel Jones",
-          "is_elite_starter": true,
-          "backup_starting": false,
-          "rookie_starting": false,
-          "qb_value": 0.0,
-          "notes": [],
-          "depth_chart_conflict": null
-        },
-        {
-          "team": "HOU",
-          "depth_chart_starter": "C.J. Stroud",
-          "normal_starter_used_for_elite_check": "C.J. Stroud",
-          "is_elite_starter": false,
-          "backup_starting": false,
-          "rookie_starting": false,
-          "qb_value": 0.0,
-          "notes": [],
-          "depth_chart_conflict": null
-        }
-      ],
-      "home_injuries": [],
-      "away_injuries": [],
-      "situational_note": "",
-      "player_impact_entries": {
-        "home": [],
-        "away": []
-      },
-      "spread_current": "+2.5 +100 (9/21)",
-      "spread_current_raw": 2.5,
-      "spread_history": [
-        "+2.5 -104 (9/21)",
-        "+1.5 -110 (9/20)",
-        "+2.5 -105 (9/15)",
-        "+1.5 -110 (8/31)"
-      ],
-      "total_current": "O/U 44.5 (-105.0) (9/21)",
-      "total_history": [
-        "O/U 44.5 (-115.0) (9/21)",
-        "O/U 43.5 (-115.0) (9/20)",
-        "O/U 44.5 (-110.0) (9/15)",
-        "O/U 45.5 (-110.0) (8/31)"
-      ],
-      "home_score": null,
-      "away_score": null,
-      "is_final": false
-    },
-    {
-      "game_id": "2026_03_NE_JAX",
-      "home_team": "JAX",
-      "away_team": "NE",
-      "gameday": "2026-09-27",
-      "gametime": "13:00",
-      "weekday": "Sunday",
-      "home_win_probability": 0.537,
-      "away_win_probability": 0.463,
-      "favored": "JAX",
-      "raw_strength_score": 0.15,
-      "feature_breakdown": {
-        "rank_coefficient_home": -0.5,
-        "third_down_coefficient_home": 1.0,
-        "ypp_off_coefficient_home": -1.0,
-        "ypp_def_coefficient_home": -1.0
-      },
-      "power_rating_implied_spread": 0.42,
-      "neutral_site": false,
-      "qb_candidates": [
-        {
-          "team": "JAX",
-          "depth_chart_starter": "Trevor Lawrence",
-          "normal_starter_used_for_elite_check": "Trevor Lawrence",
-          "is_elite_starter": false,
-          "backup_starting": false,
-          "rookie_starting": false,
-          "qb_value": 0.0,
-          "notes": [],
-          "depth_chart_conflict": null
-        },
-        {
-          "team": "NE",
-          "depth_chart_starter": "Drake Maye",
-          "normal_starter_used_for_elite_check": "Drake Maye",
-          "is_elite_starter": true,
-          "backup_starting": false,
-          "rookie_starting": false,
-          "qb_value": 0.0,
-          "notes": [],
-          "depth_chart_conflict": null
-        }
-      ],
-      "home_injuries": [],
-      "away_injuries": [],
-      "situational_note": "",
-      "player_impact_entries": {
-        "home": [],
-        "away": []
-      },
-      "spread_current": "-2.5 -122 (9/21)",
+      "spread_current": "-2.5 -110 (8/31)",
       "spread_current_raw": -2.5,
-      "spread_history": [
-        "-2.5 -115 (9/20)",
-        "-1.5 -115 (9/15)",
-        "-1.5 -105 (8/31)"
-      ],
-      "total_current": "O/U 44.5 (-118.0) (9/20)",
-      "total_history": [
-        "O/U 46.5 (-105.0) (9/15)",
-        "O/U 45.5 (-110.0) (8/31)"
-      ],
-      "home_score": null,
-      "away_score": null,
-      "is_final": false
-    },
-    {
-      "game_id": "2026_03_KC_MIA",
-      "home_team": "MIA",
-      "away_team": "KC",
-      "gameday": "2026-09-27",
-      "gametime": "13:00",
-      "weekday": "Sunday",
-      "home_win_probability": 0.433,
-      "away_win_probability": 0.567,
-      "favored": "KC",
-      "raw_strength_score": -0.27,
-      "feature_breakdown": {
-        "third_down_coefficient_home": -1.0,
-        "ypp_off_coefficient_home": -1.0,
-        "ypp_def_coefficient_home": -1.0,
-        "road_trip_coefficient_home": 0.5,
-        "streak_coefficient_home": 1.0,
-        "coaching_coefficient_home": 1.0,
-        "schedule_milestones_coefficient_home": 0.5
-      },
-      "power_rating_implied_spread": -8.25,
-      "neutral_site": false,
-      "qb_candidates": [
-        {
-          "team": "MIA",
-          "depth_chart_starter": "Malik Willis",
-          "normal_starter_used_for_elite_check": "Malik Willis",
-          "is_elite_starter": false,
-          "backup_starting": false,
-          "rookie_starting": false,
-          "qb_value": 0.0,
-          "notes": [],
-          "depth_chart_conflict": null
-        },
-        {
-          "team": "KC",
-          "depth_chart_starter": "Patrick Mahomes",
-          "normal_starter_used_for_elite_check": "Patrick Mahomes",
-          "is_elite_starter": true,
-          "backup_starting": false,
-          "rookie_starting": false,
-          "qb_value": 0.0,
-          "notes": [],
-          "depth_chart_conflict": null
-        }
-      ],
-      "home_injuries": [],
-      "away_injuries": [],
-      "situational_note": "",
-      "player_impact_entries": {
-        "home": [],
-        "away": []
-      },
-      "spread_current": "+10.5 -110 (9/21)",
-      "spread_current_raw": 10.5,
-      "spread_history": [
-        "+10.5 -115 (9/20)",
-        "+8.5 -105 (9/15)",
-        "+7.5 -110 (8/31)"
-      ],
-      "total_current": "O/U 45.5 (-115.0) (9/20)",
-      "total_history": [
-        "O/U 44.5 (-110.0) (8/31)"
-      ],
-      "home_score": null,
-      "away_score": null,
-      "is_final": false
-    },
-    {
-      "game_id": "2026_03_TEN_NYG",
-      "home_team": "NYG",
-      "away_team": "TEN",
-      "gameday": "2026-09-27",
-      "gametime": "13:00",
-      "weekday": "Sunday",
-      "home_win_probability": 0.723,
-      "away_win_probability": 0.277,
-      "favored": "NYG",
-      "raw_strength_score": 0.96,
-      "feature_breakdown": {
-        "rank_coefficient_home": 1.0,
-        "third_down_coefficient_home": 1.0,
-        "ypp_off_coefficient_home": 1.0,
-        "ypp_def_coefficient_home": 1.0,
-        "rest_coefficient_home": -0.5,
-        "road_trip_coefficient_home": 0.5,
-        "streak_coefficient_home": -0.5
-      },
-      "power_rating_implied_spread": 3.67,
-      "neutral_site": false,
-      "qb_candidates": [
-        {
-          "team": "NYG",
-          "depth_chart_starter": "Jaxson Dart",
-          "normal_starter_used_for_elite_check": "Jaxson Dart",
-          "is_elite_starter": false,
-          "backup_starting": false,
-          "rookie_starting": false,
-          "qb_value": 0.0,
-          "notes": [],
-          "depth_chart_conflict": null
-        },
-        {
-          "team": "TEN",
-          "depth_chart_starter": "Cam Ward",
-          "normal_starter_used_for_elite_check": "Cam Ward",
-          "is_elite_starter": false,
-          "backup_starting": false,
-          "rookie_starting": false,
-          "qb_value": 0.0,
-          "notes": [],
-          "depth_chart_conflict": null
-        }
-      ],
-      "home_injuries": [],
-      "away_injuries": [],
-      "situational_note": "",
-      "player_impact_entries": {
-        "home": [],
-        "away": []
-      },
-      "spread_current": "-6.5 -104 (9/20)",
-      "spread_current_raw": -6.5,
-      "spread_history": [
-        "-5.5 -120 (9/15)",
-        "-3.0 -115 (8/31)"
-      ],
-      "total_current": "O/U 42.5 (-115.0) (9/20)",
-      "total_history": [
-        "O/U 42.5 (-110.0) (9/15)",
-        "O/U 44.5 (-110.0) (8/31)"
-      ],
-      "home_score": null,
-      "away_score": null,
-      "is_final": false
-    },
-    {
-      "game_id": "2026_03_CIN_PIT",
-      "home_team": "PIT",
-      "away_team": "CIN",
-      "gameday": "2026-09-27",
-      "gametime": "13:00",
-      "weekday": "Sunday",
-      "home_win_probability": 0.527,
-      "away_win_probability": 0.473,
-      "favored": "PIT",
-      "raw_strength_score": 0.11,
-      "feature_breakdown": {
-        "third_down_coefficient_home": -1.0,
-        "ypp_off_coefficient_home": -1.0,
-        "ypp_def_coefficient_home": 1.0,
-        "turnover_coefficient_home": 1.0,
-        "road_trip_coefficient_home": -1.5,
-        "streak_coefficient_home": 0.5,
-        "coaching_coefficient_home": 1.0
-      },
-      "power_rating_implied_spread": 0.75,
-      "neutral_site": false,
-      "qb_candidates": [
-        {
-          "team": "PIT",
-          "depth_chart_starter": "Aaron Rodgers",
-          "normal_starter_used_for_elite_check": "Aaron Rodgers",
-          "is_elite_starter": false,
-          "backup_starting": false,
-          "rookie_starting": false,
-          "qb_value": 0.0,
-          "notes": [],
-          "depth_chart_conflict": null
-        },
-        {
-          "team": "CIN",
-          "depth_chart_starter": "Joe Burrow",
-          "normal_starter_used_for_elite_check": "Joe Burrow",
-          "is_elite_starter": true,
-          "backup_starting": false,
-          "rookie_starting": false,
-          "qb_value": 0.0,
-          "notes": [],
-          "depth_chart_conflict": null
-        }
-      ],
-      "home_injuries": [],
-      "away_injuries": [],
-      "situational_note": "",
-      "player_impact_entries": {
-        "home": [],
-        "away": []
-      },
-      "spread_current": "+3.5 -115 (9/21)",
-      "spread_current_raw": 3.5,
-      "spread_history": [
-        "+3.5 -120 (9/20)",
-        "+2.5 -114 (9/15)",
-        "+1.5 -110 (8/31)"
-      ],
-      "total_current": "O/U 42.5 (-110.0) (9/21)",
-      "total_history": [
-        "O/U 43.5 (-118.0) (9/20)",
-        "O/U 46.5 (-105.0) (9/15)",
-        "O/U 46.5 (-118.0) (8/31)"
-      ],
-      "home_score": null,
-      "away_score": null,
-      "is_final": false
-    },
-    {
-      "game_id": "2026_03_SEA_WAS",
-      "home_team": "WAS",
-      "away_team": "SEA",
-      "gameday": "2026-09-27",
-      "gametime": "13:00",
-      "weekday": "Sunday",
-      "home_win_probability": 0.591,
-      "away_win_probability": 0.409,
-      "favored": "WAS",
-      "raw_strength_score": 0.37,
-      "feature_breakdown": {
-        "rank_coefficient_home": -1.0,
-        "third_down_coefficient_home": 1.0,
-        "ypp_off_coefficient_home": -1.0,
-        "ypp_def_coefficient_home": -1.0,
-        "turnover_coefficient_home": -1.0,
-        "road_trip_coefficient_home": -0.5,
-        "streak_coefficient_home": 1.0,
-        "qb_coefficient_home": 2.0,
-        "schedule_milestones_coefficient_home": 0.5
-      },
-      "power_rating_implied_spread": -3.58,
-      "neutral_site": false,
-      "qb_candidates": [
-        {
-          "team": "WAS",
-          "depth_chart_starter": "Jayden Daniels",
-          "normal_starter_used_for_elite_check": "Jayden Daniels",
-          "is_elite_starter": false,
-          "backup_starting": false,
-          "rookie_starting": false,
-          "qb_value": 0.0,
-          "notes": [],
-          "depth_chart_conflict": null
-        },
-        {
-          "team": "SEA",
-          "depth_chart_starter": "Sam Darnold",
-          "normal_starter_used_for_elite_check": "Sam Darnold",
-          "is_elite_starter": true,
-          "backup_starting": true,
-          "rookie_starting": false,
-          "qb_value": -2.0,
-          "notes": [
-            "Backup QB starting",
-            "Elite starter (Sam Darnold) out"
-          ],
-          "depth_chart_conflict": null
-        }
-      ],
-      "home_injuries": [],
-      "away_injuries": [],
-      "situational_note": "",
-      "player_impact_entries": {
-        "home": [],
-        "away": []
-      },
-      "spread_current": "+6.5 -110 (9/21)",
-      "spread_current_raw": 6.5,
-      "spread_history": [
-        "+6.5 -114 (9/21)",
-        "+6.5 -118 (9/20)",
-        "+1.5 -110 (9/15)",
-        "+3.5 -110 (8/31)"
-      ],
-      "total_current": "O/U 40.5 (-105.0) (9/21)",
-      "total_history": [
-        "O/U 40.5 (-110.0) (9/21)",
-        "O/U 41.5 (-110.0) (9/20)",
-        "O/U 42.5 (-105.0) (9/15)",
-        "O/U 46.5 (-110.0) (8/31)"
-      ],
-      "home_score": null,
-      "away_score": null,
-      "is_final": false
-    },
-    {
-      "game_id": "2026_03_ARI_SF",
-      "home_team": "SF",
-      "away_team": "ARI",
-      "gameday": "2026-09-27",
-      "gametime": "16:05",
-      "weekday": "Sunday",
-      "home_win_probability": 0.731,
-      "away_win_probability": 0.269,
-      "favored": "SF",
-      "raw_strength_score": 1.0,
-      "feature_breakdown": {
-        "rank_coefficient_home": 1.0,
-        "third_down_coefficient_home": 1.0,
-        "ypp_off_coefficient_home": 1.0,
-        "ypp_def_coefficient_home": 1.0,
-        "road_trip_coefficient_home": 0.5,
-        "streak_coefficient_home": -0.5
-      },
-      "power_rating_implied_spread": 10.42,
-      "neutral_site": false,
-      "qb_candidates": [
-        {
-          "team": "SF",
-          "depth_chart_starter": "Brock Purdy",
-          "normal_starter_used_for_elite_check": "Brock Purdy",
-          "is_elite_starter": true,
-          "backup_starting": false,
-          "rookie_starting": false,
-          "qb_value": 0.0,
-          "notes": [],
-          "depth_chart_conflict": null
-        },
-        {
-          "team": "ARI",
-          "depth_chart_starter": "Jacoby Brissett",
-          "normal_starter_used_for_elite_check": "Jacoby Brissett",
-          "is_elite_starter": false,
-          "backup_starting": false,
-          "rookie_starting": false,
-          "qb_value": 0.0,
-          "notes": [],
-          "depth_chart_conflict": null
-        }
-      ],
-      "home_injuries": [],
-      "away_injuries": [],
-      "situational_note": "",
-      "player_impact_entries": {
-        "home": [],
-        "away": []
-      },
-      "spread_current": "-8.5 -105 (9/21)",
-      "spread_current_raw": -8.5,
-      "spread_history": [
-        "-8.5 -110 (9/20)",
-        "-8.5 -115 (9/15)",
-        "-11.5 -110 (8/31)"
-      ],
-      "total_current": "O/U 47.5 (-115.0) (9/21)",
-      "total_history": [
-        "O/U 47.5 (-105.0) (9/20)",
-        "O/U 48.5 (-110.0) (9/15)",
-        "O/U 46.5 (-110.0) (8/31)"
-      ],
-      "home_score": null,
-      "away_score": null,
-      "is_final": false
-    },
-    {
-      "game_id": "2026_03_MIN_TB",
-      "home_team": "TB",
-      "away_team": "MIN",
-      "gameday": "2026-09-27",
-      "gametime": "16:05",
-      "weekday": "Sunday",
-      "home_win_probability": 0.708,
-      "away_win_probability": 0.292,
-      "favored": "TB",
-      "raw_strength_score": 0.88,
-      "feature_breakdown": {
-        "third_down_coefficient_home": 1.0,
-        "ypp_off_coefficient_home": 1.0,
-        "ypp_def_coefficient_home": -1.0,
-        "turnover_coefficient_home": 1.0,
-        "road_trip_coefficient_home": -1.0,
-        "streak_coefficient_home": 1.0,
-        "qb_coefficient_home": 1.0
-      },
-      "power_rating_implied_spread": 0.67,
-      "neutral_site": false,
-      "qb_candidates": [
-        {
-          "team": "TB",
-          "depth_chart_starter": "Baker Mayfield",
-          "normal_starter_used_for_elite_check": "Baker Mayfield",
-          "is_elite_starter": false,
-          "backup_starting": false,
-          "rookie_starting": false,
-          "qb_value": 0.0,
-          "notes": [],
-          "depth_chart_conflict": null
-        },
-        {
-          "team": "MIN",
-          "depth_chart_starter": "Kyler Murray",
-          "normal_starter_used_for_elite_check": "Kyler Murray",
-          "is_elite_starter": false,
-          "backup_starting": true,
-          "rookie_starting": false,
-          "qb_value": -1.0,
-          "notes": [
-            "Backup QB starting"
-          ],
-          "depth_chart_conflict": null
-        }
-      ],
-      "home_injuries": [],
-      "away_injuries": [],
-      "situational_note": "",
-      "player_impact_entries": {
-        "home": [],
-        "away": []
-      },
-      "spread_current": "+2.5 -110 (9/21)",
-      "spread_current_raw": 2.5,
-      "spread_history": [
-        "+2.5 -115 (9/20)",
-        "-1.5 -105 (9/15)",
-        "-1.5 -110 (8/31)"
-      ],
-      "total_current": "O/U 43.5 (-110.0) (9/21)",
-      "total_history": [
-        "O/U 43.5 (-105.0) (9/21)",
-        "O/U 43.5 (-110.0) (9/21)",
-        "O/U 44.5 (-105.0) (9/20)",
-        "O/U 46.5 (-110.0) (9/15)",
-        "O/U 44.5 (-110.0) (8/31)"
-      ],
-      "home_score": null,
-      "away_score": null,
-      "is_final": false
-    },
-    {
-      "game_id": "2026_03_BAL_DAL",
-      "home_team": "DAL",
-      "away_team": "BAL",
-      "gameday": "2026-09-27",
-      "gametime": "16:25",
-      "weekday": "Sunday",
-      "home_win_probability": 0.552,
-      "away_win_probability": 0.448,
-      "favored": "DAL",
-      "raw_strength_score": 0.21,
-      "feature_breakdown": {
-        "third_down_coefficient_home": 1.0,
-        "ypp_off_coefficient_home": -1.0,
-        "ypp_def_coefficient_home": -1.0,
-        "road_trip_coefficient_home": 0.5,
-        "coaching_coefficient_home": -1.0
-      },
-      "power_rating_implied_spread": -2.55,
-      "neutral_site": true,
-      "qb_candidates": [
-        {
-          "team": "DAL",
-          "depth_chart_starter": "Dak Prescott",
-          "normal_starter_used_for_elite_check": "Dak Prescott",
-          "is_elite_starter": true,
-          "backup_starting": false,
-          "rookie_starting": false,
-          "qb_value": 0.0,
-          "notes": [],
-          "depth_chart_conflict": null
-        },
-        {
-          "team": "BAL",
-          "depth_chart_starter": "Lamar Jackson",
-          "normal_starter_used_for_elite_check": "Lamar Jackson",
-          "is_elite_starter": false,
-          "backup_starting": false,
-          "rookie_starting": false,
-          "qb_value": 0.0,
-          "notes": [],
-          "depth_chart_conflict": null
-        }
-      ],
-      "home_injuries": [],
-      "away_injuries": [],
-      "situational_note": "",
-      "player_impact_entries": {
-        "home": [],
-        "away": []
-      },
-      "spread_current": "+3.0 -118 (9/20)",
-      "spread_current_raw": 3.0,
-      "spread_history": [
-        "+3.5 -118 (9/16)",
-        "+2.5 -110 (8/31)"
-      ],
-      "total_current": "O/U 52.5 (-105.0) (9/21)",
-      "total_history": [
-        "O/U 51.5 (-118.0) (9/20)",
-        "O/U 52.5 (-105.0) (9/16)",
-        "O/U 51.5 (-110.0) (8/31)"
-      ],
-      "home_score": null,
-      "away_score": null,
-      "is_final": false
-    },
-    {
-      "game_id": "2026_03_LV_NO",
-      "home_team": "NO",
-      "away_team": "LV",
-      "gameday": "2026-09-27",
-      "gametime": "16:25",
-      "weekday": "Sunday",
-      "home_win_probability": 0.685,
-      "away_win_probability": 0.315,
-      "favored": "NO",
-      "raw_strength_score": 0.78,
-      "feature_breakdown": {
-        "rank_coefficient_home": 1.0,
-        "third_down_coefficient_home": 1.0,
-        "ypp_off_coefficient_home": 1.0,
-        "ypp_def_coefficient_home": 1.0,
-        "road_trip_coefficient_home": -0.5,
-        "streak_coefficient_home": 0.5,
-        "coaching_coefficient_home": -1.0,
-        "schedule_milestones_coefficient_home": 0.5
-      },
-      "power_rating_implied_spread": 2.67,
-      "neutral_site": false,
-      "qb_candidates": [
-        {
-          "team": "NO",
-          "depth_chart_starter": "Tyler Shough",
-          "normal_starter_used_for_elite_check": "Tyler Shough",
-          "is_elite_starter": false,
-          "backup_starting": false,
-          "rookie_starting": false,
-          "qb_value": 0.0,
-          "notes": [],
-          "depth_chart_conflict": null
-        },
-        {
-          "team": "LV",
-          "depth_chart_starter": "Kirk Cousins",
-          "normal_starter_used_for_elite_check": "Kirk Cousins",
-          "is_elite_starter": false,
-          "backup_starting": false,
-          "rookie_starting": false,
-          "qb_value": 0.0,
-          "notes": [],
-          "depth_chart_conflict": null
-        }
-      ],
-      "home_injuries": [],
-      "away_injuries": [],
-      "situational_note": "",
-      "player_impact_entries": {
-        "home": [],
-        "away": []
-      },
-      "spread_current": "-3.0 -115 (9/16)",
-      "spread_current_raw": -3.0,
-      "spread_history": [
-        "-3.0 -110 (9/15)",
-        "-3.5 -110 (8/31)"
-      ],
-      "total_current": "O/U 43.5 (-118.0) (9/20)",
-      "total_history": [
-        "O/U 44.5 (-115.0) (9/15)",
-        "O/U 42.5 (-110.0) (8/31)"
-      ],
-      "home_score": null,
-      "away_score": null,
-      "is_final": false
-    },
-    {
-      "game_id": "2026_03_LA_DEN",
-      "home_team": "DEN",
-      "away_team": "LA",
-      "gameday": "2026-09-27",
-      "gametime": "20:20",
-      "weekday": "Sunday",
-      "home_win_probability": 0.486,
-      "away_win_probability": 0.514,
-      "favored": "LA",
-      "raw_strength_score": -0.06,
-      "feature_breakdown": {
-        "rank_coefficient_home": -1.0,
-        "third_down_coefficient_home": 1.0,
-        "ypp_off_coefficient_home": -1.0,
-        "ypp_def_coefficient_home": 1.0,
-        "turnover_coefficient_home": -1.0,
-        "rest_coefficient_home": 0.5
-      },
-      "power_rating_implied_spread": -1.25,
-      "neutral_site": false,
-      "qb_candidates": [
-        {
-          "team": "DEN",
-          "depth_chart_starter": "Bo Nix",
-          "normal_starter_used_for_elite_check": "Bo Nix",
-          "is_elite_starter": false,
-          "backup_starting": false,
-          "rookie_starting": false,
-          "qb_value": 0.0,
-          "notes": [],
-          "depth_chart_conflict": null
-        },
-        {
-          "team": "LA",
-          "depth_chart_starter": "Matthew Stafford",
-          "normal_starter_used_for_elite_check": "Matthew Stafford",
-          "is_elite_starter": true,
-          "backup_starting": false,
-          "rookie_starting": false,
-          "qb_value": 0.0,
-          "notes": [],
-          "depth_chart_conflict": null
-        }
-      ],
-      "home_injuries": [],
-      "away_injuries": [],
-      "situational_note": "",
-      "player_impact_entries": {
-        "home": [],
-        "away": []
-      },
-      "spread_current": "+2.5 -110 (9/20)",
-      "spread_current_raw": 2.5,
-      "spread_history": [
-        "+2.5 -112 (9/16)",
-        "+1.5 -110 (9/15)",
-        "+3.0 -110 (8/31)"
-      ],
-      "total_current": "O/U 44.5 (-118.0) (9/20)",
-      "total_history": [
-        "O/U 46.5 (-105.0) (9/15)",
-        "O/U 45.5 (-110.0) (8/31)"
-      ],
-      "home_score": null,
-      "away_score": null,
-      "is_final": false
-    },
-    {
-      "game_id": "2026_03_PHI_CHI",
-      "home_team": "CHI",
-      "away_team": "PHI",
-      "gameday": "2026-09-28",
-      "gametime": "20:15",
-      "weekday": "Monday",
-      "home_win_probability": 0.668,
-      "away_win_probability": 0.332,
-      "favored": "CHI",
-      "raw_strength_score": 0.7,
-      "feature_breakdown": {
-        "rank_coefficient_home": 1.0,
-        "third_down_coefficient_home": 1.0,
-        "ypp_off_coefficient_home": 1.0,
-        "ypp_def_coefficient_home": -1.0,
-        "road_trip_coefficient_home": -1.0,
-        "streak_coefficient_home": 0.5
-      },
-      "power_rating_implied_spread": 0.42,
-      "neutral_site": false,
-      "qb_candidates": [
-        {
-          "team": "CHI",
-          "depth_chart_starter": "Caleb Williams",
-          "normal_starter_used_for_elite_check": "Caleb Williams",
-          "is_elite_starter": false,
-          "backup_starting": false,
-          "rookie_starting": false,
-          "qb_value": 0.0,
-          "notes": [],
-          "depth_chart_conflict": null
-        },
-        {
-          "team": "PHI",
-          "depth_chart_starter": "Jalen Hurts",
-          "normal_starter_used_for_elite_check": "Jalen Hurts",
-          "is_elite_starter": false,
-          "backup_starting": false,
-          "rookie_starting": false,
-          "qb_value": 0.0,
-          "notes": [],
-          "depth_chart_conflict": null
-        }
-      ],
-      "home_injuries": [],
-      "away_injuries": [],
-      "situational_note": "",
-      "player_impact_entries": {
-        "home": [],
-        "away": []
-      },
-      "spread_current": "+3.5 -115 (9/21)",
-      "spread_current_raw": 3.5,
-      "spread_history": [
-        "+3.5 -120 (9/21)",
-        "+3.5 -108 (9/21)",
-        "+3.5 -104 (9/20)",
-        "-1.5 -104 (9/15)",
-        "-1.5 -105 (8/31)"
-      ],
-      "total_current": "O/U 43.5 (-115.0) (9/21)",
-      "total_history": [
-        "O/U 43.5 (-110.0) (9/20)",
-        "O/U 48.5 (-102.0) (9/15)",
-        "O/U 46.5 (-110.0) (8/31)"
-      ],
+      "spread_history": [],
+      "total_current": "O/U 45.5 (-115.0) (8/31)",
+      "total_history": [],
       "home_score": null,
       "away_score": null,
       "is_final": false

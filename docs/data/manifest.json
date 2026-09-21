@@ -14,10 +14,15 @@
       "season": 2026,
       "week": 3,
       "file": "2026_3.json"
+    },
+    {
+      "season": 2026,
+      "week": 4,
+      "file": "2026_4.json"
     }
   ],
   "latest": {
     "season": 2026,
-    "week": 3
+    "week": 4
   }
 }
