@@ -70,7 +70,7 @@
               "practice_status": "Limited Participation in Practice"
             }
           ],
-          "usage_note": "8% target share (13 gm) &middot; 30% off. snaps"
+          "usage_note": "8% target share (13 gm)"
         },
         {
           "name": "Terrel Bernard",
@@ -83,7 +83,7 @@
               "practice_status": "Limited Participation in Practice"
             }
           ],
-          "usage_note": "86% def. snaps"
+          "usage_note": null
         },
         {
           "name": "Cole Bishop",
@@ -101,7 +101,7 @@
               "practice_status": "Limited Participation in Practice"
             }
           ],
-          "usage_note": "92% def. snaps"
+          "usage_note": null
         },
         {
           "name": "T.J. Sanders",
@@ -119,7 +119,7 @@
               "practice_status": "Limited Participation in Practice"
             }
           ],
-          "usage_note": "42% def. snaps"
+          "usage_note": null
         }
       ],
       "away_injuries": [
@@ -139,7 +139,7 @@
               "practice_status": "Limited Participation in Practice"
             }
           ],
-          "usage_note": "82% def. snaps"
+          "usage_note": null
         },
         {
           "name": "Christian Mahogany",
@@ -157,7 +157,7 @@
               "practice_status": "Did Not Participate In Practice"
             }
           ],
-          "usage_note": "98% off. snaps"
+          "usage_note": null
         },
         {
           "name": "Blake Miller",
@@ -278,7 +278,7 @@
               "practice_status": "Did Not Participate In Practice"
             }
           ],
-          "usage_note": "3% target share (1 gm) &middot; 97% off. snaps"
+          "usage_note": "3% target share (1 gm)"
         },
         {
           "name": "Za'Darius Smith",
@@ -291,7 +291,7 @@
               "practice_status": "Did Not Participate In Practice"
             }
           ],
-          "usage_note": "38% def. snaps"
+          "usage_note": null
         },
         {
           "name": "Chris Lindstrom",
@@ -314,7 +314,7 @@
               "practice_status": "Full Participation in Practice"
             }
           ],
-          "usage_note": "99% off. snaps"
+          "usage_note": null
         },
         {
           "name": "Tua Tagovailoa",
@@ -332,7 +332,7 @@
               "practice_status": "Did Not Participate In Practice"
             }
           ],
-          "usage_note": "95% off. snaps"
+          "usage_note": null
         },
         {
           "name": "A.J. Terrell",
@@ -355,7 +355,7 @@
               "practice_status": "Did Not Participate In Practice"
             }
           ],
-          "usage_note": "96% def. snaps"
+          "usage_note": null
         },
         {
           "name": "Ryan Neuzil",
@@ -368,7 +368,7 @@
               "practice_status": "Did Not Participate In Practice"
             }
           ],
-          "usage_note": "100% off. snaps"
+          "usage_note": null
         },
         {
           "name": "Michael Penix Jr.",
@@ -386,7 +386,7 @@
               "practice_status": "Full Participation in Practice"
             }
           ],
-          "usage_note": "93% off. snaps"
+          "usage_note": null
         },
         {
           "name": "Billy Bowman Jr.",
@@ -409,7 +409,7 @@
               "practice_status": "Full Participation in Practice"
             }
           ],
-          "usage_note": "80% def. snaps"
+          "usage_note": null
         }
       ],
       "away_injuries": [
@@ -429,7 +429,7 @@
               "practice_status": "Did Not Participate In Practice"
             }
           ],
-          "usage_note": "33% def. snaps"
+          "usage_note": null
         },
         {
           "name": "Patrick Jones II",
@@ -452,7 +452,7 @@
               "practice_status": "Limited Participation in Practice"
             }
           ],
-          "usage_note": "70% def. snaps"
+          "usage_note": null
         }
       ],
       "situational_note": "",
@@ -566,7 +566,7 @@
               "practice_status": "Limited Participation in Practice"
             }
           ],
-          "usage_note": "89% off. snaps"
+          "usage_note": null
         },
         {
           "name": "Trey Hendrickson",
@@ -584,7 +584,7 @@
               "practice_status": "Limited Participation in Practice"
             }
           ],
-          "usage_note": "59% def. snaps"
+          "usage_note": null
         },
         {
           "name": "Nnamdi Madubuike",
@@ -602,7 +602,7 @@
               "practice_status": "Limited Participation in Practice"
             }
           ],
-          "usage_note": "64% def. snaps"
+          "usage_note": null
         },
         {
           "name": "John Simpson",
@@ -620,7 +620,7 @@
               "practice_status": "Limited Participation in Practice"
             }
           ],
-          "usage_note": "97% off. snaps"
+          "usage_note": null
         },
         {
           "name": "Zay Flowers",
@@ -638,7 +638,7 @@
               "practice_status": "Limited Participation in Practice"
             }
           ],
-          "usage_note": "26% target share (17 gm) &middot; 86% off. snaps"
+          "usage_note": "26% target share (17 gm)"
         },
         {
           "name": "T.J. Tampa",
@@ -656,7 +656,7 @@
               "practice_status": "Did Not Participate In Practice"
             }
           ],
-          "usage_note": "13% def. snaps"
+          "usage_note": null
         },
         {
           "name": "Teddye Buchanan",
@@ -674,7 +674,7 @@
               "practice_status": "Limited Participation in Practice"
             }
           ],
-          "usage_note": "71% def. snaps"
+          "usage_note": null
         }
       ],
       "away_injuries": [
@@ -712,7 +712,7 @@
               "practice_status": "Limited Participation in Practice"
             }
           ],
-          "usage_note": "70% def. snaps"
+          "usage_note": null
         },
         {
           "name": "Chris Olave",
@@ -730,7 +730,7 @@
               "practice_status": "Limited Participation in Practice"
             }
           ],
-          "usage_note": "26% target share (16 gm) &middot; 84% off. snaps"
+          "usage_note": "26% target share (16 gm)"
         },
         {
           "name": "Isaiah Stalbird",
@@ -748,7 +748,7 @@
               "practice_status": "Did Not Participate In Practice"
             }
           ],
-          "usage_note": "6% def. snaps"
+          "usage_note": null
         },
         {
           "name": "Christen Miller",
@@ -864,7 +864,7 @@
               "practice_status": "Limited Participation in Practice"
             }
           ],
-          "usage_note": "84% def. snaps"
+          "usage_note": null
         },
         {
           "name": "Brian O'Neill",
@@ -887,7 +887,7 @@
               "practice_status": "Limited Participation in Practice"
             }
           ],
-          "usage_note": "90% off. snaps"
+          "usage_note": null
         },
         {
           "name": "Kyler Murray",
@@ -905,7 +905,7 @@
               "practice_status": "Limited Participation in Practice"
             }
           ],
-          "usage_note": "99% off. snaps"
+          "usage_note": null
         },
         {
           "name": "Jauan Jennings",
@@ -923,7 +923,7 @@
               "practice_status": "Did Not Participate In Practice"
             }
           ],
-          "usage_note": "18% target share (17 gm) &middot; 83% off. snaps"
+          "usage_note": "18% target share (17 gm)"
         },
         {
           "name": "Christian Darrisaw",
@@ -936,7 +936,7 @@
               "practice_status": "Did Not Participate In Practice"
             }
           ],
-          "usage_note": "81% off. snaps"
+          "usage_note": null
         }
       ],
       "situational_note": "",
@@ -1042,7 +1042,7 @@
               "practice_status": "Did Not Participate In Practice"
             }
           ],
-          "usage_note": "44% def. snaps"
+          "usage_note": null
         },
         {
           "name": "Dalton Schultz",
@@ -1055,7 +1055,7 @@
               "practice_status": "Did Not Participate In Practice"
             }
           ],
-          "usage_note": "16% target share (19 gm) &middot; 69% off. snaps"
+          "usage_note": "16% target share (19 gm)"
         },
         {
           "name": "Nico Collins",
@@ -1078,7 +1078,7 @@
               "practice_status": "Did Not Participate In Practice"
             }
           ],
-          "usage_note": "22% target share (16 gm) &middot; 76% off. snaps"
+          "usage_note": "22% target share (16 gm)"
         },
         {
           "name": "Jacob Hummel",
@@ -1096,7 +1096,7 @@
               "practice_status": "Did Not Participate In Practice"
             }
           ],
-          "usage_note": "3% def. snaps"
+          "usage_note": null
         },
         {
           "name": "Logan Hall",
@@ -1109,7 +1109,7 @@
               "practice_status": "Did Not Participate In Practice"
             }
           ],
-          "usage_note": "59% def. snaps"
+          "usage_note": null
         },
         {
           "name": "Ed Ingram",
@@ -1127,7 +1127,7 @@
               "practice_status": "Did Not Participate In Practice"
             }
           ],
-          "usage_note": "98% off. snaps"
+          "usage_note": null
         },
         {
           "name": "Will Anderson Jr.",
@@ -1140,7 +1140,7 @@
               "practice_status": "Limited Participation in Practice"
             }
           ],
-          "usage_note": "67% def. snaps"
+          "usage_note": null
         }
       ],
       "away_injuries": [
@@ -1155,7 +1155,7 @@
               "practice_status": "Did Not Participate In Practice"
             }
           ],
-          "usage_note": "5% target share (11 gm) &middot; 35% off. snaps"
+          "usage_note": "5% target share (11 gm)"
         },
         {
           "name": "B.J. Hill",
@@ -1178,7 +1178,7 @@
               "practice_status": "Did Not Participate In Practice"
             }
           ],
-          "usage_note": "61% def. snaps"
+          "usage_note": null
         },
         {
           "name": "Dexter Lawrence",
@@ -1191,7 +1191,7 @@
               "practice_status": "Did Not Participate In Practice"
             }
           ],
-          "usage_note": "68% def. snaps"
+          "usage_note": null
         },
         {
           "name": "Joe Burrow",
@@ -1209,7 +1209,7 @@
               "practice_status": "Full Participation in Practice"
             }
           ],
-          "usage_note": "88% off. snaps"
+          "usage_note": null
         }
       ],
       "situational_note": "",
@@ -1328,7 +1328,7 @@
               "practice_status": "Did Not Participate In Practice"
             }
           ],
-          "usage_note": "92% def. snaps"
+          "usage_note": null
         },
         {
           "name": "Dre'Mont Jones",
@@ -1346,7 +1346,7 @@
               "practice_status": "Limited Participation in Practice"
             }
           ],
-          "usage_note": "68% def. snaps"
+          "usage_note": null
         },
         {
           "name": "Ben Brown",
@@ -1364,7 +1364,7 @@
               "practice_status": "Limited Participation in Practice"
             }
           ],
-          "usage_note": "25% off. snaps"
+          "usage_note": null
         },
         {
           "name": "Dametrious Crownover",
@@ -1407,7 +1407,7 @@
               "practice_status": "Did Not Participate In Practice"
             }
           ],
-          "usage_note": "20% target share (17 gm) &middot; 86% off. snaps"
+          "usage_note": "20% target share (17 gm)"
         },
         {
           "name": "Joey Porter Jr.",
@@ -1425,7 +1425,7 @@
               "practice_status": "Limited Participation in Practice"
             }
           ],
-          "usage_note": "95% def. snaps"
+          "usage_note": null
         },
         {
           "name": "Troy Fautanu",
@@ -1448,7 +1448,7 @@
               "practice_status": "Full Participation in Practice"
             }
           ],
-          "usage_note": "100% off. snaps"
+          "usage_note": null
         }
       ],
       "situational_note": "",
@@ -1549,7 +1549,7 @@
               "practice_status": "Did Not Participate In Practice"
             }
           ],
-          "usage_note": "95% def. snaps"
+          "usage_note": null
         },
         {
           "name": "Kene Nwangwu",
@@ -1567,7 +1567,7 @@
               "practice_status": "Did Not Participate In Practice"
             }
           ],
-          "usage_note": "4% target share (1 gm) &middot; 4% off. snaps"
+          "usage_note": "4% target share (1 gm)"
         },
         {
           "name": "Joseph Ossai",
@@ -1585,7 +1585,7 @@
               "practice_status": "Did Not Participate In Practice"
             }
           ],
-          "usage_note": "67% def. snaps"
+          "usage_note": null
         },
         {
           "name": "Will McDonald IV",
@@ -1603,7 +1603,7 @@
               "practice_status": "Limited Participation in Practice"
             }
           ],
-          "usage_note": "65% def. snaps"
+          "usage_note": null
         },
         {
           "name": "Omar Cooper Jr.",
@@ -1646,7 +1646,7 @@
               "practice_status": "Did Not Participate In Practice"
             }
           ],
-          "usage_note": "53% def. snaps"
+          "usage_note": null
         },
         {
           "name": "Aaron Banks",
@@ -1664,7 +1664,7 @@
               "practice_status": "Limited Participation in Practice"
             }
           ],
-          "usage_note": "84% off. snaps"
+          "usage_note": null
         },
         {
           "name": "Benjamin St-Juste",
@@ -1677,7 +1677,7 @@
               "practice_status": "Limited Participation in Practice"
             }
           ],
-          "usage_note": "38% def. snaps"
+          "usage_note": null
         },
         {
           "name": "Devonte Wyatt",
@@ -1690,7 +1690,7 @@
               "practice_status": "Limited Participation in Practice"
             }
           ],
-          "usage_note": "61% def. snaps"
+          "usage_note": null
         },
         {
           "name": "Zach Bako-Bewele",
@@ -1708,7 +1708,7 @@
               "practice_status": "Limited Participation in Practice"
             }
           ],
-          "usage_note": "83% off. snaps"
+          "usage_note": null
         },
         {
           "name": "Lukas Van Ness",
@@ -1726,7 +1726,7 @@
               "practice_status": "Limited Participation in Practice"
             }
           ],
-          "usage_note": "45% def. snaps"
+          "usage_note": null
         },
         {
           "name": "Ty'Ron Hopper",
@@ -1739,7 +1739,7 @@
               "practice_status": "Limited Participation in Practice"
             }
           ],
-          "usage_note": "12% def. snaps"
+          "usage_note": null
         },
         {
           "name": "Barryn Sorrell",
@@ -1752,7 +1752,7 @@
               "practice_status": "Limited Participation in Practice"
             }
           ],
-          "usage_note": "20% def. snaps"
+          "usage_note": null
         },
         {
           "name": "Warren Brinson",
@@ -1770,7 +1770,7 @@
               "practice_status": "Did Not Participate In Practice"
             }
           ],
-          "usage_note": "37% def. snaps"
+          "usage_note": null
         }
       ],
       "situational_note": "",
@@ -1839,10 +1839,10 @@
       "gameday": "2026-09-20",
       "gametime": "13:00",
       "weekday": "Sunday",
-      "home_win_probability": 0.704,
-      "away_win_probability": 0.296,
+      "home_win_probability": 0.713,
+      "away_win_probability": 0.287,
       "favored": "TB",
-      "raw_strength_score": 0.87,
+      "raw_strength_score": 0.91,
       "feature_breakdown": {
         "rank_coefficient_home": 1.0,
         "third_down_coefficient_home": 1.0,
@@ -1851,7 +1851,6 @@
         "turnover_coefficient_home": 1.0,
         "road_trip_coefficient_home": 1.0,
         "streak_coefficient_home": 0.5,
-        "coaching_coefficient_home": -1.0,
         "schedule_milestones_coefficient_home": 0.5
       },
       "power_rating_implied_spread": 6.92,
@@ -1910,7 +1909,7 @@
               "practice_status": "Did Not Participate In Practice"
             }
           ],
-          "usage_note": "62% def. snaps"
+          "usage_note": null
         },
         {
           "name": "Jalen McMillan",
@@ -1928,7 +1927,7 @@
               "practice_status": "Full Participation in Practice"
             }
           ],
-          "usage_note": "10% target share (4 gm) &middot; 52% off. snaps"
+          "usage_note": "10% target share (4 gm)"
         },
         {
           "name": "Jacob Parrish",
@@ -1946,7 +1945,7 @@
               "practice_status": "Full Participation in Practice"
             }
           ],
-          "usage_note": "72% def. snaps"
+          "usage_note": null
         }
       ],
       "away_injuries": [
@@ -1961,7 +1960,7 @@
               "practice_status": "Limited Participation in Practice"
             }
           ],
-          "usage_note": "64% def. snaps"
+          "usage_note": null
         },
         {
           "name": "Noah Igbinoghene",
@@ -1974,7 +1973,7 @@
               "practice_status": null
             }
           ],
-          "usage_note": "36% def. snaps"
+          "usage_note": null
         },
         {
           "name": "Teven Jenkins",
@@ -1992,7 +1991,7 @@
               "practice_status": "Did Not Participate In Practice"
             }
           ],
-          "usage_note": "32% off. snaps"
+          "usage_note": null
         },
         {
           "name": "Tyson Campbell",
@@ -2010,7 +2009,7 @@
               "practice_status": "Limited Participation in Practice"
             }
           ],
-          "usage_note": "89% def. snaps"
+          "usage_note": null
         }
       ],
       "situational_note": "",
@@ -2050,18 +2049,17 @@
       "gameday": "2026-09-20",
       "gametime": "13:00",
       "weekday": "Sunday",
-      "home_win_probability": 0.563,
-      "away_win_probability": 0.437,
+      "home_win_probability": 0.554,
+      "away_win_probability": 0.446,
       "favored": "TEN",
-      "raw_strength_score": 0.25,
+      "raw_strength_score": 0.21,
       "feature_breakdown": {
         "rank_coefficient_home": -1.0,
         "third_down_coefficient_home": -1.0,
         "ypp_off_coefficient_home": -1.0,
         "ypp_def_coefficient_home": -1.0,
         "turnover_coefficient_home": -1.0,
-        "streak_coefficient_home": 1.0,
-        "coaching_coefficient_home": 1.0
+        "streak_coefficient_home": 1.0
       },
       "power_rating_implied_spread": -3.58,
       "neutral_site": false,
@@ -2101,7 +2099,7 @@
               "practice_status": "Did Not Participate In Practice"
             }
           ],
-          "usage_note": "85% def. snaps"
+          "usage_note": null
         },
         {
           "name": "James Williams",
@@ -2119,7 +2117,7 @@
               "practice_status": "Limited Participation in Practice"
             }
           ],
-          "usage_note": "9% def. snaps"
+          "usage_note": null
         },
         {
           "name": "Cedric Gray",
@@ -2137,7 +2135,7 @@
               "practice_status": "Full Participation in Practice"
             }
           ],
-          "usage_note": "91% def. snaps"
+          "usage_note": null
         }
       ],
       "away_injuries": [
@@ -2157,7 +2155,7 @@
               "practice_status": "Limited Participation in Practice"
             }
           ],
-          "usage_note": "74% def. snaps"
+          "usage_note": null
         },
         {
           "name": "Jalen Carter",
@@ -2175,7 +2173,7 @@
               "practice_status": "Limited Participation in Practice"
             }
           ],
-          "usage_note": "86% def. snaps"
+          "usage_note": null
         },
         {
           "name": "Andrew Mukuba",
@@ -2193,7 +2191,7 @@
               "practice_status": "Limited Participation in Practice"
             }
           ],
-          "usage_note": "92% def. snaps"
+          "usage_note": null
         }
       ],
       "situational_note": "",
@@ -2290,7 +2288,7 @@
               "practice_status": "Did Not Participate In Practice"
             }
           ],
-          "usage_note": "11% target share (16 gm) &middot; 40% off. snaps"
+          "usage_note": "11% target share (16 gm)"
         },
         {
           "name": "RJ Harvey",
@@ -2313,7 +2311,7 @@
               "practice_status": "Limited Participation in Practice"
             }
           ],
-          "usage_note": "10% target share (19 gm) &middot; 44% off. snaps"
+          "usage_note": "10% target share (19 gm)"
         }
       ],
       "away_injuries": [
@@ -2328,7 +2326,7 @@
               "practice_status": "Limited Participation in Practice"
             }
           ],
-          "usage_note": "20% target share (17 gm) &middot; 86% off. snaps"
+          "usage_note": "20% target share (17 gm)"
         },
         {
           "name": "Brian Thomas Jr.",
@@ -2341,7 +2339,7 @@
               "practice_status": "Limited Participation in Practice"
             }
           ],
-          "usage_note": "17% target share (15 gm) &middot; 78% off. snaps"
+          "usage_note": "17% target share (15 gm)"
         },
         {
           "name": "LeQuint Allen Jr.",
@@ -2354,7 +2352,7 @@
               "practice_status": "Limited Participation in Practice"
             }
           ],
-          "usage_note": "3% target share (10 gm) &middot; 22% off. snaps"
+          "usage_note": "3% target share (10 gm)"
         }
       ],
       "situational_note": "",
@@ -2447,7 +2445,7 @@
               "practice_status": "Did Not Participate In Practice"
             }
           ],
-          "usage_note": "73% off. snaps"
+          "usage_note": null
         },
         {
           "name": "Elijah Molden",
@@ -2465,7 +2463,7 @@
               "practice_status": "Did Not Participate In Practice"
             }
           ],
-          "usage_note": "74% def. snaps"
+          "usage_note": null
         },
         {
           "name": "Deane Leonard",
@@ -2483,7 +2481,7 @@
               "practice_status": "Limited Participation in Practice"
             }
           ],
-          "usage_note": "7% def. snaps"
+          "usage_note": null
         },
         {
           "name": "Ladd McConkey",
@@ -2501,7 +2499,7 @@
               "practice_status": "Limited Participation in Practice"
             }
           ],
-          "usage_note": "18% target share (17 gm) &middot; 78% off. snaps"
+          "usage_note": "18% target share (17 gm)"
         }
       ],
       "away_injuries": [
@@ -2521,7 +2519,7 @@
               "practice_status": "Did Not Participate In Practice"
             }
           ],
-          "usage_note": "82% off. snaps"
+          "usage_note": null
         },
         {
           "name": "Brock Bowers",
@@ -2539,7 +2537,7 @@
               "practice_status": "Limited Participation in Practice"
             }
           ],
-          "usage_note": "20% target share (12 gm) &middot; 86% off. snaps"
+          "usage_note": "20% target share (12 gm)"
         },
         {
           "name": "Darien Porter",
@@ -2557,7 +2555,7 @@
               "practice_status": "Did Not Participate In Practice"
             }
           ],
-          "usage_note": "53% def. snaps"
+          "usage_note": null
         }
       ],
       "situational_note": "",
@@ -2673,7 +2671,7 @@
               "practice_status": "Limited Participation in Practice"
             }
           ],
-          "usage_note": "92% off. snaps"
+          "usage_note": null
         },
         {
           "name": "Andrew Billings",
@@ -2691,7 +2689,7 @@
               "practice_status": "Limited Participation in Practice"
             }
           ],
-          "usage_note": "46% def. snaps"
+          "usage_note": null
         },
         {
           "name": "Roy Lopez",
@@ -2714,7 +2712,7 @@
               "practice_status": "Limited Participation in Practice"
             }
           ],
-          "usage_note": "39% def. snaps"
+          "usage_note": null
         },
         {
           "name": "Garrett Williams",
@@ -2732,7 +2730,7 @@
               "practice_status": "Limited Participation in Practice"
             }
           ],
-          "usage_note": "82% def. snaps"
+          "usage_note": null
         },
         {
           "name": "Max Melton",
@@ -2750,7 +2748,7 @@
               "practice_status": "Limited Participation in Practice"
             }
           ],
-          "usage_note": "67% def. snaps"
+          "usage_note": null
         },
         {
           "name": "Isaiah Adams",
@@ -2768,7 +2766,7 @@
               "practice_status": "Limited Participation in Practice"
             }
           ],
-          "usage_note": "71% off. snaps"
+          "usage_note": null
         },
         {
           "name": "Dadrion Taylor-Demerson",
@@ -2786,7 +2784,7 @@
               "practice_status": "Limited Participation in Practice"
             }
           ],
-          "usage_note": "53% def. snaps"
+          "usage_note": null
         }
       ],
       "away_injuries": [
@@ -2806,7 +2804,7 @@
               "practice_status": "Did Not Participate In Practice"
             }
           ],
-          "usage_note": "96% off. snaps"
+          "usage_note": null
         },
         {
           "name": "Ty Okada",
@@ -2824,7 +2822,7 @@
               "practice_status": "Did Not Participate In Practice"
             }
           ],
-          "usage_note": "59% def. snaps"
+          "usage_note": null
         },
         {
           "name": "Anthony Bradford",
@@ -2847,7 +2845,7 @@
               "practice_status": "Did Not Participate In Practice"
             }
           ],
-          "usage_note": "97% off. snaps"
+          "usage_note": null
         },
         {
           "name": "Nick Emmanwori",
@@ -2865,7 +2863,7 @@
               "practice_status": "Limited Participation in Practice"
             }
           ],
-          "usage_note": "86% def. snaps"
+          "usage_note": null
         }
       ],
       "situational_note": "",
@@ -2964,7 +2962,7 @@
               "practice_status": "Did Not Participate In Practice"
             }
           ],
-          "usage_note": "79% def. snaps"
+          "usage_note": null
         },
         {
           "name": "DeMarvion Overshown",
@@ -2982,7 +2980,7 @@
               "practice_status": "Did Not Participate In Practice"
             }
           ],
-          "usage_note": "60% def. snaps"
+          "usage_note": null
         }
       ],
       "away_injuries": [
@@ -3002,7 +3000,7 @@
               "practice_status": "Did Not Participate In Practice"
             }
           ],
-          "usage_note": "97% def. snaps"
+          "usage_note": null
         },
         {
           "name": "Dorance Armstrong",
@@ -3015,7 +3013,7 @@
               "practice_status": "Limited Participation in Practice"
             }
           ],
-          "usage_note": "51% def. snaps"
+          "usage_note": null
         },
         {
           "name": "Charles Omenihu",
@@ -3028,7 +3026,7 @@
               "practice_status": "Limited Participation in Practice"
             }
           ],
-          "usage_note": "55% def. snaps"
+          "usage_note": null
         },
         {
           "name": "Javon Kinlaw",
@@ -3046,7 +3044,7 @@
               "practice_status": "Limited Participation in Practice"
             }
           ],
-          "usage_note": "64% def. snaps"
+          "usage_note": null
         },
         {
           "name": "K'Lavon Chaisson",
@@ -3059,7 +3057,7 @@
               "practice_status": "Limited Participation in Practice"
             }
           ],
-          "usage_note": "69% def. snaps"
+          "usage_note": null
         },
         {
           "name": "Odafe Oweh",
@@ -3072,7 +3070,7 @@
               "practice_status": "Limited Participation in Practice"
             }
           ],
-          "usage_note": "47% def. snaps"
+          "usage_note": null
         },
         {
           "name": "Chig Okonkwo",
@@ -3090,7 +3088,7 @@
               "practice_status": "Did Not Participate In Practice"
             }
           ],
-          "usage_note": "13% target share (17 gm) &middot; 64% off. snaps"
+          "usage_note": "13% target share (17 gm)"
         },
         {
           "name": "Jaylin Lane",
@@ -3103,7 +3101,7 @@
               "practice_status": "Limited Participation in Practice"
             }
           ],
-          "usage_note": "8% target share (13 gm) &middot; 36% off. snaps"
+          "usage_note": "8% target share (13 gm)"
         }
       ],
       "situational_note": "",
@@ -3150,10 +3148,10 @@
       "gameday": "2026-09-20",
       "gametime": "16:25",
       "weekday": "Sunday",
-      "home_win_probability": 0.726,
-      "away_win_probability": 0.274,
+      "home_win_probability": 0.734,
+      "away_win_probability": 0.266,
       "favored": "SF",
-      "raw_strength_score": 0.98,
+      "raw_strength_score": 1.01,
       "feature_breakdown": {
         "third_down_coefficient_home": 1.0,
         "ypp_off_coefficient_home": 1.0,
@@ -3161,7 +3159,6 @@
         "rest_coefficient_home": 0.5,
         "road_trip_coefficient_home": 1.0,
         "streak_coefficient_home": -1.0,
-        "coaching_coefficient_home": -1.0,
         "schedule_milestones_coefficient_home": 0.5
       },
       "power_rating_implied_spread": 12.92,
@@ -3263,7 +3260,7 @@
               "practice_status": "Did Not Participate In Practice"
             }
           ],
-          "usage_note": "39% def. snaps"
+          "usage_note": null
         },
         {
           "name": "Tucker Addington",
@@ -3304,7 +3301,7 @@
               "practice_status": "Did Not Participate In Practice"
             }
           ],
-          "usage_note": "44% def. snaps"
+          "usage_note": null
         },
         {
           "name": "Seydou Traore",
@@ -3408,7 +3405,7 @@
               "practice_status": "Limited Participation in Practice"
             }
           ],
-          "usage_note": "73% def. snaps"
+          "usage_note": null
         },
         {
           "name": "Chamarri Conner",
@@ -3426,7 +3423,7 @@
               "practice_status": "Did Not Participate In Practice"
             }
           ],
-          "usage_note": "98% def. snaps"
+          "usage_note": null
         },
         {
           "name": "Josh Simmons",
@@ -3444,7 +3441,7 @@
               "practice_status": "Did Not Participate In Practice"
             }
           ],
-          "usage_note": "93% off. snaps"
+          "usage_note": null
         },
         {
           "name": "Mansoor Delane",
@@ -3482,7 +3479,7 @@
               "practice_status": "Did Not Participate In Practice"
             }
           ],
-          "usage_note": "70% def. snaps"
+          "usage_note": null
         },
         {
           "name": "Charvarius Ward",
@@ -3495,7 +3492,7 @@
               "practice_status": "Did Not Participate In Practice"
             }
           ],
-          "usage_note": "92% def. snaps"
+          "usage_note": null
         },
         {
           "name": "Ashton Dulin",
@@ -3513,7 +3510,7 @@
               "practice_status": "Did Not Participate In Practice"
             }
           ],
-          "usage_note": "6% target share (5 gm) &middot; 21% off. snaps &middot; 0% def. snaps"
+          "usage_note": "6% target share (5 gm)"
         },
         {
           "name": "DJ Giddens",
@@ -3531,7 +3528,7 @@
               "practice_status": "Full Participation in Practice"
             }
           ],
-          "usage_note": "3% target share (2 gm) &middot; 12% off. snaps"
+          "usage_note": "3% target share (2 gm)"
         }
       ],
       "situational_note": "",
@@ -3638,7 +3635,7 @@
               "practice_status": "Did Not Participate In Practice"
             }
           ],
-          "usage_note": "10% target share (12 gm) &middot; 49% off. snaps"
+          "usage_note": "10% target share (12 gm)"
         },
         {
           "name": "Kam Curl",
@@ -3651,7 +3648,7 @@
               "practice_status": "Limited Participation in Practice"
             }
           ],
-          "usage_note": "99% def. snaps"
+          "usage_note": null
         },
         {
           "name": "Alaric Jackson",
@@ -3664,7 +3661,7 @@
               "practice_status": "Did Not Participate In Practice"
             }
           ],
-          "usage_note": "99% off. snaps"
+          "usage_note": null
         },
         {
           "name": "Nate Landman",
@@ -3677,7 +3674,7 @@
               "practice_status": "Limited Participation in Practice"
             }
           ],
-          "usage_note": "91% def. snaps"
+          "usage_note": null
         },
         {
           "name": "Puka Nacua",
@@ -3695,7 +3692,7 @@
               "practice_status": "Did Not Participate In Practice"
             }
           ],
-          "usage_note": "29% target share (19 gm) &middot; 70% off. snaps"
+          "usage_note": "29% target share (19 gm)"
         },
         {
           "name": "Byron Young",
@@ -3708,7 +3705,7 @@
               "practice_status": "Did Not Participate In Practice"
             }
           ],
-          "usage_note": "73% def. snaps"
+          "usage_note": null
         },
         {
           "name": "Jordan Whittington",
@@ -3726,7 +3723,7 @@
               "practice_status": "Did Not Participate In Practice"
             }
           ],
-          "usage_note": "6% target share (13 gm) &middot; 40% off. snaps"
+          "usage_note": "6% target share (13 gm)"
         },
         {
           "name": "Kamren Kinchens",
@@ -3744,7 +3741,7 @@
               "practice_status": "Did Not Participate In Practice"
             }
           ],
-          "usage_note": "73% def. snaps"
+          "usage_note": null
         }
       ],
       "away_injuries": [
@@ -3759,7 +3756,7 @@
               "practice_status": "Limited Participation in Practice"
             }
           ],
-          "usage_note": "91% off. snaps"
+          "usage_note": null
         },
         {
           "name": "Paulson Adebo",
@@ -3772,7 +3769,7 @@
               "practice_status": "Did Not Participate In Practice"
             }
           ],
-          "usage_note": "96% def. snaps"
+          "usage_note": null
         },
         {
           "name": "Micah McFadden",
@@ -3790,7 +3787,7 @@
               "practice_status": "Limited Participation in Practice"
             }
           ],
-          "usage_note": "16% def. snaps"
+          "usage_note": null
         },
         {
           "name": "Deonte Banks",
@@ -3813,7 +3810,7 @@
               "practice_status": "Did Not Participate In Practice"
             }
           ],
-          "usage_note": "45% def. snaps"
+          "usage_note": null
         }
       ],
       "situational_note": "",
@@ -5371,6 +5368,20 @@
       "upsets": 3.0,
       "total_pot": 499999.8,
       "underdog_pts_realized": 15.67
+    },
+    {
+      "season": 2026,
+      "week": 2,
+      "pool_id": "51",
+      "pool_label": "NFL - WEEK 2",
+      "closed_date": "2026-09-20",
+      "no_of_winners": 1,
+      "winning_selections_required": 15,
+      "winning_selections_total": 15,
+      "share_prize": 500000.0,
+      "upsets": 6.0,
+      "total_pot": 500000.0,
+      "underdog_pts_realized": 33.9
     }
   ]
 }

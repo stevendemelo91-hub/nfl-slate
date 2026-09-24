@@ -68,7 +68,7 @@
               "practice_status": "Limited Participation in Practice"
             }
           ],
-          "usage_note": "53% def. snaps"
+          "usage_note": null
         },
         {
           "name": "Aaron Banks",
@@ -81,7 +81,7 @@
               "practice_status": "Did Not Participate In Practice"
             }
           ],
-          "usage_note": "84% off. snaps"
+          "usage_note": null
         },
         {
           "name": "Zach Bako-Bewele",
@@ -94,7 +94,7 @@
               "practice_status": "Did Not Participate In Practice"
             }
           ],
-          "usage_note": "83% off. snaps"
+          "usage_note": null
         },
         {
           "name": "Jayden Reed",
@@ -107,7 +107,7 @@
               "practice_status": "Did Not Participate In Practice"
             }
           ],
-          "usage_note": "16% target share (6 gm) &middot; 44% off. snaps"
+          "usage_note": "16% target share (6 gm)"
         },
         {
           "name": "Donovan Jennings",
@@ -120,7 +120,7 @@
               "practice_status": "Limited Participation in Practice"
             }
           ],
-          "usage_note": "6% off. snaps"
+          "usage_note": null
         },
         {
           "name": "Edgerrin Cooper",
@@ -133,7 +133,7 @@
               "practice_status": "Limited Participation in Practice"
             }
           ],
-          "usage_note": "97% def. snaps"
+          "usage_note": null
         },
         {
           "name": "Warren Brinson",
@@ -146,7 +146,7 @@
               "practice_status": "Did Not Participate In Practice"
             }
           ],
-          "usage_note": "37% def. snaps"
+          "usage_note": null
         },
         {
           "name": "Anthony Campbell",
@@ -172,7 +172,7 @@
               "practice_status": "Limited Participation in Practice"
             }
           ],
-          "usage_note": "60% off. snaps"
+          "usage_note": null
         },
         {
           "name": "Brandon Cisse",
@@ -200,7 +200,7 @@
               "practice_status": "Did Not Participate In Practice"
             }
           ],
-          "usage_note": "44% def. snaps"
+          "usage_note": null
         },
         {
           "name": "A.J. Terrell",
@@ -213,7 +213,7 @@
               "practice_status": "Did Not Participate In Practice"
             }
           ],
-          "usage_note": "96% def. snaps"
+          "usage_note": null
         }
       ],
       "situational_note": "",
@@ -325,17 +325,16 @@
       "gameday": "2026-09-27",
       "gametime": "13:00",
       "weekday": "Sunday",
-      "home_win_probability": 0.469,
-      "away_win_probability": 0.531,
+      "home_win_probability": 0.459,
+      "away_win_probability": 0.541,
       "favored": "CAR",
-      "raw_strength_score": -0.13,
+      "raw_strength_score": -0.16,
       "feature_breakdown": {
         "rank_coefficient_home": -1.0,
         "third_down_coefficient_home": -1.0,
         "ypp_off_coefficient_home": -1.0,
         "ypp_def_coefficient_home": 1.0,
         "road_trip_coefficient_home": -0.5,
-        "coaching_coefficient_home": 1.0,
         "schedule_milestones_coefficient_home": 0.5
       },
       "power_rating_implied_spread": -0.58,
@@ -613,17 +612,16 @@
       "gameday": "2026-09-27",
       "gametime": "13:00",
       "weekday": "Sunday",
-      "home_win_probability": 0.433,
-      "away_win_probability": 0.567,
+      "home_win_probability": 0.423,
+      "away_win_probability": 0.577,
       "favored": "KC",
-      "raw_strength_score": -0.27,
+      "raw_strength_score": -0.31,
       "feature_breakdown": {
         "third_down_coefficient_home": -1.0,
         "ypp_off_coefficient_home": -1.0,
         "ypp_def_coefficient_home": -1.0,
         "road_trip_coefficient_home": 0.5,
         "streak_coefficient_home": 1.0,
-        "coaching_coefficient_home": 1.0,
         "schedule_milestones_coefficient_home": 0.5
       },
       "power_rating_implied_spread": -8.25,
@@ -755,18 +753,17 @@
       "gameday": "2026-09-27",
       "gametime": "13:00",
       "weekday": "Sunday",
-      "home_win_probability": 0.527,
-      "away_win_probability": 0.473,
+      "home_win_probability": 0.517,
+      "away_win_probability": 0.483,
       "favored": "PIT",
-      "raw_strength_score": 0.11,
+      "raw_strength_score": 0.07,
       "feature_breakdown": {
         "third_down_coefficient_home": -1.0,
         "ypp_off_coefficient_home": -1.0,
         "ypp_def_coefficient_home": 1.0,
         "turnover_coefficient_home": 1.0,
         "road_trip_coefficient_home": -1.5,
-        "streak_coefficient_home": 0.5,
-        "coaching_coefficient_home": 1.0
+        "streak_coefficient_home": 0.5
       },
       "power_rating_implied_spread": 0.75,
       "neutral_site": false,
@@ -1057,16 +1054,15 @@
       "gameday": "2026-09-27",
       "gametime": "16:25",
       "weekday": "Sunday",
-      "home_win_probability": 0.552,
-      "away_win_probability": 0.448,
+      "home_win_probability": 0.561,
+      "away_win_probability": 0.439,
       "favored": "DAL",
-      "raw_strength_score": 0.21,
+      "raw_strength_score": 0.25,
       "feature_breakdown": {
         "third_down_coefficient_home": 1.0,
         "ypp_off_coefficient_home": -1.0,
         "ypp_def_coefficient_home": -1.0,
-        "road_trip_coefficient_home": 0.5,
-        "coaching_coefficient_home": -1.0
+        "road_trip_coefficient_home": 0.5
       },
       "power_rating_implied_spread": -2.55,
       "neutral_site": true,
@@ -1129,10 +1125,10 @@
       "gameday": "2026-09-27",
       "gametime": "16:25",
       "weekday": "Sunday",
-      "home_win_probability": 0.685,
-      "away_win_probability": 0.315,
+      "home_win_probability": 0.694,
+      "away_win_probability": 0.306,
       "favored": "NO",
-      "raw_strength_score": 0.78,
+      "raw_strength_score": 0.82,
       "feature_breakdown": {
         "rank_coefficient_home": 1.0,
         "third_down_coefficient_home": 1.0,
@@ -1140,7 +1136,6 @@
         "ypp_def_coefficient_home": 1.0,
         "road_trip_coefficient_home": -0.5,
         "streak_coefficient_home": 0.5,
-        "coaching_coefficient_home": -1.0,
         "schedule_milestones_coefficient_home": 0.5
       },
       "power_rating_implied_spread": 2.67,
@@ -2857,6 +2852,20 @@
       "upsets": 3.0,
       "total_pot": 499999.8,
       "underdog_pts_realized": 15.67
+    },
+    {
+      "season": 2026,
+      "week": 2,
+      "pool_id": "51",
+      "pool_label": "NFL - WEEK 2",
+      "closed_date": "2026-09-20",
+      "no_of_winners": 1,
+      "winning_selections_required": 15,
+      "winning_selections_total": 15,
+      "share_prize": 500000.0,
+      "upsets": 6.0,
+      "total_pot": 500000.0,
+      "underdog_pts_realized": 33.9
     }
   ]
 }
