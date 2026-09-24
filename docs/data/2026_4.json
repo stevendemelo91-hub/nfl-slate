@@ -468,16 +468,15 @@
       "gameday": "2026-10-04",
       "gametime": "13:00",
       "weekday": "Sunday",
-      "home_win_probability": 0.645,
-      "away_win_probability": 0.355,
+      "home_win_probability": 0.636,
+      "away_win_probability": 0.364,
       "favored": "NYG",
-      "raw_strength_score": 0.6,
+      "raw_strength_score": 0.56,
       "feature_breakdown": {
         "third_down_coefficient_home": 1.0,
         "ypp_off_coefficient_home": 1.0,
         "ypp_def_coefficient_home": -1.0,
-        "road_trip_coefficient_home": 1.0,
-        "coaching_coefficient_home": 1.0
+        "road_trip_coefficient_home": 1.0
       },
       "power_rating_implied_spread": 4.42,
       "neutral_site": false,
@@ -665,10 +664,10 @@
       "gameday": "2026-10-04",
       "gametime": "16:05",
       "weekday": "Sunday",
-      "home_win_probability": 0.433,
-      "away_win_probability": 0.567,
+      "home_win_probability": 0.443,
+      "away_win_probability": 0.557,
       "favored": "MIA",
-      "raw_strength_score": -0.27,
+      "raw_strength_score": -0.23,
       "feature_breakdown": {
         "rank_coefficient_home": -0.5,
         "third_down_coefficient_home": -1.0,
@@ -676,8 +675,7 @@
         "ypp_def_coefficient_home": 1.0,
         "road_trip_coefficient_home": 0.5,
         "streak_coefficient_home": -1.0,
-        "qb_coefficient_home": -1.0,
-        "coaching_coefficient_home": -1.0
+        "qb_coefficient_home": -1.0
       },
       "power_rating_implied_spread": 8.92,
       "neutral_site": false,
@@ -734,17 +732,16 @@
       "gameday": "2026-10-04",
       "gametime": "16:25",
       "weekday": "Sunday",
-      "home_win_probability": 0.391,
-      "away_win_probability": 0.609,
+      "home_win_probability": 0.382,
+      "away_win_probability": 0.618,
       "favored": "KC",
-      "raw_strength_score": -0.44,
+      "raw_strength_score": -0.48,
       "feature_breakdown": {
         "rank_coefficient_home": -1.0,
         "third_down_coefficient_home": -1.0,
         "ypp_off_coefficient_home": -1.0,
         "ypp_def_coefficient_home": -1.0,
         "road_trip_coefficient_home": 1.0,
-        "coaching_coefficient_home": 1.0,
         "schedule_milestones_coefficient_home": -1.0
       },
       "power_rating_implied_spread": -6.08,
@@ -2573,6 +2570,20 @@
       "upsets": 3.0,
       "total_pot": 499999.8,
       "underdog_pts_realized": 15.67
+    },
+    {
+      "season": 2026,
+      "week": 2,
+      "pool_id": "51",
+      "pool_label": "NFL - WEEK 2",
+      "closed_date": "2026-09-20",
+      "no_of_winners": 1,
+      "winning_selections_required": 15,
+      "winning_selections_total": 15,
+      "share_prize": 500000.0,
+      "upsets": 6.0,
+      "total_pot": 500000.0,
+      "underdog_pts_realized": 33.9
     }
   ]
 }
