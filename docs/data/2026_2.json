@@ -13,10 +13,10 @@
       "gameday": "2026-09-17",
       "gametime": "20:15",
       "weekday": "Thursday",
-      "home_win_probability": 0.823,
-      "away_win_probability": 0.177,
+      "home_win_probability": 0.972,
+      "away_win_probability": 0.028,
       "favored": "BUF",
-      "raw_strength_score": 1.54,
+      "raw_strength_score": 3.54,
       "feature_breakdown": {
         "rank_coefficient_home": 0.5,
         "third_down_coefficient_home": 1.0,
@@ -181,7 +181,16 @@
       "situational_note": "New stadium opener (2026) - home crowd/atmosphere factor not covered by any systematic category",
       "player_impact_entries": {
         "home": [],
-        "away": []
+        "away": [
+          {
+            "adjustment": -1.0,
+            "note": "Kerby Joseph reserve (carried from Wk1)"
+          },
+          {
+            "adjustment": -1.0,
+            "note": "Brian Branch reserve (carried from Wk1)"
+          }
+        ]
       },
       "spread_current": "-5.5 -105 (9/17)",
       "spread_current_raw": -5.5,
@@ -215,10 +224,10 @@
       "gameday": "2026-09-20",
       "gametime": "13:00",
       "weekday": "Sunday",
-      "home_win_probability": 0.519,
-      "away_win_probability": 0.481,
-      "favored": "ATL",
-      "raw_strength_score": 0.08,
+      "home_win_probability": 0.128,
+      "away_win_probability": 0.872,
+      "favored": "CAR",
+      "raw_strength_score": -1.92,
       "feature_breakdown": {
         "third_down_coefficient_home": -1.0,
         "ypp_off_coefficient_home": 1.0,
@@ -448,7 +457,16 @@
       ],
       "situational_note": "",
       "player_impact_entries": {
-        "home": [],
+        "home": [
+          {
+            "adjustment": -1.0,
+            "note": "Tua Tagovailoa and Michael Penix Jr. both out/doubtful"
+          },
+          {
+            "adjustment": -1.0,
+            "note": "Jalon Walker IR (carried from Wk1)"
+          }
+        ],
         "away": []
       },
       "spread_current": "+30.5 +920 (9/20)",
@@ -493,10 +511,10 @@
       "gameday": "2026-09-20",
       "gametime": "13:00",
       "weekday": "Sunday",
-      "home_win_probability": 0.665,
-      "away_win_probability": 0.335,
-      "favored": "BAL",
-      "raw_strength_score": 0.68,
+      "home_win_probability": 0.211,
+      "away_win_probability": 0.789,
+      "favored": "NO",
+      "raw_strength_score": -1.32,
       "feature_breakdown": {
         "third_down_coefficient_home": 1.0,
         "ypp_off_coefficient_home": 1.0,
@@ -748,7 +766,16 @@
       ],
       "situational_note": "",
       "player_impact_entries": {
-        "home": [],
+        "home": [
+          {
+            "adjustment": -1.0,
+            "note": "Zay Flowers doubtful"
+          },
+          {
+            "adjustment": -1.0,
+            "note": "Nnamdi Madubuike out"
+          }
+        ],
         "away": []
       },
       "spread_current": "-8.5 -102 (9/20)",
@@ -914,8 +941,18 @@
       ],
       "situational_note": "",
       "player_impact_entries": {
-        "home": [],
-        "away": []
+        "home": [
+          {
+            "adjustment": -1.0,
+            "note": "Coby Bryant IR (carried from Wk1)"
+          }
+        ],
+        "away": [
+          {
+            "adjustment": -1.0,
+            "note": "Kyler Murray out"
+          }
+        ]
       },
       "spread_current": "-4.5 -110 (9/16)",
       "spread_current_raw": -4.5,
@@ -950,10 +987,10 @@
       "gameday": "2026-09-20",
       "gametime": "13:00",
       "weekday": "Sunday",
-      "home_win_probability": 0.468,
-      "away_win_probability": 0.532,
+      "home_win_probability": 0.042,
+      "away_win_probability": 0.958,
       "favored": "CIN",
-      "raw_strength_score": -0.13,
+      "raw_strength_score": -3.13,
       "feature_breakdown": {
         "third_down_coefficient_home": -1.0,
         "ypp_off_coefficient_home": -1.0,
@@ -1177,7 +1214,20 @@
       ],
       "situational_note": "",
       "player_impact_entries": {
-        "home": [],
+        "home": [
+          {
+            "adjustment": -1.0,
+            "note": "Nico Collins out"
+          },
+          {
+            "adjustment": -1.0,
+            "note": "Tank Dell reserve (carried from Wk1)"
+          },
+          {
+            "adjustment": -1.0,
+            "note": "Jayden Higgins IR (carried from Wk1)"
+          }
+        ],
         "away": []
       },
       "spread_current": "+13.5 +700 (9/20)",
@@ -1403,8 +1453,18 @@
       ],
       "situational_note": "",
       "player_impact_entries": {
-        "home": [],
-        "away": []
+        "home": [
+          {
+            "adjustment": -1.0,
+            "note": "A.J. Brown IR"
+          }
+        ],
+        "away": [
+          {
+            "adjustment": -1.0,
+            "note": "Michael Pittman DNP - Questionable"
+          }
+        ]
       },
       "spread_current": "-4.5 -115 (9/20)",
       "spread_current_raw": -4.5,
@@ -1435,10 +1495,10 @@
       "gameday": "2026-09-20",
       "gametime": "13:00",
       "weekday": "Sunday",
-      "home_win_probability": 0.469,
-      "away_win_probability": 0.531,
-      "favored": "GB",
-      "raw_strength_score": -0.13,
+      "home_win_probability": 0.867,
+      "away_win_probability": 0.133,
+      "favored": "NYJ",
+      "raw_strength_score": 1.87,
       "feature_breakdown": {
         "rank_coefficient_home": -0.5,
         "third_down_coefficient_home": -1.0,
@@ -1715,8 +1775,26 @@
       ],
       "situational_note": "",
       "player_impact_entries": {
-        "home": [],
-        "away": []
+        "home": [
+          {
+            "adjustment": -1.0,
+            "note": "Minkah Fitzpatrick out"
+          }
+        ],
+        "away": [
+          {
+            "adjustment": -1.0,
+            "note": "Micah Parsons reserve (carried from Wk1)"
+          },
+          {
+            "adjustment": -1.0,
+            "note": "Josh Jacobs out for foreseeable future (exempt list)"
+          },
+          {
+            "adjustment": -1.0,
+            "note": "Aaron Banks did not play Week 2"
+          }
+        ]
       },
       "spread_current": "-2.5 -146 (9/20)",
       "spread_current_raw": -2.5,
@@ -1972,10 +2050,10 @@
       "gameday": "2026-09-20",
       "gametime": "13:00",
       "weekday": "Sunday",
-      "home_win_probability": 0.322,
-      "away_win_probability": 0.678,
-      "favored": "PHI",
-      "raw_strength_score": -0.75,
+      "home_win_probability": 0.563,
+      "away_win_probability": 0.437,
+      "favored": "TEN",
+      "raw_strength_score": 0.25,
       "feature_breakdown": {
         "rank_coefficient_home": -1.0,
         "third_down_coefficient_home": -1.0,
@@ -2121,7 +2199,12 @@
       "situational_note": "",
       "player_impact_entries": {
         "home": [],
-        "away": []
+        "away": [
+          {
+            "adjustment": -1.0,
+            "note": "Jonathan Greenard out"
+          }
+        ]
       },
       "spread_current": "+7.0 -108 (9/20)",
       "spread_current_raw": 7.0,
@@ -2479,8 +2562,18 @@
       ],
       "situational_note": "",
       "player_impact_entries": {
-        "home": [],
-        "away": []
+        "home": [
+          {
+            "adjustment": -1.0,
+            "note": "Tyler Biadasz IR (carried from Wk1)"
+          }
+        ],
+        "away": [
+          {
+            "adjustment": -1.0,
+            "note": "Brock Bowers doubtful"
+          }
+        ]
       },
       "spread_current": "-6.5 -102 (9/20)",
       "spread_current_raw": -6.5,
@@ -2514,10 +2607,10 @@
       "gameday": "2026-09-20",
       "gametime": "16:25",
       "weekday": "Sunday",
-      "home_win_probability": 0.667,
-      "away_win_probability": 0.333,
+      "home_win_probability": 0.845,
+      "away_win_probability": 0.155,
       "favored": "ARI",
-      "raw_strength_score": 0.69,
+      "raw_strength_score": 1.69,
       "feature_breakdown": {
         "third_down_coefficient_home": 1.0,
         "ypp_off_coefficient_home": -1.0,
@@ -2778,7 +2871,12 @@
       "situational_note": "",
       "player_impact_entries": {
         "home": [],
-        "away": []
+        "away": [
+          {
+            "adjustment": -1.0,
+            "note": "Sam Darnold out"
+          }
+        ]
       },
       "spread_current": "+4.5 -122 (9/20)",
       "spread_current_raw": 4.5,
@@ -2810,10 +2908,10 @@
       "gameday": "2026-09-20",
       "gametime": "16:25",
       "weekday": "Sunday",
-      "home_win_probability": 0.731,
-      "away_win_probability": 0.269,
+      "home_win_probability": 0.952,
+      "away_win_probability": 0.048,
       "favored": "DAL",
-      "raw_strength_score": 1.0,
+      "raw_strength_score": 3.0,
       "feature_breakdown": {
         "rank_coefficient_home": 1.0,
         "third_down_coefficient_home": 1.0,
@@ -3011,7 +3109,16 @@
       "situational_note": "",
       "player_impact_entries": {
         "home": [],
-        "away": []
+        "away": [
+          {
+            "adjustment": -1.0,
+            "note": "Laremy Tunsil IR"
+          },
+          {
+            "adjustment": -1.0,
+            "note": "Frankie Luvu out"
+          }
+        ]
       },
       "spread_current": "-4.5 -106 (9/20)",
       "spread_current_raw": -4.5,
@@ -3246,10 +3353,10 @@
       "gameday": "2026-09-20",
       "gametime": "20:20",
       "weekday": "Sunday",
-      "home_win_probability": 0.526,
-      "away_win_probability": 0.474,
-      "favored": "KC",
-      "raw_strength_score": 0.11,
+      "home_win_probability": 0.29,
+      "away_win_probability": 0.71,
+      "favored": "IND",
+      "raw_strength_score": -0.89,
       "feature_breakdown": {
         "rank_coefficient_home": -0.5,
         "third_down_coefficient_home": -1.0,
@@ -3429,7 +3536,12 @@
       ],
       "situational_note": "",
       "player_impact_entries": {
-        "home": [],
+        "home": [
+          {
+            "adjustment": -1.0,
+            "note": "Mansoor Delane DNP - Questionable"
+          }
+        ],
         "away": []
       },
       "spread_current": "-6.5 +100 (9/20)",
@@ -3491,8 +3603,8 @@
         },
         {
           "team": "NYG",
-          "depth_chart_starter": "Jaxson Dart",
-          "normal_starter_used_for_elite_check": "Jaxson Dart",
+          "depth_chart_starter": "Jameis Winston",
+          "normal_starter_used_for_elite_check": "Jameis Winston",
           "is_elite_starter": false,
           "backup_starting": false,
           "rookie_starting": false,
@@ -3706,12 +3818,23 @@
       ],
       "situational_note": "",
       "player_impact_entries": {
-        "home": [],
-        "away": []
+        "home": [
+          {
+            "adjustment": -1.0,
+            "note": "Puka Nacua DNP - Questionable"
+          }
+        ],
+        "away": [
+          {
+            "adjustment": -1.0,
+            "note": "Paulson Adebo IR"
+          }
+        ]
       },
-      "spread_current": "-6.5 -120 (9/20)",
+      "spread_current": "-6.5 -115 (9/21)",
       "spread_current_raw": -6.5,
       "spread_history": [
+        "-6.5 -120 (9/20)",
         "-6.5 -115 (9/20)",
         "-7.5 +100 (9/19)",
         "-7.5 -104 (9/17)",
@@ -3731,9 +3854,9 @@
         "O/U 47.5 (-110.0) (9/8)",
         "O/U 48.5 (-110.0) (8/31)"
       ],
-      "home_score": null,
-      "away_score": null,
-      "is_final": false
+      "home_score": 28.0,
+      "away_score": 6.0,
+      "is_final": true
     }
   ],
   "pool_results_history": [
