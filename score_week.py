@@ -166,34 +166,64 @@ def compute_schedule_situational(team, target_week, target_is_home, games_all_se
     }
 
 
-def compute_coaching_change(team, season, games_all):
-    """New HC flag: compares the team's current coach (from the most recent
-    scheduled/played game this season) against last season's coach. Also
-    checks for a mid-season change (different coach across this season's
-    already-played games)."""
+def compute_coaching_change(team, season, target_week, games_all):
+    """New-HC flag, scoped to the actual transition window rather than
+    persisting for the whole season: flags a team's FIRST game under a
+    new coach, extended to the SECOND game too if they won the first one.
+    Applies the same way whether the change happened in the offseason
+    (tenure starts week 1, so the window is just week 1, or week 1-2 if
+    they won the opener) or mid-season (tenure starts whenever the new
+    coach's actual first game was, wherever that falls in the schedule) -
+    it's the same "first game(s) under this coach" signal either way, just
+    anchored to a different week."""
     this_season = games_all[games_all['season'] == season]
     prior_season = games_all[games_all['season'] == season - 1]
 
-    def team_coach_from(df, team):
-        home_rows = df[df['home_team'] == team][['week', 'home_coach']].rename(columns={'home_coach': 'coach'})
-        away_rows = df[df['away_team'] == team][['week', 'away_coach']].rename(columns={'away_coach': 'coach'})
+    def team_games_from(df, team):
+        home_rows = df[df['home_team'] == team][['week', 'home_coach', 'home_score', 'away_score']].rename(
+            columns={'home_coach': 'coach', 'home_score': 'team_score', 'away_score': 'opp_score'})
+        away_rows = df[df['away_team'] == team][['week', 'away_coach', 'away_score', 'home_score']].rename(
+            columns={'away_coach': 'coach', 'away_score': 'team_score', 'home_score': 'opp_score'})
         combined = pd.concat([home_rows, away_rows]).dropna(subset=['coach']).sort_values('week')
         return combined
 
-    cur = team_coach_from(this_season, team)
-    prior = team_coach_from(prior_season, team)
+    cur = team_games_from(this_season, team)
+    prior = team_games_from(prior_season, team)
 
-    if cur.empty or prior.empty:
+    if cur.empty:
         return False
 
     current_coach = cur.iloc[-1]['coach']
-    prior_coach = prior.iloc[-1]['coach']
-    offseason_change = current_coach != prior_coach
+    coach_rows = cur[cur['coach'] == current_coach]
+    tenure_start_week = int(coach_rows['week'].min())
+    season_start_week = int(cur['week'].min())
 
-    # mid-season change: coach differs across this season's own games so far
-    same_season_change = cur['coach'].nunique() > 1
+    if tenure_start_week > season_start_week:
+        # The current coach wasn't there for this season's own week 1 -
+        # a mid-season change definitively happened, no need for a
+        # prior-season comparison to confirm it.
+        is_new_this_season = True
+    else:
+        # Coach has been there since this season's week 1 - only a
+        # genuine change if it differs from last season's coach (and we
+        # have a prior season to compare against at all).
+        prior_coach = prior.iloc[-1]['coach'] if not prior.empty else None
+        is_new_this_season = prior_coach is not None and current_coach != prior_coach
 
-    return bool(offseason_change or same_season_change)
+    if not is_new_this_season:
+        return False
+
+    if target_week == tenure_start_week:
+        return True
+
+    if target_week == tenure_start_week + 1:
+        first_game = coach_rows[coach_rows['week'] == tenure_start_week]
+        if not first_game.empty:
+            row = first_game.iloc[0]
+            if pd.notna(row['team_score']) and pd.notna(row['opp_score']) and row['team_score'] > row['opp_score']:
+                return True
+
+    return False
 
 
 def compute_stakes(team, season, target_week, games_all):
@@ -1035,8 +1065,8 @@ def main(season, week=None):
 
         milestones_coef = milestones_value(home_sched) - milestones_value(away_sched)
 
-        home_new_hc = compute_coaching_change(home, season, games_all)
-        away_new_hc = compute_coaching_change(away, season, games_all)
+        home_new_hc = compute_coaching_change(home, season, week, games_all)
+        away_new_hc = compute_coaching_change(away, season, week, games_all)
         coaching_coef = (1.0 if home_new_hc else 0.0) - (1.0 if away_new_hc else 0.0)
 
         home_stakes = compute_stakes(home, season, week, games_all)
