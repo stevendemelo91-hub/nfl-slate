@@ -164,6 +164,7 @@ td { padding: 10px 8px; font-size: 13px; vertical-align: middle; border-top: 1px
             <th class="numeric sortable" data-sort="share_prize">Share Prize <span class="sort-arrow"></span></th>
             <th class="numeric sortable" data-sort="total_pot">Total Pot <span class="sort-arrow"></span></th>
             <th class="numeric sortable" data-sort="underdog_pts_realized">Underdog Pts Realized <span class="sort-arrow"></span></th>
+            <th class="numeric">My Final</th>
           </tr>
         </thead>
         <tbody id="history-body"></tbody>
@@ -174,7 +175,23 @@ td { padding: 10px 8px; font-size: 13px; vertical-align: middle; border-top: 1px
   <div class="pool-section">
     <div class="pool-header">
       <div class="pool-title">This Season's Card Performance</div>
-      <div class="pool-subnote" id="tally-subnote">How many wrong picks per settled week, this season - straight picks only (boxed games excluded)</div>
+      <div class="pool-subnote">Final card's correct/wrong per week - boxed games always count as correct. Best card also shown separately, checking all 4 instances too, in case an earlier read beat the final one.</div>
+    </div>
+    <div id="weekly-card-status" class="signal-empty">Loading&hellip;</div>
+    <div class="table-scroll" style="display:none;" id="weekly-card-scroll">
+      <table id="weekly-card-table">
+        <thead>
+          <tr>
+            <th>Week</th>
+            <th class="numeric">Final Card</th>
+            <th class="numeric">Best Card</th>
+          </tr>
+        </thead>
+        <tbody id="weekly-card-body"></tbody>
+      </table>
+    </div>
+    <div class="pool-header" style="margin-top:20px;">
+      <div class="pool-subnote">Distribution of the Final card's wrong-count, across every settled week this season</div>
     </div>
     <div id="tally-container"></div>
   </div>
@@ -202,6 +219,7 @@ function isPoolEligible(gameday) {
 }
 
 let historyData = [];
+let CURRENT_SEASON = null;
 let sortColumn = 'season';
 let sortAscending = false;
 
@@ -258,6 +276,8 @@ function renderHistoryTable() {
   const fmtSelections = h => (h.winning_selections_required === null || h.winning_selections_total === null)
     ? '<span class="dim">—</span>' : `${h.winning_selections_required}/${h.winning_selections_total}`;
 
+  const fmtCard = c => (!c || c.correct + c.wrong === 0) ? '<span class="dim">—</span>' : `${c.correct}-${c.wrong}`;
+
   tbody.innerHTML = sorted.map(h => `
     <tr>
       <td data-label="Year">${h.season}</td>
@@ -268,6 +288,7 @@ function renderHistoryTable() {
       <td class="numeric" data-label="Share Prize">${fmtMoney(h.share_prize)}</td>
       <td class="numeric" data-label="Total Pot">${fmtMoney(h.total_pot)}</td>
       <td class="numeric" data-label="Underdog Pts Realized">${fmtNum(h.underdog_pts_realized)}</td>
+      <td class="numeric" data-label="My Final">${fmtCard(h.season === CURRENT_SEASON ? WEEKLY_CARD_RESULTS.get(h.week)?.finalRecord : null)}</td>
     </tr>
   `).join('');
 }
@@ -276,25 +297,38 @@ document.querySelectorAll('#history-table th.sortable').forEach(th => {
   th.addEventListener('click', () => setSort(th.dataset.sort));
 });
 
-// --- Current-season card performance tally ---
-// For each settled week this season, count how many of THIS season's
-// straight Final picks (not boxed) were wrong. Boxed games ("— (box)")
-// are excluded, since a boxed game covers multiple outcomes and doesn't
-// have a single right/wrong pick the same way a straight pick does.
-async function renderCurrentSeasonTally(currentSeason) {
-  const container = document.getElementById('tally-container');
-  let manifest;
-  try {
-    const res = await fetch('./data/manifest.json');
-    manifest = await res.json();
-  } catch (e) {
-    container.innerHTML = `<div class="signal-empty">Could not load season data.</div>`;
-    return;
-  }
+// Correct/wrong breakdown for ONE column (instance1-4 or final) across a
+// week's pool-eligible games. Boxed always counts as correct (it covers
+// the outcome regardless of which side actually won) - matching the
+// same convention used for the Final column's W-L record on the main
+// Chart view. Untouched picks are excluded entirely, not wrong.
+function computeCardBreakdown(weekData, poolGames, field) {
+  let correct = 0, wrong = 0;
+  poolGames.forEach(g => {
+    const pick = TRACKER.poolPicks[g.game_id];
+    if (!pick || pick[field] === '' || pick[field] === undefined) return;
+    if (pick[field] === 'BOX') { correct++; return; }
+    const pickedHome = pick[field] === g.home_team;
+    const pickWon = pickedHome ? g.home_score > g.away_score : g.away_score > g.home_score;
+    if (pickWon) correct++; else wrong++;
+  });
+  return { correct, wrong };
+}
 
+// Populated once per season load: week number -> { finalRecord, bestCard }.
+// Single source of truth for both the new "My Final" column on Season
+// History and the weekly-card breakdown/distribution below - previously
+// these were computed separately (and the old one had a real bug: it
+// checked for the pre-redesign empty-string box value, which no longer
+// matches how a box is actually stored ('BOX'), so boxed games were
+// silently falling through and getting graded as a literal pick for a
+// team named "BOX" - effectively random).
+const WEEKLY_CARD_RESULTS = new Map();
+const CARD_FIELDS = ['instance1', 'instance2', 'instance3', 'instance4', 'final'];
+const CARD_LABELS = { instance1: 'Instance #1', instance2: 'Instance #2', instance3: 'Instance #3', instance4: 'Instance #4', final: 'Final' };
+
+async function computeWeeklyCardResults(currentSeason, manifest) {
   const seasonWeeks = manifest.weeks.filter(w => w.season === currentSeason);
-  const wrongCountsByWeek = [];
-
   for (const entry of seasonWeeks) {
     let weekData;
     try {
@@ -304,28 +338,57 @@ async function renderCurrentSeasonTally(currentSeason) {
 
     const poolGames = weekData.games.filter(g => isPoolEligible(g.gameday));
     if (poolGames.length === 0) continue;
-    // Only tally a week once every pool-eligible game in it has finished
-    const allFinal = poolGames.every(g => g.is_final);
-    if (!allFinal) continue;
+    if (!poolGames.every(g => g.is_final)) continue; // only fully-settled weeks
 
-    let wrongCount = 0;
-    poolGames.forEach(g => {
-      const pick = TRACKER.poolPicks[g.game_id];
-      if (!pick || !pick.finalTouched || pick.final === '') return; // untouched or boxed - excluded
-      const pickedHome = pick.final === g.home_team;
-      const pickWon = pickedHome ? g.home_score > g.away_score : g.away_score > g.home_score;
-      if (!pickWon) wrongCount++;
+    const breakdowns = {};
+    CARD_FIELDS.forEach(f => breakdowns[f] = computeCardBreakdown(weekData, poolGames, f));
+
+    // Best card = highest correct count among columns that were actually
+    // used at all this week (skip a column nobody touched).
+    const used = CARD_FIELDS.filter(f => breakdowns[f].correct + breakdowns[f].wrong > 0);
+    let bestField = 'final';
+    if (used.length) {
+      bestField = used.reduce((best, f) => breakdowns[f].correct > breakdowns[best].correct ? f : best, used[0]);
+    }
+
+    WEEKLY_CARD_RESULTS.set(entry.week, {
+      finalRecord: breakdowns.final,
+      bestCard: { field: bestField, ...breakdowns[bestField] },
     });
-    wrongCountsByWeek.push(wrongCount);
   }
+}
 
-  if (wrongCountsByWeek.length === 0) {
-    container.innerHTML = `<div class="signal-empty">No fully-settled weeks yet this season - check back once games finish.</div>`;
+async function renderWeeklyCardSection() {
+  const statusEl = document.getElementById('weekly-card-status');
+  const scrollEl = document.getElementById('weekly-card-scroll');
+
+  const weeks = [...WEEKLY_CARD_RESULTS.keys()].sort((a, b) => a - b);
+  if (weeks.length === 0) {
+    statusEl.textContent = 'No fully-settled weeks yet this season - check back once games finish.';
+    document.getElementById('tally-container').innerHTML = '';
     return;
   }
 
+  const fmtRecord = r => `${r.correct}-${r.wrong}`;
+  document.getElementById('weekly-card-body').innerHTML = weeks.map(week => {
+    const { finalRecord, bestCard } = WEEKLY_CARD_RESULTS.get(week);
+    const bestIsFinal = bestCard.field === 'final';
+    const bestNote = bestIsFinal ? '' : ` <span class="dim">(${CARD_LABELS[bestCard.field]})</span>`;
+    return `
+      <tr>
+        <td data-label="Week">Week ${week}</td>
+        <td class="numeric" data-label="Final Card">${fmtRecord(finalRecord)}</td>
+        <td class="numeric" data-label="Best Card">${fmtRecord(bestCard)}${bestNote}</td>
+      </tr>
+    `;
+  }).join('');
+
+  // Perfect-thru-5+ distribution, derived from the SAME final-card wrong
+  // counts shown in the table above - not a separately-computed value,
+  // so the two views can never disagree with each other.
   const buckets = { perfect: 0, one: 0, two: 0, three: 0, four: 0, fivePlus: 0 };
-  wrongCountsByWeek.forEach(w => {
+  weeks.forEach(week => {
+    const w = WEEKLY_CARD_RESULTS.get(week).finalRecord.wrong;
     if (w === 0) buckets.perfect++;
     else if (w === 1) buckets.one++;
     else if (w === 2) buckets.two++;
@@ -334,7 +397,7 @@ async function renderCurrentSeasonTally(currentSeason) {
     else buckets.fivePlus++;
   });
 
-  container.innerHTML = `
+  document.getElementById('tally-container').innerHTML = `
     <div class="tally-grid">
       <div class="tally-box perfect"><div class="tally-label">Perfect</div><div class="tally-value">${buckets.perfect}</div></div>
       <div class="tally-box"><div class="tally-label">1 Wrong</div><div class="tally-value">${buckets.one}</div></div>
@@ -343,8 +406,11 @@ async function renderCurrentSeasonTally(currentSeason) {
       <div class="tally-box"><div class="tally-label">4 Wrong</div><div class="tally-value">${buckets.four}</div></div>
       <div class="tally-box"><div class="tally-label">5+ Wrong</div><div class="tally-value">${buckets.fivePlus}</div></div>
     </div>
-    <div class="tally-total">${wrongCountsByWeek.length} settled week${wrongCountsByWeek.length === 1 ? '' : 's'} tracked this season</div>
+    <div class="tally-total">${weeks.length} settled week${weeks.length === 1 ? '' : 's'} tracked this season</div>
   `;
+
+  statusEl.style.display = 'none';
+  scrollEl.style.display = '';
 }
 
 async function init() {
@@ -352,15 +418,19 @@ async function init() {
     const manifestRes = await fetch('./data/manifest.json');
     const manifest = await manifestRes.json();
     const currentSeason = manifest.latest.season;
+    CURRENT_SEASON = currentSeason;
 
     const histRes = await fetch(`./data/${manifest.weeks.find(w => w.season === currentSeason && w.week === manifest.latest.week).file}`);
     const histData = await histRes.json();
     historyData = histData.pool_results_history || [];
-    renderHistoryTable();
 
-    await renderCurrentSeasonTally(currentSeason);
+    // Compute personal card results BEFORE rendering the history table,
+    // so its new "My Final" column has data to show on first render.
+    await computeWeeklyCardResults(currentSeason, manifest);
+    renderHistoryTable();
+    await renderWeeklyCardSection();
   } catch (e) {
-    document.getElementById('history-body').innerHTML = `<tr><td colspan="8" class="signal-empty">Could not load data. Run the weekly scorer first.</td></tr>`;
+    document.getElementById('history-body').innerHTML = `<tr><td colspan="9" class="signal-empty">Could not load data. Run the weekly scorer first.</td></tr>`;
   }
 }
 
