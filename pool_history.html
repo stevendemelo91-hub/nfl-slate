@@ -219,6 +219,7 @@ function isPoolEligible(gameday) {
 }
 
 let historyData = [];
+let CURRENT_SEASON = null;
 let sortColumn = 'season';
 let sortAscending = false;
 
@@ -287,7 +288,7 @@ function renderHistoryTable() {
       <td class="numeric" data-label="Share Prize">${fmtMoney(h.share_prize)}</td>
       <td class="numeric" data-label="Total Pot">${fmtMoney(h.total_pot)}</td>
       <td class="numeric" data-label="Underdog Pts Realized">${fmtNum(h.underdog_pts_realized)}</td>
-      <td class="numeric" data-label="My Final">${fmtCard(WEEKLY_CARD_RESULTS.get(h.week)?.finalRecord)}</td>
+      <td class="numeric" data-label="My Final">${fmtCard(h.season === CURRENT_SEASON ? WEEKLY_CARD_RESULTS.get(h.week)?.finalRecord : null)}</td>
     </tr>
   `).join('');
 }
@@ -417,6 +418,7 @@ async function init() {
     const manifestRes = await fetch('./data/manifest.json');
     const manifest = await manifestRes.json();
     const currentSeason = manifest.latest.season;
+    CURRENT_SEASON = currentSeason;
 
     const histRes = await fetch(`./data/${manifest.weeks.find(w => w.season === currentSeason && w.week === manifest.latest.week).file}`);
     const histData = await histRes.json();
