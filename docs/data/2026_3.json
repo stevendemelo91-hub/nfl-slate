@@ -2662,17 +2662,17 @@
       "gameday": "2026-09-27",
       "gametime": "16:05",
       "weekday": "Sunday",
-      "home_win_probability": 0.731,
-      "away_win_probability": 0.269,
+      "home_win_probability": 0.758,
+      "away_win_probability": 0.242,
       "favored": "SF",
-      "raw_strength_score": 1.0,
+      "raw_strength_score": 1.14,
       "feature_breakdown": {
         "rank_coefficient_home": 1.0,
         "third_down_coefficient_home": 1.0,
         "ypp_off_coefficient_home": 1.0,
         "ypp_def_coefficient_home": 1.0,
         "road_trip_coefficient_home": 0.5,
-        "streak_coefficient_home": -0.5
+        "streak_coefficient_home": -1.0
       },
       "power_rating_implied_spread": 10.42,
       "neutral_site": false,
@@ -2890,9 +2890,9 @@
         "O/U 48.5 (-110.0) (9/15)",
         "O/U 46.5 (-110.0) (8/31)"
       ],
-      "home_score": null,
-      "away_score": null,
-      "is_final": false
+      "home_score": 36.0,
+      "away_score": 30.0,
+      "is_final": true
     },
     {
       "game_id": "2026_03_MIN_TB",
@@ -3074,9 +3074,9 @@
         "O/U 46.5 (-110.0) (9/15)",
         "O/U 44.5 (-110.0) (8/31)"
       ],
-      "home_score": null,
-      "away_score": null,
-      "is_final": false
+      "home_score": 16.0,
+      "away_score": 23.0,
+      "is_final": true
     },
     {
       "game_id": "2026_03_BAL_DAL",
@@ -3261,9 +3261,9 @@
         "O/U 52.5 (-105.0) (9/16)",
         "O/U 51.5 (-110.0) (8/31)"
       ],
-      "home_score": null,
-      "away_score": null,
-      "is_final": false
+      "home_score": 31.0,
+      "away_score": 34.0,
+      "is_final": true
     },
     {
       "game_id": "2026_03_LV_NO",
@@ -3489,9 +3489,9 @@
         "O/U 44.5 (-115.0) (9/15)",
         "O/U 42.5 (-110.0) (8/31)"
       ],
-      "home_score": null,
-      "away_score": null,
-      "is_final": false
+      "home_score": 27.0,
+      "away_score": 35.0,
+      "is_final": true
     },
     {
       "game_id": "2026_03_LA_DEN",
@@ -3500,17 +3500,18 @@
       "gameday": "2026-09-27",
       "gametime": "20:20",
       "weekday": "Sunday",
-      "home_win_probability": 0.401,
-      "away_win_probability": 0.599,
+      "home_win_probability": 0.435,
+      "away_win_probability": 0.565,
       "favored": "LA",
-      "raw_strength_score": -0.4,
+      "raw_strength_score": -0.26,
       "feature_breakdown": {
         "rank_coefficient_home": -1.0,
         "third_down_coefficient_home": -1.0,
         "ypp_off_coefficient_home": -1.0,
         "ypp_def_coefficient_home": 1.0,
         "turnover_coefficient_home": -1.0,
-        "rest_coefficient_home": 0.5
+        "rest_coefficient_home": 0.5,
+        "streak_coefficient_home": -0.5
       },
       "power_rating_implied_spread": -1.25,
       "neutral_site": false,
@@ -3676,9 +3677,10 @@
         "home": [],
         "away": []
       },
-      "spread_current": "+2.5 -118 (9/25)",
-      "spread_current_raw": 2.5,
+      "spread_current": "+1.5 -122 (9/27)",
+      "spread_current_raw": 1.5,
       "spread_history": [
+        "+2.5 -118 (9/25)",
         "+2.5 -110 (9/24)",
         "+2.5 -106 (9/22)",
         "+2.5 -110 (9/20)",
@@ -3695,9 +3697,9 @@
         "O/U 46.5 (-105.0) (9/15)",
         "O/U 45.5 (-110.0) (8/31)"
       ],
-      "home_score": null,
-      "away_score": null,
-      "is_final": false
+      "home_score": 30.0,
+      "away_score": 26.0,
+      "is_final": true
     },
     {
       "game_id": "2026_03_PHI_CHI",
@@ -3910,9 +3912,10 @@
         "home": [],
         "away": []
       },
-      "spread_current": "+4.5 -114 (9/27)",
-      "spread_current_raw": 4.5,
+      "spread_current": "+3.5 -105 (9/28)",
+      "spread_current_raw": 3.5,
       "spread_history": [
+        "+4.5 -114 (9/27)",
         "+3.5 -115 (9/26)",
         "+4.5 -105 (9/23)",
         "+4.5 -110 (9/22)",
@@ -3924,8 +3927,10 @@
         "-1.5 -104 (9/15)",
         "-1.5 -105 (8/31)"
       ],
-      "total_current": "O/U 41.5 (-110.0) (9/27)",
+      "total_current": "O/U 41.5 (-114.0) (9/28)",
       "total_history": [
+        "O/U 41.5 (-112.0) (9/28)",
+        "O/U 41.5 (-110.0) (9/27)",
         "O/U 42.5 (-105.0) (9/26)",
         "O/U 41.5 (-108.0) (9/23)",
         "O/U 41.5 (-115.0) (9/22)",
