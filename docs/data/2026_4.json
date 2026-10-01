@@ -205,16 +205,17 @@
       "gameday": "2026-10-04",
       "gametime": "09:30",
       "weekday": "Sunday",
-      "home_win_probability": 0.448,
-      "away_win_probability": 0.552,
+      "home_win_probability": 0.361,
+      "away_win_probability": 0.639,
       "favored": "IND",
-      "raw_strength_score": -0.21,
+      "raw_strength_score": -0.57,
       "feature_breakdown": {
         "rank_coefficient_home": -0.5,
         "third_down_coefficient_home": -1.0,
         "ypp_off_coefficient_home": -1.0,
         "ypp_def_coefficient_home": -1.0,
-        "road_trip_coefficient_home": 0.5
+        "road_trip_coefficient_home": 0.5,
+        "qb_coefficient_home": -1.0
       },
       "power_rating_implied_spread": -0.25,
       "neutral_site": true,
@@ -224,10 +225,12 @@
           "depth_chart_starter": "Jayden Daniels",
           "normal_starter_used_for_elite_check": "Jayden Daniels",
           "is_elite_starter": false,
-          "backup_starting": false,
+          "backup_starting": true,
           "rookie_starting": false,
-          "qb_value": 0.0,
-          "notes": [],
+          "qb_value": -1.0,
+          "notes": [
+            "Backup QB starting"
+          ],
           "depth_chart_conflict": null
         },
         {
@@ -1253,17 +1256,16 @@
       "gameday": "2026-10-05",
       "gametime": "20:15",
       "weekday": "Monday",
-      "home_win_probability": 0.626,
-      "away_win_probability": 0.374,
+      "home_win_probability": 0.539,
+      "away_win_probability": 0.461,
       "favored": "NO",
-      "raw_strength_score": 0.52,
+      "raw_strength_score": 0.16,
       "feature_breakdown": {
         "third_down_coefficient_home": 1.0,
         "ypp_off_coefficient_home": -1.0,
         "ypp_def_coefficient_home": 1.0,
         "turnover_coefficient_home": -1.0,
-        "road_trip_coefficient_home": -1.0,
-        "qb_coefficient_home": 1.0
+        "road_trip_coefficient_home": -1.0
       },
       "power_rating_implied_spread": 1.67,
       "neutral_site": false,
@@ -1284,12 +1286,10 @@
           "depth_chart_starter": "Michael Penix Jr.",
           "normal_starter_used_for_elite_check": "Michael Penix Jr.",
           "is_elite_starter": false,
-          "backup_starting": true,
+          "backup_starting": false,
           "rookie_starting": false,
-          "qb_value": -1.0,
-          "notes": [
-            "Backup QB starting"
-          ],
+          "qb_value": 0.0,
+          "notes": [],
           "depth_chart_conflict": null
         }
       ],
@@ -2847,6 +2847,20 @@
       "upsets": 6.0,
       "total_pot": 500000.0,
       "underdog_pts_realized": 33.9
+    },
+    {
+      "season": 2026,
+      "week": 3,
+      "pool_id": "61",
+      "pool_label": "NFL - WEEK 3",
+      "closed_date": "2026-09-27",
+      "no_of_winners": 3,
+      "winning_selections_required": 15,
+      "winning_selections_total": 15,
+      "share_prize": 166666.7,
+      "upsets": 6.0,
+      "total_pot": 500000.1,
+      "underdog_pts_realized": 11.08
     }
   ]
 }

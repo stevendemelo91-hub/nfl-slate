@@ -13,10 +13,10 @@
       "gameday": "2026-09-24",
       "gametime": "20:15",
       "weekday": "Thursday",
-      "home_win_probability": 0.722,
-      "away_win_probability": 0.278,
+      "home_win_probability": 0.644,
+      "away_win_probability": 0.356,
       "favored": "GB",
-      "raw_strength_score": 0.95,
+      "raw_strength_score": 0.59,
       "feature_breakdown": {
         "third_down_coefficient_home": 1.0,
         "ypp_off_coefficient_home": 1.0,
@@ -24,7 +24,6 @@
         "turnover_coefficient_home": -1.0,
         "rest_coefficient_home": 1.0,
         "road_trip_coefficient_home": 0.5,
-        "qb_coefficient_home": 1.0,
         "schedule_milestones_coefficient_home": 0.5
       },
       "power_rating_implied_spread": 7.75,
@@ -46,12 +45,10 @@
           "depth_chart_starter": "Michael Penix Jr.",
           "normal_starter_used_for_elite_check": "Michael Penix Jr.",
           "is_elite_starter": false,
-          "backup_starting": true,
+          "backup_starting": false,
           "rookie_starting": false,
-          "qb_value": -1.0,
-          "notes": [
-            "Backup QB starting"
-          ],
+          "qb_value": 0.0,
+          "notes": [],
           "depth_chart_conflict": null
         }
       ],
@@ -645,10 +642,10 @@
       "gameday": "2026-09-27",
       "gametime": "13:00",
       "weekday": "Sunday",
-      "home_win_probability": 0.494,
-      "away_win_probability": 0.506,
-      "favored": "CAR",
-      "raw_strength_score": -0.02,
+      "home_win_probability": 0.727,
+      "away_win_probability": 0.273,
+      "favored": "CLE",
+      "raw_strength_score": 0.98,
       "feature_breakdown": {
         "rank_coefficient_home": -1.0,
         "third_down_coefficient_home": -1.0,
@@ -840,7 +837,12 @@
       "situational_note": "",
       "player_impact_entries": {
         "home": [],
-        "away": []
+        "away": [
+          {
+            "adjustment": -1.0,
+            "note": "Devin Lloyd out"
+          }
+        ]
       },
       "spread_current": "+2.5 -115 (9/27)",
       "spread_current_raw": 2.5,
@@ -2386,10 +2388,10 @@
       "gameday": "2026-09-27",
       "gametime": "13:00",
       "weekday": "Sunday",
-      "home_win_probability": 0.657,
-      "away_win_probability": 0.343,
+      "home_win_probability": 0.784,
+      "away_win_probability": 0.216,
       "favored": "WAS",
-      "raw_strength_score": 0.65,
+      "raw_strength_score": 1.29,
       "feature_breakdown": {
         "rank_coefficient_home": -1.0,
         "third_down_coefficient_home": 1.0,
@@ -2397,7 +2399,7 @@
         "ypp_def_coefficient_home": -1.0,
         "turnover_coefficient_home": -1.0,
         "road_trip_coefficient_home": -0.5,
-        "qb_coefficient_home": 2.0,
+        "qb_coefficient_home": 1.0,
         "schedule_milestones_coefficient_home": 0.5
       },
       "power_rating_implied_spread": -3.58,
@@ -2408,11 +2410,13 @@
           "depth_chart_starter": "Jayden Daniels",
           "normal_starter_used_for_elite_check": "Jayden Daniels",
           "is_elite_starter": false,
-          "backup_starting": false,
+          "backup_starting": true,
           "rookie_starting": false,
-          "qb_value": 0.0,
-          "notes": [],
-          "depth_chart_conflict": "Depth chart lists Jayden Daniels as starter, but injury report shows them Out - check qb_overrides.csv"
+          "qb_value": -1.0,
+          "notes": [
+            "Backup QB starting"
+          ],
+          "depth_chart_conflict": null
         },
         {
           "team": "SEA",
@@ -2621,7 +2625,12 @@
       "situational_note": "",
       "player_impact_entries": {
         "home": [],
-        "away": []
+        "away": [
+          {
+            "adjustment": -1.0,
+            "note": "Julian Love out"
+          }
+        ]
       },
       "spread_current": "-5.5 -160 (9/27)",
       "spread_current_raw": -5.5,
@@ -2662,10 +2671,10 @@
       "gameday": "2026-09-27",
       "gametime": "16:05",
       "weekday": "Sunday",
-      "home_win_probability": 0.758,
-      "away_win_probability": 0.242,
+      "home_win_probability": 0.535,
+      "away_win_probability": 0.465,
       "favored": "SF",
-      "raw_strength_score": 1.14,
+      "raw_strength_score": 0.14,
       "feature_breakdown": {
         "rank_coefficient_home": 1.0,
         "third_down_coefficient_home": 1.0,
@@ -2860,7 +2869,12 @@
       ],
       "situational_note": "",
       "player_impact_entries": {
-        "home": [],
+        "home": [
+          {
+            "adjustment": -1.0,
+            "note": "Nick Bosa out"
+          }
+        ],
         "away": []
       },
       "spread_current": "-6.5 -114 (9/27)",
@@ -3085,10 +3099,10 @@
       "gameday": "2026-09-27",
       "gametime": "16:25",
       "weekday": "Sunday",
-      "home_win_probability": 0.561,
-      "away_win_probability": 0.439,
+      "home_win_probability": 0.777,
+      "away_win_probability": 0.223,
       "favored": "DAL",
-      "raw_strength_score": 0.25,
+      "raw_strength_score": 1.25,
       "feature_breakdown": {
         "third_down_coefficient_home": 1.0,
         "ypp_off_coefficient_home": -1.0,
@@ -3236,7 +3250,12 @@
       "situational_note": "",
       "player_impact_entries": {
         "home": [],
-        "away": []
+        "away": [
+          {
+            "adjustment": -1.0,
+            "note": "Ronnie Stanley out"
+          }
+        ]
       },
       "spread_current": "+3.5 -120 (9/27)",
       "spread_current_raw": 3.5,
@@ -5473,6 +5492,20 @@
       "upsets": 6.0,
       "total_pot": 500000.0,
       "underdog_pts_realized": 33.9
+    },
+    {
+      "season": 2026,
+      "week": 3,
+      "pool_id": "61",
+      "pool_label": "NFL - WEEK 3",
+      "closed_date": "2026-09-27",
+      "no_of_winners": 3,
+      "winning_selections_required": 15,
+      "winning_selections_total": 15,
+      "share_prize": 166666.7,
+      "upsets": 6.0,
+      "total_pot": 500000.1,
+      "underdog_pts_realized": 11.08
     }
   ]
 }
