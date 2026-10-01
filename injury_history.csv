@@ -1306,3 +1306,250 @@ gsis_id,team,full_name,position,week,report_status,practice_status,report_primar
 00-0036139,PIT,Rico Dowdle,RB,4,,Did Not Participate In Practice,,2026-09-30
 00-0036504,PIT,Brandin Echols,CB,4,,Limited Participation in Practice,,2026-09-30
 00-0039167,PIT,Joey Porter Jr.,CB,4,,Full Participation in Practice,,2026-09-30
+00-0032954,ARI,Isaac Seumalo,G,4,,Did Not Participate In Practice,,2026-10-01
+00-0033890,ARI,Budda Baker,S,4,,Did Not Participate In Practice,,2026-10-01
+00-0034381,ARI,Josh Sweat,LB,4,,Did Not Participate In Practice,,2026-10-01
+00-0035144,ARI,Mack Wilson,LB,4,,Limited Participation in Practice,,2026-10-01
+00-0035258,ARI,Hjalte Froholdt,C,4,,Limited Participation in Practice,,2026-10-01
+00-0036568,ARI,Roy Lopez,DT,4,,Limited Participation in Practice,,2026-10-01
+00-0039864,ARI,Dadrion Taylor-Demerson,S,4,,Did Not Participate In Practice,,2026-10-01
+00-0040706,ARI,Walter Nolen,DT,4,,Limited Participation in Practice,,2026-10-01
+00-0026190,BAL,Calais Campbell,DT,4,,Did Not Participate In Practice,,2026-10-01
+00-0032398,BAL,Chris Moore,WR,4,,Limited Participation in Practice,,2026-10-01
+00-0032965,BAL,Ronnie Stanley,T,4,,Limited Participation in Practice,,2026-10-01
+00-0033281,BAL,Marlon Humphrey,CB,4,,Limited Participation in Practice,,2026-10-01
+00-0033901,BAL,Ethan Pocic,C,4,,Did Not Participate In Practice,,2026-10-01
+00-0033935,BAL,Trey Hendrickson,LB,4,,Did Not Participate In Practice,,2026-10-01
+00-0034753,BAL,Mark Andrews,TE,4,,Full Participation in Practice,,2026-10-01
+00-0034796,BAL,Lamar Jackson,QB,4,,Limited Participation in Practice,,2026-10-01
+00-0034798,BAL,Durham Smythe,TE,4,,Limited Participation in Practice,,2026-10-01
+00-0036369,BAL,John Simpson,G,4,,Limited Participation in Practice,,2026-10-01
+00-0038629,BAL,Jovaughn Gwyn,C,4,,Did Not Participate In Practice,,2026-10-01
+00-0039064,BAL,Zay Flowers,WR,4,,Limited Participation in Practice,,2026-10-01
+00-0034827,BUF,DJ Moore,WR,4,,Limited Participation in Practice,,2026-10-01
+00-0034832,BUF,Bradley Chubb,LB,4,,Full Participation in Practice,,2026-10-01
+00-0036888,BUF,Damar Hamlin,S,4,,Limited Participation in Practice,,2026-10-01
+00-0037254,BUF,Terrel Bernard,LB,4,,Full Participation in Practice,,2026-10-01
+00-0037288,BUF,Christian Benford,CB,4,,Did Not Participate In Practice,,2026-10-01
+00-0038557,BUF,Dorian Williams,LB,4,,Full Participation in Practice,,2026-10-01
+00-0039763,BUF,Joe Andreessen,LB,4,,Did Not Participate In Practice,,2026-10-01
+00-0039901,BUF,Keon Coleman,WR,4,,Did Not Participate In Practice,,2026-10-01
+00-0040710,BUF,Deone Walker,DT,4,,Limited Participation in Practice,,2026-10-01
+00-0040724,BUF,T.J. Sanders,DE,4,,Did Not Participate In Practice,,2026-10-01
+00-0041128,BUF,Ar'maj Reed-Adams,G,4,,Full Participation in Practice,,2026-10-01
+00-0031610,CAR,Darren Waller,TE,4,,Did Not Participate In Practice,,2026-10-01
+00-0035669,CAR,Nick Scott,S,4,,Full Participation in Practice,,2026-10-01
+00-0036417,CAR,Damien Lewis,G,4,,Did Not Participate In Practice,,2026-10-01
+00-0036555,CAR,Chuba Hubbard,RB,4,,Did Not Participate In Practice,,2026-10-01
+00-0037244,CAR,Devin Lloyd,LB,4,,Full Participation in Practice,,2026-10-01
+00-0039150,CAR,Bryce Young,QB,4,,Full Participation in Practice,,2026-10-01
+00-0039342,CAR,Xavier Legette,WR,4,,Did Not Participate In Practice,,2026-10-01
+00-0039491,CAR,Jalen Coker,WR,4,,Did Not Participate In Practice,,2026-10-01
+00-0040136,CAR,Princely Umanmielen,LB,4,,Did Not Participate In Practice,,2026-10-01
+00-0041034,CAR,Monroe Freeling,T,4,,Did Not Participate In Practice,,2026-10-01
+00-0035357,CHI,Cam Lewis,S,4,,Limited Participation in Practice,,2026-10-01
+00-0036258,CHI,Jonah Jackson,G,4,,Did Not Participate In Practice,,2026-10-01
+00-0037081,CHI,Braxton Jones,T,4,,Did Not Participate In Practice,,2026-10-01
+00-0038111,CHI,Kyler Gordon,CB,4,,Full Participation in Practice,,2026-10-01
+00-0038390,CHI,Noah Sewell,LB,4,,Limited Participation in Practice,,2026-10-01
+00-0039918,CHI,Caleb Williams,QB,4,,Did Not Participate In Practice,,2026-10-01
+00-0040741,CHI,Shemar Turner,DE,4,,Limited Participation in Practice,,2026-10-01
+00-0034800,CIN,B.J. Hill,DT,4,,Did Not Participate In Practice,,2026-10-01
+00-0035702,CIN,Dalton Risner,G,4,,Did Not Participate In Practice,,2026-10-01
+00-0036231,CIN,Kyle Dugger,S,4,,Did Not Participate In Practice,,2026-10-01
+00-0037193,CIN,Bryan Cook,S,4,,Limited Participation in Practice,,2026-10-01
+00-0038560,CIN,Jordan Battle,S,4,,Limited Participation in Practice,,2026-10-01
+00-0041069,CIN,Colbie Young,WR,4,,Did Not Participate In Practice,,2026-10-01
+00-0033877,DAL,Malik Hooker,S,4,,Limited Participation in Practice,,2026-10-01
+00-0037310,DAL,James Houston,LB,4,,Full Participation in Practice,,2026-10-01
+00-0037839,DAL,Cobie Durant,CB,4,,Did Not Participate In Practice,,2026-10-01
+00-0038556,DAL,DeMarvion Overshown,LB,4,,Did Not Participate In Practice,,2026-10-01
+00-0040008,DAL,Shavon Revel Jr.,CB,4,,Did Not Participate In Practice,,2026-10-01
+00-0035248,DEN,Zach Allen,DE,4,,Limited Participation in Practice,,2026-10-01
+00-0036158,DEN,J.K. Dobbins,RB,4,,Full Participation in Practice,,2026-10-01
+00-0036613,DEN,Jaylen Waddle,WR,4,,Full Participation in Practice,,2026-10-01
+00-0037799,DEN,Dondrea Tillman,LB,4,,Did Not Participate In Practice,,2026-10-01
+00-0038976,DEN,Marvin Mims Jr.,WR,4,,Full Participation in Practice,,2026-10-01
+00-0034384,DET,D.J. Reed,CB,4,,Limited Participation in Practice,,2026-10-01
+00-0036272,DET,Ben Bartch,G,4,,Did Not Participate In Practice,,2026-10-01
+00-0036335,DET,D.J. Wonnum,DE,4,,Did Not Participate In Practice,,2026-10-01
+00-0036551,GB,Aaron Banks,G,4,,Did Not Participate In Practice,,2026-10-01
+00-0038398,GB,Karl Brooks,DT,4,,Did Not Participate In Practice,,2026-10-01
+00-0039112,GB,Lukas Van Ness,LB,4,,Limited Participation in Practice,,2026-10-01
+00-0039817,GB,Jacob Monk,C,4,,Did Not Participate In Practice,,2026-10-01
+00-0039850,GB,Edgerrin Cooper,LB,4,,Limited Participation in Practice,,2026-10-01
+00-0040016,GB,Warren Brinson,DT,4,,Limited Participation in Practice,,2026-10-01
+00-0040689,GB,Anthony Campbell,DT,4,,Did Not Participate In Practice,,2026-10-01
+00-0031364,HOU,Jadeveon Clowney,DE,4,,Limited Participation in Practice,,2026-10-01
+00-0032071,HOU,Trent Brown,T,4,,Did Not Participate In Practice,,2026-10-01
+00-0034355,HOU,M.J. Stewart,S,4,,Limited Participation in Practice,,2026-10-01
+00-0034383,HOU,Dalton Schultz,TE,4,,Limited Participation in Practice,,2026-10-01
+00-0035166,HOU,Azeez Al-Shaair,LB,4,,Did Not Participate In Practice,,2026-10-01
+00-0036554,HOU,Nico Collins,WR,4,,Limited Participation in Practice,,2026-10-01
+00-0037457,HOU,Jake Hansen,LB,4,,Limited Participation in Practice,,2026-10-01
+00-0038127,HOU,Logan Hall,DE,4,,Limited Participation in Practice,,2026-10-01
+00-0038131,HOU,Ed Ingram,G,4,,Limited Participation in Practice,,2026-10-01
+00-0039108,HOU,Will Anderson Jr.,DE,4,,Limited Participation in Practice,,2026-10-01
+00-0039603,HOU,British Brooks,RB,4,,Did Not Participate In Practice,,2026-10-01
+00-0039838,HOU,Calen Bullock,S,4,,Limited Participation in Practice,,2026-10-01
+00-0041465,HOU,Wade Woodaz,LB,4,,Full Participation in Practice,,2026-10-01
+00-0030279,IND,Keenan Allen,WR,4,,Limited Participation in Practice,,2026-10-01
+00-0033217,IND,Mo Alie-Cox,TE,4,,Did Not Participate In Practice,,2026-10-01
+00-0034573,IND,Charvarius Ward,CB,4,,Limited Participation in Practice,,2026-10-01
+00-0035021,IND,Ashton Dulin,WR,4,,Did Not Participate In Practice,,2026-10-01
+00-0036223,IND,Jonathan Taylor,RB,4,,Limited Participation in Practice,,2026-10-01
+00-0036298,IND,Akeem Davis-Gaither,LB,4,,Limited Participation in Practice,,2026-10-01
+00-0039576,IND,Spencer Shrader,K,4,,Full Participation in Practice,,2026-10-01
+00-0034960,JAX,Jakobi Meyers,WR,4,,Limited Participation in Practice,,2026-10-01
+00-0036262,JAX,DaVon Hamilton,DT,4,,Limited Participation in Practice,,2026-10-01
+00-0036655,JAX,Cole Van Lanen,T,4,,Limited Participation in Practice,,2026-10-01
+00-0037313,JAX,Montaric Brown,CB,4,,Limited Participation in Practice,,2026-10-01
+00-0038616,JAX,Christian Braswell,CB,4,,Limited Participation in Practice,,2026-10-01
+00-0039353,JAX,Jarrian Jones,CB,4,,Full Participation in Practice,,2026-10-01
+00-0040238,JAX,LeQuint Allen Jr.,RB,4,,Limited Participation in Practice,,2026-10-01
+00-0041045,JAX,Albert Regis,DT,4,,Limited Participation in Practice,,2026-10-01
+00-0032762,KC,Chris Jones,DT,4,,Full Participation in Practice,,2026-10-01
+00-0033873,KC,Patrick Mahomes,QB,4,,Full Participation in Practice,,2026-10-01
+00-0036374,KC,L'Jarius Sneed,CB,4,,Limited Participation in Practice,,2026-10-01
+00-0037208,KC,Jack Cochrane,LB,4,,Full Participation in Practice,,2026-10-01
+00-0038982,KC,Chamarri Conner,S,4,,Full Participation in Practice,,2026-10-01
+00-0039006,KC,Felix Anudike-Uzomah,DE,4,,Full Participation in Practice,,2026-10-01
+00-0039067,KC,Rashee Rice,WR,4,,Full Participation in Practice,,2026-10-01
+00-0039324,KC,Christian Roland-Wallace,CB,4,,Full Participation in Practice,,2026-10-01
+00-0040116,KC,Josh Simmons,T,4,,Did Not Participate In Practice,,2026-10-01
+00-0040640,KC,Ashton Gillotte,DE,4,,Full Participation in Practice,,2026-10-01
+00-0041497,KC,Jadon Canady,CB,4,,Full Participation in Practice,,2026-10-01
+00-0031381,LA,Davante Adams,WR,4,,Did Not Participate In Practice,,2026-10-01
+00-0031388,LA,Aaron Donald,DT,4,,Did Not Participate In Practice,,2026-10-01
+00-0036244,LA,Colby Parkinson,TE,4,,Did Not Participate In Practice,,2026-10-01
+00-0037195,LA,Jaylen Watson,CB,4,,Did Not Participate In Practice,,2026-10-01
+00-0037587,LA,Nate Landman,LB,4,,Limited Participation in Practice,,2026-10-01
+00-0039075,LA,Puka Nacua,WR,4,,Limited Participation in Practice,,2026-10-01
+00-0039772,LA,Josh Wallace,CB,4,,Limited Participation in Practice,,2026-10-01
+00-0039834,LA,Kamren Kinchens,S,4,,Limited Participation in Practice,,2026-10-01
+00-0040737,LA,Terrance Ferguson,TE,4,,Did Not Participate In Practice,,2026-10-01
+00-0031040,LAC,Khalil Mack,DE,4,,Did Not Participate In Practice,,2026-10-01
+00-0033546,LAC,Dalvin Tomlinson,DT,4,,Did Not Participate In Practice,,2026-10-01
+00-0034356,LAC,Donte Jackson,CB,4,,Did Not Participate In Practice,,2026-10-01
+00-0034790,LAC,Derwin James,S,4,,Limited Participation in Practice,,2026-10-01
+00-0036736,LAC,Kayode Awosika,G,4,,Did Not Participate In Practice,,2026-10-01
+00-0036992,LAC,Elijah Molden,S,4,,Limited Participation in Practice,,2026-10-01
+00-0037012,LAC,Trey Lance,QB,4,,Limited Participation in Practice,,2026-10-01
+00-0038046,LAC,Charlie Kolar,TE,4,,Did Not Participate In Practice,,2026-10-01
+00-0038454,LAC,Keaton Mitchell,RB,4,,Limited Participation in Practice,,2026-10-01
+00-0039835,LAC,Justin Eboigbe,DE,4,,Did Not Participate In Practice,,2026-10-01
+00-0039915,LAC,Ladd McConkey,WR,4,,Limited Participation in Practice,,2026-10-01
+00-0041550,LAC,Brenen Thompson,WR,4,,Did Not Participate In Practice,,2026-10-01
+00-0034275,LV,Foley Fatukasi,DT,4,,Full Participation in Practice,,2026-10-01
+00-0035891,LV,Cody White,WR,4,,Full Participation in Practice,,2026-10-01
+00-0037461,LV,Tristin McCollum,S,4,,Full Participation in Practice,,2026-10-01
+00-0038579,LV,Aidan O'Connell,QB,4,,Did Not Participate In Practice,,2026-10-01
+00-0039735,LV,Jackson Powers-Johnson,G,4,,Did Not Participate In Practice,,2026-10-01
+00-0040122,LV,Ashton Jeanty,RB,4,,Full Participation in Practice,,2026-10-01
+00-0040868,LV,Treydan Stukes,S,4,,Full Participation in Practice,,2026-10-01
+00-0040894,LV,Malik Benson,WR,4,,Full Participation in Practice,,2026-10-01
+00-0036159,MIA,Joshua Uche,LB,4,,Full Participation in Practice,,2026-10-01
+00-0036171,MIA,Aaron Brewer,C,4,,Full Participation in Practice,,2026-10-01
+00-0037686,MIA,Tucker Addington,LS,4,,Limited Participation in Practice,,2026-10-01
+00-0038603,MIA,Rob Beal Jr.,LB,4,,Did Not Participate In Practice,,2026-10-01
+00-0039156,MIA,Julius Brents,CB,4,,Full Participation in Practice,,2026-10-01
+00-0039481,MIA,Storm Duck,CB,4,,Limited Participation in Practice,,2026-10-01
+00-0039874,MIA,Jaylen Wright,RB,4,,Limited Participation in Practice,,2026-10-01
+00-0040182,MIA,Dante Trader Jr.,S,4,,Full Participation in Practice,,2026-10-01
+00-0040248,MIA,Zeek Biggers,DT,4,,Full Participation in Practice,,2026-10-01
+00-0041523,MIA,Caleb Douglas,WR,4,,Did Not Participate In Practice,,2026-10-01
+00-0041525,MIA,Chris Bell,WR,4,,Limited Participation in Practice,,2026-10-01
+00-0041579,MIA,Seydou Traore,TE,4,,Full Participation in Practice,,2026-10-01
+00-0033293,MIN,Aaron Jones,RB,4,,Limited Participation in Practice,,2026-10-01
+00-0035276,MIN,Blake Cashman,LB,4,,Limited Participation in Practice,,2026-10-01
+00-0036322,MIN,Justin Jefferson,WR,4,,Did Not Participate In Practice,,2026-10-01
+00-0041083,MIN,Charles Demmings,CB,4,,Did Not Participate In Practice,,2026-10-01
+00-0041581,MIN,Brett Thorson,P,4,,Did Not Participate In Practice,,2026-10-01
+00-0031330,NE,Morgan Moses,T,4,,Did Not Participate In Practice,,2026-10-01
+00-0035678,NE,Dre'Mont Jones,LB,4,,Limited Participation in Practice,,2026-10-01
+00-0036187,NE,Reggie Gilliam,FB,4,,Limited Participation in Practice,,2026-10-01
+00-0036813,NE,Christian Elliss,LB,4,,Limited Participation in Practice,,2026-10-01
+00-0036981,NE,Christian Barmore,DT,4,,Did Not Participate In Practice,,2026-10-01
+00-0037205,NE,Brenden Schooler,S,4,,Limited Participation in Practice,,2026-10-01
+00-0039147,NE,Christian Gonzalez,CB,4,,Did Not Participate In Practice,,2026-10-01
+00-0039851,NE,Drake Maye,QB,4,,Full Participation in Practice,,2026-10-01
+00-0040716,NE,Craig Woodson,S,4,,Limited Participation in Practice,,2026-10-01
+00-0041395,NE,Eli Raridon,TE,4,,Limited Participation in Practice,,2026-10-01
+00-0033376,NYG,Patrick Ricard,FB,4,,Full Participation in Practice,,2026-10-01
+00-0034248,NYG,Elijah Campbell,S,4,,Full Participation in Practice,,2026-10-01
+00-0036386,NYG,Andrew Thomas,T,4,,Did Not Participate In Practice,,2026-10-01
+00-0038986,NYG,Nic Jones,CB,4,,Full Participation in Practice,,2026-10-01
+00-0039000,NYG,Deonte Banks,CB,4,,Limited Participation in Practice,,2026-10-01
+00-0039384,NYG,Tyrone Tracy Jr.,RB,4,,Did Not Participate In Practice,,2026-10-01
+00-0039861,NYG,Tyler Nubin,S,4,,Limited Participation in Practice,,2026-10-01
+00-0034789,NYJ,Minkah Fitzpatrick,S,4,,Limited Participation in Practice,,2026-10-01
+00-0036842,NYJ,Kene Nwangwu,RB,4,,Full Participation in Practice,,2026-10-01
+00-0037083,NYJ,Kingsley Enagbare,DE,4,,Limited Participation in Practice,,2026-10-01
+00-0037255,NYJ,Dylan Parham,G,4,,Did Not Participate In Practice,,2026-10-01
+00-0037805,NYJ,Jeremy Ruckert,TE,4,,Limited Participation in Practice,,2026-10-01
+00-0038120,NYJ,Breece Hall,RB,4,,Did Not Participate In Practice,,2026-10-01
+00-0039890,NYJ,Adonai Mitchell,WR,4,,Did Not Participate In Practice,,2026-10-01
+00-0040186,NYJ,Francisco Mauigoa,LB,4,,Did Not Participate In Practice,,2026-10-01
+00-0040736,NYJ,Mason Taylor,TE,4,,Did Not Participate In Practice,,2026-10-01
+00-0041032,NYJ,Kenyon Sadiq,TE,4,,Limited Participation in Practice,,2026-10-01
+00-0034351,PHI,Dallas Goedert,TE,4,,Did Not Participate In Practice,,2026-10-01
+00-0034951,PHI,Fred Johnson,T,4,,Did Not Participate In Practice,,2026-10-01
+00-0035662,PHI,Marquise Brown,WR,4,,Did Not Participate In Practice,,2026-10-01
+00-0036224,PHI,Jonathan Greenard,LB,4,,Full Participation in Practice,,2026-10-01
+00-0036418,PHI,Zack Baun,LB,4,,Did Not Participate In Practice,,2026-10-01
+00-0036912,PHI,DeVonta Smith,WR,4,,Did Not Participate In Practice,,2026-10-01
+00-0037073,PHI,Jordan Davis,DT,4,,Limited Participation in Practice,,2026-10-01
+00-0038386,PHI,Jalen Carter,DT,4,,Full Participation in Practice,,2026-10-01
+00-0038412,PHI,Moro Ojomo,DT,4,,Limited Participation in Practice,,2026-10-01
+00-0038555,PHI,Tank Bigsby,RB,4,,Full Participation in Practice,,2026-10-01
+00-0038978,PHI,Byron Young,DT,4,,Full Participation in Practice,,2026-10-01
+00-0039746,PHI,Will Shipley,RB,4,,Did Not Participate In Practice,,2026-10-01
+00-0040024,PHI,Darius Cooper,WR,4,,Full Participation in Practice,,2026-10-01
+00-0040708,PHI,Jihaad Campbell,LB,4,,Limited Participation in Practice,,2026-10-01
+00-0031933,SEA,Leonard Williams,DT,4,,Limited Participation in Practice,,2026-10-01
+00-0032387,SEA,Jarran Reed,DT,4,,Limited Participation in Practice,,2026-10-01
+00-0034974,SEA,Julian Love,S,4,,Limited Participation in Practice,,2026-10-01
+00-0037545,SEA,Rashid Shaheed,WR,4,,Full Participation in Practice,,2026-10-01
+00-0038694,SEA,Brandon Pili,DT,4,,Full Participation in Practice,,2026-10-01
+00-0038765,SEA,Ty Okada,S,4,,Did Not Participate In Practice,,2026-10-01
+00-0039299,SEA,George Holani,RB,4,,Limited Participation in Practice,,2026-10-01
+00-0040639,SEA,Grey Zabel,G,4,,Limited Participation in Practice,,2026-10-01
+00-0040733,SEA,Nick Emmanwori,S,4,,Full Participation in Practice,,2026-10-01
+00-0041512,SEA,Jadarian Price,RB,4,,Limited Participation in Practice,,2026-10-01
+00-0027857,SF,Trent Williams,T,4,,Did Not Participate In Practice,,2026-10-01
+00-0031408,SF,Mike Evans,WR,4,,Did Not Participate In Practice,,2026-10-01
+00-0033280,SF,Christian McCaffrey,RB,4,,Did Not Participate In Practice,,2026-10-01
+00-0034854,SF,KhaDarel Hodge,WR,4,,Did Not Participate In Practice,,2026-10-01
+00-0034982,SF,Dre Greenlaw,LB,4,,Did Not Participate In Practice,,2026-10-01
+00-0035717,SF,Nick Bosa,DE,4,,Did Not Participate In Practice,,2026-10-01
+00-0039148,SF,Keion White,DE,4,,Did Not Participate In Practice,,2026-10-01
+00-0040660,SF,Mykel Williams,DE,4,,Limited Participation in Practice,,2026-10-01
+00-0041363,SF,James Thompson Jr.,DT,4,,Did Not Participate In Practice,,2026-10-01
+00-0041556,SF,Romello Height,DE,4,,Limited Participation in Practice,,2026-10-01
+00-0031957,TB,Rakeem Nunez-Roches,DT,4,,Did Not Participate In Practice,,2026-10-01
+00-0033921,TB,Chris Godwin Jr.,WR,4,,Did Not Participate In Practice,,2026-10-01
+00-0034855,TB,Baker Mayfield,QB,4,,Did Not Participate In Practice,,2026-10-01
+00-0037311,TB,Ko Kieft,TE,4,,Did Not Participate In Practice,,2026-10-01
+00-0039049,TB,SirVocea Dennis,LB,4,,Limited Participation in Practice,,2026-10-01
+00-0039068,TB,Yaya Diaby,LB,4,,Did Not Participate In Practice,,2026-10-01
+00-0039361,TB,Bucky Irving,RB,4,,Limited Participation in Practice,,2026-10-01
+00-0040143,TB,Jacob Parrish,CB,4,,Did Not Participate In Practice,,2026-10-01
+00-0041031,TB,Rueben Bain Jr.,LB,4,,Did Not Participate In Practice,,2026-10-01
+00-0041057,TB,Keionte Scott,CB,4,,Limited Participation in Practice,,2026-10-01
+00-0041502,TB,Josiah Trotter,LB,4,,Limited Participation in Practice,,2026-10-01
+00-0034805,TEN,John Franklin-Myers,DE,4,,Did Not Participate In Practice,,2026-10-01
+00-0035261,TEN,Tony Pollard,RB,4,,Did Not Participate In Practice,,2026-10-01
+00-0039032,TEN,Tyjae Spears,RB,4,,Did Not Participate In Practice,,2026-10-01
+00-0033082,WAS,Lucas Patrick,G,4,,Limited Participation in Practice,,2026-10-01
+00-0034302,WAS,Frankie Luvu,LB,4,,Limited Participation in Practice,,2026-10-01
+00-0035149,WAS,Nick Allegretti,G,4,,Limited Participation in Practice,,2026-10-01
+00-0035279,WAS,Charles Omenihu,DE,4,,Limited Participation in Practice,,2026-10-01
+00-0036260,WAS,Javon Kinlaw,DT,4,,Limited Participation in Practice,,2026-10-01
+00-0036375,WAS,Amik Robertson,CB,4,,Limited Participation in Practice,,2026-10-01
+00-0036618,WAS,Sam Cosmi,G,4,Out,Did Not Participate In Practice,Concussion,2026-10-01
+00-0037256,WAS,Rachaad White,RB,4,,Did Not Participate In Practice,,2026-10-01
+00-0037616,WAS,Nick Cross,S,4,Out,Did Not Participate In Practice,Illness,2026-10-01
+00-0037809,WAS,Chig Okonkwo,TE,4,,Limited Participation in Practice,,2026-10-01
+00-0038100,WAS,Percy Butler,S,4,,Limited Participation in Practice,,2026-10-01
+00-0039910,WAS,Jayden Daniels,QB,4,,Limited Participation in Practice,,2026-10-01
+00-0039912,WAS,Ben Sinnott,TE,4,,Limited Participation in Practice,,2026-10-01
