@@ -1538,7 +1538,7 @@ async function renderSeasonRecords() {
   document.getElementById('season-records-tfoot').innerHTML = `
     <tr class="pool-tally-row">
       <td class="tally-label">Season total</td>
-      ${columns.map(c => `<td class="tally-value">${fmt(seasonTotals[c])}</td>`).join('')}
+      ${columns.map(c => `<td class="numeric tally-value">${fmt(seasonTotals[c])}</td>`).join('')}
     </tr>
   `;
 
