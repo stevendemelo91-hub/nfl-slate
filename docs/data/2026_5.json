@@ -53,16 +53,163 @@
           "depth_chart_conflict": null
         }
       ],
-      "home_injuries": [],
-      "away_injuries": [],
+      "home_injuries": [
+        {
+          "name": "Tyler Smith",
+          "position": "G",
+          "status": "Limited (practice) - Thumb",
+          "trend": [
+            {
+              "date": "2026-10-08",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            }
+          ],
+          "usage_note": "98% off. snaps"
+        },
+        {
+          "name": "Cobie Durant",
+          "position": "CB",
+          "status": "DNP (practice) - Hamstring",
+          "trend": [
+            {
+              "date": "2026-10-08",
+              "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            }
+          ],
+          "usage_note": "74% def. snaps"
+        },
+        {
+          "name": "DeMarvion Overshown",
+          "position": "LB",
+          "status": "DNP (practice) - Hamstring",
+          "trend": [
+            {
+              "date": "2026-10-08",
+              "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            }
+          ],
+          "usage_note": "60% def. snaps"
+        },
+        {
+          "name": "Drew Shelton",
+          "position": "T",
+          "status": "DNP (practice) - Hamstring",
+          "trend": [
+            {
+              "date": "2026-10-08",
+              "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            }
+          ],
+          "usage_note": null
+        }
+      ],
+      "away_injuries": [
+        {
+          "name": "Baker Mayfield",
+          "position": "QB",
+          "status": "DNP (practice) - Thumb",
+          "trend": [
+            {
+              "date": "2026-10-08",
+              "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            }
+          ],
+          "usage_note": "97% off. snaps"
+        },
+        {
+          "name": "Anthony Nelson",
+          "position": "LB",
+          "status": "Limited (practice) - Illness",
+          "trend": [
+            {
+              "date": "2026-10-08",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            }
+          ],
+          "usage_note": "41% def. snaps"
+        },
+        {
+          "name": "Chase McLaughlin",
+          "position": "K",
+          "status": "DNP (practice) - Groin",
+          "trend": [
+            {
+              "date": "2026-10-08",
+              "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            }
+          ],
+          "usage_note": null
+        },
+        {
+          "name": "Antoine Winfield Jr.",
+          "position": "S",
+          "status": "DNP (practice) - Rib",
+          "trend": [
+            {
+              "date": "2026-10-08",
+              "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            }
+          ],
+          "usage_note": "100% def. snaps"
+        },
+        {
+          "name": "Ko Kieft",
+          "position": "TE",
+          "status": "Limited (practice) - Elbow",
+          "trend": [
+            {
+              "date": "2026-10-08",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            }
+          ],
+          "usage_note": "14% off. snaps"
+        },
+        {
+          "name": "SirVocea Dennis",
+          "position": "LB",
+          "status": "DNP (practice) - Ankle",
+          "trend": [
+            {
+              "date": "2026-10-08",
+              "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            }
+          ],
+          "usage_note": "93% def. snaps"
+        },
+        {
+          "name": "Benjamin Morrison",
+          "position": "CB",
+          "status": "DNP (practice) - Quadricep",
+          "trend": [
+            {
+              "date": "2026-10-08",
+              "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            }
+          ],
+          "usage_note": "62% def. snaps"
+        }
+      ],
       "situational_note": "",
       "player_impact_entries": {
         "home": [],
         "away": []
       },
-      "spread_current": "-8.5 -112 (10/6)",
+      "spread_current": "-8.5 -112 (10/7)",
       "spread_current_raw": -8.5,
       "spread_history": [
+        "-8.5 -110 (10/7)",
+        "-8.5 -112 (10/6)",
         "-8.5 -105 (10/6)",
         "-9.5 -104 (10/6)",
         "-9.5 -108 (10/5)",
@@ -70,8 +217,9 @@
         "-9.5 -110 (9/29)",
         "-3.5 -110 (8/31)"
       ],
-      "total_current": "O/U 47.5 (-112.0) (10/6)",
+      "total_current": "O/U 47.5 (-110.0) (10/7)",
       "total_history": [
+        "O/U 47.5 (-112.0) (10/6)",
         "O/U 47.5 (-104.0) (10/5)",
         "O/U 46.5 (-118.0) (10/4)",
         "O/U 46.5 (-115.0) (9/29)",
@@ -133,9 +281,10 @@
         "home": [],
         "away": []
       },
-      "spread_current": "-7.0 -112 (10/6)",
-      "spread_current_raw": -7.0,
+      "spread_current": "-7.5 -106 (10/7)",
+      "spread_current_raw": -7.5,
       "spread_history": [
+        "-7.0 -112 (10/6)",
         "-6.5 -120 (10/6)",
         "-6.5 -108 (10/5)",
         "-5.5 -115 (10/5)",
@@ -210,16 +359,18 @@
         "home": [],
         "away": []
       },
-      "spread_current": "+2.5 -106 (10/6)",
+      "spread_current": "+2.5 -110 (10/7)",
       "spread_current_raw": 2.5,
       "spread_history": [
+        "+2.5 -106 (10/6)",
         "+2.5 -110 (10/5)",
         "+1.5 -120 (10/4)",
         "-2.5 -110 (9/29)",
         "-3.0 -110 (8/31)"
       ],
-      "total_current": "O/U 45.5 (-105.0) (10/6)",
+      "total_current": "O/U 45.5 (-110.0) (10/7)",
       "total_history": [
+        "O/U 45.5 (-105.0) (10/6)",
         "O/U 44.5 (-106.0) (10/5)",
         "O/U 43.5 (-118.0) (10/4)",
         "O/U 45.5 (-102.0) (10/3)",
@@ -279,9 +430,10 @@
         "home": [],
         "away": []
       },
-      "spread_current": "+7.5 -118 (10/5)",
-      "spread_current_raw": 7.5,
+      "spread_current": "+6.5 -102 (10/7)",
+      "spread_current_raw": 6.5,
       "spread_history": [
+        "+7.5 -118 (10/5)",
         "+7.5 -110 (10/4)",
         "+8.5 -105 (9/29)",
         "+6.0 -110 (8/31)"
@@ -347,15 +499,17 @@
         "home": [],
         "away": []
       },
-      "spread_current": "-3.5 -118 (10/4)",
+      "spread_current": "-3.5 -114 (10/7)",
       "spread_current_raw": -3.5,
       "spread_history": [
+        "-3.5 -118 (10/4)",
         "-3.5 -115 (10/3)",
         "-3.5 -110 (9/29)",
         "-8.5 -110 (8/31)"
       ],
-      "total_current": "O/U 45.5 (-104.0) (10/5)",
+      "total_current": "O/U 44.5 (-115.0) (10/7)",
       "total_history": [
+        "O/U 45.5 (-104.0) (10/5)",
         "O/U 45.5 (-110.0) (10/5)",
         "O/U 44.5 (-118.0) (10/4)",
         "O/U 43.5 (-110.0) (9/29)",
@@ -502,8 +656,9 @@
         "-2.5 -110 (9/29)",
         "-2.5 -105 (8/31)"
       ],
-      "total_current": "O/U 40.5 (-102.0) (10/5)",
+      "total_current": "O/U 40.5 (-105.0) (10/7)",
       "total_history": [
+        "O/U 40.5 (-102.0) (10/5)",
         "O/U 40.5 (-104.0) (10/4)",
         "O/U 39.5 (-110.0) (8/31)"
       ],
@@ -565,9 +720,10 @@
         "home": [],
         "away": []
       },
-      "spread_current": "-1.5 -118 (10/5)",
-      "spread_current_raw": -1.5,
+      "spread_current": "-2.5 -105 (10/7)",
+      "spread_current_raw": -2.5,
       "spread_history": [
+        "-1.5 -118 (10/5)",
         "-1.5 -115 (9/29)",
         "-2.5 -110 (8/31)"
       ],
@@ -635,9 +791,10 @@
         "home": [],
         "away": []
       },
-      "spread_current": "+7.0 -105 (10/6)",
-      "spread_current_raw": 7.0,
+      "spread_current": "+7.5 -118 (10/7)",
+      "spread_current_raw": 7.5,
       "spread_history": [
+        "+7.0 -105 (10/6)",
         "+6.5 -102 (10/5)",
         "+6.5 -105 (9/29)",
         "+3.5 -110 (8/31)"
@@ -708,17 +865,19 @@
         "home": [],
         "away": []
       },
-      "spread_current": "-3.5 -115 (10/6)",
+      "spread_current": "-3.5 -118 (10/7)",
       "spread_current_raw": -3.5,
       "spread_history": [
+        "-3.5 -115 (10/6)",
         "-3.5 -106 (10/5)",
         "-3.5 -110 (10/4)",
         "-2.5 -122 (10/3)",
         "-2.5 -110 (9/29)",
         "-2.5 -105 (8/31)"
       ],
-      "total_current": "O/U 43.5 (-120.0) (10/6)",
+      "total_current": "O/U 43.5 (-105.0) (10/7)",
       "total_history": [
+        "O/U 43.5 (-120.0) (10/6)",
         "O/U 43.5 (-115.0) (10/5)",
         "O/U 44.5 (-104.0) (10/4)",
         "O/U 43.5 (-115.0) (10/3)",
@@ -782,9 +941,10 @@
         "home": [],
         "away": []
       },
-      "spread_current": "+3.5 -115 (10/5)",
+      "spread_current": "+3.5 -118 (10/7)",
       "spread_current_raw": 3.5,
       "spread_history": [
+        "+3.5 -115 (10/5)",
         "+3.5 -112 (10/5)",
         "+3.5 -118 (10/4)",
         "+2.5 -110 (10/4)",
@@ -855,9 +1015,10 @@
         "home": [],
         "away": []
       },
-      "spread_current": "+5.5 -115 (10/6)",
+      "spread_current": "+5.5 -118 (10/7)",
       "spread_current_raw": 5.5,
       "spread_history": [
+        "+5.5 -115 (10/6)",
         "+4.5 -108 (10/6)",
         "+4.5 -115 (10/5)",
         "+5.5 -110 (10/4)",
@@ -865,8 +1026,9 @@
         "+5.5 -110 (9/29)",
         "+8.5 -110 (8/31)"
       ],
-      "total_current": "O/U 53.5 (-115.0) (10/5)",
+      "total_current": "O/U 54.5 (-108.0) (10/7)",
       "total_history": [
+        "O/U 53.5 (-115.0) (10/5)",
         "O/U 53.5 (-104.0) (10/4)",
         "O/U 51.5 (-110.0) (9/29)",
         "O/U 48.5 (-110.0) (8/31)"
@@ -938,8 +1100,9 @@
         "-3.5 -115 (9/29)",
         "-3.5 -110 (8/31)"
       ],
-      "total_current": "O/U 47.5 (-102.0) (10/5)",
+      "total_current": "O/U 45.5 (-115.0) (10/7)",
       "total_history": [
+        "O/U 47.5 (-102.0) (10/5)",
         "O/U 47.5 (-104.0) (10/4)",
         "O/U 47.5 (-110.0) (9/29)",
         "O/U 48.5 (-110.0) (8/31)"
@@ -1001,9 +1164,10 @@
         "home": [],
         "away": []
       },
-      "spread_current": "-3.0 -120 (10/6)",
-      "spread_current_raw": -3.0,
+      "spread_current": "-3.5 -104 (10/7)",
+      "spread_current_raw": -3.5,
       "spread_history": [
+        "-3.0 -120 (10/6)",
         "-3.0 -115 (10/6)",
         "+2.5 -108 (10/6)",
         "+3.5 -120 (10/5)",
