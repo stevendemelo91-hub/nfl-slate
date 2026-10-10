@@ -200,8 +200,9 @@
       "spread_history": [
         "+3.0 -110 (8/31)"
       ],
-      "total_current": "O/U 48.5 (-105.0) (10/8)",
+      "total_current": "O/U 48.5 (-110.0) (10/9)",
       "total_history": [
+        "O/U 48.5 (-105.0) (10/8)",
         "O/U 47.5 (-110.0) (10/7)",
         "O/U 46.5 (-115.0) (10/6)",
         "O/U 47.5 (-110.0) (8/31)"
@@ -543,17 +544,16 @@
       "gameday": "2026-10-18",
       "gametime": "13:00",
       "weekday": "Sunday",
-      "home_win_probability": 0.499,
-      "away_win_probability": 0.501,
-      "favored": "PIT",
-      "raw_strength_score": -0.01,
+      "home_win_probability": 0.562,
+      "away_win_probability": 0.438,
+      "favored": "TB",
+      "raw_strength_score": 0.25,
       "feature_breakdown": {
-        "rank_coefficient_home": -1.0,
+        "rank_coefficient_home": -0.5,
         "third_down_coefficient_home": 1.0,
         "ypp_off_coefficient_home": -1.0,
         "ypp_def_coefficient_home": 1.0,
-        "rest_coefficient_home": 0.5,
-        "streak_coefficient_home": 0.5
+        "rest_coefficient_home": 0.5
       },
       "power_rating_implied_spread": 0.67,
       "neutral_site": false,
