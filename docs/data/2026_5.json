@@ -1776,10 +1776,10 @@
       "gameday": "2026-10-11",
       "gametime": "13:00",
       "weekday": "Sunday",
-      "home_win_probability": 0.615,
-      "away_win_probability": 0.385,
+      "home_win_probability": 0.527,
+      "away_win_probability": 0.473,
       "favored": "NO",
-      "raw_strength_score": 0.47,
+      "raw_strength_score": 0.11,
       "feature_breakdown": {
         "third_down_coefficient_home": 1.0,
         "ypp_off_coefficient_home": 1.0,
@@ -1787,7 +1787,6 @@
         "rest_coefficient_home": -0.5,
         "road_trip_coefficient_home": 0.5,
         "streak_coefficient_home": 1.0,
-        "qb_coefficient_home": 1.0,
         "schedule_milestones_coefficient_home": -1.0
       },
       "power_rating_implied_spread": -1.58,
@@ -1809,12 +1808,10 @@
           "depth_chart_starter": "Kyler Murray",
           "normal_starter_used_for_elite_check": "Kyler Murray",
           "is_elite_starter": false,
-          "backup_starting": true,
+          "backup_starting": false,
           "rookie_starting": false,
-          "qb_value": -1.0,
-          "notes": [
-            "Backup QB starting"
-          ],
+          "qb_value": 0.0,
+          "notes": [],
           "depth_chart_conflict": null
         }
       ],
@@ -3221,18 +3218,17 @@
       "gameday": "2026-10-11",
       "gametime": "13:00",
       "weekday": "Sunday",
-      "home_win_probability": 0.385,
-      "away_win_probability": 0.615,
+      "home_win_probability": 0.474,
+      "away_win_probability": 0.526,
       "favored": "NYG",
-      "raw_strength_score": -0.47,
+      "raw_strength_score": -0.11,
       "feature_breakdown": {
         "third_down_coefficient_home": -1.0,
         "ypp_off_coefficient_home": 1.0,
         "ypp_def_coefficient_home": -1.0,
         "turnover_coefficient_home": -1.0,
         "road_trip_coefficient_home": 0.5,
-        "streak_coefficient_home": 0.5,
-        "qb_coefficient_home": -1.0
+        "streak_coefficient_home": 0.5
       },
       "power_rating_implied_spread": 1.67,
       "neutral_site": false,
@@ -3253,12 +3249,14 @@
         {
           "team": "NYG",
           "depth_chart_starter": "Jameis Winston",
-          "normal_starter_used_for_elite_check": "Jameis Winston",
+          "normal_starter_used_for_elite_check": "Jaxson Dart",
           "is_elite_starter": false,
-          "backup_starting": false,
+          "backup_starting": true,
           "rookie_starting": false,
-          "qb_value": 0.0,
-          "notes": [],
+          "qb_value": -1.0,
+          "notes": [
+            "Backup QB starting"
+          ],
           "depth_chart_conflict": null
         }
       ],
@@ -4173,18 +4171,17 @@
       "gameday": "2026-10-11",
       "gametime": "16:25",
       "weekday": "Sunday",
-      "home_win_probability": 0.33,
-      "away_win_probability": 0.67,
-      "favored": "SF",
-      "raw_strength_score": -0.71,
+      "home_win_probability": 0.503,
+      "away_win_probability": 0.497,
+      "favored": "SEA",
+      "raw_strength_score": 0.01,
       "feature_breakdown": {
         "third_down_coefficient_home": -1.0,
         "ypp_off_coefficient_home": -1.0,
         "ypp_def_coefficient_home": 1.0,
         "turnover_coefficient_home": 1.0,
         "road_trip_coefficient_home": 0.5,
-        "streak_coefficient_home": 0.5,
-        "qb_coefficient_home": -2.0
+        "streak_coefficient_home": 0.5
       },
       "power_rating_implied_spread": 1.75,
       "neutral_site": false,
@@ -4194,13 +4191,10 @@
           "depth_chart_starter": "Sam Darnold",
           "normal_starter_used_for_elite_check": "Sam Darnold",
           "is_elite_starter": true,
-          "backup_starting": true,
+          "backup_starting": false,
           "rookie_starting": false,
-          "qb_value": -2.0,
-          "notes": [
-            "Backup QB starting",
-            "Elite starter (Sam Darnold) out"
-          ],
+          "qb_value": 0.0,
+          "notes": [],
           "depth_chart_conflict": null
         },
         {
@@ -4472,10 +4466,10 @@
       "gameday": "2026-10-11",
       "gametime": "20:20",
       "weekday": "Sunday",
-      "home_win_probability": 0.497,
-      "away_win_probability": 0.503,
+      "home_win_probability": 0.462,
+      "away_win_probability": 0.538,
       "favored": "BAL",
-      "raw_strength_score": -0.01,
+      "raw_strength_score": -0.15,
       "feature_breakdown": {
         "rank_coefficient_home": -0.5,
         "third_down_coefficient_home": -1.0,
@@ -4483,7 +4477,8 @@
         "ypp_def_coefficient_home": 1.0,
         "turnover_coefficient_home": 1.0,
         "rest_coefficient_home": -0.5,
-        "road_trip_coefficient_home": 1.0
+        "road_trip_coefficient_home": 1.0,
+        "streak_coefficient_home": 0.5
       },
       "power_rating_implied_spread": -5.88,
       "neutral_site": false,
@@ -4805,9 +4800,9 @@
         "O/U 49.5 (-110.0) (9/29)",
         "O/U 48.5 (-110.0) (8/31)"
       ],
-      "home_score": null,
-      "away_score": null,
-      "is_final": false
+      "home_score": 23.0,
+      "away_score": 30.0,
+      "is_final": true
     },
     {
       "game_id": "2026_05_BUF_LA",
@@ -5076,17 +5071,20 @@
         "home": [],
         "away": []
       },
-      "spread_current": "-3.5 -104 (10/8)",
-      "spread_current_raw": -3.5,
+      "spread_current": "+1.5 -112 (10/12)",
+      "spread_current_raw": 1.5,
       "spread_history": [
+        "-3.5 -105 (10/12)",
+        "-3.5 -104 (10/8)",
         "-3.0 -110 (10/6)",
         "-2.5 -122 (10/5)",
         "-2.5 -118 (10/5)",
         "-2.5 -110 (9/29)",
         "-3.0 -110 (8/31)"
       ],
-      "total_current": "O/U 54.5 (-110.0) (10/5)",
+      "total_current": "O/U 49.5 (-106.0) (10/12)",
       "total_history": [
+        "O/U 54.5 (-110.0) (10/5)",
         "O/U 53.5 (-110.0) (10/4)",
         "O/U 53.5 (-105.0) (10/3)",
         "O/U 53.5 (-110.0) (8/31)"
@@ -6607,7 +6605,7 @@
       "share_prize": 83333.3,
       "upsets": 3.0,
       "total_pot": 499999.8,
-      "underdog_pts_realized": 15.67
+      "underdog_pts_realized": 13.0
     },
     {
       "season": 2026,
@@ -6619,9 +6617,9 @@
       "winning_selections_required": 15,
       "winning_selections_total": 15,
       "share_prize": 500000.0,
-      "upsets": 6.0,
+      "upsets": 5.0,
       "total_pot": 500000.0,
-      "underdog_pts_realized": 33.9
+      "underdog_pts_realized": 31.0
     },
     {
       "season": 2026,
@@ -6635,7 +6633,21 @@
       "share_prize": 166666.7,
       "upsets": 6.0,
       "total_pot": 500000.1,
-      "underdog_pts_realized": 11.08
+      "underdog_pts_realized": 23.0
+    },
+    {
+      "season": 2026,
+      "week": 4,
+      "pool_id": "69",
+      "pool_label": "NFL - WEEK 4",
+      "closed_date": "2026-10-04",
+      "no_of_winners": 9,
+      "winning_selections_required": 14,
+      "winning_selections_total": 14,
+      "share_prize": 35552.7,
+      "upsets": 6.0,
+      "total_pot": 319974.3,
+      "underdog_pts_realized": 21.0
     }
   ]
 }

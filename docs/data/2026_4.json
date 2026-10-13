@@ -13,10 +13,10 @@
       "gameday": "2026-10-01",
       "gametime": "20:15",
       "weekday": "Thursday",
-      "home_win_probability": 0.442,
-      "away_win_probability": 0.558,
+      "home_win_probability": 0.407,
+      "away_win_probability": 0.593,
       "favored": "PIT",
-      "raw_strength_score": -0.23,
+      "raw_strength_score": -0.38,
       "feature_breakdown": {
         "rank_coefficient_home": -1.0,
         "third_down_coefficient_home": -1.0,
@@ -24,8 +24,7 @@
         "ypp_def_coefficient_home": 1.0,
         "turnover_coefficient_home": -1.0,
         "rest_coefficient_home": 1.0,
-        "road_trip_coefficient_home": 0.5,
-        "streak_coefficient_home": -0.5
+        "road_trip_coefficient_home": 0.5
       },
       "power_rating_implied_spread": -4.33,
       "neutral_site": false,
@@ -224,10 +223,10 @@
       "gameday": "2026-10-04",
       "gametime": "09:30",
       "weekday": "Sunday",
-      "home_win_probability": 0.329,
-      "away_win_probability": 0.671,
+      "home_win_probability": 0.062,
+      "away_win_probability": 0.938,
       "favored": "IND",
-      "raw_strength_score": -0.71,
+      "raw_strength_score": -2.71,
       "feature_breakdown": {
         "rank_coefficient_home": -0.5,
         "third_down_coefficient_home": -1.0,
@@ -462,7 +461,16 @@
       ],
       "situational_note": "",
       "player_impact_entries": {
-        "home": [],
+        "home": [
+          {
+            "adjustment": -1.0,
+            "note": "McLaurin out (Wk4)"
+          },
+          {
+            "adjustment": -1.0,
+            "note": "Cosmi out (Wk4)"
+          }
+        ],
         "away": []
       },
       "spread_current": "-1.5 -120 (10/4)",
@@ -504,10 +512,10 @@
       "gameday": "2026-10-04",
       "gametime": "13:00",
       "weekday": "Sunday",
-      "home_win_probability": 0.76,
-      "away_win_probability": 0.24,
+      "home_win_probability": 0.539,
+      "away_win_probability": 0.461,
       "favored": "BAL",
-      "raw_strength_score": 1.16,
+      "raw_strength_score": 0.16,
       "feature_breakdown": {
         "rank_coefficient_home": 1.0,
         "third_down_coefficient_home": 1.0,
@@ -701,7 +709,12 @@
       ],
       "situational_note": "",
       "player_impact_entries": {
-        "home": [],
+        "home": [
+          {
+            "adjustment": -1.0,
+            "note": "Hendrickson out (Wk4)"
+          }
+        ],
         "away": []
       },
       "spread_current": "-16.5 -132 (10/4)",
@@ -734,16 +747,17 @@
       "gameday": "2026-10-04",
       "gametime": "13:00",
       "weekday": "Sunday",
-      "home_win_probability": 0.683,
-      "away_win_probability": 0.317,
+      "home_win_probability": 0.835,
+      "away_win_probability": 0.165,
       "favored": "BUF",
-      "raw_strength_score": 0.77,
+      "raw_strength_score": 1.62,
       "feature_breakdown": {
         "third_down_coefficient_home": 1.0,
         "ypp_off_coefficient_home": 1.0,
         "ypp_def_coefficient_home": -1.0,
         "turnover_coefficient_home": 1.0,
-        "road_trip_coefficient_home": 0.5
+        "road_trip_coefficient_home": 0.5,
+        "streak_coefficient_home": 0.5
       },
       "power_rating_implied_spread": 3.42,
       "neutral_site": false,
@@ -1096,8 +1110,22 @@
       ],
       "situational_note": "",
       "player_impact_entries": {
-        "home": [],
-        "away": []
+        "home": [
+          {
+            "adjustment": -1.0,
+            "note": "Benford out (Wk4)"
+          }
+        ],
+        "away": [
+          {
+            "adjustment": -1.0,
+            "note": "Gonzalez out (Wk4)"
+          },
+          {
+            "adjustment": -1.0,
+            "note": "Barnmore out (Wk4)"
+          }
+        ]
       },
       "spread_current": "+2.5 -122 (10/4)",
       "spread_current_raw": 2.5,
@@ -1128,10 +1156,10 @@
       "gameday": "2026-10-04",
       "gametime": "13:00",
       "weekday": "Sunday",
-      "home_win_probability": 0.775,
-      "away_win_probability": 0.225,
+      "home_win_probability": 0.721,
+      "away_win_probability": 0.279,
       "favored": "CHI",
-      "raw_strength_score": 1.23,
+      "raw_strength_score": 0.95,
       "feature_breakdown": {
         "rank_coefficient_home": 1.0,
         "third_down_coefficient_home": 1.0,
@@ -1139,8 +1167,7 @@
         "ypp_def_coefficient_home": -1.0,
         "turnover_coefficient_home": 1.0,
         "rest_coefficient_home": -0.5,
-        "road_trip_coefficient_home": 0.5,
-        "streak_coefficient_home": -1.0
+        "road_trip_coefficient_home": 0.5
       },
       "power_rating_implied_spread": 7.92,
       "neutral_site": false,
@@ -1413,8 +1440,18 @@
       ],
       "situational_note": "",
       "player_impact_entries": {
-        "home": [],
-        "away": []
+        "home": [
+          {
+            "adjustment": -1.0,
+            "note": "Williams out (Wk4)"
+          }
+        ],
+        "away": [
+          {
+            "adjustment": -1.0,
+            "note": "Hall out (Wk4)"
+          }
+        ]
       },
       "spread_current": "-16.5 -138 (10/4)",
       "spread_current_raw": -16.5,
@@ -1448,17 +1485,17 @@
       "gameday": "2026-10-04",
       "gametime": "13:00",
       "weekday": "Sunday",
-      "home_win_probability": 0.419,
-      "away_win_probability": 0.581,
+      "home_win_probability": 0.234,
+      "away_win_probability": 0.766,
       "favored": "JAX",
-      "raw_strength_score": -0.33,
+      "raw_strength_score": -1.19,
       "feature_breakdown": {
         "rank_coefficient_home": -0.5,
         "third_down_coefficient_home": 1.0,
         "ypp_off_coefficient_home": -1.0,
         "ypp_def_coefficient_home": -1.0,
         "turnover_coefficient_home": -1.0,
-        "streak_coefficient_home": 1.0
+        "streak_coefficient_home": 0.5
       },
       "power_rating_implied_spread": 2.17,
       "neutral_site": false,
@@ -1693,7 +1730,12 @@
       ],
       "situational_note": "",
       "player_impact_entries": {
-        "home": [],
+        "home": [
+          {
+            "adjustment": -1.0,
+            "note": "Hill out (Wk4)"
+          }
+        ],
         "away": []
       },
       "spread_current": "+2.5 -108 (10/4)",
@@ -1735,18 +1777,17 @@
       "gameday": "2026-10-04",
       "gametime": "13:00",
       "weekday": "Sunday",
-      "home_win_probability": 0.454,
-      "away_win_probability": 0.546,
+      "home_win_probability": 0.489,
+      "away_win_probability": 0.511,
       "favored": "DAL",
-      "raw_strength_score": -0.18,
+      "raw_strength_score": -0.04,
       "feature_breakdown": {
         "rank_coefficient_home": -1.0,
         "third_down_coefficient_home": -1.0,
         "ypp_off_coefficient_home": -1.0,
         "ypp_def_coefficient_home": 1.0,
         "turnover_coefficient_home": 1.0,
-        "road_trip_coefficient_home": -0.5,
-        "streak_coefficient_home": 0.5
+        "road_trip_coefficient_home": -0.5
       },
       "power_rating_implied_spread": 2.17,
       "neutral_site": false,
@@ -1960,8 +2001,18 @@
       ],
       "situational_note": "",
       "player_impact_entries": {
-        "home": [],
-        "away": []
+        "home": [
+          {
+            "adjustment": -1.0,
+            "note": "Al-Shaair out (Wk4)"
+          }
+        ],
+        "away": [
+          {
+            "adjustment": -1.0,
+            "note": "Overshown out (Wk4)"
+          }
+        ]
       },
       "spread_current": "-2.5 -114 (10/4)",
       "spread_current_raw": -2.5,
@@ -1997,16 +2048,17 @@
       "gameday": "2026-10-04",
       "gametime": "13:00",
       "weekday": "Sunday",
-      "home_win_probability": 0.636,
-      "away_win_probability": 0.364,
+      "home_win_probability": 0.514,
+      "away_win_probability": 0.486,
       "favored": "NYG",
-      "raw_strength_score": 0.56,
+      "raw_strength_score": 0.05,
       "feature_breakdown": {
         "third_down_coefficient_home": -1.0,
         "ypp_off_coefficient_home": 1.0,
         "ypp_def_coefficient_home": 1.0,
         "road_trip_coefficient_home": 1.0,
-        "streak_coefficient_home": -1.0
+        "streak_coefficient_home": -0.5,
+        "qb_coefficient_home": -1.0
       },
       "power_rating_implied_spread": 4.42,
       "neutral_site": false,
@@ -2014,12 +2066,14 @@
         {
           "team": "NYG",
           "depth_chart_starter": "Jameis Winston",
-          "normal_starter_used_for_elite_check": "Jameis Winston",
+          "normal_starter_used_for_elite_check": "Jaxson Dart",
           "is_elite_starter": false,
-          "backup_starting": false,
+          "backup_starting": true,
           "rookie_starting": false,
-          "qb_value": 0.0,
-          "notes": [],
+          "qb_value": -1.0,
+          "notes": [
+            "Backup QB starting"
+          ],
           "depth_chart_conflict": null
         },
         {
@@ -2144,10 +2198,10 @@
       "gameday": "2026-10-04",
       "gametime": "13:00",
       "weekday": "Sunday",
-      "home_win_probability": 0.373,
-      "away_win_probability": 0.627,
+      "home_win_probability": 0.18,
+      "away_win_probability": 0.82,
       "favored": "LA",
-      "raw_strength_score": -0.52,
+      "raw_strength_score": -1.52,
       "feature_breakdown": {
         "rank_coefficient_home": -1.0,
         "third_down_coefficient_home": -1.0,
@@ -2444,8 +2498,22 @@
       ],
       "situational_note": "",
       "player_impact_entries": {
-        "home": [],
-        "away": []
+        "home": [
+          {
+            "adjustment": -1.0,
+            "note": "Smith out (Wk4)"
+          },
+          {
+            "adjustment": -1.0,
+            "note": "Goedert out (Wk4)"
+          }
+        ],
+        "away": [
+          {
+            "adjustment": -1.0,
+            "note": "Donald out (Wk4)"
+          }
+        ]
       },
       "spread_current": "-5.5 -132 (10/4)",
       "spread_current_raw": -5.5,
@@ -2814,8 +2882,18 @@
       ],
       "situational_note": "",
       "player_impact_entries": {
-        "home": [],
-        "away": []
+        "home": [
+          {
+            "adjustment": -1.0,
+            "note": "Mayfield out (Wk4)"
+          }
+        ],
+        "away": [
+          {
+            "adjustment": -1.0,
+            "note": "Banks out (Wk4)"
+          }
+        ]
       },
       "spread_current": "+3.5 -182 (10/4)",
       "spread_current_raw": 3.5,
@@ -2854,18 +2932,17 @@
       "gameday": "2026-10-04",
       "gametime": "16:05",
       "weekday": "Sunday",
-      "home_win_probability": 0.415,
-      "away_win_probability": 0.585,
+      "home_win_probability": 0.273,
+      "away_win_probability": 0.727,
       "favored": "MIA",
-      "raw_strength_score": -0.34,
+      "raw_strength_score": -0.98,
       "feature_breakdown": {
         "rank_coefficient_home": -1.0,
         "third_down_coefficient_home": -1.0,
         "ypp_off_coefficient_home": -1.0,
         "ypp_def_coefficient_home": 1.0,
         "road_trip_coefficient_home": 0.5,
-        "streak_coefficient_home": -1.0,
-        "qb_coefficient_home": -1.0
+        "streak_coefficient_home": -1.0
       },
       "power_rating_implied_spread": 8.92,
       "neutral_site": false,
@@ -2875,12 +2952,10 @@
           "depth_chart_starter": "Kyler Murray",
           "normal_starter_used_for_elite_check": "Kyler Murray",
           "is_elite_starter": false,
-          "backup_starting": true,
+          "backup_starting": false,
           "rookie_starting": false,
-          "qb_value": -1.0,
-          "notes": [
-            "Backup QB starting"
-          ],
+          "qb_value": 0.0,
+          "notes": [],
           "depth_chart_conflict": null
         },
         {
@@ -3061,7 +3136,12 @@
       ],
       "situational_note": "",
       "player_impact_entries": {
-        "home": [],
+        "home": [
+          {
+            "adjustment": -1.0,
+            "note": "Jefferson out (Wk4)"
+          }
+        ],
         "away": []
       },
       "spread_current": "-8.5 +200 (10/4)",
@@ -3101,17 +3181,17 @@
       "gameday": "2026-10-04",
       "gametime": "16:25",
       "weekday": "Sunday",
-      "home_win_probability": 0.362,
-      "away_win_probability": 0.638,
-      "favored": "KC",
-      "raw_strength_score": -0.57,
+      "home_win_probability": 0.572,
+      "away_win_probability": 0.428,
+      "favored": "LV",
+      "raw_strength_score": 0.29,
       "feature_breakdown": {
         "rank_coefficient_home": -1.0,
         "third_down_coefficient_home": -1.0,
         "ypp_off_coefficient_home": -1.0,
         "ypp_def_coefficient_home": -1.0,
         "road_trip_coefficient_home": -1.0,
-        "streak_coefficient_home": 0.5,
+        "streak_coefficient_home": 1.0,
         "schedule_milestones_coefficient_home": -1.0
       },
       "power_rating_implied_spread": -6.08,
@@ -3232,7 +3312,12 @@
       "situational_note": "",
       "player_impact_entries": {
         "home": [],
-        "away": []
+        "away": [
+          {
+            "adjustment": -1.0,
+            "note": "Simmons out (Wk4)"
+          }
+        ]
       },
       "spread_current": "+3.5 -136 (10/4)",
       "spread_current_raw": 3.5,
@@ -3266,10 +3351,10 @@
       "gameday": "2026-10-04",
       "gametime": "16:25",
       "weekday": "Sunday",
-      "home_win_probability": 0.429,
-      "away_win_probability": 0.571,
-      "favored": "LAC",
-      "raw_strength_score": -0.29,
+      "home_win_probability": 0.808,
+      "away_win_probability": 0.192,
+      "favored": "SEA",
+      "raw_strength_score": 1.44,
       "feature_breakdown": {
         "rank_coefficient_home": 1.0,
         "third_down_coefficient_home": -1.0,
@@ -3277,8 +3362,7 @@
         "ypp_def_coefficient_home": 1.0,
         "turnover_coefficient_home": -1.0,
         "road_trip_coefficient_home": 1.5,
-        "streak_coefficient_home": -0.5,
-        "qb_coefficient_home": -2.0
+        "streak_coefficient_home": -0.5
       },
       "power_rating_implied_spread": 2.5,
       "neutral_site": false,
@@ -3288,13 +3372,10 @@
           "depth_chart_starter": "Sam Darnold",
           "normal_starter_used_for_elite_check": "Sam Darnold",
           "is_elite_starter": true,
-          "backup_starting": true,
+          "backup_starting": false,
           "rookie_starting": false,
-          "qb_value": -2.0,
-          "notes": [
-            "Backup QB starting",
-            "Elite starter (Sam Darnold) out"
-          ],
+          "qb_value": 0.0,
+          "notes": [],
           "depth_chart_conflict": null
         },
         {
@@ -3553,7 +3634,12 @@
       "situational_note": "",
       "player_impact_entries": {
         "home": [],
-        "away": []
+        "away": [
+          {
+            "adjustment": -1.0,
+            "note": "James out (Wk4)"
+          }
+        ]
       },
       "spread_current": "-16.5 -166 (10/4)",
       "spread_current_raw": -16.5,
@@ -3586,10 +3672,10 @@
       "gameday": "2026-10-04",
       "gametime": "16:25",
       "weekday": "Sunday",
-      "home_win_probability": 0.719,
-      "away_win_probability": 0.281,
-      "favored": "SF",
-      "raw_strength_score": 0.94,
+      "home_win_probability": 0.485,
+      "away_win_probability": 0.515,
+      "favored": "DEN",
+      "raw_strength_score": -0.06,
       "feature_breakdown": {
         "rank_coefficient_home": 1.0,
         "third_down_coefficient_home": 1.0,
@@ -3795,7 +3881,12 @@
       ],
       "situational_note": "",
       "player_impact_entries": {
-        "home": [],
+        "home": [
+          {
+            "adjustment": -1.0,
+            "note": "Bosa out (Wk4)"
+          }
+        ],
         "away": []
       },
       "spread_current": "-4.5 +104 (10/4)",
@@ -3837,10 +3928,10 @@
       "gameday": "2026-10-04",
       "gametime": "20:20",
       "weekday": "Sunday",
-      "home_win_probability": 0.408,
-      "away_win_probability": 0.592,
+      "home_win_probability": 0.085,
+      "away_win_probability": 0.915,
       "favored": "DET",
-      "raw_strength_score": -0.37,
+      "raw_strength_score": -2.37,
       "feature_breakdown": {
         "rank_coefficient_home": -1.0,
         "third_down_coefficient_home": -1.0,
@@ -4031,7 +4122,16 @@
       ],
       "situational_note": "",
       "player_impact_entries": {
-        "home": [],
+        "home": [
+          {
+            "adjustment": -1.0,
+            "note": "Coker out (Wk4)"
+          },
+          {
+            "adjustment": -1.0,
+            "note": "Lewis out (Wk4)"
+          }
+        ],
         "away": []
       },
       "spread_current": "+3.5 -104 (9/30)",
@@ -4069,16 +4169,17 @@
       "gameday": "2026-10-05",
       "gametime": "20:15",
       "weekday": "Monday",
-      "home_win_probability": 0.539,
-      "away_win_probability": 0.461,
+      "home_win_probability": 0.504,
+      "away_win_probability": 0.496,
       "favored": "NO",
-      "raw_strength_score": 0.16,
+      "raw_strength_score": 0.01,
       "feature_breakdown": {
         "third_down_coefficient_home": 1.0,
         "ypp_off_coefficient_home": -1.0,
         "ypp_def_coefficient_home": 1.0,
         "turnover_coefficient_home": -1.0,
-        "road_trip_coefficient_home": -1.0
+        "road_trip_coefficient_home": -1.0,
+        "streak_coefficient_home": 0.5
       },
       "power_rating_implied_spread": 1.67,
       "neutral_site": false,
@@ -4328,9 +4429,9 @@
         "O/U 45.5 (-105.0) (9/22)",
         "O/U 45.5 (-115.0) (8/31)"
       ],
-      "home_score": null,
-      "away_score": null,
-      "is_final": false
+      "home_score": 24.0,
+      "away_score": 45.0,
+      "is_final": true
     }
   ],
   "pool_results_history": [
@@ -5844,7 +5945,7 @@
       "share_prize": 83333.3,
       "upsets": 3.0,
       "total_pot": 499999.8,
-      "underdog_pts_realized": 15.67
+      "underdog_pts_realized": 13.0
     },
     {
       "season": 2026,
@@ -5856,9 +5957,9 @@
       "winning_selections_required": 15,
       "winning_selections_total": 15,
       "share_prize": 500000.0,
-      "upsets": 6.0,
+      "upsets": 5.0,
       "total_pot": 500000.0,
-      "underdog_pts_realized": 33.9
+      "underdog_pts_realized": 31.0
     },
     {
       "season": 2026,
@@ -5872,7 +5973,21 @@
       "share_prize": 166666.7,
       "upsets": 6.0,
       "total_pot": 500000.1,
-      "underdog_pts_realized": 11.08
+      "underdog_pts_realized": 23.0
+    },
+    {
+      "season": 2026,
+      "week": 4,
+      "pool_id": "69",
+      "pool_label": "NFL - WEEK 4",
+      "closed_date": "2026-10-04",
+      "no_of_winners": 9,
+      "winning_selections_required": 14,
+      "winning_selections_total": 14,
+      "share_prize": 35552.7,
+      "upsets": 6.0,
+      "total_pot": 319974.3,
+      "underdog_pts_realized": 21.0
     }
   ]
 }
