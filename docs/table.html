@@ -1356,10 +1356,15 @@ function renderPoolTally(poolGames) {
 
     let totalMaxPts = 0, realizedPts = 0, confirmedCount = 0, trackedCount = 0;
     const addGame = (game, pickedTeam, isBoxed) => {
-      const impliedSpread = game.power_rating_implied_spread || 0;
-      // power_rating_implied_spread: positive = home favored (per its own
-      // docstring), so a team is the underdog only when its own sign
-      // works out negative for home, positive for away.
+      // Underdog points always come from the CLOSING line (last logged
+      // spread_current_raw, standard betting sign: negative = home
+      // favored), flipped here to "positive = home favored". Falls back to
+      // the power-rating spread only if no line was ever logged.
+      const impliedSpread = (game.spread_current_raw !== null && game.spread_current_raw !== undefined)
+        ? -game.spread_current_raw
+        : (game.power_rating_implied_spread || 0);
+      // impliedSpread: positive = home favored, so a team is the underdog
+      // only when its own sign works out negative for home, positive for away.
       let dogPts, dogIsHome;
       if (isBoxed) {
         dogIsHome = impliedSpread < 0;
