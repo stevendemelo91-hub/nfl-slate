@@ -383,9 +383,10 @@
         "home": [],
         "away": []
       },
-      "spread_current": "-7.5 -115 (10/13)",
+      "spread_current": "-7.5 -114 (10/15)",
       "spread_current_raw": -7.5,
       "spread_history": [
+        "-7.5 -115 (10/13)",
         "-5.5 -110 (8/31)"
       ],
       "total_current": "O/U 41.5 (-110.0) (10/13)",
@@ -599,17 +600,17 @@
       "gameday": "2026-10-25",
       "gametime": "16:05",
       "weekday": "Sunday",
-      "home_win_probability": 0.523,
-      "away_win_probability": 0.477,
-      "favored": "ARI",
-      "raw_strength_score": 0.09,
+      "home_win_probability": 0.488,
+      "away_win_probability": 0.512,
+      "favored": "DEN",
+      "raw_strength_score": -0.05,
       "feature_breakdown": {
         "third_down_coefficient_home": 1.0,
         "ypp_off_coefficient_home": -1.0,
         "ypp_def_coefficient_home": -1.0,
         "rest_coefficient_home": -0.5,
         "road_trip_coefficient_home": -0.5,
-        "streak_coefficient_home": 0.5
+        "streak_coefficient_home": 1.0
       },
       "power_rating_implied_spread": -4.08,
       "neutral_site": false,
@@ -710,9 +711,10 @@
         "home": [],
         "away": []
       },
-      "spread_current": "-3.5 -120 (10/13)",
+      "spread_current": "-3.5 -110 (10/16)",
       "spread_current_raw": -3.5,
       "spread_history": [
+        "-3.5 -120 (10/13)",
         "-2.5 -110 (8/31)"
       ],
       "total_current": "O/U 52.5 (-108.0) (10/14)",
@@ -795,10 +797,10 @@
       "gameday": "2026-10-25",
       "gametime": "20:20",
       "weekday": "Sunday",
-      "home_win_probability": 0.391,
-      "away_win_probability": 0.609,
+      "home_win_probability": 0.358,
+      "away_win_probability": 0.642,
       "favored": "KC",
-      "raw_strength_score": -0.44,
+      "raw_strength_score": -0.59,
       "feature_breakdown": {
         "rank_coefficient_home": -0.5,
         "third_down_coefficient_home": -1.0,
@@ -807,7 +809,7 @@
         "turnover_coefficient_home": -1.0,
         "rest_coefficient_home": 0.5,
         "road_trip_coefficient_home": 0.5,
-        "streak_coefficient_home": 0.5
+        "streak_coefficient_home": 1.0
       },
       "power_rating_implied_spread": 2.0,
       "neutral_site": false,
