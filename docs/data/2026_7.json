@@ -59,9 +59,10 @@
         "home": [],
         "away": []
       },
-      "spread_current": "-2.5 -105 (10/13)",
-      "spread_current_raw": -2.5,
+      "spread_current": "-1.5 -110 (10/17)",
+      "spread_current_raw": -1.5,
       "spread_history": [
+        "-2.5 -105 (10/13)",
         "-1.5 -110 (8/31)"
       ],
       "total_current": "O/U 49.5 (-110.0) (10/13)",
@@ -317,13 +318,16 @@
         "home": [],
         "away": []
       },
-      "spread_current": "-2.5 -120 (10/13)",
+      "spread_current": "-2.5 -110 (10/17)",
       "spread_current_raw": -2.5,
       "spread_history": [
+        "-2.5 -115 (10/17)",
+        "-2.5 -120 (10/13)",
         "+1.5 -110 (8/31)"
       ],
-      "total_current": "O/U 43.5 (-105.0) (10/13)",
+      "total_current": "O/U 44.5 (-110.0) (10/17)",
       "total_history": [
+        "O/U 43.5 (-105.0) (10/13)",
         "O/U 45.5 (-110.0) (8/31)"
       ],
       "home_score": null,

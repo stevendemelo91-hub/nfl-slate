@@ -268,19 +268,6 @@
       ],
       "home_injuries": [
         {
-          "name": "Eric Murray",
-          "position": "S",
-          "status": "Limited (practice) - Concussion",
-          "trend": [
-            {
-              "date": "2026-10-15",
-              "report_status": null,
-              "practice_status": "Limited Participation in Practice"
-            }
-          ],
-          "usage_note": "80% def. snaps"
-        },
-        {
           "name": "Jourdan Lewis",
           "position": "CB",
           "status": "Limited (practice) - Hamstring",
@@ -296,37 +283,34 @@
         {
           "name": "Ross Matiscik",
           "position": "LS",
-          "status": "DNP (practice) - Shoulder",
+          "status": "Out",
           "trend": [
             {
               "date": "2026-10-15",
               "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Out",
               "practice_status": "Did Not Participate In Practice"
             }
           ],
           "usage_note": null
         },
         {
-          "name": "Cole Van Lanen",
-          "position": "T",
-          "status": "Limited (practice) - Knee",
+          "name": "Jaylon Jones",
+          "position": "CB",
+          "status": "Questionable",
           "trend": [
             {
               "date": "2026-10-15",
               "report_status": null,
               "practice_status": "Limited Participation in Practice"
-            }
-          ],
-          "usage_note": "60% off. snaps"
-        },
-        {
-          "name": "Jaylon Jones",
-          "position": "CB",
-          "status": "Limited (practice) - Hamstring",
-          "trend": [
+            },
             {
-              "date": "2026-10-15",
-              "report_status": null,
+              "date": "2026-10-17",
+              "report_status": "Questionable",
               "practice_status": "Limited Participation in Practice"
             }
           ],
@@ -335,28 +319,20 @@
         {
           "name": "Montaric Brown",
           "position": "CB",
-          "status": "DNP (practice) - Hamstring",
+          "status": "Out",
           "trend": [
             {
               "date": "2026-10-15",
               "report_status": null,
               "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Out",
+              "practice_status": "Did Not Participate In Practice"
             }
           ],
           "usage_note": "77% def. snaps"
-        },
-        {
-          "name": "Jarrian Jones",
-          "position": "CB",
-          "status": "Limited (practice) - Elbow",
-          "trend": [
-            {
-              "date": "2026-10-15",
-              "report_status": null,
-              "practice_status": "Limited Participation in Practice"
-            }
-          ],
-          "usage_note": "50% def. snaps"
         },
         {
           "name": "Emmanuel Pregnon",
@@ -387,6 +363,29 @@
       ],
       "away_injuries": [
         {
+          "name": "Jadeveon Clowney",
+          "position": "DE",
+          "status": "DNP (practice) - Knee",
+          "trend": [
+            {
+              "date": "2026-10-15",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": null,
+              "practice_status": "Full Participation in Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            }
+          ],
+          "usage_note": "44% def. snaps"
+        },
+        {
           "name": "Dalton Schultz",
           "position": "TE",
           "status": "Limited (practice) - Not injury related - resting player",
@@ -400,9 +399,9 @@
           "usage_note": "16% target share (19 gm) &middot; 69% off. snaps"
         },
         {
-          "name": "Azeez Al-Shaair",
-          "position": "LB",
-          "status": "Limited (practice) - Groin",
+          "name": "David Montgomery",
+          "position": "RB",
+          "status": "Out",
           "trend": [
             {
               "date": "2026-10-15",
@@ -411,20 +410,7 @@
             },
             {
               "date": "2026-10-17",
-              "report_status": null,
-              "practice_status": "Limited Participation in Practice"
-            }
-          ],
-          "usage_note": "94% def. snaps"
-        },
-        {
-          "name": "David Montgomery",
-          "position": "RB",
-          "status": "DNP (practice) - Groin",
-          "trend": [
-            {
-              "date": "2026-10-15",
-              "report_status": null,
+              "report_status": "Out",
               "practice_status": "Did Not Participate In Practice"
             }
           ],
@@ -446,28 +432,43 @@
         {
           "name": "Jalen Pitre",
           "position": "S",
-          "status": "DNP (practice) - Shoulder",
+          "status": "Out",
           "trend": [
             {
               "date": "2026-10-15",
               "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Out",
               "practice_status": "Did Not Participate In Practice"
             }
           ],
           "usage_note": "90% def. snaps"
         },
         {
-          "name": "Jake Hansen",
-          "position": "LB",
-          "status": "DNP (practice) - Illness",
+          "name": "Ja'Marcus Ingram",
+          "position": "CB",
+          "status": "Questionable",
           "trend": [
+            {
+              "date": "2026-10-15",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            },
             {
               "date": "2026-10-17",
               "report_status": null,
-              "practice_status": "Did Not Participate In Practice"
+              "practice_status": "Full Participation in Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Questionable",
+              "practice_status": "Full Participation in Practice"
             }
           ],
-          "usage_note": "1% def. snaps"
+          "usage_note": "14% def. snaps"
         },
         {
           "name": "Logan Hall",
@@ -481,6 +482,47 @@
             }
           ],
           "usage_note": "59% def. snaps"
+        },
+        {
+          "name": "Henry To'oTo'o",
+          "position": "LB",
+          "status": "Questionable",
+          "trend": [
+            {
+              "date": "2026-10-15",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": null,
+              "practice_status": "Full Participation in Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Questionable",
+              "practice_status": "Full Participation in Practice"
+            }
+          ],
+          "usage_note": "79% def. snaps"
+        },
+        {
+          "name": "Tank Dell",
+          "position": "WR",
+          "status": "Out",
+          "trend": [
+            {
+              "date": "2026-10-15",
+              "report_status": null,
+              "practice_status": "Full Participation in Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Out",
+              "practice_status": "Did Not Participate In Practice"
+            }
+          ],
+          "usage_note": null
         },
         {
           "name": "Will Anderson Jr.",
@@ -501,9 +543,10 @@
         "home": [],
         "away": []
       },
-      "spread_current": "-2.5 -110 (10/14)",
+      "spread_current": "-2.5 -118 (10/17)",
       "spread_current_raw": -2.5,
       "spread_history": [
+        "-2.5 -110 (10/14)",
         "-2.5 -115 (10/12)",
         "-2.5 -122 (10/12)",
         "-2.5 -118 (10/11)",
@@ -572,9 +615,27 @@
       ],
       "home_injuries": [
         {
+          "name": "Jake Matthews",
+          "position": "T",
+          "status": "Limited (practice) - Groin",
+          "trend": [
+            {
+              "date": "2026-10-15",
+              "report_status": null,
+              "practice_status": "Full Participation in Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            }
+          ],
+          "usage_note": "3% target share (1 gm) &middot; 97% off. snaps"
+        },
+        {
           "name": "Za'Darius Smith",
           "position": "DE",
-          "status": "DNP (practice) - Neck",
+          "status": "Questionable",
           "trend": [
             {
               "date": "2026-10-15",
@@ -585,98 +646,84 @@
               "date": "2026-10-17",
               "report_status": null,
               "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Questionable",
+              "practice_status": "Limited Participation in Practice"
             }
           ],
           "usage_note": "38% def. snaps"
         },
         {
-          "name": "Jawaan Taylor",
-          "position": "T",
-          "status": "DNP (practice) - Not injury related - resting player",
-          "trend": [
-            {
-              "date": "2026-10-17",
-              "report_status": null,
-              "practice_status": "Did Not Participate In Practice"
-            }
-          ],
-          "usage_note": "91% off. snaps"
-        },
-        {
           "name": "C.J. Henderson",
           "position": "CB",
-          "status": "DNP (practice) - Groin",
+          "status": "Out",
           "trend": [
             {
               "date": "2026-10-15",
               "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Out",
               "practice_status": "Did Not Participate In Practice"
             }
           ],
           "usage_note": "64% def. snaps"
         },
         {
-          "name": "Cameron Thomas",
-          "position": "DE",
-          "status": "Limited (practice) - Groin",
-          "trend": [
-            {
-              "date": "2026-10-17",
-              "report_status": null,
-              "practice_status": "Limited Participation in Practice"
-            }
-          ],
-          "usage_note": "29% def. snaps"
-        },
-        {
-          "name": "Kendal Daniels",
+          "name": "Divine Deablo",
           "position": "LB",
-          "status": "Limited (practice) - Achilles",
-          "trend": [
-            {
-              "date": "2026-10-17",
-              "report_status": null,
-              "practice_status": "Limited Participation in Practice"
-            }
-          ],
-          "usage_note": null
-        }
-      ],
-      "away_injuries": [
-        {
-          "name": "Grady Jarrett",
-          "position": "DT",
-          "status": "DNP (practice) - Not injury related - resting player",
-          "trend": [
-            {
-              "date": "2026-10-17",
-              "report_status": null,
-              "practice_status": "Did Not Participate In Practice"
-            }
-          ],
-          "usage_note": "70% def. snaps"
-        },
-        {
-          "name": "Joe Thuney",
-          "position": "G",
-          "status": "DNP (practice) - Not injury related - resting player",
-          "trend": [
-            {
-              "date": "2026-10-17",
-              "report_status": null,
-              "practice_status": "Did Not Participate In Practice"
-            }
-          ],
-          "usage_note": "100% off. snaps"
-        },
-        {
-          "name": "T.J. Edwards",
-          "position": "LB",
-          "status": "DNP (practice) - Hamstring",
+          "status": "Limited (practice) - Hamstring",
           "trend": [
             {
               "date": "2026-10-15",
               "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": null,
+              "practice_status": "Full Participation in Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            }
+          ],
+          "usage_note": "93% def. snaps"
+        },
+        {
+          "name": "Drake London",
+          "position": "WR",
+          "status": "Limited (practice) - Hip",
+          "trend": [
+            {
+              "date": "2026-10-17",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            }
+          ],
+          "usage_note": "27% target share (12 gm) &middot; 91% off. snaps"
+        }
+      ],
+      "away_injuries": [
+        {
+          "name": "T.J. Edwards",
+          "position": "LB",
+          "status": "Out",
+          "trend": [
+            {
+              "date": "2026-10-15",
+              "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Out",
               "practice_status": "Did Not Participate In Practice"
             }
           ],
@@ -685,37 +732,88 @@
         {
           "name": "Dayo Odeyingbo",
           "position": "DE",
-          "status": "DNP (practice) - Quadricep",
+          "status": "Out",
           "trend": [
             {
               "date": "2026-10-15",
               "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Out",
               "practice_status": "Did Not Participate In Practice"
             }
           ],
           "usage_note": "76% def. snaps"
         },
         {
-          "name": "Tyrique Stevenson",
+          "name": "Kyler Gordon",
           "position": "CB",
-          "status": "Limited (practice) - Hip",
+          "status": "Questionable",
           "trend": [
             {
               "date": "2026-10-15",
               "report_status": null,
+              "practice_status": "Full Participation in Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Questionable",
+              "practice_status": "Full Participation in Practice"
+            }
+          ],
+          "usage_note": "66% def. snaps"
+        },
+        {
+          "name": "Tyrique Stevenson",
+          "position": "CB",
+          "status": "Questionable",
+          "trend": [
+            {
+              "date": "2026-10-15",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Questionable",
               "practice_status": "Limited Participation in Practice"
             }
           ],
           "usage_note": "66% def. snaps"
         },
         {
-          "name": "Kyle Monangai",
-          "position": "RB",
-          "status": "DNP (practice) - Thumb",
+          "name": "Caleb Williams",
+          "position": "QB",
+          "status": "Questionable",
           "trend": [
             {
               "date": "2026-10-15",
               "report_status": null,
+              "practice_status": "Full Participation in Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Questionable",
+              "practice_status": "Full Participation in Practice"
+            }
+          ],
+          "usage_note": "5% target share (1 gm) &middot; 99% off. snaps"
+        },
+        {
+          "name": "Kyle Monangai",
+          "position": "RB",
+          "status": "Out",
+          "trend": [
+            {
+              "date": "2026-10-15",
+              "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Out",
               "practice_status": "Did Not Participate In Practice"
             }
           ],
@@ -724,11 +822,16 @@
         {
           "name": "Keyshaun Elliott",
           "position": "LB",
-          "status": "DNP (practice) - Quadricep",
+          "status": "Out",
           "trend": [
             {
               "date": "2026-10-15",
               "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Out",
               "practice_status": "Did Not Participate In Practice"
             }
           ],
@@ -753,8 +856,9 @@
         "+1.5 -105 (10/6)",
         "+3.0 -110 (8/31)"
       ],
-      "total_current": "O/U 51.5 (-110.0) (10/15)",
+      "total_current": "O/U 51.5 (-115.0) (10/17)",
       "total_history": [
+        "O/U 51.5 (-110.0) (10/15)",
         "O/U 50.5 (-115.0) (10/14)",
         "O/U 50.5 (-110.0) (10/14)",
         "O/U 49.5 (-110.0) (10/13)",
@@ -815,7 +919,7 @@
           "rookie_starting": false,
           "qb_value": 0.0,
           "notes": [],
-          "depth_chart_conflict": null
+          "depth_chart_conflict": "Depth chart lists Lamar Jackson as starter, but injury report shows them Out - check qb_overrides.csv"
         }
       ],
       "home_injuries": [
@@ -840,20 +944,7 @@
         {
           "name": "Derek Barnett",
           "position": "DE",
-          "status": "DNP (practice) - Ankle",
-          "trend": [
-            {
-              "date": "2026-10-15",
-              "report_status": null,
-              "practice_status": "Did Not Participate In Practice"
-            }
-          ],
-          "usage_note": "33% def. snaps"
-        },
-        {
-          "name": "Tytus Howard",
-          "position": "T",
-          "status": "Limited (practice) - Knee",
+          "status": "Questionable",
           "trend": [
             {
               "date": "2026-10-15",
@@ -862,46 +953,25 @@
             },
             {
               "date": "2026-10-17",
-              "report_status": null,
+              "report_status": "Questionable",
               "practice_status": "Limited Participation in Practice"
             }
           ],
-          "usage_note": "95% off. snaps"
-        },
-        {
-          "name": "Grant Delpit",
-          "position": "S",
-          "status": "Limited (practice) - Shoulder",
-          "trend": [
-            {
-              "date": "2026-10-15",
-              "report_status": null,
-              "practice_status": "Limited Participation in Practice"
-            }
-          ],
-          "usage_note": "96% def. snaps"
-        },
-        {
-          "name": "Tylan Wallace",
-          "position": "WR",
-          "status": "Limited (practice) - Knee",
-          "trend": [
-            {
-              "date": "2026-10-15",
-              "report_status": null,
-              "practice_status": "Limited Participation in Practice"
-            }
-          ],
-          "usage_note": "4% target share (6 gm) &middot; 23% off. snaps"
+          "usage_note": "33% def. snaps"
         },
         {
           "name": "Teven Jenkins",
           "position": "G",
-          "status": "DNP (practice) - Back",
+          "status": "Out",
           "trend": [
             {
               "date": "2026-10-15",
               "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Out",
               "practice_status": "Did Not Participate In Practice"
             }
           ],
@@ -910,11 +980,16 @@
         {
           "name": "Kalia Davis",
           "position": "DT",
-          "status": "DNP (practice) - Quadricep",
+          "status": "Out",
           "trend": [
             {
               "date": "2026-10-15",
               "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Out",
               "practice_status": "Did Not Participate In Practice"
             }
           ],
@@ -923,11 +998,16 @@
         {
           "name": "Mike Hall Jr.",
           "position": "DT",
-          "status": "DNP (practice) - Ankle",
+          "status": "Out",
           "trend": [
             {
               "date": "2026-10-15",
               "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Out",
               "practice_status": "Did Not Participate In Practice"
             }
           ],
@@ -936,7 +1016,7 @@
         {
           "name": "Dylan Sampson",
           "position": "RB",
-          "status": "Limited (practice) - Knee",
+          "status": "Out",
           "trend": [
             {
               "date": "2026-10-15",
@@ -947,6 +1027,11 @@
               "date": "2026-10-17",
               "report_status": null,
               "practice_status": "Limited Participation in Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Out",
+              "practice_status": "Limited Participation in Practice"
             }
           ],
           "usage_note": "9% target share (13 gm) &middot; 26% off. snaps"
@@ -954,12 +1039,17 @@
         {
           "name": "Carson Schwesinger",
           "position": "LB",
-          "status": "DNP (practice) - Ankle",
+          "status": "Questionable",
           "trend": [
             {
               "date": "2026-10-15",
               "report_status": null,
               "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Questionable",
+              "practice_status": "Limited Participation in Practice"
             }
           ],
           "usage_note": "97% def. snaps"
@@ -967,25 +1057,53 @@
         {
           "name": "Mason Graham",
           "position": "DT",
-          "status": "DNP (practice) - Knee",
+          "status": "Questionable",
           "trend": [
             {
               "date": "2026-10-15",
               "report_status": null,
               "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Questionable",
+              "practice_status": "Limited Participation in Practice"
             }
           ],
           "usage_note": "0% off. snaps &middot; 73% def. snaps"
         },
         {
+          "name": "Dillon Gabriel",
+          "position": "QB",
+          "status": "Out",
+          "trend": [
+            {
+              "date": "2026-10-15",
+              "report_status": null,
+              "practice_status": "Full Participation in Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Out",
+              "practice_status": "Full Participation in Practice"
+            }
+          ],
+          "usage_note": "56% off. snaps"
+        },
+        {
           "name": "Quinshon Judkins",
           "position": "RB",
-          "status": "DNP (practice) - Ankle",
+          "status": "Questionable",
           "trend": [
             {
               "date": "2026-10-15",
               "report_status": null,
               "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Questionable",
+              "practice_status": "Limited Participation in Practice"
             }
           ],
           "usage_note": "8% target share (12 gm) &middot; 50% off. snaps"
@@ -1002,11 +1120,13 @@
             }
           ],
           "usage_note": null
-        },
+        }
+      ],
+      "away_injuries": [
         {
-          "name": "Carsen Ryan",
-          "position": "TE",
-          "status": "Limited (practice) - Calf",
+          "name": "Calais Campbell",
+          "position": "DT",
+          "status": "DNP (practice) - Not injury related - resting player",
           "trend": [
             {
               "date": "2026-10-15",
@@ -1016,48 +1136,7 @@
             {
               "date": "2026-10-17",
               "report_status": null,
-              "practice_status": "Limited Participation in Practice"
-            }
-          ],
-          "usage_note": null
-        },
-        {
-          "name": "KC Concepcion",
-          "position": "WR",
-          "status": "Limited (practice) - Concussion",
-          "trend": [
-            {
-              "date": "2026-10-15",
-              "report_status": null,
-              "practice_status": "Limited Participation in Practice"
-            }
-          ],
-          "usage_note": null
-        }
-      ],
-      "away_injuries": [
-        {
-          "name": "Lamar Jackson",
-          "position": "QB",
-          "status": "DNP (practice) - Ankle",
-          "trend": [
-            {
-              "date": "2026-10-15",
-              "report_status": null,
-              "practice_status": "Did Not Participate In Practice"
-            }
-          ],
-          "usage_note": "92% off. snaps"
-        },
-        {
-          "name": "Broderick Washington",
-          "position": "DE",
-          "status": "DNP (practice) - Ankle",
-          "trend": [
-            {
-              "date": "2026-10-15",
-              "report_status": null,
-              "practice_status": "Limited Participation in Practice"
+              "practice_status": "Full Participation in Practice"
             },
             {
               "date": "2026-10-17",
@@ -1068,9 +1147,50 @@
           "usage_note": "46% def. snaps"
         },
         {
-          "name": "John Simpson",
-          "position": "G",
-          "status": "DNP (practice) - Groin",
+          "name": "Ronnie Stanley",
+          "position": "T",
+          "status": "DNP (practice) - Ankle",
+          "trend": [
+            {
+              "date": "2026-10-15",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": null,
+              "practice_status": "Full Participation in Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            }
+          ],
+          "usage_note": "89% off. snaps"
+        },
+        {
+          "name": "Lamar Jackson",
+          "position": "QB",
+          "status": "Out",
+          "trend": [
+            {
+              "date": "2026-10-15",
+              "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Out",
+              "practice_status": "Did Not Participate In Practice"
+            }
+          ],
+          "usage_note": "92% off. snaps"
+        },
+        {
+          "name": "Broderick Washington",
+          "position": "DE",
+          "status": "Out",
           "trend": [
             {
               "date": "2026-10-15",
@@ -1081,14 +1201,42 @@
               "date": "2026-10-17",
               "report_status": null,
               "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Out",
+              "practice_status": "Did Not Participate In Practice"
+            }
+          ],
+          "usage_note": "46% def. snaps"
+        },
+        {
+          "name": "John Simpson",
+          "position": "G",
+          "status": "Limited (practice) - Groin",
+          "trend": [
+            {
+              "date": "2026-10-15",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
             }
           ],
           "usage_note": "97% off. snaps"
         },
         {
-          "name": "Rashod Bateman",
-          "position": "WR",
-          "status": "DNP (practice) - Shoulder",
+          "name": "Cam Jurgens",
+          "position": "C",
+          "status": "Out",
           "trend": [
             {
               "date": "2026-10-15",
@@ -1097,20 +1245,7 @@
             },
             {
               "date": "2026-10-17",
-              "report_status": null,
-              "practice_status": "Did Not Participate In Practice"
-            }
-          ],
-          "usage_note": "11% target share (13 gm) &middot; 69% off. snaps"
-        },
-        {
-          "name": "Cam Jurgens",
-          "position": "C",
-          "status": "Limited (practice) - Concussion",
-          "trend": [
-            {
-              "date": "2026-10-15",
-              "report_status": null,
+              "report_status": "Out",
               "practice_status": "Limited Participation in Practice"
             }
           ],
@@ -1119,28 +1254,20 @@
         {
           "name": "Andrew Vorhees",
           "position": "G",
-          "status": "Limited (practice) - Foot",
+          "status": "Questionable",
           "trend": [
             {
               "date": "2026-10-15",
               "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Questionable",
               "practice_status": "Limited Participation in Practice"
             }
           ],
           "usage_note": "95% off. snaps"
-        },
-        {
-          "name": "Trenton Simpson",
-          "position": "LB",
-          "status": "Limited (practice) - Hamstring",
-          "trend": [
-            {
-              "date": "2026-10-15",
-              "report_status": null,
-              "practice_status": "Limited Participation in Practice"
-            }
-          ],
-          "usage_note": "36% def. snaps"
         },
         {
           "name": "Zay Flowers",
@@ -1158,50 +1285,52 @@
         {
           "name": "Emery Jones Jr.",
           "position": "G",
-          "status": "Limited (practice) - Ankle",
+          "status": "Questionable",
           "trend": [
             {
               "date": "2026-10-15",
               "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Questionable",
               "practice_status": "Limited Participation in Practice"
             }
           ],
           "usage_note": "18% off. snaps"
         },
         {
-          "name": "Teddye Buchanan",
-          "position": "LB",
-          "status": "Limited (practice) - Groin",
+          "name": "Ja'Kobi Lane",
+          "position": "WR",
+          "status": "Questionable",
           "trend": [
             {
               "date": "2026-10-15",
               "report_status": null,
-              "practice_status": "Limited Participation in Practice"
-            }
-          ],
-          "usage_note": "71% def. snaps"
-        },
-        {
-          "name": "Mike Green",
-          "position": "LB",
-          "status": "Limited (practice) - Hamstring",
-          "trend": [
+              "practice_status": "Full Participation in Practice"
+            },
             {
               "date": "2026-10-17",
-              "report_status": null,
-              "practice_status": "Limited Participation in Practice"
+              "report_status": "Questionable",
+              "practice_status": "Full Participation in Practice"
             }
           ],
-          "usage_note": "64% def. snaps"
+          "usage_note": null
         },
         {
           "name": "Matthew Hibner",
           "position": "TE",
-          "status": "DNP (practice) - Hand",
+          "status": "Out",
           "trend": [
             {
               "date": "2026-10-15",
               "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Out",
               "practice_status": "Did Not Participate In Practice"
             }
           ],
@@ -1213,9 +1342,10 @@
         "home": [],
         "away": []
       },
-      "spread_current": "+3.0 -112 (10/16)",
+      "spread_current": "+3.0 -105 (10/17)",
       "spread_current_raw": 3.0,
       "spread_history": [
+        "+3.0 -112 (10/16)",
         "+3.5 -115 (10/16)",
         "+3.5 -105 (10/15)",
         "+5.5 -115 (10/14)",
@@ -1290,7 +1420,7 @@
       ],
       "home_injuries": [
         {
-          "name": "Grover Stewart",
+          "name": "DeForest Buckner",
           "position": "DT",
           "status": "DNP (practice) - Not injury related - resting player",
           "trend": [
@@ -1300,29 +1430,57 @@
               "practice_status": "Did Not Participate In Practice"
             }
           ],
-          "usage_note": "59% def. snaps"
+          "usage_note": "70% def. snaps"
         },
         {
           "name": "Ashton Dulin",
           "position": "WR",
-          "status": "DNP (practice) - Hamstring",
+          "status": "Out",
           "trend": [
             {
               "date": "2026-10-15",
               "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Out",
               "practice_status": "Did Not Participate In Practice"
             }
           ],
           "usage_note": "6% target share (5 gm) &middot; 21% off. snaps &middot; 0% def. snaps"
         },
         {
-          "name": "Jaylon Carlies",
-          "position": "LB",
-          "status": "DNP (practice) - Ribs",
+          "name": "Will Mallory",
+          "position": "TE",
+          "status": "Questionable",
           "trend": [
             {
               "date": "2026-10-15",
               "report_status": null,
+              "practice_status": "Full Participation in Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Questionable",
+              "practice_status": "Full Participation in Practice"
+            }
+          ],
+          "usage_note": "3% target share (1 gm) &middot; 14% off. snaps"
+        },
+        {
+          "name": "Jaylon Carlies",
+          "position": "LB",
+          "status": "Out",
+          "trend": [
+            {
+              "date": "2026-10-15",
+              "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Out",
               "practice_status": "Did Not Participate In Practice"
             }
           ],
@@ -1342,22 +1500,17 @@
           "usage_note": "100% off. snaps"
         },
         {
-          "name": "Jalen Travis",
-          "position": "T",
-          "status": "Limited (practice) - Ankle",
+          "name": "Tyler Warren",
+          "position": "TE",
+          "status": "Questionable",
           "trend": [
             {
-              "date": "2026-10-15",
-              "report_status": null,
-              "practice_status": "Did Not Participate In Practice"
-            },
-            {
               "date": "2026-10-17",
-              "report_status": null,
+              "report_status": "Questionable",
               "practice_status": "Limited Participation in Practice"
             }
           ],
-          "usage_note": "30% off. snaps"
+          "usage_note": "20% target share (17 gm) &middot; 84% off. snaps"
         },
         {
           "name": "Jaylahn Tuimoloau",
@@ -1375,9 +1528,40 @@
       ],
       "away_injuries": [
         {
+          "name": "Jordan Elliott",
+          "position": "DT",
+          "status": "Out",
+          "trend": [
+            {
+              "date": "2026-10-17",
+              "report_status": "Out",
+              "practice_status": "Did Not Participate In Practice"
+            }
+          ],
+          "usage_note": "45% def. snaps"
+        },
+        {
+          "name": "Joshua Williams",
+          "position": "CB",
+          "status": "Questionable",
+          "trend": [
+            {
+              "date": "2026-10-15",
+              "report_status": null,
+              "practice_status": "Full Participation in Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Questionable",
+              "practice_status": "Full Participation in Practice"
+            }
+          ],
+          "usage_note": "3% def. snaps"
+        },
+        {
           "name": "Tyjae Spears",
           "position": "RB",
-          "status": "DNP (practice) - Knee",
+          "status": "Questionable",
           "trend": [
             {
               "date": "2026-10-15",
@@ -1388,6 +1572,11 @@
               "date": "2026-10-17",
               "report_status": null,
               "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Questionable",
+              "practice_status": "Full Participation in Practice"
             }
           ],
           "usage_note": "12% target share (12 gm) &middot; 46% off. snaps"
@@ -1408,11 +1597,16 @@
         {
           "name": "Kevin Winston Jr.",
           "position": "S",
-          "status": "DNP (practice) - Quadricep",
+          "status": "Out",
           "trend": [
             {
               "date": "2026-10-15",
               "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Out",
               "practice_status": "Did Not Participate In Practice"
             }
           ],
@@ -1515,26 +1709,18 @@
           "usage_note": "95% off. snaps"
         },
         {
-          "name": "Kevin Byard",
-          "position": "S",
-          "status": "Limited (practice) - Chest",
-          "trend": [
-            {
-              "date": "2026-10-15",
-              "report_status": null,
-              "practice_status": "Limited Participation in Practice"
-            }
-          ],
-          "usage_note": "100% def. snaps"
-        },
-        {
           "name": "Carlton Davis III",
           "position": "CB",
-          "status": "DNP (practice) - Neck",
+          "status": "Out",
           "trend": [
             {
               "date": "2026-10-15",
               "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Out",
               "practice_status": "Did Not Participate In Practice"
             }
           ],
@@ -1543,89 +1729,52 @@
         {
           "name": "A.J. Brown",
           "position": "WR",
-          "status": "Limited (practice) - Ankle",
+          "status": "Questionable",
           "trend": [
             {
               "date": "2026-10-15",
               "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Questionable",
               "practice_status": "Limited Participation in Practice"
             }
           ],
           "usage_note": "25% target share (16 gm) &middot; 91% off. snaps"
         },
         {
-          "name": "Dre'Mont Jones",
-          "position": "LB",
-          "status": "Limited (practice) - Shoulder",
-          "trend": [
-            {
-              "date": "2026-10-15",
-              "report_status": null,
-              "practice_status": "Limited Participation in Practice"
-            }
-          ],
-          "usage_note": "68% def. snaps"
-        },
-        {
           "name": "Christian Elliss",
           "position": "LB",
-          "status": "Limited (practice) - Chest",
+          "status": "Questionable",
           "trend": [
             {
               "date": "2026-10-15",
               "report_status": null,
               "practice_status": "Limited Participation in Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Questionable",
+              "practice_status": "Full Participation in Practice"
             }
           ],
           "usage_note": "56% def. snaps"
         },
         {
-          "name": "Marcus Jones",
-          "position": "CB",
-          "status": "Limited (practice) - Ankle",
-          "trend": [
-            {
-              "date": "2026-10-15",
-              "report_status": null,
-              "practice_status": "Limited Participation in Practice"
-            }
-          ],
-          "usage_note": "70% def. snaps"
-        },
-        {
-          "name": "Cory Durden",
-          "position": "DT",
-          "status": "DNP (practice) - Illness",
-          "trend": [
-            {
-              "date": "2026-10-17",
-              "report_status": null,
-              "practice_status": "Did Not Participate In Practice"
-            }
-          ],
-          "usage_note": "40% def. snaps"
-        },
-        {
-          "name": "Charles Woods",
-          "position": "CB",
-          "status": "Limited (practice) - Shoulder",
-          "trend": [
-            {
-              "date": "2026-10-15",
-              "report_status": null,
-              "practice_status": "Limited Participation in Practice"
-            }
-          ],
-          "usage_note": "13% def. snaps"
-        },
-        {
           "name": "Marcus Bryant",
           "position": "T",
-          "status": "Limited (practice) - Ankle",
+          "status": "Questionable",
           "trend": [
             {
               "date": "2026-10-15",
               "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Questionable",
               "practice_status": "Limited Participation in Practice"
             }
           ],
@@ -1634,11 +1783,16 @@
         {
           "name": "Will Campbell",
           "position": "T",
-          "status": "Limited (practice) - Knee",
+          "status": "Questionable",
           "trend": [
             {
               "date": "2026-10-15",
               "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Questionable",
               "practice_status": "Limited Participation in Practice"
             }
           ],
@@ -1647,12 +1801,17 @@
         {
           "name": "Craig Woodson",
           "position": "S",
-          "status": "Limited (practice) - Shoulder",
+          "status": "Questionable",
           "trend": [
             {
               "date": "2026-10-15",
               "report_status": null,
               "practice_status": "Limited Participation in Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Questionable",
+              "practice_status": "Full Participation in Practice"
             }
           ],
           "usage_note": "94% def. snaps"
@@ -1660,11 +1819,16 @@
         {
           "name": "TreVeyon Henderson",
           "position": "RB",
-          "status": "Limited (practice) - Ankle",
+          "status": "Questionable",
           "trend": [
             {
               "date": "2026-10-15",
               "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Questionable",
               "practice_status": "Limited Participation in Practice"
             }
           ],
@@ -1673,11 +1837,16 @@
         {
           "name": "Karon Prunty",
           "position": "CB",
-          "status": "DNP (practice) - Hamstring",
+          "status": "Out",
           "trend": [
             {
               "date": "2026-10-15",
               "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Out",
               "practice_status": "Did Not Participate In Practice"
             }
           ],
@@ -1686,11 +1855,16 @@
         {
           "name": "Channing Canada",
           "position": "CB",
-          "status": "Limited (practice) - Hamstring",
+          "status": "Questionable",
           "trend": [
             {
               "date": "2026-10-15",
               "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Questionable",
               "practice_status": "Limited Participation in Practice"
             }
           ],
@@ -1701,11 +1875,16 @@
         {
           "name": "Joseph Ossai",
           "position": "DE",
-          "status": "DNP (practice) - Ankle",
+          "status": "Out",
           "trend": [
             {
               "date": "2026-10-15",
               "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Out",
               "practice_status": "Did Not Participate In Practice"
             }
           ],
@@ -1714,11 +1893,16 @@
         {
           "name": "Dylan Parham",
           "position": "G",
-          "status": "DNP (practice) - Knee",
+          "status": "Out",
           "trend": [
             {
               "date": "2026-10-15",
               "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Out",
               "practice_status": "Did Not Participate In Practice"
             }
           ],
@@ -1727,11 +1911,16 @@
         {
           "name": "Breece Hall",
           "position": "RB",
-          "status": "DNP (practice) - Quadricep",
+          "status": "Out",
           "trend": [
             {
               "date": "2026-10-15",
               "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Out",
               "practice_status": "Did Not Participate In Practice"
             }
           ],
@@ -1740,12 +1929,17 @@
         {
           "name": "Dane Belton",
           "position": "S",
-          "status": "Limited (practice) - Knee",
+          "status": "Questionable",
           "trend": [
             {
               "date": "2026-10-15",
               "report_status": null,
               "practice_status": "Limited Participation in Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Questionable",
+              "practice_status": "Full Participation in Practice"
             }
           ],
           "usage_note": "65% def. snaps"
@@ -1753,11 +1947,16 @@
         {
           "name": "Adonai Mitchell",
           "position": "WR",
-          "status": "DNP (practice) - Finger",
+          "status": "Out",
           "trend": [
             {
               "date": "2026-10-15",
               "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Out",
               "practice_status": "Did Not Participate In Practice"
             }
           ],
@@ -1766,12 +1965,17 @@
         {
           "name": "Kenyon Sadiq",
           "position": "TE",
-          "status": "Limited (practice) - Concussion",
+          "status": "Questionable",
           "trend": [
             {
               "date": "2026-10-15",
               "report_status": null,
               "practice_status": "Limited Participation in Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Questionable",
+              "practice_status": "Full Participation in Practice"
             }
           ],
           "usage_note": null
@@ -1779,12 +1983,17 @@
         {
           "name": "Omar Cooper Jr.",
           "position": "WR",
-          "status": "Limited (practice) - Ankle",
+          "status": "Questionable",
           "trend": [
             {
               "date": "2026-10-15",
               "report_status": null,
               "practice_status": "Limited Participation in Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Questionable",
+              "practice_status": "Full Participation in Practice"
             }
           ],
           "usage_note": null
@@ -1795,9 +2004,10 @@
         "home": [],
         "away": []
       },
-      "spread_current": "-7.5 -102 (10/13)",
+      "spread_current": "-7.5 -106 (10/17)",
       "spread_current_raw": -7.5,
       "spread_history": [
+        "-7.5 -102 (10/13)",
         "-7.5 -105 (10/11)",
         "-7.0 -105 (10/6)",
         "-9.5 -110 (8/31)"
@@ -1865,38 +2075,35 @@
         {
           "name": "Jermaine Eluemunor",
           "position": "T",
-          "status": "DNP (practice) - Calf",
+          "status": "Questionable",
           "trend": [
             {
               "date": "2026-10-15",
               "report_status": null,
               "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Questionable",
+              "practice_status": "Limited Participation in Practice"
             }
           ],
           "usage_note": "100% off. snaps"
         },
         {
-          "name": "Malik Harrison",
-          "position": "LB",
-          "status": "Limited (practice) - Groin",
-          "trend": [
-            {
-              "date": "2026-10-17",
-              "report_status": null,
-              "practice_status": "Limited Participation in Practice"
-            }
-          ],
-          "usage_note": "42% def. snaps"
-        },
-        {
           "name": "Andrew Thomas",
           "position": "T",
-          "status": "DNP (practice) - Groin",
+          "status": "Questionable",
           "trend": [
             {
               "date": "2026-10-15",
               "report_status": null,
               "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Questionable",
+              "practice_status": "Limited Participation in Practice"
             }
           ],
           "usage_note": "91% off. snaps"
@@ -1917,12 +2124,17 @@
         {
           "name": "Theo Johnson",
           "position": "TE",
-          "status": "Limited (practice) - Neck",
+          "status": "Out",
           "trend": [
             {
               "date": "2026-10-15",
               "report_status": null,
               "practice_status": "Limited Participation in Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Out",
+              "practice_status": "Did Not Participate In Practice"
             }
           ],
           "usage_note": "15% target share (15 gm) &middot; 87% off. snaps"
@@ -1930,11 +2142,16 @@
         {
           "name": "Tyler Nubin",
           "position": "S",
-          "status": "DNP (practice) - Neck",
+          "status": "Out",
           "trend": [
             {
               "date": "2026-10-15",
               "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Out",
               "practice_status": "Did Not Participate In Practice"
             }
           ],
@@ -1943,12 +2160,17 @@
         {
           "name": "Abdul Carter",
           "position": "LB",
-          "status": "DNP (practice) - Calf",
+          "status": "Questionable",
           "trend": [
             {
               "date": "2026-10-15",
               "report_status": null,
               "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Questionable",
+              "practice_status": "Limited Participation in Practice"
             }
           ],
           "usage_note": "76% def. snaps"
@@ -1956,11 +2178,16 @@
         {
           "name": "Colton Hood",
           "position": "CB",
-          "status": "DNP (practice) - Concussion",
+          "status": "Out",
           "trend": [
             {
               "date": "2026-10-15",
               "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Out",
               "practice_status": "Did Not Participate In Practice"
             }
           ],
@@ -1969,26 +2196,36 @@
       ],
       "away_injuries": [
         {
-          "name": "Davon Godchaux",
-          "position": "DT",
-          "status": "DNP (practice) - Not injury related - resting player",
-          "trend": [
-            {
-              "date": "2026-10-17",
-              "report_status": null,
-              "practice_status": "Did Not Participate In Practice"
-            }
-          ],
-          "usage_note": "42% def. snaps"
-        },
-        {
-          "name": "Alvin Kamara",
-          "position": "RB",
-          "status": "Limited (practice) - Back",
+          "name": "Zach Wood",
+          "position": "LS",
+          "status": "Questionable",
           "trend": [
             {
               "date": "2026-10-15",
               "report_status": null,
+              "practice_status": "Full Participation in Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Questionable",
+              "practice_status": "Full Participation in Practice"
+            }
+          ],
+          "usage_note": null
+        },
+        {
+          "name": "Alvin Kamara",
+          "position": "RB",
+          "status": "Questionable",
+          "trend": [
+            {
+              "date": "2026-10-15",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Questionable",
               "practice_status": "Limited Participation in Practice"
             }
           ],
@@ -1997,12 +2234,17 @@
         {
           "name": "Nathan Shepherd",
           "position": "DT",
-          "status": "DNP (practice) - Illness",
+          "status": "Questionable",
           "trend": [
             {
               "date": "2026-10-15",
               "report_status": null,
               "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Questionable",
+              "practice_status": "Limited Participation in Practice"
             }
           ],
           "usage_note": "67% def. snaps"
@@ -2010,11 +2252,16 @@
         {
           "name": "Kaden Elliss",
           "position": "LB",
-          "status": "DNP (practice) - Calf",
+          "status": "Out",
           "trend": [
             {
               "date": "2026-10-15",
               "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Out",
               "practice_status": "Did Not Participate In Practice"
             }
           ],
@@ -2023,11 +2270,16 @@
         {
           "name": "Anfernee Jennings",
           "position": "LB",
-          "status": "DNP (practice) - Knee",
+          "status": "Out",
           "trend": [
             {
               "date": "2026-10-15",
               "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Out",
               "practice_status": "Did Not Participate In Practice"
             }
           ],
@@ -2036,37 +2288,34 @@
         {
           "name": "Chris Olave",
           "position": "WR",
-          "status": "DNP (practice) - Illness",
+          "status": "Questionable",
           "trend": [
             {
               "date": "2026-10-15",
               "report_status": null,
               "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Questionable",
+              "practice_status": "Limited Participation in Practice"
             }
           ],
           "usage_note": "26% target share (16 gm) &middot; 84% off. snaps"
         },
         {
-          "name": "Vernon Broughton",
-          "position": "DT",
-          "status": "Limited (practice) - Illness",
-          "trend": [
-            {
-              "date": "2026-10-15",
-              "report_status": null,
-              "practice_status": "Limited Participation in Practice"
-            }
-          ],
-          "usage_note": "34% def. snaps"
-        },
-        {
           "name": "Lorenzo Styles Jr.",
           "position": "CB",
-          "status": "Limited (practice) - Knee",
+          "status": "Questionable",
           "trend": [
             {
               "date": "2026-10-17",
               "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Questionable",
               "practice_status": "Limited Participation in Practice"
             }
           ],
@@ -2128,7 +2377,7 @@
           "rookie_starting": false,
           "qb_value": 0.0,
           "notes": [],
-          "depth_chart_conflict": null
+          "depth_chart_conflict": "Depth chart lists Jalen Hurts as starter, but injury report shows them Out - check qb_overrides.csv"
         },
         {
           "team": "CAR",
@@ -2146,33 +2395,25 @@
         {
           "name": "Saquon Barkley",
           "position": "RB",
-          "status": "DNP (practice) - Hamstring",
+          "status": "Out",
           "trend": [
             {
               "date": "2026-10-15",
               "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Out",
               "practice_status": "Did Not Participate In Practice"
             }
           ],
           "usage_note": "12% target share (16 gm) &middot; 79% off. snaps"
         },
         {
-          "name": "Marquise Brown",
-          "position": "WR",
-          "status": "Limited (practice) - Ankle",
-          "trend": [
-            {
-              "date": "2026-10-15",
-              "report_status": null,
-              "practice_status": "Limited Participation in Practice"
-            }
-          ],
-          "usage_note": "13% target share (16 gm) &middot; 54% off. snaps"
-        },
-        {
           "name": "A.J. Epenesa",
           "position": "LB",
-          "status": "DNP (practice) - Back",
+          "status": "Doubtful",
           "trend": [
             {
               "date": "2026-10-15",
@@ -2183,27 +2424,19 @@
               "date": "2026-10-17",
               "report_status": null,
               "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Doubtful",
+              "practice_status": "Did Not Participate In Practice"
             }
           ],
           "usage_note": "47% def. snaps"
         },
         {
-          "name": "Jonathan Greenard",
-          "position": "LB",
-          "status": "Limited (practice) - Ankle",
-          "trend": [
-            {
-              "date": "2026-10-15",
-              "report_status": null,
-              "practice_status": "Limited Participation in Practice"
-            }
-          ],
-          "usage_note": "74% def. snaps"
-        },
-        {
           "name": "Jalen Hurts",
           "position": "QB",
-          "status": "DNP (practice) - Calf",
+          "status": "Out",
           "trend": [
             {
               "date": "2026-10-15",
@@ -2214,6 +2447,11 @@
               "date": "2026-10-17",
               "report_status": null,
               "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Out",
+              "practice_status": "Did Not Participate In Practice"
             }
           ],
           "usage_note": "98% off. snaps"
@@ -2221,20 +2459,7 @@
         {
           "name": "Michael Carter II",
           "position": "S",
-          "status": "DNP (practice) - Abdomen",
-          "trend": [
-            {
-              "date": "2026-10-15",
-              "report_status": null,
-              "practice_status": "Did Not Participate In Practice"
-            }
-          ],
-          "usage_note": "27% def. snaps"
-        },
-        {
-          "name": "DeVonta Smith",
-          "position": "WR",
-          "status": "Limited (practice) - Hamstring",
+          "status": "Out",
           "trend": [
             {
               "date": "2026-10-15",
@@ -2243,20 +2468,25 @@
             },
             {
               "date": "2026-10-17",
-              "report_status": null,
-              "practice_status": "Limited Participation in Practice"
+              "report_status": "Out",
+              "practice_status": "Did Not Participate In Practice"
             }
           ],
-          "usage_note": "22% target share (18 gm) &middot; 85% off. snaps"
+          "usage_note": "27% def. snaps"
         },
         {
           "name": "Landon Dickerson",
           "position": "G",
-          "status": "Limited (practice) - Knee",
+          "status": "Questionable",
           "trend": [
             {
               "date": "2026-10-15",
               "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Questionable",
               "practice_status": "Limited Participation in Practice"
             }
           ],
@@ -2265,20 +2495,7 @@
         {
           "name": "Grant Calcaterra",
           "position": "TE",
-          "status": "Limited (practice) - Back",
-          "trend": [
-            {
-              "date": "2026-10-15",
-              "report_status": null,
-              "practice_status": "Limited Participation in Practice"
-            }
-          ],
-          "usage_note": "5% target share (8 gm) &middot; 39% off. snaps"
-        },
-        {
-          "name": "Dontayvion Wicks",
-          "position": "WR",
-          "status": "DNP (practice) - Hamstring",
+          "status": "Questionable",
           "trend": [
             {
               "date": "2026-10-15",
@@ -2287,47 +2504,26 @@
             },
             {
               "date": "2026-10-17",
-              "report_status": null,
-              "practice_status": "Did Not Participate In Practice"
+              "report_status": "Questionable",
+              "practice_status": "Full Participation in Practice"
             }
           ],
-          "usage_note": "11% target share (13 gm) &middot; 45% off. snaps"
-        },
-        {
-          "name": "E.J. Jenkins",
-          "position": "TE",
-          "status": "Limited (practice) - Toe",
-          "trend": [
-            {
-              "date": "2026-10-15",
-              "report_status": null,
-              "practice_status": "Limited Participation in Practice"
-            }
-          ],
-          "usage_note": "10% off. snaps"
-        },
-        {
-          "name": "Tyler Steen",
-          "position": "G",
-          "status": "Limited (practice) - Shoulder",
-          "trend": [
-            {
-              "date": "2026-10-15",
-              "report_status": null,
-              "practice_status": "Limited Participation in Practice"
-            }
-          ],
-          "usage_note": "96% off. snaps"
+          "usage_note": "5% target share (8 gm) &middot; 39% off. snaps"
         },
         {
           "name": "Jakorian Bennett",
           "position": "CB",
-          "status": "Limited (practice) - Knee",
+          "status": "Questionable",
           "trend": [
             {
               "date": "2026-10-15",
               "report_status": null,
               "practice_status": "Limited Participation in Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Questionable",
+              "practice_status": "Full Participation in Practice"
             }
           ],
           "usage_note": "13% def. snaps"
@@ -2335,11 +2531,16 @@
         {
           "name": "Jalyx Hunt",
           "position": "LB",
-          "status": "DNP (practice) - Knee",
+          "status": "Out",
           "trend": [
             {
               "date": "2026-10-15",
               "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Out",
               "practice_status": "Did Not Participate In Practice"
             }
           ],
@@ -2348,11 +2549,16 @@
         {
           "name": "Will Shipley",
           "position": "RB",
-          "status": "DNP (practice) - Foot",
+          "status": "Out",
           "trend": [
             {
               "date": "2026-10-15",
               "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Out",
               "practice_status": "Did Not Participate In Practice"
             }
           ],
@@ -2361,7 +2567,7 @@
         {
           "name": "Drew Kendall",
           "position": "C",
-          "status": "Limited (practice) - Knee",
+          "status": "Questionable",
           "trend": [
             {
               "date": "2026-10-15",
@@ -2371,6 +2577,11 @@
             {
               "date": "2026-10-17",
               "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Questionable",
               "practice_status": "Limited Participation in Practice"
             }
           ],
@@ -2379,12 +2590,17 @@
         {
           "name": "Eli Stowers",
           "position": "TE",
-          "status": "Limited (practice) - Quadricep",
+          "status": "Questionable",
           "trend": [
             {
               "date": "2026-10-15",
               "report_status": null,
               "practice_status": "Limited Participation in Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Questionable",
+              "practice_status": "Full Participation in Practice"
             }
           ],
           "usage_note": null
@@ -2392,26 +2608,54 @@
       ],
       "away_injuries": [
         {
-          "name": "Darren Waller",
-          "position": "TE",
-          "status": "Limited (practice) - Toe",
+          "name": "Taylor Moton",
+          "position": "T",
+          "status": "Questionable",
           "trend": [
             {
               "date": "2026-10-15",
               "report_status": null,
-              "practice_status": "Limited Participation in Practice"
+              "practice_status": "Full Participation in Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Questionable",
+              "practice_status": "Full Participation in Practice"
             }
           ],
-          "usage_note": "15% target share (8 gm) &middot; 45% off. snaps"
+          "usage_note": "91% off. snaps"
+        },
+        {
+          "name": "Tershawn Wharton",
+          "position": "DT",
+          "status": "Questionable",
+          "trend": [
+            {
+              "date": "2026-10-15",
+              "report_status": null,
+              "practice_status": "Full Participation in Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Questionable",
+              "practice_status": "Full Participation in Practice"
+            }
+          ],
+          "usage_note": "71% def. snaps"
         },
         {
           "name": "AJ Dillon",
           "position": "RB",
-          "status": "DNP (practice) - Ankle",
+          "status": "Out",
           "trend": [
             {
               "date": "2026-10-15",
               "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Out",
               "practice_status": "Did Not Participate In Practice"
             }
           ],
@@ -2420,12 +2664,17 @@
         {
           "name": "Damien Lewis",
           "position": "G",
-          "status": "Limited (practice) - Elbow",
+          "status": "Questionable",
           "trend": [
             {
               "date": "2026-10-15",
               "report_status": null,
               "practice_status": "Limited Participation in Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Questionable",
+              "practice_status": "Full Participation in Practice"
             }
           ],
           "usage_note": "100% off. snaps"
@@ -2433,33 +2682,43 @@
         {
           "name": "Jaelan Phillips",
           "position": "LB",
-          "status": "Limited (practice) - Hamstring",
+          "status": "Questionable",
           "trend": [
             {
               "date": "2026-10-15",
               "report_status": null,
               "practice_status": "Limited Participation in Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Questionable",
+              "practice_status": "Full Participation in Practice"
             }
           ],
           "usage_note": "76% def. snaps"
         },
         {
-          "name": "Tommy Tremble",
-          "position": "TE",
-          "status": "Limited (practice) - Rib",
+          "name": "Trevor Etienne",
+          "position": "RB",
+          "status": "Questionable",
           "trend": [
             {
               "date": "2026-10-15",
               "report_status": null,
-              "practice_status": "Limited Participation in Practice"
+              "practice_status": "Full Participation in Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Questionable",
+              "practice_status": "Full Participation in Practice"
             }
           ],
-          "usage_note": "8% target share (16 gm) &middot; 61% off. snaps"
+          "usage_note": "3% target share (3 gm) &middot; 6% off. snaps"
         },
         {
           "name": "Monroe Freeling",
           "position": "T",
-          "status": "Limited (practice) - Knee",
+          "status": "Doubtful",
           "trend": [
             {
               "date": "2026-10-15",
@@ -2469,6 +2728,11 @@
             {
               "date": "2026-10-17",
               "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Doubtful",
               "practice_status": "Limited Participation in Practice"
             }
           ],
@@ -2480,9 +2744,10 @@
         "home": [],
         "away": []
       },
-      "spread_current": "+3.5 -122 (10/16)",
-      "spread_current_raw": 3.5,
+      "spread_current": "+3.0 -104 (10/17)",
+      "spread_current_raw": 3.0,
       "spread_history": [
+        "+3.5 -122 (10/16)",
         "+3.5 -112 (10/15)",
         "+1.5 -118 (10/15)",
         "+1.5 -114 (10/14)",
@@ -2539,7 +2804,7 @@
           "rookie_starting": false,
           "qb_value": 0.0,
           "notes": [],
-          "depth_chart_conflict": null
+          "depth_chart_conflict": "Depth chart lists Baker Mayfield as starter, but injury report shows them Out - check qb_overrides.csv"
         },
         {
           "team": "PIT",
@@ -2570,24 +2835,52 @@
         {
           "name": "Baker Mayfield",
           "position": "QB",
-          "status": "DNP (practice) - Thumb",
+          "status": "Out",
           "trend": [
             {
               "date": "2026-10-15",
               "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Out",
               "practice_status": "Did Not Participate In Practice"
             }
           ],
           "usage_note": "97% off. snaps"
         },
         {
-          "name": "Antoine Winfield Jr.",
-          "position": "S",
-          "status": "DNP (practice) - Rib",
+          "name": "David Sills",
+          "position": "WR",
+          "status": "Out",
           "trend": [
             {
               "date": "2026-10-15",
               "report_status": null,
+              "practice_status": "Full Participation in Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Out",
+              "practice_status": "Full Participation in Practice"
+            }
+          ],
+          "usage_note": "9% target share (12 gm) &middot; 52% off. snaps"
+        },
+        {
+          "name": "Antoine Winfield Jr.",
+          "position": "S",
+          "status": "Out",
+          "trend": [
+            {
+              "date": "2026-10-15",
+              "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Out",
               "practice_status": "Did Not Participate In Practice"
             }
           ],
@@ -2596,7 +2889,7 @@
         {
           "name": "Sean Tucker",
           "position": "RB",
-          "status": "Limited (practice) - Quadricep",
+          "status": "Questionable",
           "trend": [
             {
               "date": "2026-10-15",
@@ -2606,6 +2899,11 @@
             {
               "date": "2026-10-17",
               "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Questionable",
               "practice_status": "Limited Participation in Practice"
             }
           ],
@@ -2614,12 +2912,17 @@
         {
           "name": "SirVocea Dennis",
           "position": "LB",
-          "status": "Limited (practice) - Ankle",
+          "status": "Questionable",
           "trend": [
             {
               "date": "2026-10-15",
               "report_status": null,
               "practice_status": "Limited Participation in Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Questionable",
+              "practice_status": "Full Participation in Practice"
             }
           ],
           "usage_note": "93% def. snaps"
@@ -2627,11 +2930,16 @@
         {
           "name": "Benjamin Morrison",
           "position": "CB",
-          "status": "Limited (practice) - Quadricep",
+          "status": "Doubtful",
           "trend": [
             {
               "date": "2026-10-15",
               "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Doubtful",
               "practice_status": "Limited Participation in Practice"
             }
           ],
@@ -2640,7 +2948,7 @@
         {
           "name": "Ayden Garnes",
           "position": "CB",
-          "status": "Limited (practice) - Ankle",
+          "status": "Questionable",
           "trend": [
             {
               "date": "2026-10-15",
@@ -2650,6 +2958,24 @@
             {
               "date": "2026-10-17",
               "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Questionable",
+              "practice_status": "Full Participation in Practice"
+            }
+          ],
+          "usage_note": null
+        },
+        {
+          "name": "Josiah Trotter",
+          "position": "LB",
+          "status": "Questionable",
+          "trend": [
+            {
+              "date": "2026-10-17",
+              "report_status": "Questionable",
               "practice_status": "Limited Participation in Practice"
             }
           ],
@@ -2660,7 +2986,7 @@
         {
           "name": "Jalen Ramsey",
           "position": "CB",
-          "status": "Limited (practice) - Wrist",
+          "status": "Questionable",
           "trend": [
             {
               "date": "2026-10-15",
@@ -2670,6 +2996,11 @@
             {
               "date": "2026-10-17",
               "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Questionable",
               "practice_status": "Limited Participation in Practice"
             }
           ],
@@ -2678,37 +3009,88 @@
         {
           "name": "DeShon Elliott",
           "position": "S",
-          "status": "Limited (practice) - Knee",
+          "status": "Out",
           "trend": [
             {
               "date": "2026-10-15",
               "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Out",
               "practice_status": "Limited Participation in Practice"
             }
           ],
           "usage_note": "75% def. snaps"
         },
         {
+          "name": "DK Metcalf",
+          "position": "WR",
+          "status": "Questionable",
+          "trend": [
+            {
+              "date": "2026-10-17",
+              "report_status": "Questionable",
+              "practice_status": "Did Not Participate In Practice"
+            }
+          ],
+          "usage_note": "20% target share (16 gm) &middot; 87% off. snaps"
+        },
+        {
           "name": "Jamel Dean",
           "position": "CB",
-          "status": "Limited (practice) - Ankle",
+          "status": "Questionable",
           "trend": [
             {
               "date": "2026-10-15",
               "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Questionable",
               "practice_status": "Limited Participation in Practice"
             }
           ],
           "usage_note": "74% def. snaps"
         },
         {
-          "name": "Ben Skowronek",
-          "position": "WR",
-          "status": "DNP (practice) - Calf",
+          "name": "Rico Dowdle",
+          "position": "RB",
+          "status": "Questionable",
           "trend": [
             {
               "date": "2026-10-15",
               "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": null,
+              "practice_status": "Full Participation in Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Questionable",
+              "practice_status": "Full Participation in Practice"
+            }
+          ],
+          "usage_note": "10% target share (17 gm) &middot; 55% off. snaps"
+        },
+        {
+          "name": "Ben Skowronek",
+          "position": "WR",
+          "status": "Out",
+          "trend": [
+            {
+              "date": "2026-10-15",
+              "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Out",
               "practice_status": "Did Not Participate In Practice"
             }
           ],
@@ -2717,7 +3099,7 @@
         {
           "name": "Keeanu Benton",
           "position": "DT",
-          "status": "Limited (practice) - Ankle",
+          "status": "Questionable",
           "trend": [
             {
               "date": "2026-10-15",
@@ -2728,6 +3110,11 @@
               "date": "2026-10-17",
               "report_status": null,
               "practice_status": "Limited Participation in Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Questionable",
+              "practice_status": "Full Participation in Practice"
             }
           ],
           "usage_note": "64% def. snaps"
@@ -2735,11 +3122,16 @@
         {
           "name": "Roman Wilson",
           "position": "WR",
-          "status": "DNP (practice) - Finger",
+          "status": "Out",
           "trend": [
             {
               "date": "2026-10-15",
               "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Out",
               "practice_status": "Did Not Participate In Practice"
             }
           ],
@@ -2751,9 +3143,10 @@
         "home": [],
         "away": []
       },
-      "spread_current": "+2.5 -105 (10/11)",
+      "spread_current": "+2.5 -110 (10/17)",
       "spread_current_raw": 2.5,
       "spread_history": [
+        "+2.5 -105 (10/11)",
         "+2.5 -110 (10/6)",
         "-1.5 -110 (8/31)"
       ],
@@ -2820,71 +3213,130 @@
       ],
       "home_injuries": [
         {
-          "name": "Colby Parkinson",
+          "name": "Tyler Higbee",
           "position": "TE",
-          "status": "Limited (practice) - Shoulder",
+          "status": "DNP (practice) - Not injury related - resting player",
           "trend": [
             {
-              "date": "2026-10-15",
+              "date": "2026-10-17",
               "report_status": null,
-              "practice_status": "Limited Participation in Practice"
+              "practice_status": "Did Not Participate In Practice"
             }
           ],
-          "usage_note": "11% target share (17 gm) &middot; 63% off. snaps"
+          "usage_note": "10% target share (12 gm) &middot; 49% off. snaps"
         },
         {
-          "name": "Nate Landman",
-          "position": "LB",
-          "status": "Limited (practice) - Wrist",
+          "name": "Kam Curl",
+          "position": "S",
+          "status": "Questionable",
           "trend": [
             {
-              "date": "2026-10-15",
-              "report_status": null,
-              "practice_status": "Limited Participation in Practice"
+              "date": "2026-10-17",
+              "report_status": "Questionable",
+              "practice_status": "Did Not Participate In Practice"
             }
           ],
-          "usage_note": "91% def. snaps"
+          "usage_note": "99% def. snaps"
+        },
+        {
+          "name": "Trent McDuffie",
+          "position": "CB",
+          "status": "Questionable",
+          "trend": [
+            {
+              "date": "2026-10-17",
+              "report_status": "Questionable",
+              "practice_status": "Did Not Participate In Practice"
+            }
+          ],
+          "usage_note": "90% def. snaps"
         },
         {
           "name": "Davis Allen",
           "position": "TE",
-          "status": "DNP (practice) - Foot",
+          "status": "Limited (practice) - Foot",
           "trend": [
             {
               "date": "2026-10-15",
               "report_status": null,
               "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
             }
           ],
           "usage_note": "6% target share (15 gm) &middot; 49% off. snaps"
         },
         {
-          "name": "Josh Wallace",
-          "position": "CB",
-          "status": "Limited (practice) - Shoulder",
+          "name": "Byron Young",
+          "position": "LB",
+          "status": "DNP (practice) - Not injury related - resting player",
           "trend": [
             {
-              "date": "2026-10-15",
+              "date": "2026-10-17",
               "report_status": null,
-              "practice_status": "Limited Participation in Practice"
+              "practice_status": "Did Not Participate In Practice"
             }
           ],
-          "usage_note": "23% def. snaps"
+          "usage_note": "73% def. snaps"
         }
       ],
       "away_injuries": [
         {
-          "name": "Andrew Wingard",
+          "name": "Budda Baker",
           "position": "S",
-          "status": "DNP (practice) - Knee",
+          "status": "Questionable",
           "trend": [
             {
               "date": "2026-10-15",
               "report_status": null,
               "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": null,
+              "practice_status": "Full Participation in Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Questionable",
+              "practice_status": "Did Not Participate In Practice"
+            }
+          ],
+          "usage_note": "98% def. snaps"
+        },
+        {
+          "name": "Andrew Wingard",
+          "position": "S",
+          "status": "Out",
+          "trend": [
+            {
+              "date": "2026-10-15",
+              "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Out",
+              "practice_status": "Did Not Participate In Practice"
             }
           ],
           "usage_note": "91% def. snaps"
+        },
+        {
+          "name": "Blake Gillikin",
+          "position": "P",
+          "status": "Questionable",
+          "trend": [
+            {
+              "date": "2026-10-17",
+              "report_status": "Questionable",
+              "practice_status": "Limited Participation in Practice"
+            }
+          ],
+          "usage_note": null
         },
         {
           "name": "Devin Duvernay",
@@ -2900,13 +3352,31 @@
           "usage_note": "4% target share (3 gm) &middot; 3% off. snaps"
         },
         {
+          "name": "Zaven Collins",
+          "position": "LB",
+          "status": "Questionable",
+          "trend": [
+            {
+              "date": "2026-10-17",
+              "report_status": "Questionable",
+              "practice_status": "Did Not Participate In Practice"
+            }
+          ],
+          "usage_note": "47% def. snaps"
+        },
+        {
           "name": "Kitan Crawford",
           "position": "S",
-          "status": "Limited (practice) - Ankle",
+          "status": "Questionable",
           "trend": [
             {
               "date": "2026-10-15",
               "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Questionable",
               "practice_status": "Limited Participation in Practice"
             }
           ],
@@ -2915,11 +3385,16 @@
         {
           "name": "Jeremiyah Love",
           "position": "RB",
-          "status": "DNP (practice) - Ankle",
+          "status": "Out",
           "trend": [
             {
               "date": "2026-10-15",
               "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Out",
               "practice_status": "Did Not Participate In Practice"
             }
           ],
@@ -2928,12 +3403,30 @@
         {
           "name": "Wydett Williams Jr.",
           "position": "S",
-          "status": "DNP (practice) - Concussion",
+          "status": "Out",
           "trend": [
             {
               "date": "2026-10-15",
               "report_status": null,
               "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Out",
+              "practice_status": "Did Not Participate In Practice"
+            }
+          ],
+          "usage_note": null
+        },
+        {
+          "name": "Carson Beck",
+          "position": "QB",
+          "status": "Limited (practice) - Back",
+          "trend": [
+            {
+              "date": "2026-10-17",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
             }
           ],
           "usage_note": null
@@ -2956,8 +3449,9 @@
         "-11.5 -115 (10/6)",
         "-13.5 -112 (8/31)"
       ],
-      "total_current": "O/U 51.5 (-115.0) (10/13)",
+      "total_current": "O/U 51.5 (-110.0) (10/17)",
       "total_history": [
+        "O/U 51.5 (-115.0) (10/13)",
         "O/U 52.5 (-105.0) (10/13)",
         "O/U 51.5 (-115.0) (10/11)",
         "O/U 50.5 (-110.0) (10/6)",
@@ -3018,11 +3512,16 @@
         {
           "name": "L'Jarius Sneed",
           "position": "CB",
-          "status": "Limited (practice) - Knee",
+          "status": "Questionable",
           "trend": [
             {
               "date": "2026-10-15",
               "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Questionable",
               "practice_status": "Limited Participation in Practice"
             }
           ],
@@ -3031,11 +3530,16 @@
         {
           "name": "Rashee Rice",
           "position": "WR",
-          "status": "DNP (practice) - Hamstring",
+          "status": "Out",
           "trend": [
             {
               "date": "2026-10-15",
               "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Out",
               "practice_status": "Did Not Participate In Practice"
             }
           ],
@@ -3044,35 +3548,27 @@
         {
           "name": "Josh Simmons",
           "position": "T",
-          "status": "Limited (practice) - Back",
+          "status": "Out",
           "trend": [
             {
               "date": "2026-10-15",
               "report_status": null,
               "practice_status": "Limited Participation in Practice"
-            }
-          ],
-          "usage_note": "93% off. snaps"
-        },
-        {
-          "name": "Peter Woods",
-          "position": "DT",
-          "status": "Limited (practice) - Neck",
-          "trend": [
+            },
             {
               "date": "2026-10-17",
-              "report_status": null,
+              "report_status": "Out",
               "practice_status": "Limited Participation in Practice"
             }
           ],
-          "usage_note": null
+          "usage_note": "93% off. snaps"
         }
       ],
       "away_injuries": [
         {
           "name": "Bud Dupree",
           "position": "DE",
-          "status": "DNP (practice) - Neck",
+          "status": "Questionable",
           "trend": [
             {
               "date": "2026-10-15",
@@ -3083,6 +3579,11 @@
               "date": "2026-10-17",
               "report_status": null,
               "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Questionable",
+              "practice_status": "Limited Participation in Practice"
             }
           ],
           "usage_note": "40% def. snaps"
@@ -3090,11 +3591,16 @@
         {
           "name": "Dalvin Tomlinson",
           "position": "DT",
-          "status": "Limited (practice) - Hamstring",
+          "status": "Questionable",
           "trend": [
             {
               "date": "2026-10-15",
               "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Questionable",
               "practice_status": "Limited Participation in Practice"
             }
           ],
@@ -3103,11 +3609,16 @@
         {
           "name": "Donte Jackson",
           "position": "CB",
-          "status": "DNP (practice) - Hamstring",
+          "status": "Out",
           "trend": [
             {
               "date": "2026-10-15",
               "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Out",
               "practice_status": "Did Not Participate In Practice"
             }
           ],
@@ -3116,11 +3627,16 @@
         {
           "name": "Derwin James",
           "position": "S",
-          "status": "DNP (practice) - Hamstring",
+          "status": "Out",
           "trend": [
             {
               "date": "2026-10-15",
               "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Out",
               "practice_status": "Did Not Participate In Practice"
             }
           ],
@@ -3142,115 +3658,70 @@
         {
           "name": "Kayode Awosika",
           "position": "G",
-          "status": "DNP (practice) - Fibula",
+          "status": "Out",
           "trend": [
             {
               "date": "2026-10-15",
               "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Out",
               "practice_status": "Did Not Participate In Practice"
             }
           ],
           "usage_note": "34% off. snaps"
         },
         {
-          "name": "Elijah Molden",
-          "position": "S",
-          "status": "Limited (practice) - Hamstring",
-          "trend": [
-            {
-              "date": "2026-10-15",
-              "report_status": null,
-              "practice_status": "Limited Participation in Practice"
-            }
-          ],
-          "usage_note": "74% def. snaps"
-        },
-        {
-          "name": "Kendall Williamson",
-          "position": "S",
-          "status": "Limited (practice) - Ankle",
-          "trend": [
-            {
-              "date": "2026-10-15",
-              "report_status": null,
-              "practice_status": "Limited Participation in Practice"
-            }
-          ],
-          "usage_note": "3% def. snaps"
-        },
-        {
-          "name": "Quentin Johnston",
-          "position": "WR",
-          "status": "Limited (practice) - Chest",
-          "trend": [
-            {
-              "date": "2026-10-15",
-              "report_status": null,
-              "practice_status": "Limited Participation in Practice"
-            }
-          ],
-          "usage_note": "17% target share (14 gm) &middot; 77% off. snaps"
-        },
-        {
           "name": "Daiyan Henley",
           "position": "LB",
-          "status": "Limited (practice) - Knee",
+          "status": "Questionable",
           "trend": [
             {
               "date": "2026-10-15",
               "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Questionable",
               "practice_status": "Limited Participation in Practice"
             }
           ],
           "usage_note": "97% def. snaps"
         },
         {
-          "name": "Justin Eboigbe",
-          "position": "DE",
-          "status": "Limited (practice) - Shoulder",
-          "trend": [
-            {
-              "date": "2026-10-15",
-              "report_status": null,
-              "practice_status": "Limited Participation in Practice"
-            }
-          ],
-          "usage_note": "41% def. snaps"
-        },
-        {
           "name": "Joe Alt",
           "position": "T",
-          "status": "DNP (practice) - Neck",
+          "status": "Out",
           "trend": [
             {
               "date": "2026-10-15",
               "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Out",
               "practice_status": "Did Not Participate In Practice"
             }
           ],
           "usage_note": "75% off. snaps"
         },
         {
-          "name": "Ladd McConkey",
-          "position": "WR",
-          "status": "Limited (practice) - Foot",
+          "name": "Jamaree Caldwell",
+          "position": "DT",
+          "status": "Questionable",
           "trend": [
             {
               "date": "2026-10-15",
               "report_status": null,
               "practice_status": "Limited Participation in Practice"
-            }
-          ],
-          "usage_note": "18% target share (17 gm) &middot; 78% off. snaps"
-        },
-        {
-          "name": "Jamaree Caldwell",
-          "position": "DT",
-          "status": "Limited (practice) - Knee",
-          "trend": [
+            },
             {
-              "date": "2026-10-15",
-              "report_status": null,
+              "date": "2026-10-17",
+              "report_status": "Questionable",
               "practice_status": "Limited Participation in Practice"
             }
           ],
@@ -3259,12 +3730,17 @@
         {
           "name": "KeAndre Lambert-Smith",
           "position": "WR",
-          "status": "Limited (practice) - Hamstring",
+          "status": "Questionable",
           "trend": [
             {
               "date": "2026-10-15",
               "report_status": null,
               "practice_status": "Limited Participation in Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Questionable",
+              "practice_status": "Full Participation in Practice"
             }
           ],
           "usage_note": "4% target share (7 gm) &middot; 19% off. snaps"
@@ -3272,11 +3748,16 @@
         {
           "name": "Tre Harris",
           "position": "WR",
-          "status": "DNP (practice) - Hamstring",
+          "status": "Out",
           "trend": [
             {
               "date": "2026-10-15",
               "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Out",
               "practice_status": "Did Not Participate In Practice"
             }
           ],
@@ -3285,7 +3766,7 @@
         {
           "name": "Rodney Shelley",
           "position": "CB",
-          "status": "DNP (practice) - Hamstring",
+          "status": "Doubtful",
           "trend": [
             {
               "date": "2026-10-15",
@@ -3296,6 +3777,11 @@
               "date": "2026-10-17",
               "report_status": null,
               "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Doubtful",
+              "practice_status": "Did Not Participate In Practice"
             }
           ],
           "usage_note": null
@@ -3303,11 +3789,16 @@
         {
           "name": "Brenen Thompson",
           "position": "WR",
-          "status": "Limited (practice) - Quadricep",
+          "status": "Questionable",
           "trend": [
             {
               "date": "2026-10-15",
               "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Questionable",
               "practice_status": "Limited Participation in Practice"
             }
           ],
@@ -3391,9 +3882,9 @@
       ],
       "home_injuries": [
         {
-          "name": "Jalen Nailor",
-          "position": "WR",
-          "status": "Limited (practice) - Concussion",
+          "name": "Tonka Hemingway",
+          "position": "DT",
+          "status": "Out",
           "trend": [
             {
               "date": "2026-10-15",
@@ -3402,20 +3893,7 @@
             },
             {
               "date": "2026-10-17",
-              "report_status": null,
-              "practice_status": "Limited Participation in Practice"
-            }
-          ],
-          "usage_note": "10% target share (17 gm) &middot; 65% off. snaps"
-        },
-        {
-          "name": "Tonka Hemingway",
-          "position": "DT",
-          "status": "DNP (practice) - Concussion",
-          "trend": [
-            {
-              "date": "2026-10-15",
-              "report_status": null,
+              "report_status": "Out",
               "practice_status": "Did Not Participate In Practice"
             }
           ],
@@ -3424,24 +3902,52 @@
         {
           "name": "Carter Runyon",
           "position": "TE",
-          "status": "Limited (practice) - Foot",
+          "status": "Out",
           "trend": [
             {
               "date": "2026-10-15",
               "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Out",
               "practice_status": "Limited Participation in Practice"
             }
           ],
           "usage_note": "5% target share (1 gm) &middot; 6% off. snaps"
         },
         {
-          "name": "Trey Zuhn III",
-          "position": "C",
-          "status": "Limited (practice) - Knee",
+          "name": "Dont'e Thornton Jr.",
+          "position": "WR",
+          "status": "Out",
           "trend": [
             {
               "date": "2026-10-15",
               "report_status": null,
+              "practice_status": "Full Participation in Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Out",
+              "practice_status": "Full Participation in Practice"
+            }
+          ],
+          "usage_note": "8% target share (11 gm) &middot; 45% off. snaps"
+        },
+        {
+          "name": "Trey Zuhn III",
+          "position": "C",
+          "status": "Questionable",
+          "trend": [
+            {
+              "date": "2026-10-15",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Questionable",
               "practice_status": "Limited Participation in Practice"
             }
           ],
@@ -3452,12 +3958,17 @@
         {
           "name": "DJ Moore",
           "position": "WR",
-          "status": "DNP (practice) - Shoulder",
+          "status": "Questionable",
           "trend": [
             {
               "date": "2026-10-17",
               "report_status": null,
               "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Questionable",
+              "practice_status": "Limited Participation in Practice"
             }
           ],
           "usage_note": "15% target share (19 gm) &middot; 84% off. snaps"
@@ -3465,50 +3976,34 @@
         {
           "name": "Ed Oliver",
           "position": "DE",
-          "status": "DNP (practice) - Knee",
+          "status": "Questionable",
           "trend": [
             {
               "date": "2026-10-17",
               "report_status": null,
               "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Questionable",
+              "practice_status": "Limited Participation in Practice"
             }
           ],
           "usage_note": "50% def. snaps"
         },
         {
-          "name": "Ty Johnson",
-          "position": "RB",
-          "status": "Limited (practice) - Hamstring",
-          "trend": [
-            {
-              "date": "2026-10-17",
-              "report_status": null,
-              "practice_status": "Limited Participation in Practice"
-            }
-          ],
-          "usage_note": "8% target share (13 gm) &middot; 30% off. snaps"
-        },
-        {
-          "name": "Spencer Brown",
-          "position": "T",
-          "status": "Limited (practice) - Back",
-          "trend": [
-            {
-              "date": "2026-10-17",
-              "report_status": null,
-              "practice_status": "Limited Participation in Practice"
-            }
-          ],
-          "usage_note": "92% off. snaps"
-        },
-        {
           "name": "Josh Palmer",
           "position": "WR",
-          "status": "Limited (practice) - Shoulder",
+          "status": "Questionable",
           "trend": [
             {
               "date": "2026-10-17",
               "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Questionable",
               "practice_status": "Limited Participation in Practice"
             }
           ],
@@ -3517,25 +4012,53 @@
         {
           "name": "Dee Alford",
           "position": "CB",
-          "status": "Limited (practice) - Ankle",
+          "status": "Questionable",
           "trend": [
             {
               "date": "2026-10-17",
               "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Questionable",
               "practice_status": "Limited Participation in Practice"
             }
           ],
           "usage_note": "57% def. snaps"
         },
         {
+          "name": "Terrel Bernard",
+          "position": "LB",
+          "status": "Limited (practice) - Knee",
+          "trend": [
+            {
+              "date": "2026-10-17",
+              "report_status": null,
+              "practice_status": "Full Participation in Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            }
+          ],
+          "usage_note": "86% def. snaps"
+        },
+        {
           "name": "T.J. Sanders",
           "position": "DE",
-          "status": "Limited (practice) - Shoulder",
+          "status": "Questionable",
           "trend": [
             {
               "date": "2026-10-17",
               "report_status": null,
               "practice_status": "Limited Participation in Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Questionable",
+              "practice_status": "Full Participation in Practice"
             }
           ],
           "usage_note": "42% def. snaps"
@@ -3614,11 +4137,16 @@
         {
           "name": "Javon Hargrave",
           "position": "DT",
-          "status": "DNP (practice) - Achilles",
+          "status": "Out",
           "trend": [
             {
               "date": "2026-10-15",
               "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Out",
               "practice_status": "Did Not Participate In Practice"
             }
           ],
@@ -3645,11 +4173,16 @@
         {
           "name": "Aaron Banks",
           "position": "G",
-          "status": "Limited (practice) - Knee",
+          "status": "Questionable",
           "trend": [
             {
               "date": "2026-10-15",
               "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Questionable",
               "practice_status": "Limited Participation in Practice"
             }
           ],
@@ -3658,11 +4191,16 @@
         {
           "name": "Benjamin St-Juste",
           "position": "CB",
-          "status": "DNP (practice) - Hamstring",
+          "status": "Out",
           "trend": [
             {
               "date": "2026-10-15",
               "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Out",
               "practice_status": "Did Not Participate In Practice"
             }
           ],
@@ -3684,11 +4222,16 @@
         {
           "name": "Jonathan Ford",
           "position": "DT",
-          "status": "DNP (practice) - Calf",
+          "status": "Out",
           "trend": [
             {
               "date": "2026-10-15",
               "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Out",
               "practice_status": "Did Not Participate In Practice"
             }
           ],
@@ -3697,11 +4240,16 @@
         {
           "name": "Skyy Moore",
           "position": "WR",
-          "status": "DNP (practice) - Ankle",
+          "status": "Out",
           "trend": [
             {
               "date": "2026-10-15",
               "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Out",
               "practice_status": "Did Not Participate In Practice"
             }
           ],
@@ -3710,11 +4258,16 @@
         {
           "name": "Jordon Riley",
           "position": "DE",
-          "status": "Limited (practice) - Achilles",
+          "status": "Doubtful",
           "trend": [
             {
               "date": "2026-10-15",
               "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Doubtful",
               "practice_status": "Limited Participation in Practice"
             }
           ],
@@ -3723,11 +4276,16 @@
         {
           "name": "Jacob Monk",
           "position": "C",
-          "status": "Limited (practice) - Quadricep",
+          "status": "Questionable",
           "trend": [
             {
               "date": "2026-10-15",
               "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Questionable",
               "practice_status": "Limited Participation in Practice"
             }
           ],
@@ -3736,11 +4294,16 @@
         {
           "name": "Savion Williams",
           "position": "WR",
-          "status": "Limited (practice) - Ankle",
+          "status": "Questionable",
           "trend": [
             {
               "date": "2026-10-15",
               "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Questionable",
               "practice_status": "Limited Participation in Practice"
             }
           ],
@@ -3749,11 +4312,29 @@
         {
           "name": "Anthony Campbell",
           "position": "DT",
-          "status": "Limited (practice) - Ankle",
+          "status": "Questionable",
           "trend": [
             {
               "date": "2026-10-15",
               "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Questionable",
+              "practice_status": "Limited Participation in Practice"
+            }
+          ],
+          "usage_note": null
+        },
+        {
+          "name": "Brandon Cisse",
+          "position": "CB",
+          "status": "Questionable",
+          "trend": [
+            {
+              "date": "2026-10-17",
+              "report_status": "Questionable",
               "practice_status": "Limited Participation in Practice"
             }
           ],
@@ -3777,11 +4358,16 @@
         {
           "name": "Cobie Durant",
           "position": "CB",
-          "status": "DNP (practice) - Hamstring",
+          "status": "Out",
           "trend": [
             {
               "date": "2026-10-15",
               "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Out",
               "practice_status": "Did Not Participate In Practice"
             }
           ],
@@ -3790,7 +4376,7 @@
         {
           "name": "DeMarvion Overshown",
           "position": "LB",
-          "status": "Limited (practice) - Hamstring",
+          "status": "Questionable",
           "trend": [
             {
               "date": "2026-10-15",
@@ -3800,6 +4386,11 @@
             {
               "date": "2026-10-17",
               "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Questionable",
               "practice_status": "Limited Participation in Practice"
             }
           ],
@@ -3808,7 +4399,7 @@
         {
           "name": "Ameer Speed",
           "position": "CB",
-          "status": "Limited (practice) - Knee",
+          "status": "Questionable",
           "trend": [
             {
               "date": "2026-10-15",
@@ -3819,18 +4410,64 @@
               "date": "2026-10-17",
               "report_status": null,
               "practice_status": "Limited Participation in Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Questionable",
+              "practice_status": "Limited Participation in Practice"
             }
           ],
           "usage_note": null
         },
         {
-          "name": "Drew Shelton",
-          "position": "T",
-          "status": "DNP (practice) - Hamstring",
+          "name": "Joey Porter Jr.",
+          "position": "CB",
+          "status": "Questionable",
           "trend": [
             {
               "date": "2026-10-15",
               "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": null,
+              "practice_status": "Full Participation in Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Questionable",
+              "practice_status": "Limited Participation in Practice"
+            }
+          ],
+          "usage_note": "95% def. snaps"
+        },
+        {
+          "name": "Drew Shelton",
+          "position": "T",
+          "status": "Out",
+          "trend": [
+            {
+              "date": "2026-10-15",
+              "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": "Out",
+              "practice_status": "Did Not Participate In Practice"
+            }
+          ],
+          "usage_note": null
+        },
+        {
+          "name": "LT Overton",
+          "position": "DT",
+          "status": "Questionable",
+          "trend": [
+            {
+              "date": "2026-10-17",
+              "report_status": "Questionable",
               "practice_status": "Did Not Participate In Practice"
             }
           ],
@@ -3851,8 +4488,9 @@
         "+1.5 -105 (10/6)",
         "-3.0 -110 (8/31)"
       ],
-      "total_current": "O/U 52.5 (-112.0) (10/14)",
+      "total_current": "O/U 53.5 (-105.0) (10/17)",
       "total_history": [
+        "O/U 52.5 (-112.0) (10/14)",
         "O/U 52.5 (-115.0) (10/13)",
         "O/U 52.5 (-110.0) (10/13)",
         "O/U 52.5 (-105.0) (10/12)",
@@ -3915,32 +4553,6 @@
       ],
       "home_injuries": [
         {
-          "name": "Trent Williams",
-          "position": "T",
-          "status": "DNP (practice) - Not injury related - resting player",
-          "trend": [
-            {
-              "date": "2026-10-17",
-              "report_status": null,
-              "practice_status": "Did Not Participate In Practice"
-            }
-          ],
-          "usage_note": "93% off. snaps"
-        },
-        {
-          "name": "Kyle Juszczyk",
-          "position": "FB",
-          "status": "Limited (practice) - Knee",
-          "trend": [
-            {
-              "date": "2026-10-17",
-              "report_status": null,
-              "practice_status": "Limited Participation in Practice"
-            }
-          ],
-          "usage_note": "6% target share (17 gm) &middot; 46% off. snaps"
-        },
-        {
           "name": "Mike Evans",
           "position": "WR",
           "status": "DNP (practice) - Ribs",
@@ -3952,19 +4564,6 @@
             }
           ],
           "usage_note": "22% target share (8 gm) &middot; 66% off. snaps"
-        },
-        {
-          "name": "Christian McCaffrey",
-          "position": "RB",
-          "status": "DNP (practice) - Not injury related - resting player",
-          "trend": [
-            {
-              "date": "2026-10-17",
-              "report_status": null,
-              "practice_status": "Did Not Participate In Practice"
-            }
-          ],
-          "usage_note": "21% target share (19 gm) &middot; 82% off. snaps"
         },
         {
           "name": "Siran Neal",
@@ -4086,7 +4685,43 @@
         {
           "name": "James Thompson Jr.",
           "position": "DT",
-          "status": "DNP (practice) - Ankle",
+          "status": "Limited (practice) - Ankle",
+          "trend": [
+            {
+              "date": "2026-10-17",
+              "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            }
+          ],
+          "usage_note": null
+        },
+        {
+          "name": "Romello Height",
+          "position": "DE",
+          "status": "DNP (practice) - Hand",
+          "trend": [
+            {
+              "date": "2026-10-17",
+              "report_status": null,
+              "practice_status": "Full Participation in Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            }
+          ],
+          "usage_note": null
+        },
+        {
+          "name": "Gracen Halton",
+          "position": "DT",
+          "status": "DNP (practice) - Quadricep",
           "trend": [
             {
               "date": "2026-10-17",
@@ -4101,12 +4736,17 @@
         {
           "name": "Stefon Diggs",
           "position": "WR",
-          "status": "DNP (practice) - Hamstring",
+          "status": "Limited (practice) - Hamstring",
           "trend": [
             {
               "date": "2026-10-17",
               "report_status": null,
               "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
             }
           ],
           "usage_note": "18% target share (21 gm) &middot; 54% off. snaps &middot; 1% def. snaps"
@@ -4123,6 +4763,19 @@
             }
           ],
           "usage_note": "74% off. snaps"
+        },
+        {
+          "name": "Lucas Patrick",
+          "position": "G",
+          "status": "Limited (practice) - Illness",
+          "trend": [
+            {
+              "date": "2026-10-17",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            }
+          ],
+          "usage_note": "7% off. snaps"
         },
         {
           "name": "Austin Ekeler",
@@ -4179,15 +4832,74 @@
         {
           "name": "Terry McLaurin",
           "position": "WR",
-          "status": "Limited (practice) - Hamstring",
+          "status": "DNP (practice) - Hamstring",
           "trend": [
+            {
+              "date": "2026-10-17",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            }
+          ],
+          "usage_note": "20% target share (10 gm) &middot; 70% off. snaps"
+        },
+        {
+          "name": "Javon Kinlaw",
+          "position": "DT",
+          "status": "DNP (practice) - Ankle",
+          "trend": [
+            {
+              "date": "2026-10-17",
+              "report_status": null,
+              "practice_status": "Full Participation in Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            }
+          ],
+          "usage_note": "64% def. snaps"
+        },
+        {
+          "name": "K'Lavon Chaisson",
+          "position": "LB",
+          "status": "DNP (practice) - Knee",
+          "trend": [
+            {
+              "date": "2026-10-17",
+              "report_status": null,
+              "practice_status": "Full Participation in Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            }
+          ],
+          "usage_note": "69% def. snaps"
+        },
+        {
+          "name": "Rachaad White",
+          "position": "RB",
+          "status": "Limited (practice) - Shoulder",
+          "trend": [
+            {
+              "date": "2026-10-17",
+              "report_status": null,
+              "practice_status": "Full Participation in Practice"
+            },
             {
               "date": "2026-10-17",
               "report_status": null,
               "practice_status": "Limited Participation in Practice"
             }
           ],
-          "usage_note": "20% target share (10 gm) &middot; 70% off. snaps"
+          "usage_note": "8% target share (17 gm) &middot; 51% off. snaps"
         },
         {
           "name": "Treylon Burks",
@@ -4205,28 +4917,20 @@
         {
           "name": "Percy Butler",
           "position": "S",
-          "status": "DNP (practice) - Hamstring",
+          "status": "Limited (practice) - Hamstring",
           "trend": [
             {
               "date": "2026-10-17",
               "report_status": null,
               "practice_status": "Did Not Participate In Practice"
-            }
-          ],
-          "usage_note": "2% def. snaps"
-        },
-        {
-          "name": "Quan Martin",
-          "position": "S",
-          "status": "Limited (practice) - Illness",
-          "trend": [
+            },
             {
               "date": "2026-10-17",
               "report_status": null,
               "practice_status": "Limited Participation in Practice"
             }
           ],
-          "usage_note": "82% def. snaps"
+          "usage_note": "2% def. snaps"
         },
         {
           "name": "Jordan Magee",
@@ -4257,12 +4961,17 @@
         {
           "name": "Tyler Owens",
           "position": "S",
-          "status": "DNP (practice) - Hamstring",
+          "status": "Limited (practice) - Hamstring",
           "trend": [
             {
               "date": "2026-10-17",
               "report_status": null,
               "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-10-17",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
             }
           ],
           "usage_note": "6% def. snaps"
