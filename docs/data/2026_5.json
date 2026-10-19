@@ -13,10 +13,10 @@
       "gameday": "2026-10-08",
       "gametime": "20:15",
       "weekday": "Thursday",
-      "home_win_probability": 0.671,
-      "away_win_probability": 0.329,
+      "home_win_probability": 0.938,
+      "away_win_probability": 0.062,
       "favored": "DAL",
-      "raw_strength_score": 0.71,
+      "raw_strength_score": 2.71,
       "feature_breakdown": {
         "rank_coefficient_home": 1.0,
         "third_down_coefficient_home": 1.0,
@@ -229,7 +229,16 @@
       "situational_note": "",
       "player_impact_entries": {
         "home": [],
-        "away": []
+        "away": [
+          {
+            "adjustment": -1.0,
+            "note": "Baker Mayfield carried from Wk4"
+          },
+          {
+            "adjustment": -1.0,
+            "note": "Jalen McMillan IR (carried)"
+          }
+        ]
       },
       "spread_current": "-8.5 -115 (10/8)",
       "spread_current_raw": -8.5,
@@ -267,17 +276,17 @@
       "gameday": "2026-10-11",
       "gametime": "09:30",
       "weekday": "Sunday",
-      "home_win_probability": 0.747,
-      "away_win_probability": 0.253,
+      "home_win_probability": 0.981,
+      "away_win_probability": 0.019,
       "favored": "JAX",
-      "raw_strength_score": 1.08,
+      "raw_strength_score": 3.94,
       "feature_breakdown": {
         "rank_coefficient_home": 1.0,
         "third_down_coefficient_home": 1.0,
         "ypp_off_coefficient_home": 1.0,
         "ypp_def_coefficient_home": -1.0,
         "road_trip_coefficient_home": 0.5,
-        "streak_coefficient_home": -1.0
+        "streak_coefficient_home": -0.5
       },
       "power_rating_implied_spread": -0.5,
       "neutral_site": true,
@@ -295,8 +304,8 @@
         },
         {
           "team": "PHI",
-          "depth_chart_starter": "Jalen Hurts",
-          "normal_starter_used_for_elite_check": "Jalen Hurts",
+          "depth_chart_starter": "Tanner McKee",
+          "normal_starter_used_for_elite_check": "Tanner McKee",
           "is_elite_starter": false,
           "backup_starting": false,
           "rookie_starting": false,
@@ -552,7 +561,20 @@
       "situational_note": "",
       "player_impact_entries": {
         "home": [],
-        "away": []
+        "away": [
+          {
+            "adjustment": -1.0,
+            "note": "Saquon Barkley inactive (Wk5)"
+          },
+          {
+            "adjustment": -1.0,
+            "note": "DeVonta Smith inactive (Wk5)"
+          },
+          {
+            "adjustment": -1.0,
+            "note": "Jonathan Greenard inactive (Wk5)"
+          }
+        ]
       },
       "spread_current": "+1.5 -125 (10/11)",
       "spread_current_raw": 1.5,
@@ -590,10 +612,10 @@
       "gameday": "2026-10-11",
       "gametime": "13:00",
       "weekday": "Sunday",
-      "home_win_probability": 0.422,
-      "away_win_probability": 0.578,
+      "home_win_probability": 0.278,
+      "away_win_probability": 0.722,
       "favored": "CHI",
-      "raw_strength_score": -0.31,
+      "raw_strength_score": -0.95,
       "feature_breakdown": {
         "rank_coefficient_home": -1.0,
         "third_down_coefficient_home": -1.0,
@@ -601,7 +623,8 @@
         "ypp_def_coefficient_home": 1.0,
         "turnover_coefficient_home": -1.0,
         "road_trip_coefficient_home": 0.5,
-        "streak_coefficient_home": -0.5
+        "streak_coefficient_home": -0.5,
+        "qb_coefficient_home": 1.0
       },
       "power_rating_implied_spread": 4.25,
       "neutral_site": false,
@@ -622,10 +645,12 @@
           "depth_chart_starter": "Caleb Williams",
           "normal_starter_used_for_elite_check": "Caleb Williams",
           "is_elite_starter": false,
-          "backup_starting": false,
+          "backup_starting": true,
           "rookie_starting": false,
-          "qb_value": 0.0,
-          "notes": [],
+          "qb_value": -1.0,
+          "notes": [
+            "Backup QB starting"
+          ],
           "depth_chart_conflict": null
         }
       ],
@@ -923,8 +948,30 @@
       ],
       "situational_note": "",
       "player_impact_entries": {
-        "home": [],
-        "away": []
+        "home": [
+          {
+            "adjustment": -1.0,
+            "note": "Aaron Banks inactive (Wk5)"
+          },
+          {
+            "adjustment": -1.0,
+            "note": "Josh Jacobs out Wk5"
+          },
+          {
+            "adjustment": -1.0,
+            "note": "Micah Parsons reserve (carried)"
+          }
+        ],
+        "away": [
+          {
+            "adjustment": -1.0,
+            "note": "Kyle Monangai inactive (Wk5)"
+          },
+          {
+            "adjustment": -1.0,
+            "note": "Coby Bryant IR (carried)"
+          }
+        ]
       },
       "spread_current": "-23.5 -1800 (10/11)",
       "spread_current_raw": -23.5,
@@ -1385,10 +1432,10 @@
       "gameday": "2026-10-11",
       "gametime": "13:00",
       "weekday": "Sunday",
-      "home_win_probability": 0.755,
-      "away_win_probability": 0.245,
-      "favored": "NE",
-      "raw_strength_score": 1.13,
+      "home_win_probability": 0.133,
+      "away_win_probability": 0.867,
+      "favored": "LV",
+      "raw_strength_score": -1.87,
       "feature_breakdown": {
         "rank_coefficient_home": 1.0,
         "third_down_coefficient_home": 1.0,
@@ -1740,7 +1787,20 @@
       ],
       "situational_note": "",
       "player_impact_entries": {
-        "home": [],
+        "home": [
+          {
+            "adjustment": -1.0,
+            "note": "Christian Gonzalez inactive (Wk5)"
+          },
+          {
+            "adjustment": -1.0,
+            "note": "Carlton Davis inactive (Wk5)"
+          },
+          {
+            "adjustment": -1.0,
+            "note": "A.J. Brown out Wk5"
+          }
+        ],
         "away": []
       },
       "spread_current": "-21.5 -112 (10/11)",
@@ -1776,17 +1836,17 @@
       "gameday": "2026-10-11",
       "gametime": "13:00",
       "weekday": "Sunday",
-      "home_win_probability": 0.527,
-      "away_win_probability": 0.473,
+      "home_win_probability": 0.904,
+      "away_win_probability": 0.096,
       "favored": "NO",
-      "raw_strength_score": 0.11,
+      "raw_strength_score": 2.25,
       "feature_breakdown": {
         "third_down_coefficient_home": 1.0,
         "ypp_off_coefficient_home": 1.0,
         "ypp_def_coefficient_home": -1.0,
         "rest_coefficient_home": -0.5,
         "road_trip_coefficient_home": 0.5,
-        "streak_coefficient_home": 1.0,
+        "streak_coefficient_home": 0.5,
         "schedule_milestones_coefficient_home": -1.0
       },
       "power_rating_implied_spread": -1.58,
@@ -2151,7 +2211,16 @@
       "situational_note": "",
       "player_impact_entries": {
         "home": [],
-        "away": []
+        "away": [
+          {
+            "adjustment": -1.0,
+            "note": "Jordan Addison inactive (Wk5)"
+          },
+          {
+            "adjustment": -1.0,
+            "note": "Christian Darrisaw inactive (Wk5)"
+          }
+        ]
       },
       "spread_current": "+9.5 +630 (10/11)",
       "spread_current_raw": 9.5,
@@ -2184,10 +2253,10 @@
       "gameday": "2026-10-11",
       "gametime": "13:00",
       "weekday": "Sunday",
-      "home_win_probability": 0.552,
-      "away_win_probability": 0.448,
-      "favored": "NYJ",
-      "raw_strength_score": 0.21,
+      "home_win_probability": 0.312,
+      "away_win_probability": 0.688,
+      "favored": "CLE",
+      "raw_strength_score": -0.79,
       "feature_breakdown": {
         "third_down_coefficient_home": 1.0,
         "ypp_off_coefficient_home": -1.0,
@@ -2497,8 +2566,22 @@
       ],
       "situational_note": "",
       "player_impact_entries": {
-        "home": [],
-        "away": []
+        "home": [
+          {
+            "adjustment": -1.0,
+            "note": "Breece Hall inactive (Wk5)"
+          },
+          {
+            "adjustment": -1.0,
+            "note": "Adonai Mitchell inactive (Wk5)"
+          }
+        ],
+        "away": [
+          {
+            "adjustment": -1.0,
+            "note": "Mason Graham inactive (Wk5)"
+          }
+        ]
       },
       "spread_current": "-2.5 -110 (10/11)",
       "spread_current_raw": -2.5,
@@ -2529,10 +2612,10 @@
       "gameday": "2026-10-11",
       "gametime": "13:00",
       "weekday": "Sunday",
-      "home_win_probability": 0.537,
-      "away_win_probability": 0.463,
-      "favored": "PIT",
-      "raw_strength_score": 0.15,
+      "home_win_probability": 0.173,
+      "away_win_probability": 0.827,
+      "favored": "IND",
+      "raw_strength_score": -1.57,
       "feature_breakdown": {
         "rank_coefficient_home": -0.5,
         "third_down_coefficient_home": -1.0,
@@ -2540,7 +2623,8 @@
         "ypp_def_coefficient_home": 1.0,
         "turnover_coefficient_home": 1.0,
         "rest_coefficient_home": 0.5,
-        "road_trip_coefficient_home": -2.0
+        "road_trip_coefficient_home": -2.0,
+        "streak_coefficient_home": -1.0
       },
       "power_rating_implied_spread": 4.25,
       "neutral_site": false,
@@ -2808,7 +2892,16 @@
       ],
       "situational_note": "",
       "player_impact_entries": {
-        "home": [],
+        "home": [
+          {
+            "adjustment": -1.0,
+            "note": "Jamel Dean inactive (Wk5)"
+          },
+          {
+            "adjustment": -1.0,
+            "note": "Michael Pittman IR (carried)"
+          }
+        ],
         "away": []
       },
       "spread_current": "-5.5 -110 (10/11)",
@@ -2846,10 +2939,10 @@
       "gameday": "2026-10-11",
       "gametime": "13:00",
       "weekday": "Sunday",
-      "home_win_probability": 0.367,
-      "away_win_probability": 0.633,
-      "favored": "HOU",
-      "raw_strength_score": -0.54,
+      "home_win_probability": 0.811,
+      "away_win_probability": 0.189,
+      "favored": "TEN",
+      "raw_strength_score": 1.46,
       "feature_breakdown": {
         "rank_coefficient_home": -0.5,
         "third_down_coefficient_home": -1.0,
@@ -3185,7 +3278,16 @@
       "situational_note": "",
       "player_impact_entries": {
         "home": [],
-        "away": []
+        "away": [
+          {
+            "adjustment": -1.0,
+            "note": "Tank Dell reserve (carried)"
+          },
+          {
+            "adjustment": -1.0,
+            "note": "Jayden Higgins IR (carried)"
+          }
+        ]
       },
       "spread_current": "+22.5 +1280 (10/11)",
       "spread_current_raw": 22.5,
@@ -3218,17 +3320,17 @@
       "gameday": "2026-10-11",
       "gametime": "13:00",
       "weekday": "Sunday",
-      "home_win_probability": 0.474,
-      "away_win_probability": 0.526,
+      "home_win_probability": 0.354,
+      "away_win_probability": 0.646,
       "favored": "NYG",
-      "raw_strength_score": -0.11,
+      "raw_strength_score": -0.6,
       "feature_breakdown": {
         "third_down_coefficient_home": -1.0,
         "ypp_off_coefficient_home": 1.0,
         "ypp_def_coefficient_home": -1.0,
         "turnover_coefficient_home": -1.0,
         "road_trip_coefficient_home": 0.5,
-        "streak_coefficient_home": 0.5
+        "qb_coefficient_home": 1.0
       },
       "power_rating_implied_spread": 1.67,
       "neutral_site": false,
@@ -3238,12 +3340,10 @@
           "depth_chart_starter": "Jayden Daniels",
           "normal_starter_used_for_elite_check": "Jayden Daniels",
           "is_elite_starter": false,
-          "backup_starting": true,
+          "backup_starting": false,
           "rookie_starting": false,
-          "qb_value": -1.0,
-          "notes": [
-            "Backup QB starting"
-          ],
+          "qb_value": 0.0,
+          "notes": [],
           "depth_chart_conflict": null
         },
         {
@@ -3513,8 +3613,22 @@
       ],
       "situational_note": "",
       "player_impact_entries": {
-        "home": [],
-        "away": []
+        "home": [
+          {
+            "adjustment": -1.0,
+            "note": "Stefon Diggs inactive (Wk5)"
+          },
+          {
+            "adjustment": -1.0,
+            "note": "Laremy Tunsil IR (carried)"
+          }
+        ],
+        "away": [
+          {
+            "adjustment": -1.0,
+            "note": "Paulson Adebo IR (carried)"
+          }
+        ]
       },
       "spread_current": "-6.5 -215 (10/11)",
       "spread_current_raw": -6.5,
@@ -3552,10 +3666,10 @@
       "gameday": "2026-10-11",
       "gametime": "16:05",
       "weekday": "Sunday",
-      "home_win_probability": 0.601,
-      "away_win_probability": 0.399,
-      "favored": "LAC",
-      "raw_strength_score": 0.41,
+      "home_win_probability": 0.061,
+      "away_win_probability": 0.939,
+      "favored": "DEN",
+      "raw_strength_score": -2.73,
       "feature_breakdown": {
         "rank_coefficient_home": 0.5,
         "third_down_coefficient_home": 1.0,
@@ -3563,7 +3677,7 @@
         "ypp_def_coefficient_home": -1.0,
         "turnover_coefficient_home": 1.0,
         "road_trip_coefficient_home": 0.5,
-        "streak_coefficient_home": 0.5
+        "streak_coefficient_home": 1.0
       },
       "power_rating_implied_spread": 3.67,
       "neutral_site": false,
@@ -3888,8 +4002,30 @@
       ],
       "situational_note": "",
       "player_impact_entries": {
-        "home": [],
-        "away": []
+        "home": [
+          {
+            "adjustment": -1.0,
+            "note": "Quentin Johnston inactive (Wk5)"
+          },
+          {
+            "adjustment": -1.0,
+            "note": "Derwin James inactive (Wk5)"
+          },
+          {
+            "adjustment": -1.0,
+            "note": "Joe Alt inactive (Wk5)"
+          },
+          {
+            "adjustment": -1.0,
+            "note": "Tyler Biadasz IR (carried)"
+          }
+        ],
+        "away": [
+          {
+            "adjustment": -1.0,
+            "note": "Pat Surtain II inactive (Wk5)"
+          }
+        ]
       },
       "spread_current": "+3.5 -110 (10/11)",
       "spread_current_raw": 3.5,
@@ -3923,17 +4059,16 @@
       "gameday": "2026-10-11",
       "gametime": "16:25",
       "weekday": "Sunday",
-      "home_win_probability": 0.431,
-      "away_win_probability": 0.569,
-      "favored": "DET",
-      "raw_strength_score": -0.28,
+      "home_win_probability": 0.866,
+      "away_win_probability": 0.134,
+      "favored": "ARI",
+      "raw_strength_score": 1.86,
       "feature_breakdown": {
         "rank_coefficient_home": -1.0,
         "third_down_coefficient_home": 1.0,
         "ypp_off_coefficient_home": -1.0,
         "ypp_def_coefficient_home": -1.0,
         "road_trip_coefficient_home": 1.0,
-        "streak_coefficient_home": 0.5,
         "schedule_milestones_coefficient_home": -1.0
       },
       "power_rating_implied_spread": -4.08,
@@ -4136,7 +4271,16 @@
       "situational_note": "",
       "player_impact_entries": {
         "home": [],
-        "away": []
+        "away": [
+          {
+            "adjustment": -1.0,
+            "note": "Kerby Joseph reserve (carried)"
+          },
+          {
+            "adjustment": -1.0,
+            "note": "Brian Branch reserve (carried)"
+          }
+        ]
       },
       "spread_current": "+23.5 +1500 (10/11)",
       "spread_current_raw": 23.5,
@@ -4171,17 +4315,17 @@
       "gameday": "2026-10-11",
       "gametime": "16:25",
       "weekday": "Sunday",
-      "home_win_probability": 0.503,
-      "away_win_probability": 0.497,
+      "home_win_probability": 0.867,
+      "away_win_probability": 0.133,
       "favored": "SEA",
-      "raw_strength_score": 0.01,
+      "raw_strength_score": 1.87,
       "feature_breakdown": {
         "third_down_coefficient_home": -1.0,
         "ypp_off_coefficient_home": -1.0,
         "ypp_def_coefficient_home": 1.0,
         "turnover_coefficient_home": 1.0,
         "road_trip_coefficient_home": 0.5,
-        "streak_coefficient_home": 0.5
+        "streak_coefficient_home": 1.0
       },
       "power_rating_implied_spread": 1.75,
       "neutral_site": false,
@@ -4432,7 +4576,16 @@
       "situational_note": "",
       "player_impact_entries": {
         "home": [],
-        "away": []
+        "away": [
+          {
+            "adjustment": -1.0,
+            "note": "Nick Bosa inactive (Wk5)"
+          },
+          {
+            "adjustment": -1.0,
+            "note": "Kyle Juszczyk inactive (Wk5)"
+          }
+        ]
       },
       "spread_current": "+2.5 +158 (10/11)",
       "spread_current_raw": 2.5,
@@ -4466,10 +4619,10 @@
       "gameday": "2026-10-11",
       "gametime": "20:20",
       "weekday": "Sunday",
-      "home_win_probability": 0.462,
-      "away_win_probability": 0.538,
-      "favored": "BAL",
-      "raw_strength_score": -0.15,
+      "home_win_probability": 0.552,
+      "away_win_probability": 0.448,
+      "favored": "ATL",
+      "raw_strength_score": 0.21,
       "feature_breakdown": {
         "rank_coefficient_home": -0.5,
         "third_down_coefficient_home": -1.0,
@@ -4478,7 +4631,8 @@
         "turnover_coefficient_home": 1.0,
         "rest_coefficient_home": -0.5,
         "road_trip_coefficient_home": 1.0,
-        "streak_coefficient_home": 0.5
+        "streak_coefficient_home": 0.5,
+        "qb_coefficient_home": 1.0
       },
       "power_rating_implied_spread": -5.88,
       "neutral_site": false,
@@ -4499,11 +4653,13 @@
           "depth_chart_starter": "Lamar Jackson",
           "normal_starter_used_for_elite_check": "Lamar Jackson",
           "is_elite_starter": false,
-          "backup_starting": false,
+          "backup_starting": true,
           "rookie_starting": false,
-          "qb_value": 0.0,
-          "notes": [],
-          "depth_chart_conflict": "Depth chart lists Lamar Jackson as starter, but injury report shows them Out - check qb_overrides.csv"
+          "qb_value": -1.0,
+          "notes": [
+            "Backup QB starting"
+          ],
+          "depth_chart_conflict": null
         }
       ],
       "home_injuries": [
@@ -4774,8 +4930,18 @@
       ],
       "situational_note": "",
       "player_impact_entries": {
-        "home": [],
-        "away": []
+        "home": [
+          {
+            "adjustment": -1.0,
+            "note": "Jalon Walker IR (carried)"
+          }
+        ],
+        "away": [
+          {
+            "adjustment": -1.0,
+            "note": "Trey Hendrickson inactive (Wk5)"
+          }
+        ]
       },
       "spread_current": "-3.5 +100 (10/8)",
       "spread_current_raw": -3.5,
@@ -4811,16 +4977,17 @@
       "gameday": "2026-10-12",
       "gametime": "20:15",
       "weekday": "Monday",
-      "home_win_probability": 0.596,
-      "away_win_probability": 0.404,
+      "home_win_probability": 0.891,
+      "away_win_probability": 0.109,
       "favored": "LA",
-      "raw_strength_score": 0.39,
+      "raw_strength_score": 2.1,
       "feature_breakdown": {
         "rank_coefficient_home": 0.5,
         "third_down_coefficient_home": -1.0,
         "ypp_off_coefficient_home": 1.0,
         "ypp_def_coefficient_home": 1.0,
-        "road_trip_coefficient_home": 1.0
+        "road_trip_coefficient_home": 1.0,
+        "streak_coefficient_home": 1.0
       },
       "power_rating_implied_spread": 3.42,
       "neutral_site": false,
@@ -5069,7 +5236,16 @@
       "situational_note": "",
       "player_impact_entries": {
         "home": [],
-        "away": []
+        "away": [
+          {
+            "adjustment": -1.0,
+            "note": "DJ Moore inactive (Wk5)"
+          },
+          {
+            "adjustment": -1.0,
+            "note": "Ed Oliver inactive (Wk5)"
+          }
+        ]
       },
       "spread_current": "+1.5 -112 (10/12)",
       "spread_current_raw": 1.5,
@@ -5089,9 +5265,9 @@
         "O/U 53.5 (-105.0) (10/3)",
         "O/U 53.5 (-110.0) (8/31)"
       ],
-      "home_score": null,
-      "away_score": null,
-      "is_final": false
+      "home_score": 34.0,
+      "away_score": 37.0,
+      "is_final": true
     }
   ],
   "pool_results_history": [
@@ -6648,6 +6824,20 @@
       "upsets": 6.0,
       "total_pot": 319974.3,
       "underdog_pts_realized": 21.0
+    },
+    {
+      "season": 2026,
+      "week": 5,
+      "pool_id": "78",
+      "pool_label": "NFL - WEEK 5",
+      "closed_date": "2026-10-11",
+      "no_of_winners": 138,
+      "winning_selections_required": 13,
+      "winning_selections_total": 13,
+      "share_prize": 2030.8,
+      "upsets": 4.0,
+      "total_pot": 280250.4,
+      "underdog_pts_realized": 12.0
     }
   ]
 }
