@@ -395,6 +395,12 @@ footer a { color: var(--text-dim); }
 
 <script>
 const DISPLAY_NAME_OVERRIDES = { 'LA': 'LAR' };
+// Picks can be entered with display/alternate codes (e.g. LAR) while the data
+// files use nflverse codes (LA). Every pick-side-vs-game-team comparison must
+// go through canonSide(), or a Rams pick on the home side is graded as if it
+// were on the AWAY team (the Wk5 BUF@LA bug: LAR -2.5 showed as a cover).
+const SIDE_ALIASES = { LAR:'LA', WSH:'WAS', JAC:'JAX', NWO:'NO', NOR:'NO', NOS:'NO', GNB:'GB', KAN:'KC', SFO:'SF', TAM:'TB', NWE:'NE', LVR:'LV', SD:'LAC', STL:'LA', OAK:'LV' };
+const canonSide = s => (s == null ? s : (SIDE_ALIASES[String(s).toUpperCase()] || s));
 const TEAM_LOGOS = {
   "ARI": "https://a.espncdn.com/i/teamlogos/nfl/500/ari.png",
   "ATL": "https://a.espncdn.com/i/teamlogos/nfl/500/atl.png",
@@ -620,8 +626,8 @@ function toggleMy5Official(gameId) {
 
 function gradeSpreadPick(side, line, homeTeam, awayTeam, homeScore, awayScore) {
   // side is a team abbreviation; line is that team's own spread number
-  const teamScore = side === homeTeam ? homeScore : awayScore;
-  const oppScore = side === homeTeam ? awayScore : homeScore;
+  const teamScore = canonSide(side) === homeTeam ? homeScore : awayScore;
+  const oppScore = canonSide(side) === homeTeam ? awayScore : homeScore;
   const result = (teamScore - oppScore) + line;
   if (result > 0) return 'W';
   if (result < 0) return 'L';
@@ -1060,9 +1066,9 @@ function computeSignals(data) {
 
     const picks = TRACKER.handicapperPicks[g.game_id] || [];
     const spreadPicks = picks.filter(p => p.type === 'spread');
-    const supporting = spreadPicks.filter(p => p.side === signalTeam).map(p => p.handicapper);
+    const supporting = spreadPicks.filter(p => canonSide(p.side) === signalTeam).map(p => p.handicapper);
     const opposingTeam = signalTeam === g.home_team ? g.away_team : g.home_team;
-    const opposing = spreadPicks.filter(p => p.side === opposingTeam).map(p => p.handicapper);
+    const opposing = spreadPicks.filter(p => canonSide(p.side) === opposingTeam).map(p => p.handicapper);
 
     signals.push({
       game: g, signalTeam, guessMagnitude, powerMagnitude, signedStrength,
@@ -1116,9 +1122,9 @@ function computeOptimizerHierarchy(data) {
 
     const picks = TRACKER.handicapperPicks[g.game_id] || [];
     const spreadPicks = picks.filter(p => p.type === 'spread');
-    const supporting = spreadPicks.filter(p => p.side === leanTeam).map(p => p.handicapper);
+    const supporting = spreadPicks.filter(p => canonSide(p.side) === leanTeam).map(p => p.handicapper);
     const opposingTeam = leanTeam === g.home_team ? g.away_team : g.home_team;
-    const opposing = spreadPicks.filter(p => p.side === opposingTeam).map(p => p.handicapper);
+    const opposing = spreadPicks.filter(p => canonSide(p.side) === opposingTeam).map(p => p.handicapper);
 
     signals.push({
       game: g, signalTeam: leanTeam, guessAgrees, guessMagnitude, powerAgrees, powerMagnitude,
@@ -1263,7 +1269,7 @@ function gradePick(pick, game) {
     const wentOver = actualTotal > pick.line;
     return (pick.side.toLowerCase() === 'over') === wentOver ? 'win' : 'loss';
   }
-  const isHome = pick.side === game.home_team;
+  const isHome = canonSide(pick.side) === game.home_team;
   const teamScore = isHome ? game.home_score : game.away_score;
   const oppScore = isHome ? game.away_score : game.home_score;
   const coverMargin = (teamScore - oppScore) + pick.line;
