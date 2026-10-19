@@ -577,10 +577,10 @@
       "gameday": "2026-10-18",
       "gametime": "13:00",
       "weekday": "Sunday",
-      "home_win_probability": 0.457,
-      "away_win_probability": 0.543,
-      "favored": "CHI",
-      "raw_strength_score": -0.17,
+      "home_win_probability": 0.547,
+      "away_win_probability": 0.453,
+      "favored": "ATL",
+      "raw_strength_score": 0.19,
       "feature_breakdown": {
         "rank_coefficient_home": -0.5,
         "third_down_coefficient_home": -1.0,
@@ -588,7 +588,8 @@
         "ypp_def_coefficient_home": 1.0,
         "turnover_coefficient_home": -1.0,
         "road_trip_coefficient_home": 1.0,
-        "streak_coefficient_home": 0.5
+        "streak_coefficient_home": 0.5,
+        "qb_coefficient_home": 1.0
       },
       "power_rating_implied_spread": -1.58,
       "neutral_site": false,
@@ -609,10 +610,12 @@
           "depth_chart_starter": "Caleb Williams",
           "normal_starter_used_for_elite_check": "Caleb Williams",
           "is_elite_starter": false,
-          "backup_starting": false,
+          "backup_starting": true,
           "rookie_starting": false,
-          "qb_value": 0.0,
-          "notes": [],
+          "qb_value": -1.0,
+          "notes": [
+            "Backup QB starting"
+          ],
           "depth_chart_conflict": null
         }
       ],
@@ -890,17 +893,18 @@
       "gameday": "2026-10-18",
       "gametime": "13:00",
       "weekday": "Sunday",
-      "home_win_probability": 0.404,
-      "away_win_probability": 0.596,
+      "home_win_probability": 0.493,
+      "away_win_probability": 0.507,
       "favored": "BAL",
-      "raw_strength_score": -0.39,
+      "raw_strength_score": -0.03,
       "feature_breakdown": {
         "rank_coefficient_home": -1.0,
         "third_down_coefficient_home": -1.0,
         "ypp_off_coefficient_home": -1.0,
         "ypp_def_coefficient_home": 1.0,
         "turnover_coefficient_home": -1.0,
-        "road_trip_coefficient_home": -2.0
+        "road_trip_coefficient_home": -2.0,
+        "qb_coefficient_home": 1.0
       },
       "power_rating_implied_spread": -8.88,
       "neutral_site": false,
@@ -921,11 +925,13 @@
           "depth_chart_starter": "Lamar Jackson",
           "normal_starter_used_for_elite_check": "Lamar Jackson",
           "is_elite_starter": false,
-          "backup_starting": false,
+          "backup_starting": true,
           "rookie_starting": false,
-          "qb_value": 0.0,
-          "notes": [],
-          "depth_chart_conflict": "Depth chart lists Lamar Jackson as starter, but injury report shows them Out - check qb_overrides.csv"
+          "qb_value": -1.0,
+          "notes": [
+            "Backup QB starting"
+          ],
+          "depth_chart_conflict": null
         }
       ],
       "home_injuries": [
@@ -4568,17 +4574,16 @@
       "gameday": "2026-10-19",
       "gametime": "20:15",
       "weekday": "Monday",
-      "home_win_probability": 0.779,
-      "away_win_probability": 0.221,
+      "home_win_probability": 0.711,
+      "away_win_probability": 0.289,
       "favored": "SF",
-      "raw_strength_score": 1.26,
+      "raw_strength_score": 0.9,
       "feature_breakdown": {
         "rank_coefficient_home": 0.5,
         "third_down_coefficient_home": 1.0,
         "ypp_off_coefficient_home": 1.0,
         "ypp_def_coefficient_home": 1.0,
         "streak_coefficient_home": -1.0,
-        "qb_coefficient_home": 1.0,
         "schedule_milestones_coefficient_home": -1.0
       },
       "power_rating_implied_spread": 8.17,
@@ -4600,12 +4605,10 @@
           "depth_chart_starter": "Jayden Daniels",
           "normal_starter_used_for_elite_check": "Jayden Daniels",
           "is_elite_starter": false,
-          "backup_starting": true,
+          "backup_starting": false,
           "rookie_starting": false,
-          "qb_value": -1.0,
-          "notes": [
-            "Backup QB starting"
-          ],
+          "qb_value": 0.0,
+          "notes": [],
           "depth_chart_conflict": null
         }
       ],
@@ -6759,6 +6762,20 @@
       "upsets": 6.0,
       "total_pot": 319974.3,
       "underdog_pts_realized": 21.0
+    },
+    {
+      "season": 2026,
+      "week": 5,
+      "pool_id": "78",
+      "pool_label": "NFL - WEEK 5",
+      "closed_date": "2026-10-11",
+      "no_of_winners": 138,
+      "winning_selections_required": 13,
+      "winning_selections_total": 13,
+      "share_prize": 2030.8,
+      "upsets": 4.0,
+      "total_pot": 280250.4,
+      "underdog_pts_realized": 12.0
     }
   ]
 }
