@@ -5205,9 +5205,9 @@
         "O/U 49.5 (-105.0) (10/6)",
         "O/U 50.5 (-110.0) (8/31)"
       ],
-      "home_score": null,
-      "away_score": null,
-      "is_final": false
+      "home_score": 23.0,
+      "away_score": 17.0,
+      "is_final": true
     }
   ],
   "pool_results_history": [
