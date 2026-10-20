@@ -4153,10 +4153,10 @@
       "gameday": "2026-10-18",
       "gametime": "20:20",
       "weekday": "Sunday",
-      "home_win_probability": 0.508,
-      "away_win_probability": 0.492,
+      "home_win_probability": 0.543,
+      "away_win_probability": 0.457,
       "favored": "GB",
-      "raw_strength_score": 0.03,
+      "raw_strength_score": 0.17,
       "feature_breakdown": {
         "rank_coefficient_home": -1.0,
         "third_down_coefficient_home": -1.0,
@@ -4165,7 +4165,7 @@
         "turnover_coefficient_home": 1.0,
         "rest_coefficient_home": -0.5,
         "road_trip_coefficient_home": 0.5,
-        "streak_coefficient_home": -0.5
+        "streak_coefficient_home": -1.0
       },
       "power_rating_implied_spread": 2.5,
       "neutral_site": false,
@@ -4539,9 +4539,10 @@
         "home": [],
         "away": []
       },
-      "spread_current": "-1.5 -102 (10/18)",
-      "spread_current_raw": -1.5,
+      "spread_current": "-9.5 -118 (10/18)",
+      "spread_current_raw": -9.5,
       "spread_history": [
+        "-1.5 -102 (10/18)",
         "-1.5 -104 (10/18)",
         "-1.5 -106 (10/14)",
         "-1.5 +100 (10/12)",
@@ -4563,9 +4564,9 @@
         "O/U 50.5 (-115.0) (10/6)",
         "O/U 51.5 (-110.0) (8/31)"
       ],
-      "home_score": null,
-      "away_score": null,
-      "is_final": false
+      "home_score": 23.0,
+      "away_score": 13.0,
+      "is_final": true
     },
     {
       "game_id": "2026_06_WAS_SF",
@@ -5184,9 +5185,10 @@
         "home": [],
         "away": []
       },
-      "spread_current": "-7.5 -108 (10/13)",
+      "spread_current": "-7.5 -102 (10/19)",
       "spread_current_raw": -7.5,
       "spread_history": [
+        "-7.5 -108 (10/13)",
         "-7.5 -110 (10/12)",
         "-7.5 -105 (10/11)",
         "-7.0 -122 (10/8)",
