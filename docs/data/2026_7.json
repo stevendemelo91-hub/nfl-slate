@@ -55,8 +55,166 @@
           "depth_chart_conflict": null
         }
       ],
-      "home_injuries": [],
-      "away_injuries": [],
+      "home_injuries": [
+        {
+          "name": "T.J. Edwards",
+          "position": "LB",
+          "status": "DNP (practice) - Hamstring",
+          "trend": [
+            {
+              "date": "2026-10-22",
+              "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            }
+          ],
+          "usage_note": "82% def. snaps"
+        },
+        {
+          "name": "Jonah Jackson",
+          "position": "G",
+          "status": "Limited (practice) - Hip",
+          "trend": [
+            {
+              "date": "2026-10-22",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            }
+          ],
+          "usage_note": "98% off. snaps"
+        },
+        {
+          "name": "Jack Sanborn",
+          "position": "LB",
+          "status": "DNP (practice) - Concussion",
+          "trend": [
+            {
+              "date": "2026-10-22",
+              "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            }
+          ],
+          "usage_note": "56% def. snaps"
+        },
+        {
+          "name": "Kyle Monangai",
+          "position": "RB",
+          "status": "DNP (practice) - Thumb",
+          "trend": [
+            {
+              "date": "2026-10-22",
+              "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            }
+          ],
+          "usage_note": "6% target share (16 gm) &middot; 41% off. snaps"
+        }
+      ],
+      "away_injuries": [
+        {
+          "name": "Morgan Moses",
+          "position": "T",
+          "status": "Limited (practice) - Foot",
+          "trend": [
+            {
+              "date": "2026-10-22",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            }
+          ],
+          "usage_note": "95% off. snaps"
+        },
+        {
+          "name": "Carlton Davis III",
+          "position": "CB",
+          "status": "Limited (practice) - Neck",
+          "trend": [
+            {
+              "date": "2026-10-22",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            }
+          ],
+          "usage_note": "92% def. snaps"
+        },
+        {
+          "name": "A.J. Brown",
+          "position": "WR",
+          "status": "Limited (practice) - Ankle",
+          "trend": [
+            {
+              "date": "2026-10-22",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            }
+          ],
+          "usage_note": "25% target share (16 gm) &middot; 91% off. snaps"
+        },
+        {
+          "name": "Alijah Vera-Tucker",
+          "position": "G",
+          "status": "DNP (practice) - Hamstring",
+          "trend": [
+            {
+              "date": "2026-10-22",
+              "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            }
+          ],
+          "usage_note": null
+        },
+        {
+          "name": "Ben Brown",
+          "position": "C",
+          "status": "DNP (practice) - Knee",
+          "trend": [
+            {
+              "date": "2026-10-22",
+              "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            }
+          ],
+          "usage_note": "25% off. snaps"
+        },
+        {
+          "name": "Joshua Farmer",
+          "position": "DT",
+          "status": "DNP (practice) - Not injury related - personal matter",
+          "trend": [
+            {
+              "date": "2026-10-22",
+              "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            }
+          ],
+          "usage_note": "28% def. snaps"
+        },
+        {
+          "name": "Karon Prunty",
+          "position": "CB",
+          "status": "Limited (practice) - Hamstring",
+          "trend": [
+            {
+              "date": "2026-10-22",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            }
+          ],
+          "usage_note": null
+        },
+        {
+          "name": "Channing Canada",
+          "position": "CB",
+          "status": "Limited (practice) - Hamstring",
+          "trend": [
+            {
+              "date": "2026-10-22",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            }
+          ],
+          "usage_note": null
+        }
+      ],
       "situational_note": "",
       "player_impact_entries": {
         "home": [],
@@ -205,16 +363,22 @@
         "home": [],
         "away": []
       },
-      "spread_current": "+3.5 -115 (10/20)",
-      "spread_current_raw": 3.5,
+      "spread_current": "+2.5 -102 (10/21)",
+      "spread_current_raw": 2.5,
       "spread_history": [
+        "+3.0 -105 (10/21)",
+        "+3.5 -118 (10/21)",
+        "+3.5 -114 (10/20)",
+        "+3.5 -115 (10/20)",
         "+3.5 -110 (10/20)",
         "+4.5 -114 (10/19)",
         "+4.5 -105 (10/18)",
         "+4.5 -110 (8/31)"
       ],
-      "total_current": "O/U 48.5 (-120.0) (10/20)",
+      "total_current": "O/U 49.5 (-115.0) (10/21)",
       "total_history": [
+        "O/U 49.5 (-114.0) (10/20)",
+        "O/U 48.5 (-120.0) (10/20)",
         "O/U 49.5 (-115.0) (10/20)",
         "O/U 50.5 (-114.0) (10/19)",
         "O/U 50.5 (-115.0) (10/18)",
@@ -280,15 +444,17 @@
         "home": [],
         "away": []
       },
-      "spread_current": "-2.5 -122 (10/19)",
-      "spread_current_raw": -2.5,
+      "spread_current": "+1.5 -120 (10/21)",
+      "spread_current_raw": 1.5,
       "spread_history": [
+        "-2.5 -122 (10/19)",
         "-3.0 -110 (10/18)",
         "-3.5 -105 (10/13)",
         "-3.5 -110 (8/31)"
       ],
-      "total_current": "O/U 50.5 (-118.0) (10/18)",
+      "total_current": "O/U 48.5 (-110.0) (10/21)",
       "total_history": [
+        "O/U 50.5 (-118.0) (10/18)",
         "O/U 51.5 (-105.0) (10/13)",
         "O/U 51.5 (-110.0) (8/31)"
       ],
@@ -348,9 +514,11 @@
         "home": [],
         "away": []
       },
-      "spread_current": "-3.5 -105 (10/19)",
-      "spread_current_raw": -3.5,
+      "spread_current": "-3.0 -110 (10/21)",
+      "spread_current_raw": -3.0,
       "spread_history": [
+        "-3.5 +100 (10/21)",
+        "-3.5 -105 (10/19)",
         "-3.0 -118 (10/18)",
         "-2.5 -110 (10/17)",
         "-2.5 -115 (10/17)",
@@ -420,9 +588,10 @@
         "home": [],
         "away": []
       },
-      "spread_current": "-9.5 -122 (10/20)",
-      "spread_current_raw": -9.5,
+      "spread_current": "-10.5 -105 (10/21)",
+      "spread_current_raw": -10.5,
       "spread_history": [
+        "-9.5 -122 (10/20)",
         "-9.5 -112 (10/19)",
         "-9.5 -110 (10/19)",
         "-8.5 -110 (10/18)",
@@ -492,9 +661,10 @@
         "home": [],
         "away": []
       },
-      "spread_current": "-6.5 -105 (10/20)",
+      "spread_current": "-6.5 -108 (10/21)",
       "spread_current_raw": -6.5,
       "spread_history": [
+        "-6.5 -105 (10/20)",
         "-5.5 -118 (10/19)",
         "-5.5 -112 (10/19)",
         "-5.5 -115 (10/18)",
@@ -633,14 +803,17 @@
         "home": [],
         "away": []
       },
-      "spread_current": "+1.5 -112 (10/18)",
+      "spread_current": "+1.5 -108 (10/21)",
       "spread_current_raw": 1.5,
       "spread_history": [
+        "+1.5 -112 (10/18)",
         "+1.5 -115 (10/13)",
         "-2.5 -110 (8/31)"
       ],
-      "total_current": "O/U 37.5 (-105.0) (10/20)",
+      "total_current": "O/U 37.5 (-105.0) (10/21)",
       "total_history": [
+        "O/U 37.5 (-112.0) (10/21)",
+        "O/U 37.5 (-105.0) (10/20)",
         "O/U 38.5 (-110.0) (10/19)",
         "O/U 36.5 (-110.0) (10/18)",
         "O/U 37.5 (-105.0) (10/13)",
@@ -916,17 +1089,19 @@
         "home": [],
         "away": []
       },
-      "spread_current": "-2.5 -122 (10/20)",
+      "spread_current": "-2.5 -115 (10/21)",
       "spread_current_raw": -2.5,
       "spread_history": [
+        "-2.5 -122 (10/20)",
         "-2.5 -110 (10/19)",
         "-2.5 -106 (10/19)",
         "-2.5 -110 (10/18)",
         "-2.5 -120 (10/13)",
         "-3.0 -110 (8/31)"
       ],
-      "total_current": "O/U 42.5 (-110.0) (10/19)",
+      "total_current": "O/U 42.5 (-115.0) (10/21)",
       "total_history": [
+        "O/U 42.5 (-110.0) (10/19)",
         "O/U 41.5 (-115.0) (10/19)",
         "O/U 42.5 (-110.0) (10/19)",
         "O/U 42.5 (-115.0) (10/18)",
