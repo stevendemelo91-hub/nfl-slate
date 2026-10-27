@@ -3779,10 +3779,10 @@
       "gameday": "2026-10-25",
       "gametime": "20:20",
       "weekday": "Sunday",
-      "home_win_probability": 0.332,
-      "away_win_probability": 0.668,
+      "home_win_probability": 0.398,
+      "away_win_probability": 0.602,
       "favored": "KC",
-      "raw_strength_score": -0.7,
+      "raw_strength_score": -0.42,
       "feature_breakdown": {
         "rank_coefficient_home": -1.0,
         "third_down_coefficient_home": -1.0,
@@ -3790,8 +3790,7 @@
         "ypp_def_coefficient_home": 1.0,
         "turnover_coefficient_home": -1.0,
         "rest_coefficient_home": 0.5,
-        "road_trip_coefficient_home": 0.5,
-        "streak_coefficient_home": 1.0
+        "road_trip_coefficient_home": 0.5
       },
       "power_rating_implied_spread": 2.0,
       "neutral_site": false,
@@ -4117,9 +4116,9 @@
         "O/U 44.5 (-105.0) (10/13)",
         "O/U 45.5 (-110.0) (8/31)"
       ],
-      "home_score": null,
-      "away_score": null,
-      "is_final": false
+      "home_score": 20.0,
+      "away_score": 3.0,
+      "is_final": true
     },
     {
       "game_id": "2026_07_DAL_PHI",
@@ -4486,9 +4485,12 @@
         "home": [],
         "away": []
       },
-      "spread_current": "+4.5 -105 (10/24)",
+      "spread_current": "+4.5 -115 (10/26)",
       "spread_current_raw": 4.5,
       "spread_history": [
+        "+4.5 -112 (10/26)",
+        "+4.5 -108 (10/26)",
+        "+4.5 -105 (10/24)",
         "+4.5 -110 (10/23)",
         "+4.5 -118 (10/23)",
         "+4.5 -120 (10/22)",
@@ -4497,8 +4499,9 @@
         "+1.5 -120 (10/13)",
         "-3.0 -110 (8/31)"
       ],
-      "total_current": "O/U 44.5 (-102.0) (10/24)",
+      "total_current": "O/U 43.5 (-120.0) (10/26)",
       "total_history": [
+        "O/U 44.5 (-102.0) (10/24)",
         "O/U 44.5 (-105.0) (10/23)",
         "O/U 44.5 (-110.0) (10/19)",
         "O/U 44.5 (-105.0) (10/19)",
