@@ -149,10 +149,10 @@
       "gameday": "2026-11-08",
       "gametime": "13:00",
       "weekday": "Sunday",
-      "home_win_probability": 0.593,
-      "away_win_probability": 0.407,
+      "home_win_probability": 0.558,
+      "away_win_probability": 0.442,
       "favored": "CAR",
-      "raw_strength_score": 0.37,
+      "raw_strength_score": 0.23,
       "feature_breakdown": {
         "rank_coefficient_home": 1.0,
         "third_down_coefficient_home": 1.0,
@@ -160,7 +160,7 @@
         "ypp_def_coefficient_home": -1.0,
         "turnover_coefficient_home": -1.0,
         "rest_coefficient_home": 0.5,
-        "streak_coefficient_home": 0.5,
+        "streak_coefficient_home": 1.0,
         "schedule_milestones_coefficient_home": -1.0
       },
       "power_rating_implied_spread": -3.33,
@@ -261,9 +261,10 @@
         "home": [],
         "away": []
       },
-      "spread_current": "+4.5 -115 (10/28)",
+      "spread_current": "+4.5 -110 (10/30)",
       "spread_current_raw": 4.5,
       "spread_history": [
+        "+4.5 -115 (10/28)",
         "+3.5 -105 (10/28)",
         "+3.5 -115 (10/28)",
         "+3.0 -104 (10/27)",
@@ -673,8 +674,9 @@
         "+3.0 +100 (10/27)",
         "-2.5 -110 (8/31)"
       ],
-      "total_current": "O/U 40.5 (-110.0) (10/29)",
+      "total_current": "O/U 42.5 (-105.0) (10/30)",
       "total_history": [
+        "O/U 40.5 (-110.0) (10/29)",
         "O/U 42.5 (-115.0) (10/27)",
         "O/U 43.5 (-110.0) (8/31)"
       ],
@@ -736,9 +738,10 @@
         "home": [],
         "away": []
       },
-      "spread_current": "-9.5 -110 (10/27)",
-      "spread_current_raw": -9.5,
+      "spread_current": "-10.5 -105 (10/30)",
+      "spread_current_raw": -10.5,
       "spread_history": [
+        "-9.5 -110 (10/27)",
         "-8.5 -110 (8/31)"
       ],
       "total_current": "O/U 48.5 (-115.0) (10/27)",
