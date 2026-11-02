@@ -615,9 +615,10 @@
         "home": [],
         "away": []
       },
-      "spread_current": "-3.0 -118 (10/30)",
-      "spread_current_raw": -3.0,
+      "spread_current": "-15.5 -136 (11/1)",
+      "spread_current_raw": -15.5,
       "spread_history": [
+        "-3.0 -118 (10/30)",
         "-3.0 -115 (10/30)",
         "-3.0 -112 (10/29)",
         "-3.0 -122 (10/28)",
@@ -629,8 +630,10 @@
         "-2.5 -115 (10/20)",
         "-2.5 -110 (8/31)"
       ],
-      "total_current": "O/U 54.5 (-108.0) (10/31)",
+      "total_current": "O/U 50.5 (-104.0) (11/1)",
       "total_history": [
+        "O/U 54.5 (-112.0) (11/1)",
+        "O/U 54.5 (-108.0) (10/31)",
         "O/U 54.5 (-105.0) (10/30)",
         "O/U 54.5 (-106.0) (10/28)",
         "O/U 53.5 (-110.0) (10/27)",
@@ -640,9 +643,9 @@
         "O/U 53.5 (-105.0) (10/20)",
         "O/U 51.5 (-110.0) (8/31)"
       ],
-      "home_score": null,
-      "away_score": null,
-      "is_final": false
+      "home_score": 36.0,
+      "away_score": 10.0,
+      "is_final": true
     },
     {
       "game_id": "2026_08_TEN_CIN",
@@ -651,17 +654,17 @@
       "gameday": "2026-11-01",
       "gametime": "13:00",
       "weekday": "Sunday",
-      "home_win_probability": 0.682,
-      "away_win_probability": 0.318,
+      "home_win_probability": 0.712,
+      "away_win_probability": 0.288,
       "favored": "CIN",
-      "raw_strength_score": 0.76,
+      "raw_strength_score": 0.9,
       "feature_breakdown": {
         "third_down_coefficient_home": 1.0,
         "ypp_off_coefficient_home": 1.0,
         "ypp_def_coefficient_home": -1.0,
         "turnover_coefficient_home": 1.0,
         "road_trip_coefficient_home": 0.5,
-        "streak_coefficient_home": -0.5,
+        "streak_coefficient_home": -1.0,
         "schedule_milestones_coefficient_home": -1.0
       },
       "power_rating_implied_spread": 7.17,
@@ -933,9 +936,11 @@
         "home": [],
         "away": []
       },
-      "spread_current": "-12.5 -110 (10/30)",
-      "spread_current_raw": -12.5,
+      "spread_current": "-3.5 -114 (11/1)",
+      "spread_current_raw": -3.5,
       "spread_history": [
+        "-12.5 -112 (11/1)",
+        "-12.5 -110 (10/30)",
         "-12.5 -104 (10/30)",
         "-11.5 -110 (10/29)",
         "-10.5 -118 (10/29)",
@@ -944,8 +949,10 @@
         "-10.5 -104 (10/20)",
         "-6.5 -110 (8/31)"
       ],
-      "total_current": "O/U 46.5 (-110.0) (10/31)",
+      "total_current": "O/U 59.5 (-112.0) (11/1)",
       "total_history": [
+        "O/U 45.5 (-115.0) (11/1)",
+        "O/U 46.5 (-110.0) (10/31)",
         "O/U 46.5 (-115.0) (10/30)",
         "O/U 46.5 (-120.0) (10/29)",
         "O/U 46.5 (-110.0) (10/26)",
@@ -953,9 +960,9 @@
         "O/U 45.5 (-110.0) (10/20)",
         "O/U 49.5 (-110.0) (8/31)"
       ],
-      "home_score": null,
-      "away_score": null,
-      "is_final": false
+      "home_score": 43.0,
+      "away_score": 36.0,
+      "is_final": true
     },
     {
       "game_id": "2026_08_ARI_DAL",
@@ -1272,9 +1279,11 @@
         "home": [],
         "away": []
       },
-      "spread_current": "-7.0 -108 (10/31)",
-      "spread_current_raw": -7.0,
+      "spread_current": "-10.5 -125 (11/1)",
+      "spread_current_raw": -10.5,
       "spread_history": [
+        "-7.0 -115 (11/1)",
+        "-7.0 -108 (10/31)",
         "-7.0 -110 (10/30)",
         "-7.0 -108 (10/30)",
         "-6.5 -122 (10/28)",
@@ -1285,17 +1294,18 @@
         "-6.5 -110 (10/20)",
         "-10.5 -110 (8/31)"
       ],
-      "total_current": "O/U 54.5 (-110.0) (10/27)",
+      "total_current": "O/U 44.5 (-114.0) (11/1)",
       "total_history": [
+        "O/U 54.5 (-110.0) (10/27)",
         "O/U 53.5 (-115.0) (10/27)",
         "O/U 53.5 (-106.0) (10/26)",
         "O/U 53.5 (-105.0) (10/25)",
         "O/U 51.5 (-115.0) (10/20)",
         "O/U 47.5 (-110.0) (8/31)"
       ],
-      "home_score": null,
-      "away_score": null,
-      "is_final": false
+      "home_score": 30.0,
+      "away_score": 33.0,
+      "is_final": true
     },
     {
       "game_id": "2026_08_MIN_DET",
@@ -1304,16 +1314,17 @@
       "gameday": "2026-11-01",
       "gametime": "13:00",
       "weekday": "Sunday",
-      "home_win_probability": 0.69,
-      "away_win_probability": 0.31,
+      "home_win_probability": 0.719,
+      "away_win_probability": 0.281,
       "favored": "DET",
-      "raw_strength_score": 0.8,
+      "raw_strength_score": 0.94,
       "feature_breakdown": {
         "rank_coefficient_home": 1.0,
         "third_down_coefficient_home": 1.0,
         "ypp_off_coefficient_home": 1.0,
         "ypp_def_coefficient_home": -1.0,
-        "road_trip_coefficient_home": 0.5
+        "road_trip_coefficient_home": 0.5,
+        "streak_coefficient_home": -0.5
       },
       "power_rating_implied_spread": 3.42,
       "neutral_site": false,
@@ -1420,9 +1431,11 @@
         "home": [],
         "away": []
       },
-      "spread_current": "-3.5 +100 (10/30)",
-      "spread_current_raw": -3.5,
+      "spread_current": "-4.5 -136 (11/1)",
+      "spread_current_raw": -4.5,
       "spread_history": [
+        "-3.0 -110 (11/1)",
+        "-3.5 +100 (10/30)",
         "-3.5 -104 (10/29)",
         "-3.5 -102 (10/28)",
         "-3.5 -104 (10/27)",
@@ -1431,16 +1444,17 @@
         "-3.0 -112 (10/20)",
         "-4.5 -110 (8/31)"
       ],
-      "total_current": "O/U 46.5 (-102.0) (10/30)",
+      "total_current": "O/U 32.5 (-118.0) (11/1)",
       "total_history": [
+        "O/U 46.5 (-102.0) (10/30)",
         "O/U 46.5 (-104.0) (10/25)",
         "O/U 47.5 (-105.0) (10/22)",
         "O/U 48.5 (-105.0) (10/20)",
         "O/U 47.5 (-110.0) (8/31)"
       ],
-      "home_score": null,
-      "away_score": null,
-      "is_final": false
+      "home_score": 19.0,
+      "away_score": 15.0,
+      "is_final": true
     },
     {
       "game_id": "2026_08_IND_JAX",
@@ -1662,9 +1676,11 @@
         "home": [],
         "away": []
       },
-      "spread_current": "-10.5 -102 (10/31)",
-      "spread_current_raw": -10.5,
+      "spread_current": "-31.5 +100 (11/1)",
+      "spread_current_raw": -31.5,
       "spread_history": [
+        "-10.5 -105 (11/1)",
+        "-10.5 -102 (10/31)",
         "-10.5 +100 (10/31)",
         "-10.5 -102 (10/30)",
         "-9.5 -115 (10/29)",
@@ -1675,8 +1691,9 @@
         "-7.5 -104 (10/20)",
         "-4.5 -110 (8/31)"
       ],
-      "total_current": "O/U 46.5 (-105.0) (10/30)",
+      "total_current": "O/U 55.5 (-102.0) (11/1)",
       "total_history": [
+        "O/U 46.5 (-105.0) (10/30)",
         "O/U 46.5 (-106.0) (10/28)",
         "O/U 46.5 (-110.0) (10/27)",
         "O/U 46.5 (-115.0) (10/25)",
@@ -1685,9 +1702,9 @@
         "O/U 47.5 (-105.0) (10/20)",
         "O/U 49.5 (-110.0) (8/31)"
       ],
-      "home_score": null,
-      "away_score": null,
-      "is_final": false
+      "home_score": 42.0,
+      "away_score": 7.0,
+      "is_final": true
     },
     {
       "game_id": "2026_08_LV_NYJ",
@@ -1696,16 +1713,17 @@
       "gameday": "2026-11-01",
       "gametime": "13:00",
       "weekday": "Sunday",
-      "home_win_probability": 0.443,
-      "away_win_probability": 0.557,
+      "home_win_probability": 0.408,
+      "away_win_probability": 0.592,
       "favored": "LV",
-      "raw_strength_score": -0.23,
+      "raw_strength_score": -0.37,
       "feature_breakdown": {
         "third_down_coefficient_home": -1.0,
         "ypp_off_coefficient_home": -1.0,
         "ypp_def_coefficient_home": 1.0,
         "turnover_coefficient_home": -1.0,
-        "road_trip_coefficient_home": 0.5
+        "road_trip_coefficient_home": 0.5,
+        "streak_coefficient_home": 0.5
       },
       "power_rating_implied_spread": 0.42,
       "neutral_site": false,
@@ -1935,17 +1953,21 @@
         "home": [],
         "away": []
       },
-      "spread_current": "-1.5 -105 (10/30)",
-      "spread_current_raw": -1.5,
+      "spread_current": "+2.5 -104 (11/1)",
+      "spread_current_raw": 2.5,
       "spread_history": [
+        "-1.5 -115 (11/1)",
+        "-1.5 -105 (10/30)",
         "-1.5 -110 (10/28)",
         "-1.5 -105 (10/27)",
         "-1.5 -102 (10/25)",
         "-1.5 -105 (10/20)",
         "-1.5 -110 (8/31)"
       ],
-      "total_current": "O/U 45.5 (-115.0) (10/30)",
+      "total_current": "O/U 76.5 (-110.0) (11/1)",
       "total_history": [
+        "O/U 46.5 (-108.0) (11/1)",
+        "O/U 45.5 (-115.0) (10/30)",
         "O/U 45.5 (-112.0) (10/26)",
         "O/U 44.5 (-108.0) (10/26)",
         "O/U 44.5 (-106.0) (10/26)",
@@ -1953,9 +1975,9 @@
         "O/U 43.5 (-110.0) (10/20)",
         "O/U 40.5 (-110.0) (8/31)"
       ],
-      "home_score": null,
-      "away_score": null,
-      "is_final": false
+      "home_score": 33.0,
+      "away_score": 38.0,
+      "is_final": true
     },
     {
       "game_id": "2026_08_CLE_PIT",
@@ -1964,10 +1986,10 @@
       "gameday": "2026-11-01",
       "gametime": "13:00",
       "weekday": "Sunday",
-      "home_win_probability": 0.767,
-      "away_win_probability": 0.233,
+      "home_win_probability": 0.791,
+      "away_win_probability": 0.209,
       "favored": "PIT",
-      "raw_strength_score": 1.19,
+      "raw_strength_score": 1.33,
       "feature_breakdown": {
         "rank_coefficient_home": 1.0,
         "third_down_coefficient_home": 1.0,
@@ -1975,6 +1997,7 @@
         "ypp_def_coefficient_home": -1.0,
         "turnover_coefficient_home": 1.0,
         "road_trip_coefficient_home": -1.5,
+        "streak_coefficient_home": -0.5,
         "schedule_milestones_coefficient_home": 1.0
       },
       "power_rating_implied_spread": 8.5,
@@ -2133,9 +2156,11 @@
         "home": [],
         "away": []
       },
-      "spread_current": "-3.5 -105 (10/31)",
-      "spread_current_raw": -3.5,
+      "spread_current": "-21.5 -118 (11/1)",
+      "spread_current_raw": -21.5,
       "spread_history": [
+        "-3.5 -108 (11/1)",
+        "-3.5 -105 (10/31)",
         "-3.5 -112 (10/31)",
         "-3.5 -115 (10/30)",
         "-3.5 -105 (10/28)",
@@ -2148,8 +2173,10 @@
         "-4.5 -115 (10/20)",
         "-6.0 -110 (8/31)"
       ],
-      "total_current": "O/U 38.5 (-115.0) (10/31)",
+      "total_current": "O/U 46.5 (-112.0) (11/1)",
       "total_history": [
+        "O/U 38.5 (-120.0) (11/1)",
+        "O/U 38.5 (-115.0) (10/31)",
         "O/U 39.5 (-105.0) (10/28)",
         "O/U 39.5 (-110.0) (10/26)",
         "O/U 38.5 (-112.0) (10/26)",
@@ -2157,9 +2184,9 @@
         "O/U 38.5 (-110.0) (10/20)",
         "O/U 39.5 (-110.0) (8/31)"
       ],
-      "home_score": null,
-      "away_score": null,
-      "is_final": false
+      "home_score": 27.0,
+      "away_score": 6.0,
+      "is_final": true
     },
     {
       "game_id": "2026_08_ATL_TB",
@@ -2168,16 +2195,17 @@
       "gameday": "2026-11-01",
       "gametime": "13:00",
       "weekday": "Sunday",
-      "home_win_probability": 0.512,
-      "away_win_probability": 0.488,
+      "home_win_probability": 0.547,
+      "away_win_probability": 0.453,
       "favored": "TB",
-      "raw_strength_score": 0.05,
+      "raw_strength_score": 0.19,
       "feature_breakdown": {
         "rank_coefficient_home": -1.0,
         "third_down_coefficient_home": 1.0,
         "ypp_off_coefficient_home": -1.0,
         "ypp_def_coefficient_home": -1.0,
-        "road_trip_coefficient_home": -0.5
+        "road_trip_coefficient_home": -0.5,
+        "streak_coefficient_home": -0.5
       },
       "power_rating_implied_spread": 3.92,
       "neutral_site": false,
@@ -2497,9 +2525,11 @@
         "home": [],
         "away": []
       },
-      "spread_current": "-2.5 -105 (10/30)",
-      "spread_current_raw": -2.5,
+      "spread_current": "-15.5 -158 (11/1)",
+      "spread_current_raw": -15.5,
       "spread_history": [
+        "-2.5 -104 (11/1)",
+        "-2.5 -105 (10/30)",
         "-2.5 -106 (10/29)",
         "-2.5 -110 (10/28)",
         "-2.5 -105 (10/26)",
@@ -2508,8 +2538,10 @@
         "-1.5 -105 (10/20)",
         "-4.5 -110 (8/31)"
       ],
-      "total_current": "O/U 43.5 (-110.0) (10/31)",
+      "total_current": "O/U 23.5 (-106.0) (11/1)",
       "total_history": [
+        "O/U 43.5 (-104.0) (11/1)",
+        "O/U 43.5 (-110.0) (10/31)",
         "O/U 43.5 (-115.0) (10/30)",
         "O/U 44.5 (-105.0) (10/30)",
         "O/U 43.5 (-115.0) (10/30)",
@@ -2521,9 +2553,9 @@
         "O/U 44.5 (-105.0) (10/20)",
         "O/U 46.5 (-110.0) (8/31)"
       ],
-      "home_score": null,
-      "away_score": null,
-      "is_final": false
+      "home_score": 16.0,
+      "away_score": 0.0,
+      "is_final": true
     },
     {
       "game_id": "2026_08_LAC_LA",
@@ -2532,17 +2564,17 @@
       "gameday": "2026-11-01",
       "gametime": "16:05",
       "weekday": "Sunday",
-      "home_win_probability": 0.718,
-      "away_win_probability": 0.282,
+      "home_win_probability": 0.746,
+      "away_win_probability": 0.254,
       "favored": "LA",
-      "raw_strength_score": 0.93,
+      "raw_strength_score": 1.08,
       "feature_breakdown": {
         "rank_coefficient_home": 1.0,
         "third_down_coefficient_home": 1.0,
         "ypp_off_coefficient_home": 1.0,
         "ypp_def_coefficient_home": 1.0,
         "rest_coefficient_home": -1.0,
-        "streak_coefficient_home": -0.5
+        "streak_coefficient_home": -1.0
       },
       "power_rating_implied_spread": 4.42,
       "neutral_site": false,
@@ -2824,9 +2856,11 @@
         "home": [],
         "away": []
       },
-      "spread_current": "-6.5 -110 (10/31)",
+      "spread_current": "-6.5 -112 (11/1)",
       "spread_current_raw": -6.5,
       "spread_history": [
+        "-6.5 -108 (11/1)",
+        "-6.5 -110 (10/31)",
         "-6.5 -114 (10/31)",
         "-6.5 -120 (10/30)",
         "-6.5 -115 (10/26)",
@@ -2836,8 +2870,9 @@
         "-7.5 -108 (10/20)",
         "-3.5 -115 (8/31)"
       ],
-      "total_current": "O/U 45.5 (-110.0) (10/31)",
+      "total_current": "O/U 45.5 (-114.0) (11/1)",
       "total_history": [
+        "O/U 45.5 (-110.0) (10/31)",
         "O/U 45.5 (-105.0) (10/28)",
         "O/U 44.5 (-115.0) (10/27)",
         "O/U 44.5 (-105.0) (10/26)",
@@ -2847,9 +2882,9 @@
         "O/U 45.5 (-115.0) (10/20)",
         "O/U 48.5 (-110.0) (8/31)"
       ],
-      "home_score": null,
-      "away_score": null,
-      "is_final": false
+      "home_score": 24.0,
+      "away_score": 9.0,
+      "is_final": true
     },
     {
       "game_id": "2026_08_KC_DEN",
@@ -2858,17 +2893,17 @@
       "gameday": "2026-11-01",
       "gametime": "16:25",
       "weekday": "Sunday",
-      "home_win_probability": 0.47,
-      "away_win_probability": 0.53,
-      "favored": "KC",
-      "raw_strength_score": -0.12,
+      "home_win_probability": 0.505,
+      "away_win_probability": 0.495,
+      "favored": "DEN",
+      "raw_strength_score": 0.02,
       "feature_breakdown": {
         "rank_coefficient_home": -1.0,
         "third_down_coefficient_home": -1.0,
         "ypp_off_coefficient_home": -1.0,
         "ypp_def_coefficient_home": 1.0,
         "road_trip_coefficient_home": 0.5,
-        "streak_coefficient_home": -0.5
+        "streak_coefficient_home": -1.0
       },
       "power_rating_implied_spread": 0.75,
       "neutral_site": false,
@@ -3095,14 +3130,18 @@
         "home": [],
         "away": []
       },
-      "spread_current": "+1.5 -112 (10/26)",
+      "spread_current": "+1.5 -120 (11/1)",
       "spread_current_raw": 1.5,
       "spread_history": [
+        "+1.5 -118 (11/1)",
+        "+1.5 -112 (10/26)",
         "+1.5 -106 (10/20)",
         "-1.5 -110 (8/31)"
       ],
-      "total_current": "O/U 40.5 (-110.0) (10/31)",
+      "total_current": "O/U 41.5 (-112.0) (11/1)",
       "total_history": [
+        "O/U 41.5 (-110.0) (11/1)",
+        "O/U 40.5 (-110.0) (10/31)",
         "O/U 40.5 (-115.0) (10/28)",
         "O/U 41.5 (-106.0) (10/27)",
         "O/U 40.5 (-106.0) (10/27)",
@@ -3112,9 +3151,9 @@
         "O/U 42.5 (-115.0) (10/20)",
         "O/U 43.5 (-110.0) (8/31)"
       ],
-      "home_score": null,
-      "away_score": null,
-      "is_final": false
+      "home_score": 28.0,
+      "away_score": 24.0,
+      "is_final": true
     },
     {
       "game_id": "2026_08_NE_MIA",
@@ -3319,9 +3358,11 @@
         "home": [],
         "away": []
       },
-      "spread_current": "+7.0 -120 (10/31)",
-      "spread_current_raw": 7.0,
+      "spread_current": "+7.5 -128 (11/1)",
+      "spread_current_raw": 7.5,
       "spread_history": [
+        "+7.5 -115 (11/1)",
+        "+7.0 -120 (10/31)",
         "+7.0 -115 (10/31)",
         "+7.0 -120 (10/30)",
         "+7.0 -115 (10/28)",
@@ -3333,8 +3374,10 @@
         "+8.5 -120 (10/20)",
         "+7.0 -110 (8/31)"
       ],
-      "total_current": "O/U 43.5 (-104.0) (10/31)",
+      "total_current": "O/U 41.5 (-108.0) (11/1)",
       "total_history": [
+        "O/U 41.5 (-110.0) (11/1)",
+        "O/U 43.5 (-104.0) (10/31)",
         "O/U 43.5 (-105.0) (10/29)",
         "O/U 43.5 (-115.0) (10/29)",
         "O/U 44.5 (-106.0) (10/27)",
@@ -3342,9 +3385,9 @@
         "O/U 43.5 (-120.0) (10/20)",
         "O/U 45.5 (-110.0) (8/31)"
       ],
-      "home_score": null,
-      "away_score": null,
-      "is_final": false
+      "home_score": 19.0,
+      "away_score": 24.0,
+      "is_final": true
     },
     {
       "game_id": "2026_08_PHI_WAS",
@@ -3759,11 +3802,16 @@
         {
           "name": "Uchenna Nwosu",
           "position": "LB",
-          "status": "DNP (practice) - Ankle",
+          "status": "Doubtful",
           "trend": [
             {
               "date": "2026-11-01",
               "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-11-02",
+              "report_status": "Doubtful",
               "practice_status": "Did Not Participate In Practice"
             }
           ],
@@ -3772,11 +3820,16 @@
         {
           "name": "Drew Lock",
           "position": "QB",
-          "status": "Limited (practice) - Elbow",
+          "status": "Questionable",
           "trend": [
             {
               "date": "2026-11-01",
               "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            },
+            {
+              "date": "2026-11-02",
+              "report_status": "Questionable",
               "practice_status": "Limited Participation in Practice"
             }
           ],
@@ -3785,11 +3838,16 @@
         {
           "name": "Rashid Shaheed",
           "position": "WR",
-          "status": "DNP (practice) - Knee",
+          "status": "Out",
           "trend": [
             {
               "date": "2026-11-01",
               "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-11-02",
+              "report_status": "Out",
               "practice_status": "Did Not Participate In Practice"
             }
           ],
@@ -3798,11 +3856,16 @@
         {
           "name": "Velus Jones Jr.",
           "position": "RB",
-          "status": "DNP (practice) - Hamstring",
+          "status": "Out",
           "trend": [
             {
               "date": "2026-11-01",
               "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-11-02",
+              "report_status": "Out",
               "practice_status": "Did Not Participate In Practice"
             }
           ],
@@ -3811,11 +3874,16 @@
         {
           "name": "Charles Cross",
           "position": "T",
-          "status": "DNP (practice) - Ankle",
+          "status": "Out",
           "trend": [
             {
               "date": "2026-11-01",
               "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-11-02",
+              "report_status": "Out",
               "practice_status": "Did Not Participate In Practice"
             }
           ],
@@ -3824,11 +3892,16 @@
         {
           "name": "Brandon Pili",
           "position": "DT",
-          "status": "DNP (practice) - Back",
+          "status": "Questionable",
           "trend": [
             {
               "date": "2026-11-01",
               "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-11-02",
+              "report_status": "Questionable",
               "practice_status": "Did Not Participate In Practice"
             }
           ],
@@ -3837,11 +3910,16 @@
         {
           "name": "Patrick O'Connell",
           "position": "LB",
-          "status": "DNP (practice) - Toe",
+          "status": "Questionable",
           "trend": [
             {
               "date": "2026-11-01",
               "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-11-02",
+              "report_status": "Questionable",
               "practice_status": "Did Not Participate In Practice"
             }
           ],
@@ -3850,61 +3928,27 @@
         {
           "name": "Anthony Bradford",
           "position": "G",
-          "status": "DNP (practice) - Knee",
+          "status": "Questionable",
           "trend": [
             {
               "date": "2026-11-01",
               "report_status": null,
               "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-11-02",
+              "report_status": "Questionable",
+              "practice_status": "Limited Participation in Practice"
             }
           ],
           "usage_note": "97% off. snaps"
-        },
-        {
-          "name": "Zach Charbonnet",
-          "position": "RB",
-          "status": "Limited (practice) - Knee",
-          "trend": [
-            {
-              "date": "2026-11-01",
-              "report_status": null,
-              "practice_status": "Limited Participation in Practice"
-            }
-          ],
-          "usage_note": "7% target share (11 gm) &middot; 46% off. snaps"
-        },
-        {
-          "name": "Byron Murphy II",
-          "position": "DT",
-          "status": "Limited (practice) - Back",
-          "trend": [
-            {
-              "date": "2026-11-01",
-              "report_status": null,
-              "practice_status": "Limited Participation in Practice"
-            }
-          ],
-          "usage_note": "68% def. snaps"
-        },
-        {
-          "name": "Tyrice Knight",
-          "position": "LB",
-          "status": "Limited (practice) - Hip",
-          "trend": [
-            {
-              "date": "2026-11-01",
-              "report_status": null,
-              "practice_status": "Limited Participation in Practice"
-            }
-          ],
-          "usage_note": "25% def. snaps"
         }
       ],
       "away_injuries": [
         {
           "name": "D'Marco Jackson",
           "position": "LB",
-          "status": "DNP (practice) - Ankle",
+          "status": "Questionable",
           "trend": [
             {
               "date": "2026-10-31",
@@ -3915,31 +3959,28 @@
               "date": "2026-11-01",
               "report_status": null,
               "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-11-02",
+              "report_status": "Questionable",
+              "practice_status": "Full Participation in Practice"
             }
           ],
           "usage_note": "32% def. snaps"
         },
         {
-          "name": "Colston Loveland",
-          "position": "TE",
-          "status": "Limited (practice) - Neck",
-          "trend": [
-            {
-              "date": "2026-11-01",
-              "report_status": null,
-              "practice_status": "Limited Participation in Practice"
-            }
-          ],
-          "usage_note": "16% target share (18 gm) &middot; 65% off. snaps"
-        },
-        {
           "name": "Kyle Monangai",
           "position": "RB",
-          "status": "DNP (practice) - Thumb",
+          "status": "Out",
           "trend": [
             {
               "date": "2026-10-31",
               "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            },
+            {
+              "date": "2026-11-02",
+              "report_status": "Out",
               "practice_status": "Did Not Participate In Practice"
             }
           ],
@@ -3948,11 +3989,16 @@
         {
           "name": "Malik Muhammad",
           "position": "CB",
-          "status": "Limited (practice) - Toe",
+          "status": "Questionable",
           "trend": [
             {
               "date": "2026-10-31",
               "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            },
+            {
+              "date": "2026-11-02",
+              "report_status": "Questionable",
               "practice_status": "Limited Participation in Practice"
             }
           ],
@@ -3964,9 +4010,10 @@
         "home": [],
         "away": []
       },
-      "spread_current": "-3.0 -115 (10/30)",
+      "spread_current": "-3.0 -120 (11/1)",
       "spread_current_raw": -3.0,
       "spread_history": [
+        "-3.0 -115 (10/30)",
         "-3.0 -114 (10/29)",
         "-3.0 -118 (10/28)",
         "-3.0 -120 (10/27)",
