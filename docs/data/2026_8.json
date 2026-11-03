@@ -340,7 +340,7 @@
         },
         {
           "team": "BAL",
-          "depth_chart_starter": "Lamar Jackson",
+          "depth_chart_starter": "Tyler Huntley",
           "normal_starter_used_for_elite_check": "Lamar Jackson",
           "is_elite_starter": false,
           "backup_starting": true,
@@ -3396,10 +3396,10 @@
       "gameday": "2026-11-01",
       "gametime": "20:20",
       "weekday": "Sunday",
-      "home_win_probability": 0.683,
-      "away_win_probability": 0.317,
+      "home_win_probability": 0.712,
+      "away_win_probability": 0.288,
       "favored": "WAS",
-      "raw_strength_score": 0.77,
+      "raw_strength_score": 0.91,
       "feature_breakdown": {
         "rank_coefficient_home": 1.0,
         "third_down_coefficient_home": -1.0,
@@ -3407,7 +3407,8 @@
         "ypp_def_coefficient_home": -1.0,
         "turnover_coefficient_home": 1.0,
         "rest_coefficient_home": 1.5,
-        "road_trip_coefficient_home": 0.5
+        "road_trip_coefficient_home": 0.5,
+        "streak_coefficient_home": -0.5
       },
       "power_rating_implied_spread": -2.08,
       "neutral_site": false,
@@ -3745,9 +3746,9 @@
         "O/U 40.5 (-105.0) (10/20)",
         "O/U 46.5 (-110.0) (8/31)"
       ],
-      "home_score": null,
-      "away_score": null,
-      "is_final": false
+      "home_score": 27.0,
+      "away_score": 10.0,
+      "is_final": true
     },
     {
       "game_id": "2026_08_CHI_SEA",
@@ -4010,9 +4011,11 @@
         "home": [],
         "away": []
       },
-      "spread_current": "-3.0 -120 (11/1)",
-      "spread_current_raw": -3.0,
+      "spread_current": "+1.5 -125 (11/2)",
+      "spread_current_raw": 1.5,
       "spread_history": [
+        "-3.5 -102 (11/2)",
+        "-3.0 -120 (11/1)",
         "-3.0 -115 (10/30)",
         "-3.0 -114 (10/29)",
         "-3.0 -118 (10/28)",
@@ -4023,8 +4026,9 @@
         "-3.0 -110 (10/20)",
         "-4.5 -110 (8/31)"
       ],
-      "total_current": "O/U 46.5 (-110.0) (10/29)",
+      "total_current": "O/U 43.5 (-112.0) (11/2)",
       "total_history": [
+        "O/U 46.5 (-110.0) (10/29)",
         "O/U 46.5 (-114.0) (10/26)",
         "O/U 47.5 (-104.0) (10/25)",
         "O/U 46.5 (-114.0) (10/23)",
