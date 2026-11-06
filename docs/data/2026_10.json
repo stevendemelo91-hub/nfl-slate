@@ -62,9 +62,10 @@
         "home": [],
         "away": []
       },
-      "spread_current": "-1.5 -108 (11/3)",
+      "spread_current": "-1.5 -110 (11/5)",
       "spread_current_raw": -1.5,
       "spread_history": [
+        "-1.5 -108 (11/3)",
         "-1.5 -110 (8/31)"
       ],
       "total_current": "O/U 45.5 (-105.0) (11/3)",
@@ -128,11 +129,17 @@
         "home": [],
         "away": []
       },
-      "spread_current": "+1.5 -115 (8/31)",
-      "spread_current_raw": 1.5,
-      "spread_history": [],
-      "total_current": "O/U 49.5 (-115.0) (8/31)",
-      "total_history": [],
+      "spread_current": "-1.5 +100 (11/5)",
+      "spread_current_raw": -1.5,
+      "spread_history": [
+        "-1.5 -102 (11/5)",
+        "+1.5 -115 (8/31)"
+      ],
+      "total_current": "O/U 50.5 (-120.0) (11/5)",
+      "total_history": [
+        "O/U 50.5 (-118.0) (11/5)",
+        "O/U 49.5 (-115.0) (8/31)"
+      ],
       "home_score": null,
       "away_score": null,
       "is_final": false
@@ -195,8 +202,9 @@
       "spread_history": [
         "+4.5 -110 (8/31)"
       ],
-      "total_current": "O/U 46.5 (-114.0) (11/3)",
+      "total_current": "O/U 46.5 (-110.0) (11/5)",
       "total_history": [
+        "O/U 46.5 (-114.0) (11/3)",
         "O/U 45.5 (-110.0) (8/31)"
       ],
       "home_score": null,
@@ -256,9 +264,11 @@
         "home": [],
         "away": []
       },
-      "spread_current": "+3.5 -104 (11/4)",
+      "spread_current": "+3.5 -110 (11/5)",
       "spread_current_raw": 3.5,
       "spread_history": [
+        "+3.5 -114 (11/5)",
+        "+3.5 -104 (11/4)",
         "+3.5 -115 (11/4)",
         "+3.5 -105 (11/3)",
         "+4.5 -110 (8/31)"
@@ -323,14 +333,16 @@
         "home": [],
         "away": []
       },
-      "spread_current": "-2.5 -115 (11/4)",
-      "spread_current_raw": -2.5,
+      "spread_current": "-3.0 -110 (11/5)",
+      "spread_current_raw": -3.0,
       "spread_history": [
+        "-2.5 -115 (11/4)",
         "-2.5 -108 (11/3)",
         "-4.5 -110 (8/31)"
       ],
-      "total_current": "O/U 41.5 (-112.0) (11/4)",
+      "total_current": "O/U 41.5 (-110.0) (11/5)",
       "total_history": [
+        "O/U 41.5 (-112.0) (11/4)",
         "O/U 41.5 (-118.0) (11/3)",
         "O/U 45.5 (-110.0) (8/31)"
       ],
@@ -389,13 +401,15 @@
         "home": [],
         "away": []
       },
-      "spread_current": "-1.5 -108 (11/3)",
+      "spread_current": "-1.5 -110 (11/5)",
       "spread_current_raw": -1.5,
       "spread_history": [
+        "-1.5 -108 (11/3)",
         "-6.5 -110 (8/31)"
       ],
-      "total_current": "O/U 42.5 (-114.0) (11/3)",
+      "total_current": "O/U 42.5 (-115.0) (11/5)",
       "total_history": [
+        "O/U 42.5 (-114.0) (11/3)",
         "O/U 47.5 (-110.0) (8/31)"
       ],
       "home_score": null,
@@ -458,8 +472,9 @@
       "spread_history": [
         "-1.5 -105 (8/31)"
       ],
-      "total_current": "O/U 46.5 (-118.0) (11/3)",
+      "total_current": "O/U 46.5 (-120.0) (11/5)",
       "total_history": [
+        "O/U 46.5 (-118.0) (11/3)",
         "O/U 43.5 (-110.0) (8/31)"
       ],
       "home_score": null,
@@ -584,13 +599,15 @@
         "home": [],
         "away": []
       },
-      "spread_current": "+9.5 -104 (11/3)",
+      "spread_current": "+9.5 +100 (11/5)",
       "spread_current_raw": 9.5,
       "spread_history": [
+        "+9.5 -104 (11/3)",
         "+2.5 -110 (8/31)"
       ],
-      "total_current": "O/U 44.5 (-112.0) (11/3)",
+      "total_current": "O/U 44.5 (-110.0) (11/5)",
       "total_history": [
+        "O/U 44.5 (-112.0) (11/3)",
         "O/U 45.5 (-110.0) (8/31)"
       ],
       "home_score": null,
@@ -650,9 +667,11 @@
         "home": [],
         "away": []
       },
-      "spread_current": "+7.5 -120 (11/3)",
+      "spread_current": "+7.5 -115 (11/5)",
       "spread_current_raw": 7.5,
       "spread_history": [
+        "+7.5 -114 (11/5)",
+        "+7.5 -120 (11/3)",
         "+10.5 -110 (8/31)"
       ],
       "total_current": "O/U 47.5 (-110.0) (8/31)",
@@ -776,9 +795,10 @@
         "home": [],
         "away": []
       },
-      "spread_current": "+4.5 -118 (11/3)",
+      "spread_current": "+4.5 -120 (11/5)",
       "spread_current_raw": 4.5,
       "spread_history": [
+        "+4.5 -118 (11/3)",
         "-1.5 -105 (8/31)"
       ],
       "total_current": "O/U 54.5 (-115.0) (11/3)",
@@ -875,7 +895,7 @@
       "qb_candidates": [
         {
           "team": "BAL",
-          "depth_chart_starter": "Tyler Huntley",
+          "depth_chart_starter": "Joe Fagnano",
           "normal_starter_used_for_elite_check": "Lamar Jackson",
           "is_elite_starter": false,
           "backup_starting": true,
@@ -905,9 +925,11 @@
         "home": [],
         "away": []
       },
-      "spread_current": "-1.5 -112 (11/4)",
-      "spread_current_raw": -1.5,
+      "spread_current": "-2.5 -110 (11/5)",
+      "spread_current_raw": -2.5,
       "spread_history": [
+        "-2.5 -108 (11/5)",
+        "-1.5 -112 (11/4)",
         "+2.5 -122 (11/4)",
         "-1.5 -104 (11/3)",
         "-3.5 -110 (8/31)"
