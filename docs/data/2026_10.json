@@ -357,11 +357,12 @@
       "gameday": "2026-11-15",
       "gametime": "13:00",
       "weekday": "Sunday",
-      "home_win_probability": 0.44,
-      "away_win_probability": 0.56,
+      "home_win_probability": 0.468,
+      "away_win_probability": 0.532,
       "favored": "MIA",
-      "raw_strength_score": -0.24,
+      "raw_strength_score": -0.13,
       "feature_breakdown": {
+        "rank_coefficient_home": 0.5,
         "third_down_coefficient_home": -1.0,
         "ypp_off_coefficient_home": -1.0,
         "ypp_def_coefficient_home": -1.0,
@@ -553,10 +554,10 @@
       "gameday": "2026-11-15",
       "gametime": "13:00",
       "weekday": "Sunday",
-      "home_win_probability": 0.353,
-      "away_win_probability": 0.647,
+      "home_win_probability": 0.334,
+      "away_win_probability": 0.666,
       "favored": "JAX",
-      "raw_strength_score": -0.6,
+      "raw_strength_score": -0.69,
       "feature_breakdown": {
         "rank_coefficient_home": -1.0,
         "third_down_coefficient_home": -1.0,
@@ -564,7 +565,8 @@
         "ypp_def_coefficient_home": -1.0,
         "turnover_coefficient_home": -1.0,
         "rest_coefficient_home": 0.5,
-        "streak_coefficient_home": 0.5
+        "road_trip_coefficient_home": -2.0,
+        "streak_coefficient_home": 1.0
       },
       "power_rating_implied_spread": -3.08,
       "neutral_site": false,
@@ -599,14 +601,16 @@
         "home": [],
         "away": []
       },
-      "spread_current": "+9.5 +100 (11/5)",
-      "spread_current_raw": 9.5,
+      "spread_current": "+10.5 -115 (11/6)",
+      "spread_current_raw": 10.5,
       "spread_history": [
+        "+9.5 +100 (11/5)",
         "+9.5 -104 (11/3)",
         "+2.5 -110 (8/31)"
       ],
-      "total_current": "O/U 44.5 (-110.0) (11/5)",
+      "total_current": "O/U 44.5 (-115.0) (11/6)",
       "total_history": [
+        "O/U 44.5 (-110.0) (11/5)",
         "O/U 44.5 (-112.0) (11/3)",
         "O/U 45.5 (-110.0) (8/31)"
       ],
@@ -879,12 +883,12 @@
       "gameday": "2026-11-16",
       "gametime": "20:15",
       "weekday": "Monday",
-      "home_win_probability": 0.625,
-      "away_win_probability": 0.375,
+      "home_win_probability": 0.598,
+      "away_win_probability": 0.402,
       "favored": "BAL",
-      "raw_strength_score": 0.51,
+      "raw_strength_score": 0.4,
       "feature_breakdown": {
-        "rank_coefficient_home": 1.0,
+        "rank_coefficient_home": 0.5,
         "third_down_coefficient_home": 1.0,
         "ypp_off_coefficient_home": 1.0,
         "ypp_def_coefficient_home": 1.0,
@@ -925,9 +929,10 @@
         "home": [],
         "away": []
       },
-      "spread_current": "-2.5 -110 (11/5)",
-      "spread_current_raw": -2.5,
+      "spread_current": "-1.5 -110 (11/6)",
+      "spread_current_raw": -1.5,
       "spread_history": [
+        "-2.5 -110 (11/5)",
         "-2.5 -108 (11/5)",
         "-1.5 -112 (11/4)",
         "+2.5 -122 (11/4)",
