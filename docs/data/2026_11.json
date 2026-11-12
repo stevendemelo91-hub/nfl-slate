@@ -59,9 +59,10 @@
         "home": [],
         "away": []
       },
-      "spread_current": "-10.5 -105 (11/10)",
-      "spread_current_raw": -10.5,
+      "spread_current": "-9.5 -115 (11/11)",
+      "spread_current_raw": -9.5,
       "spread_history": [
+        "-10.5 -105 (11/10)",
         "-5.5 -110 (8/31)"
       ],
       "total_current": "O/U 43.5 (+100.0) (11/10)",
@@ -108,8 +109,8 @@
         },
         {
           "team": "MIA",
-          "depth_chart_starter": "Malik Willis",
-          "normal_starter_used_for_elite_check": "Malik Willis",
+          "depth_chart_starter": "Kyle McCord",
+          "normal_starter_used_for_elite_check": "Kyle McCord",
           "is_elite_starter": false,
           "backup_starting": false,
           "rookie_starting": false,
@@ -391,9 +392,10 @@
         "home": [],
         "away": []
       },
-      "spread_current": "-3.5 -110 (11/10)",
+      "spread_current": "-3.5 +100 (11/11)",
       "spread_current_raw": -3.5,
       "spread_history": [
+        "-3.5 -110 (11/10)",
         "-4.5 -110 (8/31)"
       ],
       "total_current": "O/U 47.5 (-110.0) (11/10)",
@@ -439,8 +441,8 @@
         },
         {
           "team": "ARI",
-          "depth_chart_starter": "Gardner Minshew II",
-          "normal_starter_used_for_elite_check": "Gardner Minshew II",
+          "depth_chart_starter": "Carson Beck",
+          "normal_starter_used_for_elite_check": "Carson Beck",
           "is_elite_starter": false,
           "backup_starting": false,
           "rookie_starting": false,
@@ -634,8 +636,8 @@
         },
         {
           "team": "LV",
-          "depth_chart_starter": "Kirk Cousins",
-          "normal_starter_used_for_elite_check": "Kirk Cousins",
+          "depth_chart_starter": "Fernando Mendoza",
+          "normal_starter_used_for_elite_check": "Fernando Mendoza",
           "is_elite_starter": false,
           "backup_starting": false,
           "rookie_starting": false,
@@ -651,9 +653,10 @@
         "home": [],
         "away": []
       },
-      "spread_current": "-7.5 -105 (11/10)",
+      "spread_current": "-7.5 -110 (11/11)",
       "spread_current_raw": -7.5,
       "spread_history": [
+        "-7.5 -105 (11/10)",
         "-7.5 -110 (8/31)"
       ],
       "total_current": "O/U 40.5 (-105.0) (11/10)",
@@ -767,8 +770,8 @@
         },
         {
           "team": "MIN",
-          "depth_chart_starter": "Kyler Murray",
-          "normal_starter_used_for_elite_check": "Kyler Murray",
+          "depth_chart_starter": "Kirk Cousins",
+          "normal_starter_used_for_elite_check": "Kirk Cousins",
           "is_elite_starter": false,
           "backup_starting": false,
           "rookie_starting": false,

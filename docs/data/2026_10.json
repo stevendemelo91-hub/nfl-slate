@@ -56,22 +56,104 @@
           "depth_chart_conflict": null
         }
       ],
-      "home_injuries": [],
-      "away_injuries": [],
+      "home_injuries": [
+        {
+          "name": "Malik Harrison",
+          "position": "LB",
+          "status": "Limited (practice) - Groin",
+          "trend": [
+            {
+              "date": "2026-11-12",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            }
+          ],
+          "usage_note": "42% def. snaps"
+        },
+        {
+          "name": "Abdul Carter",
+          "position": "LB",
+          "status": "Limited (practice) - Knee",
+          "trend": [
+            {
+              "date": "2026-11-12",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            }
+          ],
+          "usage_note": "76% def. snaps"
+        },
+        {
+          "name": "Colton Hood",
+          "position": "CB",
+          "status": "Limited (practice) - Finger",
+          "trend": [
+            {
+              "date": "2026-11-12",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            }
+          ],
+          "usage_note": null
+        }
+      ],
+      "away_injuries": [
+        {
+          "name": "Lucas Patrick",
+          "position": "C",
+          "status": "DNP (practice) - Concussion",
+          "trend": [
+            {
+              "date": "2026-11-12",
+              "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            }
+          ],
+          "usage_note": "7% off. snaps"
+        },
+        {
+          "name": "Treylon Burks",
+          "position": "WR",
+          "status": "Limited (practice) - Foot",
+          "trend": [
+            {
+              "date": "2026-11-12",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            }
+          ],
+          "usage_note": "10% target share (8 gm) &middot; 60% off. snaps"
+        },
+        {
+          "name": "Colson Yankoff",
+          "position": "TE",
+          "status": "DNP (practice) - Knee",
+          "trend": [
+            {
+              "date": "2026-11-12",
+              "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            }
+          ],
+          "usage_note": "3% target share (3 gm) &middot; 13% off. snaps"
+        }
+      ],
       "situational_note": "",
       "player_impact_entries": {
         "home": [],
         "away": []
       },
-      "spread_current": "-1.5 -115 (11/10)",
+      "spread_current": "-1.5 -120 (11/11)",
       "spread_current_raw": -1.5,
       "spread_history": [
+        "-1.5 -115 (11/10)",
         "-1.5 -110 (11/5)",
         "-1.5 -108 (11/3)",
         "-1.5 -110 (8/31)"
       ],
-      "total_current": "O/U 41.5 (-105.0) (11/10)",
+      "total_current": "O/U 41.5 (+100.0) (11/11)",
       "total_history": [
+        "O/U 41.5 (-105.0) (11/10)",
         "O/U 42.5 (-110.0) (11/9)",
         "O/U 43.5 (-110.0) (11/9)",
         "O/U 45.5 (-105.0) (11/3)",
@@ -143,8 +225,9 @@
         "-1.5 -102 (11/5)",
         "+1.5 -115 (8/31)"
       ],
-      "total_current": "O/U 51.5 (-105.0) (11/10)",
+      "total_current": "O/U 50.5 (-110.0) (11/11)",
       "total_history": [
+        "O/U 51.5 (-105.0) (11/10)",
         "O/U 50.5 (-115.0) (11/9)",
         "O/U 49.5 (-115.0) (11/8)",
         "O/U 50.5 (-120.0) (11/5)",
@@ -215,8 +298,9 @@
         "+3.5 -115 (11/3)",
         "+4.5 -110 (8/31)"
       ],
-      "total_current": "O/U 45.5 (-105.0) (11/9)",
+      "total_current": "O/U 46.5 (-110.0) (11/11)",
       "total_history": [
+        "O/U 45.5 (-105.0) (11/9)",
         "O/U 46.5 (-110.0) (11/5)",
         "O/U 46.5 (-114.0) (11/3)",
         "O/U 45.5 (-110.0) (8/31)"
@@ -290,8 +374,10 @@
         "+3.5 -105 (11/3)",
         "+4.5 -110 (8/31)"
       ],
-      "total_current": "O/U 39.5 (-115.0) (11/9)",
+      "total_current": "O/U 41.5 (-105.0) (11/11)",
       "total_history": [
+        "O/U 40.5 (-110.0) (11/11)",
+        "O/U 39.5 (-115.0) (11/9)",
         "O/U 39.5 (-110.0) (11/3)",
         "O/U 38.5 (-110.0) (8/31)"
       ],
@@ -335,8 +421,8 @@
         },
         {
           "team": "MIN",
-          "depth_chart_starter": "Kyler Murray",
-          "normal_starter_used_for_elite_check": "Kyler Murray",
+          "depth_chart_starter": "Kirk Cousins",
+          "normal_starter_used_for_elite_check": "Kirk Cousins",
           "is_elite_starter": false,
           "backup_starting": false,
           "rookie_starting": false,
@@ -352,9 +438,10 @@
         "home": [],
         "away": []
       },
-      "spread_current": "-3.5 -105 (11/10)",
-      "spread_current_raw": -3.5,
+      "spread_current": "-3.0 -110 (11/11)",
+      "spread_current_raw": -3.0,
       "spread_history": [
+        "-3.5 -105 (11/10)",
         "-4.5 -115 (11/10)",
         "-3.0 -120 (11/9)",
         "-2.5 -120 (11/7)",
@@ -409,8 +496,8 @@
         },
         {
           "team": "MIA",
-          "depth_chart_starter": "Malik Willis",
-          "normal_starter_used_for_elite_check": "Malik Willis",
+          "depth_chart_starter": "Kyle McCord",
+          "normal_starter_used_for_elite_check": "Kyle McCord",
           "is_elite_starter": false,
           "backup_starting": false,
           "rookie_starting": false,
@@ -426,9 +513,11 @@
         "home": [],
         "away": []
       },
-      "spread_current": "-3.5 -105 (11/10)",
+      "spread_current": "-3.5 -115 (11/11)",
       "spread_current_raw": -3.5,
       "spread_history": [
+        "-3.5 -110 (11/11)",
+        "-3.5 -105 (11/10)",
         "-2.5 -110 (11/9)",
         "-1.5 -110 (11/5)",
         "-1.5 -108 (11/3)",
@@ -497,9 +586,10 @@
         "home": [],
         "away": []
       },
-      "spread_current": "-1.5 +100 (11/9)",
-      "spread_current_raw": -1.5,
+      "spread_current": "-2.5 -110 (11/11)",
+      "spread_current_raw": -2.5,
       "spread_history": [
+        "-1.5 +100 (11/9)",
         "+1.5 -110 (11/9)",
         "+1.5 -120 (11/3)",
         "-1.5 -105 (8/31)"
@@ -570,16 +660,18 @@
         "home": [],
         "away": []
       },
-      "spread_current": "+7.5 -110 (11/10)",
+      "spread_current": "+7.5 -105 (11/11)",
       "spread_current_raw": 7.5,
       "spread_history": [
+        "+7.5 -110 (11/10)",
         "+7.5 -115 (11/10)",
         "+8.5 -110 (11/9)",
         "+7.5 -105 (11/3)",
         "+7.0 -105 (8/31)"
       ],
-      "total_current": "O/U 50.5 (-115.0) (11/10)",
+      "total_current": "O/U 50.5 (-120.0) (11/11)",
       "total_history": [
+        "O/U 50.5 (-115.0) (11/10)",
         "O/U 50.5 (-110.0) (11/10)",
         "O/U 51.5 (-105.0) (11/9)",
         "O/U 51.5 (-110.0) (11/3)",
@@ -690,8 +782,8 @@
       "qb_candidates": [
         {
           "team": "ARI",
-          "depth_chart_starter": "Gardner Minshew II",
-          "normal_starter_used_for_elite_check": "Gardner Minshew II",
+          "depth_chart_starter": "Carson Beck",
+          "normal_starter_used_for_elite_check": "Carson Beck",
           "is_elite_starter": false,
           "backup_starting": false,
           "rookie_starting": false,
@@ -728,8 +820,9 @@
         "+7.5 -120 (11/3)",
         "+10.5 -110 (8/31)"
       ],
-      "total_current": "O/U 40.5 (-105.0) (11/10)",
+      "total_current": "O/U 39.5 (-105.0) (11/11)",
       "total_history": [
+        "O/U 40.5 (-105.0) (11/10)",
         "O/U 40.5 (-110.0) (11/9)",
         "O/U 44.5 (-115.0) (11/9)",
         "O/U 47.5 (-110.0) (8/31)"
@@ -762,8 +855,8 @@
       "qb_candidates": [
         {
           "team": "LV",
-          "depth_chart_starter": "Kirk Cousins",
-          "normal_starter_used_for_elite_check": "Kirk Cousins",
+          "depth_chart_starter": "Fernando Mendoza",
+          "normal_starter_used_for_elite_check": "Fernando Mendoza",
           "is_elite_starter": false,
           "backup_starting": false,
           "rookie_starting": false,
@@ -799,8 +892,9 @@
         "+5.5 -115 (11/3)",
         "+7.0 -110 (8/31)"
       ],
-      "total_current": "O/U 40.5 (-115.0) (11/10)",
+      "total_current": "O/U 40.5 (-110.0) (11/11)",
       "total_history": [
+        "O/U 40.5 (-115.0) (11/10)",
         "O/U 43.5 (-105.0) (11/9)",
         "O/U 45.5 (-105.0) (11/3)",
         "O/U 43.5 (-110.0) (8/31)"
@@ -998,9 +1092,10 @@
         "home": [],
         "away": []
       },
-      "spread_current": "-4.5 -110 (11/10)",
+      "spread_current": "-4.5 +100 (11/11)",
       "spread_current_raw": -4.5,
       "spread_history": [
+        "-4.5 -110 (11/10)",
         "-5.5 -105 (11/9)",
         "-3.5 -115 (11/9)",
         "-3.0 -105 (11/8)",
