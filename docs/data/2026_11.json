@@ -126,13 +126,15 @@
         "home": [],
         "away": []
       },
-      "spread_current": "-16.5 -105 (11/10)",
+      "spread_current": "-16.5 -110 (11/12)",
       "spread_current_raw": -16.5,
       "spread_history": [
+        "-16.5 -105 (11/10)",
         "-11.5 -110 (8/31)"
       ],
-      "total_current": "O/U 46.5 (-115.0) (11/10)",
+      "total_current": "O/U 46.5 (-105.0) (11/12)",
       "total_history": [
+        "O/U 46.5 (-115.0) (11/10)",
         "O/U 47.5 (-110.0) (8/31)"
       ],
       "home_score": null,
@@ -198,8 +200,9 @@
       "spread_history": [
         "+4.5 -110 (8/31)"
       ],
-      "total_current": "O/U 43.5 (-115.0) (11/10)",
+      "total_current": "O/U 44.5 (-110.0) (11/12)",
       "total_history": [
+        "O/U 43.5 (-115.0) (11/10)",
         "O/U 46.5 (-110.0) (8/31)"
       ],
       "home_score": null,
@@ -653,14 +656,16 @@
         "home": [],
         "away": []
       },
-      "spread_current": "-7.5 -110 (11/11)",
+      "spread_current": "-7.5 -120 (11/12)",
       "spread_current_raw": -7.5,
       "spread_history": [
+        "-7.5 -110 (11/11)",
         "-7.5 -105 (11/10)",
         "-7.5 -110 (8/31)"
       ],
-      "total_current": "O/U 40.5 (-105.0) (11/10)",
+      "total_current": "O/U 40.5 (-115.0) (11/12)",
       "total_history": [
+        "O/U 40.5 (-105.0) (11/10)",
         "O/U 41.5 (-110.0) (8/31)"
       ],
       "home_score": null,
