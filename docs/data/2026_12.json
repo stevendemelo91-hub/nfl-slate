@@ -58,11 +58,15 @@
         "home": [],
         "away": []
       },
-      "spread_current": "-5.5 -105 (8/31)",
-      "spread_current_raw": -5.5,
-      "spread_history": [],
-      "total_current": "O/U 48.5 (-105.0) (8/31)",
-      "total_history": [],
+      "spread_current": "-3.5 -120 (11/17)",
+      "spread_current_raw": -3.5,
+      "spread_history": [
+        "-5.5 -105 (8/31)"
+      ],
+      "total_current": "O/U 45.5 (-105.0) (11/17)",
+      "total_history": [
+        "O/U 48.5 (-105.0) (8/31)"
+      ],
       "home_score": null,
       "away_score": null,
       "is_final": false
@@ -123,11 +127,15 @@
         "home": [],
         "away": []
       },
-      "spread_current": "-2.5 -110 (8/31)",
-      "spread_current_raw": -2.5,
-      "spread_history": [],
-      "total_current": "O/U 53.5 (-115.0) (8/31)",
-      "total_history": [],
+      "spread_current": "+2.5 +100 (11/17)",
+      "spread_current_raw": 2.5,
+      "spread_history": [
+        "-2.5 -110 (8/31)"
+      ],
+      "total_current": "O/U 54.5 (-110.0) (11/17)",
+      "total_history": [
+        "O/U 53.5 (-115.0) (8/31)"
+      ],
       "home_score": null,
       "away_score": null,
       "is_final": false
@@ -184,11 +192,15 @@
         "home": [],
         "away": []
       },
-      "spread_current": "-1.5 -110 (8/31)",
-      "spread_current_raw": -1.5,
-      "spread_history": [],
-      "total_current": "O/U 49.5 (-115.0) (8/31)",
-      "total_history": [],
+      "spread_current": "-7.5 -120 (11/17)",
+      "spread_current_raw": -7.5,
+      "spread_history": [
+        "-1.5 -110 (8/31)"
+      ],
+      "total_current": "O/U 47.5 (-105.0) (11/17)",
+      "total_history": [
+        "O/U 49.5 (-115.0) (8/31)"
+      ],
       "home_score": null,
       "away_score": null,
       "is_final": false
@@ -244,11 +256,15 @@
         "home": [],
         "away": []
       },
-      "spread_current": "-2.5 -118 (8/31)",
+      "spread_current": "-2.5 -120 (11/17)",
       "spread_current_raw": -2.5,
-      "spread_history": [],
-      "total_current": "O/U 50.5 (-104.0) (8/31)",
-      "total_history": [],
+      "spread_history": [
+        "-2.5 -118 (8/31)"
+      ],
+      "total_current": "O/U 50.5 (+100.0) (11/17)",
+      "total_history": [
+        "O/U 50.5 (-104.0) (8/31)"
+      ],
       "home_score": null,
       "away_score": null,
       "is_final": false
@@ -305,11 +321,15 @@
         "home": [],
         "away": []
       },
-      "spread_current": "+1.5 -104 (8/31)",
+      "spread_current": "+1.5 -110 (11/17)",
       "spread_current_raw": 1.5,
-      "spread_history": [],
-      "total_current": "O/U 39.5 (-110.0) (8/31)",
-      "total_history": [],
+      "spread_history": [
+        "+1.5 -104 (8/31)"
+      ],
+      "total_current": "O/U 41.5 (-105.0) (11/17)",
+      "total_history": [
+        "O/U 39.5 (-110.0) (8/31)"
+      ],
       "home_score": null,
       "away_score": null,
       "is_final": false
@@ -368,75 +388,15 @@
         "home": [],
         "away": []
       },
-      "spread_current": "-6.5 -110 (8/31)",
-      "spread_current_raw": -6.5,
-      "spread_history": [],
-      "total_current": "O/U 48.5 (-110.0) (8/31)",
-      "total_history": [],
-      "home_score": null,
-      "away_score": null,
-      "is_final": false
-    },
-    {
-      "game_id": "2026_12_LV_CLE",
-      "home_team": "CLE",
-      "away_team": "LV",
-      "gameday": "2026-11-29",
-      "gametime": "13:00",
-      "weekday": "Sunday",
-      "home_win_probability": 0.487,
-      "away_win_probability": 0.513,
-      "favored": "LV",
-      "raw_strength_score": -0.05,
-      "feature_breakdown": {
-        "rank_coefficient_home": 0.5,
-        "third_down_coefficient_home": -1.0,
-        "ypp_off_coefficient_home": -1.0,
-        "ypp_def_coefficient_home": 1.0,
-        "turnover_coefficient_home": -1.0,
-        "rest_coefficient_home": 1.0,
-        "road_trip_coefficient_home": 1.0,
-        "streak_coefficient_home": -0.5,
-        "schedule_milestones_coefficient_home": -1.0
-      },
-      "power_rating_implied_spread": -0.08,
-      "neutral_site": false,
-      "qb_candidates": [
-        {
-          "team": "CLE",
-          "depth_chart_starter": "Deshaun Watson",
-          "normal_starter_used_for_elite_check": "Deshaun Watson",
-          "is_elite_starter": false,
-          "backup_starting": false,
-          "rookie_starting": false,
-          "qb_value": 0.0,
-          "notes": [],
-          "depth_chart_conflict": null
-        },
-        {
-          "team": "LV",
-          "depth_chart_starter": "Fernando Mendoza",
-          "normal_starter_used_for_elite_check": "Fernando Mendoza",
-          "is_elite_starter": false,
-          "backup_starting": false,
-          "rookie_starting": false,
-          "qb_value": 0.0,
-          "notes": [],
-          "depth_chart_conflict": null
-        }
+      "spread_current": "-9.5 -115 (11/17)",
+      "spread_current_raw": -9.5,
+      "spread_history": [
+        "-6.5 -110 (8/31)"
       ],
-      "home_injuries": [],
-      "away_injuries": [],
-      "situational_note": "",
-      "player_impact_entries": {
-        "home": [],
-        "away": []
-      },
-      "spread_current": "-1.5 -110 (8/31)",
-      "spread_current_raw": -1.5,
-      "spread_history": [],
-      "total_current": "O/U 39.5 (-110.0) (8/31)",
-      "total_history": [],
+      "total_current": "O/U 52.5 (-120.0) (11/17)",
+      "total_history": [
+        "O/U 48.5 (-110.0) (8/31)"
+      ],
       "home_score": null,
       "away_score": null,
       "is_final": false
@@ -498,11 +458,15 @@
         "home": [],
         "away": []
       },
-      "spread_current": "-1.5 -110 (8/31)",
-      "spread_current_raw": -1.5,
-      "spread_history": [],
-      "total_current": "O/U 45.5 (-110.0) (8/31)",
-      "total_history": [],
+      "spread_current": "-5.5 -120 (11/17)",
+      "spread_current_raw": -5.5,
+      "spread_history": [
+        "-1.5 -110 (8/31)"
+      ],
+      "total_current": "O/U 43.5 (-120.0) (11/17)",
+      "total_history": [
+        "O/U 45.5 (-110.0) (8/31)"
+      ],
       "home_score": null,
       "away_score": null,
       "is_final": false
@@ -562,11 +526,81 @@
         "home": [],
         "away": []
       },
-      "spread_current": "-2.5 -110 (8/31)",
-      "spread_current_raw": -2.5,
-      "spread_history": [],
-      "total_current": "O/U 47.5 (-110.0) (8/31)",
-      "total_history": [],
+      "spread_current": "+4.5 -115 (11/17)",
+      "spread_current_raw": 4.5,
+      "spread_history": [
+        "-2.5 -110 (8/31)"
+      ],
+      "total_current": "O/U 44.5 (-105.0) (11/17)",
+      "total_history": [
+        "O/U 47.5 (-110.0) (8/31)"
+      ],
+      "home_score": null,
+      "away_score": null,
+      "is_final": false
+    },
+    {
+      "game_id": "2026_12_TEN_JAX",
+      "home_team": "JAX",
+      "away_team": "TEN",
+      "gameday": "2026-11-29",
+      "gametime": "13:00",
+      "weekday": "Sunday",
+      "home_win_probability": 0.789,
+      "away_win_probability": 0.211,
+      "favored": "JAX",
+      "raw_strength_score": 1.32,
+      "feature_breakdown": {
+        "rank_coefficient_home": 1.0,
+        "third_down_coefficient_home": 1.0,
+        "ypp_off_coefficient_home": 1.0,
+        "ypp_def_coefficient_home": 1.0,
+        "turnover_coefficient_home": 1.0,
+        "road_trip_coefficient_home": 1.0,
+        "streak_coefficient_home": -1.0
+      },
+      "power_rating_implied_spread": 6.92,
+      "neutral_site": false,
+      "qb_candidates": [
+        {
+          "team": "JAX",
+          "depth_chart_starter": "Trevor Lawrence",
+          "normal_starter_used_for_elite_check": "Trevor Lawrence",
+          "is_elite_starter": false,
+          "backup_starting": false,
+          "rookie_starting": false,
+          "qb_value": 0.0,
+          "notes": [],
+          "depth_chart_conflict": null
+        },
+        {
+          "team": "TEN",
+          "depth_chart_starter": "Cam Ward",
+          "normal_starter_used_for_elite_check": "Cam Ward",
+          "is_elite_starter": false,
+          "backup_starting": false,
+          "rookie_starting": false,
+          "qb_value": 0.0,
+          "notes": [],
+          "depth_chart_conflict": null
+        }
+      ],
+      "home_injuries": [],
+      "away_injuries": [],
+      "situational_note": "",
+      "player_impact_entries": {
+        "home": [],
+        "away": []
+      },
+      "spread_current": "-14.5 -105 (11/17)",
+      "spread_current_raw": -14.5,
+      "spread_history": [
+        "-5.5 -110 (8/31)"
+      ],
+      "total_current": "O/U 47.5 (-110.0) (11/17)",
+      "total_history": [
+        "O/U 45.5 (-110.0) (8/31)"
+      ],
       "home_score": null,
       "away_score": null,
       "is_final": false
@@ -623,11 +657,15 @@
         "home": [],
         "away": []
       },
-      "spread_current": "-1.5 -110 (8/31)",
-      "spread_current_raw": -1.5,
-      "spread_history": [],
-      "total_current": "O/U 40.5 (-110.0) (8/31)",
-      "total_history": [],
+      "spread_current": "+3.0 +100 (11/17)",
+      "spread_current_raw": 3.0,
+      "spread_history": [
+        "-1.5 -110 (8/31)"
+      ],
+      "total_current": "O/U 41.5 (-110.0) (11/17)",
+      "total_history": [
+        "O/U 40.5 (-110.0) (8/31)"
+      ],
       "home_score": null,
       "away_score": null,
       "is_final": false
@@ -686,42 +724,45 @@
         "home": [],
         "away": []
       },
-      "spread_current": "-4.5 -110 (8/31)",
-      "spread_current_raw": -4.5,
-      "spread_history": [],
-      "total_current": "O/U 43.5 (-110.0) (8/31)",
-      "total_history": [],
+      "spread_current": "-7.0 -115 (11/17)",
+      "spread_current_raw": -7.0,
+      "spread_history": [
+        "-4.5 -110 (8/31)"
+      ],
+      "total_current": "O/U 42.5 (-110.0) (11/17)",
+      "total_history": [
+        "O/U 43.5 (-110.0) (8/31)"
+      ],
       "home_score": null,
       "away_score": null,
       "is_final": false
     },
     {
-      "game_id": "2026_12_TEN_JAX",
-      "home_team": "JAX",
-      "away_team": "TEN",
+      "game_id": "2026_12_NE_LAC",
+      "home_team": "LAC",
+      "away_team": "NE",
       "gameday": "2026-11-29",
       "gametime": "16:05",
       "weekday": "Sunday",
-      "home_win_probability": 0.789,
-      "away_win_probability": 0.211,
-      "favored": "JAX",
-      "raw_strength_score": 1.32,
+      "home_win_probability": 0.506,
+      "away_win_probability": 0.494,
+      "favored": "LAC",
+      "raw_strength_score": 0.02,
       "feature_breakdown": {
-        "rank_coefficient_home": 1.0,
-        "third_down_coefficient_home": 1.0,
-        "ypp_off_coefficient_home": 1.0,
+        "third_down_coefficient_home": -1.0,
+        "ypp_off_coefficient_home": -1.0,
         "ypp_def_coefficient_home": 1.0,
-        "turnover_coefficient_home": 1.0,
-        "road_trip_coefficient_home": 1.0,
-        "streak_coefficient_home": -1.0
+        "rest_coefficient_home": -1.0,
+        "road_trip_coefficient_home": 0.5,
+        "streak_coefficient_home": -0.5
       },
-      "power_rating_implied_spread": 6.92,
+      "power_rating_implied_spread": 2.42,
       "neutral_site": false,
       "qb_candidates": [
         {
-          "team": "JAX",
-          "depth_chart_starter": "Trevor Lawrence",
-          "normal_starter_used_for_elite_check": "Trevor Lawrence",
+          "team": "LAC",
+          "depth_chart_starter": "Justin Herbert",
+          "normal_starter_used_for_elite_check": "Justin Herbert",
           "is_elite_starter": false,
           "backup_starting": false,
           "rookie_starting": false,
@@ -730,10 +771,10 @@
           "depth_chart_conflict": null
         },
         {
-          "team": "TEN",
-          "depth_chart_starter": "Cam Ward",
-          "normal_starter_used_for_elite_check": "Cam Ward",
-          "is_elite_starter": false,
+          "team": "NE",
+          "depth_chart_starter": "Drake Maye",
+          "normal_starter_used_for_elite_check": "Drake Maye",
+          "is_elite_starter": true,
           "backup_starting": false,
           "rookie_starting": false,
           "qb_value": 0.0,
@@ -748,11 +789,15 @@
         "home": [],
         "away": []
       },
-      "spread_current": "-5.5 -110 (8/31)",
+      "spread_current": "-5.5 -115 (11/17)",
       "spread_current_raw": -5.5,
-      "spread_history": [],
-      "total_current": "O/U 45.5 (-110.0) (8/31)",
-      "total_history": [],
+      "spread_history": [
+        "-1.5 -110 (8/31)"
+      ],
+      "total_current": "O/U 40.5 (+100.0) (11/17)",
+      "total_history": [
+        "O/U 45.5 (-110.0) (8/31)"
+      ],
       "home_score": null,
       "away_score": null,
       "is_final": false
@@ -811,11 +856,15 @@
         "home": [],
         "away": []
       },
-      "spread_current": "+4.5 -110 (8/31)",
-      "spread_current_raw": 4.5,
-      "spread_history": [],
-      "total_current": "O/U 47.5 (-110.0) (8/31)",
-      "total_history": [],
+      "spread_current": "+6.5 -105 (11/17)",
+      "spread_current_raw": 6.5,
+      "spread_history": [
+        "+4.5 -110 (8/31)"
+      ],
+      "total_current": "O/U 41.5 (-115.0) (11/17)",
+      "total_history": [
+        "O/U 47.5 (-110.0) (8/31)"
+      ],
       "home_score": null,
       "away_score": null,
       "is_final": false
@@ -873,40 +922,48 @@
         "home": [],
         "away": []
       },
-      "spread_current": "+1.5 -125 (8/31)",
-      "spread_current_raw": 1.5,
-      "spread_history": [],
-      "total_current": "O/U 46.5 (-110.0) (8/31)",
-      "total_history": [],
+      "spread_current": "-2.5 -120 (11/17)",
+      "spread_current_raw": -2.5,
+      "spread_history": [
+        "+1.5 -125 (8/31)"
+      ],
+      "total_current": "O/U 46.5 (-120.0) (11/17)",
+      "total_history": [
+        "O/U 46.5 (-110.0) (8/31)"
+      ],
       "home_score": null,
       "away_score": null,
       "is_final": false
     },
     {
-      "game_id": "2026_12_NE_LAC",
-      "home_team": "LAC",
-      "away_team": "NE",
+      "game_id": "2026_12_LV_CLE",
+      "home_team": "CLE",
+      "away_team": "LV",
       "gameday": "2026-11-29",
       "gametime": "20:20",
       "weekday": "Sunday",
-      "home_win_probability": 0.456,
-      "away_win_probability": 0.544,
-      "favored": "NE",
-      "raw_strength_score": -0.18,
+      "home_win_probability": 0.487,
+      "away_win_probability": 0.513,
+      "favored": "LV",
+      "raw_strength_score": -0.05,
       "feature_breakdown": {
+        "rank_coefficient_home": 0.5,
         "third_down_coefficient_home": -1.0,
         "ypp_off_coefficient_home": -1.0,
-        "ypp_def_coefficient_home": -1.0,
-        "rest_coefficient_home": -1.0,
-        "road_trip_coefficient_home": 0.5
+        "ypp_def_coefficient_home": 1.0,
+        "turnover_coefficient_home": -1.0,
+        "rest_coefficient_home": 1.0,
+        "road_trip_coefficient_home": 1.0,
+        "streak_coefficient_home": -0.5,
+        "schedule_milestones_coefficient_home": -1.0
       },
-      "power_rating_implied_spread": 2.42,
+      "power_rating_implied_spread": -0.08,
       "neutral_site": false,
       "qb_candidates": [
         {
-          "team": "LAC",
-          "depth_chart_starter": "Justin Herbert",
-          "normal_starter_used_for_elite_check": "Justin Herbert",
+          "team": "CLE",
+          "depth_chart_starter": "Deshaun Watson",
+          "normal_starter_used_for_elite_check": "Deshaun Watson",
           "is_elite_starter": false,
           "backup_starting": false,
           "rookie_starting": false,
@@ -915,10 +972,10 @@
           "depth_chart_conflict": null
         },
         {
-          "team": "NE",
-          "depth_chart_starter": "Drake Maye",
-          "normal_starter_used_for_elite_check": "Drake Maye",
-          "is_elite_starter": true,
+          "team": "LV",
+          "depth_chart_starter": "Fernando Mendoza",
+          "normal_starter_used_for_elite_check": "Fernando Mendoza",
+          "is_elite_starter": false,
           "backup_starting": false,
           "rookie_starting": false,
           "qb_value": 0.0,
@@ -933,11 +990,15 @@
         "home": [],
         "away": []
       },
-      "spread_current": "-1.5 -110 (8/31)",
-      "spread_current_raw": -1.5,
-      "spread_history": [],
-      "total_current": "O/U 45.5 (-110.0) (8/31)",
-      "total_history": [],
+      "spread_current": "-4.5 -105 (11/17)",
+      "spread_current_raw": -4.5,
+      "spread_history": [
+        "-1.5 -110 (8/31)"
+      ],
+      "total_current": "O/U 41.5 (-105.0) (11/17)",
+      "total_history": [
+        "O/U 39.5 (-110.0) (8/31)"
+      ],
       "home_score": null,
       "away_score": null,
       "is_final": false
@@ -992,11 +1053,15 @@
         "home": [],
         "away": []
       },
-      "spread_current": "-3.5 -110 (8/31)",
-      "spread_current_raw": -3.5,
-      "spread_history": [],
-      "total_current": "O/U 44.5 (-110.0) (8/31)",
-      "total_history": [],
+      "spread_current": "-1.5 -120 (11/17)",
+      "spread_current_raw": -1.5,
+      "spread_history": [
+        "-3.5 -110 (8/31)"
+      ],
+      "total_current": "O/U 43.5 (-110.0) (11/17)",
+      "total_history": [
+        "O/U 44.5 (-110.0) (8/31)"
+      ],
       "home_score": null,
       "away_score": null,
       "is_final": false
