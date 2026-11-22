@@ -58,9 +58,10 @@
         "home": [],
         "away": []
       },
-      "spread_current": "-3.5 -108 (11/20)",
-      "spread_current_raw": -3.5,
+      "spread_current": "-3.0 -115 (11/21)",
+      "spread_current_raw": -3.0,
       "spread_history": [
+        "-3.5 -108 (11/20)",
         "-3.5 -120 (11/17)",
         "-5.5 -105 (8/31)"
       ],
@@ -397,9 +398,10 @@
         "home": [],
         "away": []
       },
-      "spread_current": "-10.5 +100 (11/18)",
+      "spread_current": "-10.5 -105 (11/21)",
       "spread_current_raw": -10.5,
       "spread_history": [
+        "-10.5 +100 (11/18)",
         "-9.5 -115 (11/17)",
         "-6.5 -110 (8/31)"
       ],
@@ -475,8 +477,9 @@
         "-5.5 -120 (11/17)",
         "-1.5 -110 (8/31)"
       ],
-      "total_current": "O/U 43.5 (-110.0) (11/20)",
+      "total_current": "O/U 44.5 (-105.0) (11/21)",
       "total_history": [
+        "O/U 43.5 (-110.0) (11/20)",
         "O/U 43.5 (-120.0) (11/17)",
         "O/U 45.5 (-110.0) (8/31)"
       ],
@@ -510,9 +513,9 @@
       "qb_candidates": [
         {
           "team": "IND",
-          "depth_chart_starter": "Daniel Jones",
-          "normal_starter_used_for_elite_check": "Daniel Jones",
-          "is_elite_starter": true,
+          "depth_chart_starter": "Anthony Richardson Sr.",
+          "normal_starter_used_for_elite_check": "Anthony Richardson Sr.",
+          "is_elite_starter": false,
           "backup_starting": false,
           "rookie_starting": false,
           "qb_value": 0.0,
@@ -547,8 +550,9 @@
         "+4.5 -115 (11/17)",
         "-2.5 -110 (8/31)"
       ],
-      "total_current": "O/U 43.5 (-105.0) (11/20)",
+      "total_current": "O/U 42.5 (-105.0) (11/21)",
       "total_history": [
+        "O/U 43.5 (-105.0) (11/20)",
         "O/U 43.5 (-110.0) (11/20)",
         "O/U 44.5 (-105.0) (11/17)",
         "O/U 47.5 (-110.0) (8/31)"
@@ -809,15 +813,17 @@
         "home": [],
         "away": []
       },
-      "spread_current": "-5.5 +104 (11/20)",
-      "spread_current_raw": -5.5,
+      "spread_current": "-4.5 -110 (11/21)",
+      "spread_current_raw": -4.5,
       "spread_history": [
+        "-5.5 +104 (11/20)",
         "-5.5 -105 (11/18)",
         "-5.5 -115 (11/17)",
         "-1.5 -110 (8/31)"
       ],
-      "total_current": "O/U 39.5 (-110.0) (11/20)",
+      "total_current": "O/U 39.5 (+100.0) (11/21)",
       "total_history": [
+        "O/U 39.5 (-110.0) (11/20)",
         "O/U 40.5 (+100.0) (11/17)",
         "O/U 45.5 (-110.0) (8/31)"
       ],
@@ -1083,8 +1089,9 @@
         "-1.5 -120 (11/17)",
         "-3.5 -110 (8/31)"
       ],
-      "total_current": "O/U 43.5 (-110.0) (11/17)",
+      "total_current": "O/U 42.5 (-110.0) (11/21)",
       "total_history": [
+        "O/U 43.5 (-110.0) (11/17)",
         "O/U 44.5 (-110.0) (8/31)"
       ],
       "home_score": null,
