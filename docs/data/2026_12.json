@@ -58,15 +58,19 @@
         "home": [],
         "away": []
       },
-      "spread_current": "-3.0 -115 (11/21)",
-      "spread_current_raw": -3.0,
+      "spread_current": "-2.5 -110 (11/23)",
+      "spread_current_raw": -2.5,
       "spread_history": [
+        "-3.0 +100 (11/23)",
+        "-3.0 -115 (11/21)",
         "-3.5 -108 (11/20)",
         "-3.5 -120 (11/17)",
         "-5.5 -105 (8/31)"
       ],
-      "total_current": "O/U 45.5 (-104.0) (11/18)",
+      "total_current": "O/U 44.5 (+100.0) (11/23)",
       "total_history": [
+        "O/U 44.5 (-110.0) (11/23)",
+        "O/U 45.5 (-104.0) (11/18)",
         "O/U 45.5 (-105.0) (11/17)",
         "O/U 48.5 (-105.0) (8/31)"
       ],
@@ -130,9 +134,12 @@
         "home": [],
         "away": []
       },
-      "spread_current": "+2.5 +100 (11/17)",
+      "spread_current": "+2.5 -105 (11/23)",
       "spread_current_raw": 2.5,
       "spread_history": [
+        "+2.5 -112 (11/23)",
+        "+2.5 -110 (11/23)",
+        "+2.5 +100 (11/17)",
         "-2.5 -110 (8/31)"
       ],
       "total_current": "O/U 55.5 (-105.0) (11/19)",
@@ -196,13 +203,15 @@
         "home": [],
         "away": []
       },
-      "spread_current": "-7.5 -120 (11/17)",
-      "spread_current_raw": -7.5,
+      "spread_current": "-8.5 -105 (11/23)",
+      "spread_current_raw": -8.5,
       "spread_history": [
+        "-7.5 -120 (11/17)",
         "-1.5 -110 (8/31)"
       ],
-      "total_current": "O/U 47.5 (-105.0) (11/17)",
+      "total_current": "O/U 48.5 (-105.0) (11/23)",
       "total_history": [
+        "O/U 47.5 (-105.0) (11/17)",
         "O/U 49.5 (-115.0) (8/31)"
       ],
       "home_score": null,
@@ -260,14 +269,17 @@
         "home": [],
         "away": []
       },
-      "spread_current": "-3.0 -105 (11/19)",
-      "spread_current_raw": -3.0,
+      "spread_current": "-2.5 -120 (11/23)",
+      "spread_current_raw": -2.5,
       "spread_history": [
+        "-3.0 -105 (11/19)",
         "-2.5 -120 (11/17)",
         "-2.5 -118 (8/31)"
       ],
-      "total_current": "O/U 50.5 (-120.0) (11/22)",
+      "total_current": "O/U 48.5 (-108.0) (11/23)",
       "total_history": [
+        "O/U 50.5 (-105.0) (11/23)",
+        "O/U 50.5 (-120.0) (11/22)",
         "O/U 50.5 (-115.0) (11/19)",
         "O/U 50.5 (-106.0) (11/18)",
         "O/U 50.5 (+100.0) (11/17)",
@@ -328,14 +340,19 @@
         "home": [],
         "away": []
       },
-      "spread_current": "+1.5 -105 (11/20)",
-      "spread_current_raw": 1.5,
+      "spread_current": "+2.5 -105 (11/23)",
+      "spread_current_raw": 2.5,
       "spread_history": [
+        "+3.0 -115 (11/23)",
+        "+1.5 -105 (11/20)",
         "+1.5 -110 (11/17)",
         "+1.5 -104 (8/31)"
       ],
-      "total_current": "O/U 40.5 (-110.0) (11/18)",
+      "total_current": "O/U 37.5 (-115.0) (11/23)",
       "total_history": [
+        "O/U 38.5 (-105.0) (11/23)",
+        "O/U 38.5 (-110.0) (11/23)",
+        "O/U 40.5 (-110.0) (11/18)",
         "O/U 41.5 (-105.0) (11/17)",
         "O/U 39.5 (-110.0) (8/31)"
       ],
@@ -350,10 +367,10 @@
       "gameday": "2026-11-29",
       "gametime": "13:00",
       "weekday": "Sunday",
-      "home_win_probability": 0.775,
-      "away_win_probability": 0.225,
+      "home_win_probability": 0.749,
+      "away_win_probability": 0.251,
       "favored": "CIN",
-      "raw_strength_score": 1.23,
+      "raw_strength_score": 1.09,
       "feature_breakdown": {
         "rank_coefficient_home": 1.0,
         "third_down_coefficient_home": 1.0,
@@ -362,7 +379,7 @@
         "turnover_coefficient_home": 1.0,
         "rest_coefficient_home": -0.5,
         "road_trip_coefficient_home": 0.5,
-        "streak_coefficient_home": -1.0
+        "streak_coefficient_home": -0.5
       },
       "power_rating_implied_spread": 6.92,
       "neutral_site": false,
@@ -397,15 +414,17 @@
         "home": [],
         "away": []
       },
-      "spread_current": "-10.5 -105 (11/21)",
+      "spread_current": "-10.5 +100 (11/23)",
       "spread_current_raw": -10.5,
       "spread_history": [
+        "-10.5 -105 (11/21)",
         "-10.5 +100 (11/18)",
         "-9.5 -115 (11/17)",
         "-6.5 -110 (8/31)"
       ],
-      "total_current": "O/U 52.5 (-120.0) (11/17)",
+      "total_current": "O/U 51.5 (-110.0) (11/23)",
       "total_history": [
+        "O/U 52.5 (-120.0) (11/17)",
         "O/U 48.5 (-110.0) (8/31)"
       ],
       "home_score": null,
@@ -469,15 +488,19 @@
         "home": [],
         "away": []
       },
-      "spread_current": "-6.5 -115 (11/20)",
+      "spread_current": "-6.5 -110 (11/23)",
       "spread_current_raw": -6.5,
       "spread_history": [
+        "-6.5 -115 (11/20)",
         "-6.5 -106 (11/19)",
         "-5.5 -120 (11/17)",
         "-1.5 -110 (8/31)"
       ],
-      "total_current": "O/U 44.5 (-105.0) (11/21)",
+      "total_current": "O/U 46.5 (-110.0) (11/23)",
       "total_history": [
+        "O/U 46.5 (-115.0) (11/23)",
+        "O/U 46.5 (-110.0) (11/23)",
+        "O/U 44.5 (-105.0) (11/21)",
         "O/U 43.5 (-110.0) (11/20)",
         "O/U 43.5 (-120.0) (11/17)",
         "O/U 45.5 (-110.0) (8/31)"
@@ -542,15 +565,17 @@
         "home": [],
         "away": []
       },
-      "spread_current": "+6.5 -115 (11/20)",
-      "spread_current_raw": 6.5,
+      "spread_current": "+7.0 -115 (11/23)",
+      "spread_current_raw": 7.0,
       "spread_history": [
+        "+6.5 -115 (11/20)",
         "+4.5 -105 (11/20)",
         "+4.5 -115 (11/17)",
         "-2.5 -110 (8/31)"
       ],
-      "total_current": "O/U 42.5 (-105.0) (11/21)",
+      "total_current": "O/U 42.5 (+100.0) (11/23)",
       "total_history": [
+        "O/U 42.5 (-105.0) (11/21)",
         "O/U 43.5 (-105.0) (11/20)",
         "O/U 43.5 (-110.0) (11/20)",
         "O/U 44.5 (-105.0) (11/17)",
@@ -613,13 +638,16 @@
         "home": [],
         "away": []
       },
-      "spread_current": "-14.5 -105 (11/17)",
+      "spread_current": "-14.5 -105 (11/23)",
       "spread_current_raw": -14.5,
       "spread_history": [
+        "-13.5 -115 (11/23)",
+        "-14.5 -105 (11/17)",
         "-5.5 -110 (8/31)"
       ],
-      "total_current": "O/U 47.5 (-115.0) (11/18)",
+      "total_current": "O/U 47.5 (-105.0) (11/23)",
       "total_history": [
+        "O/U 47.5 (-115.0) (11/18)",
         "O/U 47.5 (-110.0) (11/17)",
         "O/U 45.5 (-110.0) (8/31)"
       ],
@@ -680,9 +708,10 @@
         "home": [],
         "away": []
       },
-      "spread_current": "+3.0 +100 (11/17)",
-      "spread_current_raw": 3.0,
+      "spread_current": "+3.5 -105 (11/23)",
+      "spread_current_raw": 3.5,
       "spread_history": [
+        "+3.0 +100 (11/17)",
         "-1.5 -110 (8/31)"
       ],
       "total_current": "O/U 41.5 (-110.0) (11/17)",
@@ -747,14 +776,17 @@
         "home": [],
         "away": []
       },
-      "spread_current": "-7.0 -105 (11/18)",
-      "spread_current_raw": -7.0,
+      "spread_current": "-6.5 -112 (11/23)",
+      "spread_current_raw": -6.5,
       "spread_history": [
+        "-7.0 -105 (11/18)",
         "-7.0 -115 (11/17)",
         "-4.5 -110 (8/31)"
       ],
-      "total_current": "O/U 42.5 (-110.0) (11/17)",
+      "total_current": "O/U 41.5 (-120.0) (11/23)",
       "total_history": [
+        "O/U 42.5 (-105.0) (11/23)",
+        "O/U 42.5 (-110.0) (11/17)",
         "O/U 43.5 (-110.0) (8/31)"
       ],
       "home_score": null,
@@ -813,17 +845,20 @@
         "home": [],
         "away": []
       },
-      "spread_current": "-3.5 -110 (11/22)",
-      "spread_current_raw": -3.5,
+      "spread_current": "-1.5 -105 (11/23)",
+      "spread_current_raw": -1.5,
       "spread_history": [
+        "-3.5 -110 (11/22)",
         "-4.5 -110 (11/21)",
         "-5.5 +104 (11/20)",
         "-5.5 -105 (11/18)",
         "-5.5 -115 (11/17)",
         "-1.5 -110 (8/31)"
       ],
-      "total_current": "O/U 39.5 (+100.0) (11/21)",
+      "total_current": "O/U 35.5 (-110.0) (11/23)",
       "total_history": [
+        "O/U 36.5 (-110.0) (11/23)",
+        "O/U 39.5 (+100.0) (11/21)",
         "O/U 39.5 (-110.0) (11/20)",
         "O/U 40.5 (+100.0) (11/17)",
         "O/U 45.5 (-110.0) (8/31)"
@@ -839,10 +874,10 @@
       "gameday": "2026-11-29",
       "gametime": "16:25",
       "weekday": "Sunday",
-      "home_win_probability": 0.432,
-      "away_win_probability": 0.568,
+      "home_win_probability": 0.398,
+      "away_win_probability": 0.602,
       "favored": "WAS",
-      "raw_strength_score": -0.27,
+      "raw_strength_score": -0.41,
       "feature_breakdown": {
         "rank_coefficient_home": -1.0,
         "third_down_coefficient_home": 1.0,
@@ -851,7 +886,7 @@
         "turnover_coefficient_home": -1.0,
         "rest_coefficient_home": 0.5,
         "road_trip_coefficient_home": 0.5,
-        "streak_coefficient_home": 0.5
+        "streak_coefficient_home": 1.0
       },
       "power_rating_implied_spread": -0.33,
       "neutral_site": false,
@@ -886,13 +921,15 @@
         "home": [],
         "away": []
       },
-      "spread_current": "+6.5 -105 (11/17)",
-      "spread_current_raw": 6.5,
+      "spread_current": "+7.0 -110 (11/23)",
+      "spread_current_raw": 7.0,
       "spread_history": [
+        "+6.5 -105 (11/17)",
         "+4.5 -110 (8/31)"
       ],
-      "total_current": "O/U 41.5 (-115.0) (11/17)",
+      "total_current": "O/U 40.5 (-110.0) (11/23)",
       "total_history": [
+        "O/U 41.5 (-115.0) (11/17)",
         "O/U 47.5 (-110.0) (8/31)"
       ],
       "home_score": null,
@@ -906,12 +943,12 @@
       "gameday": "2026-11-29",
       "gametime": "16:25",
       "weekday": "Sunday",
-      "home_win_probability": 0.722,
-      "away_win_probability": 0.278,
+      "home_win_probability": 0.698,
+      "away_win_probability": 0.302,
       "favored": "SF",
-      "raw_strength_score": 0.95,
+      "raw_strength_score": 0.84,
       "feature_breakdown": {
-        "rank_coefficient_home": 1.0,
+        "rank_coefficient_home": 0.5,
         "third_down_coefficient_home": 1.0,
         "ypp_off_coefficient_home": 1.0,
         "ypp_def_coefficient_home": -1.0,
@@ -952,14 +989,19 @@
         "home": [],
         "away": []
       },
-      "spread_current": "-2.5 -105 (11/22)",
-      "spread_current_raw": -2.5,
+      "spread_current": "-3.0 -115 (11/23)",
+      "spread_current_raw": -3.0,
       "spread_history": [
+        "-3.0 -110 (11/23)",
+        "-2.5 -105 (11/22)",
         "-2.5 -120 (11/17)",
         "+1.5 -125 (8/31)"
       ],
-      "total_current": "O/U 46.5 (-120.0) (11/17)",
+      "total_current": "O/U 46.5 (-110.0) (11/23)",
       "total_history": [
+        "O/U 46.5 (-115.0) (11/23)",
+        "O/U 47.5 (-105.0) (11/23)",
+        "O/U 46.5 (-120.0) (11/17)",
         "O/U 46.5 (-110.0) (8/31)"
       ],
       "home_score": null,
@@ -1027,8 +1069,10 @@
         "-4.5 -105 (11/17)",
         "-1.5 -110 (8/31)"
       ],
-      "total_current": "O/U 41.5 (-105.0) (11/17)",
+      "total_current": "O/U 41.5 (-105.0) (11/23)",
       "total_history": [
+        "O/U 40.5 (-115.0) (11/23)",
+        "O/U 41.5 (-105.0) (11/17)",
         "O/U 39.5 (-110.0) (8/31)"
       ],
       "home_score": null,
@@ -1086,14 +1130,17 @@
         "home": [],
         "away": []
       },
-      "spread_current": "-2.5 -110 (11/20)",
-      "spread_current_raw": -2.5,
+      "spread_current": "-3.0 +100 (11/23)",
+      "spread_current_raw": -3.0,
       "spread_history": [
+        "-2.5 -115 (11/23)",
+        "-2.5 -110 (11/20)",
         "-1.5 -120 (11/17)",
         "-3.5 -110 (8/31)"
       ],
-      "total_current": "O/U 42.5 (-110.0) (11/21)",
+      "total_current": "O/U 43.5 (-110.0) (11/23)",
       "total_history": [
+        "O/U 42.5 (-110.0) (11/21)",
         "O/U 43.5 (-110.0) (11/17)",
         "O/U 44.5 (-110.0) (8/31)"
       ],
@@ -2670,6 +2717,34 @@
       "upsets": 4.0,
       "total_pot": 280250.4,
       "underdog_pts_realized": 12.0
+    },
+    {
+      "season": 2026,
+      "week": 9,
+      "pool_id": "36",
+      "pool_label": "NFL - WEEK 9",
+      "closed_date": "2026-11-08",
+      "no_of_winners": 2491,
+      "winning_selections_required": 13,
+      "winning_selections_total": 13,
+      "share_prize": 116.0,
+      "upsets": 1.0,
+      "total_pot": 288956.0,
+      "underdog_pts_realized": 3.0
+    },
+    {
+      "season": 2026,
+      "week": 10,
+      "pool_id": "53",
+      "pool_label": "NFL - WEEK 10",
+      "closed_date": "2026-11-15",
+      "no_of_winners": 229,
+      "winning_selections_required": 12,
+      "winning_selections_total": 12,
+      "share_prize": 1206.0,
+      "upsets": 4.0,
+      "total_pot": 276174.0,
+      "underdog_pts_realized": 13.0
     }
   ]
 }
