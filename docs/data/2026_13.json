@@ -58,11 +58,15 @@
         "home": [],
         "away": []
       },
-      "spread_current": "-4.5 -102 (8/31)",
-      "spread_current_raw": -4.5,
-      "spread_history": [],
-      "total_current": "O/U 47.5 (-110.0) (8/31)",
-      "total_history": [],
+      "spread_current": "+1.5 -110 (11/24)",
+      "spread_current_raw": 1.5,
+      "spread_history": [
+        "-4.5 -102 (8/31)"
+      ],
+      "total_current": "O/U 45.5 (-115.0) (11/24)",
+      "total_history": [
+        "O/U 47.5 (-110.0) (8/31)"
+      ],
       "home_score": null,
       "away_score": null,
       "is_final": false
@@ -124,8 +128,10 @@
       "spread_current": "+3.5 -110 (8/31)",
       "spread_current_raw": 3.5,
       "spread_history": [],
-      "total_current": "O/U 48.5 (-110.0) (8/31)",
-      "total_history": [],
+      "total_current": "O/U 50.5 (-110.0) (11/24)",
+      "total_history": [
+        "O/U 48.5 (-110.0) (8/31)"
+      ],
       "home_score": null,
       "away_score": null,
       "is_final": false
@@ -187,11 +193,15 @@
         "home": [],
         "away": []
       },
-      "spread_current": "-3.0 -105 (8/31)",
-      "spread_current_raw": -3.0,
-      "spread_history": [],
-      "total_current": "O/U 47.5 (-110.0) (8/31)",
-      "total_history": [],
+      "spread_current": "-2.5 -115 (11/24)",
+      "spread_current_raw": -2.5,
+      "spread_history": [
+        "-3.0 -105 (8/31)"
+      ],
+      "total_current": "O/U 50.5 (-105.0) (11/24)",
+      "total_history": [
+        "O/U 47.5 (-110.0) (8/31)"
+      ],
       "home_score": null,
       "away_score": null,
       "is_final": false
@@ -248,11 +258,15 @@
         "home": [],
         "away": []
       },
-      "spread_current": "+4.5 -110 (8/31)",
-      "spread_current_raw": 4.5,
-      "spread_history": [],
-      "total_current": "O/U 45.5 (-110.0) (8/31)",
-      "total_history": [],
+      "spread_current": "+5.5 -110 (11/24)",
+      "spread_current_raw": 5.5,
+      "spread_history": [
+        "+4.5 -110 (8/31)"
+      ],
+      "total_current": "O/U 47.5 (-110.0) (11/24)",
+      "total_history": [
+        "O/U 45.5 (-110.0) (8/31)"
+      ],
       "home_score": null,
       "away_score": null,
       "is_final": false
@@ -311,11 +325,15 @@
         "home": [],
         "away": []
       },
-      "spread_current": "+4.5 -110 (8/31)",
-      "spread_current_raw": 4.5,
-      "spread_history": [],
-      "total_current": "O/U 45.5 (-110.0) (8/31)",
-      "total_history": [],
+      "spread_current": "+5.5 -115 (11/24)",
+      "spread_current_raw": 5.5,
+      "spread_history": [
+        "+4.5 -110 (8/31)"
+      ],
+      "total_current": "O/U 45.5 (-115.0) (11/24)",
+      "total_history": [
+        "O/U 45.5 (-110.0) (8/31)"
+      ],
       "home_score": null,
       "away_score": null,
       "is_final": false
@@ -375,11 +393,15 @@
         "home": [],
         "away": []
       },
-      "spread_current": "+3.0 -110 (8/31)",
-      "spread_current_raw": 3.0,
-      "spread_history": [],
-      "total_current": "O/U 47.5 (-110.0) (8/31)",
-      "total_history": [],
+      "spread_current": "+6.5 -110 (11/24)",
+      "spread_current_raw": 6.5,
+      "spread_history": [
+        "+3.0 -110 (8/31)"
+      ],
+      "total_current": "O/U 47.5 (-115.0) (11/24)",
+      "total_history": [
+        "O/U 47.5 (-110.0) (8/31)"
+      ],
       "home_score": null,
       "away_score": null,
       "is_final": false
@@ -437,11 +459,15 @@
         "home": [],
         "away": []
       },
-      "spread_current": "+2.5 -110 (8/31)",
-      "spread_current_raw": 2.5,
-      "spread_history": [],
-      "total_current": "O/U 46.5 (-110.0) (8/31)",
-      "total_history": [],
+      "spread_current": "-5.5 -116 (11/24)",
+      "spread_current_raw": -5.5,
+      "spread_history": [
+        "+2.5 -110 (8/31)"
+      ],
+      "total_current": "O/U 40.5 (-115.0) (11/24)",
+      "total_history": [
+        "O/U 46.5 (-110.0) (8/31)"
+      ],
       "home_score": null,
       "away_score": null,
       "is_final": false
@@ -499,11 +525,15 @@
         "home": [],
         "away": []
       },
-      "spread_current": "+1.5 -110 (8/31)",
-      "spread_current_raw": 1.5,
-      "spread_history": [],
-      "total_current": "O/U 46.5 (-110.0) (8/31)",
-      "total_history": [],
+      "spread_current": "+4.5 -115 (11/24)",
+      "spread_current_raw": 4.5,
+      "spread_history": [
+        "+1.5 -110 (8/31)"
+      ],
+      "total_current": "O/U 46.5 (-120.0) (11/24)",
+      "total_history": [
+        "O/U 46.5 (-110.0) (8/31)"
+      ],
       "home_score": null,
       "away_score": null,
       "is_final": false
@@ -562,11 +592,15 @@
         "home": [],
         "away": []
       },
-      "spread_current": "+8.5 -110 (8/31)",
-      "spread_current_raw": 8.5,
-      "spread_history": [],
-      "total_current": "O/U 43.5 (-110.0) (8/31)",
-      "total_history": [],
+      "spread_current": "+3.0 -110 (11/24)",
+      "spread_current_raw": 3.0,
+      "spread_history": [
+        "+8.5 -110 (8/31)"
+      ],
+      "total_current": "O/U 36.5 (-105.0) (11/24)",
+      "total_history": [
+        "O/U 43.5 (-110.0) (8/31)"
+      ],
       "home_score": null,
       "away_score": null,
       "is_final": false
@@ -624,11 +658,15 @@
         "home": [],
         "away": []
       },
-      "spread_current": "-9.5 -110 (8/31)",
-      "spread_current_raw": -9.5,
-      "spread_history": [],
-      "total_current": "O/U 42.5 (-110.0) (8/31)",
-      "total_history": [],
+      "spread_current": "-14.5 -110 (11/24)",
+      "spread_current_raw": -14.5,
+      "spread_history": [
+        "-9.5 -110 (8/31)"
+      ],
+      "total_current": "O/U 38.5 (-115.0) (11/24)",
+      "total_history": [
+        "O/U 42.5 (-110.0) (8/31)"
+      ],
       "home_score": null,
       "away_score": null,
       "is_final": false
@@ -686,11 +724,15 @@
         "home": [],
         "away": []
       },
-      "spread_current": "-3.5 -110 (8/31)",
-      "spread_current_raw": -3.5,
-      "spread_history": [],
-      "total_current": "O/U 42.5 (-110.0) (8/31)",
-      "total_history": [],
+      "spread_current": "-4.5 -115 (11/24)",
+      "spread_current_raw": -4.5,
+      "spread_history": [
+        "-3.5 -110 (8/31)"
+      ],
+      "total_current": "O/U 42.5 (-115.0) (11/24)",
+      "total_history": [
+        "O/U 42.5 (-110.0) (8/31)"
+      ],
       "home_score": null,
       "away_score": null,
       "is_final": false
@@ -748,11 +790,15 @@
         "home": [],
         "away": []
       },
-      "spread_current": "-1.5 -108 (8/31)",
-      "spread_current_raw": -1.5,
-      "spread_history": [],
-      "total_current": "O/U 48.5 (-110.0) (8/31)",
-      "total_history": [],
+      "spread_current": "+13.5 -110 (11/24)",
+      "spread_current_raw": 13.5,
+      "spread_history": [
+        "-1.5 -108 (8/31)"
+      ],
+      "total_current": "O/U 44.5 (-110.0) (11/24)",
+      "total_history": [
+        "O/U 48.5 (-110.0) (8/31)"
+      ],
       "home_score": null,
       "away_score": null,
       "is_final": false
@@ -809,11 +855,15 @@
         "home": [],
         "away": []
       },
-      "spread_current": "+1.5 -110 (8/31)",
-      "spread_current_raw": 1.5,
-      "spread_history": [],
-      "total_current": "O/U 41.5 (-110.0) (8/31)",
-      "total_history": [],
+      "spread_current": "+3.0 -110 (11/24)",
+      "spread_current_raw": 3.0,
+      "spread_history": [
+        "+1.5 -110 (8/31)"
+      ],
+      "total_current": "O/U 43.5 (-105.0) (11/24)",
+      "total_history": [
+        "O/U 41.5 (-110.0) (8/31)"
+      ],
       "home_score": null,
       "away_score": null,
       "is_final": false
@@ -870,11 +920,15 @@
         "home": [],
         "away": []
       },
-      "spread_current": "-4.5 -110 (8/31)",
-      "spread_current_raw": -4.5,
-      "spread_history": [],
-      "total_current": "O/U 48.5 (-110.0) (8/31)",
-      "total_history": [],
+      "spread_current": "-5.5 -110 (11/24)",
+      "spread_current_raw": -5.5,
+      "spread_history": [
+        "-4.5 -110 (8/31)"
+      ],
+      "total_current": "O/U 51.5 (-110.0) (11/24)",
+      "total_history": [
+        "O/U 48.5 (-110.0) (8/31)"
+      ],
       "home_score": null,
       "away_score": null,
       "is_final": false
