@@ -63,8 +63,9 @@
       "spread_history": [
         "-4.5 -102 (8/31)"
       ],
-      "total_current": "O/U 45.5 (-115.0) (11/24)",
+      "total_current": "O/U 45.5 (-105.0) (11/25)",
       "total_history": [
+        "O/U 45.5 (-115.0) (11/24)",
         "O/U 47.5 (-110.0) (8/31)"
       ],
       "home_score": null,
@@ -125,9 +126,11 @@
         "home": [],
         "away": []
       },
-      "spread_current": "+3.5 -110 (8/31)",
+      "spread_current": "+3.5 -105 (11/25)",
       "spread_current_raw": 3.5,
-      "spread_history": [],
+      "spread_history": [
+        "+3.5 -110 (8/31)"
+      ],
       "total_current": "O/U 50.5 (-110.0) (11/24)",
       "total_history": [
         "O/U 48.5 (-110.0) (8/31)"
@@ -325,9 +328,10 @@
         "home": [],
         "away": []
       },
-      "spread_current": "+5.5 -115 (11/24)",
+      "spread_current": "+5.5 -105 (11/25)",
       "spread_current_raw": 5.5,
       "spread_history": [
+        "+5.5 -115 (11/24)",
         "+4.5 -110 (8/31)"
       ],
       "total_current": "O/U 45.5 (-115.0) (11/24)",
@@ -827,8 +831,8 @@
       "qb_candidates": [
         {
           "team": "PIT",
-          "depth_chart_starter": "Aaron Rodgers",
-          "normal_starter_used_for_elite_check": "Aaron Rodgers",
+          "depth_chart_starter": "Mason Rudolph",
+          "normal_starter_used_for_elite_check": "Mason Rudolph",
           "is_elite_starter": false,
           "backup_starting": false,
           "rookie_starting": false,
@@ -855,13 +859,16 @@
         "home": [],
         "away": []
       },
-      "spread_current": "+3.0 -110 (11/24)",
-      "spread_current_raw": 3.0,
+      "spread_current": "+4.5 -105 (11/25)",
+      "spread_current_raw": 4.5,
       "spread_history": [
+        "+4.5 -115 (11/25)",
+        "+3.0 -110 (11/24)",
         "+1.5 -110 (8/31)"
       ],
-      "total_current": "O/U 43.5 (-105.0) (11/24)",
+      "total_current": "O/U 42.5 (-105.0) (11/25)",
       "total_history": [
+        "O/U 43.5 (-105.0) (11/24)",
         "O/U 41.5 (-110.0) (8/31)"
       ],
       "home_score": null,
@@ -925,8 +932,9 @@
       "spread_history": [
         "-4.5 -110 (8/31)"
       ],
-      "total_current": "O/U 51.5 (-110.0) (11/24)",
+      "total_current": "O/U 50.5 (-110.0) (11/25)",
       "total_history": [
+        "O/U 51.5 (-110.0) (11/24)",
         "O/U 48.5 (-110.0) (8/31)"
       ],
       "home_score": null,

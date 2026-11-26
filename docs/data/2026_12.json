@@ -51,16 +51,188 @@
           "depth_chart_conflict": null
         }
       ],
-      "home_injuries": [],
-      "away_injuries": [],
+      "home_injuries": [
+        {
+          "name": "Myles Garrett",
+          "position": "LB",
+          "status": "Limited (practice) - Knee",
+          "trend": [
+            {
+              "date": "2026-11-26",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            }
+          ],
+          "usage_note": "82% def. snaps"
+        },
+        {
+          "name": "Coleman Shelton",
+          "position": "C",
+          "status": "Out",
+          "trend": [
+            {
+              "date": "2026-11-26",
+              "report_status": "Out",
+              "practice_status": "Did Not Participate In Practice"
+            }
+          ],
+          "usage_note": "99% off. snaps"
+        },
+        {
+          "name": "Kam Curl",
+          "position": "S",
+          "status": "Limited (practice) - Toe",
+          "trend": [
+            {
+              "date": "2026-11-26",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            }
+          ],
+          "usage_note": "99% def. snaps"
+        },
+        {
+          "name": "Steve Avila",
+          "position": "G",
+          "status": "Out",
+          "trend": [
+            {
+              "date": "2026-11-26",
+              "report_status": "Out",
+              "practice_status": "Did Not Participate In Practice"
+            }
+          ],
+          "usage_note": "86% off. snaps"
+        },
+        {
+          "name": "Terrance Ferguson",
+          "position": "TE",
+          "status": "Out",
+          "trend": [
+            {
+              "date": "2026-11-26",
+              "report_status": "Out",
+              "practice_status": "Did Not Participate In Practice"
+            }
+          ],
+          "usage_note": "7% target share (12 gm) &middot; 38% off. snaps"
+        }
+      ],
+      "away_injuries": [
+        {
+          "name": "Kevin Zeitler",
+          "position": "G",
+          "status": "Questionable",
+          "trend": [
+            {
+              "date": "2026-11-26",
+              "report_status": "Questionable",
+              "practice_status": "Limited Participation in Practice"
+            }
+          ],
+          "usage_note": "92% off. snaps"
+        },
+        {
+          "name": "Zaire Franklin",
+          "position": "LB",
+          "status": "Questionable",
+          "trend": [
+            {
+              "date": "2026-11-26",
+              "report_status": "Questionable",
+              "practice_status": "Limited Participation in Practice"
+            }
+          ],
+          "usage_note": "95% def. snaps"
+        },
+        {
+          "name": "Josh Jacobs",
+          "position": "RB",
+          "status": "Questionable",
+          "trend": [
+            {
+              "date": "2026-11-26",
+              "report_status": "Questionable",
+              "practice_status": "Limited Participation in Practice"
+            }
+          ],
+          "usage_note": "9% target share (15 gm) &middot; 59% off. snaps"
+        },
+        {
+          "name": "Micah Parsons",
+          "position": "LB",
+          "status": "Questionable",
+          "trend": [
+            {
+              "date": "2026-11-26",
+              "report_status": "Questionable",
+              "practice_status": "Limited Participation in Practice"
+            }
+          ],
+          "usage_note": "78% def. snaps"
+        },
+        {
+          "name": "Sean Rhyan",
+          "position": "C",
+          "status": "Questionable",
+          "trend": [
+            {
+              "date": "2026-11-26",
+              "report_status": "Questionable",
+              "practice_status": "Limited Participation in Practice"
+            }
+          ],
+          "usage_note": "76% off. snaps"
+        },
+        {
+          "name": "Bo Melton",
+          "position": "WR",
+          "status": "Questionable",
+          "trend": [
+            {
+              "date": "2026-11-26",
+              "report_status": "Questionable",
+              "practice_status": "Limited Participation in Practice"
+            }
+          ],
+          "usage_note": "7% target share (6 gm) &middot; 10% off. snaps"
+        },
+        {
+          "name": "Skyy Moore",
+          "position": "WR",
+          "status": "Questionable",
+          "trend": [
+            {
+              "date": "2026-11-26",
+              "report_status": "Questionable",
+              "practice_status": "Limited Participation in Practice"
+            }
+          ],
+          "usage_note": "3% target share (8 gm) &middot; 11% off. snaps"
+        },
+        {
+          "name": "Travis Glover",
+          "position": "G",
+          "status": "Questionable",
+          "trend": [
+            {
+              "date": "2026-11-26",
+              "report_status": "Questionable",
+              "practice_status": "Limited Participation in Practice"
+            }
+          ],
+          "usage_note": null
+        }
+      ],
       "situational_note": "",
       "player_impact_entries": {
         "home": [],
         "away": []
       },
-      "spread_current": "-2.5 -112 (11/24)",
+      "spread_current": "-2.5 -115 (11/25)",
       "spread_current_raw": -2.5,
       "spread_history": [
+        "-2.5 -112 (11/24)",
         "-2.5 -110 (11/23)",
         "-3.0 +100 (11/23)",
         "-3.0 -115 (11/21)",
@@ -68,16 +240,17 @@
         "-3.5 -120 (11/17)",
         "-5.5 -105 (8/31)"
       ],
-      "total_current": "O/U 44.5 (+100.0) (11/23)",
+      "total_current": "O/U 43.5 (-105.0) (11/25)",
       "total_history": [
+        "O/U 44.5 (+100.0) (11/23)",
         "O/U 44.5 (-110.0) (11/23)",
         "O/U 45.5 (-104.0) (11/18)",
         "O/U 45.5 (-105.0) (11/17)",
         "O/U 48.5 (-105.0) (8/31)"
       ],
-      "home_score": null,
-      "away_score": null,
-      "is_final": false
+      "home_score": 26.0,
+      "away_score": 13.0,
+      "is_final": true
     },
     {
       "game_id": "2026_12_CHI_DET",
@@ -128,16 +301,110 @@
           "depth_chart_conflict": null
         }
       ],
-      "home_injuries": [],
-      "away_injuries": [],
+      "home_injuries": [
+        {
+          "name": "Chuck Clark",
+          "position": "S",
+          "status": "Limited (practice) - Hamstring",
+          "trend": [
+            {
+              "date": "2026-11-26",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            }
+          ],
+          "usage_note": "43% def. snaps"
+        },
+        {
+          "name": "DJ Wonnum",
+          "position": "DE",
+          "status": "DNP (practice) - Back",
+          "trend": [
+            {
+              "date": "2026-11-26",
+              "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            }
+          ],
+          "usage_note": "68% def. snaps"
+        },
+        {
+          "name": "Ennis Rakestraw Jr.",
+          "position": "CB",
+          "status": "DNP (practice) - Shoulder",
+          "trend": [
+            {
+              "date": "2026-11-26",
+              "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            }
+          ],
+          "usage_note": null
+        },
+        {
+          "name": "Skyler Gill-Howard",
+          "position": "DT",
+          "status": "DNP (practice) - Knee",
+          "trend": [
+            {
+              "date": "2026-11-26",
+              "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            }
+          ],
+          "usage_note": null
+        }
+      ],
+      "away_injuries": [
+        {
+          "name": "Elijah Hicks",
+          "position": "S",
+          "status": "DNP (practice) - Concussion",
+          "trend": [
+            {
+              "date": "2026-11-26",
+              "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            }
+          ],
+          "usage_note": "6% def. snaps"
+        },
+        {
+          "name": "Kyler Gordon",
+          "position": "CB",
+          "status": "DNP (practice) - Shoulder",
+          "trend": [
+            {
+              "date": "2026-11-26",
+              "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            }
+          ],
+          "usage_note": "66% def. snaps"
+        },
+        {
+          "name": "Roschon Johnson",
+          "position": "RB",
+          "status": "DNP (practice) - Ankle",
+          "trend": [
+            {
+              "date": "2026-11-26",
+              "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            }
+          ],
+          "usage_note": "1% off. snaps"
+        }
+      ],
       "situational_note": "",
       "player_impact_entries": {
         "home": [],
         "away": []
       },
-      "spread_current": "+2.5 -115 (11/24)",
-      "spread_current_raw": 2.5,
+      "spread_current": "+1.5 -112 (11/25)",
+      "spread_current_raw": 1.5,
       "spread_history": [
+        "+2.5 -115 (11/24)",
         "+2.5 -108 (11/24)",
         "+2.5 -105 (11/23)",
         "+2.5 -112 (11/23)",
@@ -145,8 +412,10 @@
         "+2.5 +100 (11/17)",
         "-2.5 -110 (8/31)"
       ],
-      "total_current": "O/U 55.5 (-105.0) (11/19)",
+      "total_current": "O/U 55.5 (-112.0) (11/25)",
       "total_history": [
+        "O/U 55.5 (-115.0) (11/25)",
+        "O/U 55.5 (-105.0) (11/19)",
         "O/U 54.5 (-115.0) (11/19)",
         "O/U 54.5 (-110.0) (11/17)",
         "O/U 53.5 (-115.0) (8/31)"
@@ -199,8 +468,153 @@
           "depth_chart_conflict": null
         }
       ],
-      "home_injuries": [],
-      "away_injuries": [],
+      "home_injuries": [
+        {
+          "name": "P.J. Locke",
+          "position": "S",
+          "status": "Limited (practice) - Concussion",
+          "trend": [
+            {
+              "date": "2026-11-26",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            }
+          ],
+          "usage_note": "26% def. snaps"
+        },
+        {
+          "name": "Jake Ferguson",
+          "position": "TE",
+          "status": "DNP (practice) - Knee",
+          "trend": [
+            {
+              "date": "2026-11-26",
+              "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            }
+          ],
+          "usage_note": "16% target share (17 gm) &middot; 67% off. snaps"
+        },
+        {
+          "name": "Dee Winters",
+          "position": "LB",
+          "status": "Limited (practice) - Knee",
+          "trend": [
+            {
+              "date": "2026-11-26",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            }
+          ],
+          "usage_note": "92% def. snaps"
+        },
+        {
+          "name": "Jonathan Mingo",
+          "position": "WR",
+          "status": "DNP (practice) - Ankle",
+          "trend": [
+            {
+              "date": "2026-11-26",
+              "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            }
+          ],
+          "usage_note": "3% target share (5 gm) &middot; 21% off. snaps"
+        },
+        {
+          "name": "Tyler Booker",
+          "position": "G",
+          "status": "DNP (practice) - Ankle",
+          "trend": [
+            {
+              "date": "2026-11-26",
+              "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            }
+          ],
+          "usage_note": "100% off. snaps"
+        },
+        {
+          "name": "Jaishawn Barham",
+          "position": "LB",
+          "status": "Limited (practice) - Hip",
+          "trend": [
+            {
+              "date": "2026-11-26",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            }
+          ],
+          "usage_note": null
+        }
+      ],
+      "away_injuries": [
+        {
+          "name": "Jonathan Jones",
+          "position": "CB",
+          "status": "DNP (practice) - Ankle",
+          "trend": [
+            {
+              "date": "2026-11-26",
+              "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            }
+          ],
+          "usage_note": "60% def. snaps"
+        },
+        {
+          "name": "Arnold Ebiketie",
+          "position": "LB",
+          "status": "DNP (practice) - Oblique",
+          "trend": [
+            {
+              "date": "2026-11-26",
+              "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            }
+          ],
+          "usage_note": "35% def. snaps"
+        },
+        {
+          "name": "Will Shipley",
+          "position": "RB",
+          "status": "Limited (practice) - Foot",
+          "trend": [
+            {
+              "date": "2026-11-26",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            }
+          ],
+          "usage_note": "4% target share (9 gm) &middot; 12% off. snaps"
+        },
+        {
+          "name": "Quinyon Mitchell",
+          "position": "CB",
+          "status": "Limited (practice) - Hamstring",
+          "trend": [
+            {
+              "date": "2026-11-26",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            }
+          ],
+          "usage_note": "94% def. snaps"
+        },
+        {
+          "name": "Smael Mondon Jr.",
+          "position": "LB",
+          "status": "Limited (practice) - Ankle",
+          "trend": [
+            {
+              "date": "2026-11-26",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            }
+          ],
+          "usage_note": "2% def. snaps"
+        }
+      ],
       "situational_note": "",
       "player_impact_entries": {
         "home": [],
@@ -213,8 +627,9 @@
         "-7.5 -120 (11/17)",
         "-1.5 -110 (8/31)"
       ],
-      "total_current": "O/U 48.5 (-105.0) (11/23)",
+      "total_current": "O/U 47.5 (-120.0) (11/25)",
       "total_history": [
+        "O/U 48.5 (-105.0) (11/23)",
         "O/U 47.5 (-105.0) (11/17)",
         "O/U 49.5 (-115.0) (8/31)"
       ],
@@ -266,8 +681,127 @@
           "depth_chart_conflict": null
         }
       ],
-      "home_injuries": [],
-      "away_injuries": [],
+      "home_injuries": [
+        {
+          "name": "Christian Benford",
+          "position": "CB",
+          "status": "Limited (practice) - Groin",
+          "trend": [
+            {
+              "date": "2026-11-26",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            }
+          ],
+          "usage_note": "96% def. snaps"
+        },
+        {
+          "name": "O'Cyrus Torrence",
+          "position": "G",
+          "status": "Limited (practice) - Ankle",
+          "trend": [
+            {
+              "date": "2026-11-26",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            }
+          ],
+          "usage_note": "100% off. snaps"
+        },
+        {
+          "name": "Dorian Williams",
+          "position": "LB",
+          "status": "Limited (practice) - Calf",
+          "trend": [
+            {
+              "date": "2026-11-26",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            }
+          ],
+          "usage_note": "44% def. snaps"
+        },
+        {
+          "name": "Dalton Kincaid",
+          "position": "TE",
+          "status": "Limited (practice) - Thumb",
+          "trend": [
+            {
+              "date": "2026-11-26",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            }
+          ],
+          "usage_note": "14% target share (14 gm) &middot; 39% off. snaps"
+        },
+        {
+          "name": "T.J. Sanders",
+          "position": "DE",
+          "status": "Limited (practice) - Shoulder",
+          "trend": [
+            {
+              "date": "2026-11-26",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            }
+          ],
+          "usage_note": "42% def. snaps"
+        }
+      ],
+      "away_injuries": [
+        {
+          "name": "Jaylon Moore",
+          "position": "T",
+          "status": "DNP (practice) - Ankle",
+          "trend": [
+            {
+              "date": "2026-11-26",
+              "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            }
+          ],
+          "usage_note": "42% off. snaps"
+        },
+        {
+          "name": "Kenneth Walker III",
+          "position": "RB",
+          "status": "Limited (practice) - Groin",
+          "trend": [
+            {
+              "date": "2026-11-26",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            }
+          ],
+          "usage_note": "8% target share (19 gm) &middot; 49% off. snaps"
+        },
+        {
+          "name": "Ben VanSumeren",
+          "position": "FB",
+          "status": "DNP (practice) - Knee",
+          "trend": [
+            {
+              "date": "2026-11-26",
+              "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            }
+          ],
+          "usage_note": null
+        },
+        {
+          "name": "Omarr Norman-Lott",
+          "position": "DT",
+          "status": "Limited (practice) - Knee",
+          "trend": [
+            {
+              "date": "2026-11-26",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            }
+          ],
+          "usage_note": "26% def. snaps"
+        }
+      ],
       "situational_note": "",
       "player_impact_entries": {
         "home": [],
@@ -280,8 +814,10 @@
         "-2.5 -120 (11/17)",
         "-2.5 -118 (8/31)"
       ],
-      "total_current": "O/U 47.5 (-110.0) (11/24)",
+      "total_current": "O/U 46.5 (-110.0) (11/25)",
       "total_history": [
+        "O/U 47.5 (+100.0) (11/25)",
+        "O/U 47.5 (-110.0) (11/24)",
         "O/U 48.5 (-108.0) (11/23)",
         "O/U 50.5 (-105.0) (11/23)",
         "O/U 50.5 (-120.0) (11/22)",
@@ -317,8 +853,8 @@
       "qb_candidates": [
         {
           "team": "PIT",
-          "depth_chart_starter": "Aaron Rodgers",
-          "normal_starter_used_for_elite_check": "Aaron Rodgers",
+          "depth_chart_starter": "Mason Rudolph",
+          "normal_starter_used_for_elite_check": "Mason Rudolph",
           "is_elite_starter": false,
           "backup_starting": false,
           "rookie_starting": false,
@@ -338,24 +874,107 @@
           "depth_chart_conflict": null
         }
       ],
-      "home_injuries": [],
-      "away_injuries": [],
+      "home_injuries": [
+        {
+          "name": "Alex Highsmith",
+          "position": "LB",
+          "status": "DNP (practice) - Ankle",
+          "trend": [
+            {
+              "date": "2026-11-26",
+              "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            }
+          ],
+          "usage_note": "73% def. snaps"
+        },
+        {
+          "name": "Ben Skowronek",
+          "position": "WR",
+          "status": "DNP (practice) - Calf",
+          "trend": [
+            {
+              "date": "2026-11-26",
+              "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            }
+          ],
+          "usage_note": "3% target share (6 gm) &middot; 15% off. snaps"
+        },
+        {
+          "name": "Nick Herbig",
+          "position": "LB",
+          "status": "Limited (practice) - Hip",
+          "trend": [
+            {
+              "date": "2026-11-26",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            }
+          ],
+          "usage_note": "58% def. snaps"
+        }
+      ],
+      "away_injuries": [
+        {
+          "name": "Taylor Rapp",
+          "position": "S",
+          "status": "Limited (practice) - Quadricep",
+          "trend": [
+            {
+              "date": "2026-11-26",
+              "report_status": null,
+              "practice_status": "Limited Participation in Practice"
+            }
+          ],
+          "usage_note": "96% def. snaps"
+        },
+        {
+          "name": "J.K. Dobbins",
+          "position": "RB",
+          "status": "DNP (practice) - Not injury related - personal matter",
+          "trend": [
+            {
+              "date": "2026-11-26",
+              "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            }
+          ],
+          "usage_note": "4% target share (10 gm) &middot; 51% off. snaps"
+        },
+        {
+          "name": "Sai'vion Jones",
+          "position": "DE",
+          "status": "DNP (practice) - Hamstring",
+          "trend": [
+            {
+              "date": "2026-11-26",
+              "report_status": null,
+              "practice_status": "Did Not Participate In Practice"
+            }
+          ],
+          "usage_note": "19% def. snaps"
+        }
+      ],
       "situational_note": "",
       "player_impact_entries": {
         "home": [],
         "away": []
       },
-      "spread_current": "+2.5 +100 (11/24)",
-      "spread_current_raw": 2.5,
+      "spread_current": "+3.5 -106 (11/25)",
+      "spread_current_raw": 3.5,
       "spread_history": [
+        "+3.5 -108 (11/25)",
+        "+2.5 +100 (11/24)",
         "+2.5 -105 (11/23)",
         "+3.0 -115 (11/23)",
         "+1.5 -105 (11/20)",
         "+1.5 -110 (11/17)",
         "+1.5 -104 (8/31)"
       ],
-      "total_current": "O/U 37.5 (-105.0) (11/24)",
+      "total_current": "O/U 36.5 (-110.0) (11/25)",
       "total_history": [
+        "O/U 37.5 (-105.0) (11/24)",
         "O/U 37.5 (-115.0) (11/23)",
         "O/U 38.5 (-105.0) (11/23)",
         "O/U 38.5 (-110.0) (11/23)",
@@ -430,8 +1049,9 @@
         "-9.5 -115 (11/17)",
         "-6.5 -110 (8/31)"
       ],
-      "total_current": "O/U 50.5 (-110.0) (11/24)",
+      "total_current": "O/U 49.5 (-110.0) (11/25)",
       "total_history": [
+        "O/U 50.5 (-110.0) (11/24)",
         "O/U 51.5 (-110.0) (11/23)",
         "O/U 52.5 (-120.0) (11/17)",
         "O/U 48.5 (-110.0) (8/31)"
@@ -497,9 +1117,10 @@
         "home": [],
         "away": []
       },
-      "spread_current": "-6.5 -115 (11/24)",
+      "spread_current": "-6.5 -110 (11/25)",
       "spread_current_raw": -6.5,
       "spread_history": [
+        "-6.5 -115 (11/24)",
         "-6.5 -110 (11/23)",
         "-6.5 -115 (11/20)",
         "-6.5 -106 (11/19)",
@@ -577,9 +1198,10 @@
         "home": [],
         "away": []
       },
-      "spread_current": "+6.5 -105 (11/24)",
+      "spread_current": "+6.5 -115 (11/25)",
       "spread_current_raw": 6.5,
       "spread_history": [
+        "+6.5 -105 (11/24)",
         "+7.0 -115 (11/23)",
         "+6.5 -115 (11/20)",
         "+4.5 -105 (11/20)",
@@ -723,9 +1345,10 @@
         "home": [],
         "away": []
       },
-      "spread_current": "+3.5 +100 (11/24)",
-      "spread_current_raw": 3.5,
+      "spread_current": "+4.5 -115 (11/25)",
+      "spread_current_raw": 4.5,
       "spread_history": [
+        "+3.5 +100 (11/24)",
         "+3.5 -105 (11/23)",
         "+3.0 +100 (11/17)",
         "-1.5 -110 (8/31)"
@@ -866,9 +1489,10 @@
         "home": [],
         "away": []
       },
-      "spread_current": "-1.5 -105 (11/23)",
-      "spread_current_raw": -1.5,
+      "spread_current": "+1.5 -115 (11/25)",
+      "spread_current_raw": 1.5,
       "spread_history": [
+        "-1.5 -105 (11/23)",
         "-3.5 -110 (11/22)",
         "-4.5 -110 (11/21)",
         "-5.5 +104 (11/20)",
@@ -943,9 +1567,10 @@
         "home": [],
         "away": []
       },
-      "spread_current": "+7.0 -105 (11/24)",
+      "spread_current": "+7.0 -115 (11/25)",
       "spread_current_raw": 7.0,
       "spread_history": [
+        "+7.0 -105 (11/24)",
         "+7.5 -115 (11/24)",
         "+7.0 -110 (11/23)",
         "+6.5 -105 (11/17)",
@@ -1015,17 +1640,19 @@
         "home": [],
         "away": []
       },
-      "spread_current": "-3.0 -110 (11/24)",
-      "spread_current_raw": -3.0,
+      "spread_current": "-2.5 -115 (11/25)",
+      "spread_current_raw": -2.5,
       "spread_history": [
+        "-3.0 -110 (11/24)",
         "-3.0 -115 (11/23)",
         "-3.0 -110 (11/23)",
         "-2.5 -105 (11/22)",
         "-2.5 -120 (11/17)",
         "+1.5 -125 (8/31)"
       ],
-      "total_current": "O/U 45.5 (-105.0) (11/24)",
+      "total_current": "O/U 44.5 (-110.0) (11/25)",
       "total_history": [
+        "O/U 45.5 (-105.0) (11/24)",
         "O/U 46.5 (-110.0) (11/23)",
         "O/U 46.5 (-115.0) (11/23)",
         "O/U 47.5 (-105.0) (11/23)",
@@ -1098,8 +1725,9 @@
         "-4.5 -105 (11/17)",
         "-1.5 -110 (8/31)"
       ],
-      "total_current": "O/U 40.5 (-115.0) (11/24)",
+      "total_current": "O/U 39.5 (-115.0) (11/25)",
       "total_history": [
+        "O/U 40.5 (-115.0) (11/24)",
         "O/U 41.5 (-105.0) (11/23)",
         "O/U 40.5 (-115.0) (11/23)",
         "O/U 41.5 (-105.0) (11/17)",
@@ -1160,9 +1788,10 @@
         "home": [],
         "away": []
       },
-      "spread_current": "-3.0 +100 (11/23)",
+      "spread_current": "-3.0 -104 (11/25)",
       "spread_current_raw": -3.0,
       "spread_history": [
+        "-3.0 +100 (11/23)",
         "-2.5 -115 (11/23)",
         "-2.5 -110 (11/20)",
         "-1.5 -120 (11/17)",
