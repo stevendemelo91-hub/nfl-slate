@@ -13,16 +13,17 @@
       "gameday": "2026-12-03",
       "gametime": "20:15",
       "weekday": "Thursday",
-      "home_win_probability": 0.568,
-      "away_win_probability": 0.432,
+      "home_win_probability": 0.602,
+      "away_win_probability": 0.398,
       "favored": "LA",
-      "raw_strength_score": 0.27,
+      "raw_strength_score": 0.41,
       "feature_breakdown": {
         "third_down_coefficient_home": 1.0,
         "ypp_off_coefficient_home": -1.0,
         "ypp_def_coefficient_home": -1.0,
         "rest_coefficient_home": 0.5,
-        "road_trip_coefficient_home": 1.0
+        "road_trip_coefficient_home": 1.0,
+        "streak_coefficient_home": -0.5
       },
       "power_rating_implied_spread": 3.92,
       "neutral_site": false,
@@ -57,14 +58,16 @@
         "home": [],
         "away": []
       },
-      "spread_current": "+1.5 -115 (11/26)",
+      "spread_current": "+1.5 -116 (11/27)",
       "spread_current_raw": 1.5,
       "spread_history": [
+        "+1.5 -115 (11/26)",
         "+1.5 -110 (11/24)",
         "-4.5 -102 (8/31)"
       ],
-      "total_current": "O/U 44.5 (-110.0) (11/26)",
+      "total_current": "O/U 43.5 (-110.0) (11/27)",
       "total_history": [
+        "O/U 44.5 (-110.0) (11/26)",
         "O/U 45.5 (-105.0) (11/25)",
         "O/U 45.5 (-115.0) (11/24)",
         "O/U 47.5 (-110.0) (8/31)"
@@ -132,8 +135,10 @@
       "spread_history": [
         "+3.5 -110 (8/31)"
       ],
-      "total_current": "O/U 50.5 (-110.0) (11/24)",
+      "total_current": "O/U 51.5 (-110.0) (11/27)",
       "total_history": [
+        "O/U 50.5 (-115.0) (11/27)",
+        "O/U 50.5 (-110.0) (11/24)",
         "O/U 48.5 (-110.0) (8/31)"
       ],
       "home_score": null,
@@ -197,13 +202,15 @@
         "home": [],
         "away": []
       },
-      "spread_current": "-2.5 -115 (11/24)",
-      "spread_current_raw": -2.5,
+      "spread_current": "-3.0 -110 (11/27)",
+      "spread_current_raw": -3.0,
       "spread_history": [
+        "-2.5 -115 (11/24)",
         "-3.0 -105 (8/31)"
       ],
-      "total_current": "O/U 50.5 (-105.0) (11/24)",
+      "total_current": "O/U 50.5 (-110.0) (11/27)",
       "total_history": [
+        "O/U 50.5 (-105.0) (11/24)",
         "O/U 47.5 (-110.0) (8/31)"
       ],
       "home_score": null,
@@ -553,10 +560,10 @@
       "gameday": "2026-12-06",
       "gametime": "16:05",
       "weekday": "Sunday",
-      "home_win_probability": 0.69,
-      "away_win_probability": 0.31,
+      "home_win_probability": 0.659,
+      "away_win_probability": 0.341,
       "favored": "ARI",
-      "raw_strength_score": 0.8,
+      "raw_strength_score": 0.66,
       "feature_breakdown": {
         "rank_coefficient_home": 1.0,
         "third_down_coefficient_home": 1.0,
@@ -564,7 +571,7 @@
         "ypp_def_coefficient_home": -1.0,
         "rest_coefficient_home": -0.5,
         "road_trip_coefficient_home": -1.0,
-        "streak_coefficient_home": 0.5,
+        "streak_coefficient_home": 1.0,
         "schedule_milestones_coefficient_home": 1.0
       },
       "power_rating_implied_spread": -4.33,
@@ -600,13 +607,15 @@
         "home": [],
         "away": []
       },
-      "spread_current": "+3.0 -110 (11/24)",
-      "spread_current_raw": 3.0,
+      "spread_current": "+3.5 -115 (11/27)",
+      "spread_current_raw": 3.5,
       "spread_history": [
+        "+3.0 -110 (11/24)",
         "+8.5 -110 (8/31)"
       ],
-      "total_current": "O/U 36.5 (-105.0) (11/24)",
+      "total_current": "O/U 37.5 (-105.0) (11/27)",
       "total_history": [
+        "O/U 36.5 (-105.0) (11/24)",
         "O/U 43.5 (-110.0) (8/31)"
       ],
       "home_score": null,
@@ -620,18 +629,18 @@
       "gameday": "2026-12-06",
       "gametime": "16:05",
       "weekday": "Sunday",
-      "home_win_probability": 0.697,
-      "away_win_probability": 0.303,
+      "home_win_probability": 0.59,
+      "away_win_probability": 0.41,
       "favored": "DEN",
-      "raw_strength_score": 0.83,
+      "raw_strength_score": 0.36,
       "feature_breakdown": {
         "third_down_coefficient_home": -1.0,
-        "ypp_off_coefficient_home": 1.0,
+        "ypp_off_coefficient_home": -1.0,
         "ypp_def_coefficient_home": 1.0,
         "turnover_coefficient_home": 1.0,
         "rest_coefficient_home": 0.5,
         "road_trip_coefficient_home": -0.5,
-        "streak_coefficient_home": -1.0
+        "streak_coefficient_home": -0.5
       },
       "power_rating_implied_spread": 11.5,
       "neutral_site": false,
@@ -752,16 +761,14 @@
       "gameday": "2026-12-06",
       "gametime": "16:25",
       "weekday": "Sunday",
-      "home_win_probability": 0.323,
-      "away_win_probability": 0.677,
+      "home_win_probability": 0.393,
+      "away_win_probability": 0.607,
       "favored": "BUF",
-      "raw_strength_score": -0.74,
+      "raw_strength_score": -0.43,
       "feature_breakdown": {
-        "rank_coefficient_home": -0.5,
         "third_down_coefficient_home": -1.0,
         "ypp_off_coefficient_home": -1.0,
         "ypp_def_coefficient_home": -1.0,
-        "turnover_coefficient_home": -1.0,
         "rest_coefficient_home": -0.5,
         "road_trip_coefficient_home": 1.0,
         "streak_coefficient_home": 1.0
@@ -799,13 +806,15 @@
         "home": [],
         "away": []
       },
-      "spread_current": "+13.5 -110 (11/24)",
+      "spread_current": "+13.5 -115 (11/27)",
       "spread_current_raw": 13.5,
       "spread_history": [
+        "+13.5 -110 (11/24)",
         "-1.5 -108 (8/31)"
       ],
-      "total_current": "O/U 44.5 (-110.0) (11/24)",
+      "total_current": "O/U 44.5 (-105.0) (11/27)",
       "total_history": [
+        "O/U 44.5 (-110.0) (11/24)",
         "O/U 48.5 (-110.0) (8/31)"
       ],
       "home_score": null,
@@ -819,17 +828,16 @@
       "gameday": "2026-12-06",
       "gametime": "20:20",
       "weekday": "Sunday",
-      "home_win_probability": 0.45,
-      "away_win_probability": 0.55,
+      "home_win_probability": 0.485,
+      "away_win_probability": 0.515,
       "favored": "HOU",
-      "raw_strength_score": -0.2,
+      "raw_strength_score": -0.06,
       "feature_breakdown": {
         "third_down_coefficient_home": -1.0,
         "ypp_off_coefficient_home": -1.0,
         "ypp_def_coefficient_home": -1.0,
         "rest_coefficient_home": 0.5,
-        "road_trip_coefficient_home": 0.5,
-        "streak_coefficient_home": 0.5
+        "road_trip_coefficient_home": 0.5
       },
       "power_rating_implied_spread": 0.0,
       "neutral_site": false,
@@ -932,13 +940,15 @@
         "home": [],
         "away": []
       },
-      "spread_current": "-5.5 -110 (11/24)",
-      "spread_current_raw": -5.5,
+      "spread_current": "-6.5 -105 (11/27)",
+      "spread_current_raw": -6.5,
       "spread_history": [
+        "-5.5 -110 (11/24)",
         "-4.5 -110 (8/31)"
       ],
-      "total_current": "O/U 50.5 (-110.0) (11/25)",
+      "total_current": "O/U 51.5 (-110.0) (11/27)",
       "total_history": [
+        "O/U 50.5 (-110.0) (11/25)",
         "O/U 51.5 (-110.0) (11/24)",
         "O/U 48.5 (-110.0) (8/31)"
       ],
